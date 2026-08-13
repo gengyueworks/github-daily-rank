@@ -1,11 +1,8 @@
 name: daily-rank
 
 on:
-  schedule:
-    # 每天 09:00 北京时间（UTC 01:00）抓日榜 + 周榜 → 注入中文 → 生成站点
-    - cron: '0 1 * * *'
-    # 每周一 10:00 北京时间（UTC 02:00）强制刷新周报
-    - cron: '0 2 * * 1'
+  # 主自动化已迁移到本机 launchd（com.local.github-daily-rank），
+  # 本 workflow 仅保留手动触发作为兜底（避免云端与本机双跑互相覆盖 data）
   workflow_dispatch:
 
 permissions:
@@ -38,14 +35,6 @@ jobs:
 
       - name: Build static site
         run: python build.py
-
-      - name: Commit data snapshots to main
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data
-          git diff --cached --quiet || git commit -m "daily: update trending data $(date +%Y-%m-%d)" --quiet
-          git push origin main
 
       - name: Deploy site/ to gh-pages
         run: |
