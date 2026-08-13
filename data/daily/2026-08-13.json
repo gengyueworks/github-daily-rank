@@ -18,8 +18,7 @@
       "period_stars": 2855,
       "period_label": "今日",
       "topics": [],
-      "category": "前端 / Web",
-      "description_zh": "面向 Claude Code 的 29 种编辑型图表。纯 HTML + SVG，自包含。无阴影、拒绝 Mermaid 流水账。"
+      "category": "前端 / Web"
     },
     {
       "rank": 2,
@@ -35,8 +34,7 @@
       "period_stars": 227,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型",
-      "description_zh": "Macro 是面向团队的 unified 工作空间：邮件、聊天、文档、任务、智能体、通话与 CRM，通过共享 AI 记忆以 @ 链接串在一起。"
+      "category": "AI / 大模型"
     },
     {
       "rank": 3,
@@ -47,13 +45,12 @@
       "description": "Graph-Native Infrastructure for Context and Accountable AI Systems",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 5752,
-      "forks": 627,
+      "stars": 5892,
+      "forks": 637,
       "period_stars": 845,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型",
-      "description_zh": "面向上下文与可问责 AI 系统的图原生基础设施。"
+      "category": "AI / 大模型"
     },
     {
       "rank": 4,
@@ -69,8 +66,7 @@
       "period_stars": 1235,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型",
-      "description_zh": "Orca 是管理一整队并行智能体的 ADE（智能体开发环境）。用你自己的订阅即可运行任意编程智能体，桌面、移动端与 VPS 均可用。"
+      "category": "AI / 大模型"
     },
     {
       "rank": 5,
@@ -81,13 +77,12 @@
       "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
       "language": "Shell",
       "language_color": "#89e051",
-      "stars": 144600,
-      "forks": 23422,
+      "stars": 144757,
+      "forks": 23434,
       "period_stars": 1873,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型",
-      "description_zh": "指尖上的完整 AI 代理公司——从前端巫师到 Reddit 社群高手，从灵感注入器到现实校验员。每个智能体都是带个性、有流程、交付可验证成果的专精专家。"
+      "category": "AI / 大模型"
     },
     {
       "rank": 6,
@@ -98,13 +93,12 @@
       "description": "Kronos: A Foundation Model for the Language of Financial Markets",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 36948,
-      "forks": 6150,
+      "stars": 36994,
+      "forks": 6153,
       "period_stars": 266,
       "period_label": "今日",
       "topics": [],
-      "category": "其他",
-      "description_zh": "Kronos：读懂金融市场「语言」的基础模型。"
+      "category": "其他"
     },
     {
       "rank": 7,
@@ -115,13 +109,12 @@
       "description": "小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫 | 知乎问答文章｜评论爬虫",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 61995,
-      "forks": 12128,
+      "stars": 62114,
+      "forks": 12143,
       "period_stars": 215,
       "period_label": "今日",
       "topics": [],
-      "category": "其他",
-      "description_zh": "小红书笔记/评论、抖音视频/评论、快手视频/评论、B 站视频/评论、微博帖子/评论、百度贴吧帖子/评论回复、知乎问答文章/评论 爬虫。"
+      "category": "其他"
     },
     {
       "rank": 8,
@@ -137,8 +130,7 @@
       "period_stars": 476,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型",
-      "description_zh": "AI 把文档或主题变成真正原生的 PowerPoint 演示稿——原生图形、转场与动画，按需生成数据驱动的图表与表格，从演讲备注生成语音旁白，并支持你自己的 .pptx 模板。"
+      "category": "AI / 大模型"
     },
     {
       "rank": 9,
@@ -149,13 +141,12 @@
       "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
       "language": "Go",
       "language_color": "#00ADD8",
-      "stars": 87572,
-      "forks": 10311,
+      "stars": 87657,
+      "forks": 10321,
       "period_stars": 139,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型",
-      "description_zh": "RAGFlow 是领先的开源检索增强生成（RAG）引擎，将前沿 RAG 与智能体能力融合，为 LLM 打造更优的上下文层。"
+      "category": "AI / 大模型"
     },
     {
       "rank": 10,
@@ -166,13 +157,12 @@
       "description": "The open-source app everyone uses to manage agents at work",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 77754,
-      "forks": 14299,
+      "stars": 77851,
+      "forks": 14303,
       "period_stars": 571,
       "period_label": "今日",
       "topics": [],
-      "category": "移动端",
-      "description_zh": "人人都在用的开源应用，用来在工作中管理智能体。"
+      "category": "移动端"
     },
     {
       "rank": 11,
@@ -188,8 +178,7 @@
       "period_stars": 421,
       "period_label": "今日",
       "topics": [],
-      "category": "其他",
-      "description_zh": "NVIDIA 出品的 LLM 流量代理与路由库：跨多家模型后端分发请求，在 OpenAI Chat、Anthropic Messages 与 OpenAI Responses 协议间互译，让 Claude Code / Codex 等编程智能体直接对接开源模型与自托管端点。"
+      "category": "其他"
     },
     {
       "rank": 12,
@@ -200,13 +189,12 @@
       "description": "人人都能用英语",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 36112,
-      "forks": 5027,
+      "stars": 36238,
+      "forks": 5034,
       "period_stars": 86,
       "period_label": "今日",
       "topics": [],
-      "category": "其他",
-      "description_zh": "人人都能用英语。"
+      "category": "其他"
     },
     {
       "rank": 13,
@@ -217,13 +205,12 @@
       "description": "SpiderFoot automates OSINT for threat intelligence and mapping your attack surface.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 20360,
-      "forks": 3300,
+      "stars": 20414,
+      "forks": 3305,
       "period_stars": 74,
       "period_label": "今日",
       "topics": [],
-      "category": "其他",
-      "description_zh": "SpiderFoot 自动化 OSINT（开源情报），用于威胁情报与攻击面测绘。"
+      "category": "其他"
     },
     {
       "rank": 14,
@@ -234,13 +221,12 @@
       "description": "An open-source cross-platform alternative to AirDrop",
       "language": "Dart",
       "language_color": "#00B4AB",
-      "stars": 87836,
-      "forks": 4872,
+      "stars": 87967,
+      "forks": 4881,
       "period_stars": 213,
       "period_label": "今日",
       "topics": [],
-      "category": "其他",
-      "description_zh": "开源、跨平台的 AirDrop 替代品。"
+      "category": "其他"
     },
     {
       "rank": 15,
@@ -251,13 +237,12 @@
       "description": "Official Python inference and LoRA trainer package for the LTX-2 audio–video generative model.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 8721,
-      "forks": 1398,
+      "stars": 8763,
+      "forks": 1400,
       "period_stars": 65,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型",
-      "description_zh": "LTX-2 音视频生成模型的官方 Python 推理与 LoRA 训练包。"
+      "category": "AI / 大模型"
     },
     {
       "rank": 16,
@@ -268,13 +253,12 @@
       "description": "Agent framework for the JVM. Pronounced Em-BAY-bel /ɛmˈbeɪbəl/",
       "language": "Kotlin",
       "language_color": "#A97BFF",
-      "stars": 4231,
-      "forks": 411,
+      "stars": 4255,
+      "forks": 412,
       "period_stars": 40,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型",
-      "description_zh": "JVM 上的智能体框架。发音 Em-BAY-bel。"
+      "category": "AI / 大模型"
     },
     {
       "rank": 17,
@@ -290,8 +274,7 @@
       "period_stars": 315,
       "period_label": "今日",
       "topics": [],
-      "category": "其他",
-      "description_zh": "面向微型设备的 14MB 基础模型：手机、可穿戴、智能家居与机器人。"
+      "category": "其他"
     }
   ]
 }
