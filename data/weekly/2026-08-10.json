@@ -1,7 +1,7 @@
 {
   "since": "weekly",
   "date": "2026-08-13",
-  "fetched_at": "2026-08-13T14:05:02",
+  "fetched_at": "2026-08-13T14:05:52",
   "count": 15,
   "repos": [
     {
@@ -109,7 +109,7 @@
       "description": "The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 4121,
+      "stars": 4122,
       "forks": 578,
       "period_stars": 1511,
       "period_label": "本周",
