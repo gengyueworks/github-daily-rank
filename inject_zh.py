@@ -25,7 +25,7 @@ ZH = {
     "hugohe3/ppt-master": "AI 把文档或主题变成真正原生的 PowerPoint 演示稿——原生图形、转场与动画，按需生成数据驱动的图表与表格，从演讲备注生成语音旁白，并支持你自己的 .pptx 模板。",
     "infiniflow/ragflow": "RAGFlow 是领先的开源检索增强生成（RAG）引擎，将前沿 RAG 与智能体能力融合，为 LLM 打造更优的上下文层。",
     "paperclipai/paperclip": "人人都在用的开源应用，用来在工作中管理智能体。",
-    "NVIDIA-NeMo/Switchyard": "",
+    "NVIDIA-NeMo/Switchyard": "NVIDIA 出品的 LLM 流量代理与路由库：跨多家模型后端分发请求，在 OpenAI Chat、Anthropic Messages 与 OpenAI Responses 协议间互译，让 Claude Code / Codex 等编程智能体直接对接开源模型与自托管端点。",
     "ZuodaoTech/everyone-can-use-english": "人人都能用英语。",
     "smicallef/spiderfoot": "SpiderFoot 自动化 OSINT（开源情报），用于威胁情报与攻击面测绘。",
     "localsend/localsend": "开源、跨平台的 AirDrop 替代品。",

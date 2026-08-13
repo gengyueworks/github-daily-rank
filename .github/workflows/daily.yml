@@ -1,0 +1,59 @@
+name: daily-rank
+
+on:
+  schedule:
+    # 每天 09:00 北京时间（UTC 01:00）抓日榜 + 周榜 → 注入中文 → 生成站点
+    - cron: '0 1 * * *'
+    # 每周一 10:00 北京时间（UTC 02:00）强制刷新周报
+    - cron: '0 2 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-rank
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Scrape trending (daily + weekly)
+        run: python scraper.py
+
+      - name: Inject Chinese translations
+        run: python inject_zh.py
+
+      - name: Build static site
+        run: python build.py
+
+      - name: Commit data snapshots to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || git commit -m "daily: update trending data $(date +%Y-%m-%d)" --quiet
+          git push origin main
+
+      - name: Deploy site/ to gh-pages
+        run: |
+          rm -rf /tmp/ghrank_pages
+          cp -r site /tmp/ghrank_pages
+          git checkout --orphan gh-pages 2>/dev/null || git checkout gh-pages
+          git rm -rf . -q 2>/dev/null || true
+          cp -r /tmp/ghrank_pages/. .
+          git add -A
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "site: publish $(date +%Y-%m-%d)" --quiet || true
+          git push -f origin gh-pages

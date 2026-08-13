@@ -127,7 +127,7 @@ def repo_item(r, show_riser=False):
     zh_html = f'<p class="news-body zh"><span class="tr">译</span>{esc(zh)}</p>' if zh else ""
     lang = r["language"]
     lang_html = f'<span class="lang-dot" style="background:{esc(r.get("language_color") or "#8b949e")}"></span>{esc(lang)}' if lang else "—"
-    meta = (f'★ {r["stars"]:,} <span class="accent">(+{r["period_stars"]} 今日 today)</span> this is placeholder'
+    meta = (f'★ {r["stars"]:,} <span class="accent">(+{r["period_stars"]} 今日 today)</span>'
             f' · ⑂ {r["forks"]:,} forks · {lang_html} · <span class="cat">{esc(bcat(r["category"]))}</span>')
     topics = (" · " + "、".join(esc(t) for t in r.get("topics", [])[:6])) if r.get("topics") else ""
     tag = f'<p class="card-tag">topics 标签{topics} · category 分类：{esc(bcat(r["category"]))}</p>'
@@ -168,7 +168,7 @@ def render_daily(daily):
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>GitHub 日榜｜{daily['date']}</title><style>{CSS}</style></head>
 <body><div class="container">
-<nav class="site-nav-lite"><a href="index.html" class="nav-back">← 首页 / Index</a><span class="nav-date">{nav_date}</span></nav>
+<nav class="site-nav-lite"><a href="../index.html" class="nav-back">← 首页 / Index</a><span class="nav-date">{nav_date}</span></nav>
 <h1 class="doc-title">GitHub 日榜｜<span>{daily['date']}</span></h1>
 <p class="doc-date">{nav_date} · {weekday_cn(d)} · Daily GitHub Trending</p>
 <div class="divider"></div>
@@ -228,7 +228,7 @@ def render_weekly(week_dailies, weekly):
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>GitHub 周报｜{rng}</title><style>{CSS}</style></head>
 <body><div class="container">
-<nav class="site-nav-lite"><a href="index.html" class="nav-back">← 首页 / Index</a><span class="nav-date">{monday.isoformat()}</span></nav>
+<nav class="site-nav-lite"><a href="../index.html" class="nav-back">← 首页 / Index</a><span class="nav-date">{monday.isoformat()}</span></nav>
 <h1 class="doc-title">GitHub 周报｜<span>{rng}</span></h1>
 <p class="doc-date">{monday.year}年{rng} · Weekly GitHub Trending</p>
 <div class="divider"></div>
@@ -286,7 +286,7 @@ def render_index(daily, weekly_stem, week_dailies):
 </div>
 <div class="footer-block">
   <p>GitHub 日榜收录 · 数据来自 GitHub Trending · 视觉对齐 ainews 系列</p>
-  <p>项目 Project：<code>{esc(str(PROJECT))}</code></p>
+  <p>开源 Open Source：<a href="https://github.com/gengyueworks/github-daily-rank" target="_blank">github.com/gengyueworks/github-daily-rank</a> · 自动更新 Auto-updated daily</p>
 </div>
 </div></body></html>"""
 

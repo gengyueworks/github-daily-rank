@@ -18,6 +18,7 @@ github-daily-rank/
 ├── inject_zh.py         # 把中文翻译写入 data/*.json 的 description_zh
 ├── build.py             # 读 data/ → 渲染 site/（ainews 风格 · 双语）
 ├── run.sh               # 一键：抓榜 + 翻译 + 生成
+├── .github/workflows/daily.yml  # GitHub Actions 每日自动更新 + 部署 gh-pages
 ├── data/
 │   ├── daily/YYYY-MM-DD.json     # 每日日榜快照
 │   └── weekly/YYYY-MM-DD.json   # 每周一存的周榜快照
@@ -33,10 +34,12 @@ github-daily-rank/
 bash run.sh     # 抓取 → 注入中文 → 生成站点
 ```
 
-## 自动化（已配置）
+## 自动化（GitHub Actions）
 
-- **每日**：定时抓取日榜 + 周榜，注入中文翻译，重新生成站点。
-- **每周一**：刷新周榜快照，重算本周周报（蝉联榜 / 分类热度随天数累积自动变丰满）。
+- **每日 09:00（北京）**：定时抓取日榜 + 周榜，注入中文翻译，重新生成站点。
+- **每周一 10:00（北京）**：强制刷新周榜快照，重算本周周报（蝉联榜 / 分类热度随天数累积自动变丰满）。
+- 流程：`scraper.py → inject_zh.py → build.py → 提交 data 到 main → 部署 site/ 到 gh-pages`。
+- 中文翻译为人工维护表（`inject_zh.py` 的 `ZH` 字典），新仓库上榜后会先显示英文，翻译表更新后自动补齐。
 
 ## 分享
 
