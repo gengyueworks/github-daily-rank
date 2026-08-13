@@ -1,7 +1,7 @@
 {
   "since": "daily",
   "date": "2026-08-13",
-  "fetched_at": "2026-08-13T14:04:19",
+  "fetched_at": "2026-08-13T14:04:59",
   "count": 17,
   "repos": [
     {
@@ -13,8 +13,8 @@
       "description": "29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop.",
       "language": "HTML",
       "language_color": "#e34c26",
-      "stars": 11535,
-      "forks": 728,
+      "stars": 11537,
+      "forks": 730,
       "period_stars": 2855,
       "period_label": "今日",
       "topics": [],
@@ -45,7 +45,7 @@
       "description": "Graph-Native Infrastructure for Context and Accountable AI Systems",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 5898,
+      "stars": 5899,
       "forks": 637,
       "period_stars": 845,
       "period_label": "今日",
