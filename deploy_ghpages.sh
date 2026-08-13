@@ -22,9 +22,11 @@ git branch -M main
 git push -u origin main -q
 
 # 3) gh-pages: 仅放 site/ 内容到根目录
+rm -rf /tmp/ghrank_pages
+cp -r site /tmp/ghrank_pages
 git checkout --orphan gh-pages
 git rm -rf . -q 2>/dev/null || true
-cp -r site/. .
+cp -r /tmp/ghrank_pages/. .
 git add -A
 git commit -q -m "site: publish static reports to GitHub Pages"
 git push -u origin gh-pages -q -f
