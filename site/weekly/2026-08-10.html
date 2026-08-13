@@ -1,0 +1,191 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GitHub 周报｜8月10日 — 8月16日</title><style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap');
+:root {
+    --klein: #002FA7;
+    --klein-bright: #0044FF;
+    --white: #FFFFFF;
+    --bg-light: #F8F9FB;
+    --text-dark: #1A1A1A;
+    --text-mid: #6B6B6B;
+    --text-light: #9CA3AF;
+    --border: #E5E7EB;
+    --accent: #C41E3A;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Noto Sans SC', 'Inter', -apple-system, sans-serif;
+    background: var(--white); color: var(--text-dark);
+    line-height: 1.75; -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 720px; margin: 0 auto; padding: 48px 24px 64px; }
+.doc-title { font-size: 36px; font-weight: 700; color: var(--text-dark); letter-spacing: -0.5px; margin-bottom: 6px; }
+.doc-title span { color: var(--klein); }
+.doc-date { font-family: 'Inter', sans-serif; font-size: 14px; color: var(--text-light); }
+.divider { height: 1px; background: var(--border); margin: 28px 0; }
+.section-header { font-size: 22px; font-weight: 600; color: var(--klein); margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid var(--klein); display: inline-block; }
+.section-header .en { font-family: 'Inter'; font-size: 13px; color: var(--text-light); font-weight: 400; margin-left: 10px; }
+.section-block { margin-bottom: 40px; }
+.news-item { margin-bottom: 34px; }
+.news-item:last-child { margin-bottom: 0; }
+.news-title { font-size: 19px; font-weight: 600; color: var(--text-dark); line-height: 1.45; margin-bottom: 10px; }
+.news-body { font-size: 15px; color: var(--text-dark); line-height: 1.85; margin-bottom: 10px; }
+.news-label { font-size: 13px; color: var(--text-mid); line-height: 1.6; margin-bottom: 10px; }
+.highlight { color: var(--klein); font-weight: 600; }
+.accent { color: var(--accent); font-weight: 600; }
+.turn { color: var(--klein); font-weight: 700; }
+.intro-text { font-size: 15px; color: var(--text-dark); line-height: 1.85; margin-bottom: 10px; }
+.source-line { font-size: 12px; color: var(--text-light); margin-top: 6px; }
+.source-line a { color: var(--klein); text-decoration: none; }
+.footer-block { font-size: 13px; color: var(--text-mid); line-height: 1.6; margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--border); }
+.card-tag { font-size: 11px; color: var(--text-mid); opacity: 0.55; margin-top: 4px; line-height: 1.5; }
+
+.site-nav-lite { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+.nav-back { font-size: 13px; color: var(--klein); text-decoration: none; font-weight: 500; }
+.nav-back:hover { text-decoration: underline; }
+.nav-date { font-size: 12px; color: var(--text-light); font-family: 'JetBrains Mono', monospace; }
+
+/* ---- GitHub 榜专属（仍沿用 ainews 用词体系） ---- */
+.rank { font-family: 'JetBrains Mono', monospace; color: var(--klein); font-weight: 700; margin-right: 8px; }
+.repo-link { color: var(--text-dark); text-decoration: none; }
+.repo-link:hover { color: var(--klein); }
+.zh { color: var(--text-mid); }
+.tr { font-size: 10px; color: #fff; background: var(--klein); border-radius: 4px; padding: 1px 5px; margin-right: 6px; font-family: 'Inter'; vertical-align: middle; }
+.repo-meta { font-size: 13px; color: var(--text-mid); margin-top: 8px; line-height: 1.7; }
+.repo-meta .lang-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin: 0 4px 0 2px; }
+.repo-meta .cat { color: var(--klein); font-weight: 600; }
+.riser-note { font-size: 12.5px; color: var(--text-light); margin-top: 6px; }
+.archive { columns: 2; column-gap: 24px; }
+.archive a { display: block; color: var(--klein); text-decoration: none; padding: 3px 0; font-size: 14px; }
+.archive a:hover { text-decoration: underline; }
+</style></head>
+<body><div class="container">
+<nav class="site-nav-lite"><a href="index.html" class="nav-back">← 首页 / Index</a><span class="nav-date">2026-08-10</span></nav>
+<h1 class="doc-title">GitHub 周报｜<span>8月10日 — 8月16日</span></h1>
+<p class="doc-date">2026年8月10日 — 8月16日 · Weekly GitHub Trending</p>
+<div class="divider"></div>
+<div class="section-block">
+  <h2 class="section-header">本周概览 <span class="en">Weekly Overview</span></h2>
+  <p class="intro-text">本周刚启动，目前仅收录 <span class="accent">1</span> 天日榜。Just launched — only <span class="accent">1</span> day collected so far.</p><p class="intro-text">随每日抓取累积，蝉联榜与分类热度会自动变丰满。As daily snapshots accumulate, the repeat-board and category heat will fill in automatically.</p>
+  <p class="intro-text">分类热度 Category heat：AI / 大模型 <b>8</b> · 其他 <b>7</b> · 前端 / Web <b>1</b> · 移动端 <b>1</b></p>
+  <p class="intro-text">语言热度 Language heat：Python <b>7</b> · TypeScript <b>3</b> · Rust <b>2</b> · HTML <b>1</b> · Shell <b>1</b> · Go <b>1</b></p>
+</div>
+<div class="divider"></div>
+<div class="section-block">
+  <h2 class="section-header">本周精选 <span class="en">Weekly Picks</span></h2>
+  
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#2</span><a class="repo-link" href="https://github.com/semantica-agi/semantica" target="_blank">semantica-agi/semantica</a></h3>
+        <p class="news-body">Graph-Native Infrastructure for Context and Accountable AI Systems</p>
+        <p class="news-body zh"><span class="tr">译</span>面向上下文与可问责 AI 系统的图原生基础设施。</p>
+        <p class="repo-meta">★ 5,604 <span class="accent">(+2712 今日 today)</span> this is placeholder · ⑂ 615 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#3</span><a class="repo-link" href="https://github.com/TencentCloud/TencentDB-Agent-Memory" target="_blank">TencentCloud/TencentDB-Agent-Memory</a></h3>
+        <p class="news-body">TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks.</p>
+        <p class="news-body zh"><span class="tr">译</span>腾讯云 Agent Memory 是面向 AI 智能体的团队级记忆中枢——把对话、文档与代码转化为四类可复用记忆资产（对话记忆、技能、LLM 知识库、代码图谱），跨智能体与框架统一治理、共享与调用。</p>
+        <p class="repo-meta">★ 20,480 <span class="accent">(+7017 今日 today)</span> this is placeholder · ⑂ 1,856 forks · <span class="lang-dot" style="background:#3178c6"></span>TypeScript · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#1</span><a class="repo-link" href="https://github.com/cloudflare/computer" target="_blank">cloudflare/computer</a></h3>
+        <p class="news-body">Give your agent a computer 👾</p>
+        <p class="news-body zh"><span class="tr">译</span>给你的智能体一台电脑 👾</p>
+        <p class="repo-meta">★ 7,763 <span class="accent">(+6775 今日 today)</span> this is placeholder · ⑂ 426 forks · <span class="lang-dot" style="background:#3178c6"></span>TypeScript · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#8</span><a class="repo-link" href="https://github.com/zhaoxuya520/reverse-skill" target="_blank">zhaoxuya520/reverse-skill</a></h3>
+        <p class="news-body">Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients 逆向/渗透/安全技能路由包 - AI 自动路由 + 按需自举工具链 + 自动进化经验库 | 支持 Claude Code / Kiro / Cursor / Cline 等代码 AI 客户端</p>
+        <p class="news-body zh"><span class="tr">译</span>逆向工程 / 授权渗透测试 / 安全研究技能路由包：AI 自动路由 + 按需自举工具链 + 自动进化经验库，支持 Claude Code、Kiro、Cursor、Cline 等代码 AI 客户端。</p>
+        <p class="repo-meta">★ 24,415 <span class="accent">(+6730 今日 today)</span> this is placeholder · ⑂ 3,316 forks · <span class="lang-dot" style="background:#012456"></span>PowerShell · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#5</span><a class="repo-link" href="https://github.com/firecrawl/pdf-inspector" target="_blank">firecrawl/pdf-inspector</a></h3>
+        <p class="news-body">Fast Rust library for PDF inspection, classification, and text extraction. Intelligently detects scanned vs text-based PDFs to enable smart routing decisions.</p>
+        <p class="news-body zh"><span class="tr">译</span>用于 PDF 检查、分类与文本提取的高速 Rust 库。智能识别扫描件与文本型 PDF，支撑智能路由决策。</p>
+        <p class="repo-meta">★ 14,990 <span class="accent">(+5367 今日 today)</span> this is placeholder · ⑂ 1,034 forks · <span class="lang-dot" style="background:#dea584"></span>Rust · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#14</span><a class="repo-link" href="https://github.com/addyosmani/agent-skills" target="_blank">addyosmani/agent-skills</a></h3>
+        <p class="news-body">Production-grade engineering skills for AI coding agents.</p>
+        <p class="news-body zh"><span class="tr">译</span>面向 AI 编程智能体的生产级工程技能。</p>
+        <p class="repo-meta">★ 86,548 <span class="accent">(+4671 今日 today)</span> this is placeholder · ⑂ 9,296 forks · <span class="lang-dot" style="background:#f1e05a"></span>JavaScript · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#11</span><a class="repo-link" href="https://github.com/virgiliojr94/book-to-skill" target="_blank">virgiliojr94/book-to-skill</a></h3>
+        <p class="news-body">Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.</p>
+        <p class="news-body zh"><span class="tr">译</span>把任意技术书 PDF 变成 Claude Code 技能——开箱即学、可随时查阅与使用。</p>
+        <p class="repo-meta">★ 20,810 <span class="accent">(+4155 今日 today)</span> this is placeholder · ⑂ 2,199 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">学习资源 · Learning</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：学习资源 · Learning</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#9</span><a class="repo-link" href="https://github.com/esengine/DeepSeek-Reasonix" target="_blank">esengine/DeepSeek-Reasonix</a></h3>
+        <p class="news-body">DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running.</p>
+        <p class="news-body zh"><span class="tr">译</span>终端里的 DeepSeek 原生 AI 编程智能体。围绕前缀缓存稳定性打造——可长期挂机运行。</p>
+        <p class="repo-meta">★ 34,176 <span class="accent">(+3517 今日 today)</span> this is placeholder · ⑂ 2,246 forks · <span class="lang-dot" style="background:#00ADD8"></span>Go · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#12</span><a class="repo-link" href="https://github.com/Comfy-Org/ComfyUI" target="_blank">Comfy-Org/ComfyUI</a></h3>
+        <p class="news-body">The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.</p>
+        <p class="news-body zh"><span class="tr">译</span>最强大、模块化的扩散模型 GUI、API 与后端，采用图/节点接口。</p>
+        <p class="repo-meta">★ 127,063 <span class="accent">(+3252 今日 today)</span> this is placeholder · ⑂ 14,967 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#4</span><a class="repo-link" href="https://github.com/huangruiteng/loopx" target="_blank">huangruiteng/loopx</a></h3>
+        <p class="news-body">Lightweight loop engineering state kernel for long-running AI agent teams. Agent-loop agnostic across Codex, Claude Code, and other coding agents, with durable goals, quota-aware auto-wake, executable todos, evidence logs, and verifiable handoffs.</p>
+        <p class="news-body zh"><span class="tr">译</span>面向长时运行 AI 智能体团队的轻量循环工程状态内核。跨 Codex、Claude Code 等编程智能体无关，具备持久目标、配额感知自动唤醒、可执行待办、证据日志与可验证交接。</p>
+        <p class="repo-meta">★ 4,376 <span class="accent">(+2687 今日 today)</span> this is placeholder · ⑂ 372 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#6</span><a class="repo-link" href="https://github.com/google/skills" target="_blank">google/skills</a></h3>
+        <p class="news-body">Agent Skills for Google products and technologies</p>
+        <p class="news-body zh"><span class="tr">译</span>面向 Google 产品与技术的智能体技能。</p>
+        <p class="repo-meta">★ 17,882 <span class="accent">(+2216 今日 today)</span> this is placeholder · ⑂ 1,421 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#15</span><a class="repo-link" href="https://github.com/goauthentik/authentik" target="_blank">goauthentik/authentik</a></h3>
+        <p class="news-body">The authentication glue you need.</p>
+        <p class="news-body zh"><span class="tr">译</span>你需要的身份认证粘合剂。</p>
+        <p class="repo-meta">★ 24,698 <span class="accent">(+2003 今日 today)</span> this is placeholder · ⑂ 1,891 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+</div>
+
+<div class="footer-block">
+  <p>GitHub 周报 · 由本周每日快照聚合生成 · Aggregated from this week's daily snapshots</p>
+  <p>数据来源 Source：<a href="https://github.com/trending?since=weekly" target="_blank">github.com/trending?since=weekly</a></p>
+</div>
+</div></body></html>

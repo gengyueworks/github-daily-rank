@@ -1,0 +1,92 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GitHub 日榜收录</title><style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap');
+:root {
+    --klein: #002FA7;
+    --klein-bright: #0044FF;
+    --white: #FFFFFF;
+    --bg-light: #F8F9FB;
+    --text-dark: #1A1A1A;
+    --text-mid: #6B6B6B;
+    --text-light: #9CA3AF;
+    --border: #E5E7EB;
+    --accent: #C41E3A;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Noto Sans SC', 'Inter', -apple-system, sans-serif;
+    background: var(--white); color: var(--text-dark);
+    line-height: 1.75; -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 720px; margin: 0 auto; padding: 48px 24px 64px; }
+.doc-title { font-size: 36px; font-weight: 700; color: var(--text-dark); letter-spacing: -0.5px; margin-bottom: 6px; }
+.doc-title span { color: var(--klein); }
+.doc-date { font-family: 'Inter', sans-serif; font-size: 14px; color: var(--text-light); }
+.divider { height: 1px; background: var(--border); margin: 28px 0; }
+.section-header { font-size: 22px; font-weight: 600; color: var(--klein); margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid var(--klein); display: inline-block; }
+.section-header .en { font-family: 'Inter'; font-size: 13px; color: var(--text-light); font-weight: 400; margin-left: 10px; }
+.section-block { margin-bottom: 40px; }
+.news-item { margin-bottom: 34px; }
+.news-item:last-child { margin-bottom: 0; }
+.news-title { font-size: 19px; font-weight: 600; color: var(--text-dark); line-height: 1.45; margin-bottom: 10px; }
+.news-body { font-size: 15px; color: var(--text-dark); line-height: 1.85; margin-bottom: 10px; }
+.news-label { font-size: 13px; color: var(--text-mid); line-height: 1.6; margin-bottom: 10px; }
+.highlight { color: var(--klein); font-weight: 600; }
+.accent { color: var(--accent); font-weight: 600; }
+.turn { color: var(--klein); font-weight: 700; }
+.intro-text { font-size: 15px; color: var(--text-dark); line-height: 1.85; margin-bottom: 10px; }
+.source-line { font-size: 12px; color: var(--text-light); margin-top: 6px; }
+.source-line a { color: var(--klein); text-decoration: none; }
+.footer-block { font-size: 13px; color: var(--text-mid); line-height: 1.6; margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--border); }
+.card-tag { font-size: 11px; color: var(--text-mid); opacity: 0.55; margin-top: 4px; line-height: 1.5; }
+
+.site-nav-lite { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+.nav-back { font-size: 13px; color: var(--klein); text-decoration: none; font-weight: 500; }
+.nav-back:hover { text-decoration: underline; }
+.nav-date { font-size: 12px; color: var(--text-light); font-family: 'JetBrains Mono', monospace; }
+
+/* ---- GitHub 榜专属（仍沿用 ainews 用词体系） ---- */
+.rank { font-family: 'JetBrains Mono', monospace; color: var(--klein); font-weight: 700; margin-right: 8px; }
+.repo-link { color: var(--text-dark); text-decoration: none; }
+.repo-link:hover { color: var(--klein); }
+.zh { color: var(--text-mid); }
+.tr { font-size: 10px; color: #fff; background: var(--klein); border-radius: 4px; padding: 1px 5px; margin-right: 6px; font-family: 'Inter'; vertical-align: middle; }
+.repo-meta { font-size: 13px; color: var(--text-mid); margin-top: 8px; line-height: 1.7; }
+.repo-meta .lang-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin: 0 4px 0 2px; }
+.repo-meta .cat { color: var(--klein); font-weight: 600; }
+.riser-note { font-size: 12.5px; color: var(--text-light); margin-top: 6px; }
+.archive { columns: 2; column-gap: 24px; }
+.archive a { display: block; color: var(--klein); text-decoration: none; padding: 3px 0; font-size: 14px; }
+.archive a:hover { text-decoration: underline; }
+</style></head>
+<body><div class="container">
+<nav class="site-nav-lite"><a href="index.html" class="nav-back">GitHub 日榜收录</a><span class="nav-date">Index</span></nav>
+<h1 class="doc-title">GitHub 日榜收录 <span>Archive</span></h1>
+<p class="doc-date">每天自动抓取 GitHub Trending · 中英文双语 · Auto-collected daily · Bilingual</p>
+<div class="divider"></div>
+<div class="section-block">
+  <h2 class="section-header">最新日报 <span class="en">Latest Daily</span></h2>
+  <div class="news-item"><p class="news-body"><a class="repo-link" href="daily/2026-08-13.html" style="font-size:18px">→ 打开 2026-08-13 日榜 / Open daily board</a></p>
+  <p class="card-tag">当日 17 个仓库上榜 · 17 repos today</p></div>
+</div>
+<div class="divider"></div>
+<div class="section-block">
+  <h2 class="section-header">最新周报 <span class="en">Latest Weekly</span></h2>
+  <div class="news-item"><p class="news-body"><a class="repo-link" href="weekly/2026-08-10.html" style="font-size:18px">→ 打开本周周报 / Open weekly report</a></p></div>
+</div>
+<div class="divider"></div>
+<div class="section-block">
+  <h2 class="section-header">日榜归档 <span class="en">Daily Archive</span></h2>
+  <div class="archive"><a href="daily/2026-08-13.html">2026-08-13</a></div>
+</div>
+<div class="divider"></div>
+<div class="section-block">
+  <h2 class="section-header">周报归档 <span class="en">Weekly Archive</span></h2>
+  <div class="archive"><a href="weekly/2026-08-10.html">2026-08-10（周）</a></div>
+</div>
+<div class="footer-block">
+  <p>GitHub 日榜收录 · 数据来自 GitHub Trending · 视觉对齐 ainews 系列</p>
+  <p>项目 Project：<code>/Users/a0302/WorkBuddy/github-daily-rank</code></p>
+</div>
+</div></body></html>
