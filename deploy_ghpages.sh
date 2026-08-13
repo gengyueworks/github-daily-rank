@@ -29,7 +29,9 @@ git push -u origin main -q
 # 3) gh-pages: 仅放 site/ 内容到根目录
 rm -rf /tmp/ghrank_pages
 cp -r site /tmp/ghrank_pages
-git checkout --orphan gh-pages
+git checkout main -q 2>/dev/null || true
+git branch -D gh-pages -q 2>/dev/null || true
+git checkout --orphan gh-pages -q
 git rm -rf . -q 2>/dev/null || true
 cp -r /tmp/ghrank_pages/. .
 git add -A
