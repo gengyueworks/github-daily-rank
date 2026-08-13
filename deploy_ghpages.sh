@@ -10,7 +10,7 @@ cd "$PROJ"
 
 # 0) 同步远端（防并发 push 冲突）
 git fetch origin main 2>/dev/null || true
-GIT_EDITOR=true git pull --rebase origin main 2>&1 | tail -1 || true
+GIT_EDITOR=true git pull --rebase --autostash origin main 2>&1 | tail -1 || true
 
 [ -d .git ] || git init -q
 

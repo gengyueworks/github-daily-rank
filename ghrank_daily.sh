@@ -22,11 +22,12 @@ echo "=== $(date '+%Y-%m-%d %H:%M:%S') 开始 ==="
 "$PY" build.py
 
 # 4) 提交 data 快照 + zh_cache 到 main（自动翻译缓存持久化）
+GIT_EDITOR=true git pull --rebase --autostash origin main 2>&1 | tail -1 || true
 git add data zh_cache.json
 if ! git diff --cached --quiet; then
   GIT_EDITOR=true git -c user.name="gengyueworks-bot" -c user.email="gengyueworks@users.noreply.github.com" commit -m "daily: update trending data $(date +%Y-%m-%d)" --quiet
 fi
-GIT_EDITOR=true git pull --rebase origin main 2>&1 | tail -1 || true
+GIT_EDITOR=true git pull --rebase --autostash origin main 2>&1 | tail -1 || true
 git push origin main 2>&1 | tail -2
 echo "✓ data 已提交推送"
 
