@@ -1,11 +1,16 @@
 #!/usr/bin/env bash
 # 部署 github-daily-rank 的 site/ 到 GitHub Pages (gengyueworks 账号)
 # 用法: bash deploy_ghpages.sh
+# 注意：基于脚本自身位置定位项目目录，不依赖 WorkBuddy 路径。
 set -e
-PROJ=/Users/a0302/WorkBuddy/github-daily-rank
+PROJ="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO=github-daily-rank
 OWNER=gengyueworks
 cd "$PROJ"
+
+# 0) 同步远端（防并发 push 冲突）
+git fetch origin main 2>/dev/null || true
+GIT_EDITOR=true git pull --rebase origin main 2>&1 | tail -1 || true
 
 [ -d .git ] || git init -q
 
