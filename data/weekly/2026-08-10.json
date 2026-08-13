@@ -1,7 +1,7 @@
 {
   "since": "weekly",
   "date": "2026-08-13",
-  "fetched_at": "2026-08-13T14:03:42",
+  "fetched_at": "2026-08-13T14:04:22",
   "count": 15,
   "repos": [
     {
@@ -29,7 +29,7 @@
       "description": "Graph-Native Infrastructure for Context and Accountable AI Systems",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 5897,
+      "stars": 5898,
       "forks": 637,
       "period_stars": 3585,
       "period_label": "本周",
@@ -94,7 +94,7 @@
       "language": "Python",
       "language_color": "#3572A5",
       "stars": 17943,
-      "forks": 1425,
+      "forks": 1426,
       "period_stars": 2288,
       "period_label": "本周",
       "topics": [],
