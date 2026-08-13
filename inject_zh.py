@@ -1,18 +1,35 @@
 #!/usr/bin/env python3
 """把中文翻译写回 data/*.json 的 description_zh 字段。
 
-翻译表（人工校对，覆盖当前日/周榜全部仓库）。新仓库由每日自动化负责补译。
+翻译来源（两级）：
+1. ZH 表（人工校对，优先）——覆盖已知仓库，质量最高。
+2. 自动翻译（fallback）——新上榜仓库没有人工翻译时，调用本机
+   CLIProxyAPI 网关（127.0.0.1:8317）翻译，结果同时写回 ZH 表
+   并持久化到 zh_cache.json，下次直接命中、不再调 API。
+
 用法：
-    python inject_zh.py
+    python inject_zh.py            # 只注入人工 ZH 表
+    python inject_zh.py --auto     # 人工表 + 自动翻译缺失项（默认开启，见 AUTO_TRANSLATE）
 """
 from __future__ import annotations
 
 import glob
 import json
+import os
+import urllib.request
+import urllib.error
 from pathlib import Path
 
 PROJECT = Path(__file__).resolve().parent
 DATA = PROJECT / "data"
+CACHE = PROJECT / "zh_cache.json"
+
+# ---- 自动翻译配置（本机 CLIProxyAPI 网关，OpenAI 兼容）----
+AUTO_TRANSLATE = os.environ.get("GHRANK_AUTO_TRANSLATE", "1") == "1"
+LLM_BASE_URL = os.environ.get("GHRANK_LLM_URL", "http://127.0.0.1:8317/v1/chat/completions")
+LLM_API_KEY = os.environ.get("GHRANK_LLM_KEY", "sk-123")
+LLM_MODEL = os.environ.get("GHRANK_LLM_MODEL", "gemini-3.5-flash-low")
+TRANSLATE_TIMEOUT = 30
 
 ZH = {
     "cathrynlavery/diagram-design": "面向 Claude Code 的 29 种编辑型图表。纯 HTML + SVG，自包含。无阴影、拒绝 Mermaid 流水账。",
@@ -49,17 +66,83 @@ ZH = {
 }
 
 
+def _load_cache() -> dict:
+    if CACHE.exists():
+        try:
+            return json.loads(CACHE.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+    return {}
+
+
+def _save_cache(cache: dict) -> None:
+    CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def translate_with_llm(full_name: str, desc: str) -> str | None:
+    """调本机 CLIProxyAPI 网关翻译仓库简介，失败返回 None（不中断流程）。"""
+    if not desc.strip():
+        return None
+    prompt = (
+        "你是 GitHub 仓库中文简介翻译器。把下面的英文仓库简介翻译成简洁自然的中文，"
+        "只输出译文本身，不要加引号、不要解释、不要加任何前后缀。\n\n"
+        f"仓库：{full_name}\n简介：{desc}"
+    )
+    body = json.dumps({
+        "model": LLM_MODEL,
+        "messages": [{"role": "user", "content": prompt}],
+        "max_tokens": 200,
+        "temperature": 0.2,
+    }).encode("utf-8")
+    req = urllib.request.Request(
+        LLM_BASE_URL, data=body,
+        headers={"Content-Type": "application/json", "Authorization": f"Bearer {LLM_API_KEY}"},
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=TRANSLATE_TIMEOUT) as r:
+            d = json.loads(r.read().decode("utf-8"))
+        text = d["choices"][0]["message"]["content"].strip()
+        text = text.strip('"').strip("「」").strip("『』").strip()
+        return text or None
+    except Exception as e:
+        print(f"  ⚠️ 自动翻译失败 {full_name}: {type(e).__name__}: {e}")
+        return None
+
+
 def main():
     count = 0
+    auto_count = 0
+    cache = _load_cache()
     for f in glob.glob(str(DATA / "daily" / "*.json")) + glob.glob(str(DATA / "weekly" / "*.json")):
         d = json.loads(Path(f).read_text(encoding="utf-8"))
+        changed = False
         for r in d["repos"]:
             zh = ZH.get(r["full_name"])
             if zh is not None:
                 r["description_zh"] = zh
                 count += 1
-        Path(f).write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"已写入中文翻译 {count} 条仓库。")
+                continue
+            if not AUTO_TRANSLATE:
+                continue
+            # 已有自动翻译缓存 → 直接复用
+            cached = cache.get(r["full_name"])
+            if cached:
+                r["description_zh"] = cached
+                auto_count += 1
+                changed = True
+                continue
+            # 调 LLM 翻译并写缓存
+            zh2 = translate_with_llm(r["full_name"], r.get("description", ""))
+            if zh2:
+                cache[r["full_name"]] = zh2
+                r["description_zh"] = zh2
+                auto_count += 1
+                changed = True
+                print(f"  ✓ 自动翻译 {r['full_name']} → {zh2[:40]}…")
+        if changed:
+            Path(f).write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding="utf-8")
+    _save_cache(cache)
+    print(f"已写入人工中文翻译 {count} 条仓库，自动翻译 {auto_count} 条。")
 
 
 if __name__ == "__main__":
