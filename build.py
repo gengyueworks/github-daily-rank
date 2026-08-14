@@ -41,49 +41,52 @@ body {
     background: var(--white); color: var(--text-dark);
     line-height: 1.75; -webkit-font-smoothing: antialiased;
 }
-.container { max-width: 720px; margin: 0 auto; padding: 48px 24px 64px; }
-.doc-title { font-size: 36px; font-weight: 700; color: var(--text-dark); letter-spacing: -0.5px; margin-bottom: 6px; }
+.container { max-width: 720px; margin: 0 auto; padding: 56px 28px 80px; }
+.doc-title { font-size: 38px; font-weight: 700; color: var(--text-dark); letter-spacing: -0.5px; margin-bottom: 8px; text-wrap: balance; }
 .doc-title span { color: var(--klein); }
-.doc-date { font-family: 'Inter', sans-serif; font-size: 14px; color: var(--text-light); }
-.divider { height: 1px; background: var(--border); margin: 28px 0; }
-.section-header { font-size: 22px; font-weight: 600; color: var(--klein); margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid var(--klein); display: inline-block; }
+.doc-date { font-family: 'Inter', sans-serif; font-size: 15px; color: var(--text-light); }
+.divider { height: 1px; background: var(--border); margin: 36px 0; }
+.section-header { font-size: 24px; font-weight: 600; color: var(--klein); margin-bottom: 24px; padding-bottom: 8px; border-bottom: 2px solid var(--klein); display: inline-block; text-wrap: balance; }
 .section-header .en { font-family: 'Inter'; font-size: 13px; color: var(--text-light); font-weight: 400; margin-left: 10px; }
-.section-block { margin-bottom: 40px; }
-.news-item { margin-bottom: 34px; }
+.section-block { margin-bottom: 48px; }
+.news-item { margin-bottom: 52px; }
 .news-item:last-child { margin-bottom: 0; }
-.news-title { font-size: 19px; font-weight: 600; color: var(--text-dark); line-height: 1.45; margin-bottom: 10px; }
-.news-body { font-size: 15px; color: var(--text-dark); line-height: 1.85; margin-bottom: 10px; }
-.news-label { font-size: 13px; color: var(--text-mid); line-height: 1.6; margin-bottom: 10px; }
+.news-title { font-size: 21px; font-weight: 600; color: var(--text-dark); line-height: 1.5; margin-bottom: 14px; text-wrap: balance; }
+.news-body { font-size: 16px; color: var(--text-dark); line-height: 1.9; margin-bottom: 16px; }
+.news-label { font-size: 14px; color: var(--text-mid); line-height: 1.7; margin-bottom: 14px; }
 .highlight { color: var(--klein); font-weight: 600; }
 .accent { color: var(--accent); font-weight: 600; }
 .turn { color: var(--klein); font-weight: 700; }
-.intro-text { font-size: 15px; color: var(--text-dark); line-height: 1.85; margin-bottom: 10px; }
-.source-line { font-size: 12px; color: var(--text-light); margin-top: 6px; }
+.intro-text { font-size: 16px; color: var(--text-dark); line-height: 1.9; margin-bottom: 14px; }
+.source-line { font-size: 13px; color: var(--text-light); margin-top: 8px; }
 .source-line a { color: var(--klein); text-decoration: none; }
-.footer-block { font-size: 13px; color: var(--text-mid); line-height: 1.6; margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--border); }
-.card-tag { font-size: 11px; color: var(--text-mid); opacity: 0.55; margin-top: 4px; line-height: 1.5; }
+.footer-block { font-size: 14px; color: var(--text-mid); line-height: 1.7; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); }
+.card-tag { font-size: 12px; color: var(--text-mid); opacity: 0.55; margin-top: 8px; line-height: 1.6; }
 
-.site-nav-lite { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
-.nav-back { font-size: 13px; color: var(--klein); text-decoration: none; font-weight: 500; }
+.site-nav-lite { display: flex; align-items: center; justify-content: space-between; margin-bottom: 28px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+.nav-back { font-size: 14px; color: var(--klein); text-decoration: none; font-weight: 500; }
 .nav-back:hover { text-decoration: underline; }
-.nav-date { font-size: 12px; color: var(--text-light); font-family: 'JetBrains Mono', monospace; }
+.nav-date { font-size: 13px; color: var(--text-light); font-family: 'JetBrains Mono', monospace; }
 
 /* ---- GitHub 榜专属（仍沿用 ainews 用词体系） ---- */
 .rank { font-family: 'JetBrains Mono', monospace; color: var(--klein); font-weight: 700; margin-right: 8px; }
 .repo-link { color: var(--text-dark); text-decoration: none; }
 .repo-link:hover { color: var(--klein); }
 .zh { color: var(--text-mid); }
-.tr { font-size: 10px; color: #fff; background: var(--klein); border-radius: 4px; padding: 1px 5px; margin-right: 6px; font-family: 'Inter'; vertical-align: middle; }
-.repo-meta { font-size: 13px; color: var(--text-mid); margin-top: 8px; line-height: 1.7; }
+.tr { font-size: 11px; color: #fff; background: var(--klein); border-radius: 4px; padding: 2px 6px; margin-right: 6px; font-family: 'Inter'; vertical-align: middle; }
+.repo-meta { font-size: 14px; color: var(--text-mid); margin-top: 12px; line-height: 1.8; }
 .repo-meta .lang-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin: 0 4px 0 2px; }
 .repo-meta .cat { color: var(--klein); font-weight: 600; }
-.riser-note { font-size: 12.5px; color: var(--text-light); margin-top: 6px; }
-.script-block { font-size: 13px; color: var(--text-dark); line-height: 1.75; background: #F2F5FF; border-left: 3px solid var(--klein); border-radius: 6px; padding: 10px 14px; margin-bottom: 10px; }
-.script-tag { font-size: 10px; color: #fff; background: var(--klein); border-radius: 4px; padding: 1px 6px; margin-right: 8px; font-family: 'Inter'; vertical-align: middle; white-space: nowrap; }
+.riser-note { font-size: 13px; color: var(--text-light); margin-top: 8px; }
+.script-block { font-size: 15px; color: var(--text-dark); line-height: 1.8; background: #EEF2FF; border-left: 3px solid var(--klein); border-radius: 8px; padding: 14px 18px; margin: 16px 0; }
+.script-tag { font-size: 11px; color: #fff; background: var(--klein); border-radius: 4px; padding: 2px 7px; margin-right: 8px; font-family: 'Inter'; vertical-align: middle; white-space: nowrap; }
 .script-text { color: var(--text-dark); }
 .archive { columns: 2; column-gap: 24px; }
-.archive a { display: block; color: var(--klein); text-decoration: none; padding: 3px 0; font-size: 14px; }
+.archive a { display: block; color: var(--klein); text-decoration: none; padding: 3px 0; font-size: 15px; }
 .archive a:hover { text-decoration: underline; }
+
+/* classics 高分精选页专属：阅读型页面加宽容器，提升行宽舒适度 */
+body.classics .container { max-width: 860px; }
 """
 
 CAT_EN = {
@@ -293,7 +296,7 @@ def render_classics(classics):
     return f"""<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>GitHub 高分精选｜Curated Classics</title><style>{CSS}</style></head>
-<body><div class="container">
+<body class="classics"><div class="container">
 <nav class="site-nav-lite"><a href="../index.html" class="nav-back">← 首页 / Index</a><span class="nav-date">Updated {updated}</span></nav>
 <h1 class="doc-title">GitHub 高分精选｜<span>Curated Classics</span></h1>
 <p class="doc-date">{nav_date} 更新 · 人工精选高分仓库 · Curated high-star repos</p>
