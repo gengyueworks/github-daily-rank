@@ -1,1 +1,12 @@
-{}
+{
+  "anthropics/skills": "智能体技能公开仓库",
+  "altic-dev/FluidVoice": "最快且唯一的 macOS 本地听写应用，搭载设备端 STT 与自定义训练的 AI 增强模型。本地版 Wispr Flow 替代方案。⭐ 欢迎点个 Star 支持 :) Windows 和 iOS 候补登记已开放，Linux 版本即将推出。",
+  "unslothai/unsloth": "用于运行和训练大语言模型及扩散模型的本地 UI，支持 Qwen3.8、Kimi K3、MiniMax-H3、Gemma 4、DeepSeek-V4、FLUX 等模型。",
+  "megadose/holehe": "holehe 可以检测指定邮箱是否在 Twitter、Instagram 等网站上注册，并利用找回密码功能获取相关网站上的信息。",
+  "holaboss-ai/holaOS": "开源的一站式 AI Agent 工作空间。支持在你的工具（100+ 集成及 MCP）、应用、浏览器和文件之间运行任何 Agent（如 Claude Code、Codex），并共享记忆。内置模型或自带密钥 (BYOK)。",
+  "kepano/obsidian-skills": "Obsidian 智能体技能。教你的智能体使用 Obsidian CLI 以及 Markdown、Bases 和 JSON Canvas 等开放格式。",
+  "3b1b/manim": "用于制作数学科普视频的动画引擎",
+  "lightningpixel/modly": "基于本地 AI 的图像转 3D 模型桌面应用，完全在您的 GPU 上运行",
+  "PrimeIntellect-ai/prime-agent": "用于编程工作流和长期自主任务的自我改进型 RLM 智能体。",
+  "TapXWorld/ChinaTextbook": "中小学及大学PDF教材合集"
+}
