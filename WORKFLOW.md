@@ -124,17 +124,37 @@ gh workflow run daily.yml -R gengyueworks/github-daily-rank
 6. **提交 + 部署**：`git add data && git commit && git push origin main && bash ghrank_daily.sh`
 7. ⚠️ GitHub Pages 有 CDN 缓存延迟（约 30-60 秒），部署后稍等再验证 200
 
-## 七、视觉规范（ainews 克莱因蓝，build.py 内 CSS 是唯一权威源）
+## 七、视觉规范（严格对齐 ainews，build.py 内 CSS 是唯一权威源）
 
-- **主色**：克莱因蓝 `#002FA7`、强调红 `#C41E3A`、正文 `#1A1A1A`、次要 `#6B6B6B`、浅灰 `#9CA3AF`
-- **字体**：Inter / Noto Sans SC / JetBrains Mono（Google Fonts）
-- **排版数值（2026-08-14 优化后）**：
-  - 正文 news-body：16px，行高 1.9
-  - 仓库名 news-title：21px，行高 1.5，text-wrap: balance
-  - 逐字稿 script-block：15px，行高 1.8，底纹 `#EEF2FF` + 3px 克莱因左边框 + 圆角 8px + padding 14px 18px + margin 16px 0
-  - 卡片间距 news-item：52px；卡片内块间距 14-16px
-  - 大标题 doc-title：38px；section-header：24px
-  - 容器：默认 720px；classics 页 `body.classics .container` 专享 860px（阅读型加宽）
+**权威参考**：ai-news 最新日报 HTML 的完整 CSS（`/Volumes/拓展坞 1T2022/2 Codex-Workspace/Codex-Workspace-Main/32-AI高质量阅读库/05-情报与深读系统/AI精华情报与深读操作台/10-源头网站活文件/00-站点根文件/ai-news-site/2026-08/` 里最新一期）。
+
+### 🚨 红蓝配比铁律（用户强调，违反即返工）
+
+1. **蓝色（--klein #002FA7）是绝对主色**：mast-title、mast-rule 3px 蓝线、sec-title ■ 方块前缀、item 仓库链接、.src 编号、.cat 分类、footer 3px 蓝顶线——全蓝
+2. **红色（--accent #C41E3A）只做极少量点缀**：ainews 中红色**只出现在正文数字上**（`.body .num`，JetBrains Mono 红数字，如 ★ star 数）
+3. **配比 ≈ 蓝:红 = 10:1**（实测 ai-news 蓝 19 处 / 红 2 处；classics 蓝 28+ / 红 3 处）。**禁止**大段红字、红色底纹、红色强调词滥用
+4. 颜色体系 1:1 对齐 ainews：`--klein:#002FA7; --klein-bright:#0044FF; --paper:#FFFFFF; --ink:#0E0E10; --ink-soft:#3A3A3E; --gray:#6B6B70; --gray-light:#9CA3AF; --line:#E8E8EC; --accent:#C41E3A`
+5. 正文结构沿用 ainews 语义类：masthead / mast-title / mast-rule / mast-lede / sec-title / item / dateline / item-title / body / tag / src-line / num / footer。classics 页用 `body.classics` 前缀隔离专属样式，daily/weekly 不受影响
+
+### 逐字稿排版（2026-08-14 修正后）
+
+- 逐字稿是**正文级段落**（15.5px，行高 1.8），不是大色块：`<p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>正文</p>`
+- 「一分钟讲解」小标签 = klein 蓝底白字小徽章（10-11px），禁止自创大底纹块（#EEF2FF 底纹方案已废弃）
+
+### 每个仓库卡片必备的链接（用户强调）
+
+1. **打开仓库**：仓库名整行可点链接，蓝色 + hover 下划线，target="_blank"
+2. **加 star**：明显按钮/链接「★ Star 这个项目」→ `https://github.com/{owner}/{repo}/stargazers`，klein 蓝底白字小按钮，target="_blank"
+3. 每张卡片至少这两个链接，缺一个 = 返工
+
+### 排版数值（全局，daily/weekly/index 共用）
+
+- 正文 body：15.5-16px，行高 1.8-1.9
+- 仓库名 item-title：21px，行高 1.5，text-wrap: balance
+- 卡片间距 news-item / item：52px；卡片内块间距 14-16px
+- 大标题：36-44px；section-header：24px
+- 容器：默认 720px；classics 页 `body.classics .container` 专享 860px（阅读型加宽）
+- 数字用 JetBrains Mono + tabular 对齐（ainews 的 .num 风格）
 - **改样式**：只改 build.py 顶部 CSS 常量，再跑 `python3 build.py`。样式规则集中管理，禁止散落多处
 - **三个页面（daily/weekly/index）共用同一份 CSS**，改全局数值会同步生效；只想改 classics 用 `body.classics` 前缀
 
