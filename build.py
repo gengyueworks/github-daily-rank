@@ -251,6 +251,51 @@ def render_weekly(week_dailies, weekly):
 </div></body></html>"""
 
 
+def render_classics(classics):
+    updated = classics["updated_at"]
+    y, m, d = updated.split("-")
+    nav_date = f"{y}年{m}月{d}日"
+    intro = (f'<p class="intro-text">{esc(classics["intro_zh"])}</p>'
+             f'<p class="intro-text">{esc(classics["intro_en"])}</p>')
+    items = []
+    for i, r in enumerate(classics["repos"], start=1):
+        rank = f'<span class="rank">#{i}</span>'
+        link = f'<a class="repo-link" href="{esc(r["url"])}" target="_blank">{esc(r["full_name"])}</a>'
+        en = esc(r["description"])
+        zh = r.get("description_zh")
+        zh_html = f'<p class="news-body zh"><span class="tr">译</span>{esc(zh)}</p>' if zh else ""
+        meta = f'★ {r["stars"]:,} stars · <span class="cat">{esc(r["category"])}</span>'
+        note = f'<p class="news-label">点评 Note：{esc(r.get("note_zh", ""))} · {esc(r.get("note_en", ""))}</p>'
+        tag = f'<p class="card-tag">精选于 Curated on {esc(r.get("added", updated))}</p>'
+        items.append(f"""
+    <div class="news-item">
+        <h3 class="news-title">{rank}{link}</h3>
+        <p class="news-body">{en}</p>
+        {zh_html}
+        <p class="repo-meta">{meta}</p>
+        {note}
+        {tag}
+    </div>""")
+    return f"""<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GitHub 高分精选｜Curated Classics</title><style>{CSS}</style></head>
+<body><div class="container">
+<nav class="site-nav-lite"><a href="../index.html" class="nav-back">← 首页 / Index</a><span class="nav-date">Updated {updated}</span></nav>
+<h1 class="doc-title">GitHub 高分精选｜<span>Curated Classics</span></h1>
+<p class="doc-date">{nav_date} 更新 · 人工精选高分仓库 · Curated high-star repos</p>
+<div class="divider"></div>
+<div class="section-block">
+  <h2 class="section-header">高分精选 <span class="en">Curated Classics</span></h2>
+  {intro}
+  {''.join(items)}
+</div>
+<div class="footer-block">
+  <p>GitHub 高分精选 · 人工精选 · 数据来自 GitHub · 中英双语</p>
+  <p>人工挑选 Human-curated · 更新时间 Last updated：{updated} · <a href="https://github.com/trending" target="_blank">数据来源 Source：github.com/trending</a></p>
+</div>
+</div></body></html>"""
+
+
 def render_index(daily, weekly_stem, week_dailies):
     dailies = sorted(glob.glob(str(DATA / "daily" / "*.json")))
     weeklies = sorted(glob.glob(str(DATA / "weekly" / "*.json")))
@@ -273,6 +318,12 @@ def render_index(daily, weekly_stem, week_dailies):
 <div class="section-block">
   <h2 class="section-header">最新周报 <span class="en">Latest Weekly</span></h2>
   <div class="news-item"><p class="news-body"><a class="repo-link" href="weekly/{esc(weekly_stem)}.html" style="font-size:18px">→ 打开本周周报 / Open weekly report</a></p></div>
+</div>
+<div class="divider"></div>
+<div class="section-block">
+  <h2 class="section-header">高分精选 <span class="en">Curated Classics</span></h2>
+  <div class="news-item"><p class="news-body"><a class="repo-link" href="classics/index.html" style="font-size:18px">→ 打开高分精选 / Open curated classics</a></p>
+  <p class="card-tag">人工精选高分仓库 · 中英双语 · Human-curated high-star repos</p></div>
 </div>
 <div class="divider"></div>
 <div class="section-block">
@@ -300,6 +351,7 @@ def main():
         return
     (SITE / "daily").mkdir(parents=True, exist_ok=True)
     (SITE / "weekly").mkdir(parents=True, exist_ok=True)
+    (SITE / "classics").mkdir(parents=True, exist_ok=True)
 
     (SITE / "daily" / f"{daily['date']}.html").write_text(render_daily(daily), encoding="utf-8")
 
@@ -308,6 +360,12 @@ def main():
         weekly_files = sorted(glob.glob(str(DATA / "weekly" / "*.json")))
         weekly_stem = Path(weekly_files[-1]).stem
         (SITE / "weekly" / f"{weekly_stem}.html").write_text(render_weekly(week_dailies, weekly), encoding="utf-8")
+
+    classics_file = DATA / "classics.json"
+    if classics_file.exists():
+        classics = json.load(open(classics_file, encoding="utf-8"))
+        (SITE / "classics" / "index.html").write_text(render_classics(classics), encoding="utf-8")
+        print("  ", SITE / "classics" / "index.html")
 
     (SITE / "index.html").write_text(render_index(daily, weekly_stem, week_dailies), encoding="utf-8")
     print("生成完成：")

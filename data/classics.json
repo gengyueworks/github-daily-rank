@@ -1,0 +1,62 @@
+{
+  "updated_at": "2026-08-14",
+  "intro_zh": "精选 GitHub 高分项目：不追当日热榜，只收真正经得起用的好东西。每个项目都值得花一个下午研究。",
+  "intro_en": "Curated high-star GitHub projects — not today's hype, but tools that earn their stars. Each one is worth an afternoon.",
+  "repos": [
+    {
+      "full_name": "Panniantong/Agent-Reach",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "stars": 71487,
+      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, Xiaohongshu and more — one-click access, zero API fees, self-healing routing.",
+      "description_zh": "给 AI 智能体装上「全网眼睛」：Twitter、Reddit、YouTube、GitHub、B 站、小红书等平台一键读取与搜索，零 API 费用，路由自愈。",
+      "category": "Agent / 情报",
+      "note_zh": "智能体不再被困在笼子里，整个互联网直接变成它的数据源。情报战时代真正落地的基础设施。",
+      "note_en": "Agents are no longer locked in a cage — the whole internet becomes their data source.",
+      "added": "2026-08-14"
+    },
+    {
+      "full_name": "Leonxlnx/taste-skill",
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "stars": 76316,
+      "description": "Taste-Skill — gives your AI good taste. Stops the AI from generating boring, generic slop UI. Forced layout, typography, motion and density upgrades.",
+      "description_zh": "给 AI 装上「审美品味」：强制升级布局、字体、动效与密度，告别千篇一律的塑料感界面。",
+      "category": "前端 / 设计",
+      "note_zh": "前端生产力质变——AI 终于能直接产出有设计感的作品，而不是模板味十足的页面。",
+      "note_en": "A leap for frontend productivity — AI finally ships tasteful work instead of templated pages.",
+      "added": "2026-08-14"
+    },
+    {
+      "full_name": "calesthio/OpenMontage",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "stars": 47999,
+      "description": "World's first open-source, agentic video production system. 12 production pipelines + 52 tools. Describe a scene, and the agent researches, writes, generates assets and edits.",
+      "description_zh": "全球首个开源的智能体视频制作系统：12 条流水线 + 52 种工具，一句话描述，智能体自己研究、写脚本、生成素材、剪辑出片。",
+      "category": "视频 / 创作",
+      "note_zh": "一个人顶整个视频团队——从脚本到成片全自动，创作者的生产力被重新定义。",
+      "note_en": "One person replaces a whole video team — from script to final cut, fully automated.",
+      "added": "2026-08-14"
+    },
+    {
+      "full_name": "microsoft/markitdown",
+      "url": "https://github.com/microsoft/markitdown",
+      "stars": 173628,
+      "description": "Python tool for converting files and office documents to Markdown. PDF, Word, PPT, Excel, audio and video — clean Markdown out, built for LLM ingestion.",
+      "description_zh": "微软出品的文档预处理神器：PDF / Word / PPT / Excel / 音视频一键转成干净的 Markdown，专为喂给大模型设计。",
+      "category": "开发工具",
+      "note_zh": "智能体吃料不再需要手动清洗——文档预处理层的事实标配，谁都绕不开。",
+      "note_en": "Agents no longer need manual data cleaning — the de-facto standard preprocessing layer.",
+      "added": "2026-08-14"
+    },
+    {
+      "full_name": "DeusData/codebase-memory-mcp",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "stars": 38855,
+      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph, so agents never re-read the project from scratch.",
+      "description_zh": "高性能代码智能 MCP 服务器：把整个代码库索引成持久知识图谱，智能体再也不用每次从头「读」项目。",
+      "category": "Agent / 开发",
+      "note_zh": "长期项目记忆终于有了真正可用的基础设施——大项目协作的体验质变。",
+      "note_en": "Long-term project memory finally has real infrastructure — a step change for large codebases.",
+      "added": "2026-08-14"
+    }
+  ]
+}
