@@ -12,7 +12,8 @@
       "category": "Agent / 情报",
       "note_zh": "智能体不再被困在笼子里，整个互联网直接变成它的数据源。情报战时代真正落地的基础设施。",
       "note_en": "Agents are no longer locked in a cage — the whole internet becomes their data source.",
-      "added": "2026-08-14"
+      "added": "2026-08-14",
+      "script_zh": "这个项目能给你的 AI 智能体装上一双看懂全网的眼睛。不管是推特、小红书、B站还是 GitHub，它都能一键接入，让 AI 直接读取和搜索最新内容，彻底解决数据获取难的问题。最牛的是，你完全不需要付昂贵的 API 费用，而且它自带自动修复路由，网页改版了也难不倒它，稳定又省钱，简直是开发 AI 应用的刚需神器。"
     },
     {
       "full_name": "Leonxlnx/taste-skill",
@@ -23,7 +24,8 @@
       "category": "前端 / 设计",
       "note_zh": "前端生产力质变——AI 终于能直接产出有设计感的作品，而不是模板味十足的页面。",
       "note_en": "A leap for frontend productivity — AI finally ships tasteful work instead of templated pages.",
-      "added": "2026-08-14"
+      "added": "2026-08-14",
+      "script_zh": "这个项目能给你的 AI 加上“审美滤镜”。平时用 AI 生成前端页面，是不是总觉得界面特别土、特别敷衍？它就是来解决这个痛点的。只要把它接进你的 AI 工作流，它就会强制给排版、动效和布局做全面升级。最厉害的是，它能把原本千篇一律的塑料感界面，瞬间变成像大厂设计师手作的高级感设计。难怪在 GitHub 上拿了七万多颗星，想让 AI 做出好看的界面，用它就对了。"
     },
     {
       "full_name": "calesthio/OpenMontage",
@@ -34,7 +36,8 @@
       "category": "视频 / 创作",
       "note_zh": "一个人顶整个视频团队——从脚本到成片全自动，创作者的生产力被重新定义。",
       "note_en": "One person replaces a whole video team — from script to final cut, fully automated.",
-      "added": "2026-08-14"
+      "added": "2026-08-14",
+      "script_zh": "这个项目是全球首个开源的 AI 智能体视频制作系统。你只要用大白话描述一个画面，它自己就会去查资料、写脚本、生成素材，甚至连最后的剪辑都全自动搞定。它最牛的是内置了 12 条专业流水线和 52 个工具，直接把视频生产力拉满。GitHub 上已经狂揽快五万颗星，想做视频又嫌麻烦的，闭眼冲它就完事了。"
     },
     {
       "full_name": "microsoft/markitdown",
@@ -45,7 +48,8 @@
       "category": "开发工具",
       "note_zh": "智能体吃料不再需要手动清洗——文档预处理层的事实标配，谁都绕不开。",
       "note_en": "Agents no longer need manual data cleaning — the de-facto standard preprocessing layer.",
-      "added": "2026-08-14"
+      "added": "2026-08-14",
+      "script_zh": "这个项目是微软开源的文档转 Markdown 神器。平时手里的 PDF、Word、PPT 甚至音视频，格式又杂又乱，根本没法直接喂给大模型。用它就能一键把这些复杂文件，全都转换成排版干净的 Markdown。它最厉害的地方在于，不仅能完美提取表格和图片，连语音都能转成文字，直接解决了 AI 吞数据的痛点，简直是做 RAG 和知识库的绝配。"
     },
     {
       "full_name": "DeusData/codebase-memory-mcp",
@@ -56,7 +60,20 @@
       "category": "Agent / 开发",
       "note_zh": "长期项目记忆终于有了真正可用的基础设施——大项目协作的体验质变。",
       "note_en": "Long-term project memory finally has real infrastructure — a step change for large codebases.",
-      "added": "2026-08-14"
+      "added": "2026-08-14",
+      "script_zh": "这个项目是一个超强的代码智能 MCP 服务。它能把你的整个代码库打包，直接变成一个可以持久保存的知识图谱。平时用 AI 辅助写代码，最头疼的就是 AI 每次都要重新扫描一遍项目，又慢又费 Token。有了它，AI 就像长了长期记忆，一次索引，终身记住。它最大的亮点就是性能极高，而且在 GitHub 上已经拿了快四万颗星。想让你的 AI 助手瞬间看懂百万行代码，闭眼冲它就对了。"
+    },
+    {
+      "full_name": "ginobefun/BestBlogs",
+      "url": "https://github.com/ginobefun/BestBlogs",
+      "stars": 3980,
+      "description": "bestblogs.dev - 汇集顶级编程、人工智能、产品、科技文章，大语言模型摘要评分辅助阅读，探索编程和技术未来",
+      "description_zh": "汇集顶级编程、AI、产品与科技文章的阅读站：内置 400+ 精选 RSS 信息源，大模型自动摘要评分，辅助高效阅读。",
+      "category": "阅读 / 信息源",
+      "note_zh": "信息焦虑终结者：把散落各处的优质技术内容收进一个情报总局，每天只看一手猛料。",
+      "note_en": "Ends information anxiety — 400+ curated RSS feeds, one smart reading hub.",
+      "added": "2026-08-14",
+      "script_zh": "这个项目是一个帮你筛选全网顶级科技和AI文章的开源阅读平台。现在网上信息太杂，根本看不完，它直接用大模型帮你把文章提炼出摘要，还做了智能评分。你每天只要花几分钟，就能刷完最精华的技术干货。最酷的是，它能帮你轻松跟上最前沿的技术趋势，省时又省力，简直是技术人充电的必备神器，赶紧去开源社区瞧瞧吧！"
     }
   ]
 }

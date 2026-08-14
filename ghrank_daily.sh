@@ -18,12 +18,15 @@ echo "=== $(date '+%Y-%m-%d %H:%M:%S') 开始 ==="
 # 2) 注入中文翻译（人工表优先；新仓库走本机 8317 网关自动翻译）
 "$PY" inject_zh.py --auto
 
-# 3) 生成站点
+# 3) 为仓库生成「一分钟逐字稿」（本机 8317 网关，缓存复用）
+"$PY" gen_scripts.py
+
+# 4) 生成站点
 "$PY" build.py
 
-# 4) 提交 data 快照 + zh_cache 到 main（自动翻译缓存持久化）
+# 5) 提交 data 快照 + zh_cache + script_cache 到 main（缓存持久化）
 GIT_EDITOR=true git pull --rebase --autostash origin main 2>&1 | tail -1 || true
-git add data zh_cache.json
+git add data zh_cache.json script_cache.json
 if ! git diff --cached --quiet; then
   GIT_EDITOR=true git -c user.name="gengyueworks-bot" -c user.email="gengyueworks@users.noreply.github.com" commit -m "daily: update trending data $(date +%Y-%m-%d)" --quiet
 fi
@@ -31,7 +34,7 @@ GIT_EDITOR=true git pull --rebase --autostash origin main 2>&1 | tail -1 || true
 git push origin main 2>&1 | tail -2
 echo "✓ data 已提交推送"
 
-# 5) 部署 site/ 到 gh-pages
+# 6) 部署 site/ 到 gh-pages
 bash deploy_ghpages.sh
 
 echo "=== $(date '+%Y-%m-%d %H:%M:%S') 完成 ==="

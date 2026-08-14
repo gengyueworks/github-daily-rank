@@ -78,6 +78,9 @@ body {
 .repo-meta .lang-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin: 0 4px 0 2px; }
 .repo-meta .cat { color: var(--klein); font-weight: 600; }
 .riser-note { font-size: 12.5px; color: var(--text-light); margin-top: 6px; }
+.script-block { font-size: 13px; color: var(--text-dark); line-height: 1.75; background: #F2F5FF; border-left: 3px solid var(--klein); border-radius: 6px; padding: 10px 14px; margin-bottom: 10px; }
+.script-tag { font-size: 10px; color: #fff; background: var(--klein); border-radius: 4px; padding: 1px 6px; margin-right: 8px; font-family: 'Inter'; vertical-align: middle; white-space: nowrap; }
+.script-text { color: var(--text-dark); }
 .archive { columns: 2; column-gap: 24px; }
 .archive a { display: block; color: var(--klein); text-decoration: none; padding: 3px 0; font-size: 14px; }
 .archive a:hover { text-decoration: underline; }
@@ -119,6 +122,15 @@ def weekday_cn(dt: date) -> str:
     return ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"][dt.weekday()]
 
 
+def script_block(r):
+    """一分钟口播稿渲染片段（中文，120-180 字）。无 script_zh 字段时返回空串，兼容旧数据。"""
+    s = r.get("script_zh")
+    if not s:
+        return ""
+    return (f'<div class="script-block"><span class="script-tag">一分钟讲解 1-min</span>'
+            f'<span class="script-text">{esc(s)}</span></div>')
+
+
 def repo_item(r, show_riser=False):
     rank = f'<span class="rank">#{r["rank"]}</span>'
     link = f'<a class="repo-link" href="{esc(r["url"])}" target="_blank">{esc(r["full_name"])}</a>'
@@ -139,6 +151,7 @@ def repo_item(r, show_riser=False):
         <h3 class="news-title">{rank}{link}</h3>
         <p class="news-body">{en}</p>
         {zh_html}
+        {script_block(r)}
         <p class="repo-meta">{meta}</p>
         {riser}
         {tag}
@@ -272,6 +285,7 @@ def render_classics(classics):
         <h3 class="news-title">{rank}{link}</h3>
         <p class="news-body">{en}</p>
         {zh_html}
+        {script_block(r)}
         <p class="repo-meta">{meta}</p>
         {note}
         {tag}
