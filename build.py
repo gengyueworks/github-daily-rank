@@ -78,15 +78,55 @@ body {
 .repo-meta .lang-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin: 0 4px 0 2px; }
 .repo-meta .cat { color: var(--klein); font-weight: 600; }
 .riser-note { font-size: 13px; color: var(--text-light); margin-top: 8px; }
-.script-block { font-size: 15px; color: var(--text-dark); line-height: 1.8; background: #EEF2FF; border-left: 3px solid var(--klein); border-radius: 8px; padding: 14px 18px; margin: 16px 0; }
-.script-tag { font-size: 11px; color: #fff; background: var(--klein); border-radius: 4px; padding: 2px 7px; margin-right: 8px; font-family: 'Inter'; vertical-align: middle; white-space: nowrap; }
-.script-text { color: var(--text-dark); }
+.script-block { font-size: 15.5px; color: var(--ink-soft, var(--text-mid)); line-height: 1.8; margin: 0 0 14px; }
+.script-tag { font-size: 11px; color: #fff; background: var(--klein); border-radius: 4px; padding: 1px 7px; margin-right: 8px; font-family: 'Inter'; vertical-align: middle; white-space: nowrap; }
 .archive { columns: 2; column-gap: 24px; }
 .archive a { display: block; color: var(--klein); text-decoration: none; padding: 3px 0; font-size: 15px; }
 .archive a:hover { text-decoration: underline; }
 
 /* classics 高分精选页专属：阅读型页面加宽容器，提升行宽舒适度 */
 body.classics .container { max-width: 860px; }
+
+/* ---- classics 高分精选页：严格对齐 ainews 排版体系 ----
+   红蓝配比：蓝为主（标题/■ 标签/强调/链接/footer 3px 蓝顶线），
+   红仅限数字点缀（.num，JetBrains Mono 红色数字），蓝:红 ≈ 10:1。
+   全部限定 body.classics，不影响 daily/weekly。 */
+body.classics {
+  --paper: #FFFFFF; --ink: #0E0E10; --ink-soft: #3A3A3E;
+  --gray: #6B6B70; --gray-light: #9CA3AF; --line: #E8E8EC;
+}
+body.classics .masthead { margin-bottom: 36px; }
+body.classics .mast-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--klein); font-weight: 600; margin-bottom: 14px; }
+body.classics .mast-title { font-size: 44px; font-weight: 900; letter-spacing: -1.5px; line-height: 1.05; color: var(--klein); margin-bottom: 16px; text-wrap: balance; }
+body.classics .mast-rule { height: 3px; background: var(--klein); width: 100%; margin: 0 0 10px; }
+body.classics .mast-meta { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--gray); display: flex; gap: 14px; flex-wrap: wrap; }
+body.classics .mast-meta .issue { color: var(--klein); font-weight: 600; }
+body.classics .mast-lede { font-size: 16px; line-height: 1.7; color: var(--ink-soft); margin-top: 22px; padding-left: 16px; border-left: 3px solid var(--klein); }
+body.classics .sec-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gray-light); margin-bottom: 6px; }
+body.classics .sec-title { font-size: 15px; font-weight: 700; color: var(--klein); letter-spacing: 1px; margin-bottom: 24px; display: inline-block; }
+body.classics .sec-title::before { content: "\25AE"; color: var(--klein); margin-right: 8px; font-size: 13px; }
+body.classics .item { margin-bottom: 52px; }
+body.classics .item:last-child { margin-bottom: 0; }
+body.classics .dateline { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gray); letter-spacing: 0.5px; margin-bottom: 10px; }
+body.classics .dateline .src { color: var(--klein); font-weight: 600; }
+body.classics .item-title { font-size: 21px; font-weight: 700; line-height: 1.4; margin-bottom: 12px; text-wrap: balance; }
+body.classics .item-title a { color: var(--klein); text-decoration: none; }
+body.classics .item-title a:hover { text-decoration: underline; }
+body.classics .body { font-size: 15.5px; color: var(--ink-soft); line-height: 1.8; }
+body.classics .body p { margin-bottom: 14px; }
+body.classics .body p:last-child { margin-bottom: 0; }
+body.classics .body .num { font-family: 'JetBrains Mono', monospace; color: var(--accent); font-weight: 600; }
+body.classics .body .tag { display: inline-block; font-size: 11px; font-family: 'JetBrains Mono', monospace; color: var(--gray); background: var(--line); padding: 1px 8px; border-radius: 3px; margin-right: 4px; }
+body.classics .src-line { font-size: 13px; color: var(--gray); margin-top: 10px; font-family: 'JetBrains Mono', monospace; line-height: 1.7; }
+body.classics .src-line a { color: var(--klein); text-decoration: none; }
+body.classics .src-line a:hover { text-decoration: underline; }
+body.classics .src-line .cat { color: var(--klein); font-weight: 600; }
+body.classics .star-btn { display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #fff; background: var(--klein); padding: 2px 9px; border-radius: 4px; text-decoration: none; vertical-align: middle; }
+body.classics .star-btn:hover { background: var(--klein-bright); }
+body.classics .footer { margin-top: 48px; padding-top: 20px; border-top: 3px solid var(--klein); font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--gray); line-height: 1.8; }
+body.classics .footer .big { color: var(--ink); font-weight: 600; }
+body.classics .footer a { color: var(--klein); text-decoration: none; }
+body.classics .footer a:hover { text-decoration: underline; }
 """
 
 CAT_EN = {
@@ -126,12 +166,13 @@ def weekday_cn(dt: date) -> str:
 
 
 def script_block(r):
-    """一分钟口播稿渲染片段（中文，120-180 字）。无 script_zh 字段时返回空串，兼容旧数据。"""
+    """一分钟口播稿渲染片段（中文，120-180 字）。无 script_zh 字段时返回空串，兼容旧数据。
+    ainews 风格：融入正文段落，无底纹大块，klein 蓝底白字小徽章标识。"""
     s = r.get("script_zh")
     if not s:
         return ""
-    return (f'<div class="script-block"><span class="script-tag">一分钟讲解 1-min</span>'
-            f'<span class="script-text">{esc(s)}</span></div>')
+    return (f'<p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>'
+            f'{esc(s)}</p>')
 
 
 def repo_item(r, show_riser=False):
@@ -268,47 +309,56 @@ def render_weekly(week_dailies, weekly):
 
 
 def render_classics(classics):
+    """高分精选页 · 严格对齐 ainews 排版体系（蓝主红点缀，红仅限数字 .num）。
+    结构：masthead → mast-lede 双语 intro → sec-title → item（dateline / item-title 仓库链接
+    / body：英文简介 + 译标签中文 + 逐字稿 / src-line：★ 数字 + 分类 + Star 按钮 / 点评行）→ footer。"""
     updated = classics["updated_at"]
     y, m, d = updated.split("-")
     nav_date = f"{y}年{m}月{d}日"
-    intro = (f'<p class="intro-text">{esc(classics["intro_zh"])}</p>'
-             f'<p class="intro-text">{esc(classics["intro_en"])}</p>')
+    n = len(classics["repos"])
+    lede = (f'<div class="mast-lede">{esc(classics["intro_zh"])}</div>'
+            f'<div class="mast-lede">{esc(classics["intro_en"])}</div>')
     items = []
     for i, r in enumerate(classics["repos"], start=1):
-        rank = f'<span class="rank">#{i}</span>'
-        link = f'<a class="repo-link" href="{esc(r["url"])}" target="_blank">{esc(r["full_name"])}</a>'
-        en = esc(r["description"])
+        stars_url = f'{r["url"]}/stargazers'
         zh = r.get("description_zh")
-        zh_html = f'<p class="news-body zh"><span class="tr">译</span>{esc(zh)}</p>' if zh else ""
-        meta = f'★ {r["stars"]:,} stars · <span class="cat">{esc(r["category"])}</span>'
-        note = f'<p class="news-label">点评 Note：{esc(r.get("note_zh", ""))} · {esc(r.get("note_en", ""))}</p>'
-        tag = f'<p class="card-tag">精选于 Curated on {esc(r.get("added", updated))}</p>'
+        zh_html = f'<p><span class="tag">译</span>{esc(zh)}</p>' if zh else ""
+        note_zh = r.get("note_zh", "")
+        note_en = r.get("note_en", "")
+        note = f'<div class="src-line">点评 Note：{esc(note_zh)}{(" · " + esc(note_en)) if note_en else ""}</div>'
         items.append(f"""
-    <div class="news-item">
-        <h3 class="news-title">{rank}{link}</h3>
-        <p class="news-body">{en}</p>
-        {zh_html}
-        {script_block(r)}
-        <p class="repo-meta">{meta}</p>
+    <div class="item">
+        <div class="dateline">#<span class="src">{i}</span> · {esc(r["category"])} · 收录于 {esc(r.get("added", updated))}</div>
+        <div class="item-title"><a href="{esc(r["url"])}" target="_blank">{esc(r["full_name"])}</a></div>
+        <div class="body">
+            <p>{esc(r["description"])}</p>
+            {zh_html}
+            {script_block(r)}
+        </div>
+        <div class="src-line">★ <span class="num">{r["stars"]:,}</span> stars · <span class="cat">{esc(r["category"])}</span> · <a class="star-btn" href="{esc(stars_url)}" target="_blank">★ Star 这个项目</a></div>
         {note}
-        {tag}
     </div>""")
     return f"""<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>GitHub 高分精选｜Curated Classics</title><style>{CSS}</style></head>
 <body class="classics"><div class="container">
 <nav class="site-nav-lite"><a href="../index.html" class="nav-back">← 首页 / Index</a><span class="nav-date">Updated {updated}</span></nav>
-<h1 class="doc-title">GitHub 高分精选｜<span>Curated Classics</span></h1>
-<p class="doc-date">{nav_date} 更新 · 人工精选高分仓库 · Curated high-star repos</p>
+<div class="masthead">
+  <div class="mast-eyebrow">Curated Classics</div>
+  <h1 class="mast-title">GitHub 高分精选</h1>
+  <div class="mast-rule"></div>
+  <div class="mast-meta"><span class="issue">{nav_date} 更新</span><span>人工精选 {n} 个仓库 · {n} human-curated repos</span></div>
+</div>
+{lede}
 <div class="divider"></div>
 <div class="section-block">
-  <h2 class="section-header">高分精选 <span class="en">Curated Classics</span></h2>
-  {intro}
+  <div class="sec-eyebrow">Curated</div>
+  <div class="sec-title">高分精选</div>
   {''.join(items)}
 </div>
-<div class="footer-block">
-  <p>GitHub 高分精选 · 人工精选 · 数据来自 GitHub · 中英双语</p>
-  <p>人工挑选 Human-curated · 更新时间 Last updated：{updated} · <a href="https://github.com/trending" target="_blank">数据来源 Source：github.com/trending</a></p>
+<div class="footer">
+  <p><span class="big">GitHub 高分精选</span> · 人工精选 · 数据来自 GitHub · 中英双语</p>
+  <p>Human-curated · Last updated {updated} · <a href="https://github.com/trending" target="_blank">Source: github.com/trending</a></p>
 </div>
 </div></body></html>"""
 
