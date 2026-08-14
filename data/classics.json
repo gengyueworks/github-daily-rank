@@ -73,7 +73,19 @@
       "note_zh": "信息焦虑终结者：把散落各处的优质技术内容收进一个情报总局，每天只看一手猛料。",
       "note_en": "Ends information anxiety — 400+ curated RSS feeds, one smart reading hub.",
       "added": "2026-08-14",
-      "script_zh": "这个项目是一个帮你筛选全网顶级科技和AI文章的开源阅读平台。现在网上信息太杂，根本看不完，它直接用大模型帮你把文章提炼出摘要，还做了智能评分。你每天只要花几分钟，就能刷完最精华的技术干货。最酷的是，它能帮你轻松跟上最前沿的技术趋势，省时又省力，简直是技术人充电的必备神器，赶紧去开源社区瞧瞧吧！"
+        "script_zh": "这个项目是一个帮你筛选全网顶级科技和AI文章的开源阅读平台。现在网上信息太杂，根本看不完，它直接用大模型帮你把文章提炼出摘要，还做了智能评分。你每天只要花几分钟，就能刷完最精华的技术干货。最酷的是，它能帮你轻松跟上最前沿的技术趋势，省时又省力，简直是技术人充电的必备神器，赶紧去开源社区瞧瞧吧！"
+    },
+    {
+      "full_name": "kepano/obsidian-skills",
+      "url": "https://github.com/kepano/obsidian-skills",
+      "stars": 46064,
+      "description": "Agent skills for Obsidian. Teach your agent to use Obsidian CLI and open formats including Markdown, Bases, JSON Canvas.",
+      "description_zh": "给 Obsidian 用的 Agent Skills：教你的 AI Agent 使用 Obsidian CLI，以及 Markdown、Bases、JSON Canvas 等开放格式。",
+      "category": "Agent / 笔记",
+      "note_zh": "Obsidian 创始人亲自下场给自家工具写 Agent 说明书——值得收的不是技术含量，是「让 AI 用好我的工具」这个态度。最妙的是 topics 里直接挂着 hermes / openclaw / opencode / codex，全是你天天在用的 Agent 生态。",
+      "note_en": "Obsidian's own founder wrote the Agent skills for his tool — what's worth keeping isn't the tech but the stance: make AI use my tool well. Best part: its topics list hermes / openclaw / opencode / codex — your daily Agent stack.",
+      "added": "2026-08-14",
+      "script_zh": "这个仓库是 Obsidian 的老板 Steph Ango（也就是 kepano）亲自写的。一般人觉得「让 AI 用好我的软件」那是用户的事，他偏不——创始人自己下场，给 AI 写了一套怎么用 Obsidian 的说明书。里面有 obsidian-markdown（写出 Obsidian 风味的内链和 callout）、obsidian-bases（自动生成数据库视图）、json-canvas（画白板）、defuddle（过滤网页广告只留正文）等几个 Skill。最戳你的是，它的 topics 里直接挂着 hermes、openclaw、opencode、codex——这几个全是你天天在用的 Agent 工具，等于这套 Skill 拿过来就能塞进你自己的工具链，几乎零摩擦。star 数几天就冲到四万六，想让 AI 真正懂你的笔记库，这个闭眼收。"
     }
   ]
 }
