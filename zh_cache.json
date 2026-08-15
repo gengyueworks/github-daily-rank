@@ -8,5 +8,14 @@
   "3b1b/manim": "用于制作数学科普视频的动画引擎",
   "lightningpixel/modly": "基于本地 AI 的图像转 3D 模型桌面应用，完全在您的 GPU 上运行",
   "PrimeIntellect-ai/prime-agent": "用于编程工作流和长期自主任务的自我改进型 RLM 智能体。",
-  "TapXWorld/ChinaTextbook": "中小学及大学PDF教材合集"
+  "TapXWorld/ChinaTextbook": "中小学及大学PDF教材合集",
+  "citrolabs/ego-lite": "专为 AI Agent 运行浏览器自动化打造的最快浏览器。无需打扰您，即可与 Codex 或 Claude Code 等 AI Agent 共享已登录的浏览器状态。零成本，零配置。",
+  "github/spec-kit": "💫 帮助你快速上手规范驱动开发的工具包",
+  "cursor/plugins": "Cursor 插件规范及官方插件",
+  "rustdesk/rustdesk": "一款支持自托管的开源远程桌面软件，可作为 TeamViewer 的替代方案。",
+  "OpenCut-app/OpenCut": "CapCut 的开源替代品",
+  "ToolJet/ToolJet": "ToolJet 是 ToolJet AI 的开源基础——一个用于构建内部工具、仪表盘、业务应用、工作流和 AI 智能体的企业级应用生成平台 🚀",
+  "denoland/celld": "自托管分布式 Durable Objects",
+  "deepseek-ai/awesome-deepseek-agent": "精选指南合集，系统介绍如何将 DeepSeek 模型接入各类主流 AI 智能体与编程助手工具（Claude Code、Codex、OpenCode 等），涵盖安装、配置与首次运行，几分钟即可上手。",
+  "pingdotgg/t3code": "T3 Code 是一个「智能体 harness 控制面板」，用于统一管理、调度与监控 AI 编程智能体的运行环境。"
 }
