@@ -1,7 +1,7 @@
 {
   "since": "daily",
   "date": "2026-08-15",
-  "fetched_at": "2026-08-15T08:52:18",
+  "fetched_at": "2026-08-15T09:14:20",
   "count": 17,
   "repos": [
     {
@@ -13,13 +13,14 @@
       "description": "29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop.",
       "language": "HTML",
       "language_color": "#e34c26",
-      "stars": 17249,
-      "forks": 1028,
+      "stars": 17273,
+      "forks": 1031,
       "period_stars": 3646,
       "period_label": "今日",
       "topics": [],
       "category": "前端 / Web",
-      "description_zh": "面向 Claude Code 的 29 种编辑型图表。纯 HTML + SVG，自包含。无阴影、拒绝 Mermaid 流水账。"
+      "description_zh": "面向 Claude Code 的 29 种编辑型图表。纯 HTML + SVG，自包含。无阴影、拒绝 Mermaid 流水账。",
+      "script_zh": "这个项目是一个专门给 AI 准备的图表设计模板库。\n\n很多人用 AI 生成图表，出来的效果总是乱七八糟。\n\n有了它，你直接把模板喂给 Claude。\n\n它就能瞬间吐出印刷级别的矢量图。\n\n最棒的是它完全没有那种廉价的阴影和杂乱的线条。\n\n二十九种编辑级排版直接套用，改改字就能上汇报。\n\n难怪它在 GitHub 上一下拿了一万多颗星！"
     },
     {
       "rank": 2,
@@ -30,13 +31,14 @@
       "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 5605,
+      "stars": 5617,
       "forks": 373,
       "period_stars": 662,
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "面向微型设备的 14MB 基础模型：手机、可穿戴、智能家居与机器人。"
+      "description_zh": "面向微型设备的 14MB 基础模型：手机、可穿戴、智能家居与机器人。",
+      "script_zh": "这个项目是一个只有十四兆大小的端侧大模型。\n    它可以直接装在你的智能手表、手机或者扫地机器人里。\n\n    哪怕不联网，它也能在本地帮你处理各种复杂的AI指令。\n    这直接解决了设备离线就变砖的痛点。\n\n    最牛的是它体积小到不可思议，却完全不影响性能。\n    只要极低的算力就能跑起来，帮你省下大笔的云端服务器费用。\n    想让手里的智能硬件秒变聪明，闭眼冲它就对了！"
     },
     {
       "rank": 3,
@@ -47,13 +49,14 @@
       "description": "holehe allows you to check if the mail is used on different sites like twitter, instagram and will retrieve information on sites with the forgotten password function.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 12849,
+      "stars": 12855,
       "forks": 1717,
       "period_stars": 427,
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "holehe 可以检测指定邮箱是否在 Twitter、Instagram 等网站上注册，并利用找回密码功能获取相关网站上的信息。"
+      "description_zh": "holehe 可以检测指定邮箱是否在 Twitter、Instagram 等网站上注册，并利用找回密码功能获取相关网站上的信息。",
+      "script_zh": "这个项目是一个超强悍的邮箱反查神器。\n\n只要输入一个邮箱地址，它就能立刻帮你查出这个邮箱注册过哪些网站。\n像微博、推特或者各类社交平台，全都逃不过它的法眼。\n\n最厉害的是，它利用了网站的找回密码机制，查得又快又准。\n无论你是想排查自己的隐私泄露，还是做安全测试，用它都省时省力。\n难怪它在 GitHub 上拿了一万多个星，真的太实用了！"
     },
     {
       "rank": 4,
@@ -64,13 +67,14 @@
       "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
       "language": "Rust",
       "language_color": "#dea584",
-      "stars": 3034,
+      "stars": 3038,
       "forks": 306,
       "period_stars": 436,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "Macro 是面向团队的 unified 工作空间：邮件、聊天、文档、任务、智能体、通话与 CRM，通过共享 AI 记忆以 @ 链接串在一起。"
+      "description_zh": "Macro 是面向团队的 unified 工作空间：邮件、聊天、文档、任务、智能体、通话与 CRM，通过共享 AI 记忆以 @ 链接串在一起。",
+      "script_zh": "这个项目是一个把团队所有协作工具缝合在一起的超级工作台。\n不管是收邮件、发聊天、写文档还是做管理，你都能在同一个界面里搞定。\n\n最酷的是，它用 AI 把所有数据都打通了。\n你只要用艾特符号，就能把邮件、任务和文档直接串联起来。\n\n而且 AI 还会共享团队记忆，帮你随时整理上下文。\n再也不用在各种软件里来回切，效率直接拉满！"
     },
     {
       "rank": 5,
@@ -81,13 +85,14 @@
       "description": "SpiderFoot automates OSINT for threat intelligence and mapping your attack surface.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 20946,
+      "stars": 20949,
       "forks": 3341,
       "period_stars": 293,
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "SpiderFoot 自动化 OSINT（开源情报），用于威胁情报与攻击面测绘。"
+      "description_zh": "SpiderFoot 自动化 OSINT（开源情报），用于威胁情报与攻击面测绘。",
+      "script_zh": "这个项目是一个超强悍的开源网络情报自动收集神器。\n\n只要输入一个域名、IP或者邮箱，它就能自动帮你把目标的网上底细摸得清清楚楚。\n\n比如它能扫出泄露的敏感信息、潜在的安全漏洞，还有关联的社交账号。\n\n最牛的是它内置了上百个数据源，全部自动化运行，省去了你手动去搜集的时间。\n\n不管你是做安全渗透，还是想查查自己的隐私有没有泄露，用它都能省时又省力。\n\n想做网络侦探的兄弟，赶紧去试试吧！"
     },
     {
       "rank": 6,
@@ -98,13 +103,14 @@
       "description": "The fastest browser for AI agents to run browser automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.",
       "language": "JavaScript",
       "language_color": "#f1e05a",
-      "stars": 10366,
+      "stars": 10372,
       "forks": 528,
       "period_stars": 165,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "专为 AI Agent 运行浏览器自动化打造的最快浏览器。无需打扰您，即可与 Codex 或 Claude Code 等 AI Agent 共享已登录的浏览器状态。零成本，零配置。"
+      "description_zh": "专为 AI Agent 运行浏览器自动化打造的最快浏览器。无需打扰您，即可与 Codex 或 Claude Code 等 AI Agent 共享已登录的浏览器状态。零成本，零配置。",
+      "script_zh": "你还在手动给 AI 助手复制 Cookie 吗？\n这个项目是一个专门为 AI 代理设计的超快浏览器。\n\n它能把你已经登录的浏览器状态直接共享给 Claude 这样的 AI。\n让 AI 代替你自动操作网页，而且完全不会打扰到你的正常使用。\n\n最给力的是它完全免费，甚至不需要任何繁琐配置。\n速度极快，直接搞定了 AI 自动化最头疼的登录难题。"
     },
     {
       "rank": 7,
@@ -115,13 +121,14 @@
       "description": "Open-source All in One AI agent workspace. Run any agent — Claude Code, Codex — across your tools (100+ integrations + MCP), apps, browser, and files, with shared memory. Built-in models or BYOK.",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 7290,
+      "stars": 7299,
       "forks": 638,
       "period_stars": 769,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "开源的一站式 AI Agent 工作空间。支持在你的工具（100+ 集成及 MCP）、应用、浏览器和文件之间运行任何 Agent（如 Claude Code、Codex），并共享记忆。内置模型或自带密钥 (BYOK)。"
+      "description_zh": "开源的一站式 AI Agent 工作空间。支持在你的工具（100+ 集成及 MCP）、应用、浏览器和文件之间运行任何 Agent（如 Claude Code、Codex），并共享记忆。内置模型或自带密钥 (BYOK)。",
+      "script_zh": "这个项目是一个开源的 AI Agent 全能工作台。\n\n简单来说，它能把各种 AI 智能体、你电脑里的软件还有网页，全部塞进同一个地方。\n不管你是想写代码还是查资料，它都能跨应用帮你一步搞定。\n\n最厉害的是，它支持上百种工具连接，而且所有 AI 都能共享同一个记忆。\n你既能直接用内置模型，也能自己带 Key 接入，完全免费还开源。\n想让 AI 真正帮你干活的，赶紧去 GitHub 搜搜看吧！"
     },
     {
       "rank": 8,
@@ -132,13 +139,14 @@
       "description": "💫 Toolkit to help you get started with Spec-Driven Development",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 128517,
+      "stars": 128527,
       "forks": 11490,
       "period_stars": 1160,
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "💫 帮助你快速上手规范驱动开发的工具包"
+      "description_zh": "💫 帮助你快速上手规范驱动开发的工具包",
+      "script_zh": "写代码总是改来改去，那你一定要看看这个项目。\n\n它是一个帮你落地“规范驱动开发”的超强工具包。\n\n简单来说，就是让你在动工前先定好规范。\n\n它能自动生成接口代码和测试用例，省去反复沟通的麻烦。\n\n最牛的是，它能保证代码和文档永远同步。\n\n难怪狂斩十二万星，用过就真的回不去了！"
     },
     {
       "rank": 9,
@@ -149,13 +157,14 @@
       "description": "Desktop app to generate 3D models from images or prompt using local AI — runs entirely on your GPU",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 5939,
-      "forks": 603,
+      "stars": 5945,
+      "forks": 604,
       "period_stars": 579,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "基于本地 AI 的图像转 3D 模型桌面应用，完全在您的 GPU 上运行"
+      "description_zh": "基于本地 AI 的图像转 3D 模型桌面应用，完全在您的 GPU 上运行",
+      "script_zh": "这个项目是一个能把普通图片直接变成三维模型的桌面软件。\n你只需要给它一张普通的照片，它就能自动生成可以直接导出的三维模型。\n\n做游戏或者三维设计的朋友，再也不用手动去一点点拉网格了。\n最厉害的是，它完全运行在你自己的本地显卡上。\n\n不用联网，不用付昂贵的云端算力费，隐私也绝对安全。\n这种零门槛、全本地运行的生产力工具，真的非常值得你关注！"
     },
     {
       "rank": 10,
@@ -166,13 +175,14 @@
       "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
       "language": "Go",
       "language_color": "#00ADD8",
-      "stars": 88382,
+      "stars": 88386,
       "forks": 10375,
       "period_stars": 473,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "RAGFlow 是领先的开源检索增强生成（RAG）引擎，将前沿 RAG 与智能体能力融合，为 LLM 打造更优的上下文层。"
+      "description_zh": "RAGFlow 是领先的开源检索增强生成（RAG）引擎，将前沿 RAG 与智能体能力融合，为 LLM 打造更优的上下文层。",
+      "script_zh": "这个项目是一个超强的大模型知识库引擎。\n它能帮你把堆积如山的文档变成AI的智慧大脑。\n\n不管是复杂的PDF表格还是扫描件，它都能精准识别并喂给大模型。\n这就解决了AI胡说八道和找不到重点的痛点。\n\n最厉害的是，它把精准检索和智能体工作流融合在了一起。\n不仅找得准，还能帮你自动执行复杂任务。\n在开源社区火得一塌糊涂，想做企业级AI应用的闭眼冲它就对了！"
     },
     {
       "rank": 11,
@@ -183,13 +193,14 @@
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 2810,
+      "stars": 2812,
       "forks": 227,
       "period_stars": 41,
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "Cursor 插件规范及官方插件"
+      "description_zh": "Cursor 插件规范及官方插件",
+      "script_zh": "最近火出圈的 AI 编辑器 Cursor 大家都知道吧？\n这个项目就是它的官方插件规范和插件库。\n\n简单来说，它能让你自己开发专属的 AI 插件。\n不管是想接入私有数据，还是想定制工作流，用它都能轻松搞定。\n\n最牛的是它门槛极低，官方还给了一堆现成的模板。\n直接照着改，就能让你的 AI 编程助手变得无比顺手！"
     },
     {
       "rank": 12,
@@ -200,13 +211,14 @@
       "description": "",
       "language": null,
       "language_color": null,
-      "stars": 5704,
+      "stars": 5709,
       "forks": 690,
       "period_stars": 222,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "精选指南合集，系统介绍如何将 DeepSeek 模型接入各类主流 AI 智能体与编程助手工具（Claude Code、Codex、OpenCode 等），涵盖安装、配置与首次运行，几分钟即可上手。"
+      "description_zh": "精选指南合集，系统介绍如何将 DeepSeek 模型接入各类主流 AI 智能体与编程助手工具（Claude Code、Codex、OpenCode 等），涵盖安装、配置与首次运行，几分钟即可上手。",
+      "script_zh": "这个项目是 DeepSeek 官方出品的 AI Agent 宝藏资源库。\n专门解决你想用 DeepSeek 做智能体，却不知道怎么下手的问题。\n\n它把最火的开发框架、工具和实战案例全部打包整理好了。\n不管你想做写代码的助理，还是数据分析师，这里都有现成模板。\n\n亮点是它不仅全是官方筛选的高质量干货，而且更新极快。\n跟着它直接抄作业，你的开发效率能瞬间翻倍！"
     },
     {
       "rank": 13,
@@ -217,13 +229,14 @@
       "description": "Graph-Native Infrastructure for Context and Accountable AI Systems",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 7525,
-      "forks": 779,
+      "stars": 7530,
+      "forks": 781,
       "period_stars": 1181,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "面向上下文与可问责 AI 系统的图原生基础设施。"
+      "description_zh": "面向上下文与可问责 AI 系统的图原生基础设施。",
+      "script_zh": "这个项目是一个把知识图谱和 AI 大模型深度结合的开源底层框架。\n简单来说，它能帮你的 AI 记住前因后果，还能让 AI 的回答变得有据可查。\n\n用它开发应用，AI 就不会再胡说八道了。\n因为它把复杂的上下文关系，变成了直观的图形网络。\n\n这不仅解决了大模型容易忘事的痛点，还让 AI 的思考过程完全透明。\n如果你想做出真正靠谱的智能体，它绝对值得你现在就去点个收藏。"
     },
     {
       "rank": 14,
@@ -234,13 +247,14 @@
       "description": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
       "language": "Rust",
       "language_color": "#dea584",
-      "stars": 120631,
-      "forks": 18457,
+      "stars": 120636,
+      "forks": 18456,
       "period_stars": 143,
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "一款支持自托管的开源远程桌面软件，可作为 TeamViewer 的替代方案。"
+      "description_zh": "一款支持自托管的开源远程桌面软件，可作为 TeamViewer 的替代方案。",
+      "script_zh": "这个项目是一个完全开源的远程桌面神器。\n\n平时想远程控制电脑或者手机，用它就能一键搞定。\n\n大家经常遇到商业软件限速、断线还收费的问题，它就是来解决这个痛点的。\n\n它不仅支持全平台，最牛的是你可以自己搭建服务器。\n\n数据全部掌握在自己手里，连接速度飞快还特别安全。\n\n代码完全公开，难怪在 GitHub 上拿下了十几万颗星！"
     },
     {
       "rank": 15,
@@ -251,13 +265,14 @@
       "description": "The open-source CapCut alternative",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 83162,
-      "forks": 8230,
+      "stars": 83169,
+      "forks": 8231,
       "period_stars": 255,
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "CapCut 的开源替代品"
+      "description_zh": "CapCut 的开源替代品",
+      "script_zh": "这个项目是一个完全开源的视频剪辑神器。\n\n简单来说，它就是开源版的剪映。\n\n平时剪视频嫌专业软件太难，用商业软件又怕被套路收费？\n\n用它就对了。\n\n它不仅完全免费，还把自动字幕、智能转场这些好用功能都安排上了。\n\n最厉害的是它完全在本地运行，不用担心隐私泄露，更没有广告弹窗。\n\n代码全开源，意味着你可以自由定制，甚至自己加功能。\n\n现在它在 GitHub 上已经拿了八万多星，闭眼冲就完事了！"
     },
     {
       "rank": 16,
@@ -268,13 +283,14 @@
       "description": "Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 71505,
-      "forks": 6449,
+      "stars": 71513,
+      "forks": 6450,
       "period_stars": 501,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "用于运行和训练大语言模型及扩散模型的本地 UI，支持 Qwen3.8、Kimi K3、MiniMax-H3、Gemma 4、DeepSeek-V4、FLUX 等模型。"
+      "description_zh": "用于运行和训练大语言模型及扩散模型的本地 UI，支持 Qwen3.8、Kimi K3、MiniMax-H3、Gemma 4、DeepSeek-V4、FLUX 等模型。",
+      "script_zh": "这个项目是一个能让你在本地轻松运行和微调各种大模型的超强工具。\n\n不管是最新的 DeepSeek、千问还是画图的 FLUX，它全都能一键搞定。\n你只需要在本地可视化界面里点点鼠标，就能训练出专属自己的 AI 助手。\n\n它最厉害的地方在于把显存和速度优化到了极致。\n不仅训练速度能比平时提升好几倍，还能帮你省下高达百分之八十的显存。\n想在普通电脑上低成本玩转顶级大模型，闭眼冲它就对了！"
     },
     {
       "rank": 17,
@@ -285,13 +301,14 @@
       "description": "ToolJet is the open-source foundation of ToolJet AI - the enterprise app generation platform for building internal tools, dashboard, business applications, workflows and AI agents 🚀",
       "language": "JavaScript",
       "language_color": "#f1e05a",
-      "stars": 39079,
+      "stars": 39082,
       "forks": 5263,
       "period_stars": 132,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "ToolJet 是 ToolJet AI 的开源基础——一个用于构建内部工具、仪表盘、业务应用、工作流和 AI 智能体的企业级应用生成平台 🚀"
+      "description_zh": "ToolJet 是 ToolJet AI 的开源基础——一个用于构建内部工具、仪表盘、业务应用、工作流和 AI 智能体的企业级应用生成平台 🚀",
+      "script_zh": "这个项目能让你用拖拽的方式，几分钟就搭好一个企业内部系统。\n无论是数据看板、业务后台，还是工作流和 AI 智能体，它都能轻松搞定。\n\n你只需连上数据库，把组件拖到画布上，就能直接生成网页应用。\n最厉害的是它完全开源，还能接入各种 AI 模型，让后台秒变聪明。\n\n不仅省去了写前端代码的痛苦，还能帮你省下大笔的开发成本。\n难怪它在 GitHub 上拿了快四万颗星，想提效的赶紧去试试吧！"
     }
   ]
 }
