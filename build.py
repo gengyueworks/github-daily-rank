@@ -13,6 +13,7 @@ from __future__ import annotations
 import glob
 import html
 import json
+import re
 from collections import Counter, defaultdict
 from datetime import date, datetime, timedelta
 from pathlib import Path
@@ -121,8 +122,13 @@ body.classics .src-line { font-size: 13px; color: var(--gray); margin-top: 10px;
 body.classics .src-line a { color: var(--klein); text-decoration: none; }
 body.classics .src-line a:hover { text-decoration: underline; }
 body.classics .src-line .cat { color: var(--klein); font-weight: 600; }
-body.classics .star-btn { display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #fff; background: var(--klein); padding: 2px 9px; border-radius: 4px; text-decoration: none; vertical-align: middle; }
-body.classics .star-btn:hover { background: var(--klein-bright); }
+body.classics .link-area { margin-top: 12px; background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 8px 12px; display: flex; flex-direction: column; gap: 6px; }
+body.classics .link-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+body.classics .link-url { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--klein); text-decoration: none; overflow-wrap: anywhere; }
+body.classics .link-url:hover { text-decoration: underline; }
+body.classics .copy-btn { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gray); background: var(--paper); border: 1px solid var(--line); border-radius: 4px; padding: 2px 8px; cursor: pointer; flex-shrink: 0; }
+body.classics .copy-btn:hover { color: var(--klein); border-color: var(--klein); }
+body.classics .copy-btn.copied { color: #fff; background: var(--klein); border-color: var(--klein); }
 body.classics .footer { margin-top: 48px; padding-top: 20px; border-top: 3px solid var(--klein); font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--gray); line-height: 1.8; }
 body.classics .footer .big { color: var(--ink); font-weight: 600; }
 body.classics .footer a { color: var(--klein); text-decoration: none; }
@@ -166,13 +172,23 @@ def weekday_cn(dt: date) -> str:
 
 
 def script_block(r):
-    """一分钟口播稿渲染片段（中文，120-180 字）。无 script_zh 字段时返回空串，兼容旧数据。
+    """一分钟口播稿渲染片段（中文，PureFlow 一句一行格式）。
+    \n\n（空行）→ 段落分隔（多个 <p>）；单 \n → <br> 行内换行；无 script_zh 时返回空串。
     ainews 风格：融入正文段落，无底纹大块，klein 蓝底白字小徽章标识。"""
     s = r.get("script_zh")
     if not s:
         return ""
-    return (f'<p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>'
-            f'{esc(s)}</p>')
+    paras = [p.strip() for p in re.split(r"\n\s*\n", s) if p.strip()]
+    if not paras:
+        return ""
+    out = []
+    for idx, para in enumerate(paras):
+        lines = [l.strip() for l in para.split("\n") if l.strip()]
+        body = "<br>".join(esc(l) for l in lines)
+        if idx == 0:
+            body = f'<span class="script-tag">一分钟讲解 1-min</span>{body}'
+        out.append(f'<p class="script-block">{body}</p>')
+    return "\n".join(out)
 
 
 def repo_item(r, show_riser=False):
@@ -308,10 +324,21 @@ def render_weekly(week_dailies, weekly):
 </div></body></html>"""
 
 
+def link_area(r):
+    """卡片底部链接区：完整仓库 URL（可复制 + 可点击跳转），含 stargazers 第二行。
+    白底浅灰边框小条，URL 等宽字体蓝色可点，复制按钮灰色描边 hover 变蓝。"""
+    url = r["url"]
+    stars_url = f'{url}/stargazers'
+    def row(u):
+        return (f'<div class="link-row"><a class="link-url" href="{esc(u)}" target="_blank">{esc(u)}</a>'
+                f'<button class="copy-btn" type="button" data-copy="{esc(u)}">复制 Copy</button></div>')
+    return f'<div class="link-area">{row(url)}\n{row(stars_url)}</div>'
+
+
 def render_classics(classics):
     """高分精选页 · 严格对齐 ainews 排版体系（蓝主红点缀，红仅限数字 .num）。
     结构：masthead → mast-lede 双语 intro → sec-title → item（dateline / item-title 仓库链接
-    / body：英文简介 + 译标签中文 + 逐字稿 / src-line：★ 数字 + 分类 + Star 按钮 / 点评行）→ footer。"""
+    / body：英文简介 + 译标签中文 + 逐字稿 / src-line：★ 数字 + 分类 / 点评行 / 链接区）→ footer。"""
     updated = classics["updated_at"]
     y, m, d = updated.split("-")
     nav_date = f"{y}年{m}月{d}日"
@@ -320,7 +347,6 @@ def render_classics(classics):
             f'<div class="mast-lede">{esc(classics["intro_en"])}</div>')
     items = []
     for i, r in enumerate(classics["repos"], start=1):
-        stars_url = f'{r["url"]}/stargazers'
         zh = r.get("description_zh")
         zh_html = f'<p><span class="tag">译</span>{esc(zh)}</p>' if zh else ""
         note_zh = r.get("note_zh", "")
@@ -335,8 +361,9 @@ def render_classics(classics):
             {zh_html}
             {script_block(r)}
         </div>
-        <div class="src-line">★ <span class="num">{r["stars"]:,}</span> stars · <span class="cat">{esc(r["category"])}</span> · <a class="star-btn" href="{esc(stars_url)}" target="_blank">★ Star 这个项目</a></div>
+        <div class="src-line">★ <span class="num">{r["stars"]:,}</span> stars · <span class="cat">{esc(r["category"])}</span></div>
         {note}
+        {link_area(r)}
     </div>""")
     return f"""<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -360,7 +387,39 @@ def render_classics(classics):
   <p><span class="big">GitHub 高分精选</span> · 人工精选 · 数据来自 GitHub · 中英双语</p>
   <p>Human-curated · Last updated {updated} · <a href="https://github.com/trending" target="_blank">Source: github.com/trending</a></p>
 </div>
-</div></body></html>"""
+</div>
+<script>
+(function(){{
+  var btns = document.querySelectorAll('.copy-btn');
+  btns.forEach(function(btn){{
+    btn.addEventListener('click', function(){{
+      var url = btn.getAttribute('data-copy');
+      var done = function(){{
+        btn.textContent = '已复制 ✓';
+        btn.classList.add('copied');
+        setTimeout(function(){{ btn.textContent = '复制 Copy'; btn.classList.remove('copied'); }}, 1600);
+      }};
+      var fallback = function(){{
+        var ta = document.createElement('textarea');
+        ta.value = url;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        try {{ document.execCommand('copy'); }} catch(e) {{}}
+        document.body.removeChild(ta);
+        done();
+      }};
+      if (navigator.clipboard && navigator.clipboard.writeText) {{
+        navigator.clipboard.writeText(url).then(done, fallback);
+      }} else {{
+        fallback();
+      }}
+    }});
+  }});
+}})();
+</script>
+</body></html>"""
 
 
 def render_index(daily, weekly_stem, week_dailies):

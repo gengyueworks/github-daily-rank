@@ -25,12 +25,26 @@ echo "=== $(date '+%Y-%m-%d %H:%M:%S') 开始 ==="
 "$PY" build.py
 
 # 5) 提交 data 快照 + zh_cache + script_cache 到 main（缓存持久化）
-GIT_EDITOR=true git pull --rebase --autostash origin main 2>&1 | tail -1 || true
+#    -X ours：data 是纯抓取快照，冲突时以本地最新抓取为准（rebase 中 ours=本地）
+#    失败则中止（绝不能把冲突标记带进 commit）
+if ! GIT_EDITOR=true git pull --rebase --autostash -X ours origin main >/dev/null 2>&1; then
+  echo "❌ git pull --rebase 失败，中止（避免冲突标记进入 data）"
+  git rebase --abort 2>/dev/null || true
+  exit 1
+fi
+if grep -rl '^<<<<<<< ' data/ 2>/dev/null | grep -q .; then
+  echo "❌ data 目录残留冲突标记，中止"
+  exit 1
+fi
 git add data zh_cache.json script_cache.json
 if ! git diff --cached --quiet; then
   GIT_EDITOR=true git -c user.name="gengyueworks-bot" -c user.email="gengyueworks@users.noreply.github.com" commit -m "daily: update trending data $(date +%Y-%m-%d)" --quiet
 fi
-GIT_EDITOR=true git pull --rebase --autostash origin main 2>&1 | tail -1 || true
+if ! GIT_EDITOR=true git pull --rebase --autostash -X ours origin main >/dev/null 2>&1; then
+  echo "❌ 提交后 git pull --rebase 失败，中止"
+  git rebase --abort 2>/dev/null || true
+  exit 1
+fi
 git push origin main 2>&1 | tail -2
 echo "✓ data 已提交推送"
 

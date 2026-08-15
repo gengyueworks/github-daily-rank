@@ -8,9 +8,17 @@ REPO=github-daily-rank
 OWNER=gengyueworks
 cd "$PROJ"
 
-# 0) 同步远端（防并发 push 冲突）
+# 0) 同步远端（防并发 push 冲突；失败即中止，绝不把冲突标记带进 commit）
 git fetch origin main 2>/dev/null || true
-GIT_EDITOR=true git pull --rebase --autostash origin main 2>&1 | tail -1 || true
+if ! GIT_EDITOR=true git pull --rebase --autostash -X ours origin main >/dev/null 2>&1; then
+  echo "❌ git pull --rebase 失败，中止（避免冲突标记进入 data）"
+  git rebase --abort 2>/dev/null || true
+  exit 1
+fi
+if grep -rl '^<<<<<<< ' data/ 2>/dev/null | grep -q .; then
+  echo "❌ data 目录残留冲突标记，中止"
+  exit 1
+fi
 
 [ -d .git ] || git init -q
 
