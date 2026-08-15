@@ -78,7 +78,7 @@ gh workflow run daily.yml -R gengyueworks/github-daily-rank
 
 1. **外置盘 TCC**：launchd 跑 /Volumes 上的脚本必须用 Framework python `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3`，禁止 `/usr/bin/python3`（TCC 未授权外置卷，静默失败）
 2. **精简 PATH**：`ghrank_daily.sh` 里显式 `export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"`
-3. **git 冲突**：commit/push 前必须 `GIT_EDITOR=true git pull --rebase --autostash origin main`（防远程已有提交 + 交互式编辑器卡死）
+3. **git 冲突（2026-08-15 加固）**：commit/push 前必须 `GIT_EDITOR=true git pull --rebase --autostash -X ours origin main`（-X ours：data 是纯抓取快照，冲突时以本地最新为准）。**禁止 `|| true` 吞掉 rebase 失败**——否则冲突标记 `<<<<<<<` 会混进 data/*.json 并被 commit。正确姿势：pull 失败立即 `git rebase --abort` 退出；commit 前 grep 检查 `^<<<<<<< ` 残留。
 
 ## 四、一分制逐字稿（gen_scripts.py）
 
@@ -86,7 +86,8 @@ gh workflow run daily.yml -R gengyueworks/github-daily-rank
 
 - **调用**：本机 CLIProxyAPI 网关 `http://127.0.0.1:8317/v1/chat/completions`（OpenAI 兼容，模型 `gemini-3.5-flash-low`，key `sk-123`）
 - **生成要求**：120-180 字中文、口语化、不书面腔、不用「大家好」开头、不出现「逐字稿」字样、像跟朋友聊天
-- **缓存**：`script_cache.json`，已生成的不重复调用；新仓库自动补
+- **排版（PureFlow 断行铁律，2026-08-15 固化）**：一句一行，每行以句号/问号/感叹号结尾；空行分段（\n\n 分段、\n 断行）；不要长段落，像微信公号排版有呼吸感。渲染时 build.py 的 script_block() 把 \n\n → 多段落、\n → <br>
+- **缓存**：`script_cache.json`，已生成的不重复调用；新仓库自动补；改了格式后要 `清空所有 script_zh 字段 + 删 script_cache.json` 再全量重生成（--no-cache 只绕过缓存，不会重生成已写字段的仓库）
 - **可配置**：环境变量 `GHRANK_LLM_URL` / `GHRANK_LLM_KEY` / `GHRANK_LLM_MODEL`
 - ⚠️ 8317 网关依赖本机 CLIProxyAPI 进程常驻；网关挂了则新仓库无逐字稿（抓榜部署不受影响），补跑 `python3 gen_scripts.py` 即可
 
@@ -141,11 +142,16 @@ gh workflow run daily.yml -R gengyueworks/github-daily-rank
 - 逐字稿是**正文级段落**（15.5px，行高 1.8），不是大色块：`<p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>正文</p>`
 - 「一分钟讲解」小标签 = klein 蓝底白字小徽章（10-11px），禁止自创大底纹块（#EEF2FF 底纹方案已废弃）
 
-### 每个仓库卡片必备的链接（用户强调）
+### 每个仓库卡片必备的链接（用户强调，2026-08-15 改为链接区方案）
 
-1. **打开仓库**：仓库名整行可点链接，蓝色 + hover 下划线，target="_blank"
-2. **加 star**：明显按钮/链接「★ Star 这个项目」→ `https://github.com/{owner}/{repo}/stargazers`，klein 蓝底白字小按钮，target="_blank"
-3. 每张卡片至少这两个链接，缺一个 = 返工
+每张卡片底部必须有**链接区**（`link-area`），用户发推/分享需要能方便复制完整 URL：
+
+1. **链接区**：点评行之后 `<div class="link-area">`，两行 `link-row`：
+   - 仓库链接：`<a class="link-url" href="仓库URL" target="_blank">完整URL文本</a>`（完整文本可见、整段可选可复制、点击跳转）
+   - star 链接：`https://github.com/{owner}/{repo}/stargazers` 同样式
+   - 每行配「复制 Copy」按钮（`copy-btn`，data-copy 存 URL，navigator.clipboard + fallback，复制后短暂变「已复制 ✓」）
+2. **禁止**旧的 `star-btn` 蓝底白字小按钮（11px 白字蓝底，用户反馈「看不清、莫名其妙」，2026-08-15 已废弃删除）
+3. 每张卡片必须有链接区，缺一个 = 返工
 
 ### 排版数值（全局，daily/weekly/index 共用）
 
