@@ -1,11 +1,17 @@
 {
   "since": "weekly",
+<<<<<<< Updated upstream
   "date": "2026-08-15",
   "fetched_at": "2026-08-15T09:14:23",
+=======
+  "date": "2026-08-16",
+  "fetched_at": "2026-08-16T08:51:11",
+>>>>>>> Stashed changes
   "count": 16,
   "repos": [
     {
       "rank": 1,
+<<<<<<< Updated upstream
       "owner": "PrimeIntellect-ai",
       "name": "prime-agent",
       "full_name": "PrimeIntellect-ai/prime-agent",
@@ -21,6 +27,22 @@
       "category": "AI / 大模型",
       "description_zh": "用于编程工作流和长期自主任务的自我改进型 RLM 智能体。",
       "script_zh": "这个项目是一个能自己迭代升级的 AI 编程助手。\n\n它专门用来搞定那些复杂的、需要长时间运行的开发任务。\n\n你只需要把需求丢给它，它就能自动写代码、改 Bug 甚至跑测试。\n\n最厉害的是，它引入了强化学习机制。\n\n别的 AI 犯了错还得你写提示词去纠正，它自己就能在试错中越变越聪明。\n\n这种能自我进化的生产力工具，赶紧去 GitHub 把它收藏起来吧！"
+=======
+      "owner": "cathrynlavery",
+      "name": "diagram-design",
+      "full_name": "cathrynlavery/diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "description": "29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop.",
+      "language": "HTML",
+      "language_color": "#e34c26",
+      "stars": 18619,
+      "forks": 1120,
+      "period_stars": 14735,
+      "period_label": "本周",
+      "topics": [],
+      "category": "前端 / Web",
+      "description_zh": "面向 Claude Code 的 29 种编辑型图表。纯 HTML + SVG，自包含。无阴影、拒绝 Mermaid 流水账。"
+>>>>>>> Stashed changes
     },
     {
       "rank": 2,
@@ -31,9 +53,15 @@
       "description": "Graph-Native Infrastructure for Context and Accountable AI Systems",
       "language": "Python",
       "language_color": "#3572A5",
+<<<<<<< Updated upstream
       "stars": 7530,
       "forks": 781,
       "period_stars": 5135,
+=======
+      "stars": 7930,
+      "forks": 812,
+      "period_stars": 5339,
+>>>>>>> Stashed changes
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
@@ -42,6 +70,7 @@
     },
     {
       "rank": 3,
+<<<<<<< Updated upstream
       "owner": "google",
       "name": "skills",
       "full_name": "google/skills",
@@ -96,6 +125,25 @@
     },
     {
       "rank": 6,
+=======
+      "owner": "PrimeIntellect-ai",
+      "name": "prime-agent",
+      "full_name": "PrimeIntellect-ai/prime-agent",
+      "url": "https://github.com/PrimeIntellect-ai/prime-agent",
+      "description": "A self-improving RLM agent for coding workflows and long-running autonomous tasks.",
+      "language": "TypeScript",
+      "language_color": "#3178c6",
+      "stars": 16290,
+      "forks": 1751,
+      "period_stars": 8488,
+      "period_label": "本周",
+      "topics": [],
+      "category": "AI / 大模型",
+      "description_zh": "面向编程工作流与长时间自主任务的自我进化型 RLM 智能体。"
+    },
+    {
+      "rank": 4,
+>>>>>>> Stashed changes
       "owner": "megadose",
       "name": "holehe",
       "full_name": "megadose/holehe",
@@ -103,6 +151,7 @@
       "description": "holehe allows you to check if the mail is used on different sites like twitter, instagram and will retrieve information on sites with the forgotten password function.",
       "language": "Python",
       "language_color": "#3572A5",
+<<<<<<< Updated upstream
       "stars": 12855,
       "forks": 1717,
       "period_stars": 671,
@@ -111,9 +160,18 @@
       "category": "其他",
       "description_zh": "holehe 可以检测指定邮箱是否在 Twitter、Instagram 等网站上注册，并利用找回密码功能获取相关网站上的信息。",
       "script_zh": "这个项目是一个超强悍的邮箱反查神器。\n\n只要输入一个邮箱地址，它就能立刻帮你查出这个邮箱注册过哪些网站。\n像微博、推特或者各类社交平台，全都逃不过它的法眼。\n\n最厉害的是，它利用了网站的找回密码机制，查得又快又准。\n无论你是想排查自己的隐私泄露，还是做安全测试，用它都省时省力。\n难怪它在 GitHub 上拿了一万多个星，真的太实用了！"
+=======
+      "stars": 13117,
+      "forks": 1742,
+      "period_stars": 1059,
+      "period_label": "本周",
+      "topics": [],
+      "category": "其他",
+      "description_zh": "holehe 可检测某邮箱是否在 Twitter、Instagram 等站点被注册，并能借助「忘记密码」功能从相关站点获取信息。"
+>>>>>>> Stashed changes
     },
     {
-      "rank": 7,
+      "rank": 5,
       "owner": "NVIDIA-NeMo",
       "name": "Switchyard",
       "full_name": "NVIDIA-NeMo/Switchyard",
@@ -121,9 +179,9 @@
       "description": "Switchyard lets LLM applications route traffic across models and providers while preserving native OpenAI and Anthropic API compatibility - enabling flexible model selection, benchmarking, and cost/performance optimization.",
       "language": "Rust",
       "language_color": "#dea584",
-      "stars": 1466,
-      "forks": 130,
-      "period_stars": 1195,
+      "stars": 1585,
+      "forks": 144,
+      "period_stars": 1326,
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
@@ -131,6 +189,7 @@
       "script_zh": "这个项目是英伟达刚开源的大模型路由调度工具。\n\n平时想对比不同模型的效果，或者想在多个 API 之间灵活切换，用它就对了。\n它能帮你一键搞定各种大模型接口的适配。\n\n最厉害的是，它不仅支持主流的在线 API，还能无缝对接你本地部署的开源模型。\n让你用一套代码就能在各种模型之间来回横跳，开发效率直接拉满！"
     },
     {
+<<<<<<< Updated upstream
       "rank": 8,
       "owner": "cloudflare",
       "name": "computer",
@@ -147,16 +206,68 @@
       "category": "AI / 大模型",
       "description_zh": "给你的智能体一台电脑 👾",
       "script_zh": "这个项目能直接给你的 AI 智能体配一台虚拟电脑。\n\n简单来说，就是让 AI 像人类一样，学会自己用鼠标和键盘。\n不管是去网页上帮你抢票，还是在桌面整理表格，它都能在后台自动帮你搞定。\n\n最牛的是，它把环境配置和安全隔离全帮你做好了。\n有 Cloudflare 的技术背书，运行起来不仅超快还很安全。\n想真正让 AI 帮你打工，闭眼冲它就对了！"
+=======
+      "rank": 6,
+      "owner": "vitali87",
+      "name": "code-graph-rag",
+      "full_name": "vitali87/code-graph-rag",
+      "url": "https://github.com/vitali87/code-graph-rag",
+      "description": "The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs",
+      "language": "Python",
+      "language_color": "#3572A5",
+      "stars": 4371,
+      "forks": 592,
+      "period_stars": 1756,
+      "period_label": "本周",
+      "topics": [],
+      "category": "AI / 大模型",
+      "description_zh": "为你的 monorepo 打造的终极 RAG。借助 AI 与知识图谱，查询、理解并编辑多语言代码库。"
+    },
+    {
+      "rank": 7,
+      "owner": "cactus-compute",
+      "name": "needle",
+      "full_name": "cactus-compute/needle",
+      "url": "https://github.com/cactus-compute/needle",
+      "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
+      "language": "Python",
+      "language_color": "#3572A5",
+      "stars": 6067,
+      "forks": 405,
+      "period_stars": 2488,
+      "period_label": "本周",
+      "topics": [],
+      "category": "其他",
+      "description_zh": "面向微型设备的 14MB 基础模型：手机、可穿戴、智能家居与机器人。"
+    },
+    {
+      "rank": 8,
+      "owner": "macro-inc",
+      "name": "macro",
+      "full_name": "macro-inc/macro",
+      "url": "https://github.com/macro-inc/macro",
+      "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
+      "language": "Rust",
+      "language_color": "#dea584",
+      "stars": 3270,
+      "forks": 326,
+      "period_stars": 2434,
+      "period_label": "本周",
+      "topics": [],
+      "category": "AI / 大模型",
+      "description_zh": "Macro 是面向团队的 unified 工作空间：邮件、聊天、文档、任务、智能体、通话与 CRM，通过共享 AI 记忆以 @ 链接串在一起。"
+>>>>>>> Stashed changes
     },
     {
       "rank": 9,
-      "owner": "addyosmani",
-      "name": "agent-skills",
-      "full_name": "addyosmani/agent-skills",
-      "url": "https://github.com/addyosmani/agent-skills",
-      "description": "Production-grade engineering skills for AI coding agents.",
+      "owner": "ToolJet",
+      "name": "ToolJet",
+      "full_name": "ToolJet/ToolJet",
+      "url": "https://github.com/ToolJet/ToolJet",
+      "description": "ToolJet is the open-source foundation of ToolJet AI - the enterprise app generation platform for building internal tools, dashboard, business applications, workflows and AI agents 🚀",
       "language": "JavaScript",
       "language_color": "#f1e05a",
+<<<<<<< Updated upstream
       "stars": 87291,
       "forks": 9362,
       "period_stars": 3845,
@@ -165,6 +276,15 @@
       "category": "AI / 大模型",
       "description_zh": "面向 AI 编程智能体的生产级工程技能。",
       "script_zh": "这个项目是专门给 AI 编程助手准备的专业技能包。\n平时 AI 帮我们写代码，经常会胡说八道或者把代码改乱，对吧？\n\n用上它，AI 就能像资深程序员一样，学会精准搜索文件、安全修改代码和运行测试了。\n它直接解决了 AI 落地到实际开发中，不够稳定、容易出错的痛点。\n\n最厉害的是，这里面的工具全是生产级别的，非常严谨。\n项目作者还是谷歌的大神，想让你的 AI 助手变聪明，用它准没错！"
+=======
+      "stars": 39537,
+      "forks": 5296,
+      "period_stars": 1047,
+      "period_label": "本周",
+      "topics": [],
+      "category": "AI / 大模型",
+      "description_zh": "ToolJet 是 ToolJet AI 的开源基座——一款用于构建内部工具、仪表盘、业务应用、工作流与 AI 智能体的企业级应用生成平台 🚀"
+>>>>>>> Stashed changes
     },
     {
       "rank": 10,
@@ -175,9 +295,15 @@
       "description": "TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks.",
       "language": "TypeScript",
       "language_color": "#3178c6",
+<<<<<<< Updated upstream
       "stars": 21708,
       "forks": 1984,
       "period_stars": 4423,
+=======
+      "stars": 21987,
+      "forks": 2013,
+      "period_stars": 3956,
+>>>>>>> Stashed changes
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
@@ -186,6 +312,7 @@
     },
     {
       "rank": 11,
+<<<<<<< Updated upstream
       "owner": "cactus-compute",
       "name": "needle",
       "full_name": "cactus-compute/needle",
@@ -219,9 +346,25 @@
       "category": "AI / 大模型",
       "description_zh": "面向长时运行 AI 智能体团队的轻量循环工程状态内核。跨 Codex、Claude Code 等编程智能体无关，具备持久目标、配额感知自动唤醒、可执行待办、证据日志与可验证交接。",
       "script_zh": "天天让 AI 帮你跑任务，结果它跑着跑着就迷路或者装死？\n\n这个项目就是给 AI 团队打造的超强后台内核。\n它能帮多个 AI 智能体管理长期任务，让它们协作起来像个真正的开发团队。\n\n最厉害的是，它支持额度超限自动唤醒和防丢失的交接日志。\n不管你用什么大模型，用它就能让 AI 稳定地二十四小时连轴转。"
+=======
+      "owner": "addyosmani",
+      "name": "agent-skills",
+      "full_name": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "language": "JavaScript",
+      "language_color": "#f1e05a",
+      "stars": 87504,
+      "forks": 9383,
+      "period_stars": 3300,
+      "period_label": "本周",
+      "topics": [],
+      "category": "AI / 大模型",
+      "description_zh": "面向 AI 编程智能体的生产级工程技能。"
+>>>>>>> Stashed changes
     },
     {
-      "rank": 13,
+      "rank": 12,
       "owner": "3b1b",
       "name": "manim",
       "full_name": "3b1b/manim",
@@ -229,6 +372,7 @@
       "description": "Animation engine for explanatory math videos",
       "language": "Python",
       "language_color": "#3572A5",
+<<<<<<< Updated upstream
       "stars": 91129,
       "forks": 7547,
       "period_stars": 1919,
@@ -273,16 +417,76 @@
       "category": "其他",
       "description_zh": "中小学及大学PDF教材合集",
       "script_zh": "这个项目是一个超级强大的中国教材大合集。\n\n它把从小学生到大学生的所有学科PDF教材都打包整理好了。\n不管你是要辅导孩子写作业，还是自己想重温基础知识，直接在里面搜就能免费下载。\n\n最牛的是它版本更新特别及时，而且完全免费。\n你再也不用去各种乱七八糟的网站充会员看广告了。\n直接保存就能随时随地看，难怪能狂揽快八万个星！"
+=======
+      "stars": 91233,
+      "forks": 7548,
+      "period_stars": 2008,
+      "period_label": "本周",
+      "topics": [],
+      "category": "游戏",
+      "description_zh": "用于制作数学讲解动画的动画引擎。"
+    },
+    {
+      "rank": 13,
+      "owner": "cloudflare",
+      "name": "computer",
+      "full_name": "cloudflare/computer",
+      "url": "https://github.com/cloudflare/computer",
+      "description": "Give your agent a computer 👾",
+      "language": "TypeScript",
+      "language_color": "#3178c6",
+      "stars": 8253,
+      "forks": 450,
+      "period_stars": 1966,
+      "period_label": "本周",
+      "topics": [],
+      "category": "AI / 大模型",
+      "description_zh": "给你的智能体一台电脑 👾"
+    },
+    {
+      "rank": 14,
+      "owner": "google",
+      "name": "skills",
+      "full_name": "google/skills",
+      "url": "https://github.com/google/skills",
+      "description": "Agent Skills for Google products and technologies",
+      "language": "Python",
+      "language_color": "#3572A5",
+      "stars": 18332,
+      "forks": 1443,
+      "period_stars": 1821,
+      "period_label": "本周",
+      "topics": [],
+      "category": "AI / 大模型",
+      "description_zh": "面向 Google 产品与技术的智能体技能。"
+    },
+    {
+      "rank": 15,
+      "owner": "google-deepmind",
+      "name": "weathernext",
+      "full_name": "google-deepmind/weathernext",
+      "url": "https://github.com/google-deepmind/weathernext",
+      "description": "",
+      "language": "Python",
+      "language_color": "#3572A5",
+      "stars": 7518,
+      "forks": 962,
+      "period_stars": 670,
+      "period_label": "本周",
+      "topics": [],
+      "category": "其他"
+>>>>>>> Stashed changes
     },
     {
       "rank": 16,
-      "owner": "pingdotgg",
-      "name": "t3code",
-      "full_name": "pingdotgg/t3code",
-      "url": "https://github.com/pingdotgg/t3code",
-      "description": "",
+      "owner": "paperclipai",
+      "name": "paperclip",
+      "full_name": "paperclipai/paperclip",
+      "url": "https://github.com/paperclipai/paperclip",
+      "description": "The open-source app everyone uses to manage agents at work",
       "language": "TypeScript",
       "language_color": "#3178c6",
+<<<<<<< Updated upstream
       "stars": 18753,
       "forks": 4330,
       "period_stars": 1603,
@@ -291,6 +495,15 @@
       "category": "其他",
       "description_zh": "T3 Code 是一个「智能体 harness 控制面板」，用于统一管理、调度与监控 AI 编程智能体的运行环境。",
       "script_zh": "这个项目是一个帮你快速搭建全栈 Next.js 应用的神器。\n它把最火的 TypeScript、Tailwind 和数据库工具全打包好了。\n\n你只需要运行一行命令，就能直接开始写业务代码。\n它彻底解决了配置环境让人抓狂的难题。\n\n最厉害的是全链路类型安全，写代码时错一个字母都会报错。\n这效率直接拉满，难怪快两万人给它点赞，赶紧去试试吧！"
+=======
+      "stars": 78310,
+      "forks": 14361,
+      "period_stars": 2430,
+      "period_label": "本周",
+      "topics": [],
+      "category": "移动端",
+      "description_zh": "人人都在用的开源应用，用来在工作中管理智能体。"
+>>>>>>> Stashed changes
     }
   ]
 }
