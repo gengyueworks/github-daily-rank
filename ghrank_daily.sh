@@ -51,4 +51,27 @@ echo "✓ data 已提交推送"
 # 6) 部署 site/ 到 gh-pages
 bash deploy_ghpages.sh
 
+# 7) 打包网站页面 zip（每天更新完自动产出，供人工转给 Nosh 做小红书栏目）
+#    内容 = site/ 的 4 个页面（index + daily + weekly + classics），不含源码
+DATE_STAMP=$(date +%Y-%m-%d)
+ZIP_OUT="$PROJ/../github-daily-rank-网站-$DATE_STAMP.zip"
+rm -f "$ZIP_OUT"
+cd "$PROJ/site"
+zip -qr "$ZIP_OUT" index.html daily weekly classics
+cd "$PROJ"
+echo "✓ 网站 zip 已生成: $ZIP_OUT"
+# 清理旧 zip（只留最近 7 天）
+find "$PROJ/.." -maxdepth 1 -name "github-daily-rank-网站-*.zip" -mtime +7 -delete 2>/dev/null || true
+
+# 8) 自动生成当日精选资料（编辑腔，Notion 作图部门素材源）+ 打包资料 zip
+"$PY" gen_material.py "$DATE_STAMP" || echo "⚠️ 资料生成失败（不影响网站 zip）"
+MAT_OUT="$PROJ/xhs-assets/GitHub经典项目资料库-$DATE_STAMP.md"
+MAT_ZIP="$PROJ/../github-daily-rank-资料-$DATE_STAMP.zip"
+if [ -f "$MAT_OUT" ]; then
+  rm -f "$MAT_ZIP"
+  zip -qj "$MAT_ZIP" "$MAT_OUT"
+  echo "✓ 资料 zip 已生成: $MAT_ZIP"
+fi
+find "$PROJ/.." -maxdepth 1 -name "github-daily-rank-资料-*.zip" -mtime +30 -delete 2>/dev/null || true
+
 echo "=== $(date '+%Y-%m-%d %H:%M:%S') 完成 ==="
