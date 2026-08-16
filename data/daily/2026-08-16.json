@@ -1,7 +1,7 @@
 {
   "since": "daily",
   "date": "2026-08-16",
-  "fetched_at": "2026-08-16T08:51:08",
+  "fetched_at": "2026-08-16T09:00:08",
   "count": 13,
   "repos": [
     {
@@ -14,12 +14,13 @@
       "language": "TypeScript",
       "language_color": "#3178c6",
       "stars": 4071,
-      "forks": 200,
+      "forks": 201,
       "period_stars": 599,
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "面向时空可组合性的元框架。"
+      "description_zh": "面向时空可组合性的元框架。",
+      "script_zh": "这个项目是一个能让你像搭积木一样写代码的超强插件化框架。\n\n简单来说，它能把复杂的系统拆成一个个独立的模块，自由组合。\n\n不管你是写机器人还是复杂后台，用它就能轻松搞定模块之间的调用。\n\n最厉害的是它支持热插拔。\n\n代码改完不用重启服务，直接热更新生效，开发体验简直爽到飞起！\n\n这种自由度和扩展性，绝对值得你赶紧去试试！"
     },
     {
       "rank": 2,
@@ -30,13 +31,14 @@
       "description": "29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop.",
       "language": "HTML",
       "language_color": "#e34c26",
-      "stars": 18619,
-      "forks": 1120,
+      "stars": 18623,
+      "forks": 1121,
       "period_stars": 1607,
       "period_label": "今日",
       "topics": [],
       "category": "前端 / Web",
-      "description_zh": "面向 Claude Code 的 29 种编辑型图表。纯 HTML + SVG，自包含。无阴影、拒绝 Mermaid 流水账。"
+      "description_zh": "面向 Claude Code 的 29 种编辑型图表。纯 HTML + SVG，自包含。无阴影、拒绝 Mermaid 流水账。",
+      "script_zh": "这个项目是一个专门给 AI 准备的图表设计模板库。\n\n很多人用 AI 生成图表，出来的效果总是乱七八糟。\n\n有了它，你直接把模板喂给 Claude。\n\n它就能瞬间吐出印刷级别的矢量图。\n\n最棒的是它完全没有那种廉价的阴影和杂乱的线条。\n\n二十九种编辑级排版直接套用，改改字就能上汇报。\n\n难怪它在 GitHub 上一下拿了一万多颗星！"
     },
     {
       "rank": 3,
@@ -53,7 +55,8 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "Cursor 插件规范与官方插件。"
+      "description_zh": "Cursor 插件规范与官方插件。",
+      "script_zh": "最近火出圈的 AI 编辑器 Cursor 大家都知道吧？\n这个项目就是它的官方插件规范和插件库。\n\n简单来说，它能让你自己开发专属的 AI 插件。\n不管是想接入私有数据，还是想定制工作流，用它都能轻松搞定。\n\n最牛的是它门槛极低，官方还给了一堆现成的模板。\n直接照着改，就能让你的 AI 编程助手变得无比顺手！"
     },
     {
       "rank": 4,
@@ -64,13 +67,14 @@
       "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 6067,
+      "stars": 6069,
       "forks": 405,
       "period_stars": 547,
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "面向微型设备的 14MB 基础模型：手机、可穿戴、智能家居与机器人。"
+      "description_zh": "面向微型设备的 14MB 基础模型：手机、可穿戴、智能家居与机器人。",
+      "script_zh": "这个项目是一个只有十四兆大小的端侧大模型。\n    它可以直接装在你的智能手表、手机或者扫地机器人里。\n\n    哪怕不联网，它也能在本地帮你处理各种复杂的AI指令。\n    这直接解决了设备离线就变砖的痛点。\n\n    最牛的是它体积小到不可思议，却完全不影响性能。\n    只要极低的算力就能跑起来，帮你省下大笔的云端服务器费用。\n    想让手里的智能硬件秒变聪明，闭眼冲它就对了！"
     },
     {
       "rank": 5,
@@ -81,13 +85,14 @@
       "description": "Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 72048,
+      "stars": 72049,
       "forks": 6494,
       "period_stars": 434,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "本地图形界面，用于运行与训练大语言模型和扩散模型，涵盖 Qwen3.8、Kimi K3、MiniMax-H3、Gemma 4、DeepSeek-V4、FLUX 等。"
+      "description_zh": "本地图形界面，用于运行与训练大语言模型和扩散模型，涵盖 Qwen3.8、Kimi K3、MiniMax-H3、Gemma 4、DeepSeek-V4、FLUX 等。",
+      "script_zh": "这个项目是一个能让你在本地轻松运行和微调各种大模型的超强工具。\n\n不管是最新的 DeepSeek、千问还是画图的 FLUX，它全都能一键搞定。\n你只需要在本地可视化界面里点点鼠标，就能训练出专属自己的 AI 助手。\n\n它最厉害的地方在于把显存和速度优化到了极致。\n不仅训练速度能比平时提升好几倍，还能帮你省下高达百分之八十的显存。\n想在普通电脑上低成本玩转顶级大模型，闭眼冲它就对了！"
     },
     {
       "rank": 6,
@@ -98,13 +103,14 @@
       "description": "A collective list of free APIs",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 460171,
+      "stars": 460176,
       "forks": 50854,
       "period_stars": 2260,
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "免费 API 合集清单。"
+      "description_zh": "免费 API 合集清单。",
+      "script_zh": "这个项目是一个专门收集全球免费 API 接口的超级宝藏库。\n\n平时想做个练手的小项目，又懒得自己去写后台数据库？\n直接来这里找现成的接口，一秒就能调用。\n\n不管是天气预报、动漫壁纸，还是复杂的机器学习算法，它通通都有。\n最牛的是它分类特别清晰，而且全部免费开源。\n这简直是独立开发者和编程新手的神仙伴侣！"
     },
     {
       "rank": 7,
@@ -115,13 +121,14 @@
       "description": "Fine-tune LLMs from one YAML. Layer streaming trains an 8B model on a 4 GB laptop GPU.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 1661,
+      "stars": 1662,
       "forks": 263,
       "period_stars": 297,
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "用一份 YAML 微调大语言模型。分层流式训练可在一张 4GB 笔记本 GPU 上训练 8B 模型。"
+      "description_zh": "用一份 YAML 微调大语言模型。分层流式训练可在一张 4GB 笔记本 GPU 上训练 8B 模型。",
+      "script_zh": "想给大模型做微调但显卡太烂？\n\n这个项目绝对是你的救星。\n\n它能让你只用一个 YAML 配置文件，就搞定大模型的微调。\n\n最离谱的是，它支持分层流式训练技术。\n\n哪怕你只有一张 4G 显存的笔记本显卡，也能跑得动 8B 大模型。\n\n这直接把大模型微调的门槛拉到了地面！\n\n以后不用去租昂贵的显卡，用自己的旧电脑就能直接上手玩了。"
     },
     {
       "rank": 8,
@@ -132,13 +139,14 @@
       "description": "💫 Toolkit to help you get started with Spec-Driven Development",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 129198,
+      "stars": 129200,
       "forks": 11550,
       "period_stars": 892,
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "💫 帮助你上手规格驱动开发（Spec-Driven Development）的工具集。"
+      "description_zh": "💫 帮助你上手规格驱动开发（Spec-Driven Development）的工具集。",
+      "script_zh": "写代码总是改来改去，那你一定要看看这个项目。\n\n它是一个帮你落地“规范驱动开发”的超强工具包。\n\n简单来说，就是让你在动工前先定好规范。\n\n它能自动生成接口代码和测试用例，省去反复沟通的麻烦。\n\n最牛的是，它能保证代码和文档永远同步。\n\n难怪狂斩十二万星，用过就真的回不去了！"
     },
     {
       "rank": 9,
@@ -149,13 +157,14 @@
       "description": "holehe allows you to check if the mail is used on different sites like twitter, instagram and will retrieve information on sites with the forgotten password function.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 13117,
+      "stars": 13118,
       "forks": 1742,
       "period_stars": 382,
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "holehe 可检测某邮箱是否在 Twitter、Instagram 等站点被注册，并能借助「忘记密码」功能从相关站点获取信息。"
+      "description_zh": "holehe 可检测某邮箱是否在 Twitter、Instagram 等站点被注册，并能借助「忘记密码」功能从相关站点获取信息。",
+      "script_zh": "这个项目是一个超强悍的邮箱反查神器。\n\n只要输入一个邮箱地址，它就能立刻帮你查出这个邮箱注册过哪些网站。\n像微博、推特或者各类社交平台，全都逃不过它的法眼。\n\n最厉害的是，它利用了网站的找回密码机制，查得又快又准。\n无论你是想排查自己的隐私泄露，还是做安全测试，用它都省时省力。\n难怪它在 GitHub 上拿了一万多个星，真的太实用了！"
     },
     {
       "rank": 10,
@@ -166,13 +175,14 @@
       "description": "Fastest and only macOS Dictation app with on-device STT and custom trained AI enhancement model. A local Wispr Flow alternative. DM us on X for an easter egg 😉 - https://x.com/fluidvoiceapp",
       "language": "Swift",
       "language_color": "#F05138",
-      "stars": 10327,
+      "stars": 10328,
       "forks": 699,
       "period_stars": 104,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "速度最快、且唯一支持端侧语音识别（STT）与自训练 AI 增强模型的 macOS 听写应用，可作为本地版 Wispr Flow 替代。X 上私信我们获取彩蛋 😉 - https://x.com/fluidvoiceapp"
+      "description_zh": "速度最快、且唯一支持端侧语音识别（STT）与自训练 AI 增强模型的 macOS 听写应用，可作为本地版 Wispr Flow 替代。X 上私信我们获取彩蛋 😉 - https://x.com/fluidvoiceapp",
+      "script_zh": "这个项目是目前 macOS 上最快的本地语音输入神器。\n你只要对着电脑说话，它就能瞬间把语音变成精准的文字。\n再也不用担心打字手酸，或者网络不好导致识别卡顿了。\n\n它最牛的地方在于完全在本地运行，隐私安全直接拉满。\n而且它有专门训练的 AI 增强模型，连口癖和语气词都能自动过滤。\n现在它在 GitHub 上已经破万星了，绝对值得你赶紧去试试！"
     },
     {
       "rank": 11,
@@ -183,13 +193,14 @@
       "description": "ToolJet is the open-source foundation of ToolJet AI - the enterprise app generation platform for building internal tools, dashboard, business applications, workflows and AI agents 🚀",
       "language": "JavaScript",
       "language_color": "#f1e05a",
-      "stars": 39537,
+      "stars": 39540,
       "forks": 5296,
       "period_stars": 544,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "ToolJet 是 ToolJet AI 的开源基座——一款用于构建内部工具、仪表盘、业务应用、工作流与 AI 智能体的企业级应用生成平台 🚀"
+      "description_zh": "ToolJet 是 ToolJet AI 的开源基座——一款用于构建内部工具、仪表盘、业务应用、工作流与 AI 智能体的企业级应用生成平台 🚀",
+      "script_zh": "这个项目能让你用拖拽的方式，几分钟就搭好一个企业内部系统。\n无论是数据看板、业务后台，还是工作流和 AI 智能体，它都能轻松搞定。\n\n你只需连上数据库，把组件拖到画布上，就能直接生成网页应用。\n最厉害的是它完全开源，还能接入各种 AI 模型，让后台秒变聪明。\n\n不仅省去了写前端代码的痛苦，还能帮你省下大笔的开发成本。\n难怪它在 GitHub 上拿了快四万颗星，想提效的赶紧去试试吧！"
     },
     {
       "rank": 12,
@@ -200,13 +211,14 @@
       "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 47354,
+      "stars": 47355,
       "forks": 4393,
       "period_stars": 118,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "「CLI-Anything：让所有软件都原生适配智能体」——CLI-Hub：https://clianything.cc/"
+      "description_zh": "「CLI-Anything：让所有软件都原生适配智能体」——CLI-Hub：https://clianything.cc/",
+      "script_zh": "这个项目能让 AI 智能体直接操控你电脑上的所有软件。\n\n以前 AI 只能在聊天框里说话，现在用它就能把各种命令行工具直接对接给 AI。\n你只需要用嘴下达指令，它就能自动帮你调动各种软件去干活。\n\n最牛的是你完全不用重写任何代码，就能让老软件秒变 AI 原生应用。\n它在 GitHub 上已经拿下了四万多颗星，绝对是今年最火爆的 AI 落地黑科技。"
     },
     {
       "rank": 13,
@@ -217,13 +229,14 @@
       "description": "The fastest browser for AI agents to run browser automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.",
       "language": "JavaScript",
       "language_color": "#f1e05a",
-      "stars": 10963,
+      "stars": 10966,
       "forks": 559,
       "period_stars": 545,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "为 AI 智能体打造的最快浏览器自动化工具，可把你的已登录浏览器状态共享给 Codex、Claude Code 等智能体，且不会打扰你。零成本、零配置。"
+      "description_zh": "为 AI 智能体打造的最快浏览器自动化工具，可把你的已登录浏览器状态共享给 Codex、Claude Code 等智能体，且不会打扰你。零成本、零配置。",
+      "script_zh": "你还在手动给 AI 助手复制 Cookie 吗？\n这个项目是一个专门为 AI 代理设计的超快浏览器。\n\n它能把你已经登录的浏览器状态直接共享给 Claude 这样的 AI。\n让 AI 代替你自动操作网页，而且完全不会打扰到你的正常使用。\n\n最给力的是它完全免费，甚至不需要任何繁琐配置。\n速度极快，直接搞定了 AI 自动化最头疼的登录难题。"
     }
   ]
 }

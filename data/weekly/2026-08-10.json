@@ -1,7 +1,7 @@
 {
   "since": "weekly",
   "date": "2026-08-16",
-  "fetched_at": "2026-08-16T08:51:11",
+  "fetched_at": "2026-08-16T09:00:10",
   "count": 16,
   "repos": [
     {
@@ -13,13 +13,14 @@
       "description": "29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop.",
       "language": "HTML",
       "language_color": "#e34c26",
-      "stars": 18619,
-      "forks": 1120,
+      "stars": 18623,
+      "forks": 1121,
       "period_stars": 14735,
       "period_label": "本周",
       "topics": [],
       "category": "前端 / Web",
-      "description_zh": "面向 Claude Code 的 29 种编辑型图表。纯 HTML + SVG，自包含。无阴影、拒绝 Mermaid 流水账。"
+      "description_zh": "面向 Claude Code 的 29 种编辑型图表。纯 HTML + SVG，自包含。无阴影、拒绝 Mermaid 流水账。",
+      "script_zh": "这个项目是一个专门给 AI 准备的图表设计模板库。\n\n很多人用 AI 生成图表，出来的效果总是乱七八糟。\n\n有了它，你直接把模板喂给 Claude。\n\n它就能瞬间吐出印刷级别的矢量图。\n\n最棒的是它完全没有那种廉价的阴影和杂乱的线条。\n\n二十九种编辑级排版直接套用，改改字就能上汇报。\n\n难怪它在 GitHub 上一下拿了一万多颗星！"
     },
     {
       "rank": 2,
@@ -30,7 +31,7 @@
       "description": "Graph-Native Infrastructure for Context and Accountable AI Systems",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 7930,
+      "stars": 7931,
       "forks": 812,
       "period_stars": 5339,
       "period_label": "本周",
@@ -48,13 +49,14 @@
       "description": "A self-improving RLM agent for coding workflows and long-running autonomous tasks.",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 16290,
+      "stars": 16291,
       "forks": 1751,
       "period_stars": 8488,
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "面向编程工作流与长时间自主任务的自我进化型 RLM 智能体。"
+      "description_zh": "面向编程工作流与长时间自主任务的自我进化型 RLM 智能体。",
+      "script_zh": "这个项目是一个能自己迭代升级的 AI 编程助手。\n\n它专门用来搞定那些复杂的、需要长时间运行的开发任务。\n\n你只需要把需求丢给它，它就能自动写代码、改 Bug 甚至跑测试。\n\n最厉害的是，它引入了强化学习机制。\n\n别的 AI 犯了错还得你写提示词去纠正，它自己就能在试错中越变越聪明。\n\n这种能自我进化的生产力工具，赶紧去 GitHub 把它收藏起来吧！"
     },
     {
       "rank": 4,
@@ -65,13 +67,14 @@
       "description": "holehe allows you to check if the mail is used on different sites like twitter, instagram and will retrieve information on sites with the forgotten password function.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 13117,
+      "stars": 13118,
       "forks": 1742,
       "period_stars": 1059,
       "period_label": "本周",
       "topics": [],
       "category": "其他",
-      "description_zh": "holehe 可检测某邮箱是否在 Twitter、Instagram 等站点被注册，并能借助「忘记密码」功能从相关站点获取信息。"
+      "description_zh": "holehe 可检测某邮箱是否在 Twitter、Instagram 等站点被注册，并能借助「忘记密码」功能从相关站点获取信息。",
+      "script_zh": "这个项目是一个超强悍的邮箱反查神器。\n\n只要输入一个邮箱地址，它就能立刻帮你查出这个邮箱注册过哪些网站。\n像微博、推特或者各类社交平台，全都逃不过它的法眼。\n\n最厉害的是，它利用了网站的找回密码机制，查得又快又准。\n无论你是想排查自己的隐私泄露，还是做安全测试，用它都省时省力。\n难怪它在 GitHub 上拿了一万多个星，真的太实用了！"
     },
     {
       "rank": 5,
@@ -106,7 +109,8 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "为你的 monorepo 打造的终极 RAG。借助 AI 与知识图谱，查询、理解并编辑多语言代码库。"
+      "description_zh": "为你的 monorepo 打造的终极 RAG。借助 AI 与知识图谱，查询、理解并编辑多语言代码库。",
+      "script_zh": "面对几百万行的超大代码库，你是不是也经常头大？\n\n这个项目就是专门帮你读懂、修改超大代码库的 AI 辅助工具。\n它把知识图谱和 AI 结合在一起，可以直接扫描你手里的多语言代码。\n\n你只要用大白话提问，它就能帮你快速定位逻辑，甚至直接动手改代码。\n最厉害的是，它能像老架构师一样，看懂复杂的代码调用关系。\n\n哪怕是结构再乱的单体大仓库，它也能理得清清楚楚。\n这效率直接翻倍，赶紧去 GitHub 搜一下试试吧！"
     },
     {
       "rank": 7,
@@ -117,13 +121,14 @@
       "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 6067,
+      "stars": 6069,
       "forks": 405,
       "period_stars": 2488,
       "period_label": "本周",
       "topics": [],
       "category": "其他",
-      "description_zh": "面向微型设备的 14MB 基础模型：手机、可穿戴、智能家居与机器人。"
+      "description_zh": "面向微型设备的 14MB 基础模型：手机、可穿戴、智能家居与机器人。",
+      "script_zh": "这个项目是一个只有十四兆大小的端侧大模型。\n    它可以直接装在你的智能手表、手机或者扫地机器人里。\n\n    哪怕不联网，它也能在本地帮你处理各种复杂的AI指令。\n    这直接解决了设备离线就变砖的痛点。\n\n    最牛的是它体积小到不可思议，却完全不影响性能。\n    只要极低的算力就能跑起来，帮你省下大笔的云端服务器费用。\n    想让手里的智能硬件秒变聪明，闭眼冲它就对了！"
     },
     {
       "rank": 8,
@@ -134,13 +139,14 @@
       "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
       "language": "Rust",
       "language_color": "#dea584",
-      "stars": 3270,
+      "stars": 3271,
       "forks": 326,
       "period_stars": 2434,
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "Macro 是面向团队的 unified 工作空间：邮件、聊天、文档、任务、智能体、通话与 CRM，通过共享 AI 记忆以 @ 链接串在一起。"
+      "description_zh": "Macro 是面向团队的 unified 工作空间：邮件、聊天、文档、任务、智能体、通话与 CRM，通过共享 AI 记忆以 @ 链接串在一起。",
+      "script_zh": "这个项目是一个把团队所有协作工具缝合在一起的超级工作台。\n不管是收邮件、发聊天、写文档还是做管理，你都能在同一个界面里搞定。\n\n最酷的是，它用 AI 把所有数据都打通了。\n你只要用艾特符号，就能把邮件、任务和文档直接串联起来。\n\n而且 AI 还会共享团队记忆，帮你随时整理上下文。\n再也不用在各种软件里来回切，效率直接拉满！"
     },
     {
       "rank": 9,
@@ -151,13 +157,14 @@
       "description": "ToolJet is the open-source foundation of ToolJet AI - the enterprise app generation platform for building internal tools, dashboard, business applications, workflows and AI agents 🚀",
       "language": "JavaScript",
       "language_color": "#f1e05a",
-      "stars": 39537,
+      "stars": 39540,
       "forks": 5296,
       "period_stars": 1047,
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "ToolJet 是 ToolJet AI 的开源基座——一款用于构建内部工具、仪表盘、业务应用、工作流与 AI 智能体的企业级应用生成平台 🚀"
+      "description_zh": "ToolJet 是 ToolJet AI 的开源基座——一款用于构建内部工具、仪表盘、业务应用、工作流与 AI 智能体的企业级应用生成平台 🚀",
+      "script_zh": "这个项目能让你用拖拽的方式，几分钟就搭好一个企业内部系统。\n无论是数据看板、业务后台，还是工作流和 AI 智能体，它都能轻松搞定。\n\n你只需连上数据库，把组件拖到画布上，就能直接生成网页应用。\n最厉害的是它完全开源，还能接入各种 AI 模型，让后台秒变聪明。\n\n不仅省去了写前端代码的痛苦，还能帮你省下大笔的开发成本。\n难怪它在 GitHub 上拿了快四万颗星，想提效的赶紧去试试吧！"
     },
     {
       "rank": 10,
@@ -168,7 +175,7 @@
       "description": "TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks.",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 21987,
+      "stars": 21989,
       "forks": 2013,
       "period_stars": 3956,
       "period_label": "本周",
@@ -192,7 +199,8 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "面向 AI 编程智能体的生产级工程技能。"
+      "description_zh": "面向 AI 编程智能体的生产级工程技能。",
+      "script_zh": "这个项目是专门给 AI 编程助手准备的专业技能包。\n平时 AI 帮我们写代码，经常会胡说八道或者把代码改乱，对吧？\n\n用上它，AI 就能像资深程序员一样，学会精准搜索文件、安全修改代码和运行测试了。\n它直接解决了 AI 落地到实际开发中，不够稳定、容易出错的痛点。\n\n最厉害的是，这里面的工具全是生产级别的，非常严谨。\n项目作者还是谷歌的大神，想让你的 AI 助手变聪明，用它准没错！"
     },
     {
       "rank": 12,
@@ -203,13 +211,14 @@
       "description": "Animation engine for explanatory math videos",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 91233,
+      "stars": 91234,
       "forks": 7548,
       "period_stars": 2008,
       "period_label": "本周",
       "topics": [],
       "category": "游戏",
-      "description_zh": "用于制作数学讲解动画的动画引擎。"
+      "description_zh": "用于制作数学讲解动画的动画引擎。",
+      "script_zh": "这个项目是专门用来写数学动画的 Python 引擎。\n你只需要写几行代码，就能把复杂的几何图形变成极其丝滑的动态视频。\n\n它直接解决了做科普视频时，手绘太慢、做三维建模又太难的痛点。\n只要你会一点 Python，就能轻松上手。\n\n最牛的是，它做出来的动画有一种独特的极简高级感。\n那个全网催更的数学大号 3Blue1Brown，所有视频都是用它做出来的，闭眼冲就完了！"
     },
     {
       "rank": 13,
@@ -226,7 +235,8 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "给你的智能体一台电脑 👾"
+      "description_zh": "给你的智能体一台电脑 👾",
+      "script_zh": "这个项目能直接给你的 AI 智能体配一台虚拟电脑。\n\n简单来说，就是让 AI 像人类一样，学会自己用鼠标和键盘。\n不管是去网页上帮你抢票，还是在桌面整理表格，它都能在后台自动帮你搞定。\n\n最牛的是，它把环境配置和安全隔离全帮你做好了。\n有 Cloudflare 的技术背书，运行起来不仅超快还很安全。\n想真正让 AI 帮你打工，闭眼冲它就对了！"
     },
     {
       "rank": 14,
@@ -237,13 +247,14 @@
       "description": "Agent Skills for Google products and technologies",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 18332,
+      "stars": 18334,
       "forks": 1443,
       "period_stars": 1821,
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "面向 Google 产品与技术的智能体技能。"
+      "description_zh": "面向 Google 产品与技术的智能体技能。",
+      "script_zh": "这个项目是谷歌官方开源的 AI 智能体技能库。\n简单来说，它就是给 AI 准备的“谷歌全家桶”说明书。\n\n想让你的 AI 帮你发邮件、查日历、甚至查地图吗？\n用它就能直接给 AI 接入这些超能力。\n\n它把复杂的谷歌 API 全部打包封装好了。\n你不用再痛苦地去啃那些繁琐的开发文档。\n\n直接调用这些技能，你的 AI 就能秒变行动派。\n狂揽一万八千星，想做智能体开发的朋友闭眼冲就完了！"
     },
     {
       "rank": 15,
@@ -254,12 +265,13 @@
       "description": "",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 7518,
+      "stars": 7521,
       "forks": 962,
       "period_stars": 670,
       "period_label": "本周",
       "topics": [],
-      "category": "其他"
+      "category": "其他",
+      "script_zh": "这个项目是 Google DeepMind 开源的下一代 AI 天气预报模型。\n它把复杂的全球气象预测，变成了用深度学习就能搞定的计算任务。\n\n你只要输入气象数据，它就能在几秒钟内预测出未来的天气变化。\n这直接解决了传统气象预报计算慢、成本高的大难题。\n\n最厉害的是，它的预测精度极高，甚至能提前预警极端天气。\n现在不需要超级计算机，普通人也能跑这种顶级的气象大模型了。"
     },
     {
       "rank": 16,
@@ -270,13 +282,14 @@
       "description": "The open-source app everyone uses to manage agents at work",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 78310,
-      "forks": 14361,
+      "stars": 78312,
+      "forks": 14362,
       "period_stars": 2430,
       "period_label": "本周",
       "topics": [],
       "category": "移动端",
-      "description_zh": "人人都在用的开源应用，用来在工作中管理智能体。"
+      "description_zh": "人人都在用的开源应用，用来在工作中管理智能体。",
+      "script_zh": "这个项目是一个专门在工作中管理 AI Agent 的开源神器。\n简单来说，就是把你在工作里用到的各种 AI 助手统一管起来。\n\n无论是自动发邮件、整理报表还是跑数据，你都能在一个地方给它们派任务。\n它最厉害的地方在于完全开源，而且已经有接近八万颗星的超高人气。\n\n界面小白也能上手，能让你的 AI 工具像一个团队一样协作。\n想让 AI 帮你打工的赶紧去试试吧！"
     }
   ]
 }
