@@ -94,6 +94,8 @@ HL_MANUAL = {
     "Panniantong/Agent-Reach": "AI 从只会答，到会自己去看。",
     "DeusData/codebase-memory-mcp": "AI 改代码，不用每次重新理解项目。",
     "microsoft/markitdown": "喂给 AI 之前，所有文档先过它。",
+    "public-apis/public-apis": "46 万星，是清单做到极致的样本。",
+    "HKUDS/CLI-Anything": "让每个软件都长出命令行接口，AI 就能操作它。",
 }
 
 def render(projects, date):

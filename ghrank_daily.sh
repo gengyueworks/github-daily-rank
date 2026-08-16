@@ -27,10 +27,28 @@ echo "=== $(date '+%Y-%m-%d %H:%M:%S') 开始 ==="
 # 5) 提交 data 快照 + zh_cache + script_cache 到 main（缓存持久化）
 #    -X ours：data 是纯抓取快照，冲突时以本地最新抓取为准（rebase 中 ours=本地）
 #    失败则中止（绝不能把冲突标记带进 commit）
+#    🚨 2026-08-16 加固：pull 前先确认工作区干净。autostash 在 rebase 后 pop 回
+#    未提交改动时，若远端同文件也变了会冲突并写入标记（weekly json 曾中招 15 处）。
+if ! git diff --quiet; then
+  echo "⚠️ 工作区有未提交改动，先 stash 再 pull（避免 autostash pop 冲突）"
+  git stash push -u -m "pre-pull-auto-$(date +%H%M%S)" || { echo "❌ stash 失败"; exit 1; }
+  NEED_POP=1
+else
+  NEED_POP=0
+fi
 if ! GIT_EDITOR=true git pull --rebase --autostash -X ours origin main >/dev/null 2>&1; then
   echo "❌ git pull --rebase 失败，中止（避免冲突标记进入 data）"
   git rebase --abort 2>/dev/null || true
+  git stash pop 2>/dev/null || true
   exit 1
+fi
+if [ "$NEED_POP" = "1" ]; then
+  if git stash pop 2>&1 | grep -q "CONFLICT"; then
+    echo "❌ stash pop 冲突！检查 data/ 残留标记后手动处理"
+    grep -rl '^<<<<<<< ' data/ 2>/dev/null | xargs -r rm -f  # 冲突时丢弃脏文件，下次抓取重生成
+    git checkout -- . 2>/dev/null || true
+    git stash drop 2>/dev/null || true
+  fi
 fi
 if grep -rl '^<<<<<<< ' data/ 2>/dev/null | grep -q .; then
   echo "❌ data 目录残留冲突标记，中止"
@@ -43,6 +61,10 @@ fi
 if ! GIT_EDITOR=true git pull --rebase --autostash -X ours origin main >/dev/null 2>&1; then
   echo "❌ 提交后 git pull --rebase 失败，中止"
   git rebase --abort 2>/dev/null || true
+  exit 1
+fi
+if grep -rl '^<<<<<<< ' data/ 2>/dev/null | grep -q .; then
+  echo "❌ data 目录残留冲突标记（提交后），中止"
   exit 1
 fi
 git push origin main 2>&1 | tail -2
