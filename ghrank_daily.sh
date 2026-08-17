@@ -96,4 +96,9 @@ if [ -f "$MAT_OUT" ]; then
 fi
 find "$PROJ/.." -maxdepth 1 -name "github-daily-rank-资料-*.zip" -mtime +30 -delete 2>/dev/null || true
 
+# 9) 生成小红书每日发布包（半自动：从素材库取下一期，存草稿料备好）
+#    素材库: ~/Downloads/图片素材/悦的 AI 书签-小红书账号/000N/
+#    产出:   _每日发布包/YYYY-MM-DD-第N期-描述/ (01-04.png + 文案.txt + 存草稿操作.txt)
+"$PY" gen_xhs_pkg.py || echo "⚠️ 发布包生成失败（不影响其他产出）"
+
 echo "=== $(date '+%Y-%m-%d %H:%M:%S') 完成 ==="
