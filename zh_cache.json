@@ -32,5 +32,6 @@
   "addyosmani/agent-skills": "面向 AI 编程智能体的生产级工程技能。",
   "cloudflare/computer": "给你的智能体一台电脑 👾",
   "google/skills": "面向 Google 产品与技术的智能体技能。",
-  "paperclipai/paperclip": "人人都在用的开源应用，用来在工作中管理智能体。"
+  "paperclipai/paperclip": "人人都在用的开源应用，用来在工作中管理智能体。",
+  "basecamp/omarchy": "精美、现代、有主见的 Linux"
 }
