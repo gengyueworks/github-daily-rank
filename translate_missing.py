@@ -33,6 +33,22 @@ MY_ZH = {
     "citrolabs/ego-lite": "为 AI 智能体打造的最快浏览器自动化工具，可把你的已登录浏览器状态共享给 Codex、Claude Code 等智能体，且不会打扰你。零成本、零配置。",
     "PrimeIntellect-ai/prime-agent": "面向编程工作流与长时间自主任务的自我进化型 RLM 智能体。",
     "3b1b/manim": "用于制作数学讲解动画的动画引擎。",
+    "basecamp/omarchy": "美观、现代且高度定制化的 Linux 发行版。",
+    "OpenCut-app/OpenCut": "开源版剪映（CapCut）替代品。",
+    # 2026-08-18 日榜新增
+    "harry0703/MoneyPrinterTurbo": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。",
+    "usestrix/strix": "开源 AI 渗透测试工具，用于发现并修复你应用中的安全漏洞。",
+    "nautechsystems/nautilus_trader": "生产级、原生 Rust 编写的交易引擎，采用确定性事件驱动架构。",
+    "akitaonrails/ai-memory": "为智能体编程命令行工具提供长期记忆的解决方案，并便于在不同智能体厂商之间交接。",
+    "mukul975/Anthropic-Cybersecurity-Skills": "面向 AI 智能体的 817 项结构化网络安全技能 · 对照 6 大框架：MITRE ATT&CK、NIST CSF 2.0、MITRE ATLAS、D3FEND、NIST AI RMF 与 MITRE F3（反欺诈）· 遵循 agentskills.io 标准 · 支持 Claude Code、GitHub Copilot、Codex CLI、Cursor、Gemini CLI 等 20+ 平台 · 覆盖 29 个安全领域 · Apache 2.0 协议。",
+    "AlexsJones/llmfit": "数百种模型与供应商。一条命令找出能在你硬件上运行的模型。",
+    "santifer/career-ops": "开源 AI 求职工具：扫描招聘门户，用结构化的 A-F 评分标准将岗位量化为 1.0-5.0 分，定制简历、追踪投递进度——可在本地 AI 编程命令行（Claude Code、Codex、OpenCode、Antigravity 等）中运行。",
+    "jundot/omlx": "面向 Apple Silicon 的大语言模型推理服务器，支持连续批处理与 SSD 缓存——可从 macOS 菜单栏管理。",
+    "immich-app/immich": "高性能自托管照片与视频管理方案。",
+    "agalwood/Motrix": "一款功能齐全的下载管理器。",
+    # 2026-08-17 周榜新增
+    "lightningpixel/modly": "桌面应用，利用本地 AI 从图片或提示词生成 3D 模型——完全在你的 GPU 上运行。",
+    "anthropics/skills": "Agent Skills 的公开仓库。",
 }
 
 
