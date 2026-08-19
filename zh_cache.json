@@ -44,5 +44,10 @@
   "santifer/career-ops": "开源 AI 求职工具：扫描招聘门户，用结构化的 A-F 评分标准将岗位量化为 1.0-5.0 分，定制简历、追踪投递进度——可在本地 AI 编程命令行（Claude Code、Codex、OpenCode、Antigravity 等）中运行。",
   "jundot/omlx": "面向 Apple Silicon 的大语言模型推理服务器，支持连续批处理与 SSD 缓存——可从 macOS 菜单栏管理。",
   "immich-app/immich": "高性能自托管照片与视频管理方案。",
-  "agalwood/Motrix": "一款功能齐全的下载管理器。"
+  "agalwood/Motrix": "一款功能齐全的下载管理器。",
+  "chaitanyagiri/munder-difflin": "本地多智能体编排框架。",
+  "volcengine/OpenViking": "面向 AI 智能体的自进化上下文数据库，统一智能体记忆、知识 RAG 与技能。",
+  "NawfalMotii79/PLFM_RADAR": "开源、低成本的 10.5 GHz PLFM 相控阵雷达系统。",
+  "bojieli/ai-agent-book": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码。",
+  "superradcompany/microsandbox": "🧱 轻量、快速的本地优先 microVM 运行时与开发库。"
 }

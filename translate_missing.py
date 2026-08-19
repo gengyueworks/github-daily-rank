@@ -49,6 +49,13 @@ MY_ZH = {
     # 2026-08-17 周榜新增
     "lightningpixel/modly": "桌面应用，利用本地 AI 从图片或提示词生成 3D 模型——完全在你的 GPU 上运行。",
     "anthropics/skills": "Agent Skills 的公开仓库。",
+    # 2026-08-19 日榜新增
+    "chaitanyagiri/munder-difflin": "本地多智能体编排框架。",
+    "volcengine/OpenViking": "面向 AI 智能体的自进化上下文数据库，统一智能体记忆、知识 RAG 与技能。",
+    "NawfalMotii79/PLFM_RADAR": "开源、低成本的 10.5 GHz PLFM 相控阵雷达系统。",
+    "bojieli/ai-agent-book": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码。",
+    # 2026-08-19 周榜新增
+    "superradcompany/microsandbox": "🧱 轻量、快速的本地优先 microVM 运行时与开发库。",
 }
 
 
