@@ -2,3 +2,5 @@ __pycache__/
 *.pyc
 .DS_Store
 site/
+xhs-assets/batch_30-旧版v1/
+HANDOVER_*.zip
