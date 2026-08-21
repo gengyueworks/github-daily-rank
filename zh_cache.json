@@ -33,6 +33,7 @@
   "cloudflare/computer": "给你的智能体一台电脑 👾",
   "google/skills": "面向 Google 产品与技术的智能体技能。",
   "paperclipai/paperclip": "人人都在用的开源应用，用来在工作中管理智能体。",
+<<<<<<< Updated upstream
   "Lightricks/LTX-2": "LTX-2 音视频生成模型的官方 Python 推理与 LoRA 训练包。",
   "basecamp/omarchy": "美观、现代且高度定制化的 Linux 发行版。",
   "harry0703/MoneyPrinterTurbo": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。",
@@ -50,4 +51,34 @@
   "NawfalMotii79/PLFM_RADAR": "开源、低成本的 10.5 GHz PLFM 相控阵雷达系统。",
   "bojieli/ai-agent-book": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码。",
   "superradcompany/microsandbox": "🧱 轻量、快速的本地优先 microVM 运行时与开发库。"
+=======
+  "basecamp/omarchy": "精美、现代、有主见的 Linux",
+  "harry0703/MoneyPrinterTurbo": "基于 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。",
+  "usestrix/strix": "开源 AI 渗透测试工具，用于发现和修复应用漏洞。",
+  "nautechsystems/nautilus_trader": "采用确定性事件驱动架构的生产级 Rust 原生交易引擎",
+  "akitaonrails/ai-memory": "适用于 Agent 编码 CLI 的长期记忆解决方案，旨在促进不同 Agent 厂商之间的协同交接。",
+  "mukul975/Anthropic-Cybersecurity-Skills": "专为 AI Agent 设计的 817 个结构化网络安全技能 · 映射至 6 大框架：MITRE ATT&CK、NIST CSF 2.0、MITRE ATLAS、D3FEND、NIST AI RMF 和 MITRE F3 (Fight Fraud) · 遵循 agentskills.io 标准 · 支持 Claude Code、GitHub Copilot、Codex CLI、Cursor、Gemini CLI 等 20 多个平台 · 涵盖 29 个安全领域 · Apache 2.0 协议",
+  "AlexsJones/llmfit": "支持数百种模型与服务商，一行命令找出能在你硬件上运行的模型。",
+  "santifer/career-ops": "开源 AI 求职助手：扫描招聘网站，通过结构化的 A-F 标准对职位进行 1.0-5.0 分的评估，量身定制简历并追踪申请进度——直接在你的 AI 编程命令行（Claude Code、Codex、OpenCode、Antigravity 等）中本地运行。",
+  "jundot/omlx": "支持连续批处理与 SSD 缓存的 Apple Silicon LLM 推理服务器，可通过 macOS 菜单栏管理",
+  "immich-app/immich": "高性能自托管照片与视频管理系统",
+  "agalwood/Motrix": "一款全功能下载管理器",
+  "chaitanyagiri/munder-difflin": "本地多智能体测试框架",
+  "volcengine/OpenViking": "面向 AI Agent 的自演进上下文数据库，统一 Agent 记忆、知识 RAG 与技能。",
+  "NawfalMotii79/PLFM_RADAR": "开源、低成本的 10.5 GHz PLFM 相控阵雷达系统",
+  "bojieli/ai-agent-book": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码",
+  "superradcompany/microsandbox": "🧱 简单、快速、本地优先的 microVM 运行时与库",
+  "modular/modular": "Modular 平台（包含 MAX 和 Mojo）",
+  "mattpocock/skills": "真正工程师的技能，直接源自我的 .agents 目录。",
+  "AprilNEA/OpenLogi": "⚡️一个用 Rust 🦀 编写的原生、本地优先的 Logitech Options+ 替代品 — 支持通过 HID++ 重映射按键、调节 DPI 和 SmartShift。无需账户，无遥测。",
+  "obra/superpowers": "一个行之有效的智能体技能框架与软件开发方法论。",
+  "agent-substrate/substrate": "Agent Substrate：核心系统",
+  "PostHog/posthog": "🦔 PostHog 是构建自驱型产品的领先平台。我们的开发者工具（涵盖 AI 可观测性、数据分析、会话重放、功能开关、A/B 测试、错误追踪及日志等）可捕获智能体（Agent）诊断问题、发现机遇和发布修复所需的全部上下文。支持通过 Slack、网页端、桌面端或 MCP 进行统一掌控。",
+  "mahlernim/google-timeline-visualizer": "使用 Google 位置记录（时间轴）数据，可视化你的年度出行轨迹。",
+  "JuliusBrussee/caveman": "🪨 词多何用，词少就行 —— 让 Claude Code 像原始人一样说话，从而节省 65% token 的技能",
+  "makeplane/plane": "🔥🔥🔥 Jira、Linear、Monday 和 ClickUp 的开源替代品。Plane 是一个用于管理任务、冲刺、文档和问题分流的现代化项目管理平台。",
+  "Tencent/AI-Infra-Guard": "全栈式 AI 红队平台，通过 Agent 扫描、技能扫描、MCP 扫描、AI 基础设施扫描和大模型越狱评估，保障 AI 生态安全。",
+  "RyanCodrai/turbovec": "基于 TurboQuant 构建的向量索引，使用 Rust 编写并提供 Python 绑定。",
+  "CodebuffAI/freebuff": "免费的编程智能体"
+>>>>>>> Stashed changes
 }
