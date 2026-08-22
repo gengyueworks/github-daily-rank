@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. linshenkx/prompt-optimizer：一款 AI 提示词优化工具，帮你写出更优质的提示词并获得更好效果。
+2. x1xhlol/system-prompts-and-models-of-ai-tools：各大 AI 工具的系统提示词合集
+3. HKUDS/CLI-Anything：CLI-Anything：让所有软件原生适配智能体。
+
+第 11 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

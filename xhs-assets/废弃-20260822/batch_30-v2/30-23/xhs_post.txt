@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. petergyang/no-ai-slop：清理 AI 味文本的工具。
+2. karpathy/autoresearch：Karpathy 出品的自动化研究流水线实验。
+3. p-e-w/heretic：大模型行为改造实验工具。
+
+第 23 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. Egonex-AI/Understand-Anything：把任意文档变成知识图谱。
+2. deepseek-ai/DeepSpec：DeepSeek 出的规格工具。
+3. ruvnet/RuView：Claude 相关资源的聚合查看工具。
+
+第 29 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. petergyang/no-ai-slop：清除任何文本中20多种常见的AI废话与套话。
+2. karpathy/autoresearch：Karpathy 出品：AI 智能体在单 GPU 上跑研究
+3. p-e-w/heretic：语言模型全自动去审查工具。
+
+第 23 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

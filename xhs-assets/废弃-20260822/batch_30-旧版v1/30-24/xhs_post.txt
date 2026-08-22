@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. bikini/exploitarium：公开漏洞利用 PoC 与漏洞研究的统一归档仓库。
+2. earendil-works/pi：AI 智能体工具包：统一 LLM API + 智能体循环
+3. JustVugg/colibri：用纯 C 语言在现有硬件上运行前沿 MoE 模型
+
+第 24 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

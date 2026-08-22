@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. Yu9191/wloc：修改 Apple 网络定位坐标，支持 Surge / Quantumult X / Loon
+2. garrytan/gstack：Garry Tan 的 Claude Code 配置：23 条工程观点
+3. cjpais/Handy：一款免费、开源且可扩展的语音转文字应用。
+
+第 13 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

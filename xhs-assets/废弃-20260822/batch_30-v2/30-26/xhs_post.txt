@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. macro-inc/macro：Rust 写的 AI agent 工具。
+2. addyosmani/agent-skills：Chrome 性能大神 Addy Osmani。
+3. shadcn/improve：用最强模型审计代码库并生成改进建议。
+
+第 26 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

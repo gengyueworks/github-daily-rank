@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. bytedance/deer-flow：字节开源的深度研究框架。
+2. astrid-runtime/book：Astrid 系列的书稿与文档仓库。
+3. 3b1b/manim：3Blue1Brown 的数学动画引擎。
+
+第 28 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

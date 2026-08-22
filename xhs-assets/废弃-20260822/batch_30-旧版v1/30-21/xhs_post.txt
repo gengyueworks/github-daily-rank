@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. drumih/turbo-fieldfare：在任意 M 系列 Mac 上以约 2GB 内存运行 Gemma 4 26B-A4B 推理。
+2. DietrichGebert/ponytail：让 AI agent 像最懒的资深工程师一样思考
+3. shiyu-coder/Kronos：Kronos：金融市场语言基础模型
+
+第 21 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

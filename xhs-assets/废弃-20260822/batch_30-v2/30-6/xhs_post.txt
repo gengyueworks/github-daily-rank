@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. Fission-AI/OpenSpec：先写规格再动手的开发规范工具。
+2. multica-ai/andrej-karpathy-skills：一份 CLAUDE.md 让 Claude。
+3. firecrawl/anydoc：任意网页文档抓取转 Markdown。
+
+第 6 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. MiniMax-AI/MiniMax-H3：MiniMax 456B 混合专家。
+2. Graphify-Labs/graphify：知识图谱构建工具。
+3. rtk-ai/rtk：AI 编码加速工具。
+
+第 18 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

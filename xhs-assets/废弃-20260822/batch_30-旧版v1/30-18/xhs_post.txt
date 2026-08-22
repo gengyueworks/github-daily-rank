@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. MiniMax-AI/MiniMax-H3：- 数据: ★6,116（今日 +0 榜单时点值）
+2. Graphify-Labs/graphify：把代码库+文档+SQL 变成可查询图谱
+3. rtk-ai/rtk：CLI 代理，把 LLM token 消耗降 60%
+
+第 18 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

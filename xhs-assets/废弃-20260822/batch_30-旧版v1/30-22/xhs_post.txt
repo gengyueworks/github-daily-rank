@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. zhongerxin/Cowart：- 数据: ★5,538（今日 +0 榜单时点值）
+2. JuliusBrussee/caveman：最少的 token 做最多的事
+3. VectifyAI/PageIndex：PageIndex：无需向量、基于推理的文档索引
+
+第 22 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

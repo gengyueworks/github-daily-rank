@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. localsend/localsend：一款开源、跨平台的 AirDrop 替代工具。
+2. obra/superpowers：智能体技能框架 + 软件开发方法论
+3. hugohe3/ppt-master：AI 助力将文档或主题直接转化为原生的 PPT 演示文稿。
+
+第 2 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

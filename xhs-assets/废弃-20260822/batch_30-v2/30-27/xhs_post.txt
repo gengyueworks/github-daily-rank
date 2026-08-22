@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. cursor/plugins：Cursor 编辑器官方插件仓库。
+2. nexu-io/open-design：AI 设计工具。
+3. MoonshotAI/Kimi-K3：月之暗面 Kimi 多模态模型。
+
+第 27 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. paperclipai/paperclip：TypeScript 写的 AI agent。
+2. FareedKhan-dev/kimi-k3-in-c：用纯 C 从零实现大模型推理。
+3. XxHuberrr/Mineradio：浏览器端的迷你电台播放器。
+
+第 30 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

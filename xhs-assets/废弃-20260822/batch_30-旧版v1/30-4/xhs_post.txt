@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. koala73/worldmonitor：实时全球情报面板，AI 新闻聚合
+2. NousResearch/hermes-agent：会跟着你成长的智能体
+3. opendataloader-project/opendataloader-pdf：PDF 文档解析库，喂给 AI 之前先过它
+
+第 4 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

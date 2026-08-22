@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. cordiverse/cordis：面向时空可组合性的元框架。
+2. thedotmack/claude-mem：跨会话持久记忆
+3. img2threejs/img2threejs：以纯代码和程序化方式，重建参考图像中的物体。
+
+第 25 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

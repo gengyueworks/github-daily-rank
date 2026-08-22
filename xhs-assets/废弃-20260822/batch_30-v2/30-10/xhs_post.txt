@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. permissionlesstech/bitchat：蓝牙 mesh 聊天。
+2. msitarzewski/agency-agents：按广告公司分工设计的 AI agents 组合。
+3. apple/container：苹果官方的容器工具。
+
+第 10 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

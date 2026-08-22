@@ -298,3 +298,11 @@ GitHub经典项目资料库-日期.md     →  封面1 + 项目卡3 + xhs_post.t
 
 > **SSOT 声明**：本文件 + `xhs-assets/选题/` 下的富化清单 + `template_*_v2.html` + `agent_instructions_v2.md`，四件套即为小红书栏目的完整可复制流水线。**哪怕对话记录丢失，直接打开本仓库也能一键复刻。**
 
+### v2.1 本地直出（2026-08-22 凌晨启用，Notion 渲染环节已可绕过）
+
+- **脚本**：`xhs-assets/gen_batch30_v2.py` — 读 `xhs-assets/选题/30期选题清单-富化v2.md`，调 `xhs_render.py`（PIL）本地直出 30 期全套：每期 cover.png + 项目卡×3 + xhs_post.txt + zip，输出 `xhs-assets/batch_30-v2/`
+- **重跑命令**：`cd xhs-assets && python3 gen_batch30_v2.py`（约 1 分钟，幂等覆盖）
+- **视觉权威源**：`xhs_render.py`（fable5 白底模板，1242×1660，Songti+Menlo）。⚠️ 注意：与上文 v2 克莱因蓝 HTML 模板是**两套并存视觉，尚未合并**——批量发布前需定稿用哪套
+- **富化v2 vs 富化终版**：v2 补齐了空壳「定位」（如 odysseus）、判断句按期轮换（5 句 × 各 6 期）；星标数据已抽验为真实值
+- **最新交接**：见仓库根目录 `HANDOVER_2026-08-22_小红书日榜本地渲染版.md`（取代 08-21 版）
+

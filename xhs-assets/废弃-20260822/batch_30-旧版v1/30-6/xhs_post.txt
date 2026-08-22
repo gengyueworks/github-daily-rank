@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. Fission-AI/OpenSpec：面向 AI 编程助手的规范驱动开发
+2. multica-ai/andrej-karpathy-skills：一份 CLAUDE.md 就能提升 Claude Code 表现的技能包
+3. firecrawl/anydoc：将 Word/PPT/Excel/EPUB/CSV 等任意文档转换为纯净文本或 JSON 格式。
+
+第 6 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

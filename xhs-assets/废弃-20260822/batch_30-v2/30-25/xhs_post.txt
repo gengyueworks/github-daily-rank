@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. cordiverse/cordis：插件化 Node.js 框架。
+2. thedotmack/claude-mem：Claude 跨会话记忆。
+3. img2threejs/img2threejs：一张图生成 three.js 三维场景。
+
+第 25 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

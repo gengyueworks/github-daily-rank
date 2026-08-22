@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. zhongerxin/Cowart：无限画布绘图引擎。
+2. JuliusBrussee/caveman：Go 写的轻量 AI 工具。
+3. VectifyAI/PageIndex：把长文档组织成树状索引。
+
+第 22 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

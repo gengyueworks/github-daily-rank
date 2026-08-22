@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. macro-inc/macro：Macro是共享AI记忆驱动的团队统一工作空间，集成邮件、聊天、文档与CRM。
+2. addyosmani/agent-skills：生产级工程技能包，给 AI 编程用
+3. shadcn/improve：用最强模型审计你的代码库并写改进建议
+
+第 26 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

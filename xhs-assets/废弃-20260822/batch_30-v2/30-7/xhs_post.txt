@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. tw93/Mole：Mac 清理工具。
+2. anomalyco/opencode：开源编程智能体。
+3. github/spec-kit：GitHub 官方的规格驱动开发套件。
+
+第 7 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. astrid-runtime/handbook：Astrid 贡献者手册：多仓库与公开合约。
+2. deepseek-ai/deepseek-harness：DeepSeek Harness——「一切皆插件」的智能体框架
+3. infiniflow/ragflow：RAGFlow 是领先的开源检索增强生成（RAG）引擎，将前沿 RAG 与智能体能力融合，为 LLM 打造更优的上下文层
+
+第 17 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

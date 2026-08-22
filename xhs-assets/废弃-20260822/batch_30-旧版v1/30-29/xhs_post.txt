@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. Egonex-AI/Understand-Anything：把任何东西变成知识图谱
+2. deepseek-ai/DeepSpec：DeepSpec：用于训练和评估的全栈代码库。
+3. ruvnet/RuView：把 WiFi 信号变成实时感知的 AI 工具
+
+第 29 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

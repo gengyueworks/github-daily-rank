@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. andrewyng/openworker：- 数据: ★14,574（今日 +0 榜单时点值）
+2. anthropics/claude-code：Claude 官方终端编程智能体
+3. ToolJet/ToolJet：ToolJet是用于构建内部工具、业务应用、工作流与AI智能体的开源低代码平台。
+
+第 12 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

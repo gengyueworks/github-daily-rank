@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. cactus-compute/needle：专为手机、智能家居、可穿戴及机器人等微型设备打造的14MB基础模型。
+2. google-gemini/gemini-cli：谷歌开源的终端 AI 智能体
+3. unslothai/unsloth：本地图形界面，用于运行与训练大语言模型和扩散模型，涵盖 Qwen3.8、Kimi K3、MiniMax-H3、Gemma
+
+第 19 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

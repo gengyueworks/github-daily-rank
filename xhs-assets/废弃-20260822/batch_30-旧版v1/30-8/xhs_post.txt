@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. siddharthvaddem/openscreen：免费制作精美 Demo，开源且无需订阅。
+2. ultraworkers/claw-code：Rust 写的智能体托管项目
+3. rustdesk/rustdesk：支持自托管的开源远程桌面软件，可作为 TeamViewer 的替代方案。
+
+第 8 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

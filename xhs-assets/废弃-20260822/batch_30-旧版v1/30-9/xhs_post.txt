@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. HKUDS/DeepTutor：DeepTutor：终身个性化辅导。
+2. anthropics/skills：智能体技能公开仓库
+3. OpenCut-app/OpenCut：一款开源的 CapCut（剪映）替代工具。
+
+第 9 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

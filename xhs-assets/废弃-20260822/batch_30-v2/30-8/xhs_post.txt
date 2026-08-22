@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. siddharthvaddem/openscreen：开源录屏工具。
+2. ultraworkers/claw-code：Rust 写的命令行 AI 编码代理。
+3. rustdesk/rustdesk：开源远程桌面。
+
+第 8 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

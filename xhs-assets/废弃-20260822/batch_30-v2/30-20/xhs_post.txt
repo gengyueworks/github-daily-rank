@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. bashalarmistalt/decimen-optical-transfer：光学传输模拟工具。
+2. openai/codex：OpenAI 官方命令行编码代理。
+3. google/langextract：Google 出的文本抽取库。
+
+第 20 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

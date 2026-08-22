@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. public-apis/public-apis：免费 API 接口汇总清单。
+2. openclaw/openclaw：开源的个人 AI 助手，任何系统任何平台都能跑
+3. microsoft/markitdown：微软出品：PDF/Word/PPT/Excel/音视频一键转干净的 Markdown
+
+第 1 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

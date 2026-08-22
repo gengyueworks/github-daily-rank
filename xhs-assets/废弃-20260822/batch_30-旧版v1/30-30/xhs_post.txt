@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. paperclipai/paperclip：人人都在用的职场 AI 智能体开源管理工具。
+2. FareedKhan-dev/kimi-k3-in-c：在单卡上运行推理的 2.78 万亿参数 Kimi K3
+3. XxHuberrr/Mineradio：一款主打电影级镜头、粒子特效与歌词舞台的沉浸式音乐播放器。
+
+第 30 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. bashalarmistalt/decimen-optical-transfer：- 数据: ★6,062（今日 +0 榜单时点值）
+2. openai/codex：OpenAI 官方的轻量终端编程智能体
+3. google/langextract：用于提取结构化信息的 Python 库
+
+第 20 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

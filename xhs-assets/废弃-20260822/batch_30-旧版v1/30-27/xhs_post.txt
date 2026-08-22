@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. cursor/plugins：Cursor 官方插件与插件开发规范。
+2. nexu-io/open-design：DeepSeek 生态的设计插件
+3. MoonshotAI/Kimi-K3：开放前沿智能
+
+第 27 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具

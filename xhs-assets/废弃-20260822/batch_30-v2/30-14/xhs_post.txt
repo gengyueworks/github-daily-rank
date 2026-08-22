@@ -1,0 +1,7 @@
+今天值得加入收藏夹的三个项目：
+1. Lightricks/LTX-2：LTX 视频生成模型。
+2. farion1231/cc-switch：Claude Code / Codex。
+3. vorssaint/vorssaint-utils：Mac 效率小工具集合。
+
+第 14 期 · 好工具帮人省去重复造轮子的时间
+#GitHub #开源项目 #开发者工具
