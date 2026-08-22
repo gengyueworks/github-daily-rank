@@ -1,0 +1,364 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GitHub 周报｜8月17日 — 8月23日</title><style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap');
+:root {
+    --klein: #002FA7;
+    --klein-bright: #0044FF;
+    --white: #FFFFFF;
+    --bg-light: #F8F9FB;
+    --text-dark: #1A1A1A;
+    --text-mid: #6B6B6B;
+    --text-light: #9CA3AF;
+    --border: #E5E7EB;
+    --accent: #C41E3A;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Noto Sans SC', 'Inter', -apple-system, sans-serif;
+    background: var(--white); color: var(--text-dark);
+    line-height: 1.75; -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 720px; margin: 0 auto; padding: 56px 28px 80px; }
+.doc-title { font-size: 38px; font-weight: 700; color: var(--text-dark); letter-spacing: -0.5px; margin-bottom: 8px; text-wrap: balance; }
+.doc-title span { color: var(--klein); }
+.doc-date { font-family: 'Inter', sans-serif; font-size: 15px; color: var(--text-light); }
+.divider { height: 1px; background: var(--border); margin: 36px 0; }
+.section-header { font-size: 24px; font-weight: 600; color: var(--klein); margin-bottom: 24px; padding-bottom: 8px; border-bottom: 2px solid var(--klein); display: inline-block; text-wrap: balance; }
+.section-header .en { font-family: 'Inter'; font-size: 13px; color: var(--text-light); font-weight: 400; margin-left: 10px; }
+.section-block { margin-bottom: 48px; }
+.news-item { margin-bottom: 52px; }
+.news-item:last-child { margin-bottom: 0; }
+.news-title { font-size: 21px; font-weight: 600; color: var(--text-dark); line-height: 1.5; margin-bottom: 14px; text-wrap: balance; }
+.news-body { font-size: 16px; color: var(--text-dark); line-height: 1.9; margin-bottom: 16px; }
+.news-label { font-size: 14px; color: var(--text-mid); line-height: 1.7; margin-bottom: 14px; }
+.highlight { color: var(--klein); font-weight: 600; }
+.accent { color: var(--accent); font-weight: 600; }
+.turn { color: var(--klein); font-weight: 700; }
+.intro-text { font-size: 16px; color: var(--text-dark); line-height: 1.9; margin-bottom: 14px; }
+.source-line { font-size: 13px; color: var(--text-light); margin-top: 8px; }
+.source-line a { color: var(--klein); text-decoration: none; }
+.footer-block { font-size: 14px; color: var(--text-mid); line-height: 1.7; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); }
+.card-tag { font-size: 12px; color: var(--text-mid); opacity: 0.55; margin-top: 8px; line-height: 1.6; }
+
+.site-nav-lite { display: flex; align-items: center; justify-content: space-between; margin-bottom: 28px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+.nav-back { font-size: 14px; color: var(--klein); text-decoration: none; font-weight: 500; }
+.nav-back:hover { text-decoration: underline; }
+.nav-date { font-size: 13px; color: var(--text-light); font-family: 'JetBrains Mono', monospace; }
+
+/* ---- GitHub 榜专属（仍沿用 ainews 用词体系） ---- */
+.rank { font-family: 'JetBrains Mono', monospace; color: var(--klein); font-weight: 700; margin-right: 8px; }
+.repo-link { color: var(--text-dark); text-decoration: none; }
+.repo-link:hover { color: var(--klein); }
+.zh { color: var(--text-mid); }
+.tr { font-size: 11px; color: #fff; background: var(--klein); border-radius: 4px; padding: 2px 6px; margin-right: 6px; font-family: 'Inter'; vertical-align: middle; }
+.repo-meta { font-size: 14px; color: var(--text-mid); margin-top: 12px; line-height: 1.8; }
+.repo-meta .lang-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin: 0 4px 0 2px; }
+.repo-meta .cat { color: var(--klein); font-weight: 600; }
+.riser-note { font-size: 13px; color: var(--text-light); margin-top: 8px; }
+.script-block { font-size: 15.5px; color: var(--ink-soft, var(--text-mid)); line-height: 1.8; margin: 0 0 14px; }
+.script-tag { font-size: 11px; color: #fff; background: var(--klein); border-radius: 4px; padding: 1px 7px; margin-right: 8px; font-family: 'Inter'; vertical-align: middle; white-space: nowrap; }
+.archive { columns: 2; column-gap: 24px; }
+.archive a { display: block; color: var(--klein); text-decoration: none; padding: 3px 0; font-size: 15px; }
+.archive a:hover { text-decoration: underline; }
+
+/* classics 高分精选页专属：阅读型页面加宽容器，提升行宽舒适度 */
+body.classics .container { max-width: 860px; }
+
+/* ---- classics 高分精选页：严格对齐 ainews 排版体系 ----
+   红蓝配比：蓝为主（标题/■ 标签/强调/链接/footer 3px 蓝顶线），
+   红仅限数字点缀（.num，JetBrains Mono 红色数字），蓝:红 ≈ 10:1。
+   全部限定 body.classics，不影响 daily/weekly。 */
+body.classics {
+  --paper: #FFFFFF; --ink: #0E0E10; --ink-soft: #3A3A3E;
+  --gray: #6B6B70; --gray-light: #9CA3AF; --line: #E8E8EC;
+}
+body.classics .masthead { margin-bottom: 36px; }
+body.classics .mast-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--klein); font-weight: 600; margin-bottom: 14px; }
+body.classics .mast-title { font-size: 44px; font-weight: 900; letter-spacing: -1.5px; line-height: 1.05; color: var(--klein); margin-bottom: 16px; text-wrap: balance; }
+body.classics .mast-rule { height: 3px; background: var(--klein); width: 100%; margin: 0 0 10px; }
+body.classics .mast-meta { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--gray); display: flex; gap: 14px; flex-wrap: wrap; }
+body.classics .mast-meta .issue { color: var(--klein); font-weight: 600; }
+body.classics .mast-lede { font-size: 16px; line-height: 1.7; color: var(--ink-soft); margin-top: 22px; padding-left: 16px; border-left: 3px solid var(--klein); }
+body.classics .sec-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gray-light); margin-bottom: 6px; }
+body.classics .sec-title { font-size: 15px; font-weight: 700; color: var(--klein); letter-spacing: 1px; margin-bottom: 24px; display: inline-block; }
+body.classics .sec-title::before { content: "AE"; color: var(--klein); margin-right: 8px; font-size: 13px; }
+body.classics .item { margin-bottom: 52px; }
+body.classics .item:last-child { margin-bottom: 0; }
+body.classics .dateline { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gray); letter-spacing: 0.5px; margin-bottom: 10px; }
+body.classics .dateline .src { color: var(--klein); font-weight: 600; }
+body.classics .item-title { font-size: 21px; font-weight: 700; line-height: 1.4; margin-bottom: 12px; text-wrap: balance; }
+body.classics .item-title a { color: var(--klein); text-decoration: none; }
+body.classics .item-title a:hover { text-decoration: underline; }
+body.classics .body { font-size: 15.5px; color: var(--ink-soft); line-height: 1.8; }
+body.classics .body p { margin-bottom: 14px; }
+body.classics .body p:last-child { margin-bottom: 0; }
+body.classics .body .num { font-family: 'JetBrains Mono', monospace; color: var(--accent); font-weight: 600; }
+body.classics .body .tag { display: inline-block; font-size: 11px; font-family: 'JetBrains Mono', monospace; color: var(--gray); background: var(--line); padding: 1px 8px; border-radius: 3px; margin-right: 4px; }
+body.classics .src-line { font-size: 13px; color: var(--gray); margin-top: 10px; font-family: 'JetBrains Mono', monospace; line-height: 1.7; }
+body.classics .src-line a { color: var(--klein); text-decoration: none; }
+body.classics .src-line a:hover { text-decoration: underline; }
+body.classics .src-line .cat { color: var(--klein); font-weight: 600; }
+body.classics .link-area { margin-top: 12px; background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 8px 12px; display: flex; flex-direction: column; gap: 6px; }
+body.classics .link-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+body.classics .link-url { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--klein); text-decoration: none; overflow-wrap: anywhere; }
+body.classics .link-url:hover { text-decoration: underline; }
+body.classics .copy-btn { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gray); background: var(--paper); border: 1px solid var(--line); border-radius: 4px; padding: 2px 8px; cursor: pointer; flex-shrink: 0; }
+body.classics .copy-btn:hover { color: var(--klein); border-color: var(--klein); }
+body.classics .copy-btn.copied { color: #fff; background: var(--klein); border-color: var(--klein); }
+body.classics .footer { margin-top: 48px; padding-top: 20px; border-top: 3px solid var(--klein); font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--gray); line-height: 1.8; }
+body.classics .footer .big { color: var(--ink); font-weight: 600; }
+body.classics .footer a { color: var(--klein); text-decoration: none; }
+body.classics .footer a:hover { text-decoration: underline; }
+</style></head>
+<body><div class="container">
+<nav class="site-nav-lite"><a href="../index.html" class="nav-back">← 首页 / Index</a><span class="nav-date">2026-08-17</span></nav>
+<h1 class="doc-title">GitHub 周报｜<span>8月17日 — 8月23日</span></h1>
+<p class="doc-date">2026年8月17日 — 8月23日 · Weekly GitHub Trending</p>
+<div class="divider"></div>
+<div class="section-block">
+  <h2 class="section-header">本周概览 <span class="en">Weekly Overview</span></h2>
+  <p class="intro-text">本周已收录 <span class="accent">4</span> 天日榜，共 <span class="accent">37</span> 个不同仓库上榜。</p><p class="intro-text">Collected <span class="accent">4</span> daily boards this week, <span class="accent">37</span> distinct repos in total.</p>
+  <p class="intro-text">分类热度 Category heat：其他 <b>26</b> · AI / 大模型 <b>21</b> · 游戏 <b>1</b></p>
+  <p class="intro-text">语言热度 Language heat：Python <b>16</b> · TypeScript <b>12</b> · JavaScript <b>5</b> · Rust <b>5</b> · Shell <b>4</b> · C++ <b>2</b></p>
+</div>
+<div class="divider"></div>
+<div class="section-block">
+  <h2 class="section-header">本周精选 <span class="en">Weekly Picks</span></h2>
+  
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#7</span><a class="repo-link" href="https://github.com/harry0703/MoneyPrinterTurbo" target="_blank">harry0703/MoneyPrinterTurbo</a></h3>
+        <p class="news-body">利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.</p>
+        <p class="news-body zh"><span class="tr">译</span>基于 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是一个能帮你一键生成短视频的 AI 神器。<br>输入一个主题，它就能自动帮你写文案、配音、找素材，合成高清视频。</p>
+<p class="script-block">以前折腾几小时的工作，现在用它几分钟就能搞定。<br>它最厉害的是全自动工作流，连字幕和背景音乐都配好了。</p>
+<p class="script-block">它还支持多种大模型，生成的视频质量很高，简直是偷懒神器。<br>想做副业或者批量起号的朋友，赶紧去试试吧！</p>
+        <p class="repo-meta">★ 113,916 <span class="accent">(+10470 今日 today)</span> · ⑂ 17,286 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        <p class="riser-note">本周累计上榜 <b>3</b> 天 · appeared 3 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#8</span><a class="repo-link" href="https://github.com/public-apis/public-apis" target="_blank">public-apis/public-apis</a></h3>
+        <p class="news-body">A collective list of free APIs</p>
+        <p class="news-body zh"><span class="tr">译</span>免费 API 合集</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是一个超级庞大的免费 API 宝藏库。</p>
+<p class="script-block">写代码想加个天气预报、动漫头像或者翻译功能，却找不到接口？<br>直接来这里搜就行，它把全球成千上万个免费接口都整理好了。</p>
+<p class="script-block">分类特别详细，从音乐、动漫到金融、游戏应有尽有。<br>最牛的是，它不仅免费，还标明了需不需要注册、支不支持安全加密。</p>
+<p class="script-block">简直就是独立开发者和新手的白嫖神器。<br>难怪在 GitHub 上拿了快五十万颗星，闭眼收藏就对了！</p>
+        <p class="repo-meta">★ 468,009 <span class="accent">(+10990 今日 today)</span> · ⑂ 51,632 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">其他 · Misc</span></p>
+        <p class="riser-note">本周累计上榜 <b>2</b> 天 · appeared 2 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#1</span><a class="repo-link" href="https://github.com/cordiverse/cordis" target="_blank">cordiverse/cordis</a></h3>
+        <p class="news-body">Meta-Framework of Spatiotemporal Composability</p>
+        <p class="news-body zh"><span class="tr">译</span>时空可组合性元框架</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>觉得代码越写越乱，插件依赖多到爆炸？</p>
+<p class="script-block">赶紧看看这个项目！</p>
+<p class="script-block">它是一个把应用彻底模块化的神级框架。</p>
+<p class="script-block">简单来说，就是让你的代码像乐高积木一样自由组合。</p>
+<p class="script-block">无论是加新功能还是管生命周期，它都能帮你自动搞定。</p>
+<p class="script-block">最厉害的是它支持热重载，改完代码不用重启就能直接生效。</p>
+<p class="script-block">难怪它在 GitHub 上已经拿到了五千多颗星，真的太省心了！</p>
+        <p class="repo-meta">★ 6,955 <span class="accent">(+3614 今日 today)</span> · ⑂ 403 forks · <span class="lang-dot" style="background:#3178c6"></span>TypeScript · <span class="cat">其他 · Misc</span></p>
+        <p class="riser-note">本周累计上榜 <b>2</b> 天 · appeared 2 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#5</span><a class="repo-link" href="https://github.com/basecamp/omarchy" target="_blank">basecamp/omarchy</a></h3>
+        <p class="news-body">Beautiful, Modern &amp; Opinionated Linux</p>
+        <p class="news-body zh"><span class="tr">译</span>精美、现代、有态度的 Linux</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目能把你的 Linux 系统一键变成超高颜值的现代化工作站。</p>
+<p class="script-block">很多人想用 Linux 却被复杂的配置和美化直接劝退。<br>它直接帮你把好用的开发工具、快捷键和主题全部打包配好了。</p>
+<p class="script-block">你只需要装好系统运行它，就能直接开箱即用。<br>最棒的是它审美极高，而且是顶级开发者自己每天都在用的实战配置。<br>不用再花几天时间去瞎折腾，一瞬间就能拥有极度舒适的高效工作流！</p>
+        <p class="repo-meta">★ 27,539 <span class="accent">(+2565 今日 today)</span> · ⑂ 2,817 forks · <span class="lang-dot" style="background:#89e051"></span>Shell · <span class="cat">其他 · Misc</span></p>
+        <p class="riser-note">本周累计上榜 <b>2</b> 天 · appeared 2 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#13</span><a class="repo-link" href="https://github.com/akitaonrails/ai-memory" target="_blank">akitaonrails/ai-memory</a></h3>
+        <p class="news-body">Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors</p>
+        <p class="news-body zh"><span class="tr">译</span>适用于 Agent 编程 CLI 的长期记忆解决方案，便于在不同 Agent 厂商之间进行交接。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>写代码用不同的 AI 助手，最烦它们记不住上下文。<br>这个项目就是专门给 AI 编程工具装上长期记忆的外挂。</p>
+<p class="script-block">它能让你在切换不同 AI 工具时，无缝同步开发进度。<br>不管你换到哪个平台的 AI，它都能秒懂你之前的代码逻辑。</p>
+<p class="script-block">最棒的是，它不仅省下了重复解释的 Token 费，还让 AI 拥有了项目大局观。<br>想让你的 AI 助手像老同事一样默契，闭眼冲它就对了！</p>
+        <p class="repo-meta">★ 3,943 <span class="accent">(+2404 今日 today)</span> · ⑂ 297 forks · <span class="lang-dot" style="background:#dea584"></span>Rust · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        <p class="riser-note">本周累计上榜 <b>2</b> 天 · appeared 2 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#16</span><a class="repo-link" href="https://github.com/jundot/omlx" target="_blank">jundot/omlx</a></h3>
+        <p class="news-body">LLM inference server with continuous batching &amp; SSD caching for Apple Silicon — managed from the macOS menu bar</p>
+        <p class="news-body zh"><span class="tr">译</span>支持连续批处理与 SSD 缓存的 Apple Silicon LLM 推理服务器，可通过 macOS 菜单栏进行管理</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目能让你直接在 Mac 菜单栏上一键运行本地大模型。</p>
+<p class="script-block">就算你的 Mac 内存不够大，它也能用 SSD 缓存技术帮你把超大模型跑起来。<br>加上专门针对苹果芯片的优化，不仅运行速度极快，还非常省电。</p>
+<p class="script-block">你只需要在菜单栏点一下就能随时调用 AI，完全不占屏幕空间。<br>两万多星的超高人气，绝对是 Mac 用户不容错过的本地神器！</p>
+        <p class="repo-meta">★ 20,224 <span class="accent">(+1536 今日 today)</span> · ⑂ 1,716 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        <p class="riser-note">本周累计上榜 <b>2</b> 天 · appeared 2 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#10</span><a class="repo-link" href="https://github.com/AprilNEA/OpenLogi" target="_blank">AprilNEA/OpenLogi</a></h3>
+        <p class="news-body">⚡️A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HID++. No account, no telemetry.</p>
+        <p class="news-body zh"><span class="tr">译</span>⚡️一个原生、本地优先的 Logitech Options+ 替代方案，使用 Rust 编写 🦀 —— 支持通过 HID++ 重新映射按键、DPI 和 SmartShift。无需账户，无遥测。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>罗技官方的驱动软件是不是又臃肿又难用？</p>
+<p class="script-block">这个项目就是它的开源平替。</p>
+<p class="script-block">它用Rust语言重写了鼠标控制逻辑。</p>
+<p class="script-block">你可以用它轻松改键、调DPI，还能设置滚轮的模式切换。</p>
+<p class="script-block">最牛的是它完全运行在本地。</p>
+<p class="script-block">不需要你注册账号，也没有任何烦人的后台隐私收集。</p>
+<p class="script-block">内存占用极低，即开即用，简直是纯净党和老设备的救星！</p>
+        <p class="repo-meta">★ 12,942 <span class="accent">(+4054 今日 today)</span> · ⑂ 351 forks · <span class="lang-dot" style="background:#dea584"></span>Rust · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#4</span><a class="repo-link" href="https://github.com/volcengine/OpenViking" target="_blank">volcengine/OpenViking</a></h3>
+        <p class="news-body">Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.</p>
+        <p class="news-body zh"><span class="tr">译</span>面向 AI 智能体的自进化上下文数据库，统一智能体记忆、知识 RAG 与技能。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是一个能帮 AI Agent 实现自我进化的上下文数据库。</p>
+<p class="script-block">它把 Agent 的记忆、知识库检索还有技能调用，全部装进了一个盒子里。<br>有了它，你的 AI 助手就不会聊着聊着就断片，更不会找不到需要的工具。</p>
+<p class="script-block">最厉害的是它不仅能统一管理，还能像人类一样在交互中自我进化，越用越聪明。<br>三万多星的超高人气，绝对是今年开发智能体必须要关注的神器！</p>
+        <p class="repo-meta">★ 31,663 <span class="accent">(+3033 今日 today)</span> · ⑂ 2,424 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#15</span><a class="repo-link" href="https://github.com/unslothai/unsloth" target="_blank">unslothai/unsloth</a></h3>
+        <p class="news-body">Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more.</p>
+        <p class="news-body zh"><span class="tr">译</span>用于运行和训练大语言模型及扩散模型的本地 UI，支持 Qwen3.8、Kimi K3、MiniMax-H3、Gemma 4、DeepSeek-V4、FLUX 等。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是一个在本地就能直接运行和微调各种主流大模型的图形界面工具。</p>
+<p class="script-block">不管你想玩最新的 Qwen、DeepSeek 还是画图的 FLUX，用它都能一键搞定。<br>它把复杂的代码和命令行变成了可视化的操作，让你在自家电脑上就能轻松训练专属的 AI。</p>
+<p class="script-block">最让人惊喜的是它对显存的极致优化，不仅速度飞快，还帮你省下了昂贵的算力成本。<br>支持的模型超级全，想在本地折腾大模型选它就对了！</p>
+        <p class="repo-meta">★ 74,273 <span class="accent">(+2987 今日 today)</span> · ⑂ 6,713 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#11</span><a class="repo-link" href="https://github.com/cactus-compute/needle" target="_blank">cactus-compute/needle</a></h3>
+        <p class="news-body">14MB foundation model for tiny devices; phones, wearables, smart home, and robots.</p>
+        <p class="news-body zh"><span class="tr">译</span>面向微型设备的 14MB 基础模型：手机、可穿戴、智能家居与机器人。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是一个专门给智能手表、手机还有机器人设计的超轻量级 AI 大模型。<br>它只有 14MB 大小，却能直接在设备本地运行。</p>
+<p class="script-block">就算没有网络，你的智能家居和穿戴设备也能秒变聪明，再也不用担心隐私泄露和网络延迟了。<br>最厉害的是，它把大模型卷到了极致的微型设备上。</p>
+<p class="script-block">仅仅 14MB 的体积，就能让各种小硬件直接拥有本地智能。<br>难怪在 GitHub 上已经拿下了八千多颗星，绝对是嵌入式开发者的神器！</p>
+        <p class="repo-meta">★ 8,341 <span class="accent">(+2985 今日 today)</span> · ⑂ 537 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#14</span><a class="repo-link" href="https://github.com/AlexsJones/llmfit" target="_blank">AlexsJones/llmfit</a></h3>
+        <p class="news-body">Hundreds of models &amp; providers. One command to find what runs on your hardware.</p>
+        <p class="news-body zh"><span class="tr">译</span>数百个模型与服务商。一行命令，找出适合你硬件运行的模型。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>想在本地跑大模型，又怕显存不够直接卡死？</p>
+<p class="script-block">这个项目就是专门帮你排雷的硬件检测神器。<br>只要输入一行命令，它就能秒测你的电脑能跑哪些模型。</p>
+<p class="script-block">它支持几百种主流模型和托管平台。<br>让你不用再花几个小时下载，去碰运气猜能不能运行。</p>
+<p class="script-block">它还会帮你算出最合适的运行参数。<br>难怪刚开源就冲上了三万多星，绝对是本地部署的刚需工具！</p>
+        <p class="repo-meta">★ 33,449 <span class="accent">(+1991 今日 today)</span> · ⑂ 2,078 forks · <span class="lang-dot" style="background:#dea584"></span>Rust · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#6</span><a class="repo-link" href="https://github.com/modular/modular" target="_blank">modular/modular</a></h3>
+        <p class="news-body">The Modular Platform (includes MAX &amp; Mojo)</p>
+        <p class="news-body zh"><span class="tr">译</span>Modular 平台（包含 MAX 和 Mojo）</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>如果你觉得现在的 AI 开发又慢又乱，一定要看看这个项目。<br>它是一个为 AI 打造的超级平台，里面包含了大名鼎鼎的 Mojo 语言。</p>
+<p class="script-block">简单来说，它能让你用写 Python 的方式，跑出比肩 C++ 的极致速度。<br>这就解决了 AI 运行慢、部署难的痛点。</p>
+<p class="script-block">最厉害的是，它不仅兼容现有的 Python 库，还能把推理性能提升好几倍。<br>这绝对是未来最值得关注的 AI 黑科技了！</p>
+        <p class="repo-meta">★ 28,685 <span class="accent">(+1643 今日 today)</span> · ⑂ 3,053 forks · <span class="lang-dot" style="background:#8b949e"></span>Mojo · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+</div>
+<div class="section-block"><h2 class="section-header">蝉联榜 <span class="en">Consistent Risers</span></h2>
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#7</span><a class="repo-link" href="https://github.com/harry0703/MoneyPrinterTurbo" target="_blank">harry0703/MoneyPrinterTurbo</a></h3>
+        <p class="news-body">利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.</p>
+        <p class="news-body zh"><span class="tr">译</span>基于 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是一个能帮你一键生成短视频的 AI 神器。<br>输入一个主题，它就能自动帮你写文案、配音、找素材，合成高清视频。</p>
+<p class="script-block">以前折腾几小时的工作，现在用它几分钟就能搞定。<br>它最厉害的是全自动工作流，连字幕和背景音乐都配好了。</p>
+<p class="script-block">它还支持多种大模型，生成的视频质量很高，简直是偷懒神器。<br>想做副业或者批量起号的朋友，赶紧去试试吧！</p>
+        <p class="repo-meta">★ 113,916 <span class="accent">(+10470 今日 today)</span> · ⑂ 17,286 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        <p class="riser-note">本周累计上榜 <b>3</b> 天 · appeared 3 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#8</span><a class="repo-link" href="https://github.com/public-apis/public-apis" target="_blank">public-apis/public-apis</a></h3>
+        <p class="news-body">A collective list of free APIs</p>
+        <p class="news-body zh"><span class="tr">译</span>免费 API 合集</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是一个超级庞大的免费 API 宝藏库。</p>
+<p class="script-block">写代码想加个天气预报、动漫头像或者翻译功能，却找不到接口？<br>直接来这里搜就行，它把全球成千上万个免费接口都整理好了。</p>
+<p class="script-block">分类特别详细，从音乐、动漫到金融、游戏应有尽有。<br>最牛的是，它不仅免费，还标明了需不需要注册、支不支持安全加密。</p>
+<p class="script-block">简直就是独立开发者和新手的白嫖神器。<br>难怪在 GitHub 上拿了快五十万颗星，闭眼收藏就对了！</p>
+        <p class="repo-meta">★ 468,009 <span class="accent">(+10990 今日 today)</span> · ⑂ 51,632 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">其他 · Misc</span></p>
+        <p class="riser-note">本周累计上榜 <b>2</b> 天 · appeared 2 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#1</span><a class="repo-link" href="https://github.com/cordiverse/cordis" target="_blank">cordiverse/cordis</a></h3>
+        <p class="news-body">Meta-Framework of Spatiotemporal Composability</p>
+        <p class="news-body zh"><span class="tr">译</span>时空可组合性元框架</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>觉得代码越写越乱，插件依赖多到爆炸？</p>
+<p class="script-block">赶紧看看这个项目！</p>
+<p class="script-block">它是一个把应用彻底模块化的神级框架。</p>
+<p class="script-block">简单来说，就是让你的代码像乐高积木一样自由组合。</p>
+<p class="script-block">无论是加新功能还是管生命周期，它都能帮你自动搞定。</p>
+<p class="script-block">最厉害的是它支持热重载，改完代码不用重启就能直接生效。</p>
+<p class="script-block">难怪它在 GitHub 上已经拿到了五千多颗星，真的太省心了！</p>
+        <p class="repo-meta">★ 6,955 <span class="accent">(+3614 今日 today)</span> · ⑂ 403 forks · <span class="lang-dot" style="background:#3178c6"></span>TypeScript · <span class="cat">其他 · Misc</span></p>
+        <p class="riser-note">本周累计上榜 <b>2</b> 天 · appeared 2 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#5</span><a class="repo-link" href="https://github.com/basecamp/omarchy" target="_blank">basecamp/omarchy</a></h3>
+        <p class="news-body">Beautiful, Modern &amp; Opinionated Linux</p>
+        <p class="news-body zh"><span class="tr">译</span>精美、现代、有态度的 Linux</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目能把你的 Linux 系统一键变成超高颜值的现代化工作站。</p>
+<p class="script-block">很多人想用 Linux 却被复杂的配置和美化直接劝退。<br>它直接帮你把好用的开发工具、快捷键和主题全部打包配好了。</p>
+<p class="script-block">你只需要装好系统运行它，就能直接开箱即用。<br>最棒的是它审美极高，而且是顶级开发者自己每天都在用的实战配置。<br>不用再花几天时间去瞎折腾，一瞬间就能拥有极度舒适的高效工作流！</p>
+        <p class="repo-meta">★ 27,539 <span class="accent">(+2565 今日 today)</span> · ⑂ 2,817 forks · <span class="lang-dot" style="background:#89e051"></span>Shell · <span class="cat">其他 · Misc</span></p>
+        <p class="riser-note">本周累计上榜 <b>2</b> 天 · appeared 2 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#13</span><a class="repo-link" href="https://github.com/akitaonrails/ai-memory" target="_blank">akitaonrails/ai-memory</a></h3>
+        <p class="news-body">Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors</p>
+        <p class="news-body zh"><span class="tr">译</span>适用于 Agent 编程 CLI 的长期记忆解决方案，便于在不同 Agent 厂商之间进行交接。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>写代码用不同的 AI 助手，最烦它们记不住上下文。<br>这个项目就是专门给 AI 编程工具装上长期记忆的外挂。</p>
+<p class="script-block">它能让你在切换不同 AI 工具时，无缝同步开发进度。<br>不管你换到哪个平台的 AI，它都能秒懂你之前的代码逻辑。</p>
+<p class="script-block">最棒的是，它不仅省下了重复解释的 Token 费，还让 AI 拥有了项目大局观。<br>想让你的 AI 助手像老同事一样默契，闭眼冲它就对了！</p>
+        <p class="repo-meta">★ 3,943 <span class="accent">(+2404 今日 today)</span> · ⑂ 297 forks · <span class="lang-dot" style="background:#dea584"></span>Rust · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        <p class="riser-note">本周累计上榜 <b>2</b> 天 · appeared 2 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#16</span><a class="repo-link" href="https://github.com/jundot/omlx" target="_blank">jundot/omlx</a></h3>
+        <p class="news-body">LLM inference server with continuous batching &amp; SSD caching for Apple Silicon — managed from the macOS menu bar</p>
+        <p class="news-body zh"><span class="tr">译</span>支持连续批处理与 SSD 缓存的 Apple Silicon LLM 推理服务器，可通过 macOS 菜单栏进行管理</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目能让你直接在 Mac 菜单栏上一键运行本地大模型。</p>
+<p class="script-block">就算你的 Mac 内存不够大，它也能用 SSD 缓存技术帮你把超大模型跑起来。<br>加上专门针对苹果芯片的优化，不仅运行速度极快，还非常省电。</p>
+<p class="script-block">你只需要在菜单栏点一下就能随时调用 AI，完全不占屏幕空间。<br>两万多星的超高人气，绝对是 Mac 用户不容错过的本地神器！</p>
+        <p class="repo-meta">★ 20,224 <span class="accent">(+1536 今日 today)</span> · ⑂ 1,716 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        <p class="riser-note">本周累计上榜 <b>2</b> 天 · appeared 2 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div></div><div class="divider"></div>
+<div class="footer-block">
+  <p>GitHub 周报 · 由本周每日快照聚合生成 · Aggregated from this week's daily snapshots</p>
+  <p>数据来源 Source：<a href="https://github.com/trending?since=weekly" target="_blank">github.com/trending?since=weekly</a></p>
+</div>
+</div></body></html>

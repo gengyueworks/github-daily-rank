@@ -1,0 +1,278 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GitHub 高分精选｜Curated Classics</title><style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap');
+:root {
+    --klein: #002FA7;
+    --klein-bright: #0044FF;
+    --white: #FFFFFF;
+    --bg-light: #F8F9FB;
+    --text-dark: #1A1A1A;
+    --text-mid: #6B6B6B;
+    --text-light: #9CA3AF;
+    --border: #E5E7EB;
+    --accent: #C41E3A;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Noto Sans SC', 'Inter', -apple-system, sans-serif;
+    background: var(--white); color: var(--text-dark);
+    line-height: 1.75; -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 720px; margin: 0 auto; padding: 56px 28px 80px; }
+.doc-title { font-size: 38px; font-weight: 700; color: var(--text-dark); letter-spacing: -0.5px; margin-bottom: 8px; text-wrap: balance; }
+.doc-title span { color: var(--klein); }
+.doc-date { font-family: 'Inter', sans-serif; font-size: 15px; color: var(--text-light); }
+.divider { height: 1px; background: var(--border); margin: 36px 0; }
+.section-header { font-size: 24px; font-weight: 600; color: var(--klein); margin-bottom: 24px; padding-bottom: 8px; border-bottom: 2px solid var(--klein); display: inline-block; text-wrap: balance; }
+.section-header .en { font-family: 'Inter'; font-size: 13px; color: var(--text-light); font-weight: 400; margin-left: 10px; }
+.section-block { margin-bottom: 48px; }
+.news-item { margin-bottom: 52px; }
+.news-item:last-child { margin-bottom: 0; }
+.news-title { font-size: 21px; font-weight: 600; color: var(--text-dark); line-height: 1.5; margin-bottom: 14px; text-wrap: balance; }
+.news-body { font-size: 16px; color: var(--text-dark); line-height: 1.9; margin-bottom: 16px; }
+.news-label { font-size: 14px; color: var(--text-mid); line-height: 1.7; margin-bottom: 14px; }
+.highlight { color: var(--klein); font-weight: 600; }
+.accent { color: var(--accent); font-weight: 600; }
+.turn { color: var(--klein); font-weight: 700; }
+.intro-text { font-size: 16px; color: var(--text-dark); line-height: 1.9; margin-bottom: 14px; }
+.source-line { font-size: 13px; color: var(--text-light); margin-top: 8px; }
+.source-line a { color: var(--klein); text-decoration: none; }
+.footer-block { font-size: 14px; color: var(--text-mid); line-height: 1.7; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); }
+.card-tag { font-size: 12px; color: var(--text-mid); opacity: 0.55; margin-top: 8px; line-height: 1.6; }
+
+.site-nav-lite { display: flex; align-items: center; justify-content: space-between; margin-bottom: 28px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+.nav-back { font-size: 14px; color: var(--klein); text-decoration: none; font-weight: 500; }
+.nav-back:hover { text-decoration: underline; }
+.nav-date { font-size: 13px; color: var(--text-light); font-family: 'JetBrains Mono', monospace; }
+
+/* ---- GitHub 榜专属（仍沿用 ainews 用词体系） ---- */
+.rank { font-family: 'JetBrains Mono', monospace; color: var(--klein); font-weight: 700; margin-right: 8px; }
+.repo-link { color: var(--text-dark); text-decoration: none; }
+.repo-link:hover { color: var(--klein); }
+.zh { color: var(--text-mid); }
+.tr { font-size: 11px; color: #fff; background: var(--klein); border-radius: 4px; padding: 2px 6px; margin-right: 6px; font-family: 'Inter'; vertical-align: middle; }
+.repo-meta { font-size: 14px; color: var(--text-mid); margin-top: 12px; line-height: 1.8; }
+.repo-meta .lang-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin: 0 4px 0 2px; }
+.repo-meta .cat { color: var(--klein); font-weight: 600; }
+.riser-note { font-size: 13px; color: var(--text-light); margin-top: 8px; }
+.script-block { font-size: 15.5px; color: var(--ink-soft, var(--text-mid)); line-height: 1.8; margin: 0 0 14px; }
+.script-tag { font-size: 11px; color: #fff; background: var(--klein); border-radius: 4px; padding: 1px 7px; margin-right: 8px; font-family: 'Inter'; vertical-align: middle; white-space: nowrap; }
+.archive { columns: 2; column-gap: 24px; }
+.archive a { display: block; color: var(--klein); text-decoration: none; padding: 3px 0; font-size: 15px; }
+.archive a:hover { text-decoration: underline; }
+
+/* classics 高分精选页专属：阅读型页面加宽容器，提升行宽舒适度 */
+body.classics .container { max-width: 860px; }
+
+/* ---- classics 高分精选页：严格对齐 ainews 排版体系 ----
+   红蓝配比：蓝为主（标题/■ 标签/强调/链接/footer 3px 蓝顶线），
+   红仅限数字点缀（.num，JetBrains Mono 红色数字），蓝:红 ≈ 10:1。
+   全部限定 body.classics，不影响 daily/weekly。 */
+body.classics {
+  --paper: #FFFFFF; --ink: #0E0E10; --ink-soft: #3A3A3E;
+  --gray: #6B6B70; --gray-light: #9CA3AF; --line: #E8E8EC;
+}
+body.classics .masthead { margin-bottom: 36px; }
+body.classics .mast-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--klein); font-weight: 600; margin-bottom: 14px; }
+body.classics .mast-title { font-size: 44px; font-weight: 900; letter-spacing: -1.5px; line-height: 1.05; color: var(--klein); margin-bottom: 16px; text-wrap: balance; }
+body.classics .mast-rule { height: 3px; background: var(--klein); width: 100%; margin: 0 0 10px; }
+body.classics .mast-meta { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--gray); display: flex; gap: 14px; flex-wrap: wrap; }
+body.classics .mast-meta .issue { color: var(--klein); font-weight: 600; }
+body.classics .mast-lede { font-size: 16px; line-height: 1.7; color: var(--ink-soft); margin-top: 22px; padding-left: 16px; border-left: 3px solid var(--klein); }
+body.classics .sec-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gray-light); margin-bottom: 6px; }
+body.classics .sec-title { font-size: 15px; font-weight: 700; color: var(--klein); letter-spacing: 1px; margin-bottom: 24px; display: inline-block; }
+body.classics .sec-title::before { content: "AE"; color: var(--klein); margin-right: 8px; font-size: 13px; }
+body.classics .item { margin-bottom: 52px; }
+body.classics .item:last-child { margin-bottom: 0; }
+body.classics .dateline { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gray); letter-spacing: 0.5px; margin-bottom: 10px; }
+body.classics .dateline .src { color: var(--klein); font-weight: 600; }
+body.classics .item-title { font-size: 21px; font-weight: 700; line-height: 1.4; margin-bottom: 12px; text-wrap: balance; }
+body.classics .item-title a { color: var(--klein); text-decoration: none; }
+body.classics .item-title a:hover { text-decoration: underline; }
+body.classics .body { font-size: 15.5px; color: var(--ink-soft); line-height: 1.8; }
+body.classics .body p { margin-bottom: 14px; }
+body.classics .body p:last-child { margin-bottom: 0; }
+body.classics .body .num { font-family: 'JetBrains Mono', monospace; color: var(--accent); font-weight: 600; }
+body.classics .body .tag { display: inline-block; font-size: 11px; font-family: 'JetBrains Mono', monospace; color: var(--gray); background: var(--line); padding: 1px 8px; border-radius: 3px; margin-right: 4px; }
+body.classics .src-line { font-size: 13px; color: var(--gray); margin-top: 10px; font-family: 'JetBrains Mono', monospace; line-height: 1.7; }
+body.classics .src-line a { color: var(--klein); text-decoration: none; }
+body.classics .src-line a:hover { text-decoration: underline; }
+body.classics .src-line .cat { color: var(--klein); font-weight: 600; }
+body.classics .link-area { margin-top: 12px; background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 8px 12px; display: flex; flex-direction: column; gap: 6px; }
+body.classics .link-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+body.classics .link-url { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--klein); text-decoration: none; overflow-wrap: anywhere; }
+body.classics .link-url:hover { text-decoration: underline; }
+body.classics .copy-btn { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gray); background: var(--paper); border: 1px solid var(--line); border-radius: 4px; padding: 2px 8px; cursor: pointer; flex-shrink: 0; }
+body.classics .copy-btn:hover { color: var(--klein); border-color: var(--klein); }
+body.classics .copy-btn.copied { color: #fff; background: var(--klein); border-color: var(--klein); }
+body.classics .footer { margin-top: 48px; padding-top: 20px; border-top: 3px solid var(--klein); font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--gray); line-height: 1.8; }
+body.classics .footer .big { color: var(--ink); font-weight: 600; }
+body.classics .footer a { color: var(--klein); text-decoration: none; }
+body.classics .footer a:hover { text-decoration: underline; }
+</style></head>
+<body class="classics"><div class="container">
+<nav class="site-nav-lite"><a href="../index.html" class="nav-back">← 首页 / Index</a><span class="nav-date">Updated 2026-08-14</span></nav>
+<div class="masthead">
+  <div class="mast-eyebrow">Curated Classics</div>
+  <h1 class="mast-title">GitHub 高分精选</h1>
+  <div class="mast-rule"></div>
+  <div class="mast-meta"><span class="issue">2026年08月14日 更新</span><span>人工精选 7 个仓库 · 7 human-curated repos</span></div>
+</div>
+<div class="mast-lede">精选 GitHub 高分项目：不追当日热榜，只收真正经得起用的好东西。每个项目都值得花一个下午研究。</div><div class="mast-lede">Curated high-star GitHub projects — not today&#x27;s hype, but tools that earn their stars. Each one is worth an afternoon.</div>
+<div class="divider"></div>
+<div class="section-block">
+  <div class="sec-eyebrow">Curated</div>
+  <div class="sec-title">高分精选</div>
+  
+    <div class="item">
+        <div class="dateline">#<span class="src">1</span> · Agent / 情报 · 收录于 2026-08-14</div>
+        <div class="item-title"><a href="https://github.com/Panniantong/Agent-Reach" target="_blank">Panniantong/Agent-Reach</a></div>
+        <div class="body">
+            <p>Give your AI agent eyes to see the entire internet. Read &amp; search Twitter, Reddit, YouTube, GitHub, Bilibili, Xiaohongshu and more — one-click access, zero API fees, self-healing routing.</p>
+            <p><span class="tag">译</span>给 AI 智能体装上「全网眼睛」：Twitter、Reddit、YouTube、GitHub、B 站、小红书等平台一键读取与搜索，零 API 费用，路由自愈。</p>
+            <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目能给你的 AI 智能体安上一双看清整个互联网的眼睛。<br>简单来说，它能让 AI 直接去刷小红书、B站、推特和 GitHub。</p>
+<p class="script-block">你不用去申请那些又贵又难搞的官方 API，一键就能获取全网的最新数据。<br>最牛的是它完全免费，而且支持路由自愈，网页改版了它也能自己修复。</p>
+<p class="script-block">难怪它在 GitHub 上拿到了七万多颗星，想做 AI 应用的人绝对不能错过它。</p>
+        </div>
+        <div class="src-line">★ <span class="num">71,516</span> stars · <span class="cat">Agent / 情报</span></div>
+        <div class="src-line">点评 Note：智能体不再被困在笼子里，整个互联网直接变成它的数据源。情报战时代真正落地的基础设施。 · Agents are no longer locked in a cage — the whole internet becomes their data source.</div>
+        <div class="link-area"><div class="link-row"><a class="link-url" href="https://github.com/Panniantong/Agent-Reach" target="_blank">https://github.com/Panniantong/Agent-Reach</a><button class="copy-btn" type="button" data-copy="https://github.com/Panniantong/Agent-Reach">复制 Copy</button></div>
+<div class="link-row"><a class="link-url" href="https://github.com/Panniantong/Agent-Reach/stargazers" target="_blank">https://github.com/Panniantong/Agent-Reach/stargazers</a><button class="copy-btn" type="button" data-copy="https://github.com/Panniantong/Agent-Reach/stargazers">复制 Copy</button></div></div>
+    </div>
+    <div class="item">
+        <div class="dateline">#<span class="src">2</span> · 前端 / 设计 · 收录于 2026-08-14</div>
+        <div class="item-title"><a href="https://github.com/Leonxlnx/taste-skill" target="_blank">Leonxlnx/taste-skill</a></div>
+        <div class="body">
+            <p>Taste-Skill — gives your AI good taste. Stops the AI from generating boring, generic slop UI. Forced layout, typography, motion and density upgrades.</p>
+            <p><span class="tag">译</span>给 AI 装上「审美品味」：强制升级布局、字体、动效与密度，告别千篇一律的塑料感界面。</p>
+            <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>AI 写的网页前端是不是总有一股塑料感？<br>这个项目就是专门来给 AI 充值审美和品味的。</p>
+<p class="script-block">简单来说，它就像一个强力补丁。<br>只要把它接进你的 AI 流程里，就能强制让 AI 吐出高级感满满的排版、动效和间距。</p>
+<p class="script-block">最牛的是，它直接把设计师的审美规则变成了代码规范，让 AI 告别那些平庸又无聊的垃圾界面。<br>难怪它在 GitHub 上直接狂斩七万多星，简直是全栈开发和独立创作者的救星！</p>
+        </div>
+        <div class="src-line">★ <span class="num">76,316</span> stars · <span class="cat">前端 / 设计</span></div>
+        <div class="src-line">点评 Note：前端生产力质变——AI 终于能直接产出有设计感的作品，而不是模板味十足的页面。 · A leap for frontend productivity — AI finally ships tasteful work instead of templated pages.</div>
+        <div class="link-area"><div class="link-row"><a class="link-url" href="https://github.com/Leonxlnx/taste-skill" target="_blank">https://github.com/Leonxlnx/taste-skill</a><button class="copy-btn" type="button" data-copy="https://github.com/Leonxlnx/taste-skill">复制 Copy</button></div>
+<div class="link-row"><a class="link-url" href="https://github.com/Leonxlnx/taste-skill/stargazers" target="_blank">https://github.com/Leonxlnx/taste-skill/stargazers</a><button class="copy-btn" type="button" data-copy="https://github.com/Leonxlnx/taste-skill/stargazers">复制 Copy</button></div></div>
+    </div>
+    <div class="item">
+        <div class="dateline">#<span class="src">3</span> · 视频 / 创作 · 收录于 2026-08-14</div>
+        <div class="item-title"><a href="https://github.com/calesthio/OpenMontage" target="_blank">calesthio/OpenMontage</a></div>
+        <div class="body">
+            <p>World&#x27;s first open-source, agentic video production system. 12 production pipelines + 52 tools. Describe a scene, and the agent researches, writes, generates assets and edits.</p>
+            <p><span class="tag">译</span>全球首个开源的智能体视频制作系统：12 条流水线 + 52 种工具，一句话描述，智能体自己研究、写脚本、生成素材、剪辑出片。</p>
+            <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是全球首个开源的智能体视频制作系统。</p>
+<p class="script-block">你只需要用大白话描述一个画面。<br>它就能自己去查资料、写脚本、生成素材，甚至连最后的剪辑都帮你一条龙搞定。</p>
+<p class="script-block">最强的是它内置了12条工作流和52个工具。<br>等于给你配了一个全能的视频制作团队。</p>
+<p class="script-block">GitHub上已经快五万星了。<br>想做视频又嫌麻烦的朋友，真的可以闭眼冲这个！</p>
+        </div>
+        <div class="src-line">★ <span class="num">47,999</span> stars · <span class="cat">视频 / 创作</span></div>
+        <div class="src-line">点评 Note：一个人顶整个视频团队——从脚本到成片全自动，创作者的生产力被重新定义。 · One person replaces a whole video team — from script to final cut, fully automated.</div>
+        <div class="link-area"><div class="link-row"><a class="link-url" href="https://github.com/calesthio/OpenMontage" target="_blank">https://github.com/calesthio/OpenMontage</a><button class="copy-btn" type="button" data-copy="https://github.com/calesthio/OpenMontage">复制 Copy</button></div>
+<div class="link-row"><a class="link-url" href="https://github.com/calesthio/OpenMontage/stargazers" target="_blank">https://github.com/calesthio/OpenMontage/stargazers</a><button class="copy-btn" type="button" data-copy="https://github.com/calesthio/OpenMontage/stargazers">复制 Copy</button></div></div>
+    </div>
+    <div class="item">
+        <div class="dateline">#<span class="src">4</span> · 开发工具 · 收录于 2026-08-14</div>
+        <div class="item-title"><a href="https://github.com/microsoft/markitdown" target="_blank">microsoft/markitdown</a></div>
+        <div class="body">
+            <p>Python tool for converting files and office documents to Markdown. PDF, Word, PPT, Excel, audio and video — clean Markdown out, built for LLM ingestion.</p>
+            <p><span class="tag">译</span>微软出品的文档预处理神器：PDF / Word / PPT / Excel / 音视频一键转成干净的 Markdown，专为喂给大模型设计。</p>
+            <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是微软开源的文档转 Markdown 神器。<br>不管是 PDF、Word 还是 PPT，它都能一键搞定。</p>
+<p class="script-block">这直接解决了大模型看不懂各种杂乱格式的痛点。<br>你只需要把文件丢给它，就能得到排版干净的文本。</p>
+<p class="script-block">最让人惊喜的是，它连音视频里的语音都能提取出来。<br>可以说是给大模型喂数据、做知识库的绝佳助手。<br>微软出品质量有保证，感兴趣的赶紧去 GitHub 看看吧！</p>
+        </div>
+        <div class="src-line">★ <span class="num">173,628</span> stars · <span class="cat">开发工具</span></div>
+        <div class="src-line">点评 Note：智能体吃料不再需要手动清洗——文档预处理层的事实标配，谁都绕不开。 · Agents no longer need manual data cleaning — the de-facto standard preprocessing layer.</div>
+        <div class="link-area"><div class="link-row"><a class="link-url" href="https://github.com/microsoft/markitdown" target="_blank">https://github.com/microsoft/markitdown</a><button class="copy-btn" type="button" data-copy="https://github.com/microsoft/markitdown">复制 Copy</button></div>
+<div class="link-row"><a class="link-url" href="https://github.com/microsoft/markitdown/stargazers" target="_blank">https://github.com/microsoft/markitdown/stargazers</a><button class="copy-btn" type="button" data-copy="https://github.com/microsoft/markitdown/stargazers">复制 Copy</button></div></div>
+    </div>
+    <div class="item">
+        <div class="dateline">#<span class="src">5</span> · Agent / 开发 · 收录于 2026-08-14</div>
+        <div class="item-title"><a href="https://github.com/DeusData/codebase-memory-mcp" target="_blank">DeusData/codebase-memory-mcp</a></div>
+        <div class="body">
+            <p>High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph, so agents never re-read the project from scratch.</p>
+            <p><span class="tag">译</span>高性能代码智能 MCP 服务器：把整个代码库索引成持久知识图谱，智能体再也不用每次从头「读」项目。</p>
+            <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>用 AI 辅助写代码，是不是最烦它每次都要重新读一遍项目？</p>
+<p class="script-block">这个项目就是专门解决这个痛点的超高性能代码工具。<br>它能把你的整个代码库，直接索引成一个可以持久保存的知识图谱。</p>
+<p class="script-block">这样 AI 助手下次干活时，就能瞬间秒懂，再也不用从头傻傻地读代码了。<br>不仅速度飞快，还能帮你省下大把的 Token 费用。</p>
+<p class="script-block">想让你的 AI 编程助手拥有过目不忘的记忆力，认准它就对了！</p>
+        </div>
+        <div class="src-line">★ <span class="num">38,855</span> stars · <span class="cat">Agent / 开发</span></div>
+        <div class="src-line">点评 Note：长期项目记忆终于有了真正可用的基础设施——大项目协作的体验质变。 · Long-term project memory finally has real infrastructure — a step change for large codebases.</div>
+        <div class="link-area"><div class="link-row"><a class="link-url" href="https://github.com/DeusData/codebase-memory-mcp" target="_blank">https://github.com/DeusData/codebase-memory-mcp</a><button class="copy-btn" type="button" data-copy="https://github.com/DeusData/codebase-memory-mcp">复制 Copy</button></div>
+<div class="link-row"><a class="link-url" href="https://github.com/DeusData/codebase-memory-mcp/stargazers" target="_blank">https://github.com/DeusData/codebase-memory-mcp/stargazers</a><button class="copy-btn" type="button" data-copy="https://github.com/DeusData/codebase-memory-mcp/stargazers">复制 Copy</button></div></div>
+    </div>
+    <div class="item">
+        <div class="dateline">#<span class="src">6</span> · 阅读 / 信息源 · 收录于 2026-08-14</div>
+        <div class="item-title"><a href="https://github.com/ginobefun/BestBlogs" target="_blank">ginobefun/BestBlogs</a></div>
+        <div class="body">
+            <p>bestblogs.dev - 汇集顶级编程、人工智能、产品、科技文章，大语言模型摘要评分辅助阅读，探索编程和技术未来</p>
+            <p><span class="tag">译</span>汇集顶级编程、AI、产品与科技文章的阅读站：内置 400+ 精选 RSS 信息源，大模型自动摘要评分，辅助高效阅读。</p>
+            <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是一个帮你筛选全球顶级技术文章的开源阅读平台。</p>
+<p class="script-block">平时想跟进AI和编程前沿，是不是总被垃圾信息淹没？</p>
+<p class="script-block">它直接用大模型帮每篇文章写好了摘要，甚至还打好了评分。</p>
+<p class="script-block">你只需要花几秒钟，就能看懂以前要读半小时的硬核干货。</p>
+<p class="script-block">最绝的是它能自动过滤掉废话，让你只看最有价值的内容。</p>
+<p class="script-block">想高效充电的朋友，赶紧去 GitHub 体验一下吧！</p>
+        </div>
+        <div class="src-line">★ <span class="num">3,980</span> stars · <span class="cat">阅读 / 信息源</span></div>
+        <div class="src-line">点评 Note：信息焦虑终结者：把散落各处的优质技术内容收进一个情报总局，每天只看一手猛料。 · Ends information anxiety — 400+ curated RSS feeds, one smart reading hub.</div>
+        <div class="link-area"><div class="link-row"><a class="link-url" href="https://github.com/ginobefun/BestBlogs" target="_blank">https://github.com/ginobefun/BestBlogs</a><button class="copy-btn" type="button" data-copy="https://github.com/ginobefun/BestBlogs">复制 Copy</button></div>
+<div class="link-row"><a class="link-url" href="https://github.com/ginobefun/BestBlogs/stargazers" target="_blank">https://github.com/ginobefun/BestBlogs/stargazers</a><button class="copy-btn" type="button" data-copy="https://github.com/ginobefun/BestBlogs/stargazers">复制 Copy</button></div></div>
+    </div>
+    <div class="item">
+        <div class="dateline">#<span class="src">7</span> · Agent / 笔记 · 收录于 2026-08-14</div>
+        <div class="item-title"><a href="https://github.com/kepano/obsidian-skills" target="_blank">kepano/obsidian-skills</a></div>
+        <div class="body">
+            <p>Agent skills for Obsidian. Teach your agent to use Obsidian CLI and open formats including Markdown, Bases, JSON Canvas.</p>
+            <p><span class="tag">译</span>给 Obsidian 用的 Agent Skills：教你的 AI Agent 使用 Obsidian CLI，以及 Markdown、Bases、JSON Canvas 等开放格式。</p>
+            <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目能让你的 AI 助手直接掌控你的 Obsidian 笔记库。</p>
+<p class="script-block">简单来说，它给 AI 提供了操作 Obsidian 的超能力。</p>
+<p class="script-block">不管是自动整理 Markdown 笔记，还是帮你画脑图，它都能轻松搞定。</p>
+<p class="script-block">最酷的是，它完全基于本地的开放格式。</p>
+<p class="script-block">你不用担心隐私泄露，就能拥有一个懂你全部知识的 AI 秘书。</p>
+<p class="script-block">想体验 AI 自动整理笔记的朋友，闭眼冲就完了！</p>
+        </div>
+        <div class="src-line">★ <span class="num">46,064</span> stars · <span class="cat">Agent / 笔记</span></div>
+        <div class="src-line">点评 Note：Obsidian 创始人亲自下场给自家工具写 Agent 说明书——值得收的不是技术含量，是「让 AI 用好我的工具」这个态度。最妙的是 topics 里直接挂着 hermes / openclaw / opencode / codex，全是你天天在用的 Agent 生态。 · Obsidian&#x27;s own founder wrote the Agent skills for his tool — what&#x27;s worth keeping isn&#x27;t the tech but the stance: make AI use my tool well. Best part: its topics list hermes / openclaw / opencode / codex — your daily Agent stack.</div>
+        <div class="link-area"><div class="link-row"><a class="link-url" href="https://github.com/kepano/obsidian-skills" target="_blank">https://github.com/kepano/obsidian-skills</a><button class="copy-btn" type="button" data-copy="https://github.com/kepano/obsidian-skills">复制 Copy</button></div>
+<div class="link-row"><a class="link-url" href="https://github.com/kepano/obsidian-skills/stargazers" target="_blank">https://github.com/kepano/obsidian-skills/stargazers</a><button class="copy-btn" type="button" data-copy="https://github.com/kepano/obsidian-skills/stargazers">复制 Copy</button></div></div>
+    </div>
+</div>
+<div class="footer">
+  <p><span class="big">GitHub 高分精选</span> · 人工精选 · 数据来自 GitHub · 中英双语</p>
+  <p>Human-curated · Last updated 2026-08-14 · <a href="https://github.com/trending" target="_blank">Source: github.com/trending</a></p>
+</div>
+</div>
+<script>
+(function(){
+  var btns = document.querySelectorAll('.copy-btn');
+  btns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var url = btn.getAttribute('data-copy');
+      var done = function(){
+        btn.textContent = '已复制 ✓';
+        btn.classList.add('copied');
+        setTimeout(function(){ btn.textContent = '复制 Copy'; btn.classList.remove('copied'); }, 1600);
+      };
+      var fallback = function(){
+        var ta = document.createElement('textarea');
+        ta.value = url;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); } catch(e) {}
+        document.body.removeChild(ta);
+        done();
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(done, fallback);
+      } else {
+        fallback();
+      }
+    });
+  });
+})();
+</script>
+</body></html>
