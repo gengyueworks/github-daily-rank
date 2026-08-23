@@ -56,6 +56,25 @@ MY_ZH = {
     "bojieli/ai-agent-book": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码。",
     # 2026-08-19 周榜新增
     "superradcompany/microsandbox": "🧱 轻量、快速的本地优先 microVM 运行时与开发库。",
+    # 2026-08-22 日榜新增（经 reset 回退后由 zh_cache 回填，此处补全 MY_ZH 以自给）
+    "mattpocock/skills": "面向实战工程师的技能合集，直接取自我的 .agents 目录。",
+    "mahlernim/google-timeline-visualizer": "利用 Google 位置记录（Timeline）数据，将你一年的出行可视化。",
+    "AprilNEA/OpenLogi": "⚡️用 Rust 🦀 编写的本地优先版 Logitech Options+ 替代品——基于 HID++ 重映射按键、DPI 与 SmartShift。无账号、无遥测。",
+    "PostHog/posthog": "🦔 PostHog 是构建「自驱型产品」的领先平台。其开发工具——AI 可观测性、数据分析、会话回放、功能开关、实验、错误追踪、日志等——捕获智能体诊断问题、发现机会、交付修复所需的全部上下文。可通过 Slack、Web、桌面端或 MCP 统一掌控。",
+    "microsoft/TypeScript": "TypeScript 是 JavaScript 的超集，可编译为简洁的 JavaScript 代码。",
+    "obra/superpowers": "一套切实可用的智能体技能框架与软件开发方法论。",
+    "modular/modular": "Modular 平台（包含 MAX 与 Mojo）。",
+    "affaan-m/ECC": "智能体运行框架性能优化系统：为 Claude Code、Codex、OpenCode、Cursor 等提供技能、本能、记忆、安全与「研究优先」的开发能力。",
+    # 2026-08-23 日榜/周榜新增
+    "openai/codex": "在终端中运行的轻量级编程智能体。",
+    "Wei-Shaw/sub2api": "Sub2API 一站式开源中转服务，让 Claude、OpenAI、Gemini、Grok 订阅统一接入，支持拼车共享、更高效分摊成本，原生工具无缝调用。",
+    "makeplane/plane": "🔥 开源版 Jira / Linear / Monday / ClickUp 替代品。Plane 是现代化项目管理平台，用于管理任务、迭代、文档与工单分流。",
+    "n8n-io/n8n": "公平代码（fair-code）工作流自动化平台，原生支持 AI。可视化搭建与自定义代码结合，可自托管或上云，集成 400+。",
+    "anthropics/claude-code": "Claude Code 是一款活在终端里的智能体式编程工具，能理解你的代码库，并通过自然语言指令执行日常任务、讲解复杂代码、处理 git 流程，帮你更快写代码。",
+    "multica-ai/andrej-karpathy-skills": "一份 CLAUDE.md 文件，依据 Andrej Karpathy 对 LLM 编程陷阱的观察，改善 Claude Code 的行为。",
+    "ripienaar/free-for-dev": "面向运维与基础设施开发者、提供免费档位的 SaaS / PaaS / IaaS 服务清单。",
+    "Tencent/AI-Infra-Guard": "全栈 AI 红队平台，通过智能体扫描、技能扫描、MCP 扫描、AI 基础设施扫描与 LLM 越狱评估，守护 AI 生态安全。",
+    "eneskirca/nodeterm": "面向 AI 编程智能体的节点式终端管理器——以 tmux 为底层，将终端与并行智能体会话呈现为无限画布上可拖拽的节点。支持 macOS、Linux 与浏览器版服务端。",
 }
 
 
