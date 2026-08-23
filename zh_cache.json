@@ -46,6 +46,7 @@
   "elder-plinius/OBLITERATUS": "粉碎束缚你的枷锁",
   "microsoft/onnxruntime": "ONNX Runtime：跨平台、高性能机器学习推理与训练加速器",
   "PrimeIntellect-ai/prime-agent": "用于编程工作流和长期自主任务的自我改进型 RLM 智能体。",
+<<<<<<< Updated upstream
   "cathrynlavery/diagram-design": "面向 Claude Code 的 29 种编辑型图表。纯 HTML + SVG，自包含。无阴影、拒绝 Mermaid 流水账。",
   "semantica-agi/semantica": "面向上下文与可问责 AI 系统的图原生基础设施。",
   "NVIDIA-NeMo/Switchyard": "NVIDIA 出品的 LLM 流量代理与路由库：跨多家模型后端分发请求，在 OpenAI Chat、Anthropic Messages 与 OpenAI Responses 协议间互译，让 Claude Code / Codex 等编程智能体直接对接开源模型与自托管端点。",
@@ -58,4 +59,16 @@
   "ripienaar/free-for-dev": "面向运维与基础设施开发者、提供免费档位的 SaaS / PaaS / IaaS 服务清单。",
   "Tencent/AI-Infra-Guard": "全栈 AI 红队平台，通过智能体扫描、技能扫描、MCP 扫描、AI 基础设施扫描与 LLM 越狱评估，守护 AI 生态安全。",
   "eneskirca/nodeterm": "面向 AI 编程智能体的节点式终端管理器——以 tmux 为底层，将终端与并行智能体会话呈现为无限画布上可拖拽的节点。支持 macOS、Linux 与浏览器版服务端。"
+=======
+  "nautechsystems/nautilus_trader": "采用确定性事件驱动架构的生产级 Rust 原生交易引擎",
+  "openai/codex": "在终端运行的轻量级编程智能体",
+  "Wei-Shaw/sub2api": "Sub2API：一站式开源中转服务，统一接入 Claude、OpenAI、Gemini、Grok 订阅，支持拼车共享与成本分摊，无缝对接原生工具。",
+  "makeplane/plane": "🔥🔥🔥 开源的 Jira、Linear、Monday 和 ClickUp 替代方案。Plane 是一个用于管理任务、冲刺、文档和问题分流的现代化项目管理平台。",
+  "n8n-io/n8n": "具备原生 AI 能力的 Fair-code 工作流自动化平台。融合可视化构建与自定义代码，支持自托管或云端部署，提供 400+ 种集成。",
+  "anthropics/claude-code": "Claude Code 是一款运行在终端中的智能体编程工具。它能理解你的代码库，通过自然语言指令帮你执行日常任务、解释复杂代码并管理 Git 工作流，从而提升编码效率。",
+  "multica-ai/andrej-karpathy-skills": "一个用于优化 Claude Code 表现的 CLAUDE.md 文件，源自 Andrej Karpathy 对 LLM 编程陷阱的观察。",
+  "ripienaar/free-for-dev": "面向 DevOps 和基础设施开发人员的 SaaS、PaaS 和 IaaS 免费服务清单",
+  "Tencent/AI-Infra-Guard": "全栈式 AI 红队平台，通过智能体扫描、技能扫描、MCP 扫描、AI 基础设施扫描和大模型越狱评估，保障 AI 生态安全。",
+  "eneskirca/nodeterm": "面向 AI 编程智能体的节点式终端管理器：在无限平移与缩放的画布上，将基于 tmux 的终端和并行智能体会话呈现为可拖拽的节点。支持 macOS、Linux 及浏览器服务器版。"
+>>>>>>> Stashed changes
 }
