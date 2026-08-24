@@ -75,6 +75,17 @@ MY_ZH = {
     "ripienaar/free-for-dev": "面向运维与基础设施开发者、提供免费档位的 SaaS / PaaS / IaaS 服务清单。",
     "Tencent/AI-Infra-Guard": "全栈 AI 红队平台，通过智能体扫描、技能扫描、MCP 扫描、AI 基础设施扫描与 LLM 越狱评估，守护 AI 生态安全。",
     "eneskirca/nodeterm": "面向 AI 编程智能体的节点式终端管理器——以 tmux 为底层，将终端与并行智能体会话呈现为无限画布上可拖拽的节点。支持 macOS、Linux 与浏览器版服务端。",
+    # 2026-08-24 日榜/周榜新增
+    "freestylefly/awesome-gpt-image-2": "提示词即代码（Prompt as Code）｜GPT-Image2 工业级提示词引擎与模板库，已逆向拆解 470+ 案例、提炼 20+ 套工业级模板并沉淀为 Skills，持续更新中。",
+    "block/buzz": "一个蜂巢式的群体心智通信平台。",
+    "apache/maka": "Apache Maka（孵化中）是一个本地优先的 AI 智能体工作空间。模型消息、工具调用、工具结果、权限决策与终止事件都以仅追加日志的形式被记录下来。",
+    "Alishahryar1/free-claude-code": "像 OpenClaw 一样，从你的终端、应用、IDE 或手机免费使用 Claude Code、Codex、Pi 与 OpenCode（13 亿+ 免费额度，支持语音，且符合服务条款）。",
+    "tinyhumansai/openhuman": "你的个人 AI 超级智能。一个为你的一生构建本地优先记忆的大脑，一个调度智能体集群与工作流的卓越编排器，也是一个深度研究员。",
+    "ruvnet/ruflo": "🌊 原初的智能体元编排框架。部署智能的多智能体集群，协调自主工作流，并构建对话式 AI 系统。具备自适应记忆、自学习智能、RAG 集成，并原生集成 Claude Code / Codex / Hermes 等众多平台。",
+    "VoltAgent/awesome-agent-skills": "一份精选的 1000+ 智能体技能合集，来自官方开发团队与社区，兼容 Claude Code、Codex、Gemini CLI、Cursor 等。",
+    "dani-garcia/vaultwarden": "用 Rust 编写的非官方 Bitwarden 兼容服务端，原名 bitwarden_rs。",
+    "anthropics/claude-plugins-community": "面向 Claude Cowork 与 Claude Code 的社区插件市场。只读镜像——请到 clau.de/plugin-directory-submission 提交插件。",
+    "NousResearch/hermes-agent": "与你一同成长的智能体。",
 }
 
 
