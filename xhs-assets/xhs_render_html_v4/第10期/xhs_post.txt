@@ -1,0 +1,7 @@
+今天值得收藏的三个 GitHub 经典开源项目：
+1. Bitchat：没网也能聊天的蓝牙应用
+2. Agency Agents：一人一支 AI 虚拟团队
+3. Apple Container：Mac 上轻量跑容器
+
+冷门的角落里，常常藏着最对胃口的东西。
+#GitHub #开源项目 #开发工具 #程序员 #效率工具

@@ -1,0 +1,7 @@
+今天值得收藏的三个 GitHub 经典开源项目：
+1. WorldMonitor：一块面板盯住全球动态
+2. Hermes Agent：会成长的自我改进代理
+3. OpenDataLoader PDF：PDF 解析成 AI 可用数据
+
+信息干净了，原料干净了，判断才靠得住。
+#GitHub #开源项目 #开发工具 #程序员 #效率工具

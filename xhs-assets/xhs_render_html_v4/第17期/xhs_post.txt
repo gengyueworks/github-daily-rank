@@ -1,0 +1,7 @@
+今天值得收藏的三个 GitHub 经典开源项目：
+1. Astrid Handbook：开源协作规矩写得明白
+2. DeepSeek Harness：一切皆插件的框架
+3. RAGFlow：带引用溯源的老牌 RAG 引擎
+
+底座选对了，上面的应用才立得住。
+#GitHub #开源项目 #开发工具 #程序员 #效率工具

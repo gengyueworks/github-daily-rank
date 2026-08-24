@@ -1,0 +1,7 @@
+今天值得收藏的三个 GitHub 经典开源项目：
+1. OpenSpec：先写规格再让 AI 动工
+2. Karpathy Skills：四条原则治 AI 写码通病
+3. AnyDoc：八类文档统一转 Markdown
+
+规矩立在前头，后面就省下无数扯皮。
+#GitHub #开源项目 #开发工具 #程序员 #效率工具

@@ -1,0 +1,7 @@
+今天值得收藏的三个 GitHub 经典开源项目：
+1. MiroFish：群体智能模拟万物预测
+2. Matt Pocock Skills：高手的真实工程技能集
+3. Unlimited OCR：长文本一次解析的 OCR
+
+大厂和高手的积累都摊开了，就看你会不会拿。
+#GitHub #开源项目 #开发工具 #程序员 #效率工具

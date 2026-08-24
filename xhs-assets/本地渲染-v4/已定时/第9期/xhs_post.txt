@@ -1,0 +1,7 @@
+今天值得收藏的三个 GitHub 经典开源项目：
+1. DeepTutor：读到哪问到哪的 AI 家教
+2. Anthropic Skills：Claude 官方技能仓库
+3. OpenCut：开源版剪映替代品
+
+学习和创作的好工具，正在被开源一件一件补齐。
+#GitHub #开源项目 #开发工具 #程序员 #效率工具

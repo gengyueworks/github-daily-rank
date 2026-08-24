@@ -1,0 +1,7 @@
+今天值得收藏的三个 GitHub 经典开源项目：
+1. Understand-Anything：代码库变交互知识图谱
+2. DeepSpec：投机解码训练评测全流程
+3. RuView：WiFi 信号感知家里动静
+
+换个传感器，老问题常有新解法。
+#GitHub #开源项目 #开发工具 #程序员 #效率工具

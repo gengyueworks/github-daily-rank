@@ -1,0 +1,7 @@
+今天值得收藏的三个 GitHub 经典开源项目：
+1. deer-flow：调研写码创作的长任务框架
+2. book：一本讲透 Astrid OS 的书
+3. manim：3Blue1Brown 背后的动画引擎
+
+好的讲解，本身就是一种工程。
+#GitHub #开源项目 #开发工具 #程序员 #效率工具

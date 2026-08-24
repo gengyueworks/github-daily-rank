@@ -1,0 +1,7 @@
+今天值得收藏的三个 GitHub 经典开源项目：
+1. Prompt Optimizer：提示词自动打磨多模型对比
+2. System Prompts：近 30 款工具系统提示词收录
+3. CLI-Anything：任何软件都能被 agent 操控
+
+好答案的背后，往往站着一个好问题。
+#GitHub #开源项目 #开发工具 #程序员 #效率工具

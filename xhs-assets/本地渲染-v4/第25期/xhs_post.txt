@@ -1,0 +1,7 @@
+今天值得收藏的三个 GitHub 经典开源项目：
+1. cordis：Node 生态插件化元框架
+2. claude-mem：给编程助手装跨会话记忆
+3. img2threejs：一张图重建成 Three.js 模型
+
+上下文接得上，协作才算真的开始。
+#GitHub #开源项目 #开发工具 #程序员 #效率工具

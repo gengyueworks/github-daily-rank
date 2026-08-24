@@ -1,0 +1,7 @@
+今天值得收藏的三个 GitHub 经典开源项目：
+1. Decimen Optical Transfer：隔着空气传文件
+2. Codex：OpenAI 官方轻量编码代理
+3. LangExtract：文字抽取成结构化字段
+
+脑洞和实用的距离，有时只隔一层二维码。
+#GitHub #开源项目 #开发工具 #程序员 #效率工具

@@ -1,0 +1,7 @@
+今天值得收藏的三个 GitHub 经典开源项目：
+1. Public APIs：46 万星免费 API 公共清单
+2. OpenClaw：跑在本地的个人 AI 助手
+3. MarkItDown：Office 文档一键转 Markdown
+
+开篇第一期，先把压箱底的三块硬骨头摆上来。
+#GitHub #开源项目 #开发工具 #程序员 #效率工具
