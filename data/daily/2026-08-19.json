@@ -55,7 +55,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "适用于 Agent 编程 CLI 的长期记忆解决方案，便于在不同 Agent 厂商之间进行交接。",
+      "description_zh": "适用于 AI 智能体编程 CLI 的长期记忆解决方案，便于在不同智能体厂商之间进行交接。",
       "script_zh": "写代码用不同的 AI 助手，最烦它们记不住上下文。\n这个项目就是专门给 AI 编程工具装上长期记忆的外挂。\n\n它能让你在切换不同 AI 工具时，无缝同步开发进度。\n不管你换到哪个平台的 AI，它都能秒懂你之前的代码逻辑。\n\n最棒的是，它不仅省下了重复解释的 Token 费，还让 AI 拥有了项目大局观。\n想让你的 AI 助手像老同事一样默契，闭眼冲它就对了！"
     },
     {
@@ -91,7 +91,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "为 AI 智能体设计的 817 个结构化网络安全技能 · 映射至 6 大框架：MITRE ATT&CK、NIST CSF 2.0、MITRE ATLAS、D3FEND、NIST AI RMF 和 MITRE F3 (Fight Fraud) · 遵循 agentskills.io 标准 · 兼容 Claude Code、GitHub Copilot、Codex CLI、Cursor、Gemini CLI 等 20 多个平台 · 涵盖 29 个安全领域 · Apache 2.0 协议",
+      "description_zh": "专为 AI 智能体设计的 817 个结构化网络安全技能 · 映射至 6 大框架：MITRE ATT&CK、NIST CSF 2.0、MITRE ATLAS、D3FEND、NIST AI RMF 及 MITRE F3 (反欺诈) · 遵循 agentskills.io 标准 · 兼容 Claude Code、GitHub Copilot、Codex CLI、Cursor、Gemini CLI 等 20 多个平台 · 涵盖 29 个安全领域 · Apache 2.0 协议",
       "script_zh": "这个项目是一个专门给 AI 准备的网络安全技能库。\n\n它把八百多个专业的安全技能打包整理好，能直接喂给你的 AI 助手。\n\n像 Cursor、Copilot 还有 Claude 导入它后，就能立马变身安全专家。\n\n最厉害的是，它完美对接了 MITRE 和 NIST 等六大权威安全框架。\n\n不仅好用而且完全开源，直接帮你省掉了手动训练 AI 的大把时间！"
     },
     {
@@ -109,7 +109,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "免费 API 合集",
+      "description_zh": "免费 API 汇总",
       "script_zh": "这个项目是一个超级庞大的免费 API 宝藏库。\n\n写代码想加个天气预报、动漫头像或者翻译功能，却找不到接口？\n直接来这里搜就行，它把全球成千上万个免费接口都整理好了。\n\n分类特别详细，从音乐、动漫到金融、游戏应有尽有。\n最牛的是，它不仅免费，还标明了需不需要注册、支不支持安全加密。\n\n简直就是独立开发者和新手的白嫖神器。\n难怪在 GitHub 上拿了快五十万颗星，闭眼收藏就对了！"
     },
     {
@@ -127,7 +127,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "精美、现代、有态度的 Linux",
+      "description_zh": "美观、现代、有主见的 Linux",
       "script_zh": "这个项目能把你的 Linux 系统一键变成超高颜值的现代化工作站。\n\n很多人想用 Linux 却被复杂的配置和美化直接劝退。\n它直接帮你把好用的开发工具、快捷键和主题全部打包配好了。\n\n你只需要装好系统运行它，就能直接开箱即用。\n最棒的是它审美极高，而且是顶级开发者自己每天都在用的实战配置。\n不用再花几天时间去瞎折腾，一瞬间就能拥有极度舒适的高效工作流！"
     },
     {
@@ -145,7 +145,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "一款全功能下载管理器",
+      "description_zh": "一款全功能下载管理器。",
       "script_zh": "这个项目是一个全能的桌面下载神器。\n不管是磁力链接、BT种子，还是普通网页链接，你直接把链接往里一贴就能开始下载。\n\n它能帮你解决浏览器下载太慢，或者下载经常中断的烦恼。\n最厉害的是，它的界面干净得像个艺术品，完全没有那些烦人的弹窗广告。\n\n而且它支持多线程加速，下载速度直接给你拉满。\n难怪它在 GitHub 上拿到了五万多颗星，赶紧去试试吧！"
     },
     {
@@ -163,7 +163,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "开源、低成本 10.5 GHz PLFM 相控阵雷达系统",
+      "description_zh": "开源、低成本的 10.5 GHz PLFM 相控阵雷达系统",
       "script_zh": "这个项目能让你在家里，自己动手造一个超酷的相控阵雷达。\n它是一个开源且超低成本的 10.5 GHz 雷达系统。\n\n平时你想做物体测距、测速或者方向定位，用它就能轻松搞定。\n最牛的是，以前这种技术都是军工级或者气象站专属，价格贵得离谱。\n\n而它不仅把硬件成本打了下来，还把全套设计图和代码都公开了。\n这绝对是极客和硬件爱好者不能错过的宝藏项目。"
     },
     {
@@ -181,7 +181,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "支持连续批处理与 SSD 缓存的 Apple Silicon LLM 推理服务器，可通过 macOS 菜单栏进行管理",
+      "description_zh": "专为 Apple Silicon 打造的 LLM 推理服务器，支持连续批处理与 SSD 缓存，可通过 macOS 菜单栏进行管理。",
       "script_zh": "这个项目能让你直接在 Mac 菜单栏上一键运行本地大模型。\n\n就算你的 Mac 内存不够大，它也能用 SSD 缓存技术帮你把超大模型跑起来。\n加上专门针对苹果芯片的优化，不仅运行速度极快，还非常省电。\n\n你只需要在菜单栏点一下就能随时调用 AI，完全不占屏幕空间。\n两万多星的超高人气，绝对是 Mac 用户不容错过的本地神器！"
     },
     {
@@ -199,7 +199,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "《深入理解 AI Agent：设计原理与工程实践》开源主仓库，包含全书正文、编译版 PDF 与分章配套代码。",
+      "description_zh": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码",
       "script_zh": "这个项目是目前在 GitHub 上超火的 AI Agent 开源神书。\n\n它直接把整本书的 PDF 还有配套的实战代码全都免费公开了。\n你跟着它不仅能搞懂智能体是怎么思考的，还能手把手写出能干活的 AI 助手。\n\n最牛的是它完全不讲虚的，全是互联网大厂级别的工程落地实践。\n将近四万星的超高人气摆在这里，想搞懂 AI Agent 闭眼冲它就对了！"
     },
     {

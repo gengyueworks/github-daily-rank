@@ -91,7 +91,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "最快且唯一的 macOS 语音听写应用，支持设备端 STT 和自定义训练的 AI 增强模型。Wispr Flow 的本地替代方案。⭐ 欢迎点赞支持 :) Windows 和 iOS 候补名单已开放，Linux 版本即将推出。",
+      "description_zh": "最快且唯一的 macOS 本地听写应用，支持设备端语音转文字（STT）与自定义训练的 AI 增强模型。Wispr Flow 的本地化替代方案。⭐ 欢迎点赞支持 :) Windows 和 iOS 候补名单已开放，Linux 版本即将推出。",
       "script_zh": "这个项目是目前 macOS 上最快的本地语音输入神器。\n你只要对着电脑说话，它就能瞬间把语音变成精准的文字。\n再也不用担心打字手酸，或者网络不好导致识别卡顿了。\n\n它最牛的地方在于完全在本地运行，隐私安全直接拉满。\n而且它有专门训练的 AI 增强模型，连口癖和语气词都能自动过滤。\n现在它在 GitHub 上已经破万星了，绝对值得你赶紧去试试！"
     },
     {
@@ -145,7 +145,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "检测指定邮箱是否注册了 Twitter、Instagram 等网站，并利用“忘记密码”功能检索相关信息。",
+      "description_zh": "holehe 可用于检测指定邮箱是否注册过 Twitter、Instagram 等网站，并利用找回密码功能获取相关信息。",
       "script_zh": "这个项目是一个超强悍的邮箱反查神器。\n\n只要输入一个邮箱地址，它就能立刻帮你查出这个邮箱注册过哪些网站。\n像微博、推特或者各类社交平台，全都逃不过它的法眼。\n\n最厉害的是，它利用了网站的找回密码机制，查得又快又准。\n无论你是想排查自己的隐私泄露，还是做安全测试，用它都省时省力。\n难怪它在 GitHub 上拿了一万多个星，真的太实用了！"
     },
     {
@@ -199,7 +199,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "开源的一体化 AI Agent 工作台。支持在你的工具（100+ 集成与 MCP）、应用、浏览器和文件间运行任何 Agent（如 Claude Code、Codex）并共享记忆。内置模型或自带密钥 (BYOK)。",
+      "description_zh": "开源的一体化 AI Agent 工作台。可在你的工具（100+ 集成与 MCP）、应用、浏览器和文件之间运行任何 Agent（如 Claude Code、Codex），并支持共享记忆。内置模型或自带密钥 (BYOK)。",
       "script_zh": "这个项目是一个开源的 AI Agent 全能工作台。\n\n简单来说，它能把各种 AI 智能体、你电脑里的软件还有网页，全部塞进同一个地方。\n不管你是想写代码还是查资料，它都能跨应用帮你一步搞定。\n\n最厉害的是，它支持上百种工具连接，而且所有 AI 都能共享同一个记忆。\n你既能直接用内置模型，也能自己带 Key 接入，完全免费还开源。\n想让 AI 真正帮你干活的，赶紧去 GitHub 搜搜看吧！"
     },
     {
@@ -217,7 +217,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "适用于 Obsidian 的智能体技能。教你的智能体使用 Obsidian CLI 以及 Markdown、Bases、JSON Canvas 等开放格式。",
+      "description_zh": "Obsidian 智能体技能。教你的智能体使用 Obsidian CLI 以及 Markdown、Bases 和 JSON Canvas 等开放格式。",
       "script_zh": "这个项目能让你的 AI 助手直接掌控你的 Obsidian 笔记库。\n\n简单来说，它给 AI 提供了操作 Obsidian 的超能力。\n\n不管是自动整理 Markdown 笔记，还是帮你画脑图，它都能轻松搞定。\n\n最酷的是，它完全基于本地的开放格式。\n\n你不用担心隐私泄露，就能拥有一个懂你全部知识的 AI 秘书。\n\n想体验 AI 自动整理笔记的朋友，闭眼冲就完了！"
     },
     {
@@ -289,7 +289,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "基于本地 AI 从图片生成 3D 模型的桌面应用——完全在您的 GPU 上运行",
+      "description_zh": "基于本地 AI 从图片生成 3D 模型的桌面应用，完全在本地 GPU 上运行。",
       "script_zh": "这个项目是一个能把普通图片直接变成三维模型的桌面软件。\n你只需要给它一张普通的照片，它就能自动生成可以直接导出的三维模型。\n\n做游戏或者三维设计的朋友，再也不用手动去一点点拉网格了。\n最厉害的是，它完全运行在你自己的本地显卡上。\n\n不用联网，不用付昂贵的云端算力费，隐私也绝对安全。\n这种零门槛、全本地运行的生产力工具，真的非常值得你关注！"
     },
     {
