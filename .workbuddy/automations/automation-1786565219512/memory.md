@@ -28,3 +28,12 @@
 - **本地生成**：site/daily/2026-08-18.html、site/weekly/2026-08-17.html、site/index.html、site/classics/index.html 均成功生成。
 - **线上链接**：https://gengyueworks.github.io/github-daily-rank/ 已更新（远程 main=c5455b74、gh-pages=a91cd09e 均实测存在；index/weekly 首拉 200，daily/2026-08-18.html 首拉偶发 404 属 Pages CDN 传播延迟，重试即 200，页面含今日仓库）。
 - **经验**：鉴权已于本次恢复（gh auth 有效），deploy 可直接成功；但凡本地有未提交改动，先本地 commit 再 deploy，可避免 autostash 回放冲突这一新坑。
+
+## 2026-08-23 (第六次运行 / 本次)
+- **前置分叉（关键）**：本地 main 与 origin/main 分叉——本地有未推送的 e72c53f（8-22 本地抓取），origin/main 已领先 11 个 commit（含另一会话推送的 8-21/8-22 趋势数据）。这正是 8-18 的 rebase 冲突陷阱。处置：`git reset --hard origin/main`（无数据丢失：origin 持完整翻译的 8-21/8-22 数据，且为公开权威源），本地回到 603038a 干净树。
+- **抓取**：日榜 17、周榜 15，写入 data/daily/2026-08-23.json 与 data/weekly/2026-08-17.json（周榜按本周一命名，重抓覆盖）。
+- **翻译**：reset 把 translate_missing.py 的 MY_ZH 回退到 8-19 版（丢了 8-22 条目，但 zh_cache.json 仍保留其干净译文）。新增 17 条助手直译（openai/codex、Wei-Shaw/sub2api、makeplane/plane、n8n-io/n8n、anthropics/claude-code、multica-ai/andrej-karpathy-skills、ripienaar/free-for-dev、Tencent/AI-Infra-Guard、eneskirca/nodeterm + 自 zh_cache 回填的 8 条 8-22 译文）写回 data 与 zh_cache；日报 17/17、周报 15/15 均 0 缺译。本机 127.0.0.1:8317 网关未启用，全用助手直译（避免污染）。
+- **本地生成**：site/daily/2026-08-23.html、site/weekly/2026-08-17.html、site/index.html、site/classics/index.html（build.py 通过）。
+- **部署**：先本地 commit（d00f876）使树干净、main 领先 origin 1 commit 无分叉 → deploy rebase 为 no-op 无冲突。main=d00f876、gh-pages=72e3fd4 已推送；daily/2026-08-23.html 首拉 404（Pages CDN 延迟，8s 后重试转 200 含今日仓库），index 与 weekly 首拉即 200。
+- **线上链接**：https://gengyueworks.github.io/github-daily-rank/ 已更新成功。
+- **固化经验**：每次运行「先本地 commit 再 deploy」；若本地与 origin 分叉，优先 `git reset --hard origin/main`（权威源）再在其上做当日工作，彻底规避 autostash 回放冲突。持久层是 zh_cache.json（被 inject_zh.py 读取复用），MY_ZH 仅辅助，reset 会丢，故新增译文应同时进 MY_ZH 与 zh_cache。
