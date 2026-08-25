@@ -62,5 +62,11 @@
   "dani-garcia/vaultwarden": "用 Rust 编写的非官方 Bitwarden 兼容服务端，前身为 bitwarden_rs。",
   "anthropics/claude-plugins-community": "Claude Cowork 和 Claude Code 的社区插件市场。只读镜像——请在 clau.de/plugin-directory-submission 提交插件。",
   "NousResearch/hermes-agent": "与你共同成长的智能体",
-  "PrimeIntellect-ai/prime-agent": "用于编程工作流和长期自主任务的自我改进型 RLM 智能体。"
+  "PrimeIntellect-ai/prime-agent": "用于编程工作流和长期自主任务的自我改进型 RLM 智能体。",
+  "MadsLorentzen/ai-job-search": "运行在本地的 AI 求职工具。基于 Claude Code 构建的求职申请框架：评估招聘岗位、定制简历、撰写求职信、准备面试。Fork 并完全掌控它。",
+  "openclaw/openclaw": "你的专属个人 AI 助手。支持任何系统与平台。龙虾之道。🦞",
+  "AgriciDaniel/claude-obsidian": "适用于 Obsidian + Claude Code 的自组织 AI 第二大脑。导入任意来源，Claude 即可自动阅读、关联并归档至你完全掌控的纯 Markdown 互联知识图谱中。集 AI 笔记、个人知识管理 (PKM) 于一体的开源 Notion 替代方案，基于 Karpathy 的 LLM Wiki 模式。",
+  "rohitg00/ai-engineering-from-scratch": "学习它，构建它，交付给他人。",
+  "tashfeenahmed/freellmapi": "每月 74 亿 Token。34 个免费 LLM 提供商。635 个免费模型端点。统一集成于单个 /v1 端点，并支持任何自定义 OpenAI 兼容端点。智能路由、自动故障转移、密钥加密。仅供个人实验使用。",
+  "eneskirca/nodeterm": "面向 AI 编程智能体的节点式终端管理器 —— 在无限平移/缩放的画布上，将基于 tmux 的终端和并行智能体会话呈现为可拖拽的节点。支持 macOS、Linux 及浏览器服务器版。"
 }
