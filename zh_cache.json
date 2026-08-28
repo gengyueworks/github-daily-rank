@@ -74,5 +74,18 @@
   "marin-community/marin": "用于基础模型研发的开源框架",
   "DietrichGebert/ponytail": "让你的 AI 智能体像最懒的高级开发一样思考。最好的代码就是你从未写过的代码。",
   "anthropics/claude-plugins-official": "Anthropic 官方维护的高质量 Claude Code 插件目录",
-  "asciimoo/hister": "你自己的搜索引擎"
+  "asciimoo/hister": "你自己的搜索引擎",
+  "bilawalsidhu/gods-eye-view": "网页版间谍卫星模拟器，采用真实数据。在逼真的 3D 地球上提供实时开源空间情报。",
+  "zedeus/nitter": "Twitter 替代前端",
+  "tt-a1i/archify": "用于生成美观、可验证的架构图、工作流图、时序图、数据流图和生命周期图的 Agent 技能，支持动态效果与高清导出的独立 HTML。",
+  "JetBrains/go-modern-guidelines": "帮助 AI 编程助手编写现代 Go 代码",
+  "K-Dense-AI/scientific-agent-skills": "让任何 AI 智能体化身 AI 科学家。全球超 17.5 万名科学家使用的第一大科学智能体技能库。内置 163 个开箱即用且经过验证的技能，以及 100 多个涵盖生物、化学、医学和药物研发的科学数据库。兼容 Cursor、Claude Code、Codex、Pi、Antigravity 及开放的 Agent Skills 标准。",
+  "calesthio/OpenMontage": "全球首款开源智能体视频制作系统。内置 12 条制作管线、100+ 款工具、700+ 个智能体技能与制作知识文件。将你的 AI 编程助手转化为全功能视频制作工作室。",
+  "ConardLi/garden-skills": "ConardLi 的开源技能合集，涵盖网页设计、知识检索、图像生成等。",
+  "thedotmack/claude-mem": "为每个 Agent 提供跨会话的持久上下文：捕获 Agent 在会话期间的所有操作，利用 AI 进行压缩，并在后续会话中重新注入相关上下文。支持 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等。",
+  "google/googletest": "GoogleTest - Google 测试与模拟框架",
+  "ComposioHQ/awesome-claude-skills": "Claude 技能、资源与工具精选列表，用于自定义 Claude AI 工作流。",
+  "actions/checkout": "用于检出仓库的 Action",
+  "securo-finance/securo": "开源个人理财工具。自托管，隐私优先。",
+  "bookorbit/bookorbit": "BookOrbit：你的阅读空间"
 }
