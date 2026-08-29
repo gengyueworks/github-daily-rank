@@ -87,5 +87,12 @@
   "ComposioHQ/awesome-claude-skills": "Claude 技能、资源与工具精选列表，用于自定义 Claude AI 工作流。",
   "actions/checkout": "用于检出仓库的 Action",
   "securo-finance/securo": "开源个人理财工具。自托管，隐私优先。",
-  "bookorbit/bookorbit": "BookOrbit：你的阅读空间"
+  "bookorbit/bookorbit": "BookOrbit：你的阅读空间",
+  "abhigyanpatwari/GitNexus": "GitNexus：无服务器代码智能引擎。这是一款完全在浏览器中运行的客户端知识图谱构建工具。只需导入 Git 仓库（GitHub、GitLab、Azure、本地）或 ZIP 文件，即可生成包含内置 Graph RAG 智能体的交互式知识图谱，非常适合用于代码探索。",
+  "abi/screenshot-to-code": "拖入截图即可转换为整洁的代码 (HTML/Tailwind/React/Vue)",
+  "tailscale/tailcat": "类似于 netcat，但基于 Tailscale 的数据平面，无需其控制平面。",
+  "NationalSecurityAgency/ghidra": "Ghidra 是一个软件逆向工程 (SRE) 框架",
+  "swoole/typephp": "将 PHP 编译为原生二进制文件",
+  "ChromeDevTools/chrome-devtools-mcp": "面向编码智能体的 Chrome DevTools",
+  "livekit/agents": "构建实时语音 AI 智能体的框架 🤖🎙️📹"
 }
