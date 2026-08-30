@@ -94,5 +94,13 @@
   "NationalSecurityAgency/ghidra": "Ghidra 是一个软件逆向工程 (SRE) 框架",
   "swoole/typephp": "将 PHP 编译为原生二进制文件",
   "ChromeDevTools/chrome-devtools-mcp": "面向编码智能体的 Chrome DevTools",
-  "livekit/agents": "构建实时语音 AI 智能体的框架 🤖🎙️📹"
+  "livekit/agents": "构建实时语音 AI 智能体的框架 🤖🎙️📹",
+  "THU-MAIC/OpenMAIC": "开放式多智能体互动课堂 — 一键体验沉浸式多智能体学习",
+  "p-e-w/heretic": "语言模型全自动解除审查",
+  "bigskysoftware/htmx": "</> htmx - HTML 强力工具",
+  "every-app/open-seo": "Semrush 和 Ahrefs 的开源替代方案",
+  "Osmantic/ODS": "将你的 PC、Mac 或 Linux 电脑变成 AI 服务器。支持大模型推理、聊天 UI、语音、智能体、工作流、RAG 和图像生成。",
+  "kaifcodec/user-scanner": "🕵️‍♂️ (二合一) 邮箱与用户名 OSINT 套件，仅凭单个邮箱或用户名即可进行深度数据提取。分析 455+ 个持续维护的扫描维度（175+ 邮箱 / 280+ 用户名），适用于安全研究、调查和数字足迹分析。",
+  "workweave/router": "面向智能体系统的模型路由器。可在 50ms 内将每个提示词路由至最合适的模型，仅需更改端点即可降低 40-70% 的成本。",
+  "omacom/omarchy": "美观、现代、有态度的 Linux"
 }
