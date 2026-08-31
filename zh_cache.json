@@ -102,5 +102,14 @@
   "Osmantic/ODS": "将你的 PC、Mac 或 Linux 电脑变成 AI 服务器。支持大模型推理、聊天 UI、语音、智能体、工作流、RAG 和图像生成。",
   "kaifcodec/user-scanner": "🕵️‍♂️ (二合一) 邮箱与用户名 OSINT 套件，仅凭单个邮箱或用户名即可进行深度数据提取。分析 455+ 个持续维护的扫描维度（175+ 邮箱 / 280+ 用户名），适用于安全研究、调查和数字足迹分析。",
   "workweave/router": "面向智能体系统的模型路由器。可在 50ms 内将每个提示词路由至最合适的模型，仅需更改端点即可降低 40-70% 的成本。",
-  "omacom/omarchy": "美观、现代、有态度的 Linux"
+  "omacom/omarchy": "美观、现代、有态度的 Linux",
+  "unclecode/crawl4ai": "🚀🤖 Crawl4AI：开源、对 LLM 友好的网页爬虫与抓取工具。别害羞，快来加入吧：https://discord.gg/jP8KfhDhyN",
+  "mvanhorn/last30days-skill": "一款 AI Agent 技能，可检索 Reddit、X、YouTube、HN、Polymarket 及全网的任意主题，并生成有据可依的综合总结。",
+  "majd/ipatool": "用于从 App Store 搜索和下载 iOS、iPadOS、tvOS 和 visionOS 应用包（ipa 文件）的命令行工具。",
+  "punkpeye/awesome-mcp-servers": "MCP 服务器合集",
+  "checkstyle/checkstyle": "Checkstyle 是一款帮助开发者编写符合编码规范的 Java 代码的开发工具。它默认支持 Google Java 风格指南和 Sun 代码规范，并具有高度可配置性。可通过 ANT 任务或命令行程序调用。",
+  "pollen-robotics/microduck_rl": "适用于 Microduck (mjlab) 的强化学习训练环境",
+  "handsomestWei/patent-disclosure-skill": "中国专利技能指南：专利挖掘与交底书（发明/实用/外观）撰写，专利通俗解读，政策动向追踪，辅助审查答复。",
+  "corsairdev/corsair": "连接用户与其应用",
+  "colinhacks/zod": "支持静态类型推导的 TypeScript 优先模式验证库"
 }
