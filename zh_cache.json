@@ -111,5 +111,6 @@
   "pollen-robotics/microduck_rl": "适用于 Microduck (mjlab) 的强化学习训练环境",
   "handsomestWei/patent-disclosure-skill": "中国专利技能指南：专利挖掘与交底书（发明/实用/外观）撰写，专利通俗解读，政策动向追踪，辅助审查答复。",
   "corsairdev/corsair": "连接用户与其应用",
-  "colinhacks/zod": "支持静态类型推导的 TypeScript 优先模式验证库"
+  "colinhacks/zod": "支持静态类型推导的 TypeScript 优先模式验证库",
+  "jingyaogong/minimind": "🧠 只需 2 小时，从零开始训练一个 64M 参数的 LLM！"
 }
