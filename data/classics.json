@@ -86,6 +86,18 @@
       "note_en": "Obsidian's own founder wrote the Agent skills for his tool — what's worth keeping isn't the tech but the stance: make AI use my tool well. Best part: its topics list hermes / openclaw / opencode / codex — your daily Agent stack.",
       "added": "2026-08-14",
       "script_zh": "这个项目能让你的 AI 助手直接掌控你的 Obsidian 笔记库。\n\n简单来说，它给 AI 提供了操作 Obsidian 的超能力。\n\n不管是自动整理 Markdown 笔记，还是帮你画脑图，它都能轻松搞定。\n\n最酷的是，它完全基于本地的开放格式。\n\n你不用担心隐私泄露，就能拥有一个懂你全部知识的 AI 秘书。\n\n想体验 AI 自动整理笔记的朋友，闭眼冲就完了！"
+    },
+    {
+      "full_name": "tashfeenahmed/freellmapi",
+      "url": "https://github.com/tashfeenahmed/freellmapi",
+      "stars": 25005,
+      "description": "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only.",
+      "description_zh": "把34家免费大模型额度收成一个接口：每月约74亿token，635个免费端点，统一走本地/v1，限流自动切换，Key加密存放。",
+      "category": "AI工具 / 开发工具",
+      "note_zh": "思路很实在：每家免费额度都不够用，攒在一起就够每天动手。代价是每家的Key都要自己申请，装完先花一下午填钥匙。",
+      "note_en": "A practical idea: every free tier is too small alone, pooled together they cover daily use. The cost is bringing your own keys for each provider.",
+      "added": "2026-09-09",
+      "script_zh": "这个项目把34家免费大模型的额度收到一个接口里。\n本地起一个服务，各家Key填进去，上层只调这一个地址。\n\n哪家限流就自动切下一家，不用手写34套接入。\n每个月加起来约74亿token，日常折腾和小项目够用。\n\n丑话说前面：Key都要自己一家家申请，装完先花一下午填钥匙。\n嫌麻烦就先填两三家最好申的，照样能转起来。"
     }
   ]
 }
