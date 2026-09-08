@@ -41,7 +41,7 @@
   "modular/modular": "Modular 平台（包含 MAX 与 Mojo）。",
   "affaan-m/ECC": "智能体运行框架性能优化系统：为 Claude Code、Codex、OpenCode、Cursor 等提供技能、本能、记忆、安全与「研究优先」的开发能力。",
   "TryGhost/Ghost": "面向现代出版、会员、订阅和邮件通讯的独立技术。",
-  "ruvnet/ruflo": "🌊 首创的智能体元框架。部署智能多角色集群，协调自主工作流，构建对话式 AI 系统。支持自适应记忆、自学习智能、RAG 集成，并原生集成 Claude Code、Codex、Hermes 等众多模型。",
+  "ruvnet/ruflo": "🌊 原初的智能体元编排框架。部署智能的多智能体集群，协调自主工作流，并构建对话式 AI 系统。具备自适应记忆、自学习智能、RAG 集成，并原生集成 Claude Code / Codex / Hermes 等众多平台。",
   "apache/maka": "Apache Maka（孵化中）是一个本地优先的 AI 智能体工作空间。模型消息、工具调用、工具结果、权限决策与终止事件都以仅追加日志的形式被记录下来。",
   "protocolbuffers/protobuf": "Protocol Buffers - Google 的数据交换格式",
   "elder-plinius/OBLITERATUS": "斩断束缚你的枷锁",
