@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  @page { size: 1200px 1600px; margin: 0; }
+  body {
+    width: 1200px;
+    height: 1600px;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    position: relative;
+    overflow: hidden;
+    background: #002FA7;
+    color: #fff;
+  }
+  /* 克莱因蓝渐变底 + 光晕 */
+  .bg {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(120% 90% at 85% -10%, rgba(255,255,255,0.16) 0%, rgba(255,255,255,0) 45%),
+      radial-gradient(90% 70% at -5% 105%, rgba(0,180,255,0.35) 0%, rgba(0,180,255,0) 50%),
+      linear-gradient(165deg, #0a3fce 0%, #002FA7 55%, #001a6b 100%);
+  }
+  /* 悬浮光斑 */
+  .orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: .5;
+  }
+  .orb-1 { width: 480px; height: 480px; background: rgba(0,180,255,.28); top: -120px; right: -100px; }
+  .orb-2 { width: 380px; height: 380px; background: rgba(255,255,255,.12); bottom: 100px; left: -140px; }
+  /* 细网格纹理 */
+  .grid {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px);
+    background-size: 56px 56px;
+    opacity: .5;
+  }
+
+  .inner {
+    position: relative; z-index: 2;
+    height: 100%;
+    padding: 90px 84px 84px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* 顶部：序列标签 + 期号 */
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+  .brand-dot {
+    width: 18px; height: 18px;
+    background: #fff;
+    border-radius: 3px;
+  }
+  .brand-name {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #fff;
+  }
+  .issue-pill {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: rgba(255,255,255,.85);
+    border: 1.5px solid rgba(255,255,255,.4);
+    border-radius: 999px;
+    padding: 10px 26px;
+  }
+
+  /* 中部核心 */
+  .mid {
+    margin: auto 0;
+  }
+  .kicker {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: rgba(255,255,255,.72);
+    margin-bottom: 34px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .kicker::before {
+    content: "";
+    width: 52px; height: 3px;
+    background: rgba(255,255,255,.6);
+    display: inline-block;
+  }
+  .main-title {
+    font-size: 88px;
+    font-weight: 800;
+    line-height: 1.22;
+    letter-spacing: -1px;
+    color: #fff;
+    text-shadow: 0 4px 30px rgba(0,20,80,.35);
+  }
+  .accent {
+    color: #7fd0ff;
+  }
+  .title-shadow {
+    position: relative;
+    display: inline-block;
+  }
+  .title-shadow::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 6px; top: 6px;
+    color: rgba(255,255,255,.08);
+    z-index: -1;
+  }
+
+  .divider {
+    width: 140px; height: 5px;
+    background: linear-gradient(90deg, #7fd0ff, rgba(255,255,255,.1));
+    margin: 46px 0;
+    border-radius: 3px;
+  }
+  .subtitle {
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1.65;
+    color: rgba(255,255,255,.9);
+    max-width: 1000px;
+  }
+  .subtitle .hl {
+    color: #7fd0ff;
+    font-weight: 600;
+  }
+
+  /* 底部 */
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 36px;
+    border-top: 1px solid rgba(255,255,255,.28);
+  }
+  .meta-line {
+    font-size: 23px;
+    letter-spacing: 1.5px;
+    color: rgba(255,255,255,.6);
+    line-height: 1.7;
+  }
+  .meta-strong {
+    font-size: 23px;
+    letter-spacing: 2px;
+    color: rgba(255,255,255,.9);
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="grid"></div>
+
+  <div class="inner">
+    <div class="top">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <span class="brand-name">GENGYUE WORKS</span>
+      </div>
+      <span class="issue-pill">VOL. 01</span>
+    </div>
+
+    <div class="mid">
+      <div class="kicker" id="kicker-slot">GPT-6 ASTRA 发布之夜</div>
+      <div class="main-title" id="title-slot">
+        技术的半衰期在变短，<br>人类的震撼也是。
+      </div>
+      <div class="divider"></div>
+      <div class="subtitle" id="sub-slot">
+        两年前写下的那些设想，正在变成日常；而每一次时代跃迁，都在以几周为单位迅速褪色。
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div class="meta-line" id="meta-slot">
+        REF: SAM ALTMAN (2024)<br>FIELD NOTE · PERSPECTIVE
+      </div>
+      <div class="meta-strong">AI · THE INTELLIGENCE AGE</div>
+    </div>
+  </div>
+</body>
+</html>

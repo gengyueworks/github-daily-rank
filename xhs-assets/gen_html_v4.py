@@ -2,11 +2,12 @@ import re, os, sys, urllib.parse
 
 BASE = "/Volumes/拓展坞 1T2022/2 Codex-Workspace/Codex-Workspace-Main/30-项目-网站/gengyueworks-Github/github-daily-rank"
 PKG = f"{BASE}/xhs-assets/Notion出图包-2026-08-22"
-OUT = "/Volumes/拓展坞 1T2022/2 Codex-Workspace/Codex-Workspace-Main/30-项目-网站/gengyueworks-Github/github-daily-rank/xhs-assets/xhs_render_html_v4"
+OUT = f"{BASE}/xhs-assets/xhs_render_html_v4"
+SSOT_MD = f"{BASE}/xhs-assets/选题/30期选题清单-富化v4.md"
 
 cover_tpl = open(f"{PKG}/template_cover_v2.html").read()
 card_tpl = open(f"{PKG}/template_repo_v2.html").read()
-text = open(f"{PKG}/30期选题清单-富化v4.md").read()
+text = open(SSOT_MD).read()
 
 issues = re.split(r'\n## 第 (\d+) 期\n', text)[1:]
 # issues = [num1, body1, num2, body2, ...]
@@ -24,7 +25,7 @@ def parse_cards(body):
     return cards
 
 def parse_post(body):
-    m = re.search(r'### 小红书正文\n\n(.*?)(?=\n---|\Z)', body, re.S)
+    m = re.search(r'### 小红书正文\n\n([\s\S]*?)(?=\n## 第|\Z)', body)
     return m.group(1).strip() if m else ''
 
 def fmt_repo(repo):  # 斜杠两侧加空格
