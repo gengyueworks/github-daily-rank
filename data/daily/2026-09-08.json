@@ -104,7 +104,8 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "智能体运行框架性能优化系统：为 Claude Code、Codex、OpenCode、Cursor 等提供技能、本能、记忆、安全与「研究优先」的开发能力。"
+      "description_zh": "智能体运行框架性能优化系统：为 Claude Code、Codex、OpenCode、Cursor 等提供技能、本能、记忆、安全与「研究优先」的开发能力。",
+      "script_zh": "写代码用 Cursor 或者 Claude Code 的朋友，一定要看看这个项目。\n\n它是一个专门给 AI 智能体做性能超强优化的系统。\n\n简单来说，它能给你的 AI 助手装上更强的记忆、直觉和安全防线。\n\n不管是写代码还是做研究，它都能让 AI 反应更快、更聪明。\n\n最厉害的是，它在 GitHub 上已经拿到了超过二十四万颗星！\n\n想让你的 AI 工具好用十倍，闭眼冲它就对了！"
     },
     {
       "rank": 7,
@@ -240,7 +241,8 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "🌊 原初的智能体元编排框架。部署智能的多智能体集群，协调自主工作流，并构建对话式 AI 系统。具备自适应记忆、自学习智能、RAG 集成，并原生集成 Claude Code / Codex / Hermes 等众多平台。"
+      "description_zh": "🌊 原初的智能体元编排框架。部署智能的多智能体集群，协调自主工作流，并构建对话式 AI 系统。具备自适应记忆、自学习智能、RAG 集成，并原生集成 Claude Code / Codex / Hermes 等众多平台。",
+      "script_zh": "最近 GitHub 上有个火得一塌糊涂的项目叫 ruflo。\n简单来说，它就是一个能帮你部署 AI 智能体军团的超级框架。\n\n不管你想做多智能体协同，还是搭对话系统，用它都能搞定。\n它能让不同的 AI 像真人团队一样分工合作，自己去解决复杂任务。\n\n而且它自带自适应记忆和自主学习能力，越用越聪明。\n它还原生支持 Claude Code 等顶尖模型，难怪能斩获近七万星，赶紧去试试吧！"
     }
   ]
 }

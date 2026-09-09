@@ -19,7 +19,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "提示词即代码 | GPT-Image2 工业级提示词引擎与模板库，包含 470+ 个案例逆向工程、20+ 套工业级模板并提炼出核心技能，持续更新中。",
+      "description_zh": "提示词即代码（Prompt as Code）｜GPT-Image2 工业级提示词引擎与模板库，已逆向拆解 470+ 案例、提炼 20+ 套工业级模板并沉淀为 Skills，持续更新中。",
       "script_zh": "写 AI 绘图提示词总是翻车？\n试试这个项目，它是一个把提示词当代码写的工业级提示词引擎。\n\n它把复杂的画图需求变成了标准化模板，里面有四百多个逆向工程案例。\n你只需要像写代码一样套用模板，就能稳定输出高质量的工业级大片。\n\n最牛的是它提炼出了可复用的技能包，而且还在持续更新。\n斩获一万多星不是没原因的，赶紧去 GitHub 搜一下吧！"
     },
     {
@@ -37,7 +37,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "Claude Cowork 和 Claude Code 的社区插件市场。只读镜像——请在 clau.de/plugin-directory-submission 提交插件。",
+      "description_zh": "面向 Claude Cowork 与 Claude Code 的社区插件市场。只读镜像——请到 clau.de/plugin-directory-submission 提交插件。",
       "script_zh": "这个项目是给 Claude Code 和 Claude Cowork 专门打造的社区插件库。\n\n简单来说，它就像是 Claude 的官方应用商店。\n不管是想让 AI 直接读写本地文件，还是连接各种第三方工具，用它都能一键搞定。\n\n最棒的是，这里所有的插件都由开源社区共同维护。\n不仅安全靠谱，而且每天都有大神在里面更新各种好玩的骚操作。\n经常用 Claude 搞开发的朋友，这个项目闭眼收藏就对了！"
     },
     {
@@ -73,7 +73,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "Apache Maka (Incubating) 是一个本地优先的 AI Agent 工作空间。模型消息、工具调用、工具结果、权限决策和终止事件均被记录为仅追加日志。",
+      "description_zh": "Apache Maka（孵化中）是一个本地优先的 AI 智能体工作空间。模型消息、工具调用、工具结果、权限决策与终止事件都以仅追加日志的形式被记录下来。",
       "script_zh": "这个项目是一个本地优先的 AI Agent 工作空间。\n简单来说，它就是你本地的 AI 助手大本营。\n\n平时用 AI 智能体最怕它瞎操作或者泄露隐私？\n它把 AI 的对话、调用工具甚至权限决定，全都记在一条只增不减的日志里。\n\n这就意味着你拥有了绝对的掌控权。\n不仅数据安全，AI 做的每一步你都能看得清清楚楚，调试起来简直太省心了。"
     },
     {
@@ -163,7 +163,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "美观、现代、有主见的 Linux",
+      "description_zh": "美观、现代且高度定制化的 Linux 发行版。",
       "script_zh": "这个项目能把你的 Linux 系统一键变成超高颜值的现代化工作站。\n\n很多人想用 Linux 却被复杂的配置和美化直接劝退。\n它直接帮你把好用的开发工具、快捷键和主题全部打包配好了。\n\n你只需要装好系统运行它，就能直接开箱即用。\n最棒的是它审美极高，而且是顶级开发者自己每天都在用的实战配置。\n不用再花几天时间去瞎折腾，一瞬间就能拥有极度舒适的高效工作流！"
     },
     {
