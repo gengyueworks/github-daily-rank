@@ -86,6 +86,32 @@ MY_ZH = {
     "dani-garcia/vaultwarden": "用 Rust 编写的非官方 Bitwarden 兼容服务端，原名 bitwarden_rs。",
     "anthropics/claude-plugins-community": "面向 Claude Cowork 与 Claude Code 的社区插件市场。只读镜像——请到 clau.de/plugin-directory-submission 提交插件。",
     "NousResearch/hermes-agent": "与你一同成长的智能体。",
+    # 2026-09-09 日榜新增
+    "ayghri/i-have-adhd": "一项让编程智能体别把答案埋在长篇大论里的技能，输出对 ADHD 人群友好。",
+    "openai/skills": "Codex 的技能目录（Skills Catalog）。",
+    "heygen-com/hyperframes": "写 HTML，渲染出视频。专为智能体打造。",
+    "coreyhaines31/marketingskills": "面向 Claude Code 与 AI 智能体的营销技能合集：转化率优化（CRO）、文案、SEO、数据分析与增长工程。",
+    "microsoft/markitdown": "把各类文件与 Office 文档转换成 Markdown 的 Python 工具。",
+    "jo-inc/camofox-browser": "面向 AI 智能体的隐身无头浏览器——绕过 Cloudflare、机器人检测与反爬机制，可直接替代 Puppeteer / Playwright。",
+    "MoonTechLab/LunaTV": "本项目采用 CC BY-NC-SA 协议，禁止任何商业化行为，任何衍生项目必须保留本项目地址并以相同协议开源。",
+    "browser-use/browser-use": "会自己使用浏览器的智能体。",
+    "mksglu/context-mode": "面向 AI 编程智能体的上下文窗口优化方案：沙箱化工具输出（体积削减 98%）、持久化会话记忆，并通过 MCP + 钩子在 17 个平台上强制统一路由。",
+    "The-Swarm-Corporation/AutoHedge": "几分钟搭起你自己的自主对冲基金。AutoHedge 借助群体智能与 AI 智能体，自动完成市场分析、风险管理与交易执行。",
+    "viarotel-org/escrcpy": "📱 基于 scrcpy，用图形界面显示并操控你的安卓设备。",
+    "openai/plugins": "OpenAI 官方插件仓库。",
+    # 2026-09-09 周榜新增
+    "fmtlib/fmt": "一个现代化的 C++ 格式化库。",
+    "DietrichGebert/ponytail": "让你的 AI 智能体像团队里最懒的资深开发者那样思考：最好的代码，是你根本没写的那些代码。",
+    "tt-a1i/archify": "用于产出美观、可校验的架构图、流程图、时序图、数据流图与生命周期图的智能体技能——输出自包含 HTML，带动效并支持高清导出。",
+    "blader/humanizer": "一项智能体技能，用于抹除文本里的 AI 写作痕迹。",
+    "Imbad0202/academic-research-skills": "面向 Claude Code 的学术研究技能集：查研究 → 写作 → 评审 → 修改 → 定稿。",
+    "ChromeDevTools/chrome-devtools-mcp": "把 Chrome 开发者工具开放给编程智能体使用。",
+    "llvm/llvm-project": "LLVM 项目是一套模块化、可复用的编译器与工具链技术集合。",
+    "facebook/zstd": "Zstandard——高速实时压缩算法。",
+    "nvm-sh/nvm": "Node 版本管理器——符合 POSIX 规范的 bash 脚本，用于管理多个并存的 Node.js 版本。",
+    "bilawalsidhu/gods-eye-view": "浏览器里的间谍卫星模拟器，只不过数据是真的：在照片级真实的 3D 地球上呈现实时开源空间情报。",
+    "every-app/open-seo": "Semrush 与 Ahrefs 的开源替代品。",
+    "google-research/timesfm": "TimesFM（时间序列基础模型）是 Google Research 研发的预训练时序基础模型，用于时间序列预测。",
 }
 
 
