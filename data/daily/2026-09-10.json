@@ -1,7 +1,7 @@
 {
   "since": "daily",
   "date": "2026-09-10",
-  "fetched_at": "2026-09-10T09:00:07",
+  "fetched_at": "2026-09-10T09:03:44",
   "count": 13,
   "repos": [
     {
@@ -13,12 +13,13 @@
       "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 34629,
+      "stars": 34636,
       "forks": 2029,
       "period_stars": 4650,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型"
+      "category": "AI / 大模型",
+      "description_zh": "一项让编程智能体别把答案埋在长篇大论里的技能，输出对 ADHD 人群友好。"
     },
     {
       "rank": 2,
@@ -29,12 +30,13 @@
       "description": "Make Every Team AI Native",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 2980,
+      "stars": 2982,
       "forks": 185,
       "period_stars": 556,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型"
+      "category": "AI / 大模型",
+      "description_zh": "让每个团队都成为 AI 原生团队。"
     },
     {
       "rank": 3,
@@ -45,14 +47,13 @@
       "description": "An agentic skills framework & software development methodology that works.",
       "language": "Shell",
       "language_color": "#89e051",
-      "stars": 284030,
+      "stars": 284032,
       "forks": 25413,
       "period_stars": 688,
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "一套切实可用的智能体技能框架与软件开发方法论。",
-      "script_zh": "想让 AI 真正帮你写代码，一定要看看这个项目。\n\n它是一个专门为 AI 智能体打造的技能框架和软件开发方法论。\n\n简单来说，它能把复杂的开发任务拆解成 AI 听得懂、做得到的具体技能。\n\n这就解决了以前 AI 写代码总是翻车、不靠谱的痛点。\n\n最厉害的是，它是真正能在实际生产中落地的。\n\n它不玩虚的概念，而是提供了一套行之有效的实战规范，让你的 AI 助手瞬间战力爆表。"
+      "description_zh": "一套切实可用的智能体技能框架与软件开发方法论。"
     },
     {
       "rank": 4,
@@ -63,12 +64,13 @@
       "description": "Open-source 3D architectural editor with a local CLI, MCP tools, and practical workflows for humans and AI agents.",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 22922,
+      "stars": 22924,
       "forks": 2896,
       "period_stars": 107,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型"
+      "category": "AI / 大模型",
+      "description_zh": "开源 3D 建筑编辑器，配备本地 CLI、MCP 工具，以及面向人类与 AI 智能体的实用工作流。"
     },
     {
       "rank": 5,
@@ -79,12 +81,13 @@
       "description": "A library of agent skills for CAD, CAE and CAM",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 15032,
+      "stars": 15033,
       "forks": 1561,
       "period_stars": 124,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型"
+      "category": "AI / 大模型",
+      "description_zh": "面向 CAD、CAE 与 CAM 的智能体技能库。"
     },
     {
       "rank": 6,
@@ -95,14 +98,13 @@
       "description": "38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
       "language": "HTML",
       "language_color": "#e34c26",
-      "stars": 36594,
+      "stars": 36597,
       "forks": 2319,
       "period_stars": 2249,
       "period_label": "今日",
       "topics": [],
       "category": "前端 / Web",
-      "description_zh": "面向 Claude Code 的 29 种编辑型图表。纯 HTML + SVG，自包含。无阴影、拒绝 Mermaid 流水账。",
-      "script_zh": "这个项目是一个专门给 AI 准备的精美图表设计库。\n\n平时用 AI 生成图表，出来的总是又乱又丑的流程图？\n它直接提供了三十八种极简风格的图表模版。\n\n全部用纯 HTML 和 SVG 编写，没有任何多余的阴影和依赖。\nAI 可以直接秒读并完美修改，渲染出来的效果高级感拉满。\n经常要写文档或者做演示的朋友，赶紧去 GitHub 把它收藏起来吧！"
+      "description_zh": "为 Claude Code、Codex 与 Pi 准备的 38 种编辑型图表模板。自包含 HTML + SVG，无阴影、告别 Mermaid 套话。"
     },
     {
       "rank": 7,
@@ -119,7 +121,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "script_zh": "这个项目是一个用大模型多智能体做量化交易的开源框架。\n简单来说，就是让一堆 AI 组队帮你炒股。\n\n它把分析师、风控员和交易员都变成了 AI 智能体。\n输入你的交易想法，这些 AI 就会自己开会讨论并制定策略。\n\n最牛的是，它完全模拟了专业投资机构的真实工作流。\n不仅能自动分析市场，还能评估风险并执行交易，直接拉低了智能量化的门槛。"
+      "description_zh": "TradingAgents：基于多智能体大语言模型的金融交易框架。"
     },
     {
       "rank": 8,
@@ -130,12 +132,13 @@
       "description": "Notes of the book System Desgin Interview - An Insider's Guide",
       "language": null,
       "language_color": null,
-      "stars": 18001,
+      "stars": 18004,
       "forks": 3407,
       "period_stars": 1397,
       "period_label": "今日",
       "topics": [],
-      "category": "学习资源"
+      "category": "学习资源",
+      "description_zh": "《系统设计面试：内幕指南》一书的学习笔记。"
     },
     {
       "rank": 9,
@@ -151,7 +154,8 @@
       "period_stars": 498,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型"
+      "category": "AI / 大模型",
+      "description_zh": "OpenAI 官方插件仓库。"
     },
     {
       "rank": 10,
@@ -162,14 +166,13 @@
       "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中",
       "language": "JavaScript",
       "language_color": "#f1e05a",
-      "stars": 30048,
+      "stars": 30055,
       "forks": 2906,
       "period_stars": 705,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "提示词即代码（Prompt as Code）｜GPT-Image2 工业级提示词引擎与模板库，已逆向拆解 470+ 案例、提炼 20+ 套工业级模板并沉淀为 Skills，持续更新中。",
-      "script_zh": "写 AI 绘图提示词总是翻车？\n试试这个项目，它是一个把提示词当代码写的工业级提示词引擎。\n\n它把复杂的画图需求变成了标准化模板，里面有四百多个逆向工程案例。\n你只需要像写代码一样套用模板，就能稳定输出高质量的工业级大片。\n\n最牛的是它提炼出了可复用的技能包，而且还在持续更新。\n斩获一万多星不是没原因的，赶紧去 GitHub 搜一下吧！"
+      "description_zh": "提示词即代码（Prompt as Code）｜GPT-Image2 工业级提示词引擎与模板库，已逆向拆解 470+ 案例、提炼 20+ 套工业级模板并沉淀为 Skills，持续更新中。"
     },
     {
       "rank": 11,
@@ -180,13 +183,13 @@
       "description": "Learn it. Build it. Ship it for others.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 53693,
+      "stars": 53695,
       "forks": 9372,
       "period_stars": 343,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "script_zh": "这个项目是一个带你从零手撕 AI 应用的开源宝库。\n\n它在 GitHub 上已经狂斩了接近五万颗星。\n\n它不跟你扯虚的理论，直接手把手教你写 RAG 和智能体，再把它们部署上线。\n\n解决的就是你只会调 API 却不懂底层逻辑的痛点。\n\n最牛的是它完全剥离了复杂的黑盒框架，让你看清每一行代码是怎么跑起来的。\n\n想从小白蜕变成能独立交付产品的 AI 工程师，闭眼冲它就够了。"
+      "description_zh": "从零学 AI 工程：学透、做出来、交付给别人用。"
     },
     {
       "rank": 12,
@@ -197,12 +200,13 @@
       "description": "Local-first AI coding agent desktop: Electron + Rust host core + pi Agent Harness + user-installable plugins",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 1665,
+      "stars": 1667,
       "forks": 155,
       "period_stars": 417,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型"
+      "category": "AI / 大模型",
+      "description_zh": "本地优先的 AI 编程智能体桌面端：Electron + Rust 宿主内核 + pi Agent Harness + 用户可安装插件。"
     },
     {
       "rank": 13,
@@ -213,14 +217,13 @@
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "language": "JavaScript",
       "language_color": "#f1e05a",
-      "stars": 255180,
+      "stars": 255182,
       "forks": 38226,
       "period_stars": 1133,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "智能体运行框架性能优化系统：为 Claude Code、Codex、OpenCode、Cursor 等提供技能、本能、记忆、安全与「研究优先」的开发能力。",
-      "script_zh": "写代码用 Cursor 或者 Claude Code 的朋友，一定要看看这个项目。\n\n它是一个专门给 AI 智能体做性能超强优化的系统。\n\n简单来说，它能给你的 AI 助手装上更强的记忆、直觉和安全防线。\n\n不管是写代码还是做研究，它都能让 AI 反应更快、更聪明。\n\n最厉害的是，它在 GitHub 上已经拿到了超过二十四万颗星！\n\n想让你的 AI 工具好用十倍，闭眼冲它就对了！"
+      "description_zh": "智能体运行框架性能优化系统：为 Claude Code、Codex、OpenCode、Cursor 等提供技能、本能、记忆、安全与「研究优先」的开发能力。"
     }
   ]
 }

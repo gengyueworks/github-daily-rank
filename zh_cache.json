@@ -64,7 +64,7 @@
   "NousResearch/hermes-agent": "与你一同成长的智能体。",
   "PrimeIntellect-ai/prime-agent": "用于编程工作流和长期自主任务的自我改进型 RLM 智能体。",
   "addyosmani/agent-skills": "面向 AI 编程智能体的生产级工程技能。",
-  "cathrynlavery/diagram-design": "面向 Claude Code 的 29 种编辑型图表。纯 HTML + SVG，自包含。无阴影、拒绝 Mermaid 流水账。",
+  "cathrynlavery/diagram-design": "为 Claude Code、Codex 与 Pi 准备的 38 种编辑型图表模板。自包含 HTML + SVG，无阴影、告别 Mermaid 套话。",
   "ayghri/i-have-adhd": "一项让编程智能体别把答案埋在长篇大论里的技能，输出对 ADHD 人群友好。",
   "openai/skills": "Codex 的技能目录（Skills Catalog）。",
   "heygen-com/hyperframes": "写 HTML，渲染出视频。专为智能体打造。",
@@ -88,5 +88,14 @@
   "nvm-sh/nvm": "Node 版本管理器——符合 POSIX 规范的 bash 脚本，用于管理多个并存的 Node.js 版本。",
   "bilawalsidhu/gods-eye-view": "浏览器里的间谍卫星模拟器，只不过数据是真的：在照片级真实的 3D 地球上呈现实时开源空间情报。",
   "every-app/open-seo": "Semrush 与 Ahrefs 的开源替代品。",
-  "google-research/timesfm": "TimesFM（时间序列基础模型）是 Google Research 研发的预训练时序基础模型，用于时间序列预测。"
+  "google-research/timesfm": "TimesFM（时间序列基础模型）是 Google Research 研发的预训练时序基础模型，用于时间序列预测。",
+  "Tencent/teamai-cli": "让每个团队都成为 AI 原生团队。",
+  "pascalorg/editor": "开源 3D 建筑编辑器，配备本地 CLI、MCP 工具，以及面向人类与 AI 智能体的实用工作流。",
+  "earthtojake/text-to-cad": "面向 CAD、CAE 与 CAM 的智能体技能库。",
+  "TauricResearch/TradingAgents": "TradingAgents：基于多智能体大语言模型的金融交易框架。",
+  "liquidslr/system-design-notes": "《系统设计面试：内幕指南》一书的学习笔记。",
+  "rohitg00/ai-engineering-from-scratch": "从零学 AI 工程：学透、做出来、交付给别人用。",
+  "vastsa/PI-Desktop": "本地优先的 AI 编程智能体桌面端：Electron + Rust 宿主内核 + pi Agent Harness + 用户可安装插件。",
+  "THU-MAIC/OpenMAIC": "开放的多智能体互动课堂——一键开启沉浸式多智能体学习体验。",
+  "petergyang/no-ai-slop": "一键清除任意文本中 20+ 种 AI 套话与水内容。"
 }

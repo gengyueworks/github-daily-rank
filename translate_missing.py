@@ -112,6 +112,17 @@ MY_ZH = {
     "bilawalsidhu/gods-eye-view": "浏览器里的间谍卫星模拟器，只不过数据是真的：在照片级真实的 3D 地球上呈现实时开源空间情报。",
     "every-app/open-seo": "Semrush 与 Ahrefs 的开源替代品。",
     "google-research/timesfm": "TimesFM（时间序列基础模型）是 Google Research 研发的预训练时序基础模型，用于时间序列预测。",
+    # 2026-09-10 日榜/周榜新增
+    "Tencent/teamai-cli": "让每个团队都成为 AI 原生团队。",
+    "pascalorg/editor": "开源 3D 建筑编辑器，配备本地 CLI、MCP 工具，以及面向人类与 AI 智能体的实用工作流。",
+    "earthtojake/text-to-cad": "面向 CAD、CAE 与 CAM 的智能体技能库。",
+    "cathrynlavery/diagram-design": "为 Claude Code、Codex 与 Pi 准备的 38 种编辑型图表模板。自包含 HTML + SVG，无阴影、告别 Mermaid 套话。",
+    "TauricResearch/TradingAgents": "TradingAgents：基于多智能体大语言模型的金融交易框架。",
+    "liquidslr/system-design-notes": "《系统设计面试：内幕指南》一书的学习笔记。",
+    "rohitg00/ai-engineering-from-scratch": "从零学 AI 工程：学透、做出来、交付给别人用。",
+    "vastsa/PI-Desktop": "本地优先的 AI 编程智能体桌面端：Electron + Rust 宿主内核 + pi Agent Harness + 用户可安装插件。",
+    "THU-MAIC/OpenMAIC": "开放的多智能体互动课堂——一键开启沉浸式多智能体学习体验。",
+    "petergyang/no-ai-slop": "一键清除任意文本中 20+ 种 AI 套话与水内容。",
 }
 
 
