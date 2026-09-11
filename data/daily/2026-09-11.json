@@ -1,7 +1,7 @@
 {
   "since": "daily",
   "date": "2026-09-11",
-  "fetched_at": "2026-09-11T09:00:09",
+  "fetched_at": "2026-09-11T09:08:09",
   "count": 16,
   "repos": [
     {
@@ -13,7 +13,7 @@
       "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 38313,
+      "stars": 38320,
       "forks": 2203,
       "period_stars": 3882,
       "period_label": "今日",
@@ -30,14 +30,13 @@
       "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
       "language": "JavaScript",
       "language_color": "#f1e05a",
-      "stars": 24306,
+      "stars": 24326,
       "forks": 5045,
       "period_stars": 1762,
       "period_label": "今日",
       "topics": [],
       "category": "前端 / Web",
-      "description_zh": "浏览器里的间谍卫星模拟器，只不过数据是真的：在照片级真实的 3D 地球上呈现实时开源空间情报。",
-      "script_zh": "这个项目是一个运行在浏览器里的间谍卫星模拟器。\n\n它能让你用上帝视角，直接俯瞰一个超逼真的3D地球。\n\n\n只要打开网页，你就能实时追踪全球的各种真实事件。\n\n不管是看灾害现场还是分析地理情报，用它都能一键搞定。\n\n\n最酷的是，它用的全都是真实的开源数据。\n\n零门槛体验科幻电影里的特工视角，这项目绝对值得你点个收藏！"
+      "description_zh": "浏览器里的间谍卫星模拟器，只不过数据是真的：在照片级真实的 3D 地球上呈现实时开源空间情报。"
     },
     {
       "rank": 3,
@@ -48,14 +47,13 @@
       "description": "An agentic skills framework & software development methodology that works.",
       "language": "Shell",
       "language_color": "#89e051",
-      "stars": 284700,
+      "stars": 284703,
       "forks": 25467,
       "period_stars": 732,
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "一套切实可用的智能体技能框架与软件开发方法论。",
-      "script_zh": "想让 AI 真正帮你写代码，一定要看看这个项目。\n\n它是一个专门为 AI 智能体打造的技能框架和软件开发方法论。\n\n简单来说，它能把复杂的开发任务拆解成 AI 听得懂、做得到的具体技能。\n\n这就解决了以前 AI 写代码总是翻车、不靠谱的痛点。\n\n最厉害的是，它是真正能在实际生产中落地的。\n\n它不玩虚的概念，而是提供了一套行之有效的实战规范，让你的 AI 助手瞬间战力爆表。"
+      "description_zh": "一套切实可用的智能体技能框架与软件开发方法论。"
     },
     {
       "rank": 4,
@@ -66,12 +64,13 @@
       "description": "Open Source AI trading agent that operates autonomously across 1000+ markets - Polymarket, Kalshi, Binance, Hyperliquid, Solana DEXs, 5 EVM chains. Scans for edge, executes instantly, manages risk while you sleep. Agent commerce protocol for machine-to-machine payments. Self-hosted. Built on Claude.",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 1647,
+      "stars": 1651,
       "forks": 256,
       "period_stars": 277,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型"
+      "category": "AI / 大模型",
+      "description_zh": "开源 AI 交易智能体，可在 Polymarket、Kalshi、币安、Hyperliquid、Solana DEX 及 5 条 EVM 链等 1000+ 个市场上自主运行。自动扫描套利空间、即时执行、在你休息时管理风险，是一套面向机器对机器支付的智能体商务协议，支持自托管，基于 Claude 构建。"
     },
     {
       "rank": 5,
@@ -82,12 +81,13 @@
       "description": "Make Every Team AI Native",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 3787,
+      "stars": 3791,
       "forks": 246,
       "period_stars": 841,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型"
+      "category": "AI / 大模型",
+      "description_zh": "让每个团队都成为 AI 原生团队。"
     },
     {
       "rank": 6,
@@ -98,14 +98,13 @@
       "description": "Hundreds of models & providers. One command to find what runs on your hardware.",
       "language": "Rust",
       "language_color": "#dea584",
-      "stars": 35733,
+      "stars": 35734,
       "forks": 2266,
       "period_stars": 258,
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "支持数百种模型与服务商。一行命令，找出适合你硬件运行的模型。",
-      "script_zh": "想在本地跑大模型，又怕显存不够直接卡死？\n\n这个项目就是专门帮你排雷的硬件检测神器。\n只要输入一行命令，它就能秒测你的电脑能跑哪些模型。\n\n它支持几百种主流模型和托管平台。\n让你不用再花几个小时下载，去碰运气猜能不能运行。\n\n它还会帮你算出最合适的运行参数。\n难怪刚开源就冲上了三万多星，绝对是本地部署的刚需工具！"
+      "description_zh": "数百种模型与供应商。一条命令找出能在你硬件上运行的模型。"
     },
     {
       "rank": 7,
@@ -116,12 +115,13 @@
       "description": "Notes of the book System Desgin Interview - An Insider's Guide",
       "language": null,
       "language_color": null,
-      "stars": 18777,
+      "stars": 18780,
       "forks": 3484,
       "period_stars": 900,
       "period_label": "今日",
       "topics": [],
-      "category": "学习资源"
+      "category": "学习资源",
+      "description_zh": "《系统设计面试：内幕指南》一书的学习笔记。"
     },
     {
       "rank": 8,
@@ -132,14 +132,13 @@
       "description": "38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
       "language": "HTML",
       "language_color": "#e34c26",
-      "stars": 37755,
+      "stars": 37756,
       "forks": 2396,
       "period_stars": 1294,
       "period_label": "今日",
       "topics": [],
       "category": "前端 / Web",
-      "description_zh": "面向 Claude Code 的 29 种编辑型图表。纯 HTML + SVG，自包含。无阴影、拒绝 Mermaid 流水账。",
-      "script_zh": "这个项目是一个专门给 AI 准备的精美图表设计库。\n\n平时用 AI 生成图表，出来的总是又乱又丑的流程图？\n它直接提供了三十八种极简风格的图表模版。\n\n全部用纯 HTML 和 SVG 编写，没有任何多余的阴影和依赖。\nAI 可以直接秒读并完美修改，渲染出来的效果高级感拉满。\n经常要写文档或者做演示的朋友，赶紧去 GitHub 把它收藏起来吧！"
+      "description_zh": "为 Claude Code、Codex 与 Pi 准备的 38 种编辑型图表模板。自包含 HTML + SVG，无阴影、告别 Mermaid 套话。"
     },
     {
       "rank": 9,
@@ -150,14 +149,13 @@
       "description": "Prompt as Code | GPT Image 2 / 2.5 提示词与案例库，530+ 个案例、20+ 套工业级模板与可复用 Skills，新增 2.5 同提示词对比专区，附完整提示词与生成记录，持续更新。",
       "language": "JavaScript",
       "language_color": "#f1e05a",
-      "stars": 30841,
-      "forks": 2988,
+      "stars": 30845,
+      "forks": 2989,
       "period_stars": 962,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "提示词即代码（Prompt as Code）｜GPT-Image2 工业级提示词引擎与模板库，已逆向拆解 470+ 案例、提炼 20+ 套工业级模板并沉淀为 Skills，持续更新中。",
-      "script_zh": "写 AI 绘图提示词总是翻车？\n试试这个项目，它是一个把提示词当代码写的工业级提示词引擎。\n\n它把复杂的画图需求变成了标准化模板，里面有四百多个逆向工程案例。\n你只需要像写代码一样套用模板，就能稳定输出高质量的工业级大片。\n\n最牛的是它提炼出了可复用的技能包，而且还在持续更新。\n斩获一万多星不是没原因的，赶紧去 GitHub 搜一下吧！"
+      "description_zh": "提示词即代码（Prompt as Code）｜GPT-Image2 工业级提示词引擎与模板库，已逆向拆解 470+ 案例、提炼 20+ 套工业级模板并沉淀为 Skills，持续更新中。"
     },
     {
       "rank": 10,
@@ -168,12 +166,13 @@
       "description": "Graphics Creation Tools",
       "language": "C",
       "language_color": "#555555",
-      "stars": 4419,
-      "forks": 521,
+      "stars": 4422,
+      "forks": 522,
       "period_stars": 72,
       "period_label": "今日",
       "topics": [],
-      "category": "其他"
+      "category": "其他",
+      "description_zh": "图形创作工具。"
     },
     {
       "rank": 11,
@@ -184,12 +183,13 @@
       "description": "Never stop coding. Free MIT AI gateway: one endpoint, 352 providers (150+ free), 1200+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 550+ contributors",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 64241,
+      "stars": 64245,
       "forks": 8996,
       "period_stars": 626,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型"
+      "category": "AI / 大模型",
+      "description_zh": "免费 MIT 协议 AI 网关：一个端点接入 352 家供应商（150+ 免费）、1200+ 模型（Kimi、Claude、GPT、Gemini、GLM、DeepSeek、MiniMax）。兼容 Claude Code、Codex、Cursor、OpenCode、Cline 与 Copilot。配额感知的自动回退、RTK+Caveman 压缩可节省 15–95% token，支持 MCP/A2A、桌面端/PWA。由 550+ 贡献者共建。"
     },
     {
       "rank": 12,
@@ -200,12 +200,13 @@
       "description": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
       "language": "C",
       "language_color": "#555555",
-      "stars": 27465,
-      "forks": 3010,
+      "stars": 27466,
+      "forks": 3011,
       "period_stars": 98,
       "period_label": "今日",
       "topics": [],
-      "category": "游戏"
+      "category": "游戏",
+      "description_zh": "在你已有的硬件上运行前沿 MoE 模型——纯 C 语言、零依赖，专家层从磁盘流式加载。引擎极小，模型极大。🐦"
     },
     {
       "rank": 13,
@@ -216,13 +217,13 @@
       "description": "Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 35313,
-      "forks": 5632,
+      "stars": 35320,
+      "forks": 5635,
       "period_stars": 837,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "script_zh": "这个项目是一个能让你一键拥有专属 AI 课堂的神器。\n简单来说，它能帮你配齐各种 AI 老师和助教。\n\n只要输入你想学的主题，这些 AI 就会在虚拟教室里带你沉浸式讨论。\n以前看文档看不懂，现在直接跟一堆 AI 角色互动答疑。\n\n它最牛的地方在于把枯燥的学习变成了通关游戏。\n清华团队出品，GitHub 上已经狂揽两万多星，绝对值得你闭眼冲！"
+      "description_zh": "开放的多智能体互动课堂——一键开启沉浸式多智能体学习体验。"
     },
     {
       "rank": 14,
@@ -233,12 +234,13 @@
       "description": "LLM Wiki is a cross-platform desktop application that turns your documents into an organized, interlinked knowledge base — automatically. Instead of traditional RAG (retrieve-and-answer from scratch every time), the LLM incrementally builds and maintains a persistent wiki from your sources。",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 18105,
+      "stars": 18111,
       "forks": 2099,
       "period_stars": 142,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型"
+      "category": "AI / 大模型",
+      "description_zh": "LLM Wiki 是一款跨平台桌面应用，能把你的文档自动整理成结构清晰、相互关联的知识库。与传统 RAG（每次都从零检索问答）不同，它由大语言模型增量式地构建并维护一份持久化的 wiki。"
     },
     {
       "rank": 15,
@@ -249,12 +251,13 @@
       "description": "The open agent skills tool - npx skills",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 31146,
+      "stars": 31148,
       "forks": 2661,
       "period_stars": 122,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型"
+      "category": "AI / 大模型",
+      "description_zh": "开源的智能体技能工具——npx skills。"
     },
     {
       "rank": 16,
@@ -265,12 +268,13 @@
       "description": "Local-first AI coding agent desktop: Electron + Rust host core + pi Agent Harness + user-installable plugins",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 2297,
+      "stars": 2300,
       "forks": 193,
       "period_stars": 624,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型"
+      "category": "AI / 大模型",
+      "description_zh": "本地优先的 AI 编程智能体桌面端：Electron + Rust 宿主内核 + pi Agent Harness + 用户可安装插件。"
     }
   ]
 }

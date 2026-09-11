@@ -123,6 +123,15 @@ MY_ZH = {
     "vastsa/PI-Desktop": "本地优先的 AI 编程智能体桌面端：Electron + Rust 宿主内核 + pi Agent Harness + 用户可安装插件。",
     "THU-MAIC/OpenMAIC": "开放的多智能体互动课堂——一键开启沉浸式多智能体学习体验。",
     "petergyang/no-ai-slop": "一键清除任意文本中 20+ 种 AI 套话与水内容。",
+    # 2026-09-11 日榜新增
+    "alsk1992/CloddsBot": "开源 AI 交易智能体，可在 Polymarket、Kalshi、币安、Hyperliquid、Solana DEX 及 5 条 EVM 链等 1000+ 个市场上自主运行。自动扫描套利空间、即时执行、在你休息时管理风险，是一套面向机器对机器支付的智能体商务协议，支持自托管，基于 Claude 构建。",
+    "armory3d/armorpaint": "图形创作工具。",
+    "diegosouzapw/OmniRoute": "免费 MIT 协议 AI 网关：一个端点接入 352 家供应商（150+ 免费）、1200+ 模型（Kimi、Claude、GPT、Gemini、GLM、DeepSeek、MiniMax）。兼容 Claude Code、Codex、Cursor、OpenCode、Cline 与 Copilot。配额感知的自动回退、RTK+Caveman 压缩可节省 15–95% token，支持 MCP/A2A、桌面端/PWA。由 550+ 贡献者共建。",
+    "JustVugg/colibri": "在你已有的硬件上运行前沿 MoE 模型——纯 C 语言、零依赖，专家层从磁盘流式加载。引擎极小，模型极大。🐦",
+    "nashsu/llm_wiki": "LLM Wiki 是一款跨平台桌面应用，能把你的文档自动整理成结构清晰、相互关联的知识库。与传统 RAG（每次都从零检索问答）不同，它由大语言模型增量式地构建并维护一份持久化的 wiki。",
+    "vercel-labs/skills": "开源的智能体技能工具——npx skills。",
+    # 2026-09-07 周榜新增
+    "anomalyco/opencode": "开源的编程智能体。",
 }
 
 
