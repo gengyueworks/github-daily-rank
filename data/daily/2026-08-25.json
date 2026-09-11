@@ -73,7 +73,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "基于 Andrej Karpathy 对 LLM 编程陷阱的观察，旨在提升 Claude Code 表现的单个 CLAUDE.md 文件。",
+      "description_zh": "一份 CLAUDE.md 文件，依据 Andrej Karpathy 对 LLM 编程陷阱的观察，改善 Claude Code 的行为。",
       "script_zh": "这个项目是一个专门给 Claude 写的“外挂”配置文件。\n\n你只需要把它丢进项目根目录，就能直接用。\n\n它解决的是大模型写代码时经常犯傻、逻辑混乱的问题。\n\n它会规范 Claude 的每一步操作，让 AI 编码变得非常听话。\n\n最牛的是，这些规则都是大神 Karpathy 总结出来的实战经验。\n\n不用你费心思调教，直接就能白嫖大佬的编程思维，简直是提效神器！"
     },
     {

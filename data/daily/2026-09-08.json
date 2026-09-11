@@ -19,7 +19,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "前端 / Web",
-      "description_zh": "用 HTML 写，渲染成视频。为智能体而生。"
+      "description_zh": "写 HTML，渲染出视频。专为智能体打造。"
     },
     {
       "rank": 2,
@@ -36,7 +36,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "开发工具",
-      "description_zh": "将各类文件与办公文档转换为 Markdown 的 Python 工具。"
+      "description_zh": "把各类文件与 Office 文档转换成 Markdown 的 Python 工具。"
     },
     {
       "rank": 3,
@@ -53,7 +53,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "面向 AI 编程智能体的上下文窗口优化。沙箱化工具输出（减少 98%），持久化会话记忆，并通过 MCP + hooks 在 17 个平台间强制路由。"
+      "description_zh": "面向 AI 编程智能体的上下文窗口优化方案：沙箱化工具输出（体积削减 98%）、持久化会话记忆，并通过 MCP + 钩子在 17 个平台上强制统一路由。"
     },
     {
       "rank": 4,
@@ -70,7 +70,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "为 AI 智能体打造的隐形无头浏览器——可绕过 Cloudflare、机器人检测与反爬机制。可无缝替换 Puppeteer / Playwright。"
+      "description_zh": "面向 AI 智能体的隐身无头浏览器——绕过 Cloudflare、机器人检测与反爬机制，可直接替代 Puppeteer / Playwright。"
     },
     {
       "rank": 5,
@@ -87,7 +87,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "本项目采用 CC BY-NC-SA 协议，禁止任何商业化行为，任何衍生项目必须保留本项目地址并以相同协议开源"
+      "description_zh": "本项目采用 CC BY-NC-SA 协议，禁止任何商业化行为，任何衍生项目必须保留本项目地址并以相同协议开源。"
     },
     {
       "rank": 6,
@@ -122,7 +122,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "面向 Claude Code 与 AI 智能体的营销技能集。涵盖转化率优化、文案写作、SEO、数据分析与增长工程。"
+      "description_zh": "面向 Claude Code 与 AI 智能体的营销技能合集：转化率优化（CRO）、文案、SEO、数据分析与增长工程。"
     },
     {
       "rank": 8,
@@ -139,7 +139,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "几分钟构建属于你的自动化对冲基金。AutoHedge 借助群体智能与 AI 智能体，自动化完成市场分析、风险管理与交易执行。"
+      "description_zh": "几分钟搭起你自己的自主对冲基金。AutoHedge 借助群体智能与 AI 智能体，自动完成市场分析、风险管理与交易执行。"
     },
     {
       "rank": 9,
@@ -190,7 +190,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "面向 Codex 的技能目录（Skills Catalog）。"
+      "description_zh": "Codex 的技能目录（Skills Catalog）。"
     },
     {
       "rank": 12,

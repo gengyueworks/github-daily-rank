@@ -199,7 +199,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "基于 Andrej Karpathy 对 LLM 编程陷阱的观察，旨在提升 Claude Code 表现的单个 CLAUDE.md 文件。",
+      "description_zh": "一份 CLAUDE.md 文件，依据 Andrej Karpathy 对 LLM 编程陷阱的观察，改善 Claude Code 的行为。",
       "script_zh": "这个项目是一个专门给 Claude 写的“外挂”配置文件。\n\n你只需要把它丢进项目根目录，就能直接用。\n\n它解决的是大模型写代码时经常犯傻、逻辑混乱的问题。\n\n它会规范 Claude 的每一步操作，让 AI 编码变得非常听话。\n\n最牛的是，这些规则都是大神 Karpathy 总结出来的实战经验。\n\n不用你费心思调教，直接就能白嫖大佬的编程思维，简直是提效神器！"
     },
     {
@@ -253,7 +253,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "让你的 AI 智能体像最懒的高级开发一样思考。最好的代码就是你从未写过的代码。",
+      "description_zh": "让你的 AI 智能体像团队里最懒的资深开发者那样思考：最好的代码，是你根本没写的那些代码。",
       "script_zh": "这个项目能让你的 AI 助手瞬间变成办公室里最懒的资深开发。\n它专门解决 AI 喜欢胡乱堆砌代码的毛病。\n只要用上它，AI 就会想方设法用最少、最聪明的代码来搞定需求。\n\n毕竟最牛的代码就是你根本不用写的代码。\n它能帮你省掉以后重构和维护的无尽痛苦，难怪在 GitHub 上直接狂斩十一万颗星！\n想让你的 AI 别再瞎写垃圾代码了，赶紧去试试它吧！"
     },
     {

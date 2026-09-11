@@ -18,7 +18,8 @@
       "period_stars": 14,
       "period_label": "今日",
       "topics": [],
-      "category": "其他"
+      "category": "其他",
+      "description_zh": "一个现代化的 C++ 格式化库。"
     },
     {
       "rank": 2,
@@ -34,7 +35,8 @@
       "period_stars": 343,
       "period_label": "今日",
       "topics": [],
-      "category": "其他"
+      "category": "其他",
+      "description_zh": "TimesFM（时间序列基础模型）是 Google Research 研发的预训练时序基础模型，用于时间序列预测。"
     },
     {
       "rank": 3,
@@ -51,7 +53,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "让你的 AI 智能体像最懒的高级开发一样思考。最好的代码就是你从未写过的代码。",
+      "description_zh": "让你的 AI 智能体像团队里最懒的资深开发者那样思考：最好的代码，是你根本没写的那些代码。",
       "script_zh": "这个项目能让你的 AI 助手瞬间变成办公室里最懒的资深开发。\n它专门解决 AI 喜欢胡乱堆砌代码的毛病。\n只要用上它，AI 就会想方设法用最少、最聪明的代码来搞定需求。\n\n毕竟最牛的代码就是你根本不用写的代码。\n它能帮你省掉以后重构和维护的无尽痛苦，难怪在 GitHub 上直接狂斩十一万颗星！\n想让你的 AI 别再瞎写垃圾代码了，赶紧去试试它吧！"
     },
     {
@@ -101,7 +103,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "开发工具",
-      "description_zh": "面向编码智能体的 Chrome DevTools",
+      "description_zh": "把 Chrome 开发者工具开放给编程智能体使用。",
       "script_zh": "这个项目是给 AI 编程助手装上的 Chrome 调试插件。\n简单来说，它让你的 AI 助手能直接看懂网页的运行状态。\n\n以前网页报错，你得手动复制控制台日志给 AI 吧？\n现在有了它，AI 自己就能去翻控制台、查 DOM 树，甚至直接定位 Bug。\n\n最厉害的是，它让 AI 拥有了操作浏览器的“眼睛”和“双手”。\n这绝对是前端开发者的摸鱼神器，赶紧去试试吧！"
     },
     {
@@ -184,7 +186,8 @@
       "period_stars": 799,
       "period_label": "今日",
       "topics": [],
-      "category": "其他"
+      "category": "其他",
+      "description_zh": "面向 Claude Code 的学术研究技能集：查研究 → 写作 → 评审 → 修改 → 定稿。"
     },
     {
       "rank": 12,
@@ -252,7 +255,8 @@
       "period_stars": 374,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型"
+      "category": "AI / 大模型",
+      "description_zh": "一项智能体技能，用于抹除文本里的 AI 写作痕迹。"
     },
     {
       "rank": 16,

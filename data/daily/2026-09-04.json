@@ -19,7 +19,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "一个现代化的格式化库。"
+      "description_zh": "一个现代化的 C++ 格式化库。"
     },
     {
       "rank": 2,
@@ -72,7 +72,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "让你的 AI 智能体像屋里最懒的高级工程师那样思考——最好的代码，是你从没写过的那部分。",
+      "description_zh": "让你的 AI 智能体像团队里最懒的资深开发者那样思考：最好的代码，是你根本没写的那些代码。",
       "script_zh": "这个项目能让你的 AI 助手瞬间变成办公室里最懒的资深开发。\n它专门解决 AI 喜欢胡乱堆砌代码的毛病。\n只要用上它，AI 就会想方设法用最少、最聪明的代码来搞定需求。\n\n毕竟最牛的代码就是你根本不用写的代码。\n它能帮你省掉以后重构和维护的无尽痛苦，难怪在 GitHub 上直接狂斩十一万颗星！\n想让你的 AI 别再瞎写垃圾代码了，赶紧去试试它吧！"
     },
     {
@@ -143,7 +143,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "一款能去除文本中 AI 生成痕迹的智能体技能。"
+      "description_zh": "一项智能体技能，用于抹除文本里的 AI 写作痕迹。"
     },
     {
       "rank": 9,
@@ -160,7 +160,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "TimesFM（时间序列基础模型）是 Google Research 开发的、用于时间序列预测的预训练基础模型。"
+      "description_zh": "TimesFM（时间序列基础模型）是 Google Research 研发的预训练时序基础模型，用于时间序列预测。"
     },
     {
       "rank": 10,
@@ -263,7 +263,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "面向 Claude Code 的学术研究技能：调研 → 写作 → 评审 → 修订 → 定稿。"
+      "description_zh": "面向 Claude Code 的学术研究技能集：查研究 → 写作 → 评审 → 修改 → 定稿。"
     },
     {
       "rank": 16,
