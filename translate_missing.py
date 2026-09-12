@@ -132,6 +132,17 @@ MY_ZH = {
     "vercel-labs/skills": "开源的智能体技能工具——npx skills。",
     # 2026-09-07 周榜新增
     "anomalyco/opencode": "开源的编程智能体。",
+    # 2026-09-12 日榜新增
+    "nab138/iloader": "用户友好的侧载工具。",
+    "melgarafael/DeskcommCRM": "开源 AI 销售操作系统——自带原生 AI 智能体与 WhatsApp（WAHA）的自托管 CRM。面向一切以聊天做生意的企业的 Kommo、Octadesk 与 Intercom 开源替代品；支持 MCP、多租户，符合 LGPD 法规。",
+    "Sonarr/Sonarr": "面向新闻组与 BitTorrent 用户的智能 PVR 录制管理工具。",
+    "jihe520/MathModelAgent": "🤖📐专为数学建模设计的 Agent 与技能库，自动完成数学建模，并生成一份完整、可直接提交的论文。",
+    "p1neappleXpress/OpenFlux": "网络协议栈研究工具，提供带可插拔传输层的 TCP 隧道。",
+    "jordan-gibbs/hyperresearch": "由智能体驱动的研究知识库。智能体自动采集、检索并综合网络研究，沉淀为一份持久、可检索的 wiki。",
+    "alphaXiv/OpenResearch": "用任意模型并行运行多个研究智能体。",
+    # 2026-09-07 周榜续补
+    "Tencent/WeKnora": "开源 LLM 知识平台：把原始文档转化为可查询的 RAG、自主推理智能体与可自我维护的 Wiki。",
+    "jakubkrehel/skills": "一套帮你打造出色界面的智能体技能合集。",
 }
 
 

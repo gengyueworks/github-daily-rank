@@ -8,7 +8,7 @@
   "3b1b/manim": "用于制作数学科普视频的动画引擎",
   "lightningpixel/modly": "基于本地 AI 从图片生成 3D 模型的桌面应用，完全在本地 GPU 上运行。",
   "citrolabs/ego-lite": "专为 AI 智能体运行浏览器自动化打造的最快浏览器，旨在与 Codex 或 Claude Code 等智能体共享您已登录的浏览器状态，且互不干扰。零成本，零配置。",
-  "github/spec-kit": "💫 帮助你快速上手规范驱动开发的工具包",
+  "github/spec-kit": "💫 帮助你上手规格驱动开发（Spec-Driven Development）的工具集。",
   "cursor/plugins": "Cursor 插件规范与官方插件。",
   "rustdesk/rustdesk": "一款开源远程桌面软件，支持自托管，是 TeamViewer 的替代方案。",
   "OpenCut-app/OpenCut": "CapCut 的开源替代品",
@@ -104,5 +104,14 @@
   "JustVugg/colibri": "在你已有的硬件上运行前沿 MoE 模型——纯 C 语言、零依赖，专家层从磁盘流式加载。引擎极小，模型极大。🐦",
   "nashsu/llm_wiki": "LLM Wiki 是一款跨平台桌面应用，能把你的文档自动整理成结构清晰、相互关联的知识库。与传统 RAG（每次都从零检索问答）不同，它由大语言模型增量式地构建并维护一份持久化的 wiki。",
   "vercel-labs/skills": "开源的智能体技能工具——npx skills。",
-  "anomalyco/opencode": "开源的编程智能体。"
+  "anomalyco/opencode": "开源的编程智能体。",
+  "nab138/iloader": "用户友好的侧载工具。",
+  "melgarafael/DeskcommCRM": "开源 AI 销售操作系统——自带原生 AI 智能体与 WhatsApp（WAHA）的自托管 CRM。面向一切以聊天做生意的企业的 Kommo、Octadesk 与 Intercom 开源替代品；支持 MCP、多租户，符合 LGPD 法规。",
+  "Sonarr/Sonarr": "面向新闻组与 BitTorrent 用户的智能 PVR 录制管理工具。",
+  "jihe520/MathModelAgent": "🤖📐专为数学建模设计的 Agent 与技能库，自动完成数学建模，并生成一份完整、可直接提交的论文。",
+  "p1neappleXpress/OpenFlux": "网络协议栈研究工具，提供带可插拔传输层的 TCP 隧道。",
+  "jordan-gibbs/hyperresearch": "由智能体驱动的研究知识库。智能体自动采集、检索并综合网络研究，沉淀为一份持久、可检索的 wiki。",
+  "alphaXiv/OpenResearch": "用任意模型并行运行多个研究智能体。",
+  "Tencent/WeKnora": "开源 LLM 知识平台：把原始文档转化为可查询的 RAG、自主推理智能体与可自我维护的 Wiki。",
+  "jakubkrehel/skills": "一套帮你打造出色界面的智能体技能合集。"
 }

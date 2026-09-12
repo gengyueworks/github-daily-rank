@@ -17,3 +17,11 @@
 
 ## 结论
 当日上榜：日榜 14 + 周榜 19；数据/翻译/站点已生成并推送 main，线上链接更新成功（200）。
+
+## 2026-09-11 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`）成功。日榜 `data/daily/2026-09-11.json` = 16 个仓库；周榜 `data/weekly/2026-09-07.json`（本周一 0907）= 22 个仓库。
+- **翻译**：`translate_missing.py` 首轮命中词表补 10(日)+31(周)；新增 7 个仓库（alsk1992/CloddsBot、armory3d/armorpaint、diegosouzapw/OmniRoute、JustVugg/colibri、nashsu/llm_wiki、vercel-labs/skills、anomalyco/opencode）人工校对中译写入 MY_ZH 并重跑，最终日榜 16/16、周榜 22/22 全部有 `description_zh`。
+- **生成**：`build.py` 重建 `site/daily/2026-09-11.html`、`site/weekly/2026-09-07.html`、`site/index.html`、`site/classics/index.html`（ainews 双语风格）。
+- **部署冲突**：并行自动化 `automation-...629` 已先推送 `data/daily/2026-09-11.json` 到 remote main（bf5884f），导致 `deploy_ghpages.sh` 的 `git pull --rebase --autostash` 因「远端已提交该新文件 vs 本地未跟踪同名文件」在 stash-pop 阶段冲突而中止。解法：备份新数据到 `/tmp/ghrank_backup` → 移走未跟踪日榜文件 → 丢弃 2 个陈旧 autostash → `git stash -u` 仅存 3 个被改跟踪文件 → `git pull --rebase -X ours origin main`（快进合并远端，无冲突）→ `git stash pop` → 用备份覆盖写回本地日榜文件 → `git add -A && commit && push main`（56e0d12）→ 再跑 `deploy_ghpages.sh`（rebase 成 no-op）。
+- **部署**：成功（gh-pages orphan 推送）。本地 `site/` 被孤儿步骤清空后已重跑 `build.py` 复原。线上复测：首页、daily、weekly 三个页面均 200。
+- **结论**：当日上榜 日榜 16 + 周榜 22；数据/翻译/站点已生成并推送 main，线上链接更新成功（200）。
