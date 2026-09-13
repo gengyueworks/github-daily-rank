@@ -1,0 +1,363 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GitHub 周报｜9月7日 — 9月13日</title><style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap');
+:root {
+    --klein: #002FA7;
+    --klein-bright: #0044FF;
+    --white: #FFFFFF;
+    --bg-light: #F8F9FB;
+    --text-dark: #1A1A1A;
+    --text-mid: #6B6B6B;
+    --text-light: #9CA3AF;
+    --border: #E5E7EB;
+    --accent: #C41E3A;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Noto Sans SC', 'Inter', -apple-system, sans-serif;
+    background: var(--white); color: var(--text-dark);
+    line-height: 1.75; -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 720px; margin: 0 auto; padding: 56px 28px 80px; }
+.doc-title { font-size: 38px; font-weight: 700; color: var(--text-dark); letter-spacing: -0.5px; margin-bottom: 8px; text-wrap: balance; }
+.doc-title span { color: var(--klein); }
+.doc-date { font-family: 'Inter', sans-serif; font-size: 15px; color: var(--text-light); }
+.divider { height: 1px; background: var(--border); margin: 36px 0; }
+.section-header { font-size: 24px; font-weight: 600; color: var(--klein); margin-bottom: 24px; padding-bottom: 8px; border-bottom: 2px solid var(--klein); display: inline-block; text-wrap: balance; }
+.section-header .en { font-family: 'Inter'; font-size: 13px; color: var(--text-light); font-weight: 400; margin-left: 10px; }
+.section-block { margin-bottom: 48px; }
+.news-item { margin-bottom: 52px; }
+.news-item:last-child { margin-bottom: 0; }
+.news-title { font-size: 21px; font-weight: 600; color: var(--text-dark); line-height: 1.5; margin-bottom: 14px; text-wrap: balance; }
+.news-body { font-size: 16px; color: var(--text-dark); line-height: 1.9; margin-bottom: 16px; }
+.news-label { font-size: 14px; color: var(--text-mid); line-height: 1.7; margin-bottom: 14px; }
+.highlight { color: var(--klein); font-weight: 600; }
+.accent { color: var(--accent); font-weight: 600; }
+.turn { color: var(--klein); font-weight: 700; }
+.intro-text { font-size: 16px; color: var(--text-dark); line-height: 1.9; margin-bottom: 14px; }
+.source-line { font-size: 13px; color: var(--text-light); margin-top: 8px; }
+.source-line a { color: var(--klein); text-decoration: none; }
+.footer-block { font-size: 14px; color: var(--text-mid); line-height: 1.7; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); }
+.card-tag { font-size: 12px; color: var(--text-mid); opacity: 0.55; margin-top: 8px; line-height: 1.6; }
+
+.site-nav-lite { display: flex; align-items: center; justify-content: space-between; margin-bottom: 28px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+.nav-back { font-size: 14px; color: var(--klein); text-decoration: none; font-weight: 500; }
+.nav-back:hover { text-decoration: underline; }
+.nav-date { font-size: 13px; color: var(--text-light); font-family: 'JetBrains Mono', monospace; }
+
+/* ---- GitHub 榜专属（仍沿用 ainews 用词体系） ---- */
+.rank { font-family: 'JetBrains Mono', monospace; color: var(--klein); font-weight: 700; margin-right: 8px; }
+.repo-link { color: var(--text-dark); text-decoration: none; }
+.repo-link:hover { color: var(--klein); }
+.zh { color: var(--text-mid); }
+.tr { font-size: 11px; color: #fff; background: var(--klein); border-radius: 4px; padding: 2px 6px; margin-right: 6px; font-family: 'Inter'; vertical-align: middle; }
+.repo-meta { font-size: 14px; color: var(--text-mid); margin-top: 12px; line-height: 1.8; }
+.repo-meta .lang-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin: 0 4px 0 2px; }
+.repo-meta .cat { color: var(--klein); font-weight: 600; }
+.riser-note { font-size: 13px; color: var(--text-light); margin-top: 8px; }
+.script-block { font-size: 15.5px; color: var(--ink-soft, var(--text-mid)); line-height: 1.8; margin: 0 0 14px; }
+.script-tag { font-size: 11px; color: #fff; background: var(--klein); border-radius: 4px; padding: 1px 7px; margin-right: 8px; font-family: 'Inter'; vertical-align: middle; white-space: nowrap; }
+.archive { columns: 2; column-gap: 24px; }
+.archive a { display: block; color: var(--klein); text-decoration: none; padding: 3px 0; font-size: 15px; }
+.archive a:hover { text-decoration: underline; }
+
+/* classics 高分精选页专属：阅读型页面加宽容器，提升行宽舒适度 */
+body.classics .container { max-width: 860px; }
+
+/* ---- classics 高分精选页：严格对齐 ainews 排版体系 ----
+   红蓝配比：蓝为主（标题/■ 标签/强调/链接/footer 3px 蓝顶线），
+   红仅限数字点缀（.num，JetBrains Mono 红色数字），蓝:红 ≈ 10:1。
+   全部限定 body.classics，不影响 daily/weekly。 */
+body.classics {
+  --paper: #FFFFFF; --ink: #0E0E10; --ink-soft: #3A3A3E;
+  --gray: #6B6B70; --gray-light: #9CA3AF; --line: #E8E8EC;
+}
+body.classics .masthead { margin-bottom: 36px; }
+body.classics .mast-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--klein); font-weight: 600; margin-bottom: 14px; }
+body.classics .mast-title { font-size: 44px; font-weight: 900; letter-spacing: -1.5px; line-height: 1.05; color: var(--klein); margin-bottom: 16px; text-wrap: balance; }
+body.classics .mast-rule { height: 3px; background: var(--klein); width: 100%; margin: 0 0 10px; }
+body.classics .mast-meta { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--gray); display: flex; gap: 14px; flex-wrap: wrap; }
+body.classics .mast-meta .issue { color: var(--klein); font-weight: 600; }
+body.classics .mast-lede { font-size: 16px; line-height: 1.7; color: var(--ink-soft); margin-top: 22px; padding-left: 16px; border-left: 3px solid var(--klein); }
+body.classics .sec-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gray-light); margin-bottom: 6px; }
+body.classics .sec-title { font-size: 15px; font-weight: 700; color: var(--klein); letter-spacing: 1px; margin-bottom: 24px; display: inline-block; }
+body.classics .sec-title::before { content: "AE"; color: var(--klein); margin-right: 8px; font-size: 13px; }
+body.classics .item { margin-bottom: 52px; }
+body.classics .item:last-child { margin-bottom: 0; }
+body.classics .dateline { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gray); letter-spacing: 0.5px; margin-bottom: 10px; }
+body.classics .dateline .src { color: var(--klein); font-weight: 600; }
+body.classics .item-title { font-size: 21px; font-weight: 700; line-height: 1.4; margin-bottom: 12px; text-wrap: balance; }
+body.classics .item-title a { color: var(--klein); text-decoration: none; }
+body.classics .item-title a:hover { text-decoration: underline; }
+body.classics .body { font-size: 15.5px; color: var(--ink-soft); line-height: 1.8; }
+body.classics .body p { margin-bottom: 14px; }
+body.classics .body p:last-child { margin-bottom: 0; }
+body.classics .body .num { font-family: 'JetBrains Mono', monospace; color: var(--accent); font-weight: 600; }
+body.classics .body .tag { display: inline-block; font-size: 11px; font-family: 'JetBrains Mono', monospace; color: var(--gray); background: var(--line); padding: 1px 8px; border-radius: 3px; margin-right: 4px; }
+body.classics .src-line { font-size: 13px; color: var(--gray); margin-top: 10px; font-family: 'JetBrains Mono', monospace; line-height: 1.7; }
+body.classics .src-line a { color: var(--klein); text-decoration: none; }
+body.classics .src-line a:hover { text-decoration: underline; }
+body.classics .src-line .cat { color: var(--klein); font-weight: 600; }
+body.classics .link-area { margin-top: 12px; background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 8px 12px; display: flex; flex-direction: column; gap: 6px; }
+body.classics .link-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+body.classics .link-url { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--klein); text-decoration: none; overflow-wrap: anywhere; }
+body.classics .link-url:hover { text-decoration: underline; }
+body.classics .copy-btn { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gray); background: var(--paper); border: 1px solid var(--line); border-radius: 4px; padding: 2px 8px; cursor: pointer; flex-shrink: 0; }
+body.classics .copy-btn:hover { color: var(--klein); border-color: var(--klein); }
+body.classics .copy-btn.copied { color: #fff; background: var(--klein); border-color: var(--klein); }
+body.classics .footer { margin-top: 48px; padding-top: 20px; border-top: 3px solid var(--klein); font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--gray); line-height: 1.8; }
+body.classics .footer .big { color: var(--ink); font-weight: 600; }
+body.classics .footer a { color: var(--klein); text-decoration: none; }
+body.classics .footer a:hover { text-decoration: underline; }
+</style></head>
+<body><div class="container">
+<nav class="site-nav-lite"><a href="../index.html" class="nav-back">← 首页 / Index</a><span class="nav-date">2026-09-07</span></nav>
+<h1 class="doc-title">GitHub 周报｜<span>9月7日 — 9月13日</span></h1>
+<p class="doc-date">2026年9月7日 — 9月13日 · Weekly GitHub Trending</p>
+<div class="divider"></div>
+<div class="section-block">
+  <h2 class="section-header">本周概览 <span class="en">Weekly Overview</span></h2>
+  <p class="intro-text">本周已收录 <span class="accent">6</span> 天日榜，共 <span class="accent">53</span> 个不同仓库上榜。</p><p class="intro-text">Collected <span class="accent">6</span> daily boards this week, <span class="accent">53</span> distinct repos in total.</p>
+  <p class="intro-text">分类热度 Category heat：AI / 大模型 <b>49</b> · 其他 <b>21</b> · 前端 / Web <b>10</b> · 开发工具 <b>5</b> · 移动端 <b>2</b> · 学习资源 <b>2</b> · 游戏 <b>1</b> · 安全 <b>1</b></p>
+  <p class="intro-text">语言热度 Language heat：TypeScript <b>28</b> · Python <b>22</b> · JavaScript <b>16</b> · Shell <b>4</b> · C <b>4</b> · HTML <b>3</b></p>
+</div>
+<div class="divider"></div>
+<div class="section-block">
+  <h2 class="section-header">本周精选 <span class="en">Weekly Picks</span></h2>
+  
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#1</span><a class="repo-link" href="https://github.com/ayghri/i-have-adhd" target="_blank">ayghri/i-have-adhd</a></h3>
+        <p class="news-body">A skill to stop your coding agent from burying the answer. ADHD-friendly output.</p>
+        <p class="news-body zh"><span class="tr">译</span>一项让编程智能体别把答案埋在长篇大论里的技能，输出对 ADHD 人群友好。</p>
+        
+        <p class="repo-meta">★ 43,459 <span class="accent">(+15924 今日 today)</span> · ⑂ 2,474 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        <p class="riser-note">本周累计上榜 <b>4</b> 天 · appeared 4 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#20</span><a class="repo-link" href="https://github.com/obra/superpowers" target="_blank">obra/superpowers</a></h3>
+        <p class="news-body">An agentic skills framework &amp; software development methodology that works.</p>
+        <p class="news-body zh"><span class="tr">译</span>一套切实可用的智能体技能框架与软件开发方法论。</p>
+        
+        <p class="repo-meta">★ 285,818 <span class="accent">(+3938 今日 today)</span> · ⑂ 25,571 forks · <span class="lang-dot" style="background:#89e051"></span>Shell · <span class="cat">其他 · Misc</span></p>
+        <p class="riser-note">本周累计上榜 <b>4</b> 天 · appeared 4 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#6</span><a class="repo-link" href="https://github.com/bilawalsidhu/gods-eye-view" target="_blank">bilawalsidhu/gods-eye-view</a></h3>
+        <p class="news-body">A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.</p>
+        <p class="news-body zh"><span class="tr">译</span>浏览器里的间谍卫星模拟器，只不过数据是真的：在照片级真实的 3D 地球上呈现实时开源空间情报。</p>
+        
+        <p class="repo-meta">★ 29,940 <span class="accent">(+10510 今日 today)</span> · ⑂ 6,025 forks · <span class="lang-dot" style="background:#f1e05a"></span>JavaScript · <span class="cat">前端 / Web · Frontend / Web</span></p>
+        <p class="riser-note">本周累计上榜 <b>3</b> 天 · appeared 3 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：前端 / Web · Frontend / Web</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#2</span><a class="repo-link" href="https://github.com/affaan-m/ECC" target="_blank">affaan-m/ECC</a></h3>
+        <p class="news-body">The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.</p>
+        <p class="news-body zh"><span class="tr">译</span>智能体运行框架性能优化系统：为 Claude Code、Codex、OpenCode、Cursor 等提供技能、本能、记忆、安全与「研究优先」的开发能力。</p>
+        
+        <p class="repo-meta">★ 257,126 <span class="accent">(+8086 今日 today)</span> · ⑂ 38,473 forks · <span class="lang-dot" style="background:#f1e05a"></span>JavaScript · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        <p class="riser-note">本周累计上榜 <b>3</b> 天 · appeared 3 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#11</span><a class="repo-link" href="https://github.com/cathrynlavery/diagram-design" target="_blank">cathrynlavery/diagram-design</a></h3>
+        <p class="news-body">38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop.</p>
+        <p class="news-body zh"><span class="tr">译</span>为 Claude Code、Codex 与 Pi 准备的 38 种编辑型图表模板。自包含 HTML + SVG，无阴影、告别 Mermaid 套话。</p>
+        
+        <p class="repo-meta">★ 38,872 <span class="accent">(+7409 今日 today)</span> · ⑂ 2,468 forks · <span class="lang-dot" style="background:#e34c26"></span>HTML · <span class="cat">前端 / Web · Frontend / Web</span></p>
+        <p class="riser-note">本周累计上榜 <b>3</b> 天 · appeared 3 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：前端 / Web · Frontend / Web</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#9</span><a class="repo-link" href="https://github.com/heygen-com/hyperframes" target="_blank">heygen-com/hyperframes</a></h3>
+        <p class="news-body">Write HTML. Render video. Built for agents.</p>
+        <p class="news-body zh"><span class="tr">译</span>写 HTML，渲染出视频。专为智能体打造。</p>
+        
+        <p class="repo-meta">★ 49,224 <span class="accent">(+5124 今日 today)</span> · ⑂ 4,493 forks · <span class="lang-dot" style="background:#3178c6"></span>TypeScript · <span class="cat">前端 / Web · Frontend / Web</span></p>
+        <p class="riser-note">本周累计上榜 <b>2</b> 天 · appeared 2 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：前端 / Web · Frontend / Web</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#13</span><a class="repo-link" href="https://github.com/microsoft/markitdown" target="_blank">microsoft/markitdown</a></h3>
+        <p class="news-body">Python tool for converting files and office documents to Markdown.</p>
+        <p class="news-body zh"><span class="tr">译</span>把各类文件与 Office 文档转换成 Markdown 的 Python 工具。</p>
+        
+        <p class="repo-meta">★ 183,243 <span class="accent">(+4823 今日 today)</span> · ⑂ 13,474 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">开发工具 · Dev Tools</span></p>
+        <p class="riser-note">本周累计上榜 <b>2</b> 天 · appeared 2 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：开发工具 · Dev Tools</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#16</span><a class="repo-link" href="https://github.com/coreyhaines31/marketingskills" target="_blank">coreyhaines31/marketingskills</a></h3>
+        <p class="news-body">Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.</p>
+        <p class="news-body zh"><span class="tr">译</span>面向 Claude Code 与 AI 智能体的营销技能合集：转化率优化（CRO）、文案、SEO、数据分析与增长工程。</p>
+        
+        <p class="repo-meta">★ 49,827 <span class="accent">(+2822 今日 today)</span> · ⑂ 7,568 forks · <span class="lang-dot" style="background:#f1e05a"></span>JavaScript · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        <p class="riser-note">本周累计上榜 <b>2</b> 天 · appeared 2 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#5</span><a class="repo-link" href="https://github.com/mksglu/context-mode" target="_blank">mksglu/context-mode</a></h3>
+        <p class="news-body">Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.</p>
+        <p class="news-body zh"><span class="tr">译</span>面向 AI 编程智能体的上下文窗口优化方案：沙箱化工具输出（体积削减 98%）、持久化会话记忆，并通过 MCP + 钩子在 17 个平台上强制统一路由。</p>
+        
+        <p class="repo-meta">★ 22,371 <span class="accent">(+1936 今日 today)</span> · ⑂ 1,610 forks · <span class="lang-dot" style="background:#3178c6"></span>TypeScript · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        <p class="riser-note">本周累计上榜 <b>2</b> 天 · appeared 2 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#8</span><a class="repo-link" href="https://github.com/openai/skills" target="_blank">openai/skills</a></h3>
+        <p class="news-body">Skills Catalog for Codex</p>
+        <p class="news-body zh"><span class="tr">译</span>Codex 的技能目录（Skills Catalog）。</p>
+        
+        <p class="repo-meta">★ 27,017 <span class="accent">(+1579 今日 today)</span> · ⑂ 1,806 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">其他 · Misc</span></p>
+        <p class="riser-note">本周累计上榜 <b>2</b> 天 · appeared 2 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#3</span><a class="repo-link" href="https://github.com/openai/plugins" target="_blank">openai/plugins</a></h3>
+        <p class="news-body">OpenAI Plugins</p>
+        <p class="news-body zh"><span class="tr">译</span>OpenAI 官方插件仓库。</p>
+        
+        <p class="repo-meta">★ 6,541 <span class="accent">(+1120 今日 today)</span> · ⑂ 861 forks · <span class="lang-dot" style="background:#f1e05a"></span>JavaScript · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        <p class="riser-note">本周累计上榜 <b>2</b> 天 · appeared 2 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#17</span><a class="repo-link" href="https://github.com/THU-MAIC/OpenMAIC" target="_blank">THU-MAIC/OpenMAIC</a></h3>
+        <p class="news-body">Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click</p>
+        <p class="news-body zh"><span class="tr">译</span>开放的多智能体互动课堂——一键开启沉浸式多智能体学习体验。</p>
+        
+        <p class="repo-meta">★ 36,197 <span class="accent">(+4417 今日 today)</span> · ⑂ 5,740 forks · <span class="lang-dot" style="background:#3178c6"></span>TypeScript · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+</div>
+<div class="section-block"><h2 class="section-header">蝉联榜 <span class="en">Consistent Risers</span></h2>
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#1</span><a class="repo-link" href="https://github.com/ayghri/i-have-adhd" target="_blank">ayghri/i-have-adhd</a></h3>
+        <p class="news-body">A skill to stop your coding agent from burying the answer. ADHD-friendly output.</p>
+        <p class="news-body zh"><span class="tr">译</span>一项让编程智能体别把答案埋在长篇大论里的技能，输出对 ADHD 人群友好。</p>
+        
+        <p class="repo-meta">★ 43,459 <span class="accent">(+15924 今日 today)</span> · ⑂ 2,474 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        <p class="riser-note">本周累计上榜 <b>4</b> 天 · appeared 4 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#20</span><a class="repo-link" href="https://github.com/obra/superpowers" target="_blank">obra/superpowers</a></h3>
+        <p class="news-body">An agentic skills framework &amp; software development methodology that works.</p>
+        <p class="news-body zh"><span class="tr">译</span>一套切实可用的智能体技能框架与软件开发方法论。</p>
+        
+        <p class="repo-meta">★ 285,818 <span class="accent">(+3938 今日 today)</span> · ⑂ 25,571 forks · <span class="lang-dot" style="background:#89e051"></span>Shell · <span class="cat">其他 · Misc</span></p>
+        <p class="riser-note">本周累计上榜 <b>4</b> 天 · appeared 4 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#6</span><a class="repo-link" href="https://github.com/bilawalsidhu/gods-eye-view" target="_blank">bilawalsidhu/gods-eye-view</a></h3>
+        <p class="news-body">A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.</p>
+        <p class="news-body zh"><span class="tr">译</span>浏览器里的间谍卫星模拟器，只不过数据是真的：在照片级真实的 3D 地球上呈现实时开源空间情报。</p>
+        
+        <p class="repo-meta">★ 29,940 <span class="accent">(+10510 今日 today)</span> · ⑂ 6,025 forks · <span class="lang-dot" style="background:#f1e05a"></span>JavaScript · <span class="cat">前端 / Web · Frontend / Web</span></p>
+        <p class="riser-note">本周累计上榜 <b>3</b> 天 · appeared 3 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：前端 / Web · Frontend / Web</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#2</span><a class="repo-link" href="https://github.com/affaan-m/ECC" target="_blank">affaan-m/ECC</a></h3>
+        <p class="news-body">The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.</p>
+        <p class="news-body zh"><span class="tr">译</span>智能体运行框架性能优化系统：为 Claude Code、Codex、OpenCode、Cursor 等提供技能、本能、记忆、安全与「研究优先」的开发能力。</p>
+        
+        <p class="repo-meta">★ 257,126 <span class="accent">(+8086 今日 today)</span> · ⑂ 38,473 forks · <span class="lang-dot" style="background:#f1e05a"></span>JavaScript · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        <p class="riser-note">本周累计上榜 <b>3</b> 天 · appeared 3 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#11</span><a class="repo-link" href="https://github.com/cathrynlavery/diagram-design" target="_blank">cathrynlavery/diagram-design</a></h3>
+        <p class="news-body">38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop.</p>
+        <p class="news-body zh"><span class="tr">译</span>为 Claude Code、Codex 与 Pi 准备的 38 种编辑型图表模板。自包含 HTML + SVG，无阴影、告别 Mermaid 套话。</p>
+        
+        <p class="repo-meta">★ 38,872 <span class="accent">(+7409 今日 today)</span> · ⑂ 2,468 forks · <span class="lang-dot" style="background:#e34c26"></span>HTML · <span class="cat">前端 / Web · Frontend / Web</span></p>
+        <p class="riser-note">本周累计上榜 <b>3</b> 天 · appeared 3 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：前端 / Web · Frontend / Web</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#9</span><a class="repo-link" href="https://github.com/heygen-com/hyperframes" target="_blank">heygen-com/hyperframes</a></h3>
+        <p class="news-body">Write HTML. Render video. Built for agents.</p>
+        <p class="news-body zh"><span class="tr">译</span>写 HTML，渲染出视频。专为智能体打造。</p>
+        
+        <p class="repo-meta">★ 49,224 <span class="accent">(+5124 今日 today)</span> · ⑂ 4,493 forks · <span class="lang-dot" style="background:#3178c6"></span>TypeScript · <span class="cat">前端 / Web · Frontend / Web</span></p>
+        <p class="riser-note">本周累计上榜 <b>2</b> 天 · appeared 2 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：前端 / Web · Frontend / Web</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#13</span><a class="repo-link" href="https://github.com/microsoft/markitdown" target="_blank">microsoft/markitdown</a></h3>
+        <p class="news-body">Python tool for converting files and office documents to Markdown.</p>
+        <p class="news-body zh"><span class="tr">译</span>把各类文件与 Office 文档转换成 Markdown 的 Python 工具。</p>
+        
+        <p class="repo-meta">★ 183,243 <span class="accent">(+4823 今日 today)</span> · ⑂ 13,474 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">开发工具 · Dev Tools</span></p>
+        <p class="riser-note">本周累计上榜 <b>2</b> 天 · appeared 2 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：开发工具 · Dev Tools</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#16</span><a class="repo-link" href="https://github.com/coreyhaines31/marketingskills" target="_blank">coreyhaines31/marketingskills</a></h3>
+        <p class="news-body">Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.</p>
+        <p class="news-body zh"><span class="tr">译</span>面向 Claude Code 与 AI 智能体的营销技能合集：转化率优化（CRO）、文案、SEO、数据分析与增长工程。</p>
+        
+        <p class="repo-meta">★ 49,827 <span class="accent">(+2822 今日 today)</span> · ⑂ 7,568 forks · <span class="lang-dot" style="background:#f1e05a"></span>JavaScript · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        <p class="riser-note">本周累计上榜 <b>2</b> 天 · appeared 2 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#5</span><a class="repo-link" href="https://github.com/mksglu/context-mode" target="_blank">mksglu/context-mode</a></h3>
+        <p class="news-body">Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.</p>
+        <p class="news-body zh"><span class="tr">译</span>面向 AI 编程智能体的上下文窗口优化方案：沙箱化工具输出（体积削减 98%）、持久化会话记忆，并通过 MCP + 钩子在 17 个平台上强制统一路由。</p>
+        
+        <p class="repo-meta">★ 22,371 <span class="accent">(+1936 今日 today)</span> · ⑂ 1,610 forks · <span class="lang-dot" style="background:#3178c6"></span>TypeScript · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        <p class="riser-note">本周累计上榜 <b>2</b> 天 · appeared 2 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#8</span><a class="repo-link" href="https://github.com/openai/skills" target="_blank">openai/skills</a></h3>
+        <p class="news-body">Skills Catalog for Codex</p>
+        <p class="news-body zh"><span class="tr">译</span>Codex 的技能目录（Skills Catalog）。</p>
+        
+        <p class="repo-meta">★ 27,017 <span class="accent">(+1579 今日 today)</span> · ⑂ 1,806 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">其他 · Misc</span></p>
+        <p class="riser-note">本周累计上榜 <b>2</b> 天 · appeared 2 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#3</span><a class="repo-link" href="https://github.com/openai/plugins" target="_blank">openai/plugins</a></h3>
+        <p class="news-body">OpenAI Plugins</p>
+        <p class="news-body zh"><span class="tr">译</span>OpenAI 官方插件仓库。</p>
+        
+        <p class="repo-meta">★ 6,541 <span class="accent">(+1120 今日 today)</span> · ⑂ 861 forks · <span class="lang-dot" style="background:#f1e05a"></span>JavaScript · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        <p class="riser-note">本周累计上榜 <b>2</b> 天 · appeared 2 days this week</p>
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div></div><div class="divider"></div>
+<div class="footer-block">
+  <p>GitHub 周报 · 由本周每日快照聚合生成 · Aggregated from this week's daily snapshots</p>
+  <p>数据来源 Source：<a href="https://github.com/trending?since=weekly" target="_blank">github.com/trending?since=weekly</a></p>
+</div>
+</div></body></html>
