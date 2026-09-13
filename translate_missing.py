@@ -143,6 +143,14 @@ MY_ZH = {
     # 2026-09-07 周榜续补
     "Tencent/WeKnora": "开源 LLM 知识平台：把原始文档转化为可查询的 RAG、自主推理智能体与可自我维护的 Wiki。",
     "jakubkrehel/skills": "一套帮你打造出色界面的智能体技能合集。",
+    # 2026-09-13 日榜新增
+    "asgeirtj/system_prompts_leaks": "从 Anthropic、OpenAI、Google、xAI 等厂商提取出的系统提示词合集——涵盖 Claude Fable 5.1、Opus 5、Claude Design、Claude Code、ChatGPT GPT-6-Astra、Codex、Gemini 3.8 Flash、3.1 Pro、Antigravity、Grok、Grok Bot、Cursor、Kimi 等，定期更新。",
+    "yuliskov/SmartTube": "在 Android TV 上按自己的规则浏览媒体内容。",
+    "Shubhamsaboo/awesome-llm-apps": "100+ 个 AI 智能体、智能体技能与 RAG 应用——全部免费开源。",
+    "SnailSploit/Claude-Red": "claude-red 是一份面向 Claude 技能体系、经过精心筛选的进攻性安全技能库。每个技能都是一份结构化 SKILL.md 文件，用专家级方法论为 Claude 预置针对某一攻击面的能力——从 SQL 注入到 shellcode、从 EDR 绕过到漏洞利用开发。",
+    "multimodal-art-projection/YuE": "YuE2：具备符号化规划、零样本翻唱与智能体式音乐编辑能力的前沿音乐生成模型。",
+    "max-sixty/worktrunk": "Worktrunk 是一款用于 Git worktree 管理的命令行工具，专为并行的 AI 智能体工作流而生。",
+    "vxcontrol/pentagi": "一套能够自主执行复杂渗透测试任务的完全自主 AI 智能体系统。",
 }
 
 

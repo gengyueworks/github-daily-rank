@@ -25,3 +25,18 @@
 - **部署冲突**：并行自动化 `automation-...629` 已先推送 `data/daily/2026-09-11.json` 到 remote main（bf5884f），导致 `deploy_ghpages.sh` 的 `git pull --rebase --autostash` 因「远端已提交该新文件 vs 本地未跟踪同名文件」在 stash-pop 阶段冲突而中止。解法：备份新数据到 `/tmp/ghrank_backup` → 移走未跟踪日榜文件 → 丢弃 2 个陈旧 autostash → `git stash -u` 仅存 3 个被改跟踪文件 → `git pull --rebase -X ours origin main`（快进合并远端，无冲突）→ `git stash pop` → 用备份覆盖写回本地日榜文件 → `git add -A && commit && push main`（56e0d12）→ 再跑 `deploy_ghpages.sh`（rebase 成 no-op）。
 - **部署**：成功（gh-pages orphan 推送）。本地 `site/` 被孤儿步骤清空后已重跑 `build.py` 复原。线上复测：首页、daily、weekly 三个页面均 200。
 - **结论**：当日上榜 日榜 16 + 周榜 22；数据/翻译/站点已生成并推送 main，线上链接更新成功（200）。
+
+## 2026-09-12 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`）成功。日榜 `data/daily/2026-09-12.json` = 16 个仓库；周榜 `data/weekly/2026-09-07.json`（本周一 0907）= 23 个仓库。
+- **翻译**：首轮 `translate_missing.py` 命中词表补 9(日)+29(周)；余 8 个新仓库（nab138/iloader、melgarafael/DeskcommCRM、Sonarr/Sonarr、jihe520/MathModelAgent、p1neappleXpress/OpenFlux、jordan-gibbs/hyperresearch、alphaXiv/OpenResearch、Tencent/WeKnora、jakubkrehel/skills）人工校对中译写入 `MY_ZH` 并重跑，最终日榜 16/16、周榜 23/23 全部有 `description_zh`（`humanlayer/skills` 上游无英文简介，无译可补）。
+- **生成**：`build.py` 重建 `site/daily/2026-09-12.html`、`site/weekly/2026-09-07.html`、`site/index.html`、`site/classics/index.html`（ainews 双语风格）。
+- **部署**：`bash deploy_ghpages.sh` 顺过（rebase 无冲突，无并行自动化抢提交）。gh-pages orphan 推送成功；本地 `site/` 被清空后重跑 `build.py` 复原。线上复测：首测 daily 页 404（GitHub Pages 传播延迟），8 秒后复测 index/daily/weekly/classics 四页均 200。
+- **结论**：当日上榜 日榜 16 + 周榜 23；数据/翻译/站点已生成并推送 main，线上链接更新成功（200）。
+
+## 2026-09-13 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`）成功。日榜 `data/daily/2026-09-13.json` = 16 个仓库；周榜 `data/weekly/2026-09-07.json`（本周一 0907）= 21 个仓库。
+- **翻译**：`translate_missing.py` 首轮命中词表补 8(日)+28(周累计)；余 7 个新仓库（asgeirtj/system_prompts_leaks、yuliskov/SmartTube、Shubhamsaboo/awesome-llm-apps、SnailSploit/Claude-Red、multimodal-art-projection/YuE、max-sixty/worktrunk、vxcontrol/pentagi）人工校对中译写入 `MY_ZH` 并重跑，最终日榜 16 个中 15 个、周榜 21 个中 20 个有 `description_zh`；唯一缺口为 `Flowseal/zapret-discord-youtube`（日榜）与 `humanlayer/skills`（周榜），二者上游均无英文简介，无译可补（与 09-12 同因）。
+- **生成**：`build.py` 重建 `site/daily/2026-09-13.html`、`site/weekly/2026-09-07.html`、`site/index.html`、`site/classics/index.html`（ainews 双语风格）。
+- **部署冲突**：并行自动化（...629）已先推送 `data/daily/2026-09-13.json` 到 remote main（e96b3d4，且该提交删除了 `data/weekly/2026-09-07.json` 与旧的 `data/daily/2026-09-11.json`），导致 `deploy_ghpages.sh` 的 `git pull --rebase --autostash` 因未跟踪同名日榜文件碰撞中止。解法：备份新数据到 `/tmp/ghrank_backup` → 移走未跟踪日榜 → `git stash -u` → `git pull --rebase -X ours origin main`（顺过，本地提交复演到 e96b3d4）→ `git stash pop`（周榜出现 deleted-by-us 冲突，因远端删了周榜而本机有更优译本）→ 用备份覆盖写回日榜/周榜 → `git add -A && commit && push main` → 再跑 `deploy_ghpages.sh`。周榜 21/20 全译、日榜 16/15，均优于远端。
+- **部署**：`bash deploy_ghpages.sh` 二跑成功（gh-pages orphan 推送）。本地 `site/` 被孤儿步骤清空后已重跑 `build.py` 复原。线上已更新。
+- **结论**：当日上榜 日榜 16 + 周榜 21；数据/翻译/站点已生成并推送 main，线上链接更新成功。

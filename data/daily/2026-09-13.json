@@ -1,7 +1,7 @@
 {
   "since": "daily",
   "date": "2026-09-13",
-  "fetched_at": "2026-09-13T09:00:16",
+  "fetched_at": "2026-09-13T09:10:52",
   "count": 16,
   "repos": [
     {
@@ -13,14 +13,13 @@
       "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
       "language": "JavaScript",
       "language_color": "#f1e05a",
-      "stars": 29919,
-      "forks": 6022,
+      "stars": 29940,
+      "forks": 6025,
       "period_stars": 2265,
       "period_label": "今日",
       "topics": [],
       "category": "前端 / Web",
-      "description_zh": "浏览器里的间谍卫星模拟器，只不过数据是真的：在照片级真实的 3D 地球上呈现实时开源空间情报。",
-      "script_zh": "这个项目是一个运行在浏览器里的间谍卫星模拟器。\n\n它能让你用上帝视角，直接俯瞰一个超逼真的3D地球。\n\n\n只要打开网页，你就能实时追踪全球的各种真实事件。\n\n不管是看灾害现场还是分析地理情报，用它都能一键搞定。\n\n\n最酷的是，它用的全都是真实的开源数据。\n\n零门槛体验科幻电影里的特工视角，这项目绝对值得你点个收藏！"
+      "description_zh": "浏览器里的间谍卫星模拟器，只不过数据是真的：在照片级真实的 3D 地球上呈现实时开源空间情报。"
     },
     {
       "rank": 2,
@@ -31,12 +30,13 @@
       "description": "Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA). Open alternative to Kommo, Octadesk & Intercom for any business that sells by chat. MCP-ready, multi-tenant, LGPD.",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 1810,
+      "stars": 1815,
       "forks": 552,
       "period_stars": 504,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型"
+      "category": "AI / 大模型",
+      "description_zh": "开源 AI 销售操作系统——自带原生 AI 智能体与 WhatsApp（WAHA）的自托管 CRM。面向一切以聊天做生意的企业的 Kommo、Octadesk 与 Intercom 开源替代品；支持 MCP、多租户，符合 LGPD 法规。"
     },
     {
       "rank": 3,
@@ -47,12 +47,13 @@
       "description": "Extracted system prompts from Anthropic - Claude Fable 5.1, Opus 5, Claude Design, Claude Code. OpenAI - ChatGPT GPT-6-Astra, Codex. Google - Gemini 3.8 Flash, 3.1 Pro, Antigravity. xAI - Grok, Grok Bot, Cursor, Kimi and more! Updated regularly.",
       "language": "JavaScript",
       "language_color": "#f1e05a",
-      "stars": 65410,
+      "stars": 65417,
       "forks": 10738,
       "period_stars": 217,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型"
+      "category": "AI / 大模型",
+      "description_zh": "从 Anthropic、OpenAI、Google、xAI 等厂商提取出的系统提示词合集——涵盖 Claude Fable 5.1、Opus 5、Claude Design、Claude Code、ChatGPT GPT-6-Astra、Codex、Gemini 3.8 Flash、3.1 Pro、Antigravity、Grok、Grok Bot、Cursor、Kimi 等，定期更新。"
     },
     {
       "rank": 4,
@@ -63,12 +64,13 @@
       "description": "User friendly sideloader",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 3080,
+      "stars": 3082,
       "forks": 211,
       "period_stars": 209,
       "period_label": "今日",
       "topics": [],
-      "category": "其他"
+      "category": "其他",
+      "description_zh": "用户友好的侧载工具。"
     },
     {
       "rank": 5,
@@ -95,12 +97,13 @@
       "description": "🤖📐专为数学建模设计的 Agent & skills ,自动完成数学建模，生成一份完整的可以直接提交的论文。 An Agent Designed for Mathematical Modeling ,Automatically complete mathmodel and generate a complete paper ready for submission.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 5129,
+      "stars": 5131,
       "forks": 401,
       "period_stars": 262,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型"
+      "category": "AI / 大模型",
+      "description_zh": "🤖📐专为数学建模设计的 Agent 与技能库，自动完成数学建模，并生成一份完整、可直接提交的论文。"
     },
     {
       "rank": 7,
@@ -111,12 +114,13 @@
       "description": "Smart PVR for newsgroup and bittorrent users.",
       "language": "C#",
       "language_color": "#178600",
-      "stars": 15923,
+      "stars": 15928,
       "forks": 1953,
       "period_stars": 227,
       "period_label": "今日",
       "topics": [],
-      "category": "其他"
+      "category": "其他",
+      "description_zh": "面向新闻组与 BitTorrent 用户的智能 PVR 录制管理工具。"
     },
     {
       "rank": 8,
@@ -127,12 +131,13 @@
       "description": "Open Source AI trading agent that operates autonomously across 1000+ markets - Polymarket, Kalshi, Binance, Hyperliquid, Solana DEXs, 5 EVM chains. Scans for edge, executes instantly, manages risk while you sleep. Agent commerce protocol for machine-to-machine payments. Self-hosted. Built on Claude.",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 2505,
+      "stars": 2509,
       "forks": 310,
       "period_stars": 376,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型"
+      "category": "AI / 大模型",
+      "description_zh": "开源 AI 交易智能体，可在 Polymarket、Kalshi、币安、Hyperliquid、Solana DEX 及 5 条 EVM 链等 1000+ 个市场上自主运行。自动扫描套利空间、即时执行、在你休息时管理风险，是一套面向机器对机器支付的智能体商务协议，支持自托管，基于 Claude 构建。"
     },
     {
       "rank": 9,
@@ -143,12 +148,13 @@
       "description": "Browse media content with your own rules on Android TV",
       "language": "Java",
       "language_color": "#b07219",
-      "stars": 33214,
+      "stars": 33218,
       "forks": 2014,
       "period_stars": 136,
       "period_label": "今日",
       "topics": [],
-      "category": "移动端"
+      "category": "移动端",
+      "description_zh": "在 Android TV 上按自己的规则浏览媒体内容。"
     },
     {
       "rank": 10,
@@ -159,13 +165,13 @@
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 137632,
+      "stars": 137634,
       "forks": 20234,
       "period_stars": 230,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "script_zh": "这个项目是一个超火的开源 AI 应用大宝库。\n它里面打包了上百个现成的 AI 智能体和检索增强应用。\n\n不管你想做个自动写代码的助手，还是能读懂海量文档的客服，直接来这里抄作业就行。\n最牛的是，它每个案例都配了完整的保姆级源码。\n\n你不需要从零摸索，照着跑就能直接落地。\n难怪它在 GitHub 上拿下了十几万颗星，简直是快速搞定 AI 应用的终极捷径！"
+      "description_zh": "100+ 个 AI 智能体、智能体技能与 RAG 应用——全部免费开源。"
     },
     {
       "rank": 11,
@@ -176,12 +182,13 @@
       "description": "Network stack research tool. TCP tunnel with pluggable transports.",
       "language": "Go",
       "language_color": "#00ADD8",
-      "stars": 1402,
+      "stars": 1404,
       "forks": 104,
       "period_stars": 355,
       "period_label": "今日",
       "topics": [],
-      "category": "开发工具"
+      "category": "开发工具",
+      "description_zh": "网络协议栈研究工具，提供带可插拔传输层的 TCP 隧道。"
     },
     {
       "rank": 12,
@@ -192,12 +199,13 @@
       "description": "Graphics Creation Tools",
       "language": "C",
       "language_color": "#555555",
-      "stars": 4913,
+      "stars": 4915,
       "forks": 547,
       "period_stars": 237,
       "period_label": "今日",
       "topics": [],
-      "category": "其他"
+      "category": "其他",
+      "description_zh": "图形创作工具。"
     },
     {
       "rank": 13,
@@ -208,12 +216,13 @@
       "description": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 3598,
+      "stars": 3602,
       "forks": 552,
       "period_stars": 113,
       "period_label": "今日",
       "topics": [],
-      "category": "安全"
+      "category": "安全",
+      "description_zh": "claude-red 是一份面向 Claude 技能体系、经过精心筛选的进攻性安全技能库。每个技能都是一份结构化 SKILL.md 文件，用专家级方法论为 Claude 预置针对某一攻击面的能力——从 SQL 注入到 shellcode、从 EDR 绕过到漏洞利用开发。"
     },
     {
       "rank": 14,
@@ -224,12 +233,13 @@
       "description": "YuE2: frontier music generation with symbolic planning, zero-shot covers, and agentic music editing.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 7291,
-      "forks": 824,
+      "stars": 7300,
+      "forks": 825,
       "period_stars": 210,
       "period_label": "今日",
       "topics": [],
-      "category": "其他"
+      "category": "其他",
+      "description_zh": "YuE2：具备符号化规划、零样本翻唱与智能体式音乐编辑能力的前沿音乐生成模型。"
     },
     {
       "rank": 15,
@@ -240,12 +250,13 @@
       "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
       "language": "Rust",
       "language_color": "#dea584",
-      "stars": 7236,
+      "stars": 7239,
       "forks": 256,
       "period_stars": 54,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型"
+      "category": "AI / 大模型",
+      "description_zh": "Worktrunk 是一款用于 Git worktree 管理的命令行工具，专为并行的 AI 智能体工作流而生。"
     },
     {
       "rank": 16,
@@ -256,12 +267,13 @@
       "description": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
       "language": "Go",
       "language_color": "#00ADD8",
-      "stars": 23454,
+      "stars": 23458,
       "forks": 3059,
       "period_stars": 189,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型"
+      "category": "AI / 大模型",
+      "description_zh": "一套能够自主执行复杂渗透测试任务的完全自主 AI 智能体系统。"
     }
   ]
 }
