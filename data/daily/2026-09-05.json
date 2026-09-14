@@ -255,7 +255,8 @@
       "period_stars": 345,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型"
+      "category": "AI / 大模型",
+      "description_zh": "开源的编程智能体。"
     },
     {
       "rank": 16,
