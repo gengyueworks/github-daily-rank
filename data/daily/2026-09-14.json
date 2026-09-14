@@ -1,7 +1,7 @@
 {
   "since": "daily",
   "date": "2026-09-14",
-  "fetched_at": "2026-09-14T09:00:08",
+  "fetched_at": "2026-09-14T09:24:38",
   "count": 19,
   "repos": [
     {
@@ -13,8 +13,8 @@
       "description": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
       "language": "C",
       "language_color": "#555555",
-      "stars": 29831,
-      "forks": 3247,
+      "stars": 29870,
+      "forks": 3251,
       "period_stars": 868,
       "period_label": "今日",
       "topics": [],
@@ -30,12 +30,13 @@
       "description": "Ever® Gauzy™ - Open Business Management Platform (ERP/CRM/HRM/ATS/PM) - https://gauzy.co",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 5082,
-      "forks": 945,
+      "stars": 5104,
+      "forks": 947,
       "period_stars": 191,
       "period_label": "今日",
       "topics": [],
-      "category": "其他"
+      "category": "其他",
+      "description_zh": "Ever® Gauzy™ —— 开源企业经营管理平台（涵盖 ERP/CRM/HRM/ATS/PM），详见 https://gauzy.co"
     },
     {
       "rank": 3,
@@ -46,14 +47,13 @@
       "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
       "language": "JavaScript",
       "language_color": "#f1e05a",
-      "stars": 31904,
-      "forks": 6406,
+      "stars": 31934,
+      "forks": 6413,
       "period_stars": 2680,
       "period_label": "今日",
       "topics": [],
       "category": "前端 / Web",
-      "description_zh": "浏览器里的间谍卫星模拟器，只不过数据是真的：在照片级真实的 3D 地球上呈现实时开源空间情报。",
-      "script_zh": "这个项目是一个运行在浏览器里的间谍卫星模拟器。\n\n它能让你用上帝视角，直接俯瞰一个超逼真的3D地球。\n\n\n只要打开网页，你就能实时追踪全球的各种真实事件。\n\n不管是看灾害现场还是分析地理情报，用它都能一键搞定。\n\n\n最酷的是，它用的全都是真实的开源数据。\n\n零门槛体验科幻电影里的特工视角，这项目绝对值得你点个收藏！"
+      "description_zh": "浏览器里的间谍卫星模拟器，只不过数据是真的：在照片级真实的 3D 地球上呈现实时开源空间情报。"
     },
     {
       "rank": 4,
@@ -64,12 +64,13 @@
       "description": "The secure, validated skill registry for professional AI coding agents. Extend Antigravity, Claude Code, Cursor, Copilot and more with absolute confidence.",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 5653,
+      "stars": 5662,
       "forks": 499,
       "period_stars": 265,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型"
+      "category": "AI / 大模型",
+      "description_zh": "面向专业 AI 编程智能体的安全、经过校验的技能注册中心。可放心地为 Antigravity、Claude Code、Cursor、Copilot 等扩展能力。"
     },
     {
       "rank": 5,
@@ -80,8 +81,8 @@
       "description": "Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA). Open alternative to Kommo, Octadesk & Intercom for any business that sells by chat. MCP-ready, multi-tenant, LGPD.",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 2190,
-      "forks": 594,
+      "stars": 2198,
+      "forks": 595,
       "period_stars": 432,
       "period_label": "今日",
       "topics": [],
@@ -97,13 +98,13 @@
       "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 58434,
-      "forks": 7356,
+      "stars": 58459,
+      "forks": 7357,
       "period_stars": 380,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "script_zh": "这个项目是全球首个开源的智能体视频制作系统。\n它能把你的 AI 编程助手直接变成一个全功能视频工作室。\n\n只要输入想法，它就能自动调用上百种工具帮你做视频。\n不管是写脚本、找素材还是剪辑后期，它都能全自动搞定。\n\n它最厉害的是内置了十二条专业管线和七百多个智能体技能。\n这相当于把一整个专业视频团队直接装进你的电脑里。\nGitHub 上已经狂揽五万多星，想用 AI 做视频的朋友赶紧去看看！"
+      "description_zh": "全球首个开源的智能体视频生产系统。内置 12 条生产流水线、100+ 工具、700+ 智能体技能与生产知识文件，把你的 AI 编程助手变成一间完整的视频制作工作室。"
     },
     {
       "rank": 7,
@@ -114,12 +115,13 @@
       "description": "Extracted system prompts from Anthropic - Claude Fable 5.1, Opus 5, Claude Design, Claude Code. OpenAI - ChatGPT GPT-6-Astra, Codex. Google - Gemini 3.8 Flash, 3.1 Pro, Antigravity. xAI - Grok, Grok Bot, Cursor, Kimi and more! Updated regularly.",
       "language": "JavaScript",
       "language_color": "#f1e05a",
-      "stars": 66026,
-      "forks": 10802,
+      "stars": 66057,
+      "forks": 10803,
       "period_stars": 706,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型"
+      "category": "AI / 大模型",
+      "description_zh": "从 Anthropic、OpenAI、Google、xAI 等厂商提取出的系统提示词合集——涵盖 Claude Fable 5.1、Opus 5、Claude Design、Claude Code、ChatGPT GPT-6-Astra、Codex、Gemini 3.8 Flash、3.1 Pro、Antigravity、Grok、Grok Bot、Cursor、Kimi 等，定期更新。"
     },
     {
       "rank": 8,
@@ -130,12 +132,13 @@
       "description": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
       "language": "Go",
       "language_color": "#00ADD8",
-      "stars": 23975,
+      "stars": 23984,
       "forks": 3095,
       "period_stars": 590,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型"
+      "category": "AI / 大模型",
+      "description_zh": "一套能够自主执行复杂渗透测试任务的完全自主 AI 智能体系统。"
     },
     {
       "rank": 9,
@@ -146,12 +149,13 @@
       "description": "YuE2: frontier music generation with symbolic planning, zero-shot covers, and agentic music editing.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 7747,
-      "forks": 865,
+      "stars": 7762,
+      "forks": 866,
       "period_stars": 487,
       "period_label": "今日",
       "topics": [],
-      "category": "其他"
+      "category": "其他",
+      "description_zh": "YuE2：具备符号化规划、零样本翻唱与智能体式音乐编辑能力的前沿音乐生成模型。"
     },
     {
       "rank": 10,
@@ -162,12 +166,13 @@
       "description": "Browse media content with your own rules on Android TV",
       "language": "Java",
       "language_color": "#b07219",
-      "stars": 33452,
+      "stars": 33455,
       "forks": 2032,
       "period_stars": 233,
       "period_label": "今日",
       "topics": [],
-      "category": "移动端"
+      "category": "移动端",
+      "description_zh": "在 Android TV 上按自己的规则浏览媒体内容。"
     },
     {
       "rank": 11,
@@ -178,7 +183,7 @@
       "description": "Run parallel research agents with any model",
       "language": "Rust",
       "language_color": "#dea584",
-      "stars": 2065,
+      "stars": 2077,
       "forks": 144,
       "period_stars": 289,
       "period_label": "今日",
@@ -195,12 +200,13 @@
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 26833,
-      "forks": 3313,
+      "stars": 26887,
+      "forks": 3317,
       "period_stars": 2632,
       "period_label": "今日",
       "topics": [],
-      "category": "其他"
+      "category": "其他",
+      "description_zh": "VoiceStudio 是开源、完全本地运行的 ElevenLabs 替代品——支持声音克隆、声音设计、视频配音、听写、转写，以及在 646 种语言中制作有声书。"
     },
     {
       "rank": 13,
@@ -211,12 +217,13 @@
       "description": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 4143,
+      "stars": 4158,
       "forks": 592,
       "period_stars": 506,
       "period_label": "今日",
       "topics": [],
-      "category": "安全"
+      "category": "安全",
+      "description_zh": "claude-red 是一份面向 Claude 技能体系、经过精心筛选的进攻性安全技能库。每个技能都是一份结构化 SKILL.md 文件，用专家级方法论为 Claude 预置针对某一攻击面的能力——从 SQL 注入到 shellcode、从 EDR 绕过到漏洞利用开发。"
     },
     {
       "rank": 14,
@@ -227,12 +234,13 @@
       "description": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
       "language_color": "#00ADD8",
-      "stars": 23518,
-      "forks": 1742,
+      "stars": 23545,
+      "forks": 1743,
       "period_stars": 443,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型"
+      "category": "AI / 大模型",
+      "description_zh": "快速、高效，已在阿里巴巴大规模场景中实战检验。混合架构代码审查工具：确定性流水线 + LLM 智能体，精准的行级评论，内置多语言规则集（空指针、线程安全、XSS、SQL 注入），兼容 OpenAI 与 Anthropic。"
     },
     {
       "rank": 15,
@@ -243,7 +251,7 @@
       "description": "🤖📐专为数学建模设计的 Agent & skills ,自动完成数学建模，生成一份完整的可以直接提交的论文。 An Agent Designed for Mathematical Modeling ,Automatically complete mathmodel and generate a complete paper ready for submission.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 5351,
+      "stars": 5355,
       "forks": 408,
       "period_stars": 246,
       "period_label": "今日",
@@ -260,12 +268,13 @@
       "description": "Download Udemy and Hotmart courses, YouTube videos, music and books — 1,800+ sites, no terminal. Free open-source desktop app for Windows, macOS and Linux, with a built-in course player, PDF/EPUB reader and music library. Powered by yt-dlp. Your files stay on your computer.",
       "language": "Rust",
       "language_color": "#dea584",
-      "stars": 11664,
+      "stars": 11676,
       "forks": 1021,
       "period_stars": 507,
       "period_label": "今日",
       "topics": [],
-      "category": "开发工具"
+      "category": "开发工具",
+      "description_zh": "下载 Udemy、Hotmart 课程，YouTube 视频、音乐与电子书——支持 1800+ 站点，无需终端。免费的跨平台开源桌面应用（Windows、macOS、Linux），内置课程播放器、PDF/EPUB 阅读器与音乐库，由 yt-dlp 驱动，文件保存在你自己的电脑上。"
     },
     {
       "rank": 17,
@@ -276,12 +285,13 @@
       "description": "A practical Douyin downloader for both single-item and profile batch downloads, with progress display, retries, SQLite deduplication, and browser fallback support. 抖音批量下载工具，去水印，支持视频、图集、合集、音乐(原声)。",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 11359,
-      "forks": 1751,
+      "stars": 11369,
+      "forks": 1752,
       "period_stars": 452,
       "period_label": "今日",
       "topics": [],
-      "category": "前端 / Web"
+      "category": "前端 / Web",
+      "description_zh": "一款实用的抖音下载工具，支持单个作品与主页批量下载，带进度显示、失败重试、SQLite 去重及浏览器兜底方案；抖音批量下载、去水印，支持视频、图集、合集与音乐（原声）。"
     },
     {
       "rank": 18,
@@ -292,12 +302,13 @@
       "description": "A good looking terminal emulator which mimics the old cathode display...",
       "language": "QML",
       "language_color": "#8b949e",
-      "stars": 26226,
+      "stars": 26229,
       "forks": 1016,
       "period_stars": 57,
       "period_label": "今日",
       "topics": [],
-      "category": "开发工具"
+      "category": "开发工具",
+      "description_zh": "一款外观精致的终端模拟器，模拟老式阴极射线管显示器效果。"
     },
     {
       "rank": 19,
@@ -308,12 +319,13 @@
       "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 165523,
+      "stars": 165534,
       "forks": 34557,
       "period_stars": 152,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型"
+      "category": "AI / 大模型",
+      "description_zh": "🤗 Transformers：用于定义文本、视觉、音频及多模态前沿机器学习模型的框架，支持推理与训练。"
     }
   ]
 }

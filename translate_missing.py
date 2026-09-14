@@ -151,6 +151,18 @@ MY_ZH = {
     "multimodal-art-projection/YuE": "YuE2：具备符号化规划、零样本翻唱与智能体式音乐编辑能力的前沿音乐生成模型。",
     "max-sixty/worktrunk": "Worktrunk 是一款用于 Git worktree 管理的命令行工具，专为并行的 AI 智能体工作流而生。",
     "vxcontrol/pentagi": "一套能够自主执行复杂渗透测试任务的完全自主 AI 智能体系统。",
+    # 2026-09-14 日榜新增
+    "ever-co/ever-gauzy": "Ever® Gauzy™ —— 开源企业经营管理平台（涵盖 ERP/CRM/HRM/ATS/PM），详见 https://gauzy.co",
+    "tech-leads-club/agent-skills": "面向专业 AI 编程智能体的安全、经过校验的技能注册中心。可放心地为 Antigravity、Claude Code、Cursor、Copilot 等扩展能力。",
+    "calesthio/OpenMontage": "全球首个开源的智能体视频生产系统。内置 12 条生产流水线、100+ 工具、700+ 智能体技能与生产知识文件，把你的 AI 编程助手变成一间完整的视频制作工作室。",
+    "debpalash/VoiceStudio": "VoiceStudio 是开源、完全本地运行的 ElevenLabs 替代品——支持声音克隆、声音设计、视频配音、听写、转写，以及在 646 种语言中制作有声书。",
+    "alibaba/open-code-review": "快速、高效，已在阿里巴巴大规模场景中实战检验。混合架构代码审查工具：确定性流水线 + LLM 智能体，精准的行级评论，内置多语言规则集（空指针、线程安全、XSS、SQL 注入），兼容 OpenAI 与 Anthropic。",
+    "tonhowtf/omniget": "下载 Udemy、Hotmart 课程，YouTube 视频、音乐与电子书——支持 1800+ 站点，无需终端。免费的跨平台开源桌面应用（Windows、macOS、Linux），内置课程播放器、PDF/EPUB 阅读器与音乐库，由 yt-dlp 驱动，文件保存在你自己的电脑上。",
+    "jiji262/douyin-downloader": "一款实用的抖音下载工具，支持单个作品与主页批量下载，带进度显示、失败重试、SQLite 去重及浏览器兜底方案；抖音批量下载、去水印，支持视频、图集、合集与音乐（原声）。",
+    "Swordfish90/cool-retro-term": "一款外观精致的终端模拟器，模拟老式阴极射线管显示器效果。",
+    "huggingface/transformers": "🤗 Transformers：用于定义文本、视觉、音频及多模态前沿机器学习模型的框架，支持推理与训练。",
+    # 2026-09-14 周榜新增
+    "kunchenguid/firstmate": "与单个智能体对话，由一整支团队交付。",
 }
 
 
