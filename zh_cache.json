@@ -59,7 +59,7 @@
   "Alishahryar1/free-claude-code": "在终端、应用、IDE 或手机上免费使用 Claude Code、Codex、Pi 和 OpenCode（提供 13 亿+ 免费 Token），类似 OpenClaw（支持语音且符合服务条款）",
   "tinyhumansai/openhuman": "您的个人 AI 超级智能。一个为您构建本地优先生活记忆的大脑，一个出色的智能体集群与工作流编排器，以及一个深度研究员。",
   "VoltAgent/awesome-agent-skills": "精选 1000+ 个来自官方开发团队和社区的智能体技能，兼容 Claude Code、Codex、Gemini CLI、Cursor 等。",
-  "dani-garcia/vaultwarden": "用 Rust 编写的非官方 Bitwarden 兼容服务端，前身为 bitwarden_rs。",
+  "dani-garcia/vaultwarden": "用 Rust 编写的非官方 Bitwarden 兼容服务端，原名 bitwarden_rs。",
   "anthropics/claude-plugins-community": "面向 Claude Cowork 与 Claude Code 的社区插件市场。只读镜像——请到 clau.de/plugin-directory-submission 提交插件。",
   "NousResearch/hermes-agent": "与你一同成长的智能体。",
   "PrimeIntellect-ai/prime-agent": "用于编程工作流和长期自主任务的自我改进型 RLM 智能体。",
@@ -130,5 +130,14 @@
   "jiji262/douyin-downloader": "一款实用的抖音下载工具，支持单个作品与主页批量下载，带进度显示、失败重试、SQLite 去重及浏览器兜底方案；抖音批量下载、去水印，支持视频、图集、合集与音乐（原声）。",
   "Swordfish90/cool-retro-term": "一款外观精致的终端模拟器，模拟老式阴极射线管显示器效果。",
   "huggingface/transformers": "🤗 Transformers：用于定义文本、视觉、音频及多模态前沿机器学习模型的框架，支持推理与训练。",
-  "kunchenguid/firstmate": "与单个智能体对话，由一整支团队交付。"
+  "kunchenguid/firstmate": "与单个智能体对话，由一整支团队交付。",
+  "localsend/localsend": "开源、跨平台的 AirDrop 替代品。",
+  "666ghj/MiroFish": "一款简洁通用的群体智能引擎，能够预测万物。",
+  "Panniantong/Agent-Reach": "为你的 AI 智能体装上看见整个互联网的「眼睛」。一条命令行即可读取与搜索 Twitter、Reddit、YouTube、GitHub、Bilibili、小红书——零 API 费用。",
+  "rlaope/oh-my-hermes": "Hermes Agent（编程智能体）的一体化插件：内置长期记忆系统与针对模型优化的工作流工具包。",
+  "ruvnet/RuView": "π RuView 将普通 WiFi 信号转化为实时空间智能、生命体征监测与存在检测——全程无需一帧视频画面。",
+  "OpenBMB/VoxCPM": "VoxCPM2：无需分词器的多语言语音生成、创意声音设计与高度逼真克隆的 TTS 模型。",
+  "Crosstalk-Solutions/project-nomad": "Project NOMAD 是一个离线优先的知识与教育服务器。Wikipedia、数千本书籍、课程、地图以及可选的本地 AI，全部运行在你自己的硬件上，无需联网。",
+  "reconurge/flowsint": "面向网络安全分析师与调查人员的现代化平台，用于可视化、灵活且可扩展的图谱式调查。",
+  "peetzweg/opendisplay": "免费开源的 Sidecar / Duet 替代品——通过 USB 或 WiFi 将你的 iPhone 或 iPad 变成 Mac 的真正第二块屏幕，低延迟 H.264、Retina HiDPI、支持触控输入。"
 }

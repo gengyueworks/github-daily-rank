@@ -163,6 +163,15 @@ MY_ZH = {
     "huggingface/transformers": "🤗 Transformers：用于定义文本、视觉、音频及多模态前沿机器学习模型的框架，支持推理与训练。",
     # 2026-09-14 周榜新增
     "kunchenguid/firstmate": "与单个智能体对话，由一整支团队交付。",
+    # 2026-09-15 日榜新增
+    "666ghj/MiroFish": "一款简洁通用的群体智能引擎，能够预测万物。",
+    "Panniantong/Agent-Reach": "为你的 AI 智能体装上看见整个互联网的「眼睛」。一条命令行即可读取与搜索 Twitter、Reddit、YouTube、GitHub、Bilibili、小红书——零 API 费用。",
+    "rlaope/oh-my-hermes": "Hermes Agent（编程智能体）的一体化插件：内置长期记忆系统与针对模型优化的工作流工具包。",
+    "ruvnet/RuView": "π RuView 将普通 WiFi 信号转化为实时空间智能、生命体征监测与存在检测——全程无需一帧视频画面。",
+    "OpenBMB/VoxCPM": "VoxCPM2：无需分词器的多语言语音生成、创意声音设计与高度逼真克隆的 TTS 模型。",
+    "Crosstalk-Solutions/project-nomad": "Project NOMAD 是一个离线优先的知识与教育服务器。Wikipedia、数千本书籍、课程、地图以及可选的本地 AI，全部运行在你自己的硬件上，无需联网。",
+    "reconurge/flowsint": "面向网络安全分析师与调查人员的现代化平台，用于可视化、灵活且可扩展的图谱式调查。",
+    "peetzweg/opendisplay": "免费开源的 Sidecar / Duet 替代品——通过 USB 或 WiFi 将你的 iPhone 或 iPad 变成 Mac 的真正第二块屏幕，低延迟 H.264、Retina HiDPI、支持触控输入。",
 }
 
 

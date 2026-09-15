@@ -40,3 +40,12 @@
 - **部署冲突**：并行自动化（...629）已先推送 `data/daily/2026-09-13.json` 到 remote main（e96b3d4，且该提交删除了 `data/weekly/2026-09-07.json` 与旧的 `data/daily/2026-09-11.json`），导致 `deploy_ghpages.sh` 的 `git pull --rebase --autostash` 因未跟踪同名日榜文件碰撞中止。解法：备份新数据到 `/tmp/ghrank_backup` → 移走未跟踪日榜 → `git stash -u` → `git pull --rebase -X ours origin main`（顺过，本地提交复演到 e96b3d4）→ `git stash pop`（周榜出现 deleted-by-us 冲突，因远端删了周榜而本机有更优译本）→ 用备份覆盖写回日榜/周榜 → `git add -A && commit && push main` → 再跑 `deploy_ghpages.sh`。周榜 21/20 全译、日榜 16/15，均优于远端。
 - **部署**：`bash deploy_ghpages.sh` 二跑成功（gh-pages orphan 推送）。本地 `site/` 被孤儿步骤清空后已重跑 `build.py` 复原。线上已更新。
 - **结论**：当日上榜 日榜 16 + 周榜 21；数据/翻译/站点已生成并推送 main，线上链接更新成功。
+
+## 2026-09-14 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`）成功。日榜 `data/daily/2026-09-14.json` = 19 个仓库；周榜 `data/weekly/2026-09-14.json`（本周一 0914，新周一）= 23 个仓库。抓取后翻译，日榜 19/19、周榜 22/23（仅 `humanlayer/skills` 上游无英文简介，无译可补）全部补齐。
+- **翻译**：`translate_missing.py` 首轮命中词表 + `zh_cache` 已覆盖大部分；余 10 个新仓库（ever-co/ever-gauzy、tech-leads-club/agent-skills、calesthio/OpenMontage、debpalash/VoiceStudio、alibaba/open-code-review、tonhowtf/omniget、jiji262/douyin-downloader、Swordfish90/cool-retro-term、huggingface/transformers、kunchenguid/firstmate）人工校对中译写入 `MY_ZH` 并重跑，最终日榜 19/19、周榜 22/23 全部有 `description_zh`。
+- **生成**：`build.py` 重建 `site/daily/2026-09-14.html`、`site/weekly/2026-09-14.html`、`site/index.html`、`site/classics/index.html`（ainews 双语风格）。
+- **部署冲突**：并行自动化（...629）已先推送 `data/daily/2026-09-14.json`、`data/weekly/2026-09-14.json` 到 remote main（86250ec，仅 19/5 与 23/20 翻译），导致 `deploy_ghpages.sh` 的 `git pull --rebase --autostash` 因未跟踪同名 data 文件碰撞中止。解法：备份本地完整译本到 `/tmp/ghrank_backup` → 移走未跟踪 data 文件 → `git stash -u`（存 translate_missing.py+zh_cache.json）→ `git pull --rebase -X ours origin main`（快进到 86250ec）→ `git stash pop` → 重新 `scraper.py` 抓取当日最新快照（日 19 / 周 23，覆盖远端旧版）→ `translate_missing.py` 全补 → `git add -A && commit && push main`（b0e46c3）→ `build.py` → 再跑 `deploy_ghpages.sh`（rebase 成 no-op）。本机日榜 19/19、周榜 22/23 全译，优于远端。
+- **部署**：`bash deploy_ghpages.sh` 二跑成功（gh-pages orphan 推送）。本地 `site/` 被孤儿步骤清空后已重跑 `build.py` 复原。线上复测：首页、daily、weekly 三页均 200。
+- **注意**：GitHub 日榜页面在当天多次抓取间返回集合浮动（19↔23），以最后抓取并全译的版本为准；远端并行提交的旧快照已被本机更优译本覆盖。
+- **结论**：当日上榜 日榜 19 + 周榜 23；数据/翻译/站点已生成并推送 main，线上链接更新成功（200）。
