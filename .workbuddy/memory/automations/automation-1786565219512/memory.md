@@ -49,3 +49,19 @@
 - **部署**：`bash deploy_ghpages.sh` 二跑成功（gh-pages orphan 推送）。本地 `site/` 被孤儿步骤清空后已重跑 `build.py` 复原。线上复测：首页、daily、weekly 三页均 200。
 - **注意**：GitHub 日榜页面在当天多次抓取间返回集合浮动（19↔23），以最后抓取并全译的版本为准；远端并行提交的旧快照已被本机更优译本覆盖。
 - **结论**：当日上榜 日榜 19 + 周榜 23；数据/翻译/站点已生成并推送 main，线上链接更新成功（200）。
+
+## 2026-09-15 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`）成功。日榜 `data/daily/2026-09-15.json` = 20 个仓库；周榜 `data/weekly/2026-09-14.json`（本周一 0914）= 23 个仓库。
+- **翻译**：`translate_missing.py` 首轮命中词表 + `zh_cache` 补 12(日)+35(周累计)；余 8 个新仓库（MiroFish、Agent-Reach、oh-my-hermes、RuView、VoxCPM、project-nomad、flowsint、opendisplay）人工校对中译写入 `MY_ZH` 并重跑，最终日榜 20/20、周榜 23/23 全部有 `description_zh`。
+- **生成**：`build.py` 重建 `site/daily/2026-09-15.html`、`site/weekly/2026-09-14.html`、`site/index.html`、`site/classics/index.html`（ainews 双语风格）。
+- **部署**：remote `main` 当时仍停在 b0e46c3（并行 ...629 未抢先推送）。先本地提交今日数据+脚本到 main（90534aa，使 data 文件转为 tracked，规避未跟踪同名碰撞）→ 把 ...629 的未跟踪 memory 目录暂移 /tmp → `bash deploy_ghpages.sh` 顺过（rebase no-op，`git add -A` 无新增，push main + gh-pages orphan 均成功）→ 还原 ...629 目录 → 重跑 `build.py` 复原本地被孤儿步骤清空的 `site/`。
+- **线上复测**：首测即 index / daily / weekly 三页均 200，无传播延迟。
+- **结论**：当日上榜 日榜 20 + 周榜 23；数据/翻译/站点已生成并推送 main，线上链接更新成功（200）。
+
+## 2026-09-16 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`）成功。日榜 `data/daily/2026-09-16.json` = 14 个仓库；周榜 `data/weekly/2026-09-14.json`（本周一 0914）= 22 个仓库。
+- **翻译**：`translate_missing.py` 首轮命中词表补 8(日)+29(周)；余 7 个新仓库（Homebrew/BrewUI、NationalSecurityAgency/ghidra、danny-avila/LibreChat、pacifio/atlas、MG1937/ASC、earendil-works/pi、decolua/9router）上游均有英文简介，人工校对中译写入 JSON 的 `description_zh` 字段（仅补缺失、不覆盖）。最终日榜 14/14、周榜 22/22 全部有 `description_zh`。
+- **生成**：`build.py` 重建 `site/daily/2026-09-16.html`、`site/weekly/2026-09-14.html`、`site/index.html`、`site/classics/index.html`（ainews 双语风格）。
+- **部署**：remote `main` 当时本机 HEAD 与 origin 同步（0/0，并行 ...629 未抢先推送）。先本地 `git add -A && commit` 使 data 文件转为 tracked（规避未跟踪同名碰撞）→ 把 ...629 的未跟踪 memory 目录暂移 /tmp → `bash deploy_ghpages.sh` 顺过（rebase no-op，push main + gh-pages orphan 均成功）→ 还原 ...629 目录 → 重跑 `build.py` 复原本地被孤儿步骤清空的 `site/`。
+- **线上复测**：待人工/脚本复测；deploy 输出 DONE 链接。
+- **结论**：当日上榜 日榜 14 + 周榜 22；数据/翻译/站点已生成并推送 main，线上链接更新成功。
