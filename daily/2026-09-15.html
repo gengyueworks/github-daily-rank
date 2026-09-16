@@ -1,0 +1,327 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GitHub 日榜｜2026-09-15</title><style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap');
+:root {
+    --klein: #002FA7;
+    --klein-bright: #0044FF;
+    --white: #FFFFFF;
+    --bg-light: #F8F9FB;
+    --text-dark: #1A1A1A;
+    --text-mid: #6B6B6B;
+    --text-light: #9CA3AF;
+    --border: #E5E7EB;
+    --accent: #C41E3A;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Noto Sans SC', 'Inter', -apple-system, sans-serif;
+    background: var(--white); color: var(--text-dark);
+    line-height: 1.75; -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 720px; margin: 0 auto; padding: 56px 28px 80px; }
+.doc-title { font-size: 38px; font-weight: 700; color: var(--text-dark); letter-spacing: -0.5px; margin-bottom: 8px; text-wrap: balance; }
+.doc-title span { color: var(--klein); }
+.doc-date { font-family: 'Inter', sans-serif; font-size: 15px; color: var(--text-light); }
+.divider { height: 1px; background: var(--border); margin: 36px 0; }
+.section-header { font-size: 24px; font-weight: 600; color: var(--klein); margin-bottom: 24px; padding-bottom: 8px; border-bottom: 2px solid var(--klein); display: inline-block; text-wrap: balance; }
+.section-header .en { font-family: 'Inter'; font-size: 13px; color: var(--text-light); font-weight: 400; margin-left: 10px; }
+.section-block { margin-bottom: 48px; }
+.news-item { margin-bottom: 52px; }
+.news-item:last-child { margin-bottom: 0; }
+.news-title { font-size: 21px; font-weight: 600; color: var(--text-dark); line-height: 1.5; margin-bottom: 14px; text-wrap: balance; }
+.news-body { font-size: 16px; color: var(--text-dark); line-height: 1.9; margin-bottom: 16px; }
+.news-label { font-size: 14px; color: var(--text-mid); line-height: 1.7; margin-bottom: 14px; }
+.highlight { color: var(--klein); font-weight: 600; }
+.accent { color: var(--accent); font-weight: 600; }
+.turn { color: var(--klein); font-weight: 700; }
+.intro-text { font-size: 16px; color: var(--text-dark); line-height: 1.9; margin-bottom: 14px; }
+.source-line { font-size: 13px; color: var(--text-light); margin-top: 8px; }
+.source-line a { color: var(--klein); text-decoration: none; }
+.footer-block { font-size: 14px; color: var(--text-mid); line-height: 1.7; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); }
+.card-tag { font-size: 12px; color: var(--text-mid); opacity: 0.55; margin-top: 8px; line-height: 1.6; }
+
+.site-nav-lite { display: flex; align-items: center; justify-content: space-between; margin-bottom: 28px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+.nav-back { font-size: 14px; color: var(--klein); text-decoration: none; font-weight: 500; }
+.nav-back:hover { text-decoration: underline; }
+.nav-date { font-size: 13px; color: var(--text-light); font-family: 'JetBrains Mono', monospace; }
+
+/* ---- GitHub 榜专属（仍沿用 ainews 用词体系） ---- */
+.rank { font-family: 'JetBrains Mono', monospace; color: var(--klein); font-weight: 700; margin-right: 8px; }
+.repo-link { color: var(--text-dark); text-decoration: none; }
+.repo-link:hover { color: var(--klein); }
+.zh { color: var(--text-mid); }
+.tr { font-size: 11px; color: #fff; background: var(--klein); border-radius: 4px; padding: 2px 6px; margin-right: 6px; font-family: 'Inter'; vertical-align: middle; }
+.repo-meta { font-size: 14px; color: var(--text-mid); margin-top: 12px; line-height: 1.8; }
+.repo-meta .lang-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin: 0 4px 0 2px; }
+.repo-meta .cat { color: var(--klein); font-weight: 600; }
+.riser-note { font-size: 13px; color: var(--text-light); margin-top: 8px; }
+.script-block { font-size: 15.5px; color: var(--ink-soft, var(--text-mid)); line-height: 1.8; margin: 0 0 14px; }
+.script-tag { font-size: 11px; color: #fff; background: var(--klein); border-radius: 4px; padding: 1px 7px; margin-right: 8px; font-family: 'Inter'; vertical-align: middle; white-space: nowrap; }
+.archive { columns: 2; column-gap: 24px; }
+.archive a { display: block; color: var(--klein); text-decoration: none; padding: 3px 0; font-size: 15px; }
+.archive a:hover { text-decoration: underline; }
+
+/* classics 高分精选页专属：阅读型页面加宽容器，提升行宽舒适度 */
+body.classics .container { max-width: 860px; }
+
+/* ---- classics 高分精选页：严格对齐 ainews 排版体系 ----
+   红蓝配比：蓝为主（标题/■ 标签/强调/链接/footer 3px 蓝顶线），
+   红仅限数字点缀（.num，JetBrains Mono 红色数字），蓝:红 ≈ 10:1。
+   全部限定 body.classics，不影响 daily/weekly。 */
+body.classics {
+  --paper: #FFFFFF; --ink: #0E0E10; --ink-soft: #3A3A3E;
+  --gray: #6B6B70; --gray-light: #9CA3AF; --line: #E8E8EC;
+}
+body.classics .masthead { margin-bottom: 36px; }
+body.classics .mast-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--klein); font-weight: 600; margin-bottom: 14px; }
+body.classics .mast-title { font-size: 44px; font-weight: 900; letter-spacing: -1.5px; line-height: 1.05; color: var(--klein); margin-bottom: 16px; text-wrap: balance; }
+body.classics .mast-rule { height: 3px; background: var(--klein); width: 100%; margin: 0 0 10px; }
+body.classics .mast-meta { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--gray); display: flex; gap: 14px; flex-wrap: wrap; }
+body.classics .mast-meta .issue { color: var(--klein); font-weight: 600; }
+body.classics .mast-lede { font-size: 16px; line-height: 1.7; color: var(--ink-soft); margin-top: 22px; padding-left: 16px; border-left: 3px solid var(--klein); }
+body.classics .sec-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gray-light); margin-bottom: 6px; }
+body.classics .sec-title { font-size: 15px; font-weight: 700; color: var(--klein); letter-spacing: 1px; margin-bottom: 24px; display: inline-block; }
+body.classics .sec-title::before { content: "AE"; color: var(--klein); margin-right: 8px; font-size: 13px; }
+body.classics .item { margin-bottom: 52px; }
+body.classics .item:last-child { margin-bottom: 0; }
+body.classics .dateline { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gray); letter-spacing: 0.5px; margin-bottom: 10px; }
+body.classics .dateline .src { color: var(--klein); font-weight: 600; }
+body.classics .item-title { font-size: 21px; font-weight: 700; line-height: 1.4; margin-bottom: 12px; text-wrap: balance; }
+body.classics .item-title a { color: var(--klein); text-decoration: none; }
+body.classics .item-title a:hover { text-decoration: underline; }
+body.classics .body { font-size: 15.5px; color: var(--ink-soft); line-height: 1.8; }
+body.classics .body p { margin-bottom: 14px; }
+body.classics .body p:last-child { margin-bottom: 0; }
+body.classics .body .num { font-family: 'JetBrains Mono', monospace; color: var(--accent); font-weight: 600; }
+body.classics .body .tag { display: inline-block; font-size: 11px; font-family: 'JetBrains Mono', monospace; color: var(--gray); background: var(--line); padding: 1px 8px; border-radius: 3px; margin-right: 4px; }
+body.classics .src-line { font-size: 13px; color: var(--gray); margin-top: 10px; font-family: 'JetBrains Mono', monospace; line-height: 1.7; }
+body.classics .src-line a { color: var(--klein); text-decoration: none; }
+body.classics .src-line a:hover { text-decoration: underline; }
+body.classics .src-line .cat { color: var(--klein); font-weight: 600; }
+body.classics .link-area { margin-top: 12px; background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 8px 12px; display: flex; flex-direction: column; gap: 6px; }
+body.classics .link-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+body.classics .link-url { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--klein); text-decoration: none; overflow-wrap: anywhere; }
+body.classics .link-url:hover { text-decoration: underline; }
+body.classics .copy-btn { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gray); background: var(--paper); border: 1px solid var(--line); border-radius: 4px; padding: 2px 8px; cursor: pointer; flex-shrink: 0; }
+body.classics .copy-btn:hover { color: var(--klein); border-color: var(--klein); }
+body.classics .copy-btn.copied { color: #fff; background: var(--klein); border-color: var(--klein); }
+body.classics .footer { margin-top: 48px; padding-top: 20px; border-top: 3px solid var(--klein); font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--gray); line-height: 1.8; }
+body.classics .footer .big { color: var(--ink); font-weight: 600; }
+body.classics .footer a { color: var(--klein); text-decoration: none; }
+body.classics .footer a:hover { text-decoration: underline; }
+</style></head>
+<body><div class="container">
+<nav class="site-nav-lite"><a href="../index.html" class="nav-back">← 首页 / Index</a><span class="nav-date">2026年09月15日</span></nav>
+<h1 class="doc-title">GitHub 日榜｜<span>2026-09-15</span></h1>
+<p class="doc-date">2026年09月15日 · 星期二 · Daily GitHub Trending</p>
+<div class="divider"></div>
+<div class="section-block">
+  <h2 class="section-header">今日榜单 <span class="en">Today's Board</span></h2>
+  <p class="intro-text">今日 <span class="accent">20</span> 个仓库登上 GitHub Trending，最热分类 <span class="highlight">AI / 大模型</span>，单日最高 <span class="accent">+2776★</span>（<span class="highlight">debpalash/VoiceStudio</span>）。</p><p class="intro-text">Today <span class="accent">20</span> repos trended on GitHub. Hottest category <span class="highlight">AI / LLM</span>; top daily gain <span class="accent">+2776★</span> by <span class="highlight">debpalash/VoiceStudio</span>.</p>
+  
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#1</span><a class="repo-link" href="https://github.com/JustVugg/colibri" target="_blank">JustVugg/colibri</a></h3>
+        <p class="news-body">Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦</p>
+        <p class="news-body zh"><span class="tr">译</span>在你已有的硬件上运行前沿 MoE 模型——纯 C 语言、零依赖，专家层从磁盘流式加载。引擎极小，模型极大。🐦</p>
+        
+        <p class="repo-meta">★ 32,098 <span class="accent">(+2173 今日 today)</span> · ⑂ 3,388 forks · <span class="lang-dot" style="background:#555555"></span>C · <span class="cat">游戏 · Game</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：游戏 · Game</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#2</span><a class="repo-link" href="https://github.com/alibaba/open-code-review" target="_blank">alibaba/open-code-review</a></h3>
+        <p class="news-body">Fast, efficient, battle-tested at Alibaba&#x27;s scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI &amp; Anthropic compatible.</p>
+        <p class="news-body zh"><span class="tr">译</span>快速、高效，已在阿里巴巴大规模场景中实战检验。混合架构代码审查工具：确定性流水线 + LLM 智能体，精准的行级评论，内置多语言规则集（空指针、线程安全、XSS、SQL 注入），兼容 OpenAI 与 Anthropic。</p>
+        
+        <p class="repo-meta">★ 25,754 <span class="accent">(+1571 今日 today)</span> · ⑂ 1,863 forks · <span class="lang-dot" style="background:#00ADD8"></span>Go · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#3</span><a class="repo-link" href="https://github.com/multimodal-art-projection/YuE" target="_blank">multimodal-art-projection/YuE</a></h3>
+        <p class="news-body">YuE2: frontier music generation with symbolic planning, zero-shot covers, and agentic music editing.</p>
+        <p class="news-body zh"><span class="tr">译</span>YuE2：具备符号化规划、零样本翻唱与智能体式音乐编辑能力的前沿音乐生成模型。</p>
+        
+        <p class="repo-meta">★ 8,342 <span class="accent">(+559 今日 today)</span> · ⑂ 906 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#4</span><a class="repo-link" href="https://github.com/debpalash/VoiceStudio" target="_blank">debpalash/VoiceStudio</a></h3>
+        <p class="news-body">VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription &amp; audiobook creation in 646 languages.</p>
+        <p class="news-body zh"><span class="tr">译</span>VoiceStudio 是开源、完全本地运行的 ElevenLabs 替代品——支持声音克隆、声音设计、视频配音、听写、转写，以及在 646 种语言中制作有声书。</p>
+        
+        <p class="repo-meta">★ 29,216 <span class="accent">(+2776 今日 today)</span> · ⑂ 3,557 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#5</span><a class="repo-link" href="https://github.com/666ghj/MiroFish" target="_blank">666ghj/MiroFish</a></h3>
+        <p class="news-body">A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物</p>
+        <p class="news-body zh"><span class="tr">译</span>一款简洁通用的群体智能引擎，能够预测万物。</p>
+        
+        <p class="repo-meta">★ 73,155 <span class="accent">(+560 今日 today)</span> · ⑂ 11,290 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">游戏 · Game</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：游戏 · Game</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#6</span><a class="repo-link" href="https://github.com/Panniantong/Agent-Reach" target="_blank">Panniantong/Agent-Reach</a></h3>
+        <p class="news-body">Give your AI agent eyes to see the entire internet. Read &amp; search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.</p>
+        <p class="news-body zh"><span class="tr">译</span>为你的 AI 智能体装上看见整个互联网的「眼睛」。一条命令行即可读取与搜索 Twitter、Reddit、YouTube、GitHub、Bilibili、小红书——零 API 费用。</p>
+        
+        <p class="repo-meta">★ 81,261 <span class="accent">(+651 今日 today)</span> · ⑂ 7,078 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#7</span><a class="repo-link" href="https://github.com/asgeirtj/system_prompts_leaks" target="_blank">asgeirtj/system_prompts_leaks</a></h3>
+        <p class="news-body">Extracted system prompts from Anthropic - Claude Fable 5.1, Opus 5, Claude Design, Claude Code. OpenAI - ChatGPT GPT-6-Astra, Codex. Google - Gemini 3.8 Flash, 3.1 Pro, Antigravity. xAI - Grok, Grok Bot, Cursor, Kimi and more! Updated regularly.</p>
+        <p class="news-body zh"><span class="tr">译</span>从 Anthropic、OpenAI、Google、xAI 等厂商提取出的系统提示词合集——涵盖 Claude Fable 5.1、Opus 5、Claude Design、Claude Code、ChatGPT GPT-6-Astra、Codex、Gemini 3.8 Flash、3.1 Pro、Antigravity、Grok、Grok Bot、Cursor、Kimi 等，定期更新。</p>
+        
+        <p class="repo-meta">★ 66,762 <span class="accent">(+764 今日 today)</span> · ⑂ 10,871 forks · <span class="lang-dot" style="background:#f1e05a"></span>JavaScript · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#8</span><a class="repo-link" href="https://github.com/rlaope/oh-my-hermes" target="_blank">rlaope/oh-my-hermes</a></h3>
+        <p class="news-body">All in one plugin for Hermes Agent ⚚ the coding intelligence, a long-term memory system and model optimized workflow packages</p>
+        <p class="news-body zh"><span class="tr">译</span>Hermes Agent（编程智能体）的一体化插件：内置长期记忆系统与针对模型优化的工作流工具包。</p>
+        
+        <p class="repo-meta">★ 2,042 <span class="accent">(+77 今日 today)</span> · ⑂ 162 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#9</span><a class="repo-link" href="https://github.com/localsend/localsend" target="_blank">localsend/localsend</a></h3>
+        <p class="news-body">An open-source cross-platform alternative to AirDrop</p>
+        <p class="news-body zh"><span class="tr">译</span>开源、跨平台的 AirDrop 替代品。</p>
+        
+        <p class="repo-meta">★ 91,328 <span class="accent">(+251 今日 today)</span> · ⑂ 5,096 forks · <span class="lang-dot" style="background:#00B4AB"></span>Dart · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#10</span><a class="repo-link" href="https://github.com/dani-garcia/vaultwarden" target="_blank">dani-garcia/vaultwarden</a></h3>
+        <p class="news-body">Unofficial Bitwarden compatible server written in Rust, formerly known as bitwarden_rs</p>
+        <p class="news-body zh"><span class="tr">译</span>用 Rust 编写的非官方 Bitwarden 兼容服务端，原名 bitwarden_rs。</p>
+        
+        <p class="repo-meta">★ 67,526 <span class="accent">(+115 今日 today)</span> · ⑂ 3,212 forks · <span class="lang-dot" style="background:#dea584"></span>Rust · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#11</span><a class="repo-link" href="https://github.com/TauricResearch/TradingAgents" target="_blank">TauricResearch/TradingAgents</a></h3>
+        <p class="news-body">TradingAgents: Multi-Agents LLM Financial Trading Framework</p>
+        <p class="news-body zh"><span class="tr">译</span>TradingAgents：基于多智能体大语言模型的金融交易框架。</p>
+        
+        <p class="repo-meta">★ 106,131 <span class="accent">(+745 今日 today)</span> · ⑂ 20,308 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#12</span><a class="repo-link" href="https://github.com/ruvnet/RuView" target="_blank">ruvnet/RuView</a></h3>
+        <p class="news-body">π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.</p>
+        <p class="news-body zh"><span class="tr">译</span>π RuView 将普通 WiFi 信号转化为实时空间智能、生命体征监测与存在检测——全程无需一帧视频画面。</p>
+        
+        <p class="repo-meta">★ 93,842 <span class="accent">(+383 今日 today)</span> · ⑂ 12,433 forks · <span class="lang-dot" style="background:#dea584"></span>Rust · <span class="cat">运维 / 云 · Ops / Cloud</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：运维 / 云 · Ops / Cloud</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#13</span><a class="repo-link" href="https://github.com/tech-leads-club/agent-skills" target="_blank">tech-leads-club/agent-skills</a></h3>
+        <p class="news-body">The secure, validated skill registry for professional AI coding agents. Extend Antigravity, Claude Code, Cursor, Copilot and more with absolute confidence.</p>
+        <p class="news-body zh"><span class="tr">译</span>面向专业 AI 编程智能体的安全、经过校验的技能注册中心。可放心地为 Antigravity、Claude Code、Cursor、Copilot 等扩展能力。</p>
+        
+        <p class="repo-meta">★ 6,060 <span class="accent">(+512 今日 today)</span> · ⑂ 517 forks · <span class="lang-dot" style="background:#3178c6"></span>TypeScript · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#14</span><a class="repo-link" href="https://github.com/OpenBMB/VoxCPM" target="_blank">OpenBMB/VoxCPM</a></h3>
+        <p class="news-body">VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning</p>
+        <p class="news-body zh"><span class="tr">译</span>VoxCPM2：无需分词器的多语言语音生成、创意声音设计与高度逼真克隆的 TTS 模型。</p>
+        
+        <p class="repo-meta">★ 37,367 <span class="accent">(+216 今日 today)</span> · ⑂ 4,246 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#15</span><a class="repo-link" href="https://github.com/huggingface/transformers" target="_blank">huggingface/transformers</a></h3>
+        <p class="news-body">🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.</p>
+        <p class="news-body zh"><span class="tr">译</span>🤗 Transformers：用于定义文本、视觉、音频及多模态前沿机器学习模型的框架，支持推理与训练。</p>
+        
+        <p class="repo-meta">★ 165,974 <span class="accent">(+536 今日 today)</span> · ⑂ 34,578 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#16</span><a class="repo-link" href="https://github.com/ever-co/ever-gauzy" target="_blank">ever-co/ever-gauzy</a></h3>
+        <p class="news-body">Ever® Gauzy™ - Open Business Management Platform (ERP/CRM/HRM/ATS/PM) - https://gauzy.co</p>
+        <p class="news-body zh"><span class="tr">译</span>Ever® Gauzy™ —— 开源企业经营管理平台（涵盖 ERP/CRM/HRM/ATS/PM），详见 https://gauzy.co</p>
+        
+        <p class="repo-meta">★ 5,982 <span class="accent">(+1130 今日 today)</span> · ⑂ 986 forks · <span class="lang-dot" style="background:#3178c6"></span>TypeScript · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#17</span><a class="repo-link" href="https://github.com/Crosstalk-Solutions/project-nomad" target="_blank">Crosstalk-Solutions/project-nomad</a></h3>
+        <p class="news-body">Project NOMAD is an offline-first knowledge and education server. Wikipedia, thousands of books, courses, maps, and optional local AI, all running on hardware you own with no internet required.</p>
+        <p class="news-body zh"><span class="tr">译</span>Project NOMAD 是一个离线优先的知识与教育服务器。Wikipedia、数千本书籍、课程、地图以及可选的本地 AI，全部运行在你自己的硬件上，无需联网。</p>
+        
+        <p class="repo-meta">★ 36,908 <span class="accent">(+40 今日 today)</span> · ⑂ 3,686 forks · <span class="lang-dot" style="background:#3178c6"></span>TypeScript · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#18</span><a class="repo-link" href="https://github.com/reconurge/flowsint" target="_blank">reconurge/flowsint</a></h3>
+        <p class="news-body">A modern platform for visual, flexible, and extensible graph-based investigations. For cybersecurity analysts and investigators.</p>
+        <p class="news-body zh"><span class="tr">译</span>面向网络安全分析师与调查人员的现代化平台，用于可视化、灵活且可扩展的图谱式调查。</p>
+        
+        <p class="repo-meta">★ 8,341 <span class="accent">(+280 今日 today)</span> · ⑂ 1,028 forks · <span class="lang-dot" style="background:#3178c6"></span>TypeScript · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#19</span><a class="repo-link" href="https://github.com/peetzweg/opendisplay" target="_blank">peetzweg/opendisplay</a></h3>
+        <p class="news-body">Free, open-source Sidecar/Duet alternative — use your iPhone or iPad as a true second monitor for your Mac over USB or WiFi. Low latency H.264, Retina HiDPI, touch input.</p>
+        <p class="news-body zh"><span class="tr">译</span>免费开源的 Sidecar / Duet 替代品——通过 USB 或 WiFi 将你的 iPhone 或 iPad 变成 Mac 的真正第二块屏幕，低延迟 H.264、Retina HiDPI、支持触控输入。</p>
+        
+        <p class="repo-meta">★ 3,575 <span class="accent">(+229 今日 today)</span> · ⑂ 251 forks · <span class="lang-dot" style="background:#F05138"></span>Swift · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#20</span><a class="repo-link" href="https://github.com/SnailSploit/Claude-Red" target="_blank">SnailSploit/Claude-Red</a></h3>
+        <p class="news-body">claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development.</p>
+        <p class="news-body zh"><span class="tr">译</span>claude-red 是一份面向 Claude 技能体系、经过精心筛选的进攻性安全技能库。每个技能都是一份结构化 SKILL.md 文件，用专家级方法论为 Claude 预置针对某一攻击面的能力——从 SQL 注入到 shellcode、从 EDR 绕过到漏洞利用开发。</p>
+        
+        <p class="repo-meta">★ 4,738 <span class="accent">(+579 今日 today)</span> · ⑂ 631 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">安全 · Security</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：安全 · Security</p>
+    </div>
+</div>
+<div class="footer-block">
+  <p>GitHub 日榜 · 每日自动收录自 GitHub Trending · Daily auto-collected from GitHub Trending</p>
+  <p>数据来源 Source：<a href="https://github.com/trending?since=daily" target="_blank">github.com/trending?since=daily</a> · 抓取时间 Fetched：2026-09-15T09:12:25</p>
+</div>
+</div></body></html>
