@@ -172,6 +172,22 @@ MY_ZH = {
     "Crosstalk-Solutions/project-nomad": "Project NOMAD 是一个离线优先的知识与教育服务器。Wikipedia、数千本书籍、课程、地图以及可选的本地 AI，全部运行在你自己的硬件上，无需联网。",
     "reconurge/flowsint": "面向网络安全分析师与调查人员的现代化平台，用于可视化、灵活且可扩展的图谱式调查。",
     "peetzweg/opendisplay": "免费开源的 Sidecar / Duet 替代品——通过 USB 或 WiFi 将你的 iPhone 或 iPad 变成 Mac 的真正第二块屏幕，低延迟 H.264、Retina HiDPI、支持触控输入。",
+    # 2026-09-19 日榜/周榜新增
+    "cloudflare/security-audit-skill": "一个面向编程智能体的技能，用于多阶段安全审计，产出经独立核验、机器可读的审计发现。",
+    "Tencent/BrowserSkill": "让你的 AI 智能体使用你已登录的真实浏览器，且不会打扰你的工作。面向任意支持 shell 的智能体的浏览器自动化 CLI + 浏览器扩展。",
+    "TencentCloud/Octop": "更聪明的自托管 AI 助手——支持多用户、多智能体。",
+    "Fission-AI/OpenSpec": "面向 AI 编程助手的规格驱动开发（SDD）工具。",
+    "ankitects/anki": "Anki 是一款基于间隔重复算法的智能记忆卡片软件。",
+    "anthropics/knowledge-work-plugins": "主要面向知识工作者、用于在 Claude Cowork 中使用的开源插件仓库。",
+    "supermemoryai/supermemory": "极速、可扩展、可完全本地运行的记忆与上下文引擎及配套应用。面向 AI 时代的记忆 API。",
+    "tradesdontlie/tradingview-mcp": "AI 辅助的 TradingView 图表分析——将 Claude Code 接入你的 TradingView 桌面端，实现个人工作流自动化。",
+    "rustfs/rustfs": "RustFS 是一个开源、兼容 S3 协议的高性能对象存储系统，支持与 MinIO、Ceph 等其他 S3 兼容平台迁移与共存。",
+    "supabase/supabase": "Postgres 开发平台。Supabase 为你提供专属的 Postgres 数据库，用于构建 Web、移动与 AI 应用。",
+    "coder/coder": "面向开发者及其智能体的安全开发环境。",
+    "ahmedkhaleel2004/gitdiagram": "为任意 GitHub 仓库生成免费、简单、快速的交互式架构图。",
+    "asciimoo/hister": "属于你自己的搜索引擎。",
+    "home-assistant/core": "🏡 以本地控制与隐私为先的开源智能家居自动化平台。",
+    "danny-avila/LibreChat": "增强版 ChatGPT 开源克隆：内置智能体、MCP、Skills、DeepSeek、Anthropic、AWS、OpenAI、Responses API、Azure、Groq、o1、GPT-5、Mistral、OpenRouter、Vertex AI、Gemini、Artifacts、AI 模型切换、消息搜索、代码解释器、langchain、DALL-E-3、OpenAPI Actions、函数调用、安全多用户鉴权、预设等功能，支持自托管，持续活跃维护。",
 }
 
 

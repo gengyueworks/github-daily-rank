@@ -50,7 +50,7 @@
   "Wei-Shaw/sub2api": "一站式开源中转服务，统一接入 Claude、OpenAI、Gemini、Grok 订阅，支持拼车共享与成本分摊，原生工具无缝使用。",
   "makeplane/plane": "🔥🔥🔥 开源的 Jira、Linear、Monday 和 ClickUp 替代方案。Plane 是一个现代化的项目管理平台，用于管理任务、冲刺、文档和问题筛选。",
   "n8n-io/n8n": "具备原生 AI 能力的公平代码工作流自动化平台。融合可视化搭建与自定义代码，支持自托管或云端部署，拥有 400+ 种集成。",
-  "anthropics/claude-code": "Claude Code 是一款运行在终端的智能体编程工具。它能理解你的代码库，通过自然语言命令执行常规任务、解释复杂代码并处理 Git 工作流，助你高效编码。",
+  "anthropics/claude-code": "Claude Code 是一款活在终端里的智能体式编程工具，能理解你的代码库，并通过自然语言指令执行日常任务、讲解复杂代码、处理 git 流程，帮你更快写代码。",
   "multica-ai/andrej-karpathy-skills": "一份 CLAUDE.md 文件，依据 Andrej Karpathy 对 LLM 编程陷阱的观察，改善 Claude Code 的行为。",
   "ripienaar/free-for-dev": "适合 DevOps 和基础架构开发者的 SaaS、PaaS 和 IaaS 免费服务清单",
   "Tencent/AI-Infra-Guard": "全栈式 AI 红队平台，通过智能体扫描、技能扫描、MCP 扫描、AI 基础设施扫描及大模型越狱评估，保障 AI 生态安全。",
