@@ -253,7 +253,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "用 Rust 编写的非官方 Bitwarden 兼容服务端，前身为 bitwarden_rs。",
+      "description_zh": "用 Rust 编写的非官方 Bitwarden 兼容服务端，原名 bitwarden_rs。",
       "script_zh": "担心密码泄露又不想给大厂交钱？\n\n这个项目能让你一键搭建专属的密码管理系统。\n\n\n它完美兼容 Bitwarden 的所有官方客户端。\n\n只要把它部署在自己的 NAS 或云服务器上，就能随时随地安全同步你的所有密码。\n\n\n最厉害的是，官方服务非常吃内存，而它用 Rust 重写后轻量到了极致。\n\n运行起来只占几十兆内存，连树莓派都能轻松跑起来！\n\n甚至还免费解锁了全部高级功能，简直是极客必装的神器。"
     },
     {

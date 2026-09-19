@@ -91,7 +91,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "帮助 AI 编程助手编写现代 Go 代码",
+      "description_zh": "帮助 AI 编程 Agent 编写现代 Go 代码",
       "script_zh": "每次让 AI 帮你写 Go 语言代码，它是不是总在用好几年前的旧语法？\n\n这个项目就是 JetBrains 官方给 AI 量身定制的现代 Go 语言说明书。\n你只要把这份指南喂给 ChatGPT 或者 Copilot 这样的 AI 助手。\n\n它就能立刻学会用最新的泛型和标准库，写出符合现代规范的干净代码。\n最棒的是，它能直接纠正 AI 瞎写旧代码的老毛病，让你省去大量重构的时间。\n\n想让你的 AI 编程助手瞬间变聪明，用它就对了！"
     },
     {
@@ -109,7 +109,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "Anthropic 官方维护的高质量 Claude Code 插件目录",
+      "description_zh": "由 Anthropic 官方维护的高质量 Claude Code 插件目录。",
       "script_zh": "这个项目是 Anthropic 官方为 Claude 打造的插件大本营。\n\n它能让你的 AI 助手直接连接数据库、本地文件和各种第三方工具。\n有了它，Claude 就不再只是个聊天机器人，而是能帮你写代码、查数据、直接干活的超级助理。\n\n最棒的是官方亲自维护，质量和安全性绝对有保障。\n难怪在 GitHub 上拿到了三万多个星，想让 AI 自动干活的朋友闭眼冲就完了！"
     },
     {
@@ -127,7 +127,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "让任何 AI 智能体化身 AI 科学家。全球超 17.5 万名科学家使用的第一大科学智能体技能库。内置 163 个开箱即用且经过验证的技能，以及 100 多个涵盖生物、化学、医学和药物研发的科学数据库。兼容 Cursor、Claude Code、Codex、Pi、Antigravity 及开放的 Agent Skills 标准。",
+      "description_zh": "将任意 AI 智能体转化为 AI 科学家。全球首屈一指的科学领域 Agent 技能库，已被全球超过 17.5 万名科学家使用。内置 163 个开箱即用且经过验证的技能，以及 100 多个涵盖生物学、化学、医学和药物研发的科学数据库。兼容 Cursor、Claude Code、Codex、Pi、Antigravity 以及开放的 Agent Skills 标准。",
       "script_zh": "这个项目能把任何 AI 助手直接变成顶尖的 AI 科学家。\n\n不管你是搞生物、化学还是做新药研发，它都能帮上大忙。\n它内置了上百个科学数据库和 160 多种现成的专业技能。\n\n你只需把它接入 Cursor 或者 Claude，AI 就能帮你查文献、分析分子结构。\n全球已经有十几万科学家在用它了，绝对是科研人员的超级外挂！"
     },
     {
@@ -163,7 +163,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "全球首款开源智能体视频制作系统。内置 12 条制作管线、100+ 款工具、700+ 个智能体技能与制作知识文件。将你的 AI 编程助手转化为全功能视频制作工作室。",
+      "description_zh": "全球首个开源的智能体视频生产系统。内置 12 条生产流水线、100+ 工具、700+ 智能体技能与生产知识文件，把你的 AI 编程助手变成一间完整的视频制作工作室。",
       "script_zh": "这个项目是全球首个开源的智能体视频制作系统。\n它能把你的 AI 编程助手直接变成一个全功能视频工作室。\n\n只要输入想法，它就能自动调用上百种工具帮你做视频。\n不管是写脚本、找素材还是剪辑后期，它都能全自动搞定。\n\n它最厉害的是内置了十二条专业管线和七百多个智能体技能。\n这相当于把一整个专业视频团队直接装进你的电脑里。\nGitHub 上已经狂揽五万多星，想用 AI 做视频的朋友赶紧去看看！"
     },
     {
@@ -217,7 +217,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "为每个 Agent 提供跨会话的持久上下文：捕获 Agent 在会话期间的所有操作，利用 AI 进行压缩，并在后续会话中重新注入相关上下文。支持 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等。",
+      "description_zh": "为所有 Agent 提供跨会话的持久上下文——捕获 Agent 在会话中的所有操作，利用 AI 进行压缩，并将相关上下文重新注入到未来的会话中。支持 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等多种工具。",
       "script_zh": "用 Claude 写代码，是不是每次新开对话它就失忆了？\n这个项目就是给各种 AI 智能体装上长期记忆的超强外挂。\n\n它能悄悄记录你和 AI 聊过的一切，用算法压缩后，在下次聊天时自动喂给它。\n不管是 Claude Code 还是 Gemini，都能瞬间接上上次的进度。\n\n最牛的是它不仅省 Token，还能让不同的 AI 共享同一份记忆。\n赶紧去试试，你的 AI 助手这下真的有灵魂了！"
     },
     {
@@ -235,7 +235,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "GoogleTest - Google 测试与模拟框架",
+      "description_zh": "GoogleTest - Google 测试与 Mock 框架",
       "script_zh": "写 C++ 的朋友，是不是经常为了写测试和模拟对象抓狂？\n\n这个项目就是专门来拯救你的。\n\n它是谷歌开源的 C++ 测试和 Mock 双剑合璧框架。\n\n简单来说，它能帮你快速给代码做体检。\n\n不管多复杂的逻辑，它都能轻松模拟并测出 Bug。\n\n为什么它能拿到近四万颗星？\n\n因为它是行业事实上的标准，几乎所有主流工具都原生支持它。\n\n功能全，生态好，用它写测试真的太省心了。"
     },
     {
@@ -253,7 +253,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "适用于 Obsidian + Claude Code 的自组织 AI 第二大脑。导入任意来源，Claude 即可自动阅读、关联并归档至你完全掌控的纯 Markdown 互联知识图谱中。集 AI 笔记、个人知识管理 (PKM) 于一体的开源 Notion 替代方案，基于 Karpathy 的 LLM Wiki 模式。",
+      "description_zh": "基于 Obsidian + Claude Code 的自组织 AI 第二大脑。放入任意资料源，Claude 即可自动读取、关联并归档至完全由你掌控的纯 Markdown 互联知识图谱中。集 AI 笔记与个人知识管理（PKM）于一体，是 Notion 的开源替代方案。基于 Karpathy 的 LLM Wiki 范式构建。",
       "script_zh": "想要一个能自动整理的 AI 第二大脑吗？\n这个项目把 Obsidian 和 Claude 完美结合了。\n\n你只要把各种乱七八糟的资料往里一扔。\n它就能自动帮你阅读、分类并连上双向链接。\n\n所有笔记最后都会整理成你完全掌控的本地 Markdown 文件。\n最厉害的是它参考了前特斯拉 AI 总监卡帕西的构想。\n简直就是能自动进化的开源版 Notion 替代品！"
     },
     {
@@ -271,7 +271,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "用于基础模型研发的开源框架",
+      "description_zh": "用于基座模型研发的开源框架。",
       "script_zh": "想自己动手研发大模型吗？\n这个项目是一个专门用来做基础模型研发的开源框架。\n\n它帮你把大模型从零训练到微调的整个流程全部打通了。\n你再也不用花几天时间去痛苦地搭建底层架构。\n\n最厉害的是它把复杂的算法都做成了模块化设计。\n你就像搭积木一样，几行代码就能快速跑通实验。\n目前在 GitHub 上已经拿到了两千多颗星，绝对是搞 AI 研发的宝藏神器！"
     },
     {
@@ -289,7 +289,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "Claude 技能、资源与工具精选列表，用于自定义 Claude AI 工作流。",
+      "description_zh": "精选的 Claude Skills、资源与工具列表，用于自定义 Claude AI 工作流。",
       "script_zh": "这个项目是专门给 Claude 玩家准备的超强技能库。\n\n它收集了各种实用的插件和工作流，能让你的 Claude 直接连接外部软件。\n比如自动发邮件、跑代码、管理日程，全都不在话下。\n\n最厉害的是，它已经拿下了七万多个星星，全网都在用它抄作业。\n有了它，你再也不用费劲自己写代码，直接套用现成模板就行。\n想让 Claude 变成全能的超级助理，看这一个项目就够了！"
     },
     {
@@ -307,7 +307,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "用于检出仓库的 Action",
+      "description_zh": "用于检出代码仓库的 GitHub Action",
       "script_zh": "写 GitHub Actions 自动化脚本的时候，你绝对绕不开这个项目。\n\n它就是大名鼎鼎的官方代码拉取工具。\n\n简单来说，你的工作流想要运行，第一步就得把仓库里的代码下载到虚拟机里。\n\n只要在步骤里加上这一行，它就能自动帮你搞定授权并把代码拉下来。\n\n因为它不仅运行速度极快，还支持拉取子模块和历史提交记录。\n\n作为官方维护的基石项目，几乎每个自动化流水线都离不开它，闭眼用就完事了。"
     },
     {

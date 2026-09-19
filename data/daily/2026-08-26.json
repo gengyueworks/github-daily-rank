@@ -55,7 +55,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "运行在本地的 AI 求职工具。基于 Claude Code 构建的求职申请框架：评估招聘岗位、定制简历、撰写求职信、准备面试。Fork 并完全掌控它。",
+      "description_zh": "在本地运行的求职助手。基于 Claude Code 构建的 AI 求职框架：评估职位、定制简历、撰写求职信、准备面试。Fork 即可完全掌控。",
       "script_zh": "找工作投简历快被折磨疯了吧？\n这个项目是一个运行在你本地的 AI 求职全能助手。\n\n它能帮你一键分析岗位招聘需求。\n不仅能自动修改简历和写求职信，甚至连面试题都能帮你提前准备好。\n\n最牛的是它基于强大的 Claude Code 构建。\n所有数据都跑在你自己的电脑上，完全不用担心隐私泄露。\n直接把它克隆下来，你就能拥有一个专属的 AI 猎头团队了。"
     },
     {
@@ -109,7 +109,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "适用于 Obsidian + Claude Code 的自组织 AI 第二大脑。导入任意来源，Claude 即可自动阅读、关联并归档至你完全掌控的纯 Markdown 互联知识图谱中。集 AI 笔记、个人知识管理 (PKM) 于一体的开源 Notion 替代方案，基于 Karpathy 的 LLM Wiki 模式。",
+      "description_zh": "基于 Obsidian + Claude Code 的自组织 AI 第二大脑。放入任意资料源，Claude 即可自动读取、关联并归档至完全由你掌控的纯 Markdown 互联知识图谱中。集 AI 笔记与个人知识管理（PKM）于一体，是 Notion 的开源替代方案。基于 Karpathy 的 LLM Wiki 范式构建。",
       "script_zh": "想要一个能自动整理的 AI 第二大脑吗？\n这个项目把 Obsidian 和 Claude 完美结合了。\n\n你只要把各种乱七八糟的资料往里一扔。\n它就能自动帮你阅读、分类并连上双向链接。\n\n所有笔记最后都会整理成你完全掌控的本地 Markdown 文件。\n最厉害的是它参考了前特斯拉 AI 总监卡帕西的构想。\n简直就是能自动进化的开源版 Notion 替代品！"
     },
     {
@@ -235,7 +235,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "用于基础模型研发的开源框架",
+      "description_zh": "用于基座模型研发的开源框架。",
       "script_zh": "想自己动手研发大模型吗？\n这个项目是一个专门用来做基础模型研发的开源框架。\n\n它帮你把大模型从零训练到微调的整个流程全部打通了。\n你再也不用花几天时间去痛苦地搭建底层架构。\n\n最厉害的是它把复杂的算法都做成了模块化设计。\n你就像搭积木一样，几行代码就能快速跑通实验。\n目前在 GitHub 上已经拿到了两千多颗星，绝对是搞 AI 研发的宝藏神器！"
     },
     {
@@ -271,7 +271,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "Anthropic 官方维护的高质量 Claude Code 插件目录",
+      "description_zh": "由 Anthropic 官方维护的高质量 Claude Code 插件目录。",
       "script_zh": "这个项目是 Anthropic 官方为 Claude 打造的插件大本营。\n\n它能让你的 AI 助手直接连接数据库、本地文件和各种第三方工具。\n有了它，Claude 就不再只是个聊天机器人，而是能帮你写代码、查数据、直接干活的超级助理。\n\n最棒的是官方亲自维护，质量和安全性绝对有保障。\n难怪在 GitHub 上拿到了三万多个星，想让 AI 自动干活的朋友闭眼冲就完了！"
     },
     {
@@ -289,7 +289,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "游戏",
-      "description_zh": "你自己的搜索引擎",
+      "description_zh": "你的专属搜索引擎",
       "script_zh": "想要一个完全属于自己的搜索引擎吗？\n这个项目就能帮你轻松搞定。\n\n平时上网搜索总被广告和追踪器骚扰？\n用它搭建专属服务，你就能一键聚合全网的搜索结果，而且绝对隐私安全。\n\n它最厉害的地方在于完全开源和轻量。\n没有算法推荐的干扰，只有你需要的纯净内容。\n这相当于把互联网的搜索钥匙，重新拿回了自己手里！"
     }
   ]

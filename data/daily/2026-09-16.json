@@ -19,7 +19,8 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "快速、高效，已在阿里巴巴大规模场景中实战检验。混合架构代码审查工具：确定性流水线 + LLM 智能体，精准的行级评论，内置多语言规则集（空指针、线程安全、XSS、SQL 注入），兼容 OpenAI 与 Anthropic。"
+      "description_zh": "快速、高效，已在阿里巴巴大规模场景中实战检验。混合架构代码审查工具：确定性流水线 + LLM 智能体，精准的行级评论，内置多语言规则集（空指针、线程安全、XSS、SQL 注入），兼容 OpenAI 与 Anthropic。",
+      "script_zh": "阿里开源的 open-code-review，是一个帮你自动做代码审查的 AI 工具。\n\n你在提交代码时，它能精准定位到具体的代码行，直接给出修改意见。\n像空指针、线程安全、SQL注入这种常见漏洞，它都能提前帮你拦截掉。\n\n最厉害的是它结合了传统规则和大模型的混合架构，既快又准。\n它不仅在阿里内部经过了海量业务检验，还完美兼容主流大模型。\n\n想提升团队的代码质量，这个项目绝对值得你去尝试！"
     },
     {
       "rank": 2,
@@ -36,7 +37,8 @@
       "period_label": "今日",
       "topics": [],
       "category": "游戏",
-      "description_zh": "在你已有的硬件上运行前沿 MoE 模型——纯 C 语言、零依赖，专家层从磁盘流式加载。引擎极小，模型极大。🐦"
+      "description_zh": "在你已有的硬件上运行前沿 MoE 模型——纯 C 语言、零依赖，专家层从磁盘流式加载。引擎极小，模型极大。🐦",
+      "script_zh": "这个项目是一个用纯 C 语言打造的极简 AI 推理引擎。\n它能让你用手头现有的普通设备，直接跑起顶级的 MoE 大模型。\n\n很多大模型因为显存不够根本跑不动，而它能把参数直接从硬盘流式加载。\n这相当于大幅降低了硬件门槛，彻底解决了显存焦虑。\n\n它没有任何第三方依赖，引擎体积小到极致，却能支撑起巨大的模型。\n想要在普通电脑上本地跑大模型，选它就对了！"
     },
     {
       "rank": 3,
@@ -53,7 +55,8 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "Ever® Gauzy™ —— 开源企业经营管理平台（涵盖 ERP/CRM/HRM/ATS/PM），详见 https://gauzy.co"
+      "description_zh": "Ever® Gauzy™ —— 开源企业经营管理平台（涵盖 ERP/CRM/HRM/ATS/PM），详见 https://gauzy.co",
+      "script_zh": "这个项目是一个全能型的开源企业管理平台。\n它把 ERP、CRM、HR 人力和项目管理全打包在了一起。\n\n不管是算工资、跟进客户，还是招人、抓项目进度，用这一个系统就能搞定。\n直接帮你解决多套软件来回切换、数据不通的头疼问题。\n\n最给力的是它完全开源，功能丰富，UI 界面也很现代。\n中小团队拿来就能用，还能按自己的需求随心二次开发。\n想低成本搞定数字化管理的朋友，非常值得关注！"
     },
     {
       "rank": 4,
@@ -70,7 +73,8 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "VoiceStudio 是开源、完全本地运行的 ElevenLabs 替代品——支持声音克隆、声音设计、视频配音、听写、转写，以及在 646 种语言中制作有声书。"
+      "description_zh": "VoiceStudio 是开源、完全本地运行的 ElevenLabs 替代品——支持声音克隆、声音设计、视频配音、听写、转写，以及在 646 种语言中制作有声书。",
+      "script_zh": "这个项目是一个完全开源且支持本地运行的 AI 声音工作站，堪称免费版的 ElevenLabs。\n\n无论你是想克隆自己的声音、做多语言视频配音，还是把文字改成有声书，它都能轻松搞定。\n它甚至还支持语音转文字和听写，覆盖了整整 646 种语言！\n\n最棒的是它完全在本地运行，既保护隐私，又帮你省下了昂贵的订阅费用。\n这种全能型的声音神级工具，绝对值得你立刻去点个 Star 收藏起来！"
     },
     {
       "rank": 5,
@@ -87,7 +91,8 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "📺 Homebrew 官方 macOS 图形界面"
+      "description_zh": "📺 Homebrew 官方 macOS 图形界面",
+      "script_zh": "Mac 用户用 Homebrew 搞包管理，是不是早就厌倦敲命令行了？\n这个项目就是官方专门推出的 macOS 图形界面工具。\n\n它能让你像逛应用商店一样，直接点鼠标去搜索、安装和更新软件。\n甚至清理缓存和卸载依赖，都能一键搞定。\n\n你再也不用死记各种终端指令，也不怕看不懂一堆报错提示了。\n最棒的是官方自研，Mac 原生设计，轻快又丝滑。\n这绝对是 Mac 开发者和懒人必备的神器！"
     },
     {
       "rank": 6,
@@ -104,7 +109,8 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "开源 AI 销售操作系统——自带原生 AI 智能体与 WhatsApp（WAHA）的自托管 CRM。面向一切以聊天做生意的企业的 Kommo、Octadesk 与 Intercom 开源替代品；支持 MCP、多租户，符合 LGPD 法规。"
+      "description_zh": "开源 AI 销售操作系统——自带原生 AI 智能体与 WhatsApp（WAHA）的自托管 CRM。面向一切以聊天做生意的企业的 Kommo、Octadesk 与 Intercom 开源替代品；支持 MCP、多租户，符合 LGPD 法规。",
+      "script_zh": "这个项目是一个专为聊单销售打造的开源 AI 销售系统。\n只要你是靠 WhatsApp 聊天卖货，它就能把客服和销售全盘接管。\n\n它内置了原生 AI 智能体，能像真实销售一样自动回复客户、跟进订单。\n相比昂贵的商业 CRM，它支持完全私有化部署，既省钱又能保障数据安全。\n\n它还提前兼容了最新的 MCP 协议，扩展能力直接拉满。\n想用 AI 自动聊天卖货，选它就对了！"
     },
     {
       "rank": 7,
@@ -121,7 +127,8 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "用任意模型并行运行多个研究智能体。"
+      "description_zh": "用任意模型并行运行多个研究智能体。",
+      "script_zh": "这个项目是一个能让你同时跑多个 AI 助手做科研的开源框架。\n你只要给它一个主题，它就能并行调度大模型去搜文献、读论文、做总结。\n\n以前你自己要啃几周的厚资料，交给它几分钟就能搞定。\n最赞的是它完全不挑模型，不管是 OpenAI 还是本地开源模型都能套用。\n\n想搞深度调研又怕文献海的人，这个项目绝对值得你立马收藏。"
     },
     {
       "rank": 8,
@@ -138,7 +145,8 @@
       "period_label": "今日",
       "topics": [],
       "category": "安全",
-      "description_zh": "Ghidra 是一款软件逆向工程（SRE）框架"
+      "description_zh": "Ghidra 是一款软件逆向工程（SRE）框架",
+      "script_zh": "这个项目是美国国家安全局开源的顶级逆向工程工具。\n简单来说，它能把看不懂的二进制程序，反编译成人类能读懂的源代码。\n\n不管你是想分析病毒木马，还是去挖系统的安全漏洞，用它就对了。\n最牛的是，它完全免费，直接打破了同类商业软件上万元的垄断。\n\n它不仅支持各种处理器架构，还能让你自己写插件来扩展功能。\n搞安全和逆向的朋友，这绝对是必须收藏的宝藏神器！"
     },
     {
       "rank": 9,
@@ -155,7 +163,8 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "增强版 ChatGPT 克隆：支持智能体、MCP、技能、DeepSeek、Anthropic、AWS、OpenAI、Responses API、Azure、Groq、o1、GPT-5、Mistral、OpenRouter、Vertex AI、Gemini、Artifacts、模型切换、消息搜索、代码解释器、langchain、DALL·E-3、OpenAPI Actions、函数调用、安全的多用户鉴权与预设，开源可自托管。持续活跃中"
+      "description_zh": "增强版 ChatGPT 复刻项目：支持 Agent、MCP、技能、DeepSeek、Anthropic、AWS、OpenAI、Responses API、Azure、Groq、o1、GPT-5、Mistral、OpenRouter、Vertex AI、Gemini、Artifacts、AI 模型切换、消息搜索、代码解释器、LangChain、DALL-E-3、OpenAPI Actions、函数调用、安全多用户认证及预设，开源且支持自托管。项目活跃维护中。",
+      "script_zh": "这个项目是一个极其强大的开源大模型统一对话面板。\n\n你可以把它看作是能私有部署的超强版 ChatGPT。\n无论是 DeepSeek 还是 Claude，接上 API 就能在一个界面里随时切换。\n它还支持多用户权限管理，非常适合团队或者多人共享使用。\n\n最绝的是它把各种顶配功能全都集成了！\n代码解释器、动态渲染，甚至是最新的 MCP 协议它都支持。\n想免费搭一个安全全能的私有 AI 平台，选它就对了！"
     },
     {
       "rank": 10,
@@ -172,7 +181,8 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "面向智能体的源代码管理。可在同一处使用多个编码智能体、追踪它们的改动并统一检索"
+      "description_zh": "面向 Agent 的版本控制系统。在一处集中使用多个编程 Agent，追踪其变更并进行查询。",
+      "script_zh": "想让多个 AI 帮写代码又怕代码改乱？\n这个项目就是给 AI Agent 准备的版本控制工具。\n\n你可以用它统一调度不同的编程 Agent。\n它能把所有 AI 的代码修改记录得清清楚楚。\n想查某段修改历史，随时提问就能一键追溯。\n\n这相当于给 AI 开发者装了个专属 Git。\n直接解决了多 Agent 协作时的冲突痛点。\n未来 AI 编程越来越火，这种基础设施绝对值得关注！"
     },
     {
       "rank": 11,
@@ -189,7 +199,8 @@
       "period_label": "今日",
       "topics": [],
       "category": "移动端",
-      "description_zh": "ASC 是一款极速的 Android 反编译前端，专为智能体 / 移动端研究人员设计。"
+      "description_zh": "ASC 是一款专为 Agent 和移动研究人员设计的极速 Android 反编译器前端。",
+      "script_zh": "做安卓逆向或者搞 AI Agent 的朋友看过来！\n这个项目是一个速度极快的安卓反编译前端工具。\n\n它专门解决传统逆向分析太慢、效率低的问题。\n不管是安全专家手动查漏洞，还是给 AI 大模型当抓手，它都能瞬间吐出反编译结果。\n\n它最大的亮点就是速度快到起飞！\n更加难得的是，它天生就对 AI 友好，能让大模型自动分析 APK 变得轻松又高效。\n搞移动安全和自动化工具的，它绝对值得你点个关注。"
     },
     {
       "rank": 12,
@@ -206,7 +217,8 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "面向 AI 编程智能体的生产级工程技能。"
+      "description_zh": "面向 AI 编程智能体的生产级工程技能。",
+      "script_zh": "这个项目是专门给 AI 编程助手准备的生产级技能包。\n\n平时我们让 AI 写代码，它经常找不到文件或者乱运行命令。\n有了它，就能直接给 AI 装备上读写文件、搜索代码和用 Git 的专业能力。\n\n它最牛的地方在于安全和稳定，完全是工业级标准。\n想自己做个靠谱的 AI 程序员，用它能少走巨多弯路！"
     },
     {
       "rank": 13,
@@ -223,7 +235,8 @@
       "period_label": "今日",
       "topics": [],
       "category": "开发工具",
-      "description_zh": "下载 Udemy、Hotmart 课程，YouTube 视频、音乐与电子书——支持 1800+ 站点，无需终端。免费的跨平台开源桌面应用（Windows、macOS、Linux），内置课程播放器、PDF/EPUB 阅读器与音乐库，由 yt-dlp 驱动，文件保存在你自己的电脑上。"
+      "description_zh": "下载 Udemy、Hotmart 课程，YouTube 视频、音乐与电子书——支持 1800+ 站点，无需终端。免费的跨平台开源桌面应用（Windows、macOS、Linux），内置课程播放器、PDF/EPUB 阅读器与音乐库，由 yt-dlp 驱动，文件保存在你自己的电脑上。",
+      "script_zh": "这个项目是个全能型的媒体下载和播放工具。\n\n你不用再敲命令行了，粘贴链接就能下载网课、视频、音乐甚至电子书。\n它支持超过 1800 个网站，像 YouTube 和 Udemy 都能一键抓取。\n\n最爽的是它自带了播放器和阅读器，资源下载完就能直接看。\n底层用的是命令行神仙工具，但它包装成了好看的桌面软件，各大系统都能用。\n\n所有文件都保存在你自己电脑里，完全免费还保护隐私，非常值得试试！"
     },
     {
       "rank": 14,
@@ -240,7 +253,8 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "AI 智能体工具包：统一 LLM API、智能体循环、TUI 终端界面、编码智能体命令行"
+      "description_zh": "AI Agent 工具包：统一的 LLM API、Agent 循环、TUI 和编程 Agent CLI。",
+      "script_zh": "这个项目是一个超火的终端 AI Agent 工具包。\n它把各大模型的 API 统一封装成了命令行工具。\n\n让你直接在终端里就能让 AI 帮你写代码、跑任务。\n不管是复杂的 Agent 推理循环，还是终端交互界面，它全都帮你搞定了。\n\n斩获十万多星的开源爆款可不是开玩笑的。\n上手极快又省心，喜欢用命令行的朋友直接闭眼冲！"
     }
   ]
 }
