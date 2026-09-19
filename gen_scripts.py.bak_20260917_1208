@@ -25,7 +25,7 @@ CACHE_FILE = PROJECT / "script_cache.json"
 
 LLM_BASE_URL = os.environ.get("GHRANK_LLM_URL", "http://127.0.0.1:8317/v1/chat/completions")
 LLM_API_KEY = os.environ.get("GHRANK_LLM_KEY", "sk-123")
-LLM_MODEL = os.environ.get("GHRANK_LLM_MODEL", "gemini-3.6-flash-high")
+LLM_MODEL = os.environ.get("GHRANK_LLM_MODEL", "gemini-3.5-flash-low")
 TIMEOUT = 45
 USE_CACHE = "--no-cache" not in sys.argv
 
