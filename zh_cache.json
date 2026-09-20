@@ -218,5 +218,12 @@
   "tradesdontlie/tradingview-mcp": "AI 辅助的 TradingView 图表分析——将 Claude Code 连接至 TradingView 桌面端，实现个人工作流自动化。",
   "rustfs/rustfs": "RustFS 是一款开源、兼容 S3 的高性能对象存储系统，支持与 MinIO、Ceph 等其他 S3 兼容平台进行迁移和共存。",
   "supabase/supabase": "Postgres 开发平台。Supabase 为你提供专用的 Postgres 数据库，用于构建 Web、移动与 AI 应用。",
-  "ahmedkhaleel2004/gitdiagram": "为任意 GitHub 仓库提供免费、简单、快速的交互式图表。"
+  "ahmedkhaleel2004/gitdiagram": "为任意 GitHub 仓库提供免费、简单、快速的交互式图表。",
+  "trycua/cua": "通过开源驱动、跨操作系统集群以及用于训练、评估和数据生成的基准测试，规模化扩展 Computer-Use 2.0。",
+  "Open-Dev-Society/OpenStock": "OpenStock 是替代昂贵市场平台的开源选择。追踪实时价格、设置个性化预警并探索详细的公司洞察——开放构建，人人可用，永久免费。",
+  "higgsfield-ai/higgsfield": "具备容错能力且高度可扩展的 GPU 编排系统与机器学习框架，专为训练数十亿至数万亿参数的模型而设计。",
+  "docling-project/docling": "让你的文档为生成式 AI 做好准备",
+  "cloudflare/quiche": "🥧 QUIC 传输协议和 HTTP/3 的美味实现",
+  "ruanyf/weekly": "科技爱好者周刊，每周五发布",
+  "yynxxxxx/Codex-X": "跨平台的 OpenAI Codex 桌面端/CLI 可视化管理工具，支持 Provider/API 切换、会话同步、提示词注入、Skills/MCP 管理及 TOML 配置可视化。"
 }
