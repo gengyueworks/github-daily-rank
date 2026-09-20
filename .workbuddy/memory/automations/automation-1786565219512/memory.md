@@ -65,3 +65,11 @@
 - **部署**：remote `main` 当时本机 HEAD 与 origin 同步（0/0，并行 ...629 未抢先推送）。先本地 `git add -A && commit` 使 data 文件转为 tracked（规避未跟踪同名碰撞）→ 把 ...629 的未跟踪 memory 目录暂移 /tmp → `bash deploy_ghpages.sh` 顺过（rebase no-op，push main + gh-pages orphan 均成功）→ 还原 ...629 目录 → 重跑 `build.py` 复原本地被孤儿步骤清空的 `site/`。
 - **线上复测**：待人工/脚本复测；deploy 输出 DONE 链接。
 - **结论**：当日上榜 日榜 14 + 周榜 22；数据/翻译/站点已生成并推送 main，线上链接更新成功。
+
+## 2026-09-19 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`）成功。日榜 `data/daily/2026-09-19.json` = 17 个仓库；周榜 `data/weekly/2026-09-14.json`（本周一 0914）= 21 个仓库。
+- **翻译**：首轮 `translate_missing.py` 命中词表 + `zh_cache` 补 日 4 + 周 22(累计)；余 15 个新仓库（cloudflare/security-audit-skill、Tencent/BrowserSkill、TencentCloud/Octop、Fission-AI/OpenSpec、ankitects/anki、anthropics/knowledge-work-plugins、supermemoryai/supermemory、tradesdontlie/tradingview-mcp、rustfs/rustfs、supabase/supabase、coder/coder、ahmedkhaleel2004/gitdiagram、asciimoo/hister、home-assistant/core、danny-avila/LibreChat）人工校对中译写入 `MY_ZH` 并重跑，最终日榜 17/17、周榜 21/21 全部有 `description_zh`。
+- **生成**：`build.py` 重建 `site/daily/2026-09-19.html`、`site/weekly/2026-09-14.html`、`site/index.html`、`site/classics/index.html`（ainews 双语风格）。
+- **部署**：remote `main` 当时停在 5c12928（并行 ...629 本日尚未推送）。预处理——把并行自动化 `...629` 的未跟踪 memory 目录与过期半翻译（11/21）的 `data/daily/2026-09-17.json` 暂移 `/tmp/ghrank_backup`（避免推送内部 memory、避免半翻译数据污染公开仓库及未来同名碰撞）→ 本地 `git add -A && commit`（5f8ff6c，使今日 data 转为 tracked，规避未来未跟踪同名碰撞）→ `bash deploy_ghpages.sh` 顺过（rebase no-op，`git add -A` 无新增，push main + gh-pages orphan 均成功）→ 还原 ...629 目录与 09-17 文件 → 重跑 `build.py` 复原被孤儿步骤清空的 `site/`。
+- **线上复测**：首测即 index / daily / weekly 三页均 200，无传播延迟；`origin/main` 已同步本地 HEAD（d2f5cced3）。
+- **结论**：当日上榜 日榜 17 + 周榜 21；数据/翻译/站点已生成并推送 main，线上链接更新成功（200）。

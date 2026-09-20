@@ -188,6 +188,14 @@ MY_ZH = {
     "asciimoo/hister": "属于你自己的搜索引擎。",
     "home-assistant/core": "🏡 以本地控制与隐私为先的开源智能家居自动化平台。",
     "danny-avila/LibreChat": "增强版 ChatGPT 开源克隆：内置智能体、MCP、Skills、DeepSeek、Anthropic、AWS、OpenAI、Responses API、Azure、Groq、o1、GPT-5、Mistral、OpenRouter、Vertex AI、Gemini、Artifacts、AI 模型切换、消息搜索、代码解释器、langchain、DALL-E-3、OpenAPI Actions、函数调用、安全多用户鉴权、预设等功能，支持自托管，持续活跃维护。",
+    # 2026-09-20 日榜新增
+    "trycua/cua": "以开源驱动、跨操作系统机群与基准测试，规模化推进 computer-use 2.0 的训练、评估与数据生成。",
+    "Open-Dev-Society/OpenStock": "OpenStock 是昂贵行情平台的开源替代品：追踪实时价格、设置个性化提醒、查看详尽的公司洞察——开放构建、人人可用、永久免费。",
+    "higgsfield-ai/higgsfield": "容错且高度可扩展的 GPU 编排引擎，以及专为训练数十亿至数万亿参数模型而设计的机器学习框架。",
+    "docling-project/docling": "让你的文档为生成式 AI 做好准备。",
+    "cloudflare/quiche": "🥧 QUIC 传输协议与 HTTP/3 的开源实现。",
+    "ruanyf/weekly": "科技爱好者周刊，每周五发布",
+    "yynxxxxx/Codex-X": "OpenAI Codex 桌面端 / CLI 的可视化管理工具，支持 Provider / API 切换、会话同步、提示词注入、Skills / MCP 管理与 TOML 配置可视化，跨平台可用。",
 }
 
 
