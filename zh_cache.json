@@ -203,11 +203,11 @@
   "Tencent/BrowserSkill": "让 AI Agent 在不打扰你工作的情况下使用你已登录的真实浏览器。提供 CLI + 插件，支持任何具备 Shell 能力的 AI Agent 实现浏览器自动化。",
   "anthropics/knowledge-work-plugins": "主要面向知识工作者、用于在 Claude Cowork 中使用的开源插件仓库。",
   "abue-ammar/tinycast": "Tinycast —— 一款小巧、完全原生的 macOS 启动器，支持快捷键与剪贴板历史记录。",
-  "cilium/cilium": "基于 eBPF 的网络、安全与可观测性",
+  "cilium/cilium": "基于 eBPF 的网络、安全与可观测性方案。",
   "jamiepine/voicebox": "开源 AI 语音工作室。克隆、听写、创作。",
   "roboflow/supervision": "为您编写可复用的计算机视觉工具。💜",
   "TencentCloud/Octop": "更智能的自托管 AI 助手——支持多用户、多智能体。",
-  "cline/cline": "可作为 SDK、IDE 插件或 CLI 助手的自主编程智能体。",
+  "cline/cline": "以 SDK、IDE 扩展或命令行助手形式提供的自主编程智能体。",
   "coder/coder": "面向开发者及其智能体的安全开发环境。",
   "OpenWhispr/openwhispr": "支持本地（Nvidia Parakeet/Whisper）与云端模型（BYOK）的语音转文字听写应用。隐私优先，支持跨平台。",
   "home-assistant/core": "🏡 以本地控制与隐私为先的开源智能家居自动化平台。",
@@ -228,13 +228,9 @@
   "docling-project/docling": "让你的文档为生成式 AI 做好准备。",
   "cloudflare/quiche": "🥧 QUIC 传输协议与 HTTP/3 的开源实现。",
   "ruanyf/weekly": "科技爱好者周刊，每周五发布",
-<<<<<<< Updated upstream
-  "yynxxxxx/Codex-X": "OpenAI Codex 桌面端 / CLI 的可视化管理工具，支持 Provider / API 切换、会话同步、提示词注入、Skills / MCP 管理与 TOML 配置可视化，跨平台可用。"
-=======
-  "yynxxxxx/Codex-X": "跨平台的 OpenAI Codex 桌面端/CLI 可视化管理工具，支持 Provider/API 切换、会话同步、提示词注入、Skills/MCP 管理及 TOML 配置可视化。",
-  "BuilderIO/agent-native": "用于构建智能体应用的框架",
-  "paperless-ngx/paperless-ngx": "社区支持的增强型文档管理系统：扫描、索引并归档你的所有文档。",
-  "mihail911/modern-software-dev-assignments": "斯坦福大学 CS146S《现代软件开发》课程作业（2025/2026年秋季）",
-  "vercel-labs/json-render": "生成式 UI 框架"
->>>>>>> Stashed changes
+  "yynxxxxx/Codex-X": "OpenAI Codex 桌面端 / CLI 的可视化管理工具，支持 Provider / API 切换、会话同步、提示词注入、Skills / MCP 管理与 TOML 配置可视化，跨平台可用。",
+  "BuilderIO/agent-native": "用于构建智能体应用的框架。",
+  "paperless-ngx/paperless-ngx": "由社区维护、功能强化的文档管理系统：扫描、索引并归档你的所有文档。",
+  "mihail911/modern-software-dev-assignments": "斯坦福大学 CS146S《现代软件开发》课程（2025/2026 年秋季）的课后作业。",
+  "vercel-labs/json-render": "生成式 UI 框架。"
 }

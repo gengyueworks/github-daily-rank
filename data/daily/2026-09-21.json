@@ -1,7 +1,7 @@
 {
   "since": "daily",
   "date": "2026-09-21",
-  "fetched_at": "2026-09-21T09:00:09",
+  "fetched_at": "2026-09-21T09:07:27",
   "count": 13,
   "repos": [
     {
@@ -13,14 +13,13 @@
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "language": "JavaScript",
       "language_color": "#f1e05a",
-      "stars": 263742,
-      "forks": 39456,
+      "stars": 263744,
+      "forks": 39457,
       "period_stars": 826,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "智能体运行框架性能优化系统：为 Claude Code、Codex、OpenCode、Cursor 等提供技能、本能、记忆、安全与「研究优先」的开发能力。",
-      "script_zh": "写代码用 Cursor 或者 Claude Code 的朋友，一定要看看这个项目。\n\n它是一个专门给 AI 智能体做性能超强优化的系统。\n\n简单来说，它能给你的 AI 助手装上更强的记忆、直觉和安全防线。\n\n不管是写代码还是做研究，它都能让 AI 反应更快、更聪明。\n\n最厉害的是，它在 GitHub 上已经拿到了超过二十四万颗星！\n\n想让你的 AI 工具好用十倍，闭眼冲它就对了！"
+      "description_zh": "智能体运行框架性能优化系统：为 Claude Code、Codex、OpenCode、Cursor 等提供技能、本能、记忆、安全与「研究优先」的开发能力。"
     },
     {
       "rank": 2,
@@ -31,14 +30,13 @@
       "description": "A framework for building agentic apps",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 5215,
+      "stars": 5220,
       "forks": 485,
       "period_stars": 98,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "用于构建智能体应用的框架",
-      "script_zh": "这个项目是一个专门用来开发 AI Agent 原生应用的开源框架。\n简单来说，它能让你的软件不仅能陪聊天，还能直接上手帮用户干活操作界面。\n\n以前让 AI 控制页面逻辑巨麻烦，现在用它几行代码就能搞定。\n它把大模型和前端 UI 无缝衔接了起来，开发效率直接翻倍。\n\n这种真正把 AI 当成核心驱动力的开发模式，绝对是接下来的大趋势。\n想要做下一代 Agent 应用的朋友，赶紧先加个收藏吧！"
+      "description_zh": "用于构建智能体应用的框架。"
     },
     {
       "rank": 3,
@@ -49,14 +47,13 @@
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
       "language_color": "#f1e05a",
-      "stars": 18029,
-      "forks": 999,
+      "stars": 18035,
+      "forks": 1000,
       "period_stars": 2428,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "用于多阶段安全审计的编程 Agent 技能，提供可独立验证且机器可读的审计结果。",
-      "script_zh": "这个项目是 Cloudflare 打造的 AI 安全审计插件。\n它能让你的 AI 助手像安全专家一样对代码做多轮排查。\n\n平时写代码最怕隐患，传统审计慢，AI 审计又怕幻觉。\n它不仅能自动扫描，还能独立二次验证，拒绝乱报误报。\n\n报告全都是机器可读的标准格式，能直接无缝接入自动化流水线。\n大厂背书加万星人气，绝对是 AI 开发必备的安全神器！"
+      "description_zh": "一个面向编程智能体的技能，用于多阶段安全审计，产出经独立核验、机器可读的审计发现。"
     },
     {
       "rank": 4,
@@ -67,14 +64,13 @@
       "description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.",
       "language": "HTML",
       "language_color": "#e34c26",
-      "stars": 25151,
-      "forks": 1729,
+      "stars": 25153,
+      "forks": 1730,
       "period_stars": 1018,
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "通过开源驱动、跨操作系统集群以及用于训练、评估和数据生成的基准测试，规模化扩展 Computer-Use 2.0。",
-      "script_zh": "这个项目叫 CUA，是一个让 AI 自动操控电脑的开源工具。\n\n想让 AI 帮你控鼠标按键盘，以前很难跨系统批量调度。\n它提供了一套跨平台驱动，能让你批量控制不同系统的电脑。\n不管是训练自动化 Agent，还是生成测试数据，它都能搞定。\n\n最棒的是，它还自带了完整的训练和评估基准。\n全开源高并发，直接把 AI 操控电脑带进了 2.0 时代。\n如果你在关注 AI 自动化，这个两万多星的项目绝对值得看！"
+      "description_zh": "以开源驱动、跨操作系统机群与基准测试，规模化推进 computer-use 2.0 的训练、评估与数据生成。"
     },
     {
       "rank": 5,
@@ -85,13 +81,12 @@
       "description": "",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 35368,
+      "stars": 35370,
       "forks": 5248,
       "period_stars": 260,
       "period_label": "今日",
       "topics": [],
-      "category": "其他",
-      "script_zh": "这个项目是 Anthropic 官方专门为金融行业打造的 AI 实战指南。\n它手把手教你如何用 Claude 搞定复杂的金融业务。\n\n无论是做财报分析、风险评估，还是合规审查，它都给出了可以直接拿来用的范例和提示词。\n这直接帮开发人员省去了从零摸索的大把时间。\n\n最赞的是这些案例全来自一线商业场景，实用度拉满。\n想在金融领域落地大模型，关注它就对了！"
+      "category": "其他"
     },
     {
       "rank": 6,
@@ -102,14 +97,13 @@
       "description": "A community-supported supercharged document management system: scan, index and archive all your documents",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 45569,
+      "stars": 45573,
       "forks": 3146,
       "period_stars": 57,
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "社区支持的增强型文档管理系统：扫描、索引并归档你的所有文档。",
-      "script_zh": "这个项目是一个能把你所有纸质文件彻底数字化的开源系统。\n无论发票、合同还是说明书，拍照上传它就能自动进行 OCR 文本识别。\n\n它能自动打标签建立索引，甚至还能帮你从邮箱里定时抓取账单。\n以后找几年前的旧发票，输入关键词就能在一秒钟内精准弹出。\n\n这种把堆成山的纸张变成个人搜索引擎的体验真的太爽了！\n四万多星的硬核实力，绝对是搞无纸化的终极神器。"
+      "description_zh": "由社区维护、功能强化的文档管理系统：扫描、索引并归档你的所有文档。"
     },
     {
       "rank": 7,
@@ -120,14 +114,13 @@
       "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 147126,
+      "stars": 147130,
       "forks": 24064,
       "period_stars": 419,
       "period_label": "今日",
       "topics": [],
       "category": "开发工具",
-      "description_zh": "Claude Code 是一款活在终端里的智能体式编程工具，能理解你的代码库，并通过自然语言指令执行日常任务、讲解复杂代码、处理 git 流程，帮你更快写代码。",
-      "script_zh": "这个项目是直接住在你终端里的 AI 编程助手。\n\n你只需要用大白话下指令，它就能读懂你的整个代码库。\n\n不管是写日常代码、解释复杂逻辑，还是自动帮你提交 Git，它全都能搞定。\n\n最厉害的是，它是 Anthropic 官方出的，智商在线而且反应极快。\n\n你根本不用在编辑器和命令行之间来回切换，直接在终端里就能把活干完。\n\n难怪刚上线就狂揽了十四万颗星，赶紧去试试吧！"
+      "description_zh": "Claude Code 是一款活在终端里的智能体式编程工具，能理解你的代码库，并通过自然语言指令执行日常任务、讲解复杂代码、处理 git 流程，帮你更快写代码。"
     },
     {
       "rank": 8,
@@ -138,14 +131,13 @@
       "description": "Assignments for CS146S: The Modern Software Dev (Stanford University Fall 2026/2025)",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 4555,
+      "stars": 4557,
       "forks": 1010,
       "period_stars": 172,
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "斯坦福大学 CS146S《现代软件开发》课程作业（2025/2026年秋季）",
-      "script_zh": "这是一个来自斯坦福大学的现代软件开发实战作业库。\n它把名校最新的教学内容，打包成了可以直接练手的实战项目。\n\n如果你自学找不到好项目，或者想补齐工业界短板，跟着它练就对了。\n它能带你体验完整且标准的现代软件开发全流程。\n\n这个项目最赞的是绝不教过时理论，完全紧贴当下真实开发场景。\n里面还融入了现代工具链和 AI 协作等最前沿的实战技巧。\n想提升工程能力的开发者，非常值得抽空刷一遍！"
+      "description_zh": "斯坦福大学 CS146S《现代软件开发》课程（2025/2026 年秋季）的课后作业。"
     },
     {
       "rank": 9,
@@ -156,14 +148,13 @@
       "description": "Fault-tolerant, highly scalable GPU orchestration, and a machine learning framework designed for training models with billions to trillions of parameters",
       "language": "Jupyter Notebook",
       "language_color": "#DA5B0B",
-      "stars": 5381,
+      "stars": 5384,
       "forks": 956,
       "period_stars": 465,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "具备容错能力且高度可扩展的 GPU 编排系统与机器学习框架，专为训练数十亿至数万亿参数的模型而设计。",
-      "script_zh": "这个项目是一个专门用来训练万亿级超大模型的 GPU 调度框架。\n它能帮你轻松管好成千上万张显卡。\n\n平常训大模型最怕显卡死机导致崩溃吧？\n它自带超强的容错机制，哪怕有显卡挂掉也能自动恢复。\n\n而且它的扩展性极强，集群规模越大优势越明显。\n想要高效利用 GPU 算力，关注它准没错！"
+      "description_zh": "容错且高度可扩展的 GPU 编排引擎，以及专为训练数十亿至数万亿参数模型而设计的机器学习框架。"
     },
     {
       "rank": 10,
@@ -174,14 +165,13 @@
       "description": "OpenStock is an open-source alternative to expensive market platforms. Track real-time prices, set personalized alerts, and explore detailed company insights — built openly, for everyone, forever free.",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 16826,
+      "stars": 16829,
       "forks": 2133,
       "period_stars": 755,
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "OpenStock 是替代昂贵市场平台的开源选择。追踪实时价格、设置个性化预警并探索详细的公司洞察——开放构建，人人可用，永久免费。",
-      "script_zh": "觉得那些动辄上千块的金融平台太贵吗？\n这个项目就是专为打破数据垄断打造的开源替代品。\n\n用它你能随时追踪实时股价，设置个性化涨跌提醒。\n它还能帮你深入挖掘公司财务和深度行情洞察。\n\n最酷的是它完全开源，并且承诺永久免费。\n零成本就能获得顶级工具的体验，赶紧关注起来吧！"
+      "description_zh": "OpenStock 是昂贵行情平台的开源替代品：追踪实时价格、设置个性化提醒、查看详尽的公司洞察——开放构建、人人可用、永久免费。"
     },
     {
       "rank": 11,
@@ -192,14 +182,13 @@
       "description": "Secure environments for developers and their agents",
       "language": "Go",
       "language_color": "#00ADD8",
-      "stars": 16059,
-      "forks": 1541,
+      "stars": 16060,
+      "forks": 1542,
       "period_stars": 379,
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "为开发者及其智能体提供安全的环境",
-      "script_zh": "这是一个能让你在自己服务器上，一键搭建远程开发环境的开源项目。\n简而言之，它把开发环境彻底搬到了云端。\n\n你再也不用在本地折腾各种复杂的依赖和配置了。\n无论是程序员还是 AI 编程助手，都能在它提供的安全沙盒里流畅写代码。\n\n它最大的亮点是完全基于 Terraform，能用代码灵活定义一切环境。\n不仅代码不落本地更安全，还能让新成员秒级开工！"
+      "description_zh": "面向开发者及其智能体的安全开发环境。"
     },
     {
       "rank": 12,
@@ -210,14 +199,13 @@
       "description": "The Generative UI framework",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 17310,
+      "stars": 17316,
       "forks": 919,
       "period_stars": 291,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "生成式 UI 框架",
-      "script_zh": "这个项目是 Vercel 推出的生成式 UI 框架。\n它能把 AI 输出的 JSON 数据，直接实时渲染成可交互的前端界面！\n\n以前 AI 只能吐出纯文本，现在有了它，大模型就能随时给用户变出动态 UI。\n它的厉害之处在于彻底解决了 AI 乱写代码的不可控问题。\n\n开发者只需预设组件，AI 就能像搭积木一样精准生成界面。\n目前它在 GitHub 上极其火爆，绝对是做 AI 应用的必看项目！"
+      "description_zh": "生成式 UI 框架。"
     },
     {
       "rank": 13,
@@ -228,14 +216,13 @@
       "description": "Production-grade engineering skills for AI coding agents.",
       "language": "JavaScript",
       "language_color": "#f1e05a",
-      "stars": 97696,
-      "forks": 10296,
+      "stars": 97700,
+      "forks": 10295,
       "period_stars": 736,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "面向 AI 编程智能体的生产级工程技能。",
-      "script_zh": "这个项目是专门给 AI 编程助手准备的生产级技能包。\n\n平时我们让 AI 写代码，它经常找不到文件或者乱运行命令。\n有了它，就能直接给 AI 装备上读写文件、搜索代码和用 Git 的专业能力。\n\n它最牛的地方在于安全和稳定，完全是工业级标准。\n想自己做个靠谱的 AI 程序员，用它能少走巨多弯路！"
+      "description_zh": "面向 AI 编程智能体的生产级工程技能。"
     }
   ]
 }
