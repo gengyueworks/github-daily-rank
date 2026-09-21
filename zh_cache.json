@@ -228,5 +228,13 @@
   "docling-project/docling": "让你的文档为生成式 AI 做好准备。",
   "cloudflare/quiche": "🥧 QUIC 传输协议与 HTTP/3 的开源实现。",
   "ruanyf/weekly": "科技爱好者周刊，每周五发布",
+<<<<<<< Updated upstream
   "yynxxxxx/Codex-X": "OpenAI Codex 桌面端 / CLI 的可视化管理工具，支持 Provider / API 切换、会话同步、提示词注入、Skills / MCP 管理与 TOML 配置可视化，跨平台可用。"
+=======
+  "yynxxxxx/Codex-X": "跨平台的 OpenAI Codex 桌面端/CLI 可视化管理工具，支持 Provider/API 切换、会话同步、提示词注入、Skills/MCP 管理及 TOML 配置可视化。",
+  "BuilderIO/agent-native": "用于构建智能体应用的框架",
+  "paperless-ngx/paperless-ngx": "社区支持的增强型文档管理系统：扫描、索引并归档你的所有文档。",
+  "mihail911/modern-software-dev-assignments": "斯坦福大学 CS146S《现代软件开发》课程作业（2025/2026年秋季）",
+  "vercel-labs/json-render": "生成式 UI 框架"
+>>>>>>> Stashed changes
 }
