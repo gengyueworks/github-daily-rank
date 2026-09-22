@@ -19,7 +19,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "前端 / Web",
-      "description_zh": "一款运行在浏览器中的间谍卫星模拟器，但数据完全真实。在逼真的 3D 地球上实时呈现开源空间情报。",
+      "description_zh": "一款在浏览器中运行的间谍卫星模拟器，只不过数据完全真实。基于逼真 3D 地球呈现实时开源空间情报。",
       "script_zh": "这个项目是一个运行在浏览器里的间谍卫星模拟器。\n\n它能让你用上帝视角，直接俯瞰一个超逼真的3D地球。\n\n\n只要打开网页，你就能实时追踪全球的各种真实事件。\n\n不管是看灾害现场还是分析地理情报，用它都能一键搞定。\n\n\n最酷的是，它用的全都是真实的开源数据。\n\n零门槛体验科幻电影里的特工视角，这项目绝对值得你点个收藏！"
     },
     {
@@ -37,7 +37,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "开源 AI 销售操作系统 —— 内置原生 AI Agent 并整合 WhatsApp (WAHA) 的自托管 CRM。为所有通过聊天销售的企业提供 Kommo、Octadesk 和 Intercom 的开源替代方案。支持 MCP、多租户并符合 LGPD。",
+      "description_zh": "开源 AI 销售操作系统：内置原生 AI Agent 与 WhatsApp (WAHA) 的自托管 CRM。Kommo、Octadesk 和 Intercom 的开源替代方案，专为通过聊天进行销售的企业打造。支持 MCP、多租户并符合 LGPD 规范。",
       "script_zh": "这个项目是一个专为聊单销售打造的开源 AI 销售系统。\n只要你是靠 WhatsApp 聊天卖货，它就能把客服和销售全盘接管。\n\n它内置了原生 AI 智能体，能像真实销售一样自动回复客户、跟进订单。\n相比昂贵的商业 CRM，它支持完全私有化部署，既省钱又能保障数据安全。\n\n它还提前兼容了最新的 MCP 协议，扩展能力直接拉满。\n想用 AI 自动聊天卖货，选它就对了！"
     },
     {
@@ -55,7 +55,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "提取自 Anthropic (Claude Fable 5.1、Opus 5、Claude Design、Claude Code)、OpenAI (ChatGPT GPT-6-Astra、Codex)、Google (Gemini 3.8 Flash、3.1 Pro、Antigravity)、xAI (Grok、Grok Bot) 以及 Cursor、Kimi 等模型的系统提示词。定期更新。",
+      "description_zh": "提取自 Anthropic（Claude Fable 5.1、Opus 5、Claude Design、Claude Code）、OpenAI（ChatGPT GPT-6-Astra、Codex）、Google（Gemini 3.8 Flash、3.1 Pro、Antigravity）、xAI（Grok、Grok Bot）、Cursor、Kimi 等 AI 模型的系统提示词！持续更新。",
       "script_zh": "这个项目是一个收集各大顶尖 AI 底层系统提示词的宝藏库。\n它把 Claude、ChatGPT 还有 Cursor 的官方指令全汇总到了一起。\n\n想知道大厂是怎么约束和引导 AI 的，直接翻它就行。\n不管做提示词优化还是开发 AI 应用，都能拿来当权威参考。\n\n它的亮点就是覆盖全而且更新极快，火爆模型一出就能同步。\n照着这些顶级套路直接抄作业，你的 Prompt 水平瞬间就能拉满！"
     },
     {
@@ -108,7 +108,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "🤖📐专为数学建模设计的 Agent 与技能，可全自动完成数学建模并生成一份能直接提交的完整论文。",
+      "description_zh": "🤖📐 专为数学建模设计的 Agent 及 Skill，自动完成数学建模全流程，并生成可直接提交的完整论文。",
       "script_zh": "这是一个专为数学建模打造的 AI 工具。\n\n你只要输入题目，它就能自动搞定建模、跑代码和数据分析。\n最绝的是，它还能直接生成一份排版规范、能直接提交的完整论文。\n直接帮参赛党省下了三天三夜的通宵时间。\n\n这个项目最牛的地方，在于它内置了全套建模专属技能。\n小白用它能快速救急，高手用它更是效率翻倍。\n目前它在 GitHub 上已经收获了近五千颗星，绝对值得赶紧收藏！"
     },
     {
@@ -126,7 +126,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "面向新闻组和 BitTorrent 用户的智能 PVR 工具。",
+      "description_zh": "面向新闻组和 BitTorrent 用户的智能 PVR。",
       "script_zh": "这个项目是一个超强悍的追剧自动化工具。\n你只要把想看的电视剧搜出来加进去，它就会在后台全网监测更新。\n\n一旦有新剧上线，它能立马调用下载器帮你全自动抓取。\n完全不用你每天手动找资源，甚至还能自动把文件整理得井井有条！\n\n最绝的是，如果之后出了更高清的版本，它还会自动帮你下载替换升级。\n一次配置就能彻底解放双手，绝对是搭建个人家庭影院的必装神仙软件！"
     },
     {
@@ -144,7 +144,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "开源 AI 交易 Agent，可在 Polymarket、Kalshi、币安、Hyperliquid、Solana DEX 及 5 条 EVM 链等 1000+ 个市场中自主运行。自动寻找交易优势、即时执行并在你入睡时管理风险。内置用于机器间支付的 Agent 商业协议。支持自托管，基于 Claude 构建。",
+      "description_zh": "开源 AI 交易 Agent，可在 Polymarket、Kalshi、币安、Hyperliquid、Solana DEX 及 5 条 EVM 链等 1000+ 个市场中自主运行。自动寻找交易机会、即时执行，并在你休息时全天候管理风险。提供用于机器间支付的 Agent 商业协议。支持自托管，基于 Claude 构建。",
       "script_zh": "这个项目是一个基于 Claude 的全自动 AI 交易 Agent。\n它能在你睡觉时自动扫描上千个市场，瞬间捕捉交易机会并控制风险。\n\n无论是 Polymarket 预测市场，还是币安、Solana 等多条公链，它都能全盘接管。\n你再也不用熬夜看盘，彻底解放双手。\n\n亮点是它完全开源且支持本地自部署，资产和私钥全由你自己掌控。\n它还支持机器对机器的支付协议，绝对是目前最酷的 AI 交易黑科技。"
     },
     {
@@ -180,7 +180,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "100+ 个 AI 智能体、智能体技能与 RAG 应用 —— 免费开源。",
+      "description_zh": "100+ 个 AI 智能体、智能体技能与 RAG 应用 —— 免费且开源。",
       "script_zh": "这个项目是一个超火的开源 AI 应用大宝库。\n它里面打包了上百个现成的 AI 智能体和检索增强应用。\n\n不管你想做个自动写代码的助手，还是能读懂海量文档的客服，直接来这里抄作业就行。\n最牛的是，它每个案例都配了完整的保姆级源码。\n\n你不需要从零摸索，照着跑就能直接落地。\n难怪它在 GitHub 上拿下了十几万颗星，简直是快速搞定 AI 应用的终极捷径！"
     },
     {
@@ -198,7 +198,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "开发工具",
-      "description_zh": "网络协议栈研究工具。支持可插拔传输的 TCP 隧道。",
+      "description_zh": "网络协议栈研究工具，支持可插拔传输机制的 TCP 隧道。",
       "script_zh": "这个项目是一个超级灵活的 TCP 隧道和网络研究工具。\n它能帮你在复杂网络里轻松转发流量，甚至自由切换传输方式。\n\n无论是做网络调试，还是研究底层协议，用它搭建通道都特别方便。\n它相当于给你提供了一套能自由换零部件的管道系统。\n\n它最厉害的地方在于支持可插拔传输模块！\n你可以像搭积木一样给流量穿上各种伪装外衣。\n架构干净又好扩展，绝对是搞网络研究的宝藏工具！"
     },
     {
@@ -234,7 +234,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "安全",
-      "description_zh": "Claude-Red 是专为 Claude 技能系统打造的攻击性安全技能精选库。每个技能均由结构化的 SKILL.md 文件构成，可为 Claude 提供针对特定攻击面的专家级方法论——涵盖从 SQL 注入到 Shellcode、EDR 绕过及漏洞利用开发等各个领域。",
+      "description_zh": "Claude-Red 是一个专为 Claude 技能系统打造的进攻性安全技能库。每个技能均为结构化的 SKILL.md 文件，能够赋予 Claude 针对特定攻击面的专家级方法论——涵盖从 SQL 注入到 Shellcode 编写、EDR 绕过以及漏洞利用开发等诸多领域。",
       "script_zh": "这个项目是一个专门给 Claude 准备的网络安全红队技能库。\n它能把渗透测试和网络攻击的专业方法论打包喂给 AI。\n\n从常见的 SQL 注入，到高级的 EDR 绕过和漏洞利用，它全都能搞定。\n它的亮点在于帮安全人员省去了复杂的 Prompt 调试。\n\n只要导入技能文件，Claude 就能瞬间拥有顶尖黑客的实战思路。\n这种把大模型变成顶级安全工具的项目，绝对值得你关注！"
     },
     {
@@ -270,7 +270,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "Worktrunk 是一款用于 Git worktree 管理的命令行工具，专为 AI agent 并行工作流设计。",
+      "description_zh": "Worktrunk 是一款专为并行 AI Agent 工作流设计的 Git worktree 管理命令行工具。",
       "script_zh": "这个项目是一个专门管理 Git worktree 的命令行工具。\n简单来说，它能让你在同一个仓库里同时开多个目录并行干活。\n\n你是不是经常遇到 AI 正在帮你写代码，你又想开新分支改 Bug？\n用它就能给不同的 AI 任务分配独立的工作区，互不干扰地同时推进。\n\n最亮点在于它专门为并行 AI 工作流做了极致优化。\n命令行极其简洁，彻底帮你摆脱频繁切分支和 stash 代码的烦恼。\n想玩转多 AI 协同编程，它绝对是值得关注的效率神器！"
     },
     {
@@ -288,7 +288,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "能够执行复杂渗透测试任务的完全自主 AI 智能体系统",
+      "description_zh": "能够执行复杂渗透测试任务的全自主 AI 智能体系统",
       "script_zh": "这个项目是一个能自动搞定复杂渗透测试的 AI 黑客系统。\n你给它一个目标，它就能像安全专家一样自动搜集信息并扫描漏洞。\n\n以前需要安全团队折腾几天的排查，现在交给它就能全程无人值守跑完。\n最猛的是它不是死板地跑脚本，而是真的会根据反馈自己思考并调整策略！\n\n它把大模型和专业安全工具结合得非常硬核。\n想要体验 AI 自动化网络攻防的朋友，赶紧关注它！"
     }
   ]

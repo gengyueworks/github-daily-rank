@@ -73,7 +73,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "其他",
-      "description_zh": "⚡️基于 Rust 🦀 编写的原生、本地优先罗技 Options+ 替代方案——支持通过 HID++ 协议重映射按键、调节 DPI 和 SmartShift。无需账号，无数据采集。",
+      "description_zh": "⚡️用 Rust 🦀 编写的原生、本地优先的罗技 Options+ 替代工具 —— 支持通过 HID++ 重映射按键、调节 DPI 和 SmartShift。无需账号，无遥测。",
       "script_zh": "罗技官方的驱动软件是不是又臃肿又难用？\n\n这个项目就是它的开源平替。\n\n它用Rust语言重写了鼠标控制逻辑。\n\n你可以用它轻松改键、调DPI，还能设置滚轮的模式切换。\n\n最牛的是它完全运行在本地。\n\n不需要你注册账号，也没有任何烦人的后台隐私收集。\n\n内存占用极低，即开即用，简直是纯净党和老设备的救星！"
     },
     {
@@ -109,7 +109,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "面向 AI Agent 的自进化上下文数据库，统一 Agent 记忆、知识 RAG 与技能。",
+      "description_zh": "面向 AI 智能体的自进化上下文数据库，融合智能体记忆、知识 RAG 与技能。",
       "script_zh": "这个项目是一个能帮 AI Agent 实现自我进化的上下文数据库。\n\n它把 Agent 的记忆、知识库检索还有技能调用，全部装进了一个盒子里。\n有了它，你的 AI 助手就不会聊着聊着就断片，更不会找不到需要的工具。\n\n最厉害的是它不仅能统一管理，还能像人类一样在交互中自我进化，越用越聪明。\n三万多星的超高人气，绝对是今年开发智能体必须要关注的神器！"
     },
     {
@@ -145,7 +145,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "专为 Apple 芯片打造的大模型推理服务器，支持连续批处理与 SSD 缓存，可通过 macOS 菜单栏管理。",
+      "description_zh": "专为 Apple Silicon 打造的 LLM 推理服务器，支持连续批处理与 SSD 缓存，可直接从 macOS 菜单栏管理。",
       "script_zh": "这个项目能让你直接在 Mac 菜单栏上一键运行本地大模型。\n\n就算你的 Mac 内存不够大，它也能用 SSD 缓存技术帮你把超大模型跑起来。\n加上专门针对苹果芯片的优化，不仅运行速度极快，还非常省电。\n\n你只需要在菜单栏点一下就能随时调用 AI，完全不占屏幕空间。\n两万多星的超高人气，绝对是 Mac 用户不容错过的本地神器！"
     },
     {
@@ -163,7 +163,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "其他",
-      "description_zh": "适用于 Claude Cowork 和 Claude Code 的社区插件市场。本仓库为只读镜像，提交插件请前往 clau.de/plugin-directory-submission。",
+      "description_zh": "Claude Cowork 和 Claude Code 的社区插件市场。只读镜像——提交插件请访问 clau.de/plugin-directory-submission。",
       "script_zh": "这个项目是给 Claude Code 和 Claude Cowork 专门打造的社区插件库。\n\n简单来说，它就像是 Claude 的官方应用商店。\n不管是想让 AI 直接读写本地文件，还是连接各种第三方工具，用它都能一键搞定。\n\n最棒的是，这里所有的插件都由开源社区共同维护。\n不仅安全靠谱，而且每天都有大神在里面更新各种好玩的骚操作。\n经常用 Claude 搞开发的朋友，这个项目闭眼收藏就对了！"
     },
     {
@@ -199,7 +199,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "Apache Maka（孵化中）是一个本地优先的 AI Agent 工作区。模型消息、工具调用、工具结果、权限决策和终止事件均被记录为仅追加日志。",
+      "description_zh": "Apache Maka（孵化中）是一个本地优先的 AI Agent 工作区。模型消息、工具调用、工具结果、权限决策和终止事件均以仅追加日志的形式记录。",
       "script_zh": "这个项目是一个本地优先的 AI Agent 工作空间。\n简单来说，它就是你本地的 AI 助手大本营。\n\n平时用 AI 智能体最怕它瞎操作或者泄露隐私？\n它把 AI 的对话、调用工具甚至权限决定，全都记在一条只增不减的日志里。\n\n这就意味着你拥有了绝对的掌控权。\n不仅数据安全，AI 做的每一步你都能看得清清楚楚，调试起来简直太省心了。"
     }
   ]
