@@ -213,5 +213,11 @@
   "PrimeIntellect-ai/prime-agent": "用于编程工作流与长周期自主任务的自我进化 RLM 智能体。",
   "OpenWhispr/openwhispr": "支持本地（Nvidia Parakeet/Whisper）及云端模型（自带 API 密钥）的语音转文字听写应用。隐私优先，支持跨平台。",
   "petergyang/no-ai-slop": "从任意文本中清除 20 多种 AI 废话模式。",
-  "home-assistant/core": "🏡 以本地控制和隐私至上的开源家庭自动化系统。"
+  "home-assistant/core": "🏡 以本地控制和隐私至上的开源家庭自动化系统。",
+  "agent-substrate/substrate": "Agent Substrate 核心系统",
+  "dream-num/univer": "面向 AI Agent 的办公底座 —— 在单一运行时中集成电子表格、文档、幻灯片、画布、关系表和 PDF。",
+  "davila7/claude-code-templates": "用于配置和监控 Claude Code 的 CLI 工具",
+  "google/ax": "谷歌开源智能体编排运行时",
+  "superdesigndev/treg": "面向 Agent 工具的 OpenRouter。加入社区：https://discord.gg/6mQYYfFMAn",
+  "browser-use/video-use": "使用编程 Agent 编辑视频"
 }
