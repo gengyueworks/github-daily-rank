@@ -219,5 +219,17 @@
   "davila7/claude-code-templates": "用于配置和监控 Claude Code 的 CLI 工具",
   "google/ax": "谷歌开源智能体编排运行时",
   "superdesigndev/treg": "面向 Agent 工具的 OpenRouter。加入社区：https://discord.gg/6mQYYfFMAn",
-  "browser-use/video-use": "使用编程 Agent 编辑视频"
+  "browser-use/video-use": "使用编程 Agent 编辑视频",
+  "strands-agents/harness-sdk": "构建 Agent 框架并实现端到端控制。面向生产级 AI Agent 的 Python 与 TypeScript 开源 SDK——支持任意模型、任意云平台。",
+  "pbakaus/impeccable": "让你的 AI 框架更擅长设计的设计语言。",
+  "DeusData/codebase-memory-mcp": "高性能代码智能 MCP 服务器。将代码库索引为持久化知识图谱，处理常规仓库仅需毫秒级。支持 158 种语言，亚毫秒级查询，减少 99% 的 Token 消耗。单个静态二进制文件，零依赖。",
+  "harry7557558/spirula-studio": "跨厂商 3D Gaussian Splatting 训练器，支持视频转 Splat 再转网格，基于 Vulkan 或 CUDA。",
+  "TNT-Likely/PanWatch": "盯盘侠 PanWatch · 自托管 AI 盯盘助手，集成 TradingAgents 多 Agent 投资决策 | A股/港股/美股实时监控、持仓管理、智能分析、全渠道推送",
+  "pytorch/pytorch": "基于 Python 的张量和动态神经网络，支持强大的 GPU 加速。",
+  "vectorize-io/hindsight": "Hindsight：会学习的智能体记忆",
+  "NVIDIA/Model-Optimizer": "集成了量化、蒸馏、剪枝、神经架构搜索、推测解码等最先进模型优化技术的统一库。它通过压缩深度学习模型，适配 TensorRT-LLM、TensorRT、vLLM 等下游部署框架，以优化推理速度。",
+  "FxEmbed/FxEmbed": "修复 X/Twitter 和 Bluesky 的嵌入预览！在 Discord、Telegram 等平台上支持多图、视频、投票、翻译等更多功能。",
+  "julyx10/lap": "适用于大型本地图库的离线优先照片管理器",
+  "leejet/stable-diffusion.cpp": "纯 C/C++ 实现的扩散模型（SD、Flux、Wan、Qwen Image、Z-Image...）推理",
+  "LibreChat-AI/LibreChat": "增强版 ChatGPT 克隆项目：支持 Agents、MCP、技能扩展、DeepSeek、Anthropic、AWS、OpenAI、Responses API、Azure、Groq、o1、GPT-5、Mistral、OpenRouter、Vertex AI、Gemini、Artifacts、AI 模型切换、消息搜索、代码解释器、LangChain、DALL-E 3、OpenAPI Actions、函数调用、安全多用户认证及预设等功能，开源且支持私有化自托管。项目活跃维护中。"
 }
