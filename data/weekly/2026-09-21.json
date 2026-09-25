@@ -1,7 +1,7 @@
 {
   "since": "weekly",
   "date": "2026-09-25",
-  "fetched_at": "2026-09-25T09:00:10",
+  "fetched_at": "2026-09-25T09:06:13",
   "count": 20,
   "repos": [
     {
@@ -18,8 +18,7 @@
       "period_stars": 2382,
       "period_label": "本周",
       "topics": [],
-      "category": "其他",
-      "script_zh": "这个项目是 Anthropic 官方专门为金融行业打造的 AI 实战指南。\n它手把手教你如何用 Claude 搞定复杂的金融业务。\n\n无论是做财报分析、风险评估，还是合规审查，它都给出了可以直接拿来用的范例和提示词。\n这直接帮开发人员省去了从零摸索的大把时间。\n\n最赞的是这些案例全来自一线商业场景，实用度拉满。\n想在金融领域落地大模型，关注它就对了！"
+      "category": "其他"
     },
     {
       "rank": 2,
@@ -30,14 +29,13 @@
       "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
       "language_color": "#00ADD8",
-      "stars": 40798,
+      "stars": 40800,
       "forks": 2932,
       "period_stars": 6920,
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "快速、高效，经阿里大规模实战检验。基于“确定性流水线 + LLM Agent”混合架构的代码审查工具，提供精准的行级注释，内置多语言规则集（空指针、线程安全、XSS、SQL注入等），兼容 OpenAI 和 Anthropic。",
-      "script_zh": "阿里开源的 open-code-review，是一个帮你自动做代码审查的 AI 工具。\n\n你在提交代码时，它能精准定位到具体的代码行，直接给出修改意见。\n像空指针、线程安全、SQL注入这种常见漏洞，它都能提前帮你拦截掉。\n\n最厉害的是它结合了传统规则和大模型的混合架构，既快又准。\n它不仅在阿里内部经过了海量业务检验，还完美兼容主流大模型。\n\n想提升团队的代码质量，这个项目绝对值得你去尝试！"
+      "description_zh": "快速、高效，已在阿里巴巴大规模场景中实战检验。混合架构代码审查工具：确定性流水线 + LLM 智能体，精准的行级评论，内置多语言规则集（空指针、线程安全、XSS、SQL 注入），兼容 OpenAI 与 Anthropic。"
     },
     {
       "rank": 3,
@@ -49,13 +47,12 @@
       "language": "TypeScript",
       "language_color": "#3178c6",
       "stars": 147969,
-      "forks": 24396,
+      "forks": 24397,
       "period_stars": 2384,
       "period_label": "本周",
       "topics": [],
       "category": "开发工具",
-      "description_zh": "Claude Code 是一款运行在终端里的 Agent 编程工具。它能理解你的代码库，只需通过自然语言指令，就能帮你执行常规任务、解释复杂代码并处理 Git 工作流，从而提高编码效率。",
-      "script_zh": "这个项目是直接住在你终端里的 AI 编程助手。\n\n你只需要用大白话下指令，它就能读懂你的整个代码库。\n\n不管是写日常代码、解释复杂逻辑，还是自动帮你提交 Git，它全都能搞定。\n\n最厉害的是，它是 Anthropic 官方出的，智商在线而且反应极快。\n\n你根本不用在编辑器和命令行之间来回切换，直接在终端里就能把活干完。\n\n难怪刚上线就狂揽了十四万颗星，赶紧去试试吧！"
+      "description_zh": "Claude Code 是一款活在终端里的智能体式编程工具，能理解你的代码库，并通过自然语言指令执行日常任务、讲解复杂代码、处理 git 流程，帮你更快写代码。"
     },
     {
       "rank": 4,
@@ -66,14 +63,13 @@
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "language": "JavaScript",
       "language_color": "#f1e05a",
-      "stars": 266916,
-      "forks": 39883,
+      "stars": 266919,
+      "forks": 39885,
       "period_stars": 6193,
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "智能体框架性能优化系统。为 Claude Code、Codex、Opencode、Cursor 及更多平台提供技能、直觉、记忆、安全与研究优先的开发支持。",
-      "script_zh": "写代码用 Cursor 或者 Claude Code 的朋友，一定要看看这个项目。\n\n它是一个专门给 AI 智能体做性能超强优化的系统。\n\n简单来说，它能给你的 AI 助手装上更强的记忆、直觉和安全防线。\n\n不管是写代码还是做研究，它都能让 AI 反应更快、更聪明。\n\n最厉害的是，它在 GitHub 上已经拿到了超过二十四万颗星！\n\n想让你的 AI 工具好用十倍，闭眼冲它就对了！"
+      "description_zh": "智能体运行框架性能优化系统：为 Claude Code、Codex、OpenCode、Cursor 等提供技能、本能、记忆、安全与「研究优先」的开发能力。"
     },
     {
       "rank": 5,
@@ -90,8 +86,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "开源大模型知识平台：将原始文档转化为可查询的 RAG、自主推理智能体和自维护的 Wiki。",
-      "script_zh": "这个项目是腾讯开源的大模型知识库平台。\n它能把堆积如山的原始文档，瞬间变成可检索的 RAG 知识库。\n\n它不仅能快速查资料，还能生成会自主推理的 AI 智能体。\n甚至能帮你搭建一套会自动更新、自我维护的 Wiki 系统。\n\n资料检索、逻辑推理和知识维护一步搞定，彻底告别手动整理。\nGitHub 上它已经斩获两万多星，想做专属知识库选它准没错！"
+      "description_zh": "开源 LLM 知识平台：把原始文档转化为可查询的 RAG、自主推理智能体与可自我维护的 Wiki。"
     },
     {
       "rank": 6,
@@ -102,14 +97,13 @@
       "description": "Production-grade engineering skills for AI coding agents.",
       "language": "JavaScript",
       "language_color": "#f1e05a",
-      "stars": 98896,
+      "stars": 98897,
       "forks": 10387,
       "period_stars": 3345,
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "面向 AI 编程智能体的生产级工程技能。",
-      "script_zh": "这个项目是专门给 AI 编程助手准备的生产级技能包。\n\n平时我们让 AI 写代码，它经常找不到文件或者乱运行命令。\n有了它，就能直接给 AI 装备上读写文件、搜索代码和用 Git 的专业能力。\n\n它最牛的地方在于安全和稳定，完全是工业级标准。\n想自己做个靠谱的 AI 程序员，用它能少走巨多弯路！"
+      "description_zh": "面向 AI 编程智能体的生产级工程技能。"
     },
     {
       "rank": 7,
@@ -126,8 +120,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "其他",
-      "description_zh": "主要供知识工作者在 Claude Cowork 中使用的开源插件仓库。",
-      "script_zh": "Anthropic 官方给打工人开源的 Claude 插件库来了！\n\n它能帮你写报告、搜资料、搞数据分析。\n那些烦琐的知识型工作，现在都能交给 AI 自动化处理。\n\n作为 Anthropic 官方出品的项目，适配度直接拉满！\n最绝的是代码全开源，开箱即用还能按需定制。\n\n只要你是知识型工作者，这个项目绝对能帮你效率翻倍！"
+      "description_zh": "主要面向知识工作者、用于在 Claude Cowork 中使用的开源插件仓库。"
     },
     {
       "rank": 8,
@@ -138,14 +131,13 @@
       "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 77544,
+      "stars": 77546,
       "forks": 5079,
       "period_stars": 6547,
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "Orca 是管理一整队并行智能体的 ADE（智能体开发环境）。用你自己的订阅即可运行任意编程智能体，桌面、移动端与 VPS 均可用。",
-      "script_zh": "这个项目是个能让你同时指挥一大群 AI Agent 的开发神器。\n\n平时让单个 AI 写代码觉得不够快？\n它能帮你挂载多个编程 Agent 并行干活。\n用你现有的订阅账号就能跑，桌面、手机和远程环境全搞定！\n\n最赞的是它把所有 AI 协作管理得井井有条。\n多任务并发处理，写代码的效率直接翻倍。\n让你随时随地调遣 AI 军队，绝对值得赶紧收藏体验！"
+      "description_zh": "Orca 是管理一整队并行智能体的 ADE（智能体开发环境）。用你自己的订阅即可运行任意编程智能体，桌面、移动端与 VPS 均可用。"
     },
     {
       "rank": 9,
@@ -162,8 +154,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "更智能的自托管 AI 助手，支持多用户与多智能体。",
-      "script_zh": "腾讯开源的这个项目是一款能私有化部署的智能 AI 助手。\n它主打的就是多用户和多 Agent 协同。\n\n你可以把它直接部署在自己的服务器上，让全团队一起用。\n无论是写代码还是整理文档，都能随时创建专门的 AI 角色来帮忙。\n\n数据全都掌握在自己手里，隐私安全直接拉满！\n多个 Agent 还能分工配合，比普通的 AI 对话框聪明多了。\n想给团队搭个私有 AI 脑的，强烈建议关注它！"
+      "description_zh": "更聪明的自托管 AI 助手——支持多用户、多智能体。"
     },
     {
       "rank": 10,
@@ -174,14 +165,13 @@
       "description": "CLI tool for configuring and monitoring Claude Code",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 31731,
+      "stars": 31732,
       "forks": 3603,
       "period_stars": 965,
       "period_label": "本周",
       "topics": [],
       "category": "开发工具",
-      "description_zh": "用于配置和监控 Claude Code 的 CLI 工具",
-      "script_zh": "如果你用 Claude Code 写代码，一定别错过这个项目。\n它是一个专门用来配置和监控 Claude Code 的命令行工具。\n\n用它你可以一键套用开箱即用的开发模板。\n不仅能快速搞定配置，还能实时监控 Token 消耗和运行状态。\n再也不怕代码跑偏或者预算超支了。\n\nGitHub 上三万多星的人气可不是吹的。\n想让 AI 编程更省心，它绝对值得你试试！"
+      "description_zh": "用于配置和监控 Claude Code 的命令行工具"
     },
     {
       "rank": 11,
@@ -198,8 +188,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "游戏",
-      "description_zh": "在现有的硬件上运行前沿 MoE 模型——纯 C 实现、零依赖、专家模型从磁盘流式加载。微型引擎，巨型模型。🐦",
-      "script_zh": "这个项目是一个用纯 C 语言打造的极简 AI 推理引擎。\n它能让你用手头现有的普通设备，直接跑起顶级的 MoE 大模型。\n\n很多大模型因为显存不够根本跑不动，而它能把参数直接从硬盘流式加载。\n这相当于大幅降低了硬件门槛，彻底解决了显存焦虑。\n\n它没有任何第三方依赖，引擎体积小到极致，却能支撑起巨大的模型。\n想要在普通电脑上本地跑大模型，选它就对了！"
+      "description_zh": "在你已有的硬件上运行前沿 MoE 模型——纯 C 语言、零依赖，专家层从磁盘流式加载。引擎极小，模型极大。🐦"
     },
     {
       "rank": 12,
@@ -210,14 +199,13 @@
       "description": "Hindsight: Agent Memory That Learns",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 27782,
+      "stars": 27786,
       "forks": 2683,
       "period_stars": 3363,
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "Hindsight：会学习的智能体记忆",
-      "script_zh": "这个项目是一个能让 AI 智能体自我学习的长期记忆框架。\n简单来说，它直接解决了 AI 聊完就忘、无法积累经验的硬伤。\n\n你在开发 Agent 时把它接进来，AI 就能记住用户的偏好，甚至从之前的错误里吸取教训。\n它最绝的地方，在于记忆不是死板地存着，而是能在每次使用中自动重构和进化。\n\n想让你的 AI 真正越用越聪明，这个近三万星的项目绝对值得关注！"
+      "description_zh": "Hindsight：能够自我学习的智能体记忆系统"
     },
     {
       "rank": 13,
@@ -234,8 +222,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "其他",
-      "description_zh": "🥧 QUIC 传输协议和 HTTP/3 的美味实现",
-      "script_zh": "这个项目是 Cloudflare 开源的 QUIC 与 HTTP/3 协议实现。\n简单来说，它就是让网络传输速度飞起来的下一代引擎。\n\n你在开发音视频或游戏时，用它就能轻松解决弱网卡顿和丢包问题。\n它不仅支持 Rust 调用，还能无缝对接 C 语言和 NGINX 架构。\n\n最强的是，它天天在 Cloudflare 海量真实流量里经受考验。\n兼具极速与安全，想拥抱 HTTP/3 新特性选它准没错！"
+      "description_zh": "🥧 QUIC 传输协议与 HTTP/3 的开源实现。"
     },
     {
       "rank": 14,
@@ -252,8 +239,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "面向 AI 编程助手的规范驱动开发 (SDD)",
-      "script_zh": "这个项目是一个用规格说明书来驱动 AI 编程的开源工具。\n用 AI 写代码时，你是不是也常遇到逻辑跑偏或者瞎编代码的情况？\n\n它让你可以先用标准化文档把需求和规则框死。\n然后指导 AI 严格按照这份说明书去生成可用的代码。\n\n它直接解决了 AI 编程最让人头疼的不可控问题。\n斩获近七万星的高人气，说明它真的击中了所有开发者的痛点！"
+      "description_zh": "面向 AI 编程助手的规格驱动开发（SDD）工具。"
     },
     {
       "rank": 15,
@@ -270,8 +256,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "为 Agent 编程 CLI 提供长期记忆解决方案，并方便不同 Agent 厂商之间进行工作交接。",
-      "script_zh": "写代码用不同的 AI 助手，最烦它们记不住上下文。\n这个项目就是专门给 AI 编程工具装上长期记忆的外挂。\n\n它能让你在切换不同 AI 工具时，无缝同步开发进度。\n不管你换到哪个平台的 AI，它都能秒懂你之前的代码逻辑。\n\n最棒的是，它不仅省下了重复解释的 Token 费，还让 AI 拥有了项目大局观。\n想让你的 AI 助手像老同事一样默契，闭眼冲它就对了！"
+      "description_zh": "为智能体编程命令行工具提供长期记忆的解决方案，并便于在不同智能体厂商之间交接。"
     },
     {
       "rank": 16,
@@ -283,13 +268,12 @@
       "language": "Python",
       "language_color": "#3572A5",
       "stars": 103263,
-      "forks": 30271,
+      "forks": 30272,
       "period_stars": 228,
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "基于 Python 的张量和动态神经网络，支持强大的 GPU 加速。",
-      "script_zh": "这个项目是目前 AI 领域最核心的开源深度学习框架。\n它让你用熟悉的 Python 语法轻松搭建神经网络，还能用 GPU 极速加速。\n\n无论是搞大模型还是计算机视觉，底层基本全靠它来支撑。\n它最大的优势是支持动态建网，写代码非常直观，调试起来特别省心。\n\n从顶级实验室的研究论文到大厂的生产落地，它已经是 AI 领域的行业标准。\n想深入人工智能，这个项目绝对是必修课。"
+      "description_zh": "支持强劲 GPU 加速的 Python 张量与动态神经网络库"
     },
     {
       "rank": 17,
@@ -306,8 +290,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "可作为 SDK、IDE 扩展或 CLI 助手使用的自主编程 Agent。",
-      "script_zh": "还在手动复制粘贴代码吗？\n这个项目是一个全自动的代码 Agent，支持 IDE 插件、命令行和 SDK。\n\n它不仅能直接帮你创建和修改文件，还能运行终端命令，甚至打开浏览器帮你测试！\n遇到复杂任务，它会自己一步步拆解并自动执行。\n\n最棒的是关键操作它会提请你确认，既省心又安全。\n它还能自由切换大模型，难怪在 GitHub 上狂揽了六万多星！"
+      "description_zh": "可作为 SDK、IDE 插件或命令行助手的自主编程智能体。"
     },
     {
       "rank": 18,
@@ -318,14 +301,13 @@
       "description": "Enhanced ChatGPT Clone: Features Agents, MCP, Skills, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions, Secure Multi-User Auth, Presets, open-source for self-hosting. Active",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 44897,
+      "stars": 44898,
       "forks": 9200,
       "period_stars": 743,
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "增强版 ChatGPT 克隆项目：支持 Agents、MCP、技能扩展、DeepSeek、Anthropic、AWS、OpenAI、Responses API、Azure、Groq、o1、GPT-5、Mistral、OpenRouter、Vertex AI、Gemini、Artifacts、AI 模型切换、消息搜索、代码解释器、LangChain、DALL-E 3、OpenAPI Actions、函数调用、安全多用户认证及预设等功能，开源且支持私有化自托管。项目活跃维护中。",
-      "script_zh": "这个项目能让你零成本自建一个全能版的 AI 平台。\n用它就能把 DeepSeek、OpenAI 和 Claude 等各大模型装进同一个界面。\n\n你不仅能随时无缝切换模型，还能免费用上代码解释器和 Agent 智能体。\n它还支持多用户管理和私有化部署，隐私数据完全自己掌控。\n\n想搞定专属的 AI 助手，选它就对了！"
+      "description_zh": "增强版 ChatGPT 开源克隆：支持智能体、MCP、技能、DeepSeek、Anthropic、AWS、OpenAI、Responses API、Azure、Groq、o1、GPT-5、Mistral、OpenRouter、Vertex AI、Gemini、Artifacts、模型切换、消息搜索、代码解释器、langchain、DALL-E-3、OpenAPI Actions、函数调用、安全多用户鉴权与预设，可自托管。"
     },
     {
       "rank": 19,
@@ -336,14 +318,13 @@
       "description": "OpenRouter for agent tools. Join community here: https://discord.gg/6mQYYfFMAn",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 3162,
-      "forks": 263,
+      "stars": 3165,
+      "forks": 262,
       "period_stars": 1406,
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "面向 Agent 工具的 OpenRouter。加入社区：https://discord.gg/6mQYYfFMAn",
-      "script_zh": "这个项目简单来说就是 AI Agent 工具界的 OpenRouter！\n做 Agent 最头疼的就是对接各种零散的第三方工具。\n\n它把所有工具统一聚合到了一个 API 网关里。\n你只需要调这一个接口，就能直接使用各种工具。\n\n这不仅省去了繁琐的开发工作，还能给 Agent 快速拓展生态能力。\n如果你也在做 AI 应用，这个两千星的项目绝对值得关注！"
+      "description_zh": "面向智能体工具的 OpenRouter 路由平台。（社区：https://discord.gg/6mQYYfFMAn）"
     },
     {
       "rank": 20,
@@ -360,8 +341,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "安全",
-      "description_zh": "基于 eBPF 的网络、安全与可观测性",
-      "script_zh": "这个项目是云原生领域超火的网络与安全神器。\n它基于 eBPF 技术，专门给 K8s 集群提供高速网络通信。\n\n当集群规模变大时，传统网络方案很容易性能拉垮。\n它直接在内核里跑代码，无感搞定容器通信、安全策略和全量监控。\n\n最绝的是它绕过了传统网络栈，传输性能直接拉满！\n还能让你一眼看清所有微服务之间的调用关系。\n作为 CNCF 毕业项目，它已经是现代云原生的标配了！"
+      "description_zh": "基于 eBPF 的网络、安全与可观测性平台"
     }
   ]
 }

@@ -73,3 +73,14 @@
 - **部署**：remote `main` 当时停在 5c12928（并行 ...629 本日尚未推送）。预处理——把并行自动化 `...629` 的未跟踪 memory 目录与过期半翻译（11/21）的 `data/daily/2026-09-17.json` 暂移 `/tmp/ghrank_backup`（避免推送内部 memory、避免半翻译数据污染公开仓库及未来同名碰撞）→ 本地 `git add -A && commit`（5f8ff6c，使今日 data 转为 tracked，规避未来未跟踪同名碰撞）→ `bash deploy_ghpages.sh` 顺过（rebase no-op，`git add -A` 无新增，push main + gh-pages orphan 均成功）→ 还原 ...629 目录与 09-17 文件 → 重跑 `build.py` 复原被孤儿步骤清空的 `site/`。
 - **线上复测**：首测即 index / daily / weekly 三页均 200，无传播延迟；`origin/main` 已同步本地 HEAD（d2f5cced3）。
 - **结论**：当日上榜 日榜 17 + 周榜 21；数据/翻译/站点已生成并推送 main，线上链接更新成功（200）。
+
+## 2026-09-20 (执行，补记)
+- **抓取/翻译**：日榜 15、周榜 21，日 15/15、周 21/21 全量中文翻译。并行自动化 ...629 先推送日榜到远端（271c339），按「备份→移走未跟踪日榜→stash 跟踪文件→rebase -X ours→覆盖写回→commit/push→再 deploy」解冲突，线上三页均 200。
+
+## 2026-09-21 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`）成功。日榜 `data/daily/2026-09-21.json` = 13 个仓库；周榜 `data/weekly/2026-09-21.json`（本周一 0921）= 21 个仓库。
+- **翻译**：首轮 `translate_missing.py` 命中词表+zh_cache 补 日 8 + 周 27(累计)；余 6 个新仓库（BuilderIO/agent-native、paperless-ngx/paperless-ngx、mihail911/modern-software-dev-assignments、vercel-labs/json-render、cline/cline、cilium/cilium）由本自动化校对中译写回 `description_zh` 并入库 `zh_cache.json`，最终日榜 13 中 12 个、周榜 21/21 全部有 `description_zh`；唯一缺口 `anthropics/financial-services`（日榜）上游无英文简介，无译可补。
+- **生成**：`build.py` 重建 `site/daily/2026-09-21.html`、`site/weekly/2026-09-21.html`、`site/index.html`、`site/classics/index.html`（ainews 双语风格）。
+- **部署冲突**：并行自动化 ...629 已先推送日榜+周榜 `2026-09-21.json` 到 remote main（96ce872，仅部分翻译）。按既定模式：备份本机全译数据到 `/tmp/ghrank_backup` → 移走 ...629 内部 memory 目录与过期半翻译 `2026-09-17.json` → 移走本机新增 data 文件 → `git stash push` 存 zh_cache.json/memory.md → `git pull --rebase -X ours origin main`（快进到 96ce872）→ `git stash drop` → 用备份覆盖写回日榜/周榜全译版与 `zh_cache.json` → `git add -A && commit && push main`（cb1d844）→ 再跑 `bash deploy_ghpages.sh`（rebase 成 no-op，gh-pages orphan 推送）。本机日榜 13(12 译)/周榜 21(21 译) 全译，优于远端。
+- **部署**：`bash deploy_ghpages.sh` 成功。本地 `site/` 被孤儿步骤清空后重跑 `build.py` 复原。线上复测：index / daily / weekly 三页均 200。
+- **结论**：当日上榜 日榜 13 + 周榜 21；数据/翻译/站点已生成并推送 main，线上链接更新成功（200）。
