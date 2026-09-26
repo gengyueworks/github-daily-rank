@@ -1,0 +1,326 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GitHub 日榜｜2026-09-26</title><style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap');
+:root {
+    --klein: #002FA7;
+    --klein-bright: #0044FF;
+    --white: #FFFFFF;
+    --bg-light: #F8F9FB;
+    --text-dark: #1A1A1A;
+    --text-mid: #6B6B6B;
+    --text-light: #9CA3AF;
+    --border: #E5E7EB;
+    --accent: #C41E3A;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Noto Sans SC', 'Inter', -apple-system, sans-serif;
+    background: var(--white); color: var(--text-dark);
+    line-height: 1.75; -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 720px; margin: 0 auto; padding: 56px 28px 80px; }
+.doc-title { font-size: 38px; font-weight: 700; color: var(--text-dark); letter-spacing: -0.5px; margin-bottom: 8px; text-wrap: balance; }
+.doc-title span { color: var(--klein); }
+.doc-date { font-family: 'Inter', sans-serif; font-size: 15px; color: var(--text-light); }
+.divider { height: 1px; background: var(--border); margin: 36px 0; }
+.section-header { font-size: 24px; font-weight: 600; color: var(--klein); margin-bottom: 24px; padding-bottom: 8px; border-bottom: 2px solid var(--klein); display: inline-block; text-wrap: balance; }
+.section-header .en { font-family: 'Inter'; font-size: 13px; color: var(--text-light); font-weight: 400; margin-left: 10px; }
+.section-block { margin-bottom: 48px; }
+.news-item { margin-bottom: 52px; }
+.news-item:last-child { margin-bottom: 0; }
+.news-title { font-size: 21px; font-weight: 600; color: var(--text-dark); line-height: 1.5; margin-bottom: 14px; text-wrap: balance; }
+.news-body { font-size: 16px; color: var(--text-dark); line-height: 1.9; margin-bottom: 16px; }
+.news-label { font-size: 14px; color: var(--text-mid); line-height: 1.7; margin-bottom: 14px; }
+.highlight { color: var(--klein); font-weight: 600; }
+.accent { color: var(--accent); font-weight: 600; }
+.turn { color: var(--klein); font-weight: 700; }
+.intro-text { font-size: 16px; color: var(--text-dark); line-height: 1.9; margin-bottom: 14px; }
+.source-line { font-size: 13px; color: var(--text-light); margin-top: 8px; }
+.source-line a { color: var(--klein); text-decoration: none; }
+.footer-block { font-size: 14px; color: var(--text-mid); line-height: 1.7; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); }
+.card-tag { font-size: 12px; color: var(--text-mid); opacity: 0.55; margin-top: 8px; line-height: 1.6; }
+
+.site-nav-lite { display: flex; align-items: center; justify-content: space-between; margin-bottom: 28px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+.nav-back { font-size: 14px; color: var(--klein); text-decoration: none; font-weight: 500; }
+.nav-back:hover { text-decoration: underline; }
+.nav-date { font-size: 13px; color: var(--text-light); font-family: 'JetBrains Mono', monospace; }
+
+/* ---- GitHub 榜专属（仍沿用 ainews 用词体系） ---- */
+.rank { font-family: 'JetBrains Mono', monospace; color: var(--klein); font-weight: 700; margin-right: 8px; }
+.repo-link { color: var(--text-dark); text-decoration: none; }
+.repo-link:hover { color: var(--klein); }
+.zh { color: var(--text-mid); }
+.tr { font-size: 11px; color: #fff; background: var(--klein); border-radius: 4px; padding: 2px 6px; margin-right: 6px; font-family: 'Inter'; vertical-align: middle; }
+.repo-meta { font-size: 14px; color: var(--text-mid); margin-top: 12px; line-height: 1.8; }
+.repo-meta .lang-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin: 0 4px 0 2px; }
+.repo-meta .cat { color: var(--klein); font-weight: 600; }
+.riser-note { font-size: 13px; color: var(--text-light); margin-top: 8px; }
+.script-block { font-size: 15.5px; color: var(--ink-soft, var(--text-mid)); line-height: 1.8; margin: 0 0 14px; }
+.script-tag { font-size: 11px; color: #fff; background: var(--klein); border-radius: 4px; padding: 1px 7px; margin-right: 8px; font-family: 'Inter'; vertical-align: middle; white-space: nowrap; }
+.archive { columns: 2; column-gap: 24px; }
+.archive a { display: block; color: var(--klein); text-decoration: none; padding: 3px 0; font-size: 15px; }
+.archive a:hover { text-decoration: underline; }
+
+/* classics 高分精选页专属：阅读型页面加宽容器，提升行宽舒适度 */
+body.classics .container { max-width: 860px; }
+
+/* ---- classics 高分精选页：严格对齐 ainews 排版体系 ----
+   红蓝配比：蓝为主（标题/■ 标签/强调/链接/footer 3px 蓝顶线），
+   红仅限数字点缀（.num，JetBrains Mono 红色数字），蓝:红 ≈ 10:1。
+   全部限定 body.classics，不影响 daily/weekly。 */
+body.classics {
+  --paper: #FFFFFF; --ink: #0E0E10; --ink-soft: #3A3A3E;
+  --gray: #6B6B70; --gray-light: #9CA3AF; --line: #E8E8EC;
+}
+body.classics .masthead { margin-bottom: 36px; }
+body.classics .mast-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--klein); font-weight: 600; margin-bottom: 14px; }
+body.classics .mast-title { font-size: 44px; font-weight: 900; letter-spacing: -1.5px; line-height: 1.05; color: var(--klein); margin-bottom: 16px; text-wrap: balance; }
+body.classics .mast-rule { height: 3px; background: var(--klein); width: 100%; margin: 0 0 10px; }
+body.classics .mast-meta { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--gray); display: flex; gap: 14px; flex-wrap: wrap; }
+body.classics .mast-meta .issue { color: var(--klein); font-weight: 600; }
+body.classics .mast-lede { font-size: 16px; line-height: 1.7; color: var(--ink-soft); margin-top: 22px; padding-left: 16px; border-left: 3px solid var(--klein); }
+body.classics .sec-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gray-light); margin-bottom: 6px; }
+body.classics .sec-title { font-size: 15px; font-weight: 700; color: var(--klein); letter-spacing: 1px; margin-bottom: 24px; display: inline-block; }
+body.classics .sec-title::before { content: "AE"; color: var(--klein); margin-right: 8px; font-size: 13px; }
+body.classics .item { margin-bottom: 52px; }
+body.classics .item:last-child { margin-bottom: 0; }
+body.classics .dateline { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gray); letter-spacing: 0.5px; margin-bottom: 10px; }
+body.classics .dateline .src { color: var(--klein); font-weight: 600; }
+body.classics .item-title { font-size: 21px; font-weight: 700; line-height: 1.4; margin-bottom: 12px; text-wrap: balance; }
+body.classics .item-title a { color: var(--klein); text-decoration: none; }
+body.classics .item-title a:hover { text-decoration: underline; }
+body.classics .body { font-size: 15.5px; color: var(--ink-soft); line-height: 1.8; }
+body.classics .body p { margin-bottom: 14px; }
+body.classics .body p:last-child { margin-bottom: 0; }
+body.classics .body .num { font-family: 'JetBrains Mono', monospace; color: var(--accent); font-weight: 600; }
+body.classics .body .tag { display: inline-block; font-size: 11px; font-family: 'JetBrains Mono', monospace; color: var(--gray); background: var(--line); padding: 1px 8px; border-radius: 3px; margin-right: 4px; }
+body.classics .src-line { font-size: 13px; color: var(--gray); margin-top: 10px; font-family: 'JetBrains Mono', monospace; line-height: 1.7; }
+body.classics .src-line a { color: var(--klein); text-decoration: none; }
+body.classics .src-line a:hover { text-decoration: underline; }
+body.classics .src-line .cat { color: var(--klein); font-weight: 600; }
+body.classics .link-area { margin-top: 12px; background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 8px 12px; display: flex; flex-direction: column; gap: 6px; }
+body.classics .link-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+body.classics .link-url { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--klein); text-decoration: none; overflow-wrap: anywhere; }
+body.classics .link-url:hover { text-decoration: underline; }
+body.classics .copy-btn { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gray); background: var(--paper); border: 1px solid var(--line); border-radius: 4px; padding: 2px 8px; cursor: pointer; flex-shrink: 0; }
+body.classics .copy-btn:hover { color: var(--klein); border-color: var(--klein); }
+body.classics .copy-btn.copied { color: #fff; background: var(--klein); border-color: var(--klein); }
+body.classics .footer { margin-top: 48px; padding-top: 20px; border-top: 3px solid var(--klein); font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--gray); line-height: 1.8; }
+body.classics .footer .big { color: var(--ink); font-weight: 600; }
+body.classics .footer a { color: var(--klein); text-decoration: none; }
+body.classics .footer a:hover { text-decoration: underline; }
+</style></head>
+<body><div class="container">
+<nav class="site-nav-lite"><a href="../index.html" class="nav-back">← 首页 / Index</a><span class="nav-date">2026年09月26日</span></nav>
+<h1 class="doc-title">GitHub 日榜｜<span>2026-09-26</span></h1>
+<p class="doc-date">2026年09月26日 · 星期六 · Daily GitHub Trending</p>
+<div class="divider"></div>
+<div class="section-block">
+  <h2 class="section-header">今日榜单 <span class="en">Today's Board</span></h2>
+  <p class="intro-text">今日 <span class="accent">16</span> 个仓库登上 GitHub Trending，最热分类 <span class="highlight">AI / 大模型</span>，单日最高 <span class="accent">+2109★</span>（<span class="highlight">paperclipai/paperclip</span>）。</p><p class="intro-text">Today <span class="accent">16</span> repos trended on GitHub. Hottest category <span class="highlight">AI / LLM</span>; top daily gain <span class="accent">+2109★</span> by <span class="highlight">paperclipai/paperclip</span>.</p>
+  
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#1</span><a class="repo-link" href="https://github.com/paperclipai/paperclip" target="_blank">paperclipai/paperclip</a></h3>
+        <p class="news-body">The open-source app everyone uses to manage agents at work</p>
+        <p class="news-body zh"><span class="tr">译</span>人人都在用的开源应用，用来在工作中管理智能体。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是一个专门帮你在工作中管理 AI Agent 的开源面板。<br>你现在是不是也用上了不少 AI 智能体？<br>但 Agent 一多，管理和调度起来就会非常头疼。</p>
+<p class="script-block">它能把所有分散的 AI 统一收拢到一个界面里！<br>你可以像管员工一样给它们派发任务、盯进度。<br>这就相当于给你的 AI 团队请了个超级管家。</p>
+<p class="script-block">它最牛的地方在于完全开源，上手贼快。<br>能拿到八万多星，足以说明它有多实用！<br>想搞定 AI 办公协作的，选它准没错！</p>
+        <p class="repo-meta">★ 84,962 <span class="accent">(+2109 今日 today)</span> · ⑂ 15,234 forks · <span class="lang-dot" style="background:#3178c6"></span>TypeScript · <span class="cat">移动端 · Mobile</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：移动端 · Mobile</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#2</span><a class="repo-link" href="https://github.com/anthropics/claude-plugins-official" target="_blank">anthropics/claude-plugins-official</a></h3>
+        <p class="news-body">Official, Anthropic-managed directory of high quality Claude Code Plugins.</p>
+        <p class="news-body zh"><span class="tr">译</span>Anthropic 官方管理的高质量 Claude Code 插件目录。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是 Anthropic 官方为 Claude 打造的插件大本营。</p>
+<p class="script-block">它能让你的 AI 助手直接连接数据库、本地文件和各种第三方工具。<br>有了它，Claude 就不再只是个聊天机器人，而是能帮你写代码、查数据、直接干活的超级助理。</p>
+<p class="script-block">最棒的是官方亲自维护，质量和安全性绝对有保障。<br>难怪在 GitHub 上拿到了三万多个星，想让 AI 自动干活的朋友闭眼冲就完了！</p>
+        <p class="repo-meta">★ 36,937 <span class="accent">(+83 今日 today)</span> · ⑂ 4,151 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#3</span><a class="repo-link" href="https://github.com/vectorize-io/hindsight" target="_blank">vectorize-io/hindsight</a></h3>
+        <p class="news-body">Hindsight: Agent Memory That Learns</p>
+        <p class="news-body zh"><span class="tr">译</span>Hindsight：会学习的智能体记忆</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是一个能让 AI 智能体自我学习的长期记忆框架。<br>简单来说，它直接解决了 AI 聊完就忘、无法积累经验的硬伤。</p>
+<p class="script-block">你在开发 Agent 时把它接进来，AI 就能记住用户的偏好，甚至从之前的错误里吸取教训。<br>它最绝的地方，在于记忆不是死板地存着，而是能在每次使用中自动重构和进化。</p>
+<p class="script-block">想让你的 AI 真正越用越聪明，这个近三万星的项目绝对值得关注！</p>
+        <p class="repo-meta">★ 29,801 <span class="accent">(+1653 今日 today)</span> · ⑂ 3,146 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#4</span><a class="repo-link" href="https://github.com/obra/superpowers" target="_blank">obra/superpowers</a></h3>
+        <p class="news-body">An agentic skills framework &amp; software development methodology that works.</p>
+        <p class="news-body zh"><span class="tr">译</span>行之有效的智能体技能框架与软件开发方法论。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>想让 AI 真正帮你写代码，一定要看看这个项目。</p>
+<p class="script-block">它是一个专门为 AI 智能体打造的技能框架和软件开发方法论。</p>
+<p class="script-block">简单来说，它能把复杂的开发任务拆解成 AI 听得懂、做得到的具体技能。</p>
+<p class="script-block">这就解决了以前 AI 写代码总是翻车、不靠谱的痛点。</p>
+<p class="script-block">最厉害的是，它是真正能在实际生产中落地的。</p>
+<p class="script-block">它不玩虚的概念，而是提供了一套行之有效的实战规范，让你的 AI 助手瞬间战力爆表。</p>
+        <p class="repo-meta">★ 291,664 <span class="accent">(+468 今日 today)</span> · ⑂ 26,108 forks · <span class="lang-dot" style="background:#89e051"></span>Shell · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#5</span><a class="repo-link" href="https://github.com/mattpocock/skills" target="_blank">mattpocock/skills</a></h3>
+        <p class="news-body">Skills for Real Engineers. Straight from my .agents directory.</p>
+        <p class="news-body zh"><span class="tr">译</span>真正工程师的实战技能，直接源自我的 .agents 目录。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是一个装满了硬核编程实战技巧的开源宝库。<br>它把复杂的开发痛点拆解成了可以直接复制的技能卡片。</p>
+<p class="script-block">不管你是自己查阅，还是直接喂给 AI 编程助手，都能让效率翻倍。<br>最牛的是，这些内容全是作者在实际开发中提炼出来的干货。</p>
+<p class="script-block">它能让你的 AI 助手瞬间变聪明，写出更规范的代码。<br>想提升开发效率的兄弟，直接去 GitHub 搜它就完了！</p>
+        <p class="repo-meta">★ 269,728 <span class="accent">(+583 今日 today)</span> · ⑂ 22,728 forks · <span class="lang-dot" style="background:#89e051"></span>Shell · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#6</span><a class="repo-link" href="https://github.com/dream-num/univer" target="_blank">dream-num/univer</a></h3>
+        <p class="news-body">The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.</p>
+        <p class="news-body zh"><span class="tr">译</span>面向 AI Agent 的办公底座 —— 在单一运行时中集成电子表格、文档、幻灯片、画布、关系表和 PDF。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是一个把表格、文档、幻灯片全融在一起的开源办公引擎！<br>它是专门为 AI Agent 量身打造的办公套件。</p>
+<p class="script-block">以前让 AI 读写复杂的表格或文档，开发者得对接各种乱七八糟的工具。<br>现在直接把它集成到项目里，就能给 AI 装上一整套原生办公能力。</p>
+<p class="script-block">最厉害的是它在一个运行时里打通了所有文档形态！<br>性能强悍又完全开源，绝对是做 AI 办公应用不容错过的神器！</p>
+        <p class="repo-meta">★ 18,439 <span class="accent">(+1050 今日 today)</span> · ⑂ 1,565 forks · <span class="lang-dot" style="background:#3178c6"></span>TypeScript · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#7</span><a class="repo-link" href="https://github.com/anthropics/skills" target="_blank">anthropics/skills</a></h3>
+        <p class="news-body">Public repository for Agent Skills</p>
+        <p class="news-body zh"><span class="tr">译</span>Agent 技能公开仓库</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是 Anthropic 官方开源的 AI 技能宝库。<br>它直接给 AI 大模型装上了能干活的双手！</p>
+<p class="script-block">平时写 Agent 最头疼的就是给 AI 拼装各种工具。<br>现在直接把官方调好的技能给 AI 挂载上去就行。<br>无论是查数据、写代码还是调 API，通通开箱即用。</p>
+<p class="script-block">最厉害的是它的标准统一且极其规范。<br>你再也不用手写复杂的底层提示词和函数调用了。<br>想做超级 Agent 的朋友，这个项目绝对值得立马收藏！</p>
+        <p class="repo-meta">★ 178,318 <span class="accent">(+189 今日 today)</span> · ⑂ 21,110 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#8</span><a class="repo-link" href="https://github.com/androoAGI/starnet" target="_blank">androoAGI/starnet</a></h3>
+        <p class="news-body">A living pixel-art station where real AI agents do real work. Local-first desktop agent harness - bring your own key, watch your crew actually run.</p>
+        <p class="news-body zh"><span class="tr">译</span>一个生动的像素风空间站，真正的 AI Agent 在这里干实事。本地优先的桌面级 Agent 框架——自备 API Key，亲眼见证你的 AI 团队真正跑起来。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>你见过把 AI Agent 变成像素风游戏的主控台吗？<br>这个项目能把你的桌面变成一个活生生的像素工作站。</p>
+<p class="script-block">你只需要填入自己的 API 密钥，就能指挥一群像素小人替你打工。<br>它们在屏幕里忙前忙后干实事，执行过程完全可视化。</p>
+<p class="script-block">它最大的亮点是本地优先，你的数据和控制权全在自己手里。<br>既有打游戏的趣味感，又能提供真实生产力，非常值得关注！</p>
+        <p class="repo-meta">★ 476 <span class="accent">(+93 今日 today)</span> · ⑂ 91 forks · <span class="lang-dot" style="background:#f1e05a"></span>JavaScript · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#9</span><a class="repo-link" href="https://github.com/derv82/wifit3" target="_blank">derv82/wifit3</a></h3>
+        <p class="news-body">Wifite but USB-only &amp; cross-platform.</p>
+        <p class="news-body zh"><span class="tr">译</span>仅支持 USB 且跨平台的 Wifite</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>简而言之，这个项目把老牌无线测试工具 Wifite 重构成了跨平台版本。<br>只要插上一块 USB 无线网卡，它就能全自动扫描周边的 Wi-Fi 安全。</p>
+<p class="script-block">以前搞无线安全，几乎只能死绑定在特定的 Linux 系统里。<br>现在有了它，在 Mac 甚至是 Windows 上插上网卡就能直接跑。</p>
+<p class="script-block">它把复杂的抓包和测试流程全部自动化，使用体验非常顺滑。<br>跨平台还轻量，绝对是无线安全爱好者不可错过的开箱即用神器！</p>
+        <p class="repo-meta">★ 922 <span class="accent">(+183 今日 today)</span> · ⑂ 87 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#10</span><a class="repo-link" href="https://github.com/kelseyhightower/kubernetes-the-hard-way" target="_blank">kelseyhightower/kubernetes-the-hard-way</a></h3>
+        <p class="news-body">Bootstrap Kubernetes the hard way. No scripts.</p>
+        <p class="news-body zh"><span class="tr">译</span>从零开始手动搭建 Kubernetes，不使用脚本。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>想彻底搞懂 K8s 的底层逻辑？<br>这个项目就是最硬核的通关指南！</p>
+<p class="script-block">它教你怎么完全不靠脚本，纯手工搭出一个完整的集群。<br>从生成证书、配置组件到搭建网络，所有细节都要你亲自敲命令。</p>
+<p class="script-block">过程虽然折腾，却能彻底帮你打开 K8s 的黑盒。<br>搞定它之后，排查各类疑难杂症就像开了挂。</p>
+<p class="script-block">5 万多星的顶级口碑，可以说是云原生工程师的必修课！</p>
+        <p class="repo-meta">★ 50,123 <span class="accent">(+119 今日 today)</span> · ⑂ 15,919 forks · — · <span class="cat">运维 / 云 · Ops / Cloud</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：运维 / 云 · Ops / Cloud</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#11</span><a class="repo-link" href="https://github.com/rohitg00/ai-engineering-from-scratch" target="_blank">rohitg00/ai-engineering-from-scratch</a></h3>
+        <p class="news-body">Learn it. Build it. Ship it for others.</p>
+        <p class="news-body zh"><span class="tr">译</span>学习它，构建它，交付给他人。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是一个带你从零手撕 AI 应用的开源宝库。</p>
+<p class="script-block">它在 GitHub 上已经狂斩了接近五万颗星。</p>
+<p class="script-block">它不跟你扯虚的理论，直接手把手教你写 RAG 和智能体，再把它们部署上线。</p>
+<p class="script-block">解决的就是你只会调 API 却不懂底层逻辑的痛点。</p>
+<p class="script-block">最牛的是它完全剥离了复杂的黑盒框架，让你看清每一行代码是怎么跑起来的。</p>
+<p class="script-block">想从小白蜕变成能独立交付产品的 AI 工程师，闭眼冲它就够了。</p>
+        <p class="repo-meta">★ 57,503 <span class="accent">(+1177 今日 today)</span> · ⑂ 10,022 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#12</span><a class="repo-link" href="https://github.com/shy3130/tick-stock-panel" target="_blank">shy3130/tick-stock-panel</a></h3>
+        <p class="news-body">TSP自托管、零运维的 A 股「选股 + 监控 + 回测」量化工作台 | LLM能力驱使策略定制+个股分析+复盘 | 自由接入第三方数据源与个性化扩展数据 | 个人开源</p>
+        <p class="news-body zh"><span class="tr">译</span>TSP 自托管、零运维的 A 股「选股 + 监控 + 回测」量化工作台 | LLM 驱动策略定制 + 个股分析 + 复盘 | 自由接入第三方数据源与个性化扩展数据 | 个人开源</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这是一个专为 A 股打造的零运维量化选股工作台。<br>它把选股、实时监控和策略回测全都整合在了一起。</p>
+<p class="script-block">最牛的是它接入了大模型，能直接用自然语言帮你定制策略和分析个股。<br>甚至连每天的复盘报告，它都能自动搞定。</p>
+<p class="script-block">它完全支持自托管，部署极简而且不需要复杂的后续运维。<br>各种第三方数据源还能自由扩展，简直是个人量化交易者的神器！</p>
+        <p class="repo-meta">★ 5,129 <span class="accent">(+44 今日 today)</span> · ⑂ 1,254 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#13</span><a class="repo-link" href="https://github.com/google/ax" target="_blank">google/ax</a></h3>
+        <p class="news-body">Google&#x27;s open agentic orchestration runtime</p>
+        <p class="news-body zh"><span class="tr">译</span>谷歌开源智能体编排运行时</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>想搭一套自动协同的 AI 团队吗？<br>这个项目是 Google 最新开源的 Agent 编排运行时！</p>
+<p class="script-block">搞多 Agent 协作时，最烦的就是任务调度和通信上下文管理。<br>它直接把这些复杂的底层逻辑全给包了。<br>让你像拼积木一样，轻松组建出能干复杂活儿的智能体团队！</p>
+<p class="script-block">作为 Google 官方工具，它的架构极其规范。<br>不仅省去重复造轮子的麻烦，更代表了未来 Agent 开发的方向！</p>
+        <p class="repo-meta">★ 11,504 <span class="accent">(+1379 今日 today)</span> · ⑂ 552 forks · <span class="lang-dot" style="background:#00ADD8"></span>Go · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#14</span><a class="repo-link" href="https://github.com/NVIDIA/Model-Optimizer" target="_blank">NVIDIA/Model-Optimizer</a></h3>
+        <p class="news-body">A unified library of SOTA model optimization techniques like quantization, distillation, pruning, neural architecture search, speculative decoding, etc. It compresses deep learning models for downstream deployment frameworks like TensorRT-LLM, TensorRT, vLLM, etc. to optimize inference speed.</p>
+        <p class="news-body zh"><span class="tr">译</span>集成了量化、蒸馏、剪枝、神经架构搜索、推测解码等最先进模型优化技术的统一库。它通过压缩深度学习模型，适配 TensorRT-LLM、TensorRT、vLLM 等下游部署框架，以优化推理速度。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是英伟达官方开源的模型优化神器。<br>大模型跑得慢又吃显存，用它就能一站式搞定压缩。</p>
+<p class="script-block">它集成了量化、剪枝和蒸馏等各种前沿优化技术。<br>压好的模型能直接无缝对接 TensorRT 和 vLLM 去跑推理。</p>
+<p class="script-block">最牛的是你不用再费劲去拼凑零散的工具库了。<br>官方调优能让推理速度大幅提升，显存开销直接暴跌。<br>只要你做大模型落地部署，它绝对值得立马收藏！</p>
+        <p class="repo-meta">★ 4,472 <span class="accent">(+359 今日 today)</span> · ⑂ 649 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#15</span><a class="repo-link" href="https://github.com/pbakaus/impeccable" target="_blank">pbakaus/impeccable</a></h3>
+        <p class="news-body">The design language that makes your AI harness better at design.</p>
+        <p class="news-body zh"><span class="tr">译</span>让你的 AI 框架更擅长设计的设计语言。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是一套专门给 AI 打造的设计语言。<br>它能让你的 AI 助手瞬间学会做顶级界面。</p>
+<p class="script-block">很多人用 AI 生成前端页面，总是觉得丑得一塌糊涂。<br>这个项目就是用来彻底解决 AI 审美差的问题。<br>把规范喂给 AI 工具，它就能写出排版舒爽美观的代码。</p>
+<p class="script-block">它的厉害之处在于把顶尖设计师的直觉做成了系统规则。<br>哪怕你完全不懂 UI 设计，也能轻松做出大厂级的界面。<br>想用 AI 做出高颜值前端的朋友，赶紧去收藏它吧！</p>
+        <p class="repo-meta">★ 71,201 <span class="accent">(+306 今日 today)</span> · ⑂ 4,310 forks · <span class="lang-dot" style="background:#f1e05a"></span>JavaScript · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#16</span><a class="repo-link" href="https://github.com/openbao/openbao" target="_blank">openbao/openbao</a></h3>
+        <p class="news-body">OpenBao is a software solution to manage, store, and distribute sensitive data including secrets, certificates, and keys.</p>
+        <p class="news-body zh"><span class="tr">译</span>OpenBao 是一款用于管理、存储和分发敏感数据（包括机密、证书和密钥）的软件解决方案。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是一个专门用来统一管理密钥、证书和敏感数据的安全工具。<br>平时写代码最怕把 API 密钥直接硬编码进仓库吧？</p>
+<p class="script-block">它能帮你把密码集中加密存好，运行时动态调用，彻底解决泄露风险。<br>它还是 HashiCorp Vault 变更协议后，由 Linux 基金会主导的纯粹开源替代品。</p>
+<p class="script-block">企业级功能全免费，还没有版权锁定的风险，做云原生和后端的同学赶紧关注它！</p>
+        <p class="repo-meta">★ 7,731 <span class="accent">(+49 今日 today)</span> · ⑂ 585 forks · <span class="lang-dot" style="background:#00ADD8"></span>Go · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+</div>
+<div class="footer-block">
+  <p>GitHub 日榜 · 每日自动收录自 GitHub Trending · Daily auto-collected from GitHub Trending</p>
+  <p>数据来源 Source：<a href="https://github.com/trending?since=daily" target="_blank">github.com/trending?since=daily</a> · 抓取时间 Fetched：2026-09-26T09:00:09</p>
+</div>
+</div></body></html>
