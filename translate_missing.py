@@ -196,6 +196,19 @@ MY_ZH = {
     "cloudflare/quiche": "🥧 QUIC 传输协议与 HTTP/3 的开源实现。",
     "ruanyf/weekly": "科技爱好者周刊，每周五发布",
     "yynxxxxx/Codex-X": "OpenAI Codex 桌面端 / CLI 的可视化管理工具，支持 Provider / API 切换、会话同步、提示词注入、Skills / MCP 管理与 TOML 配置可视化，跨平台可用。",
+    # 2026-09-27 日榜/周榜新增
+    "vectorize-io/hindsight": "Hindsight：会学习的智能体记忆系统。",
+    "NVIDIA/Model-Optimizer": "一个统一的 SOTA 模型优化技术库，涵盖量化、蒸馏、剪枝、神经架构搜索、推测解码等，可将深度学习模型压缩以适配 TensorRT-LLM、TensorRT、vLLM 等下游部署框架，从而优化推理速度。",
+    "dream-num/univer": "面向 AI 智能体的办公套件运行时——电子表格、文档、幻灯片、画布、关系型表格与 PDF 集于一身。",
+    "tensorflow/tensorflow": "人人可用的开源机器学习框架。",
+    "openbao/openbao": "OpenBao 是一套用于管理、存储与分发敏感数据的软件方案，涵盖密钥、证书与私密凭据。",
+    "microsoft/vscode": "Visual Studio Code：微软推出的免费、开源、跨平台代码编辑器。",
+    "actions/runner-images": "GitHub Actions 运行器镜像。",
+    "mobile-next/mobile-mcp": "用于移动端自动化与抓取的模型上下文协议（MCP）服务端，支持 iOS、Android、模拟器、仿真器与真机。",
+    "vercel/next.js": "Next.js：用于构建 Web 应用的 React 框架。",
+    "davila7/claude-code-templates": "用于配置与监控 Claude Code 的命令行工具。",
+    "pytorch/pytorch": "Python 中的张量与动态神经网络库，具备强大的 GPU 加速能力。",
+    "superdesigndev/treg": "智能体工具版的 OpenRouter：统一的智能体工具接入与分发平台。",
 }
 
 
