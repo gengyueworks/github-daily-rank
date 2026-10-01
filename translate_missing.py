@@ -209,6 +209,21 @@ MY_ZH = {
     "davila7/claude-code-templates": "用于配置与监控 Claude Code 的命令行工具。",
     "pytorch/pytorch": "Python 中的张量与动态神经网络库，具备强大的 GPU 加速能力。",
     "superdesigndev/treg": "智能体工具版的 OpenRouter：统一的智能体工具接入与分发平台。",
+    # 2026-10-01 日榜/周榜新增
+    "NVIDIA/OpenShell": "OpenShell 是面向自主 AI 智能体的安全、私密的运行时环境。",
+    "firebase/firebase-ios-sdk": "面向 Apple 平台应用开发的 Firebase SDK。",
+    "mvschwarz/openrig": "基于 Claude Code、Codex 与 Pi 搭建你自己的智能体网络：具备持久角色分工、共享上下文与归属任务的团队。",
+    "earendil-works/pi": "AI 智能体工具包：统一的 LLM API、智能体循环、TUI 与编程智能体命令行工具。",
+    "tile-ai/tilelang": "专为简化高性能 GPU/CPU/加速器内核开发而设计的领域特定语言。",
+    "pablostanley/yoinks": "在终端里随手抓取任意视频，没有烦人的广告。",
+    "HunxByts/GhostTrack": "用于追踪地理位置或手机号码的实用工具。",
+    "pbakaus/impeccable": "让你的 AI 宿主（harness）更懂设计的设计语言。",
+    "Friedrich-M/UniMate": "[SIGGRAPH Asia 2026] UniMate：用统一的单一模型为多样化骨架生成动画。",
+    "alirezarezvani/claude-skills": "380 项 Claude Code 技能与智能体技能、插件（30+ 智能体、70+ 自定义命令、380+ 技能、可定制参考材料与脚本），适用于 Claude Code、Codex、Gemini CLI、Cursor 等共 11 类编程智能体——覆盖工程、营销、产品、合规、高管顾问、研究、业务运营、商业与财务，以及日常效率提升。",
+    "agent-substrate/substrate": "Agent Substrate：核心系统。",
+    "FxEmbed/FxEmbed": "修复 X/Twitter 与 Bluesky 的嵌入！在 Discord、Telegram 等平台上使用多图、视频、投票、翻译等富媒体嵌入。",
+    "flutter/flutter": "Flutter 让构建移动端及更多平台的美观应用变得轻松而高效。",
+    "androoAGI/starnet": "一座鲜活的像素风工作站，真实的 AI 智能体在此完成真实的工作。本地优先的桌面智能体宿主——自带密钥，亲眼见证你的智能体团队真正运转起来。",
 }
 
 
