@@ -108,3 +108,11 @@
 - **部署冲突**：并行自动化 ...629 已先推送 `data/daily/2026-09-29.json`、`data/daily/2026-09-28.json`、`data/weekly/2026-09-28.json`（仅 17/18 翻译）到 remote main（ede3b96 / 4ca5feb），导致 local main 落后 2 个提交且本机未跟踪 `data/weekly/2026-09-28.json` 与远端同名文件会碰撞。解法：备份本机全译数据到 `/tmp/ghrank_backup` → 移走本机未跟踪 data 文件 → `git stash -u`（存 translate_missing.py + zh_cache.json）→ `git pull --rebase -X ours origin main`（顺过，本地 b3ca51c 复演到 origin/main 之上）→ `git stash pop`（zh_cache.json 遇内容冲突，用备份覆盖写回解决）→ 用备份覆盖写回日榜/周榜全译版（周榜 16/18 优于远端 17/18 但含 8 个本机快照外的仓库，保持本机快照为权威）→ `git add -A && commit && push main`（01f9a77）→ 再跑 `bash deploy_ghpages.sh`（rebase 成 no-op，gh-pages orphan 推送）。
 - **部署**：`bash deploy_ghpages.sh` 成功（gh-pages orphan 推送）。本地 `site/` 被孤儿步骤清空后重跑 `build.py` 复原。线上复测：首测 index / weekly 200、daily 404（GitHub Pages 传播延迟）；等约 37 秒后 daily 转为 200，三页均 200。
 - **结论**：当日上榜 日榜 15 + 周榜 18；数据/翻译/站点已生成并推送 `origin/main`，线上链接更新成功（200）。
+
+## 2026-10-02 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`）成功。日榜 `data/daily/2026-10-02.json` = 15 个仓库；周榜 `data/weekly/2026-09-28.json`（本周一 0928，与上一周报同档期）= 18 个仓库。
+- **翻译**：`translate_missing.py` 首轮命中词表+zh_cache 全量补齐，日榜 15/15、周榜 18 个中 16 个有 `description_zh`；唯一无译可补的是 `anthropics/financial-services` 与 `anthropics/claude-code-action`（上游无英文简介，与历史同因），非漏译。
+- **生成**：`build.py` 重建 `site/daily/2026-10-02.html`、`site/weekly/2026-09-28.html`、`site/index.html`、`site/classics/index.html`（ainews 双语风格）。
+- **部署**：`origin/main` 当时与本地同步（0/0，并行 ...629 未抢先推送）。先本地 `git add data/... && commit`（4119c5f，使日榜转为 tracked 规避未跟踪同名碰撞）→ `bash deploy_ghpages.sh` 顺过（rebase no-op，push main + gh-pages orphan 均成功）→ 重跑 `build.py` 复原被孤儿步骤清空的 `site/`。
+- **线上复测**：首测 index / weekly 200、daily 404（GitHub Pages 传播延迟）；等约 40 秒后 daily 转为 200，三页均 200。
+- **结论**：当日上榜 日榜 15 + 周榜 18；数据/翻译/站点已生成并推送 `origin/main`，线上链接更新成功（200）。
