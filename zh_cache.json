@@ -11,7 +11,7 @@
   "github/spec-kit": "💫 帮助你上手规格驱动开发（Spec-Driven Development）的工具集。",
   "cursor/plugins": "Cursor 插件规范与官方插件。",
   "rustdesk/rustdesk": "一款开源远程桌面软件，支持自托管，是 TeamViewer 的替代方案。",
-  "OpenCut-app/OpenCut": "CapCut 的开源替代品",
+  "OpenCut-app/OpenCut": "开源版剪映（CapCut）替代品。",
   "ToolJet/ToolJet": "ToolJet 是 ToolJet AI 的开源基础，也是用于构建内部工具、仪表盘、业务应用、工作流和 AI 智能体的企业级应用生成平台 🚀",
   "cordiverse/cordis": "面向时空可组合性的元框架。",
   "public-apis/public-apis": "免费 API 合集清单。",
@@ -151,7 +151,7 @@
   "JetBrains/go-modern-guidelines": "帮助 AI 编程 Agent 编写现代 Go 代码",
   "K-Dense-AI/scientific-agent-skills": "将任意 AI 智能体转化为 AI 科学家。全球首屈一指的科学领域 Agent 技能库，已被全球超过 17.5 万名科学家使用。内置 163 个开箱即用且经过验证的技能，以及 100 多个涵盖生物学、化学、医学和药物研发的科学数据库。兼容 Cursor、Claude Code、Codex、Pi、Antigravity 以及开放的 Agent Skills 标准。",
   "ConardLi/garden-skills": "ConardLi 的开源技能合集，涵盖网页设计、知识检索、图像生成等。",
-  "thedotmack/claude-mem": "为所有 Agent 提供跨会话的持久上下文——捕获 Agent 在会话中的所有操作，利用 AI 进行压缩，并将相关上下文重新注入到未来的会话中。支持 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等多种工具。",
+  "thedotmack/claude-mem": "为每个智能体提供跨会话的持久上下文——记录智能体在会话中执行的一切，用 AI 压缩后注入未来会话的相关上下文。兼容 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等。",
   "google/googletest": "GoogleTest - Google 测试与 Mock 框架",
   "ComposioHQ/awesome-claude-skills": "精选的 Claude Skills、资源与工具列表，用于自定义 Claude AI 工作流。",
   "actions/checkout": "用于检出代码仓库的 GitHub Action",
@@ -182,7 +182,7 @@
   "pacifio/atlas": "面向 Agent 的版本控制系统。在一处集中使用多个编程 Agent，追踪其变更并进行查询。",
   "zyronon/TypeWords": "练习英语，一次敲击，一点进步。",
   "vercel-labs/portless": "用稳定、具名的本地 URL 替换端口号。适用于人类与智能体。",
-  "JuliusBrussee/caveman": "🪨 少 Token 就能搞定，何必用多 — 通过像原始人一样说话来节省 65% Token 的 Claude Code 技能",
+  "JuliusBrussee/caveman": "🪨 能用少量 token 何必用那么多。一套病毒式技能 + 代理，让编程智能体像穴居人一样说话，从而削减 65% 的 token 消耗。",
   "Gitlawb/openclaude": "随处运行，万物可用。",
   "averygan/reclip": "支持从几乎所有网站下载视频。轻量级自托管媒体下载器，拥有简洁的 Web 界面。",
   "bannedbook/fanqiang": "翻墙与科学上网",
@@ -259,5 +259,9 @@
   "agent-substrate/substrate": "Agent Substrate：核心系统。",
   "FxEmbed/FxEmbed": "修复 X/Twitter 与 Bluesky 的嵌入！在 Discord、Telegram 等平台上使用多图、视频、投票、翻译等富媒体嵌入。",
   "flutter/flutter": "Flutter 让构建移动端及更多平台的美观应用变得轻松而高效。",
-  "androoAGI/starnet": "一座鲜活的像素风工作站，真实的 AI 智能体在此完成真实的工作。本地优先的桌面智能体宿主——自带密钥，亲眼见证你的智能体团队真正运转起来。"
+  "androoAGI/starnet": "一座鲜活的像素风工作站，真实的 AI 智能体在此完成真实的工作。本地优先的桌面智能体宿主——自带密钥，亲眼见证你的智能体团队真正运转起来。",
+  "Effect-TS/effect": "使用 TypeScript 构建生产级应用。",
+  "cloudflare/cloudflare-os": "基于 Cloudflare Workers 构建的智能体工作空间，可创建文档、构建应用，并结合企业自身的上下文与系统来运行智能体。",
+  "getsentry/sentry": "以开发者为先的错误追踪与性能监控平台。",
+  "longbridge/gpui-kit": "基于 GPUI 的 Rust GUI 组件库，用于构建出色的跨平台桌面应用。"
 }
