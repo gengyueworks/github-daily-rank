@@ -1,0 +1,277 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GitHub 日榜｜2026-10-02</title><style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap');
+:root {
+    --klein: #002FA7;
+    --klein-bright: #0044FF;
+    --white: #FFFFFF;
+    --bg-light: #F8F9FB;
+    --text-dark: #1A1A1A;
+    --text-mid: #6B6B6B;
+    --text-light: #9CA3AF;
+    --border: #E5E7EB;
+    --accent: #C41E3A;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Noto Sans SC', 'Inter', -apple-system, sans-serif;
+    background: var(--white); color: var(--text-dark);
+    line-height: 1.75; -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 720px; margin: 0 auto; padding: 56px 28px 80px; }
+.doc-title { font-size: 38px; font-weight: 700; color: var(--text-dark); letter-spacing: -0.5px; margin-bottom: 8px; text-wrap: balance; }
+.doc-title span { color: var(--klein); }
+.doc-date { font-family: 'Inter', sans-serif; font-size: 15px; color: var(--text-light); }
+.divider { height: 1px; background: var(--border); margin: 36px 0; }
+.section-header { font-size: 24px; font-weight: 600; color: var(--klein); margin-bottom: 24px; padding-bottom: 8px; border-bottom: 2px solid var(--klein); display: inline-block; text-wrap: balance; }
+.section-header .en { font-family: 'Inter'; font-size: 13px; color: var(--text-light); font-weight: 400; margin-left: 10px; }
+.section-block { margin-bottom: 48px; }
+.news-item { margin-bottom: 52px; }
+.news-item:last-child { margin-bottom: 0; }
+.news-title { font-size: 21px; font-weight: 600; color: var(--text-dark); line-height: 1.5; margin-bottom: 14px; text-wrap: balance; }
+.news-body { font-size: 16px; color: var(--text-dark); line-height: 1.9; margin-bottom: 16px; }
+.news-label { font-size: 14px; color: var(--text-mid); line-height: 1.7; margin-bottom: 14px; }
+.highlight { color: var(--klein); font-weight: 600; }
+.accent { color: var(--accent); font-weight: 600; }
+.turn { color: var(--klein); font-weight: 700; }
+.intro-text { font-size: 16px; color: var(--text-dark); line-height: 1.9; margin-bottom: 14px; }
+.source-line { font-size: 13px; color: var(--text-light); margin-top: 8px; }
+.source-line a { color: var(--klein); text-decoration: none; }
+.footer-block { font-size: 14px; color: var(--text-mid); line-height: 1.7; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); }
+.card-tag { font-size: 12px; color: var(--text-mid); opacity: 0.55; margin-top: 8px; line-height: 1.6; }
+
+.site-nav-lite { display: flex; align-items: center; justify-content: space-between; margin-bottom: 28px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+.nav-back { font-size: 14px; color: var(--klein); text-decoration: none; font-weight: 500; }
+.nav-back:hover { text-decoration: underline; }
+.nav-date { font-size: 13px; color: var(--text-light); font-family: 'JetBrains Mono', monospace; }
+
+/* ---- GitHub 榜专属（仍沿用 ainews 用词体系） ---- */
+.rank { font-family: 'JetBrains Mono', monospace; color: var(--klein); font-weight: 700; margin-right: 8px; }
+.repo-link { color: var(--text-dark); text-decoration: none; }
+.repo-link:hover { color: var(--klein); }
+.zh { color: var(--text-mid); }
+.tr { font-size: 11px; color: #fff; background: var(--klein); border-radius: 4px; padding: 2px 6px; margin-right: 6px; font-family: 'Inter'; vertical-align: middle; }
+.repo-meta { font-size: 14px; color: var(--text-mid); margin-top: 12px; line-height: 1.8; }
+.repo-meta .lang-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin: 0 4px 0 2px; }
+.repo-meta .cat { color: var(--klein); font-weight: 600; }
+.riser-note { font-size: 13px; color: var(--text-light); margin-top: 8px; }
+.script-block { font-size: 15.5px; color: var(--ink-soft, var(--text-mid)); line-height: 1.8; margin: 0 0 14px; }
+.script-tag { font-size: 11px; color: #fff; background: var(--klein); border-radius: 4px; padding: 1px 7px; margin-right: 8px; font-family: 'Inter'; vertical-align: middle; white-space: nowrap; }
+.archive { columns: 2; column-gap: 24px; }
+.archive a { display: block; color: var(--klein); text-decoration: none; padding: 3px 0; font-size: 15px; }
+.archive a:hover { text-decoration: underline; }
+
+/* classics 高分精选页专属：阅读型页面加宽容器，提升行宽舒适度 */
+body.classics .container { max-width: 860px; }
+
+/* ---- classics 高分精选页：严格对齐 ainews 排版体系 ----
+   红蓝配比：蓝为主（标题/■ 标签/强调/链接/footer 3px 蓝顶线），
+   红仅限数字点缀（.num，JetBrains Mono 红色数字），蓝:红 ≈ 10:1。
+   全部限定 body.classics，不影响 daily/weekly。 */
+body.classics {
+  --paper: #FFFFFF; --ink: #0E0E10; --ink-soft: #3A3A3E;
+  --gray: #6B6B70; --gray-light: #9CA3AF; --line: #E8E8EC;
+}
+body.classics .masthead { margin-bottom: 36px; }
+body.classics .mast-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--klein); font-weight: 600; margin-bottom: 14px; }
+body.classics .mast-title { font-size: 44px; font-weight: 900; letter-spacing: -1.5px; line-height: 1.05; color: var(--klein); margin-bottom: 16px; text-wrap: balance; }
+body.classics .mast-rule { height: 3px; background: var(--klein); width: 100%; margin: 0 0 10px; }
+body.classics .mast-meta { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--gray); display: flex; gap: 14px; flex-wrap: wrap; }
+body.classics .mast-meta .issue { color: var(--klein); font-weight: 600; }
+body.classics .mast-lede { font-size: 16px; line-height: 1.7; color: var(--ink-soft); margin-top: 22px; padding-left: 16px; border-left: 3px solid var(--klein); }
+body.classics .sec-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gray-light); margin-bottom: 6px; }
+body.classics .sec-title { font-size: 15px; font-weight: 700; color: var(--klein); letter-spacing: 1px; margin-bottom: 24px; display: inline-block; }
+body.classics .sec-title::before { content: "AE"; color: var(--klein); margin-right: 8px; font-size: 13px; }
+body.classics .item { margin-bottom: 52px; }
+body.classics .item:last-child { margin-bottom: 0; }
+body.classics .dateline { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gray); letter-spacing: 0.5px; margin-bottom: 10px; }
+body.classics .dateline .src { color: var(--klein); font-weight: 600; }
+body.classics .item-title { font-size: 21px; font-weight: 700; line-height: 1.4; margin-bottom: 12px; text-wrap: balance; }
+body.classics .item-title a { color: var(--klein); text-decoration: none; }
+body.classics .item-title a:hover { text-decoration: underline; }
+body.classics .body { font-size: 15.5px; color: var(--ink-soft); line-height: 1.8; }
+body.classics .body p { margin-bottom: 14px; }
+body.classics .body p:last-child { margin-bottom: 0; }
+body.classics .body .num { font-family: 'JetBrains Mono', monospace; color: var(--accent); font-weight: 600; }
+body.classics .body .tag { display: inline-block; font-size: 11px; font-family: 'JetBrains Mono', monospace; color: var(--gray); background: var(--line); padding: 1px 8px; border-radius: 3px; margin-right: 4px; }
+body.classics .src-line { font-size: 13px; color: var(--gray); margin-top: 10px; font-family: 'JetBrains Mono', monospace; line-height: 1.7; }
+body.classics .src-line a { color: var(--klein); text-decoration: none; }
+body.classics .src-line a:hover { text-decoration: underline; }
+body.classics .src-line .cat { color: var(--klein); font-weight: 600; }
+body.classics .link-area { margin-top: 12px; background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 8px 12px; display: flex; flex-direction: column; gap: 6px; }
+body.classics .link-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+body.classics .link-url { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--klein); text-decoration: none; overflow-wrap: anywhere; }
+body.classics .link-url:hover { text-decoration: underline; }
+body.classics .copy-btn { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gray); background: var(--paper); border: 1px solid var(--line); border-radius: 4px; padding: 2px 8px; cursor: pointer; flex-shrink: 0; }
+body.classics .copy-btn:hover { color: var(--klein); border-color: var(--klein); }
+body.classics .copy-btn.copied { color: #fff; background: var(--klein); border-color: var(--klein); }
+body.classics .footer { margin-top: 48px; padding-top: 20px; border-top: 3px solid var(--klein); font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--gray); line-height: 1.8; }
+body.classics .footer .big { color: var(--ink); font-weight: 600; }
+body.classics .footer a { color: var(--klein); text-decoration: none; }
+body.classics .footer a:hover { text-decoration: underline; }
+</style></head>
+<body><div class="container">
+<nav class="site-nav-lite"><a href="../index.html" class="nav-back">← 首页 / Index</a><span class="nav-date">2026年10月02日</span></nav>
+<h1 class="doc-title">GitHub 日榜｜<span>2026-10-02</span></h1>
+<p class="doc-date">2026年10月02日 · 星期五 · Daily GitHub Trending</p>
+<div class="divider"></div>
+<div class="section-block">
+  <h2 class="section-header">今日榜单 <span class="en">Today's Board</span></h2>
+  <p class="intro-text">今日 <span class="accent">15</span> 个仓库登上 GitHub Trending，最热分类 <span class="highlight">AI / 大模型</span>，单日最高 <span class="accent">+2456★</span>（<span class="highlight">NVIDIA/OpenShell</span>）。</p><p class="intro-text">Today <span class="accent">15</span> repos trended on GitHub. Hottest category <span class="highlight">AI / LLM</span>; top daily gain <span class="accent">+2456★</span> by <span class="highlight">NVIDIA/OpenShell</span>.</p>
+  
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#1</span><a class="repo-link" href="https://github.com/DietrichGebert/ponytail" target="_blank">DietrichGebert/ponytail</a></h3>
+        <p class="news-body">Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.</p>
+        <p class="news-body zh"><span class="tr">译</span>让你的 AI 智能体像团队里最懒的资深开发者那样思考：最好的代码，是你根本没写的那些代码。</p>
+        
+        <p class="repo-meta">★ 150,519 <span class="accent">(+1194 今日 today)</span> · ⑂ 8,082 forks · <span class="lang-dot" style="background:#f1e05a"></span>JavaScript · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#2</span><a class="repo-link" href="https://github.com/mattpocock/skills" target="_blank">mattpocock/skills</a></h3>
+        <p class="news-body">Skills for Real Engineers. Straight from my .agents directory.</p>
+        <p class="news-body zh"><span class="tr">译</span>面向实战工程师的技能合集，直接取自我的 .agents 目录。</p>
+        
+        <p class="repo-meta">★ 273,910 <span class="accent">(+883 今日 today)</span> · ⑂ 22,994 forks · <span class="lang-dot" style="background:#89e051"></span>Shell · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#3</span><a class="repo-link" href="https://github.com/NVIDIA/OpenShell" target="_blank">NVIDIA/OpenShell</a></h3>
+        <p class="news-body">OpenShell is the safe, private runtime for autonomous AI agents.</p>
+        <p class="news-body zh"><span class="tr">译</span>OpenShell 是面向自主 AI 智能体的安全、私密的运行时环境。</p>
+        
+        <p class="repo-meta">★ 14,022 <span class="accent">(+2456 今日 today)</span> · ⑂ 1,628 forks · <span class="lang-dot" style="background:#dea584"></span>Rust · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#4</span><a class="repo-link" href="https://github.com/firebase/firebase-ios-sdk" target="_blank">firebase/firebase-ios-sdk</a></h3>
+        <p class="news-body">Firebase SDK for Apple App Development</p>
+        <p class="news-body zh"><span class="tr">译</span>面向 Apple 平台应用开发的 Firebase SDK。</p>
+        
+        <p class="repo-meta">★ 6,861 <span class="accent">(+112 今日 today)</span> · ⑂ 1,806 forks · <span class="lang-dot" style="background:#f34b7d"></span>C++ · <span class="cat">开发工具 · Dev Tools</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：开发工具 · Dev Tools</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#5</span><a class="repo-link" href="https://github.com/mvschwarz/openrig" target="_blank">mvschwarz/openrig</a></h3>
+        <p class="news-body">Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work.</p>
+        <p class="news-body zh"><span class="tr">译</span>基于 Claude Code、Codex 与 Pi 搭建你自己的智能体网络：具备持久角色分工、共享上下文与归属任务的团队。</p>
+        
+        <p class="repo-meta">★ 3,732 <span class="accent">(+642 今日 today)</span> · ⑂ 247 forks · <span class="lang-dot" style="background:#3178c6"></span>TypeScript · <span class="cat">开发工具 · Dev Tools</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：开发工具 · Dev Tools</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#6</span><a class="repo-link" href="https://github.com/cursor/plugins" target="_blank">cursor/plugins</a></h3>
+        <p class="news-body">Cursor plugin specification and official plugins</p>
+        <p class="news-body zh"><span class="tr">译</span>Cursor 插件规范与官方插件。</p>
+        
+        <p class="repo-meta">★ 9,323 <span class="accent">(+150 今日 today)</span> · ⑂ 883 forks · <span class="lang-dot" style="background:#3178c6"></span>TypeScript · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#7</span><a class="repo-link" href="https://github.com/obra/superpowers" target="_blank">obra/superpowers</a></h3>
+        <p class="news-body">An agentic skills framework &amp; software development methodology that works.</p>
+        <p class="news-body zh"><span class="tr">译</span>一套切实可用的智能体技能框架与软件开发方法论。</p>
+        
+        <p class="repo-meta">★ 293,977 <span class="accent">(+455 今日 today)</span> · ⑂ 26,293 forks · <span class="lang-dot" style="background:#89e051"></span>Shell · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#8</span><a class="repo-link" href="https://github.com/mksglu/context-mode" target="_blank">mksglu/context-mode</a></h3>
+        <p class="news-body">Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.</p>
+        <p class="news-body zh"><span class="tr">译</span>面向 AI 编程智能体的上下文窗口优化方案：沙箱化工具输出（体积削减 98%）、持久化会话记忆，并通过 MCP + 钩子在 17 个平台上强制统一路由。</p>
+        
+        <p class="repo-meta">★ 24,782 <span class="accent">(+362 今日 today)</span> · ⑂ 1,784 forks · <span class="lang-dot" style="background:#3178c6"></span>TypeScript · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#9</span><a class="repo-link" href="https://github.com/heygen-com/hyperframes" target="_blank">heygen-com/hyperframes</a></h3>
+        <p class="news-body">Write HTML. Render video. Built for agents.</p>
+        <p class="news-body zh"><span class="tr">译</span>写 HTML，渲染出视频。专为智能体打造。</p>
+        
+        <p class="repo-meta">★ 55,350 <span class="accent">(+627 今日 today)</span> · ⑂ 5,019 forks · <span class="lang-dot" style="background:#3178c6"></span>TypeScript · <span class="cat">前端 / Web · Frontend / Web</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：前端 / Web · Frontend / Web</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#10</span><a class="repo-link" href="https://github.com/earendil-works/pi" target="_blank">earendil-works/pi</a></h3>
+        <p class="news-body">AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI</p>
+        <p class="news-body zh"><span class="tr">译</span>AI 智能体工具包：统一的 LLM API、智能体循环、TUI 与编程智能体命令行工具。</p>
+        
+        <p class="repo-meta">★ 111,230 <span class="accent">(+298 今日 today)</span> · ⑂ 14,133 forks · <span class="lang-dot" style="background:#3178c6"></span>TypeScript · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#11</span><a class="repo-link" href="https://github.com/tile-ai/tilelang" target="_blank">tile-ai/tilelang</a></h3>
+        <p class="news-body">Domain-specific language designed to streamline the development of high-performance GPU/CPU/Accelerators kernels</p>
+        <p class="news-body zh"><span class="tr">译</span>专为简化高性能 GPU/CPU/加速器内核开发而设计的领域特定语言。</p>
+        
+        <p class="repo-meta">★ 8,114 <span class="accent">(+163 今日 today)</span> · ⑂ 815 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#12</span><a class="repo-link" href="https://github.com/pablostanley/yoinks" target="_blank">pablostanley/yoinks</a></h3>
+        <p class="news-body">yoink any video from your terminal. no shady ads.</p>
+        <p class="news-body zh"><span class="tr">译</span>在终端里随手抓取任意视频，没有烦人的广告。</p>
+        
+        <p class="repo-meta">★ 2,940 <span class="accent">(+361 今日 today)</span> · ⑂ 276 forks · <span class="lang-dot" style="background:#3178c6"></span>TypeScript · <span class="cat">开发工具 · Dev Tools</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：开发工具 · Dev Tools</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#13</span><a class="repo-link" href="https://github.com/HunxByts/GhostTrack" target="_blank">HunxByts/GhostTrack</a></h3>
+        <p class="news-body">Useful tool to track location or mobile number</p>
+        <p class="news-body zh"><span class="tr">译</span>用于追踪地理位置或手机号码的实用工具。</p>
+        
+        <p class="repo-meta">★ 16,404 <span class="accent">(+368 今日 today)</span> · ⑂ 2,256 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">开发工具 · Dev Tools</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：开发工具 · Dev Tools</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#14</span><a class="repo-link" href="https://github.com/pbakaus/impeccable" target="_blank">pbakaus/impeccable</a></h3>
+        <p class="news-body">The design language that makes your AI harness better at design.</p>
+        <p class="news-body zh"><span class="tr">译</span>让你的 AI 宿主（harness）更懂设计的设计语言。</p>
+        
+        <p class="repo-meta">★ 73,682 <span class="accent">(+495 今日 today)</span> · ⑂ 4,437 forks · <span class="lang-dot" style="background:#f1e05a"></span>JavaScript · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#15</span><a class="repo-link" href="https://github.com/Friedrich-M/UniMate" target="_blank">Friedrich-M/UniMate</a></h3>
+        <p class="news-body">[SIGGRAPH Asia 2026] UniMate: One Unified Model to Animate Diverse Skeletons</p>
+        <p class="news-body zh"><span class="tr">译</span>[SIGGRAPH Asia 2026] UniMate：用统一的单一模型为多样化骨架生成动画。</p>
+        
+        <p class="repo-meta">★ 1,081 <span class="accent">(+217 今日 today)</span> · ⑂ 101 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+</div>
+<div class="footer-block">
+  <p>GitHub 日榜 · 每日自动收录自 GitHub Trending · Daily auto-collected from GitHub Trending</p>
+  <p>数据来源 Source：<a href="https://github.com/trending?since=daily" target="_blank">github.com/trending?since=daily</a> · 抓取时间 Fetched：2026-10-02T09:09:21</p>
+</div>
+</div></body></html>
