@@ -224,6 +224,16 @@ MY_ZH = {
     "FxEmbed/FxEmbed": "修复 X/Twitter 与 Bluesky 的嵌入！在 Discord、Telegram 等平台上使用多图、视频、投票、翻译等富媒体嵌入。",
     "flutter/flutter": "Flutter 让构建移动端及更多平台的美观应用变得轻松而高效。",
     "androoAGI/starnet": "一座鲜活的像素风工作站，真实的 AI 智能体在此完成真实的工作。本地优先的桌面智能体宿主——自带密钥，亲眼见证你的智能体团队真正运转起来。",
+    # 2026-10-04 日榜/周榜新增
+    "tester-army/e2e": "面向 Web 与移动端应用的新一代端到端（e2e）测试框架。",
+    "getsentry/sentry": "以开发者为先的错误追踪与性能监控平台。",
+    "caddyserver/caddy": "快速、可扩展、跨平台的 HTTP/1-2-3 网页服务器，内置自动 HTTPS。",
+    "michael-denyer/pstack-claude": "Poteto「pstack」的 Claude Code、Codex、Pi、OpenCode、Gemini 与 Prime Agent 版本。将严谨的智能体工作流与 Cursor 原语移植到其他编程宿主上使用。",
+    "thedotmack/claude-mem": "为所有智能体提供跨会话的持久化上下文——记录智能体在会话中产生的全部操作，用 AI 压缩后，将相关上下文注入未来的会话。兼容 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等。",
+    "garrytan/gstack": "复刻 Garry Tan 的 Claude Code 配置：23 个各具主张的工具，分别扮演 CEO、设计师、工程经理、发布经理、文档工程师与 QA 等角色。",
+    "antirez/ds4": "面向 Metal、CUDA 与 ROCm 的 DeepSeek 4 Flash / PRO 本地推理引擎。",
+    "Effect-TS/effect": "用 TypeScript 构建可交付生产环境的应用。",
+    "cs341-illinois/coursebook": "伊利诺伊大学开源的系统编程入门教材。",
 }
 
 

@@ -116,3 +116,12 @@
 - **部署**：`origin/main` 当时与本地同步（0/0，并行 ...629 未抢先推送）。先本地 `git add data/... && commit`（4119c5f，使日榜转为 tracked 规避未跟踪同名碰撞）→ `bash deploy_ghpages.sh` 顺过（rebase no-op，push main + gh-pages orphan 均成功）→ 重跑 `build.py` 复原被孤儿步骤清空的 `site/`。
 - **线上复测**：首测 index / weekly 200、daily 404（GitHub Pages 传播延迟）；等约 40 秒后 daily 转为 200，三页均 200。
 - **结论**：当日上榜 日榜 15 + 周榜 18；数据/翻译/站点已生成并推送 `origin/main`，线上链接更新成功（200）。
+
+## 2026-10-03 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`）成功。日榜 `data/daily/2026-10-03.json` = 19 个仓库；周榜 `data/weekly/2026-09-28.json`（本周一 0928）= 18 个仓库。
+- **翻译**：`translate_missing.py` 首轮命中词表+zh_cache 补 日 11 + 周 27；余 6 个新仓库（Effect-TS/effect、JuliusBrussee/caveman、thedotmack/claude-mem、cloudflare/cloudflare-os、getsentry/sentry、longbridge/gpui-kit）人工校对中译写入 `description_zh` 并入库 `zh_cache.json`，最终周榜 18/18 全译、日榜 19 中 16 个有 `description_zh`；3 个无译可补（pingdotgg/t3code、jamwithai/production-agentic-rag-course、meituan-longcat/LongCat-Video，上游英文简介均为空，与历史同因）。
+- **生成**：`build.py` 重建 `site/daily/2026-10-03.html`、`site/weekly/2026-09-28.html`、`site/index.html`、`site/classics/index.html`（ainews 双语风格）。
+- **部署**：`origin/main` 与本地同步（0/0，无并行自动化抢提交）。先本地 `git add` 数据+缓存并 `commit`（a5e9d3e，使日榜转为 tracked 规避未跟踪同名碰撞）→ `bash deploy_ghpages.sh`（rebase no-op，push main + gh-pages orphan 均成功）→ 重跑 `build.py` 复原被孤儿步骤清空的 `site/`。
+- **线上复测**：首测 index / weekly 200、daily 404（GitHub Pages 传播延迟）；等约 40 秒后 daily 转为 200，三页均 200。
+- **注意**：本环境 `HTTPS_PROXY=127.0.0.1:21879` 代理当前 refused，scraper/git/gh 均需 `HTTPS_PROXY= HTTP_PROXY= NO_PROXY='*'` 直连（curl 直连 github 200）。
+- **结论**：当日上榜 日榜 19 + 周榜 18；数据/翻译/站点已生成并推送 `origin/main`，线上链接更新成功（200）。

@@ -151,7 +151,7 @@
   "JetBrains/go-modern-guidelines": "帮助 AI 编程 Agent 编写现代 Go 代码",
   "K-Dense-AI/scientific-agent-skills": "将任意 AI 智能体转化为 AI 科学家。全球首屈一指的科学领域 Agent 技能库，已被全球超过 17.5 万名科学家使用。内置 163 个开箱即用且经过验证的技能，以及 100 多个涵盖生物学、化学、医学和药物研发的科学数据库。兼容 Cursor、Claude Code、Codex、Pi、Antigravity 以及开放的 Agent Skills 标准。",
   "ConardLi/garden-skills": "ConardLi 的开源技能合集，涵盖网页设计、知识检索、图像生成等。",
-  "thedotmack/claude-mem": "为每个智能体提供跨会话的持久上下文——记录智能体在会话中执行的一切，用 AI 压缩后注入未来会话的相关上下文。兼容 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等。",
+  "thedotmack/claude-mem": "为所有智能体提供跨会话的持久化上下文——记录智能体在会话中产生的全部操作，用 AI 压缩后，将相关上下文注入未来的会话。兼容 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等。",
   "google/googletest": "GoogleTest - Google 测试与 Mock 框架",
   "ComposioHQ/awesome-claude-skills": "精选的 Claude Skills、资源与工具列表，用于自定义 Claude AI 工作流。",
   "actions/checkout": "用于检出代码仓库的 GitHub Action",
@@ -260,8 +260,14 @@
   "FxEmbed/FxEmbed": "修复 X/Twitter 与 Bluesky 的嵌入！在 Discord、Telegram 等平台上使用多图、视频、投票、翻译等富媒体嵌入。",
   "flutter/flutter": "Flutter 让构建移动端及更多平台的美观应用变得轻松而高效。",
   "androoAGI/starnet": "一座鲜活的像素风工作站，真实的 AI 智能体在此完成真实的工作。本地优先的桌面智能体宿主——自带密钥，亲眼见证你的智能体团队真正运转起来。",
-  "Effect-TS/effect": "使用 TypeScript 构建生产级应用。",
+  "Effect-TS/effect": "用 TypeScript 构建可交付生产环境的应用。",
   "cloudflare/cloudflare-os": "基于 Cloudflare Workers 构建的智能体工作空间，可创建文档、构建应用，并结合企业自身的上下文与系统来运行智能体。",
   "getsentry/sentry": "以开发者为先的错误追踪与性能监控平台。",
-  "longbridge/gpui-kit": "基于 GPUI 的 Rust GUI 组件库，用于构建出色的跨平台桌面应用。"
+  "longbridge/gpui-kit": "基于 GPUI 的 Rust GUI 组件库，用于构建出色的跨平台桌面应用。",
+  "tester-army/e2e": "面向 Web 与移动端应用的新一代端到端（e2e）测试框架。",
+  "caddyserver/caddy": "快速、可扩展、跨平台的 HTTP/1-2-3 网页服务器，内置自动 HTTPS。",
+  "michael-denyer/pstack-claude": "Poteto「pstack」的 Claude Code、Codex、Pi、OpenCode、Gemini 与 Prime Agent 版本。将严谨的智能体工作流与 Cursor 原语移植到其他编程宿主上使用。",
+  "garrytan/gstack": "复刻 Garry Tan 的 Claude Code 配置：23 个各具主张的工具，分别扮演 CEO、设计师、工程经理、发布经理、文档工程师与 QA 等角色。",
+  "antirez/ds4": "面向 Metal、CUDA 与 ROCm 的 DeepSeek 4 Flash / PRO 本地推理引擎。",
+  "cs341-illinois/coursebook": "伊利诺伊大学开源的系统编程入门教材。"
 }
