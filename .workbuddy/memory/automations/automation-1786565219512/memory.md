@@ -133,3 +133,11 @@
 - **部署**：`origin/main` 与本机同步（0/0，无并行自动化抢提交）。`bash deploy_ghpages.sh`（rebase no-op，`git add -A` 含新日榜数据，push main + gh-pages orphan 均成功）。本地 `site/` 被孤儿步骤清空后重跑 `build.py` 复原。
 - **线上复测**：首测 index / weekly 200、daily 404（GitHub Pages 传播延迟）；等约 45 秒后 daily 转为 200，三页均 200。
 - **结论**：当日上榜 日榜 16 + 周榜 19；数据/翻译/站点已生成并推送 `origin/main`，线上链接更新成功（200）。
+
+## 2026-10-05 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`）首跑因 GitHub 直连 `ReadTimeout`（30s，疑似瞬时网络抖动）失败；复跑成功。日榜 `data/daily/2026-10-05.json` = 16 个仓库；周榜 `data/weekly/2026-10-05.json`（本周一 1005，新周一）= 19 个仓库。
+- **翻译**：`translate_missing.py` 首轮命中 `zh_cache` + `MY_ZH` 全量补齐，日榜补 15、周榜补 33；最终日榜 16 中 15、周榜 19 中 18 有 `description_zh`。唯一无译可补的是 `pingdotgg/t3code`（上游英文简介为空，与 10-03/10-04 同因），非漏译。
+- **生成**：`build.py` 重建 `site/daily/2026-10-05.html`、`site/weekly/2026-10-05.html`、`site/index.html`、`site/classics/index.html`（ainews 双语风格）。
+- **部署**：`origin/main` 与本机同步（0/0，无并行自动化抢提交）。`bash deploy_ghpages.sh`（直连，unset 代理）顺过：`git pull --rebase` no-op → `git add -A && commit`（6da2f2e，日/周榜数据入库）→ push main → gh-pages orphan 推送成功。本地 `site/` 被孤儿步骤清空后重跑 `build.py` 复原。
+- **线上复测**：首测 index / classics 200、daily / weekly 404（GitHub Pages 传播延迟）；等约 45 秒后 daily / weekly 均转为 200，四页全部 200。
+- **结论**：当日上榜 日榜 16 + 周榜 19；数据/翻译/站点已生成并推送 `origin/main`，线上链接更新成功（200）。

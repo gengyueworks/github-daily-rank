@@ -234,6 +234,13 @@ MY_ZH = {
     "antirez/ds4": "面向 Metal、CUDA 与 ROCm 的 DeepSeek 4 Flash / PRO 本地推理引擎。",
     "Effect-TS/effect": "用 TypeScript 构建可交付生产环境的应用。",
     "cs341-illinois/coursebook": "伊利诺伊大学开源的系统编程入门教材。",
+    # 2026-10-06 日榜/周榜新增
+    "boykopovar/AnyPS5": "将 PS5 可执行程序自动移植到 Linux 与 Windows 的工具。",
+    "DuarteSantos8/openGym": "自托管的健身房与自重训练记录工具——规划训练计划、记录训练内容（超级组、热身、有氧），查看哪些肌肉已被训练、疲劳或停训，支持从 FitNotes / Strong / Hevy 导入数据，采用通行密钥登录。数据归你，服务器也归你。",
+    "cloudflare/cloudflare-os": "基于 Cloudflare Workers 构建的智能体工作空间，用于创建文档、构建应用，并借助你公司的上下文与系统集成运行智能体。",
+    "Stremio/stremio-web": "Stremio——自由播放流媒体内容。",
+    "M-Abozaid/esp32-c3-adblock": "运行在 2 美元 ESP32-C3（无 PSRAM）上的 Pi-hole 级 DNS 广告拦截器：将 53.7 万个域名以 40 位 FNV-1a 哈希存入闪存并通过二分查找匹配。UDP DNS 黑洞劫持 + Web 仪表盘。",
+    "Gaurav-Gosain/tuios": "一个了解你的智能体在做什么的终端窗口管理器。支持平铺窗格、工作区、重启后存活的会话，并为每个编程智能体提供统一收件箱。",
 }
 
 

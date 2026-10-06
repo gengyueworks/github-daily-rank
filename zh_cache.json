@@ -261,7 +261,7 @@
   "flutter/flutter": "Flutter 让构建移动端及更多平台的美观应用变得轻松而高效。",
   "androoAGI/starnet": "一座鲜活的像素风工作站，真实的 AI 智能体在此完成真实的工作。本地优先的桌面智能体宿主——自带密钥，亲眼见证你的智能体团队真正运转起来。",
   "Effect-TS/effect": "用 TypeScript 构建可交付生产环境的应用。",
-  "cloudflare/cloudflare-os": "基于 Cloudflare Workers 构建的智能体工作空间，可创建文档、构建应用，并结合企业自身的上下文与系统来运行智能体。",
+  "cloudflare/cloudflare-os": "基于 Cloudflare Workers 构建的智能体工作空间，用于创建文档、构建应用，并借助你公司的上下文与系统集成运行智能体。",
   "getsentry/sentry": "以开发者为先的错误追踪与性能监控平台。",
   "longbridge/gpui-kit": "基于 GPUI 的 Rust GUI 组件库，用于构建出色的跨平台桌面应用。",
   "tester-army/e2e": "面向 Web 与移动端应用的新一代端到端（e2e）测试框架。",
@@ -269,5 +269,11 @@
   "michael-denyer/pstack-claude": "Poteto「pstack」的 Claude Code、Codex、Pi、OpenCode、Gemini 与 Prime Agent 版本。将严谨的智能体工作流与 Cursor 原语移植到其他编程宿主上使用。",
   "garrytan/gstack": "复刻 Garry Tan 的 Claude Code 配置：23 个各具主张的工具，分别扮演 CEO、设计师、工程经理、发布经理、文档工程师与 QA 等角色。",
   "antirez/ds4": "面向 Metal、CUDA 与 ROCm 的 DeepSeek 4 Flash / PRO 本地推理引擎。",
-  "cs341-illinois/coursebook": "伊利诺伊大学开源的系统编程入门教材。"
+  "cs341-illinois/coursebook": "伊利诺伊大学开源的系统编程入门教材。",
+  "msitarzewski/agency-agents": "指尖上的完整 AI 代理公司——从前端巫师到 Reddit 社群高手，从灵感注入器到现实校验员。每个智能体都是带个性、有流程、交付可验证成果的专精专家。",
+  "boykopovar/AnyPS5": "将 PS5 可执行程序自动移植到 Linux 与 Windows 的工具。",
+  "DuarteSantos8/openGym": "自托管的健身房与自重训练记录工具——规划训练计划、记录训练内容（超级组、热身、有氧），查看哪些肌肉已被训练、疲劳或停训，支持从 FitNotes / Strong / Hevy 导入数据，采用通行密钥登录。数据归你，服务器也归你。",
+  "Stremio/stremio-web": "Stremio——自由播放流媒体内容。",
+  "M-Abozaid/esp32-c3-adblock": "运行在 2 美元 ESP32-C3（无 PSRAM）上的 Pi-hole 级 DNS 广告拦截器：将 53.7 万个域名以 40 位 FNV-1a 哈希存入闪存并通过二分查找匹配。UDP DNS 黑洞劫持 + Web 仪表盘。",
+  "Gaurav-Gosain/tuios": "一个了解你的智能体在做什么的终端窗口管理器。支持平铺窗格、工作区、重启后存活的会话，并为每个编程智能体提供统一收件箱。"
 }
