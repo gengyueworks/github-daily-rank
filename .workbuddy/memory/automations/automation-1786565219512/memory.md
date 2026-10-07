@@ -134,6 +134,14 @@
 - **线上复测**：首测 index / weekly 200、daily 404（GitHub Pages 传播延迟）；等约 45 秒后 daily 转为 200，三页均 200。
 - **结论**：当日上榜 日榜 16 + 周榜 19；数据/翻译/站点已生成并推送 `origin/main`，线上链接更新成功（200）。
 
+## 2026-10-06 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`）直连（unset 代理）。日榜首跑成功 13 个；周榜首跑 `ReadTimeout`，复跑（仅 weekly）成功。`data/daily/2026-10-06.json` = 13 个仓库；`data/weekly/2026-10-05.json`（本周一 1005）= 21 个仓库。
+- **翻译**：首轮 `translate_missing.py` 命中词表+zh_cache 补 日 7 + 周 25；余 6 个新仓库（boykopovar/AnyPS5、DuarteSantos8/openGym、cloudflare/cloudflare-os、Stremio/stremio-web、M-Abozaid/esp32-c3-adblock、Gaurav-Gosain/tuios）人工校对中译写入 `MY_ZH` 并重跑，最终日榜 13 中 12、周榜 21 中 20 有 `description_zh`；唯一无译可补的是 `pingdotgg/t3code`（日/周均上榜，上游英文简介为空，与 10-03/04/05 同因），非漏译。
+- **生成**：`build.py` 重建 `site/daily/2026-10-06.html`、`site/weekly/2026-10-05.html`、`site/index.html`、`site/classics/index.html`（ainews 双语风格）。
+- **部署**：`origin/main` 与本机同步（0/0，无并行自动化抢先推送）。先备份当日全译数据到 `/tmp/ghrank_backup` → 把并行自动化 `...629` 的未跟踪 memory 目录与过期 `2026-10-05.md` 暂移 `/tmp`（避免推送内部 memory）→ `bash deploy_ghpages.sh`（直连，unset 代理）顺过（rebase no-op，push main + gh-pages orphan 均成功）→ 还原 `...629` 目录与 `2026-10-05.md` → 重跑 `build.py` 复原被孤儿步骤清空的 `site/`。
+- **线上复测**：首测 index / weekly 200、daily 404（GitHub Pages 传播延迟）；等约 45 秒后 daily 转为 200，三页全部 200。
+- **结论**：当日上榜 日榜 13 + 周榜 21；数据/翻译/站点已生成并推送 `origin/main`，线上链接更新成功（200）。
+
 ## 2026-10-05 (执行)
 - **抓取**：`scraper.py`（venv `envs/ghrank`）首跑因 GitHub 直连 `ReadTimeout`（30s，疑似瞬时网络抖动）失败；复跑成功。日榜 `data/daily/2026-10-05.json` = 16 个仓库；周榜 `data/weekly/2026-10-05.json`（本周一 1005，新周一）= 19 个仓库。
 - **翻译**：`translate_missing.py` 首轮命中 `zh_cache` + `MY_ZH` 全量补齐，日榜补 15、周榜补 33；最终日榜 16 中 15、周榜 19 中 18 有 `description_zh`。唯一无译可补的是 `pingdotgg/t3code`（上游英文简介为空，与 10-03/10-04 同因），非漏译。
