@@ -241,6 +241,16 @@ MY_ZH = {
     "Stremio/stremio-web": "Stremio——自由播放流媒体内容。",
     "M-Abozaid/esp32-c3-adblock": "运行在 2 美元 ESP32-C3（无 PSRAM）上的 Pi-hole 级 DNS 广告拦截器：将 53.7 万个域名以 40 位 FNV-1a 哈希存入闪存并通过二分查找匹配。UDP DNS 黑洞劫持 + Web 仪表盘。",
     "Gaurav-Gosain/tuios": "一个了解你的智能体在做什么的终端窗口管理器。支持平铺窗格、工作区、重启后存活的会话，并为每个编程智能体提供统一收件箱。",
+    # 2026-10-16 日榜/周榜新增
+    "morluto/rea": "用智能体逆向任何东西——从应用行为一路到底层原生二进制。",
+    "anthropics/claude-plugins-official": "由 Anthropic 官方维护的 Claude Code 高质量插件目录。",
+    "K-Dense-AI/scientific-agent-skills": "把任意 AI 智能体变成 AI 科学家。面向科研的 Agent Skills 头号技能库，全球 25 万+ 科学家在用。内含 177 个开箱即用、经过验证的技能，以及 100+ 科学数据库，覆盖生物、化学、医学与药物研发。兼容 Cursor、Claude Code、Codex、Pi、Antigravity 及开放 Agent Skills 标准。",
+    "JuliusBrussee/caveman": "🪨 多 token 不如少 token 好使。一套爆火的技能+代理：让编程智能体像原始人一样说话，削减 65% 的 token 用量。",
+    "NationalSecurityAgency/ghidra": "Ghidra 是一套软件逆向工程（SRE）框架。",
+    "lightseekorg/tokenspeed": "TokenSpeed 是一套光速级的大语言模型推理引擎。",
+    "xerj-org/xerj": "XERJ 是 AI 检索数据的新方式。其自动索引能力让智能体在不浪费 grep/sed token 的前提下读懂你的数据。一条命令即可为代码、文档、日志与 PDF 建立索引，用于搜索、RAG、安全审计与智能体记忆，比 grep 节省 40 倍 token。兼容 Elasticsearch，现有客户端可直接使用。",
+    "ranxianglei/billion-context": "一款上下文压缩插件：小窗口（10 万上下文足矣）、省 token（节省 5 倍）、超长会话（单会话持续数月、数十亿 token）。billion-context is all you need",
+    "twostraws/SwiftUI-Agent-Skill": "面向 Claude Code、Codex 及其他 AI 工具的 SwiftUI 智能体技能。",
 }
 
 
