@@ -140,7 +140,7 @@
   "Crosstalk-Solutions/project-nomad": "Project NOMAD 是一个离线优先的知识与教育服务器。Wikipedia、数千本书籍、课程、地图以及可选的本地 AI，全部运行在你自己的硬件上，无需联网。",
   "reconurge/flowsint": "面向网络安全分析师与调查人员的现代化平台，用于可视化、灵活且可扩展的图谱式调查。",
   "peetzweg/opendisplay": "免费开源的 Sidecar / Duet 替代品——通过 USB 或 WiFi 将你的 iPhone 或 iPad 变成 Mac 的真正第二块屏幕，低延迟 H.264、Retina HiDPI、支持触控输入。",
-  "MadsLorentzen/ai-job-search": "在本地运行的求职助手。基于 Claude Code 构建的 AI 求职框架：评估职位、定制简历、撰写求职信、准备面试。Fork 即可完全掌控。",
+  "MadsLorentzen/ai-job-search": "在你的机器上运行的求职助手。基于 Claude Code 构建的 AI 求职框架：评估招聘信息、定制简历、撰写求职信、准备面试。Fork 它，将它据为己有。",
   "openclaw/openclaw": "你的专属个人 AI 助手。支持任意操作系统、任意平台。龙虾之道。🦞",
   "AgriciDaniel/claude-obsidian": "基于 Obsidian + Claude Code 的自组织 AI 第二大脑。放入任意资料源，Claude 即可自动读取、关联并归档至完全由你掌控的纯 Markdown 互联知识图谱中。集 AI 笔记与个人知识管理（PKM）于一体，是 Notion 的开源替代方案。基于 Karpathy 的 LLM Wiki 范式构建。",
   "tashfeenahmed/freellmapi": "每月处理 74 亿 token，集成 34 个免费 LLM 提供商及 635 个免费模型端点。统一通过单个 /v1 端点访问，并支持任意自定义 OpenAI 兼容端点。具备智能路由、自动故障转移与密钥加密功能。仅限个人实验使用。",
@@ -280,5 +280,7 @@
   "lightseekorg/tokenspeed": "TokenSpeed 是一套光速级的大语言模型推理引擎。",
   "xerj-org/xerj": "XERJ 是 AI 检索数据的新方式。其自动索引能力让智能体在不浪费 grep/sed token 的前提下读懂你的数据。一条命令即可为代码、文档、日志与 PDF 建立索引，用于搜索、RAG、安全审计与智能体记忆，比 grep 节省 40 倍 token。兼容 Elasticsearch，现有客户端可直接使用。",
   "ranxianglei/billion-context": "一款上下文压缩插件：小窗口（10 万上下文足矣）、省 token（节省 5 倍）、超长会话（单会话持续数月、数十亿 token）。billion-context is all you need",
-  "twostraws/SwiftUI-Agent-Skill": "面向 Claude Code、Codex 及其他 AI 工具的 SwiftUI 智能体技能。"
+  "twostraws/SwiftUI-Agent-Skill": "面向 Claude Code、Codex 及其他 AI 工具的 SwiftUI 智能体技能。",
+  "hmjz100/LinkSwift": "一个基于 JavaScript 的网盘文件下载地址获取工具。基于「网盘直链下载助手」修改，支持百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC 网盘 / 123 云盘八大网盘。",
+  "storytold/artcraft": "ArtCraft 是一款面向艺术家、设计师与电影制作者的匠心创作引擎。"
 }

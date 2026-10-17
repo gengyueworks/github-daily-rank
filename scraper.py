@@ -17,8 +17,21 @@ import sys
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
+import socket
+
 import requests
 from bs4 import BeautifulSoup
+
+# 强制 IPv4：本机无可用 IPv6，requests 默认先试 AAAA 会导致 github.com 直连 stall 超时。
+# 通过覆写 getaddrinfo 让解析只返回 IPv4 结果来规避。
+_orig_getaddrinfo = socket.getaddrinfo
+
+
+def _ipv4_getaddrinfo(host, port, family=0, type=0, proto=0, flags=0, *args, **kwargs):
+    return _orig_getaddrinfo(host, port, socket.AF_INET, type, proto, flags, *args, **kwargs)
+
+
+socket.getaddrinfo = _ipv4_getaddrinfo
 
 PROJECT = Path(__file__).resolve().parent
 DATA = PROJECT / "data"

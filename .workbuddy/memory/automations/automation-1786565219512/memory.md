@@ -157,3 +157,12 @@
 - **部署**：`origin/main` 与本机同步（0/0，无并行自动化抢提交）。预处理——备份当日全译数据到 `/tmp/ghrank_backup` → 暂移并行自动化 `...629` 内部 memory 目录与过期 `2026-10-05.md` 到 `/tmp`（避免推送内部 memory）→ `bash deploy_ghpages.sh`（直连，unset 代理）顺过：`git pull --rebase` no-op → `git add -A && commit`（日/周榜数据入库）→ push main → gh-pages orphan 推送成功 → 还原 `...629` 目录与 `2026-10-05.md` → 重跑 `build.py` 复原被孤儿步骤清空的本地 `site/`。
 - **线上复测**：首测 index / weekly 200、daily 404（GitHub Pages 传播延迟）；等约 45 秒后 daily 转为 200，三页全部 200。
 - **结论**：当日上榜 日榜 12 + 周榜 12；数据/翻译/站点已生成并推送 `origin/main`，线上链接更新成功（200）。
+
+## 2026-10-16 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`）直连。本机 `requests`/`urllib3` 默认先试 IPv6 AAAA，而本机无可用 IPv6，导致 github.com 直连 ConnectTimeout/ReadTimeout（首跑失败）；强制 IPv4（`socket.AF_INET`）重试成功。日榜 `data/daily/2026-10-16.json` = 12 个仓库；周榜 `data/weekly/2026-10-12.json`（本周一 1012）= 11 个仓库。
+- **翻译**：`translate_missing.py` 首轮命中 zh_cache/MY_ZH 补 日 5 + 周 12；余 9 个新仓库（morluto/rea、anthropics/claude-plugins-official、K-Dense-AI/scientific-agent-skills、JuliusBrussee/caveman、NationalSecurityAgency/ghidra、lightseekorg/tokenspeed、xerj-org/xerj、ranxianglei/billion-context、twostraws/SwiftUI-Agent-Skill）人工校对中译写入 `MY_ZH` 并重跑，最终日榜 12/12、周榜 11/11 全部有 `description_zh`。
+- **生成**：`build.py` 重建 `site/daily/2026-10-16.html`、`site/weekly/2026-10-12.html`、`site/index.html`、`site/classics/index.html`（ainews 双语风格）。
+- **部署**：`origin/main` 与本机同步（0/0，无并行自动化 ...629 抢先推送）。备份当日数据到 `/tmp/ghrank_backup` → 暂移 ...629 内部 memory 目录与 `2026-10-05.md` 到 `/tmp/ghrank_629_mem`（避免推送内部 memory）→ 首跑 `bash deploy_ghpages.sh` 因 `git pull --rebase` 瞬时限流/网络失败中止（已 abort，未动数据）→ 二跑顺过（rebase no-op，`git add -A` 含 data/translate_missing.py/zh_cache.json/memory.md，commit e13d327 → push main + gh-pages orphan 均成功）→ 还原 ...629 目录与 `2026-10-05.md` → 重跑 `build.py` 复原被孤儿步骤清空的 `site/`。
+- **线上复测**：index / daily / weekly 三页均 200。
+- **结论**：当日上榜 日榜 12 + 周榜 11；数据/翻译/站点已生成并推送 `origin/main`，线上链接更新成功（200）。
+- **环境要点（重要，易复发）**：Python `requests` 抓取 GitHub 必须强制 IPv4（`urllib3.connection.create_connection` 打 `family=socket.AF_INET` 补丁），否则 IPv6 stall 必超时。curl 因 Happy Eyeballs 不受影响，故此前直连测试正常却抓不到；`git`/`gh` 走 libcurl 亦不受此影响。运行脚本前 `unset HTTPS_PROXY HTTP_PROXY`（本机 127.0.0.1:21879 代理当前 refused）。

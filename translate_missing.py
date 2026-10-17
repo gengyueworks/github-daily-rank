@@ -251,6 +251,11 @@ MY_ZH = {
     "xerj-org/xerj": "XERJ 是 AI 检索数据的新方式。其自动索引能力让智能体在不浪费 grep/sed token 的前提下读懂你的数据。一条命令即可为代码、文档、日志与 PDF 建立索引，用于搜索、RAG、安全审计与智能体记忆，比 grep 节省 40 倍 token。兼容 Elasticsearch，现有客户端可直接使用。",
     "ranxianglei/billion-context": "一款上下文压缩插件：小窗口（10 万上下文足矣）、省 token（节省 5 倍）、超长会话（单会话持续数月、数十亿 token）。billion-context is all you need",
     "twostraws/SwiftUI-Agent-Skill": "面向 Claude Code、Codex 及其他 AI 工具的 SwiftUI 智能体技能。",
+    # 2026-10-17 日榜新增
+    "MadsLorentzen/ai-job-search": "在你的机器上运行的求职助手。基于 Claude Code 构建的 AI 求职框架：评估招聘信息、定制简历、撰写求职信、准备面试。Fork 它，将它据为己有。",
+    "hmjz100/LinkSwift": "一个基于 JavaScript 的网盘文件下载地址获取工具。基于「网盘直链下载助手」修改，支持百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC 网盘 / 123 云盘八大网盘。",
+    # 2026-10-17 周榜新增
+    "storytold/artcraft": "ArtCraft 是一款面向艺术家、设计师与电影制作者的匠心创作引擎。",
 }
 
 
