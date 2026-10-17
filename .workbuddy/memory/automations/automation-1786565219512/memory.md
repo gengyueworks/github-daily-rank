@@ -166,3 +166,12 @@
 - **线上复测**：index / daily / weekly 三页均 200。
 - **结论**：当日上榜 日榜 12 + 周榜 11；数据/翻译/站点已生成并推送 `origin/main`，线上链接更新成功（200）。
 - **环境要点（重要，易复发）**：Python `requests` 抓取 GitHub 必须强制 IPv4（`urllib3.connection.create_connection` 打 `family=socket.AF_INET` 补丁），否则 IPv6 stall 必超时。curl 因 Happy Eyeballs 不受影响，故此前直连测试正常却抓不到；`git`/`gh` 走 libcurl 亦不受此影响。运行脚本前 `unset HTTPS_PROXY HTTP_PROXY`（本机 127.0.0.1:21879 代理当前 refused）。
+
+## 2026-10-17 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`）直连。本次把 IPv4 强制补丁正式写进 `scraper.py` 源码（此前仅在运行时临时打，未入库），采用覆写 `socket.getaddrinfo` 仅返回 IPv4（本机 urllib3 2.x 的 `util.connection.create_connection` 不接受 `family` 参数，旧补丁方式报错，已改）。首跑因瞬时 ReadTimeout 失败，复跑成功。日榜 `data/daily/2026-10-17.json` = 13 个仓库；周榜 `data/weekly/2026-10-12.json`（本周一 1012）= 11 个仓库。
+- **翻译**：`translate_missing.py` 首轮命中 zh_cache/MY_ZH 补 日 10 + 周 20；余 3 个新仓库（`MadsLorentzen/ai-job-search`、`hmjz100/LinkSwift` 描述本身已是中文、`storytold/artcraft`）写入 `MY_ZH` 并重跑，最终日榜 13 中 12、周榜 11/11 有 `description_zh`；唯一缺口 `android/skills`（日榜）上游无英文简介，无译可补（与历史 anthropics 同因）。
+- **生成**：`build.py` 重建 `site/daily/2026-10-17.html`、`site/weekly/2026-10-12.html`、`site/index.html`、`site/classics/index.html`（ainews 双语风格）。
+- **部署**：`origin/main` 与本机同步（0/0，并行 ...629 未抢先推送）。备份当日数据到 `/tmp/ghrank_backup` → 暂移 ...629 内部 memory 目录到 `/tmp/ghrank_629_mem`（避免推送内部 memory；其真实位置为 `.workbuddy/automations/automation-1786565219629/`，未被实际位移）→ `bash deploy_ghpages.sh`（直连，unset 代理）顺过（rebase no-op，`git add -A` 含 scraper.py IPv4 补丁 / translate_missing.py / zh_cache.json / memory.md / 新日榜，commit 1c57608 → push main + gh-pages orphan 均成功）→ 还原 ...629 目录 → 重跑 `build.py` 复原被孤儿步骤清空的 `site/`。
+- **线上复测**：首测即 index / daily / weekly 三页均 200，无传播延迟。
+- **结论**：当日上榜 日榜 13 + 周榜 11；数据/翻译/站点已生成并推送 `origin/main`，线上链接更新成功（200）。
+- **环境要点（更新）**：IPv4 强制补丁已入库 `scraper.py`（覆写 `socket.getaddrinfo`）。运行脚本前仍需 `unset HTTPS_PROXY HTTP_PROXY`（本机 127.0.0.1:21879 代理当前 refused）。
