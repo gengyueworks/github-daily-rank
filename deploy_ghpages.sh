@@ -46,6 +46,8 @@ git add -A
 git commit -q -m "site: publish static reports to GitHub Pages"
 git push -u origin gh-pages -q -f
 git checkout main -q
+# 恢复 site/ 目录（因 .gitignore 忽略 site/，checkout main 后工作区不包含 site/）
+cp -r /tmp/ghrank_pages site
 
 # 4) 开启 GitHub Pages (已开启则忽略)
 echo "{\"source\":{\"branch\":\"gh-pages\",\"path\":\"/\"}}" | gh api "repos/$OWNER/$REPO/pages" -X POST --input - >/dev/null 2>&1 || true
