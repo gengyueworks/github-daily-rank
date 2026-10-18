@@ -25,7 +25,28 @@ CACHE_FILE = PROJECT / "script_cache.json"
 
 LLM_BASE_URL = os.environ.get("GHRANK_LLM_URL", "http://127.0.0.1:8317/v1/chat/completions")
 LLM_API_KEY = os.environ.get("GHRANK_LLM_KEY", "sk-123")
-LLM_MODEL = os.environ.get("GHRANK_LLM_MODEL", "gemini-3.6-flash-high")
+
+
+def _get_default_model() -> str:
+    """获取网关模型，优先继承 opencode.json 中的 gemini 提供方可用模型或全局配置，支持环境变量覆盖。"""
+    env_model = os.environ.get("GHRANK_LLM_MODEL")
+    if env_model:
+        return env_model
+    cfg_path = Path.home() / ".config" / "opencode" / "opencode.json"
+    if cfg_path.exists():
+        try:
+            cfg = json.loads(cfg_path.read_text(encoding="utf-8"))
+            gemini_models = cfg.get("provider", {}).get("gemini", {}).get("models", {})
+            if "gemini-3.8-flash-high" in gemini_models:
+                return "gemini-3.8-flash-high"
+            if gemini_models:
+                return next(iter(gemini_models.keys()))
+        except Exception:
+            pass
+    return "gemini-3.8-flash-high"
+
+
+LLM_MODEL = _get_default_model()
 TIMEOUT = 45
 USE_CACHE = "--no-cache" not in sys.argv
 
