@@ -108,7 +108,9 @@
       "period_stars": 190,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型"
+      "category": "AI / 大模型",
+      "description_zh": "开源的智能体技能工具——npx skills。",
+      "script_zh": "这个项目是 Vercel 专门为 AI Agent 打造的技能包管理工具。\n它能帮你一键给 AI 接入各种现实世界的操作能力。\n\n以前给智能体手写工具接口，调试起来非常折腾。\n现在你只需要在终端敲一行命令，就能让 AI 秒变全能选手，轻松搞定查数据、调接口甚至发邮件。\n\n它最厉害的地方在于把复杂交互封装成了即插即用的模块。\n不仅开箱即用，社区生态还极为丰富。\n可以说它就是 Agent 时代的包管理器，玩 AI 应用开发绝对绕不开它！"
     },
     {
       "rank": 7,
@@ -160,7 +162,9 @@
       "period_stars": 1198,
       "period_label": "今日",
       "topics": [],
-      "category": "开发工具"
+      "category": "开发工具",
+      "description_zh": "跨平台的 Xcode 替代方案，支持在 Linux、Windows 和 macOS 上使用 SwiftPM 构建和部署 iOS 应用。",
+      "script_zh": "想开发苹果应用，但手里只有 Windows 电脑？\n这个项目就是能取代 Xcode 的跨平台编译神器！\n\n它让你不用买 Mac，在 Windows 和 Linux 上就能直接构建和部署 iOS 应用。\n只要敲几行命令，编译和签名全搞定。\n\n最爽的是告别了几十个 G 的臃肿工具，服务器打包成本直接砍半。\n想要跨平台开发 iOS 的同学必须去看看！"
     }
   ]
 }

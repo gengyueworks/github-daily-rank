@@ -311,5 +311,9 @@
   "Robbyant/lingbot-map": "[ECCV 2026 最佳论文候选] LingBot-Map：面向流式 3D 重建的几何上下文 Transformer",
   "lyogavin/airllm": "单张 4GB 显卡即可运行 70B 大模型推理",
   "chrislgarry/Apollo-11": "阿波罗11号指令舱与登月舱制导计算机（AGC）原始源代码。",
-  "danyuchn/asd-ste100-skill": "将 ASD-STE100 简化技术英语规则改造成 Claude Code 技能，用于改写面向智能体的歧义英文。"
+  "danyuchn/asd-ste100-skill": "将 ASD-STE100 简化技术英语规则改造成 Claude Code 技能，用于改写面向智能体的歧义英文。",
+  "xtool-org/xtool": "跨平台的 Xcode 替代方案，支持在 Linux、Windows 和 macOS 上使用 SwiftPM 构建和部署 iOS 应用。",
+  "ifixai-ai/iFixAi": "面向 AI 智能体的独立审计工具。可由人工或智能体自主运行，旨在解答 AI 智能体经济中最核心的问题：智能体是否在做它该做的事？借助 iFixAi，不到 120 秒即可获得答案。",
+  "rust-lang/rust": "赋能每个人构建可靠且高效的软件。",
+  "ntdevlabs/tiny11builder": "用于构建精简、定制化 Windows 11 镜像的 WinUI 应用。"
 }
