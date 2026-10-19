@@ -175,3 +175,25 @@
 - **线上复测**：首测即 index / daily / weekly 三页均 200，无传播延迟。
 - **结论**：当日上榜 日榜 13 + 周榜 11；数据/翻译/站点已生成并推送 `origin/main`，线上链接更新成功（200）。
 - **环境要点（更新）**：IPv4 强制补丁已入库 `scraper.py`（覆写 `socket.getaddrinfo`）。运行脚本前仍需 `unset HTTPS_PROXY HTTP_PROXY`（本机 127.0.0.1:21879 代理当前 refused）。
+
+## 2026-10-18 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`）直连。首跑 GitHub 瞬时 `ReadTimeout`（30s）失败，复跑成功。日榜 `data/daily/2026-10-18.json` = 13 个仓库；周榜 `data/weekly/2026-10-12.json`（本周一 1012）= 10 个仓库。
+- **翻译**：`translate_missing.py` 首轮命中 zh_cache/MY_ZH 全量补齐（日 12 已填 + 1 上游无英文简介；周 10/10）。最终日榜 13 中 12、周榜 10/10 全部有 `description_zh`；唯一缺口 `android/skills`（日榜）上游无英文简介，无译可补（与历史 anthropics 同因）。
+- **生成**：`build.py` 重建 `site/daily/2026-10-18.html`、`site/weekly/2026-10-12.html`、`site/index.html`、`site/classics/index.html`（ainews 双语风格）。
+- **部署（过程波折，最终成功）**：
+  1. 首跑 `deploy_ghpages.sh`：`git pull --rebase` 因 GitHub 瞬时网络失败中止（未动数据）。
+  2. 二跑：`Failed to connect to github.com port 443`（75s 超时）——识别为 **git 的 libcurl 同样受 IPv6 stall 影响**（curl 因 Happy Eyaballs 直连正常，git 卡 IPv6）。解法：用 `http.curloptResolve=github.com:443:<IPv4>` 强制 IPv4 的 git 包装脚本（`/tmp/gitwrap/git` 注入 `-c` 参数），叠加 `unset HTTPS_PROXY`。
+  3. 一次误跑把工作树留在 **gh-pages 孤儿分支**，项目根被 site/ 内容覆盖（脚本/ data 看似丢失）。挽救：`git checkout -f main` 恢复脚本树 + 从 `/tmp/ghrank_backup` 拷回当日 data + 重跑 translate/build。
+  4. 最终重跑（IPv4 包装 + 代理 unset）成功：gh-pages 推送 `fe2b241`，`origin/main` 含当日 data（日/周榜快照），线上三页复测 `index / daily / weekly` 均 **200**（daily 初 404 为 Pages 传播延迟，约 45s 后转 200）。
+- **结论**：当日上榜 日榜 13 + 周榜 10；数据/翻译/站点已生成并推送 `origin/main`，线上链接更新成功（200）。
+- **环境要点（重要·新发现）**：本机 `git`/`gh` 的 libcurl 同样吃 IPv6 stall（与 `scraper.py` 同因），直连 GitHub 会 75s 超时；必须 `http.curloptResolve=github.com:443:<IPv4>` 强制 IPv4（无法靠 `unset` 代理解决）。另：`deploy_ghpages.sh` 的孤儿步骤会把工作树切到 gh-pages，若中途失败务必 `git checkout -f main` 挽救，避免根目录被 site/ 内容覆盖。
+
+## 2026-10-19 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`）直连成功。日榜 `data/daily/2026-10-19.json` = 13 个仓库；周榜 `data/weekly/2026-10-19.json`（本周一 1019）= 10 个仓库。
+- **翻译**：`translate_missing.py` 首轮命中 zh_cache/MY_ZH 补齐；新增 `mlabonne/llm-course`、`Kruk2/jasna` 人工校对中译写入 `MY_ZH` 并重跑，最终日榜 13 中 12、周榜 10/10 全部有 `description_zh`；唯一缺口 `android/skills`（日榜）上游无英文简介，无译可补（与历史 anthropics 同因）。
+- **数据污染与纠正（重要）**：本地 `data/daily/2026-10-19.json` 一度被一份来自 10-16/17 的旧 10 仓库快照污染（morluto/rea、MadsLorentzen/ai-job-search 等历史仓库），疑因 rebase 流程中并行自动化 ...629 之前推送的远端旧版本错误落盘。识别后直接重跑 `scraper.py` 以当日真实快照覆盖（13 仓库，与远端 ...629 推送的 13 仓库一致），并复核 `zh_cache.json` 未丢失今日新增译文。
+- **生成**：`build.py` 重建 `site/daily/2026-10-19.html`、`site/weekly/2026-10-19.html`、`site/index.html`、`site/classics/index.html`（ainews 双语风格）。
+- **部署冲突**：并行自动化 ...629 已先推送 `data/daily/2026-10-19.json` 等到 remote main（ea9ed34，部分翻译）。按既定模式：移走本机未跟踪 data → `git stash -u` → `git pull --rebase -X ours origin main`（快进到 ea9ed34）→ `git stash pop`（`zh_cache.json` 遇 both-modified，取 stash/theirs 保留今日译文）→ 用重抓全译版覆盖写回日榜/周榜 → `git add -A && commit && push main` → 再跑 `bash deploy_ghpages.sh`（rebase 成 no-op，gh-pages orphan 推送）。本机日榜 13(12 译)/周榜 10(10 译) 全译，优于远端部分译本。
+- **部署**：`bash deploy_ghpages.sh`（git 走 IPv4 包装 + 关闭 lowSpeed 中止）成功。本地 `site/` 被孤儿步骤清空后重跑 `build.py` 复原。线上复测：index / daily / weekly 三页均 200。
+- **结论**：当日上榜 日榜 13 + 周榜 10；数据/翻译/站点已生成并推送 `origin/main`，线上链接更新成功（200）。
+- **环境要点（稳定）**：`git`/`gh` 的 libcurl 仍吃 IPv6 stall，必须以 `http.curloptResolve=github.com:443:<IPv4>` 强制 IPv4（GitHub A 记录会变，需重解）；叠加 `http.lowSpeedLimit=0/http.lowSpeedTime=0` 关闭低速率中止，规避「Operation too slow」限流。运行前 `unset HTTPS_PROXY HTTP_PROXY`（本机 127.0.0.1:21879 代理 refused）。
