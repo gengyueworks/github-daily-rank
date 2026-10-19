@@ -315,5 +315,7 @@
   "xtool-org/xtool": "跨平台的 Xcode 替代方案，支持在 Linux、Windows 和 macOS 上使用 SwiftPM 构建和部署 iOS 应用。",
   "ifixai-ai/iFixAi": "面向 AI 智能体的独立审计工具。可由人工或智能体自主运行，旨在解答 AI 智能体经济中最核心的问题：智能体是否在做它该做的事？借助 iFixAi，不到 120 秒即可获得答案。",
   "rust-lang/rust": "赋能每个人构建可靠且高效的软件。",
-  "ntdevlabs/tiny11builder": "用于构建精简、定制化 Windows 11 镜像的 WinUI 应用。"
+  "ntdevlabs/tiny11builder": "用于构建精简、定制化 Windows 11 镜像的 WinUI 应用。",
+  "mlabonne/llm-course": "大语言模型（LLM）入门课程，包含学习路线图和 Colab 笔记本。",
+  "Kruk2/jasna": "视频修复工具"
 }
