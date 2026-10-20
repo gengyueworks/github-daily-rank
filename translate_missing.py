@@ -116,7 +116,7 @@ MY_ZH = {
     "Tencent/teamai-cli": "让每个团队都成为 AI 原生团队。",
     "pascalorg/editor": "开源 3D 建筑编辑器，配备本地 CLI、MCP 工具，以及面向人类与 AI 智能体的实用工作流。",
     "earthtojake/text-to-cad": "面向 CAD、CAE 与 CAM 的智能体技能库。",
-    "cathrynlavery/diagram-design": "为 Claude Code、Codex 与 Pi 准备的 38 种编辑型图表模板。自包含 HTML + SVG，无阴影、告别 Mermaid 套话。",
+    "cathrynlavery/diagram-design": "为 Claude Code、Codex、GitHub Copilot、Cursor、Factory Droid 与 Pi 准备的 44 种编辑型图表模板。自包含 HTML + SVG，无阴影、告别 Mermaid 套话。",
     "TauricResearch/TradingAgents": "TradingAgents：基于多智能体大语言模型的金融交易框架。",
     "liquidslr/system-design-notes": "《系统设计面试：内幕指南》一书的学习笔记。",
     "rohitg00/ai-engineering-from-scratch": "从零学 AI 工程：学透、做出来、交付给别人用。",
@@ -259,6 +259,9 @@ MY_ZH = {
     # 2026-10-19 日榜新增
     "mlabonne/llm-course": "通过路线图与 Colab 笔记本，带你入门大语言模型（LLM）的课程。",
     "Kruk2/jasna": "视频修复工具。",
+    # 2026-10-20 新增
+    "headroomlabs-ai/headroom": "在工具输出、日志、文件与 RAG 文本块抵达 LLM 之前进行压缩：编码智能体可少用约 20% 的 token，JSON 可少用 60–95%，答案保持不变。提供库、代理与 MCP 服务器三种形态。",
+    "YuJunZhiXue/dsh-purge": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换用不同提示词；默认提示词面向国产模型「小码酱」。为每种模型都可切换的越狱方案。求 Star 收藏 ⭐，如需二开请查看署名要求部分。",
 }
 
 

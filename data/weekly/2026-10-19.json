@@ -1,7 +1,7 @@
 {
   "since": "weekly",
   "date": "2026-10-20",
-  "fetched_at": "2026-10-20T09:00:13",
+  "fetched_at": "2026-10-20T09:16:01",
   "count": 14,
   "repos": [
     {
@@ -13,14 +13,13 @@
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 336910,
-      "forks": 85079,
+      "stars": 337036,
+      "forks": 85108,
       "period_stars": 201065,
       "period_label": "本周",
       "topics": [],
       "category": "移动端",
-      "description_zh": "用智能体逆向任何东西——从应用行为一路到底层原生二进制。",
-      "script_zh": "你平时做软件逆向是不是觉得头特别大？\n这个项目能让 AI 帮你逆向一切东西。\n\n从上层的应用行为，一直分析到底层的二进制代码。\n它就像个 24 小时在线的顶级安全专家。\n不管是抓包分析还是反编译汇编，它都能全自动搞定。\n\n最厉害的是，它能把耗时几天的逆向工作缩短到几分钟。\n直接给你输出一份人类看得懂的逻辑报告。\n想做安全研究或摸清底层逻辑的，它绝对值得收藏！"
+      "description_zh": "用智能体逆向任何东西——从应用行为一路到底层原生二进制。"
     },
     {
       "rank": 2,
@@ -31,14 +30,13 @@
       "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 43178,
+      "stars": 43181,
       "forks": 4568,
       "period_stars": 5441,
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "由 Anthropic 官方维护的 Claude Code 高质量插件目录。",
-      "script_zh": "这个项目是 Anthropic 官方为 Claude 打造的插件大本营。\n\n它能让你的 AI 助手直接连接数据库、本地文件和各种第三方工具。\n有了它，Claude 就不再只是个聊天机器人，而是能帮你写代码、查数据、直接干活的超级助理。\n\n最棒的是官方亲自维护，质量和安全性绝对有保障。\n难怪在 GitHub 上拿到了三万多个星，想让 AI 自动干活的朋友闭眼冲就完了！"
+      "description_zh": "由 Anthropic 官方维护的 Claude Code 高质量插件目录。"
     },
     {
       "rank": 3,
@@ -49,14 +47,13 @@
       "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
       "language": "Rust",
       "language_color": "#dea584",
-      "stars": 33729,
-      "forks": 5337,
+      "stars": 33736,
+      "forks": 5340,
       "period_stars": 13572,
       "period_label": "本周",
       "topics": [],
       "category": "游戏",
-      "description_zh": "ArtCraft 是一款面向艺术家、设计师与电影制作者的匠心创作引擎。",
-      "script_zh": "这个项目是一个专门给艺术家和设计师打造的意图化创作引擎。\n\n平时用 AI 生成画面最头疼的就是全靠碰运气。\n它能帮你精准控制细节和视觉情绪，让 AI 彻底听你指挥。\n无论是做视觉设计还是影视分镜，你都能完全按照自己的想法来雕琢。\n\n它的亮点就在于把创作主导权重新交还给人类。\n目前它在 GitHub 上已经拿到了将近八千星，绝对值得你关注！"
+      "description_zh": "ArtCraft 是一款面向艺术家、设计师与电影制作者的匠心创作引擎。"
     },
     {
       "rank": 4,
@@ -67,14 +64,13 @@
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 57286,
-      "forks": 18201,
+      "stars": 57335,
+      "forks": 18210,
       "period_stars": 9073,
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "在你的机器上运行的求职助手。基于 Claude Code 构建的 AI 求职框架：评估招聘信息、定制简历、撰写求职信、准备面试。Fork 它，将它据为己有。",
-      "script_zh": "找工作投简历快被折磨疯了吧？\n这个项目是一个运行在你本地的 AI 求职全能助手。\n\n它能帮你一键分析岗位招聘需求。\n不仅能自动修改简历和写求职信，甚至连面试题都能帮你提前准备好。\n\n最牛的是它基于强大的 Claude Code 构建。\n所有数据都跑在你自己的电脑上，完全不用担心隐私泄露。\n直接把它克隆下来，你就能拥有一个专属的 AI 猎头团队了。"
+      "description_zh": "在你的机器上运行的求职助手。基于 Claude Code 构建的 AI 求职框架：评估招聘信息、定制简历、撰写求职信、准备面试。Fork 它，将它据为己有。"
     },
     {
       "rank": 5,
@@ -85,14 +81,13 @@
       "description": "Tool for automatic PS5 executables porting to Linux and Windows",
       "language": "C++",
       "language_color": "#f34b7d",
-      "stars": 44506,
-      "forks": 4069,
+      "stars": 44513,
+      "forks": 4070,
       "period_stars": 12389,
       "period_label": "本周",
       "topics": [],
       "category": "开发工具",
-      "description_zh": "将 PS5 可执行程序自动移植到 Linux 与 Windows 的工具。",
-      "script_zh": "这个项目是一个能把 PS5 软件自动移植到 PC 上的开源神器。\n\n你只要给出 PS5 的可执行文件，它就能自动帮你生成 Windows 和 Linux 版本。\n这直接解决了想在电脑上玩 PS5 独占游戏的痛点。\n\n相比于非常吃配置的传统模拟器，它走的代码移植路线效率要高得多！\n最厉害的是它把复杂的逆向工程做成了自动化流程。\n目前项目已经收获了三千多颗星，绝对是极客玩家必须关注的黑科技！"
+      "description_zh": "将 PS5 可执行程序自动移植到 Linux 与 Windows 的工具。"
     },
     {
       "rank": 6,
@@ -103,14 +98,13 @@
       "description": "Ghidra is a software reverse engineering (SRE) framework",
       "language": "Java",
       "language_color": "#b07219",
-      "stars": 91592,
-      "forks": 10260,
+      "stars": 91603,
+      "forks": 10263,
       "period_stars": 7152,
       "period_label": "本周",
       "topics": [],
       "category": "安全",
-      "description_zh": "Ghidra 是一套软件逆向工程（SRE）框架。",
-      "script_zh": "这个项目是美国国家安全局开源的顶级逆向工程工具。\n简单来说，它能把看不懂的二进制程序，反编译成人类能读懂的源代码。\n\n不管你是想分析病毒木马，还是去挖系统的安全漏洞，用它就对了。\n最牛的是，它完全免费，直接打破了同类商业软件上万元的垄断。\n\n它不仅支持各种处理器架构，还能让你自己写插件来扩展功能。\n搞安全和逆向的朋友，这绝对是必须收藏的宝藏神器！"
+      "description_zh": "Ghidra 是一套软件逆向工程（SRE）框架。"
     },
     {
       "rank": 7,
@@ -121,14 +115,13 @@
       "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 31083,
+      "stars": 31087,
       "forks": 2336,
       "period_stars": 4224,
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "面向 AI 编程智能体的上下文窗口优化方案：沙箱化工具输出（体积削减 98%）、持久化会话记忆，并通过 MCP + 钩子在 17 个平台上强制统一路由。",
-      "script_zh": "用 AI 写代码最怕上下文被垃圾日志塞爆。\n这个项目就是专门给 AI 编程助手做上下文瘦身的利器。\n\n它把工具运行的中间输出隔离在沙盒里，直接帮上下文省下 98% 的空间！\n还能帮你记住会话记忆，自动跨 17 个平台调度能力。\n\n这意味着 Token 不会再白白浪费，AI 也不会动不动就失忆。\n斩获两万多星绝对有硬实力，用 AI 写的同学赶紧试试！"
+      "description_zh": "面向 AI 编程智能体的上下文窗口优化方案：沙箱化工具输出（体积削减 98%）、持久化会话记忆，并通过 MCP + 钩子在 17 个平台上强制统一路由。"
     },
     {
       "rank": 8,
@@ -139,14 +132,13 @@
       "description": "Write HTML. Render video. Built for agents.",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 67679,
-      "forks": 6117,
+      "stars": 67687,
+      "forks": 6118,
       "period_stars": 5945,
       "period_label": "本周",
       "topics": [],
       "category": "前端 / Web",
-      "description_zh": "写 HTML，渲染出视频。专为智能体打造。",
-      "script_zh": "这个项目是一个能把 HTML 直接渲染成视频的开源工具。\n你只要写熟悉的网页代码，它就能逐帧生成高清视频。\n\n以前做视频自动化超级麻烦，现在用它就能让 AI 像写网页一样批量产出视频。\n无论是动态图表还是酷炫特效，网页能做的效果它全都能渲染。\n\n它可是 AI 视频大厂 HeyGen 开源的，专为 AI 智能体打造。\n网页代码就是视频脚本，绝对是搞自动化视频的黑科技！"
+      "description_zh": "写 HTML，渲染出视频。专为智能体打造。"
     },
     {
       "rank": 9,
@@ -157,14 +149,13 @@
       "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
       "language": "HTML",
       "language_color": "#e34c26",
-      "stars": 58427,
-      "forks": 3753,
+      "stars": 58439,
+      "forks": 3754,
       "period_stars": 6638,
       "period_label": "本周",
       "topics": [],
       "category": "前端 / Web",
-      "description_zh": "面向 Claude Code 的 29 种编辑型图表。纯 HTML + SVG，自包含。无阴影、拒绝 Mermaid 流水账。",
-      "script_zh": "这个项目是一个专门给 AI 准备的精美图表设计库。\n\n平时用 AI 生成图表，出来的总是又乱又丑的流程图？\n它直接提供了三十八种极简风格的图表模版。\n\n全部用纯 HTML 和 SVG 编写，没有任何多余的阴影和依赖。\nAI 可以直接秒读并完美修改，渲染出来的效果高级感拉满。\n经常要写文档或者做演示的朋友，赶紧去 GitHub 把它收藏起来吧！"
+      "description_zh": "为 Claude Code、Codex、GitHub Copilot、Cursor、Factory Droid 与 Pi 准备的 44 种编辑型图表模板。自包含 HTML + SVG，无阴影、告别 Mermaid 套话。"
     },
     {
       "rank": 10,
@@ -175,14 +166,13 @@
       "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 52931,
+      "stars": 52933,
       "forks": 4687,
       "period_stars": 4355,
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "把任意 AI 智能体变成 AI 科学家。面向科研的 Agent Skills 头号技能库，全球 25 万+ 科学家在用。内含 177 个开箱即用、经过验证的技能，以及 100+ 科学数据库，覆盖生物、化学、医学与药物研发。兼容 Cursor、Claude Code、Codex、Pi、Antigravity 及开放 Agent Skills 标准。",
-      "script_zh": "这个项目能把任何 AI 助手直接变成顶尖的 AI 科学家。\n\n不管你是搞生物、化学还是做新药研发，它都能帮上大忙。\n它内置了上百个科学数据库和 160 多种现成的专业技能。\n\n你只需把它接入 Cursor 或者 Claude，AI 就能帮你查文献、分析分子结构。\n全球已经有十几万科学家在用它了，绝对是科研人员的超级外挂！"
+      "description_zh": "把任意 AI 智能体变成 AI 科学家。面向科研的 Agent Skills 头号技能库，全球 25 万+ 科学家在用。内含 177 个开箱即用、经过验证的技能，以及 100+ 科学数据库，覆盖生物、化学、医学与药物研发。兼容 Cursor、Claude Code、Codex、Pi、Antigravity 及开放 Agent Skills 标准。"
     },
     {
       "rank": 11,
@@ -193,14 +183,13 @@
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 13055,
+      "stars": 13057,
       "forks": 1283,
       "period_stars": 1975,
       "period_label": "本周",
       "topics": [],
       "category": "其他",
-      "description_zh": "Cursor 插件规范与官方插件。",
-      "script_zh": "用过现在最火的 AI 编辑器 Cursor 吗？\n这个项目就是官方开源的插件规范和工具包！\n\n它能让你自己动手，给 Cursor 的 AI 加上各种专属超能力。\n比如你想让 AI 读懂公司内部的文档，或者直接调用特定的工具，用它就能轻松搞定。\n\n最牛的是，它彻底打通了本地工具和 AI 之间的屏障，让开发效率瞬间翻倍。\n想要定制一个最懂你的 AI 编程助手，认准这个项目就够了！"
+      "description_zh": "Cursor 插件规范与官方插件。"
     },
     {
       "rank": 12,
@@ -211,14 +200,13 @@
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 77517,
-      "forks": 8490,
+      "stars": 77534,
+      "forks": 8492,
       "period_stars": 17291,
       "period_label": "本周",
       "topics": [],
       "category": "其他",
-      "description_zh": "VoiceStudio 是开源、完全本地运行的 ElevenLabs 替代品——支持声音克隆、声音设计、视频配音、听写、转写，以及在 646 种语言中制作有声书。",
-      "script_zh": "这个项目是一个完全开源且支持本地运行的 AI 声音工作站，堪称免费版的 ElevenLabs。\n\n无论你是想克隆自己的声音、做多语言视频配音，还是把文字改成有声书，它都能轻松搞定。\n它甚至还支持语音转文字和听写，覆盖了整整 646 种语言！\n\n最棒的是它完全在本地运行，既保护隐私，又帮你省下了昂贵的订阅费用。\n这种全能型的声音神级工具，绝对值得你立刻去点个 Star 收藏起来！"
+      "description_zh": "VoiceStudio 是开源、完全本地运行的 ElevenLabs 替代品——支持声音克隆、声音设计、视频配音、听写、转写，以及在 646 种语言中制作有声书。"
     },
     {
       "rank": 13,
@@ -229,13 +217,13 @@
       "description": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Jailbreak for every model — swap prompts per model. 求 Star 收藏 ⭐ 如要二开，请查看署名要求部分",
       "language": "JavaScript",
       "language_color": "#f1e05a",
-      "stars": 8898,
-      "forks": 1523,
+      "stars": 8943,
+      "forks": 1541,
       "period_stars": 2933,
       "period_label": "本周",
       "topics": [],
       "category": "其他",
-      "script_zh": "该请求要求为名为 `YuJunZhiXue/dsh-purge` 的开源项目编写口播文案，宣传和介绍其用于大语言模型“破甲”（越狱）的功能与优势。\n\n我无法完成此请求。安全策略限制生成协助、推广或指导使用旨在绕过安全对齐机制、利用模型安全漏洞（如越狱或对抗性攻击）的工具或内容。因此，无法为专门用于模型越狱的项目撰写宣传或推介脚本。"
+      "description_zh": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换用不同提示词；默认提示词面向国产模型「小码酱」。为每种模型都可切换的越狱方案。求 Star 收藏 ⭐，如需二开请查看署名要求部分。"
     },
     {
       "rank": 14,
@@ -246,14 +234,13 @@
       "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 77192,
+      "stars": 77202,
       "forks": 9104,
       "period_stars": 2543,
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "🌊 原初的智能体元编排框架。部署智能的多智能体集群，协调自主工作流，并构建对话式 AI 系统。具备自适应记忆、自学习智能、RAG 集成，并原生集成 Claude Code / Codex / Hermes 等众多平台。",
-      "script_zh": "最近 GitHub 上有个火得一塌糊涂的项目叫 ruflo。\n简单来说，它就是一个能帮你部署 AI 智能体军团的超级框架。\n\n不管你想做多智能体协同，还是搭对话系统，用它都能搞定。\n它能让不同的 AI 像真人团队一样分工合作，自己去解决复杂任务。\n\n而且它自带自适应记忆和自主学习能力，越用越聪明。\n它还原生支持 Claude Code 等顶尖模型，难怪能斩获近七万星，赶紧去试试吧！"
+      "description_zh": "🌊 原初的智能体元编排框架。部署智能的多智能体集群，协调自主工作流，并构建对话式 AI 系统。具备自适应记忆、自学习智能、RAG 集成，并原生集成 Claude Code / Codex / Hermes 等众多平台。"
     }
   ]
 }

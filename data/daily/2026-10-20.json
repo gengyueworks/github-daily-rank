@@ -1,7 +1,7 @@
 {
   "since": "daily",
   "date": "2026-10-20",
-  "fetched_at": "2026-10-20T09:00:10",
+  "fetched_at": "2026-10-20T09:15:58",
   "count": 12,
   "repos": [
     {
@@ -13,14 +13,13 @@
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 57285,
-      "forks": 18201,
+      "stars": 57332,
+      "forks": 18210,
       "period_stars": 3856,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "在你的机器上运行的求职助手。基于 Claude Code 构建的 AI 求职框架：评估招聘信息、定制简历、撰写求职信、准备面试。Fork 它，将它据为己有。",
-      "script_zh": "找工作投简历快被折磨疯了吧？\n这个项目是一个运行在你本地的 AI 求职全能助手。\n\n它能帮你一键分析岗位招聘需求。\n不仅能自动修改简历和写求职信，甚至连面试题都能帮你提前准备好。\n\n最牛的是它基于强大的 Claude Code 构建。\n所有数据都跑在你自己的电脑上，完全不用担心隐私泄露。\n直接把它克隆下来，你就能拥有一个专属的 AI 猎头团队了。"
+      "description_zh": "在你的机器上运行的求职助手。基于 Claude Code 构建的 AI 求职框架：评估招聘信息、定制简历、撰写求职信、准备面试。Fork 它，将它据为己有。"
     },
     {
       "rank": 2,
@@ -31,14 +30,13 @@
       "description": "The open source coding agent.",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 217819,
-      "forks": 29114,
+      "stars": 217828,
+      "forks": 29115,
       "period_stars": 1311,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "开源的编程智能体。",
-      "script_zh": "这个项目是一个完全开源的 AI 编程助手。\n它能直接接管你的代码库，帮开发者搞定各种繁重的编码工作。\n\n只要输入一句需求，它就能自动读取上下文，帮你在本地写功能、改 Bug 甚至重构代码。\n你再也不用在编辑器和 AI 网页之间来回复制粘贴了。\n\n相比那些闭源付费工具，它不仅彻底开源透明，还能保护你的代码隐私。\n斩获二十多万 Star 的开源神器，绝对值得你现在就加个书签！"
+      "description_zh": "开源的编程智能体。"
     },
     {
       "rank": 3,
@@ -49,14 +47,13 @@
       "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
       "language": "Rust",
       "language_color": "#dea584",
-      "stars": 11349,
-      "forks": 806,
+      "stars": 11362,
+      "forks": 807,
       "period_stars": 666,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "为智能体编程命令行工具提供长期记忆的解决方案，并便于在不同智能体厂商之间交接。",
-      "script_zh": "写代码用不同的 AI 助手，最烦它们记不住上下文。\n这个项目就是专门给 AI 编程工具装上长期记忆的外挂。\n\n它能让你在切换不同 AI 工具时，无缝同步开发进度。\n不管你换到哪个平台的 AI，它都能秒懂你之前的代码逻辑。\n\n最棒的是，它不仅省下了重复解释的 Token 费，还让 AI 拥有了项目大局观。\n想让你的 AI 助手像老同事一样默契，闭眼冲它就对了！"
+      "description_zh": "为智能体编程命令行工具提供长期记忆的解决方案，并便于在不同智能体厂商之间交接。"
     },
     {
       "rank": 4,
@@ -67,14 +64,13 @@
       "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 139729,
-      "forks": 16584,
+      "stars": 139740,
+      "forks": 16585,
       "period_stars": 1011,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "最强大、模块化的扩散模型 GUI、API 与后端，采用图/节点接口。",
-      "script_zh": "这个项目是目前最强大、最硬核的 AI 绘画工具。\n\n它把复杂的生图流程拆成了一个个像乐高一样的节点。\n你只需要连连线，就能拼出专属于你的工作流。\n\n不仅运行速度飞快，还特别省显存。\n最强的是它能让你精准控制画面的每一个细节。\n\n哪怕是配置一般的电脑，也能轻松玩转各种大模型。\n想进阶玩 AI 绘图，闭眼冲它就对了！"
+      "description_zh": "最强大、模块化的扩散模型 GUI、API 与后端，采用图/节点接口。"
     },
     {
       "rank": 5,
@@ -85,14 +81,13 @@
       "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 77192,
+      "stars": 77202,
       "forks": 9104,
       "period_stars": 564,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "🌊 原初的智能体元编排框架。部署智能的多智能体集群，协调自主工作流，并构建对话式 AI 系统。具备自适应记忆、自学习智能、RAG 集成，并原生集成 Claude Code / Codex / Hermes 等众多平台。",
-      "script_zh": "最近 GitHub 上有个火得一塌糊涂的项目叫 ruflo。\n简单来说，它就是一个能帮你部署 AI 智能体军团的超级框架。\n\n不管你想做多智能体协同，还是搭对话系统，用它都能搞定。\n它能让不同的 AI 像真人团队一样分工合作，自己去解决复杂任务。\n\n而且它自带自适应记忆和自主学习能力，越用越聪明。\n它还原生支持 Claude Code 等顶尖模型，难怪能斩获近七万星，赶紧去试试吧！"
+      "description_zh": "🌊 原初的智能体元编排框架。部署智能的多智能体集群，协调自主工作流，并构建对话式 AI 系统。具备自适应记忆、自学习智能、RAG 集成，并原生集成 Claude Code / Codex / Hermes 等众多平台。"
     },
     {
       "rank": 6,
@@ -103,14 +98,13 @@
       "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 98294,
+      "stars": 98307,
       "forks": 6267,
       "period_stars": 1590,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "Orca 是管理一整队并行智能体的 ADE（智能体开发环境）。用你自己的订阅即可运行任意编程智能体，桌面、移动端与 VPS 均可用。",
-      "script_zh": "这个项目是个能让你同时指挥一大群 AI Agent 的开发神器。\n\n平时让单个 AI 写代码觉得不够快？\n它能帮你挂载多个编程 Agent 并行干活。\n用你现有的订阅账号就能跑，桌面、手机和远程环境全搞定！\n\n最赞的是它把所有 AI 协作管理得井井有条。\n多任务并发处理，写代码的效率直接翻倍。\n让你随时随地调遣 AI 军队，绝对值得赶紧收藏体验！"
+      "description_zh": "Orca 是管理一整队并行智能体的 ADE（智能体开发环境）。用你自己的订阅即可运行任意编程智能体，桌面、移动端与 VPS 均可用。"
     },
     {
       "rank": 7,
@@ -121,14 +115,13 @@
       "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 76247,
+      "stars": 76256,
       "forks": 5923,
       "period_stars": 310,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "在输入大模型前压缩工具输出、日志、文件和 RAG 分块。编码 Agent 减少 20% Token，JSON 减少 60-95% Token，回答结果保持不变。提供类库、代理及 MCP 服务器。",
-      "script_zh": "调用大模型最心疼的就是被冗余日志和超大数据吃掉的 Token。\n这个项目就是一个专门给大模型前置瘦身的上下文压缩工具。\n\n它能在数据喂给模型之前，把工具输出、代码和检索块里的水分全挤掉。\n你可以把它当代码库直接调用，也能作为代理或 MCP 服务无缝接入。\n\n最狠的是压缩后模型的回答质量完全不打折。\n处理冗长的结构化 JSON 甚至能帮你砍掉九成以上的账单消耗！\n省钱还能跑得更快，做智能体开发一定要试试它。"
+      "description_zh": "在工具输出、日志、文件与 RAG 文本块抵达 LLM 之前进行压缩：编码智能体可少用约 20% 的 token，JSON 可少用 60–95%，答案保持不变。提供库、代理与 MCP 服务器三种形态。"
     },
     {
       "rank": 8,
@@ -139,13 +132,12 @@
       "description": "",
       "language": "JavaScript",
       "language_color": "#f1e05a",
-      "stars": 6125,
-      "forks": 1002,
+      "stars": 6137,
+      "forks": 1003,
       "period_stars": 284,
       "period_label": "今日",
       "topics": [],
-      "category": "其他",
-      "script_zh": "这个项目把复杂的开源技术世界梳理成了一套清晰的分类大纲。\n如果你在做技术选型，或者想给 AI 喂一套标准的技术标签库，它就是现成的参考答案。\n\n平时给各类软件归类或者整理技术栈有多麻烦，你肯定深有体会。\n它直接把工具、框架和应用领域全都分门别类整理好了。\n\n最棒的是它的结构非常标准化，拿来就能直接用在自己的产品里。\n六千多星的认可，说明大家早就把它当成了开源世界的标准字典！"
+      "category": "其他"
     },
     {
       "rank": 9,
@@ -156,14 +148,13 @@
       "description": "Video restoration tool",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 2894,
+      "stars": 2899,
       "forks": 211,
       "period_stars": 498,
       "period_label": "今日",
       "topics": [],
       "category": "开发工具",
-      "description_zh": "视频修复工具。",
-      "script_zh": "手头有古早低清视频想翻新吗？\n这个项目就是专门拯救渣画质的开源视频修复神器。\n\n不管是几十年前的老家庭录像，还是被压成马赛克的模糊片段。\n把它扔进去，就能一键搞定降噪、去划痕和超清放大。\n\n它最棒的地方是把复杂的 AI 修复算法打包成了开箱即用。\n完全免费还不用联网，自己的老视频在本地跑更让人放心。\n有翻新老视频需求的话，一定要去给它点个星！"
+      "description_zh": "视频修复工具。"
     },
     {
       "rank": 10,
@@ -174,14 +165,13 @@
       "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 55239,
+      "stars": 55249,
       "forks": 4986,
       "period_stars": 606,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "「CLI-Anything：让所有软件都原生适配智能体」——CLI-Hub：https://clianything.cc/",
-      "script_zh": "这个项目想让全网所有的软件，都能直接变成 AI 能够操控的工具。\n现在绝大多数软件都只有图形界面，AI 根本没办法像人一样去点鼠标。\n\n它能把原本依赖手动点击的软件，统一包装成命令行接口。\n这样一来，AI Agent 就能像调用 API 一样，直接去控制这些软件了。\n\n最绝的是，你再也不用傻傻等待官方更新 API 或者 AI 插件了。\n配合大模型使用，分分钟就能把手里的传统软件全变成自动化利器！"
+      "description_zh": "「CLI-Anything：让所有软件都原生适配智能体」——CLI-Hub：https://clianything.cc/"
     },
     {
       "rank": 11,
@@ -192,14 +182,13 @@
       "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 152658,
-      "forks": 27140,
+      "stars": 152661,
+      "forks": 27141,
       "period_stars": 167,
       "period_label": "今日",
       "topics": [],
       "category": "开发工具",
-      "description_zh": "Claude Code 是一款活在终端里的智能体式编程工具，能理解你的代码库，并通过自然语言指令执行日常任务、讲解复杂代码、处理 git 流程，帮你更快写代码。",
-      "script_zh": "这个项目是直接住在你终端里的 AI 编程助手。\n\n你只需要用大白话下指令，它就能读懂你的整个代码库。\n\n不管是写日常代码、解释复杂逻辑，还是自动帮你提交 Git，它全都能搞定。\n\n最厉害的是，它是 Anthropic 官方出的，智商在线而且反应极快。\n\n你根本不用在编辑器和命令行之间来回切换，直接在终端里就能把活干完。\n\n难怪刚上线就狂揽了十四万颗星，赶紧去试试吧！"
+      "description_zh": "Claude Code 是一款活在终端里的智能体式编程工具，能理解你的代码库，并通过自然语言指令执行日常任务、讲解复杂代码、处理 git 流程，帮你更快写代码。"
     },
     {
       "rank": 12,
@@ -210,14 +199,13 @@
       "description": "Kronos: A Foundation Model for the Language of Financial Markets",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 41674,
-      "forks": 6923,
+      "stars": 41687,
+      "forks": 6927,
       "period_stars": 363,
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "Kronos：读懂金融市场「语言」的基础模型。",
-      "script_zh": "这个项目是一个专门用来读懂金融市场的基座大模型。\n\n以前做量化全靠人工死磕复杂的数学公式。\n现在它把K线走势直接当成人类语言来理解。\n\n你只要把历史行情喂进去，它就能预判接下来的涨跌。\n它最厉害的是像GPT读文章一样，看穿了资金博弈的深层规律。\n\n开源直接狂揽四万多星，做量化投研可千万别错过它！"
+      "description_zh": "Kronos：读懂金融市场「语言」的基础模型。"
     }
   ]
 }
