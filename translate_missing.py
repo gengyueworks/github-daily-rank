@@ -262,6 +262,11 @@ MY_ZH = {
     # 2026-10-20 新增
     "headroomlabs-ai/headroom": "在工具输出、日志、文件与 RAG 文本块抵达 LLM 之前进行压缩：编码智能体可少用约 20% 的 token，JSON 可少用 60–95%，答案保持不变。提供库、代理与 MCP 服务器三种形态。",
     "YuJunZhiXue/dsh-purge": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换用不同提示词；默认提示词面向国产模型「小码酱」。为每种模型都可切换的越狱方案。求 Star 收藏 ⭐，如需二开请查看署名要求部分。",
+    # 2026-10-21 新增
+    "Graphify-Labs/graphify": "将任意代码库及其文档、SQL 模式、配置与 PDF 转化为可查询的知识图谱。一款面向 Claude Code、Cursor、Codex 与 Gemini CLI 的 /graphify 技能：本地确定性 AST 解析，每条关系边都有解释，无需向量数据库。",
+    "wshobson/agents": "面向 Claude Code、Codex、Cursor、OpenCode、GitHub Copilot、Google Antigravity 与 Pi 的跨宿主智能体插件市场。",
+    "sickn33/agentic-awesome-skills": "AAS Core 是一套本地优先、以智能体为中心的管控平面，提供完整的技能目录发现、智能体自主选型、技术栈校验与规划能力，背后是 2,600+ 个智能体技能。包含 CLI、本地 MCP、目录、插件与 Workbench 工作台。",
+    "vllm-project/vllm": "面向大语言模型的高吞吐、显存高效的推理与服务引擎。",
 }
 
 

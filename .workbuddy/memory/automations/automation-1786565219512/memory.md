@@ -197,3 +197,12 @@
 - **部署**：`bash deploy_ghpages.sh`（git 走 IPv4 包装 + 关闭 lowSpeed 中止）成功。本地 `site/` 被孤儿步骤清空后重跑 `build.py` 复原。线上复测：index / daily / weekly 三页均 200。
 - **结论**：当日上榜 日榜 13 + 周榜 10；数据/翻译/站点已生成并推送 `origin/main`，线上链接更新成功（200）。
 - **环境要点（稳定）**：`git`/`gh` 的 libcurl 仍吃 IPv6 stall，必须以 `http.curloptResolve=github.com:443:<IPv4>` 强制 IPv4（GitHub A 记录会变，需重解）；叠加 `http.lowSpeedLimit=0/http.lowSpeedTime=0` 关闭低速率中止，规避「Operation too slow」限流。运行前 `unset HTTPS_PROXY HTTP_PROXY`（本机 127.0.0.1:21879 代理 refused）。
+
+## 2026-10-20 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`，直连，IPv4 补丁已入库）成功。日榜 `data/daily/2026-10-20.json` = 12 个仓库；周榜 `data/weekly/2026-10-19.json`（本周一 1019）= 14 个仓库。首跑 GitHub 直连 `Empty reply from server`（瞬时限流/抖动），复跑成功。
+- **翻译**：首轮 `translate_missing.py` 命中 zh_cache/MY_ZH 补 日 10 + 周 23；余 `headroomlabs-ai/headroom`（日）、`YuJunZhiXue/dsh-purge`（周，中英混排）人工校对中译写入 `MY_ZH` 并重跑，最终日榜 12 中 11、周榜 14/14 全部有 `description_zh`；唯一缺口 `withmarbleapp/os-taxonomy`（日榜）上游无英文简介，无译可补（与历史 anthropics 同因）。
+- **生成**：`build.py` 重建 `site/daily/2026-10-20.html`、`site/weekly/2026-10-19.html`、`site/index.html`、`site/classics/index.html`（ainews 双语风格）。
+- **部署冲突**：并行自动化 ...629 已先推送 `data/daily/2026-10-20.json` 等到 remote main（6008108，部分翻译，且删除 `data/daily/2026-10-19.json`、批量刷新旧日/周榜 star 数）。按既定模式：备份本机全译数据到 `/tmp/ghrank_backup` → 移走 ...629 内部 memory 目录到 `/tmp/ghrank_629_mem` → 移走本机未跟踪 `data/daily/2026-10-20.json` → `git checkout --` 丢弃被改跟踪文件（weekly/translate/zh_cache，均有备份）→ `git pull --rebase -X ours origin main`（快进到 6008108）→ 用备份覆盖写回日榜/周榜全译版、translate_missing.py、zh_cache.json → `git add` 指定文件 `&& commit && push main`（7393378，日榜 11/12、周榜 14/14 全译，优于远端部分译本）→ 再跑 `bash deploy_ghpages.sh`（rebase 成 no-op，gh-pages orphan 推送）→ 还原 ...629 目录 → 本地 `site/` 由脚本末尾还原。
+- **部署**：`bash deploy_ghpages.sh` 首跑成功（gh-pages orphan 推送）。线上复测：index / daily / weekly 三页均 **200**（无传播延迟）。
+- **结论**：当日上榜 日榜 12 + 周榜 14；数据/翻译/站点已生成并推送 `origin/main`，线上链接更新成功（200）。
+- **环境要点（稳定）**：`git`/`gh` 的 libcurl 仍吃 IPv6 stall，必须以 `http.curloptResolve=github.com:443:<IPv4>` 强制 IPv4；叠加 `http.lowSpeedLimit=0/http.lowSpeedTime=0` 关闭低速率中止。运行前 `unset HTTPS_PROXY HTTP_PROXY`（本机 127.0.0.1:21879 代理 refused）。
