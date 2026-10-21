@@ -206,3 +206,13 @@
 - **部署**：`bash deploy_ghpages.sh` 首跑成功（gh-pages orphan 推送）。线上复测：index / daily / weekly 三页均 **200**（无传播延迟）。
 - **结论**：当日上榜 日榜 12 + 周榜 14；数据/翻译/站点已生成并推送 `origin/main`，线上链接更新成功（200）。
 - **环境要点（稳定）**：`git`/`gh` 的 libcurl 仍吃 IPv6 stall，必须以 `http.curloptResolve=github.com:443:<IPv4>` 强制 IPv4；叠加 `http.lowSpeedLimit=0/http.lowSpeedTime=0` 关闭低速率中止。运行前 `unset HTTPS_PROXY HTTP_PROXY`（本机 127.0.0.1:21879 代理 refused）。
+
+## 2026-10-21 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`，直连，IPv4 补丁已入库）成功。日榜 `data/daily/2026-10-21.json` = 15 个仓库；周榜 `data/weekly/2026-10-19.json`（本周一 1019）= 15 个仓库。
+- **翻译**：首轮 `translate_missing.py` 命中词表+zh_cache 补 日 11 + 周 24；余 4 个新仓库（`Graphify-Labs/graphify`、`wshobson/agents`、`sickn33/agentic-awesome-skills`、`vllm-project/vllm`）人工校对中译写入 `MY_ZH` 并重跑，最终日榜 15/15、周榜 15 个中 14 个有 `description_zh`；唯一缺口 `android/skills`（周榜）上游无英文简介，无译可补（历史同因）。
+- **生成**：`build.py` 重建 `site/daily/2026-10-21.html`、`site/weekly/2026-10-19.html`、`site/index.html`、`site/classics/index.html`（ainews 双语风格）。
+- **部署冲突**：并行自动化 ...629 已先推送 `data/daily/2026-10-21.json` 等到 remote main（bd69666，部分翻译，且删除了 `data/weekly/2026-10-19.json`），导致 local 落后 2 个提交。按既定模式：备份本机全译数据到 `/tmp/ghrank_backup` → 移走本机未跟踪 data 文件 → `git stash -u` → `git pull --rebase -X ours origin main`（快进到 bd69666）→ `git stash drop` → 用备份覆盖写回日榜/周榜全译版、`translate_missing.py`、`zh_cache.json`、`memory.md` → `git add -A && commit && push main`（8550b53，日榜 15/15、周榜 14/15 全译，优于远端删周榜的版本）→ 再跑 `bash deploy_ghpages.sh`（rebase 成 no-op，gh-pages orphan 推送）。本机译本优于远端。
+- **部署**：`bash deploy_ghpages.sh` 成功（gh-pages orphan 推送）。本地 `site/` 由脚本末尾从 `/tmp/ghrank_pages` 复原。线上复测：首页 / daily / weekly 三页均 **200**（无传播延迟）。
+- **注意**：macOS 无 `timeout` 命令，部署脚本不可包 `timeout`，直接用 `bash deploy_ghpages.sh`；误用 `timeout` 会导致整个命令 not found 而不执行。
+- **结论**：当日上榜 日榜 15 + 周榜 15；数据/翻译/站点已生成并推送 `origin/main`，线上链接更新成功（200）。
+- **环境要点（稳定）**：`git`/`gh` 的 libcurl 仍吃 IPv6 stall，必须以 `http.curloptResolve=github.com:443:<IPv4>` 强制 IPv4；叠加 `http.lowSpeedLimit=0/http.lowSpeedTime=0` 关闭低速率中止。运行前 `unset HTTPS_PROXY HTTP_PROXY`（本机 127.0.0.1:21879 代理 refused）。
