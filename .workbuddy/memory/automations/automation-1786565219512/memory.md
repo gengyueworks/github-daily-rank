@@ -216,3 +216,21 @@
 - **注意**：macOS 无 `timeout` 命令，部署脚本不可包 `timeout`，直接用 `bash deploy_ghpages.sh`；误用 `timeout` 会导致整个命令 not found 而不执行。
 - **结论**：当日上榜 日榜 15 + 周榜 15；数据/翻译/站点已生成并推送 `origin/main`，线上链接更新成功（200）。
 - **环境要点（稳定）**：`git`/`gh` 的 libcurl 仍吃 IPv6 stall，必须以 `http.curloptResolve=github.com:443:<IPv4>` 强制 IPv4；叠加 `http.lowSpeedLimit=0/http.lowSpeedTime=0` 关闭低速率中止。运行前 `unset HTTPS_PROXY HTTP_PROXY`（本机 127.0.0.1:21879 代理 refused）。
+
+## 2026-10-22 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`，直连，IPv4 补丁已入库）成功。日榜 `data/daily/2026-10-22.json` = 12 个仓库；周榜 `data/weekly/2026-10-19.json`（本周一 1019）= 16 个仓库。
+- **翻译**：首轮 `translate_missing.py` 命中词表+zh_cache 补 日 10 + 周 25；余 `twentyhq/twenty`、`strelov1/freehire`（日榜，均有英文简介，仅未进缓存）人工校对中译写回 `description_zh` 并入库 `zh_cache.json`，最终日榜 12/12、周榜 16/16 全部有 `description_zh`（无空描述缺口）。
+- **生成**：`build.py` 重建 `site/daily/2026-10-22.html`、`site/weekly/2026-10-19.html`、`site/index.html`、`site/classics/index.html`（ainews 双语风格）。
+- **部署**：`origin/main` 与本机同步（0/0，并行 ...629 未抢先推送）。先备份当日全译数据到 `/tmp/ghrank_backup` → 暂移 ...629 内部 memory 目录到 `/tmp/ghrank_629_mem`（避免推送内部 memory）→ `git add` 数据+缓存并 `commit`（90d5327）→ `git push origin main`（首跑 GitHub `Empty reply from server` 瞬时失败，复跑成功，9b217e0..90d5327）→ `bash deploy_ghpages.sh`（rebase no-op，`git add -A` 无新增，main 无新提交；gh-pages orphan 推送成功，commit `12da678`）→ 还原 ...629 目录 → 本地 `site/` 由脚本末尾从 `/tmp/ghrank_pages` 复原。
+- **线上复测**：首测 index / weekly 200、daily 404（GitHub Pages 传播延迟）；等约 45 秒后 daily 转为 200，三页全部 200。
+- **结论**：当日上榜 日榜 12 + 周榜 16；数据/翻译/站点已生成并推送 `origin/main`，线上链接更新成功（200）。
+- **环境要点（稳定）**：`git` 的 libcurl 仍吃 IPv6 stall，必须以 `http.curloptResolve=github.com:443:20.205.243.166` 强制 IPv4；叠加 `http.lowSpeedLimit=0/http.lowSpeedTime=0`。运行前 `unset HTTPS_PROXY HTTP_PROXY`。
+
+## 2026-10-23 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`，直连，IPv4 补丁已入库）成功。日榜 `data/daily/2026-10-23.json` = 9 个仓库；周榜 `data/weekly/2026-10-19.json`（本周一 1019）= 15 个仓库。
+- **翻译**：首轮 `translate_missing.py` 命中词表+zh_cache 补 日 5 + 周 19；余 4 个日榜新仓库（`php/php-src`、`fastapi/fastapi`、`luongnv89/claude-howto`、`Meloong-Git/PCL`，后者描述本身已为中文）人工校对中译写入 `MY_ZH` 并重跑，最终日榜 9/9、周榜 15 个中 14 个有 `description_zh`；唯一缺口 `android/skills`（周榜）上游英文简介为空，无译可补（与 10-19/10-21 同因），非漏译。
+- **生成**：`build.py` 重建 `site/daily/2026-10-23.html`、`site/weekly/2026-10-19.html`、`site/index.html`、`site/classics/index.html`（ainews 双语风格）。
+- **部署冲突**：远端 `origin/main` 已由并行自动化 ...629 先推进到 `1d0f814`（含大刷新：删除 `data/daily/2026-10-21.json`、改写 `zh_cache.json`/memory.md 等）。按既定模式：备份本机全译数据到 `/tmp/ghrank_backup` → 暂移 ...629 内部 memory 目录到 `/tmp/ghrank_629_mem` → 清工作树被改跟踪文件 + 移走未跟踪当日 data → `git pull --rebase -X ours origin main`（快进到 1d0f814）→ 用备份覆盖写回日榜/周榜全译版、`zh_cache.json`、`translate_missing.py` → `git add -A && commit && push main`（af41557）→ `bash deploy_ghpages.sh`（rebase no-op，gh-pages orphan 推送）→ 还原 ...629 目录。本机日榜 9/9、周榜 14/15（仅 android/skills 空描述）译本完整已推送。
+- **部署**：`bash deploy_ghpages.sh`（git 走 IPv4 强制 + 关闭 lowSpeed 中止）成功。本地 `site/` 由脚本末尾从 `/tmp/ghrank_pages` 复原。线上复测：首页 / daily / weekly 三页均 **200**（无传播延迟）。
+- **结论**：当日上榜 日榜 9 + 周榜 15；数据/翻译/站点已生成并推送 `origin/main`，线上链接更新成功（200）。
+- **环境要点（稳定）**：`git`/`gh` 的 libcurl 仍吃 IPv6 stall，必须以 `http.curloptResolve=github.com:443:172.182.252.133` 强制 IPv4（GitHub A 记录已变，旧 IP 失效需重解）；叠加 `http.lowSpeedLimit=0/http.lowSpeedTime=0`。运行前 `unset HTTPS_PROXY HTTP_PROXY`（本机 127.0.0.1:21879 代理 refused）。
