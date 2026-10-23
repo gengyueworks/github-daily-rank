@@ -267,6 +267,11 @@ MY_ZH = {
     "wshobson/agents": "面向 Claude Code、Codex、Cursor、OpenCode、GitHub Copilot、Google Antigravity 与 Pi 的跨宿主智能体插件市场。",
     "sickn33/agentic-awesome-skills": "AAS Core 是一套本地优先、以智能体为中心的管控平面，提供完整的技能目录发现、智能体自主选型、技术栈校验与规划能力，背后是 2,600+ 个智能体技能。包含 CLI、本地 MCP、目录、插件与 Workbench 工作台。",
     "vllm-project/vllm": "面向大语言模型的高吞吐、显存高效的推理与服务引擎。",
+    # 2026-10-23 日榜新增
+    "php/php-src": "PHP 语言解释器。",
+    "fastapi/fastapi": "FastAPI 框架：高性能、易学、编码快、可直接用于生产环境。",
+    "luongnv89/claude-howto": "一份可视化、以实例驱动的 Claude Code 指南——从基础概念到进阶智能体，附带即拿即用的复制粘贴模板。",
+    "Meloong-Git/PCL": "Minecraft 启动器 Plain Craft Launcher（PCL）。",
 }
 
 
