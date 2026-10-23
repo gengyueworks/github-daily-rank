@@ -37,7 +37,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "开发工具",
-      "description_zh": "将 PS5 可执行文件自动移植到 Linux 和 Windows 的工具",
+      "description_zh": "用于将 PS5 可执行文件自动移植到 Linux 和 Windows 的工具",
       "script_zh": "这个项目是一个能把 PS5 软件自动移植到 PC 上的开源神器。\n\n你只要给出 PS5 的可执行文件，它就能自动帮你生成 Windows 和 Linux 版本。\n这直接解决了想在电脑上玩 PS5 独占游戏的痛点。\n\n相比于非常吃配置的传统模拟器，它走的代码移植路线效率要高得多！\n最厉害的是它把复杂的逆向工程做成了自动化流程。\n目前项目已经收获了三千多颗星，绝对是极客玩家必须关注的黑科技！"
     },
     {
@@ -55,7 +55,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "专为真正的工程师打造的技能，直接来自我的 .agents 目录。",
+      "description_zh": "面向真正工程师的技能，直接源自我的 .agents 目录。",
       "script_zh": "这个项目是一个装满了硬核编程实战技巧的开源宝库。\n它把复杂的开发痛点拆解成了可以直接复制的技能卡片。\n\n不管你是自己查阅，还是直接喂给 AI 编程助手，都能让效率翻倍。\n最牛的是，这些内容全是作者在实际开发中提炼出来的干货。\n\n它能让你的 AI 助手瞬间变聪明，写出更规范的代码。\n想提升开发效率的兄弟，直接去 GitHub 搜它就完了！"
     },
     {
@@ -91,7 +91,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "快速高效，历经阿里海量业务实战检验。采用“确定性流水线 + LLM Agent”混合架构的代码审查工具：提供精准的代码行级评审意见，内置多语言规则集（涵盖 NPE、线程安全、XSS、SQL 注入等），兼容 OpenAI 与 Anthropic。",
+      "description_zh": "快速、高效，历经阿里巴巴超大规模业务验证。基于混合架构的代码审查工具：确定性流水线 + LLM Agent，支持精准的行级评审，内置多语言规则集（覆盖 NPE、线程安全、XSS、SQL 注入等），兼容 OpenAI 与 Anthropic。",
       "script_zh": "阿里开源的 open-code-review，是一个帮你自动做代码审查的 AI 工具。\n\n你在提交代码时，它能精准定位到具体的代码行，直接给出修改意见。\n像空指针、线程安全、SQL注入这种常见漏洞，它都能提前帮你拦截掉。\n\n最厉害的是它结合了传统规则和大模型的混合架构，既快又准。\n它不仅在阿里内部经过了海量业务检验，还完美兼容主流大模型。\n\n想提升团队的代码质量，这个项目绝对值得你去尝试！"
     },
     {
@@ -109,7 +109,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "主要供知识工作者在 Claude Cowork 中使用的开源插件仓库。",
+      "description_zh": "主要供知识工作者在 Claude Cowork 中使用的开源插件仓库",
       "script_zh": "Anthropic 官方给打工人开源的 Claude 插件库来了！\n\n它能帮你写报告、搜资料、搞数据分析。\n那些烦琐的知识型工作，现在都能交给 AI 自动化处理。\n\n作为 Anthropic 官方出品的项目，适配度直接拉满！\n最绝的是代码全开源，开箱即用还能按需定制。\n\n只要你是知识型工作者，这个项目绝对能帮你效率翻倍！"
     },
     {
@@ -127,7 +127,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "最快、最轻量的 AI 网关。采用 Rust 核心并提供 Python SDK。支持以 OpenAI（或原生）格式调用 100+ 种大模型 API，具备成本追踪、安全护栏、负载均衡和日志记录功能 [Bedrock、Azure、OpenAI、Anthropic、VertexAI、vLLM、Nvidia NIM]。",
+      "description_zh": "最快、最轻量的 AI 网关。采用 Rust 核心并提供 Python SDK。支持以 OpenAI（或原生）格式调用 100+ 种大模型 API，具备成本追踪、安全护栏、负载均衡和日志记录功能 [Bedrock, Azure, OpenAI, Anthropic, VertexAI, vLLM, Nvidia NIM]",
       "script_zh": "这个项目是一个超级轻量的 AI 大模型统一网关！\n它能帮你用一套标准的 OpenAI 接口，直接调用上百种不同的模型 API。\n\n不管是 GPT-4、Claude 还是本地部署的 vLLM，都能用它无缝切换。\n它彻底解决了不同模型接口不兼容的痛点，连费用统计和负载均衡都帮你搞定了。\n\n最棒的是它底层基于 Rust 开发，速度极快且极省资源！\n搞大模型应用开发，用它至少能少写上千行重复代码，绝对值得关注！"
     },
     {
@@ -163,7 +163,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "游戏",
-      "description_zh": "ArtCraft 是一款面向艺术家、设计师和电影制作人的意图创作引擎",
+      "description_zh": "ArtCraft 是一款专为艺术家、设计师和电影制作人打造的意图驱动创作引擎",
       "script_zh": "这个项目是一个专门给艺术家和设计师打造的意图化创作引擎。\n\n平时用 AI 生成画面最头疼的就是全靠碰运气。\n它能帮你精准控制细节和视觉情绪，让 AI 彻底听你指挥。\n无论是做视觉设计还是影视分镜，你都能完全按照自己的想法来雕琢。\n\n它的亮点就在于把创作主导权重新交还给人类。\n目前它在 GitHub 上已经拿到了将近八千星，绝对值得你关注！"
     },
     {
@@ -181,7 +181,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "[ECCV 2026 最佳论文候选] LingBot-Map：面向流式三维重建的几何上下文 Transformer",
+      "description_zh": "[ECCV 2026 最佳论文候选] LingBot-Map：用于流式三维重建的几何上下文 Transformer",
       "script_zh": "今天看一个拿了顶会最佳论文候选的超火开源项目。\n这个项目能帮你把摄像头拍到的画面，实时变成高精度的三维场景！\n\n以前做 3D 重建最麻烦的就是等待，拍完视频还得慢吞吞算半天。\n但它主打流式重建，边拍边生成，完全不需要漫长的后台渲染。\n\n它靠着独特的几何 Transformer 架构，不仅速度飞快，细节还特别惊艳！\n斩获一万七千多星可不是盖的，做机器人和三维建模的朋友赶紧关注起来！"
     },
     {
