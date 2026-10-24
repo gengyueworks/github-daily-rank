@@ -272,6 +272,13 @@ MY_ZH = {
     "fastapi/fastapi": "FastAPI 框架：高性能、易学、编码快、可直接用于生产环境。",
     "luongnv89/claude-howto": "一份可视化、以实例驱动的 Claude Code 指南——从基础概念到进阶智能体，附带即拿即用的复制粘贴模板。",
     "Meloong-Git/PCL": "Minecraft 启动器 Plain Craft Launcher（PCL）。",
+    # 2026-10-25 日榜新增
+    "aws/agent-toolkit-for-aws": "AWS 官方维护的 MCP 服务器、技能与插件，帮助 AI 智能体在 AWS 上构建应用。",
+    "Nutlope/hallmark": "面向 Claude Code、Cursor 与 Codex 的「反 AI 套话」设计技能。",
+    "pollen-robotics/microduck": "一只迷你双足鸭子机器人 🦆",
+    "google-gemini/gemini-cli": "一款开源 AI 智能体，把 Gemini 的能力直接带进你的终端。",
+    "jbiaojerry/ebook-treasure-chest": "欢迎来到电子书下载宝库——一个汇聚各类电子书下载链接的地方，涵盖经典文学、经管励志、终身学习、职场创业、技术手册等，收录了帆书（原樊登读书）、微信读书、京东读书、喜马拉雅等读书 App 的大部分电子书。",
+    "makecindy/cindy": "想到，就能做到。开源、开箱即用的 AI Agent（Consider it done）。",
 }
 
 

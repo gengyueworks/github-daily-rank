@@ -390,6 +390,7 @@
   "php/php-src": "PHP 语言解释器。",
   "fastapi/fastapi": "FastAPI 框架：高性能、易学、编码快、可直接用于生产环境。",
   "luongnv89/claude-howto": "一份可视化、以实例驱动的 Claude Code 指南——从基础概念到进阶智能体，附带即拿即用的复制粘贴模板。",
+<<<<<<< Updated upstream
   "Meloong-Git/PCL": "Minecraft 启动器 Plain Craft Launcher（PCL）。"
 =======
   "THU-MAIC/OpenMAIC": "开放式多智能体互动课堂——一键开启沉浸式多智能体学习体验",
@@ -600,5 +601,14 @@
   "petergyang/no-ai-slop": "清除任意文本中 20 多种 AI 废话模式。",
   "alirezarezvani/claude-skills": "380+ 项 Claude Code 技能、智能体技能与插件（包含 30+ 智能体、70+ 自定义命令、380+ 技能、可定制参考及脚本），适用于 Claude Code、Codex、Gemini CLI、Cursor 及另外 8 款编程智能体——涵盖工程、营销、产品、合规、高管顾问、研究、业务运营、商业金融与日常生产力技能。",
   "ranxianglei/billion-context": "一款上下文压缩插件：兼顾小窗口（100K 上下文足矣）、节省 Token（消耗减少 5 倍）和超长会话（数月级数十亿 Token 单会话）。billion-context，有它就够了。"
+>>>>>>> Stashed changes
+=======
+  "Meloong-Git/PCL": "Minecraft 启动器 Plain Craft Launcher（PCL）。",
+  "aws/agent-toolkit-for-aws": "AWS 官方维护的 MCP 服务器、技能与插件，帮助 AI 智能体在 AWS 上构建应用。",
+  "Nutlope/hallmark": "面向 Claude Code、Cursor 与 Codex 的「反 AI 套话」设计技能。",
+  "pollen-robotics/microduck": "一只迷你双足鸭子机器人 🦆",
+  "google-gemini/gemini-cli": "一款开源 AI 智能体，把 Gemini 的能力直接带进你的终端。",
+  "jbiaojerry/ebook-treasure-chest": "欢迎来到电子书下载宝库——一个汇聚各类电子书下载链接的地方，涵盖经典文学、经管励志、终身学习、职场创业、技术手册等，收录了帆书（原樊登读书）、微信读书、京东读书、喜马拉雅等读书 App 的大部分电子书。",
+  "makecindy/cindy": "想到，就能做到。开源、开箱即用的 AI Agent（Consider it done）。"
 >>>>>>> Stashed changes
 }
