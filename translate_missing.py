@@ -279,6 +279,11 @@ MY_ZH = {
     "google-gemini/gemini-cli": "一款开源 AI 智能体，把 Gemini 的能力直接带进你的终端。",
     "jbiaojerry/ebook-treasure-chest": "欢迎来到电子书下载宝库——一个汇聚各类电子书下载链接的地方，涵盖经典文学、经管励志、终身学习、职场创业、技术手册等，收录了帆书（原樊登读书）、微信读书、京东读书、喜马拉雅等读书 App 的大部分电子书。",
     "makecindy/cindy": "想到，就能做到。开源、开箱即用的 AI Agent（Consider it done）。",
+    # 2026-10-26 日榜新增
+    "Renhuai123/ziwei-doushu": "紫微斗数开源排盘引擎——基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库与古籍原文数据。",
+    "JetBrains/thinkrail": "用 pi 在轻量级、真实的 IDE 里进行氛围编程（vibe coding），IDE 会围绕你的工作方式自我定制——你需要的氛围感。",
+    "coollabsio/coolify": "开源、可自托管的 PaaS 平台，是 Vercel、Heroku 与 Netlify 的替代品，让你能在自己的服务器上轻松部署静态站点、数据库、全栈应用，以及 360+ 项一键服务。",
+    "AgriciDaniel/claude-seo": "面向 Claude Code 的通用 SEO 技能。含 26 个子技能 + 19 个子智能体，覆盖技术 SEO、E-E-A-T、结构化数据、GEO/AEO、智能体就绪度（Lighthouse Agentic Browsing、WebMCP、llms.txt）、外链建设、本地 SEO、电商 SEO、国际 SEO、Google API 以及 PDF/Excel 报告。另有 9 个可选扩展，用于接入实时 SEO 数据。",
 }
 
 
