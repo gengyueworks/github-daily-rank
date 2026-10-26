@@ -234,3 +234,21 @@
 - **部署**：`bash deploy_ghpages.sh`（git 走 IPv4 强制 + 关闭 lowSpeed 中止）成功。本地 `site/` 由脚本末尾从 `/tmp/ghrank_pages` 复原。线上复测：首页 / daily / weekly 三页均 **200**（无传播延迟）。
 - **结论**：当日上榜 日榜 9 + 周榜 15；数据/翻译/站点已生成并推送 `origin/main`，线上链接更新成功（200）。
 - **环境要点（稳定）**：`git`/`gh` 的 libcurl 仍吃 IPv6 stall，必须以 `http.curloptResolve=github.com:443:172.182.252.133` 强制 IPv4（GitHub A 记录已变，旧 IP 失效需重解）；叠加 `http.lowSpeedLimit=0/http.lowSpeedTime=0`。运行前 `unset HTTPS_PROXY HTTP_PROXY`（本机 127.0.0.1:21879 代理 refused）。
+
+## 2026-10-25 (执行，补登)
+- **抓取**：`scraper.py`（venv `envs/ghrank`，直连，IPv4 补丁已入库）首跑成功。日榜 `data/daily/2026-10-25.json` = 10 个仓库；周榜 `data/weekly/2026-10-19.json`（本周一 1019，周日重抓覆盖）= 15 个仓库。
+- **翻译**：首轮 `translate_missing.py` 命中 zh_cache/MY_ZH 补 日 4 + 周 18(累计)；余 6 个日榜新仓库（aws/agent-toolkit-for-aws、Nutlope/hallmark、pollen-robotics/microduck、google-gemini/gemini-cli、jbiaojerry/ebook-treasure-chest、makecindy/cindy）人工校对中译写入 `MY_ZH` 并重跑，最终日榜 10/10、周榜 15/15 全部有 `description_zh`，无空描述缺口。
+- **生成**：`build.py` 重建 `site/daily/2026-10-25.html`、`site/weekly/2026-10-19.html`、`site/index.html`、`site/classics/index.html`（ainews 双语风格）。
+- **部署波折**：首跑 `deploy_ghpages.sh` 因 `git pull --rebase` 期间 GitHub 瞬时「Empty reply / Couldn't connect」网络中断中止（已安全 abort，未动数据）；复测确认 `github.com:443` 恢复后二跑成功（rebase no-op，commit `9e4a260` → push main + gh-pages orphan 均成功）。
+- **部署**：成功。本地 `site/` 由脚本末尾从 `/tmp/ghrank_pages` 复原。线上复测：首页 / daily / weekly 三页均 **200**（无传播延迟）。并行自动化 ...629 内部 memory 目录已暂移 /tmp 再还原，未误推送。
+- **结论**：当日上榜 日榜 10 + 周榜 15；数据/翻译/站点已生成并推送 `origin/main`，线上链接更新成功（200）。
+- **环境要点（稳定）**：`git` 的 libcurl 仍吃 IPv6 stall，必须以 `http.curloptResolve=github.com:443:172.182.252.133` 强制 IPv4；叠加 `http.lowSpeedLimit=0/http.lowSpeedTime=0`。运行前 `unset HTTPS_PROXY HTTP_PROXY`（本机 127.0.0.1:21879 代理 refused）。
+
+## 2026-10-26 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`，直连，IPv4 补丁已入库）首跑成功。日榜 `data/daily/2026-10-26.json` = 11 个仓库；周榜 `data/weekly/2026-10-26.json`（本周一 1026）= 14 个仓库。
+- **翻译**：首轮 `translate_missing.py` 命中 zh_cache/MY_ZH 补 日 7 + 周 14(全译)；余 4 个日榜新仓库（`Renhuai123/ziwei-doushu` 描述本身已为中文、`JetBrains/thinkrail`、`coollabsio/coolify`、`AgriciDaniel/claude-seo`）人工校对中译写入 `MY_ZH` 并重跑，最终日榜 11/11、周榜 14/14 全部有 `description_zh`，无空描述缺口。
+- **生成**：`build.py` 重建 `site/daily/2026-10-26.html`、`site/weekly/2026-10-26.html`、`site/index.html`、`site/classics/index.html`（ainews 双语风格）。
+- **部署波折**：首跑 `bash deploy_ghpages.sh` 因 `git pull --rebase` 期间 GitHub 瞬时「Failed to connect to github.com port 443 after 75004 ms: Couldn't connect to server」网络超时中止（已安全 abort，未动数据，origin/main 仍停在 9e4a260，无 ...629 抢先推送）；复测确认 pin IP 连通后二跑成功（rebase no-op，`git add -A` 无新增，commit `e74e126`(日/周榜数据) 推送 main + gh-pages orphan 均成功）。
+- **部署**：成功。本地 `site/` 由脚本末尾从 `/tmp/ghrank_pages` 复原。线上复测：首测 index / weekly 200、daily 404（GitHub Pages 传播延迟）；等约 50 秒后 daily 转为 200，三页全部 200。并行自动化 ...629 内部 memory 目录已暂移 /tmp 再还原，未误推送。
+- **结论**：当日上榜 日榜 11 + 周榜 14；数据/翻译/站点已生成并推送 `origin/main`，线上链接更新成功（200）。
+- **环境要点（新观察）**：本机未 pin 的直连 `github.com` 当前偶发 75s 超时（DNS 解析到的非 pin IPv4 不可达；`curl -4` 直连亦超时），必须 `http.curloptResolve=github.com:443:172.182.252.133` pin 定 IP 后稳定 200；叠加 `http.lowSpeedLimit=0/http.lowSpeedTime=0`。运行前 `unset HTTPS_PROXY HTTP_PROXY`（代理 refused）。
