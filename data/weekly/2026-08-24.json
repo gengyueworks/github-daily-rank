@@ -19,7 +19,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "其他",
-      "description_zh": "Modular 平台（包含 MAX 与 Mojo）",
+      "description_zh": "Modular 平台（包含 MAX 和 Mojo）",
       "script_zh": "如果你觉得现在的 AI 开发又慢又乱，一定要看看这个项目。\n    它是一个为 AI 打造的超级平台，里面包含了大名鼎鼎的 Mojo 语言。\n\n    简单来说，它能让你用写 Python 的方式，跑出比肩 C++ 的极致速度。\n    这就解决了 AI 运行慢、部署难的痛点。\n\n    最厉害的是，它不仅兼容现有的 Python 库，还能把推理性能提升好几倍。\n    这绝对是未来最值得关注的 AI 黑科技了！"
     },
     {
@@ -37,7 +37,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。",
+      "description_zh": "利用自动化 AI 工作流，根据主题或关键词一键生成高清短视频。",
       "script_zh": "这个项目是一个能帮你一键生成短视频的 AI 神器。\n输入一个主题，它就能自动帮你写文案、配音、找素材，合成高清视频。\n\n以前折腾几小时的工作，现在用它几分钟就能搞定。\n它最厉害的是全自动工作流，连字幕和背景音乐都配好了。\n\n它还支持多种大模型，生成的视频质量很高，简直是偷懒神器。\n想做副业或者批量起号的朋友，赶紧去试试吧！"
     },
     {
@@ -73,7 +73,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "其他",
-      "description_zh": "⚡️基于 Rust 编写的 Logitech Options+ 原生、本地优先替代方案 🦀 —— 通过 HID++ 重映射按键、调节 DPI 与 SmartShift。无需账户，零数据遥测。",
+      "description_zh": "⚡️ 基于 Rust 编写的罗技 Options+ 原生、本地优先替代方案 🦀 —— 通过 HID++ 重映射按键、DPI 与 SmartShift。无需账号，零遥测。",
       "script_zh": "罗技官方的驱动软件是不是又臃肿又难用？\n\n这个项目就是它的开源平替。\n\n它用Rust语言重写了鼠标控制逻辑。\n\n你可以用它轻松改键、调DPI，还能设置滚轮的模式切换。\n\n最牛的是它完全运行在本地。\n\n不需要你注册账号，也没有任何烦人的后台隐私收集。\n\n内存占用极低，即开即用，简直是纯净党和老设备的救星！"
     },
     {
@@ -109,7 +109,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "面向 AI Agent 的自进化上下文数据库，统一 Agent 记忆、知识 RAG 与技能。",
+      "description_zh": "面向 AI 智能体的自进化上下文数据库。统一智能体记忆、知识 RAG 与技能。",
       "script_zh": "这个项目是一个能帮 AI Agent 实现自我进化的上下文数据库。\n\n它把 Agent 的记忆、知识库检索还有技能调用，全部装进了一个盒子里。\n有了它，你的 AI 助手就不会聊着聊着就断片，更不会找不到需要的工具。\n\n最厉害的是它不仅能统一管理，还能像人类一样在交互中自我进化，越用越聪明。\n三万多星的超高人气，绝对是今年开发智能体必须要关注的神器！"
     },
     {
@@ -145,7 +145,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "专为 Apple Silicon 打造的 LLM 推理服务，支持连续批处理与 SSD 缓存，可直接通过 macOS 菜单栏管理。",
+      "description_zh": "专为 Apple Silicon 打造的 LLM 推理服务器，支持连续批处理与 SSD 缓存，可通过 macOS 菜单栏管理",
       "script_zh": "这个项目能让你直接在 Mac 菜单栏上一键运行本地大模型。\n\n就算你的 Mac 内存不够大，它也能用 SSD 缓存技术帮你把超大模型跑起来。\n加上专门针对苹果芯片的优化，不仅运行速度极快，还非常省电。\n\n你只需要在菜单栏点一下就能随时调用 AI，完全不占屏幕空间。\n两万多星的超高人气，绝对是 Mac 用户不容错过的本地神器！"
     },
     {
@@ -163,7 +163,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "其他",
-      "description_zh": "Claude Cowork 和 Claude Code 的社区插件市场。只读镜像——提交插件请访问 clau.de/plugin-directory-submission。",
+      "description_zh": "Claude Cowork 与 Claude Code 的社区插件市场。只读镜像——提交插件请访问 clau.de/plugin-directory-submission。",
       "script_zh": "这个项目是给 Claude Code 和 Claude Cowork 专门打造的社区插件库。\n\n简单来说，它就像是 Claude 的官方应用商店。\n不管是想让 AI 直接读写本地文件，还是连接各种第三方工具，用它都能一键搞定。\n\n最棒的是，这里所有的插件都由开源社区共同维护。\n不仅安全靠谱，而且每天都有大神在里面更新各种好玩的骚操作。\n经常用 Claude 搞开发的朋友，这个项目闭眼收藏就对了！"
     },
     {
@@ -181,7 +181,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "其他",
-      "description_zh": "Cursor 插件规范及官方插件",
+      "description_zh": "Cursor 插件规范与官方插件",
       "script_zh": "用过现在最火的 AI 编辑器 Cursor 吗？\n这个项目就是官方开源的插件规范和工具包！\n\n它能让你自己动手，给 Cursor 的 AI 加上各种专属超能力。\n比如你想让 AI 读懂公司内部的文档，或者直接调用特定的工具，用它就能轻松搞定。\n\n最牛的是，它彻底打通了本地工具和 AI 之间的屏障，让开发效率瞬间翻倍。\n想要定制一个最懂你的 AI 编程助手，认准这个项目就够了！"
     },
     {
