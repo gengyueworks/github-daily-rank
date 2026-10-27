@@ -1,17 +1,23 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""小红书每日发布包生成器
-每天从素材库取「下一期未用的」素材，生成可直接存草稿的发布包。
-素材库: ~/Downloads/图片素材/悦的 AI 书签-小红书账号/000N/
-发布包: 同目录下 _每日发布包/YYYY-MM-DD-第N期-内容描述/
+"""小红书每日发布包生成器（2026-10-28 重构版）
+从拓展坞素材库 xhs-assets/本地渲染-v4/第N期/ 取「下一期未用的」素材，
+生成可直接存草稿的发布包（cover.jpg + card-01~03.jpg + xhs_post.txt → 01~04.png + 文案.txt）。
 
-用法: python3 gen_xhs_pkg.py
-产出: 01-04.png（按发布顺序）+ 文案.txt + 存草稿操作.txt
+素材库（唯一正确位置，禁放 Downloads）:
+  /Volumes/拓展坞 1T2022/2 Codex-Workspace/Codex-Workspace-Main/30-项目-网站/gengyueworks-Github/github-daily-rank/xhs-assets/本地渲染-v4/第N期/
+  每期 = cover.jpg + card-01.jpg + card-02.jpg + card-03.jpg + xhs_post.txt
+
+用法: python3 gen_xhs_pkg.py [--date YYYY-MM-DD]
+产出: 01-04.png + 文案.txt + 存草稿操作.txt
 """
-import os, shutil, re, datetime
+import os, shutil, re, sys, datetime, argparse
 
-MAT_ROOT = os.path.expanduser("~/Downloads/图片素材/悦的 AI 书签-小红书账号")
-PKG_ROOT = os.path.join(MAT_ROOT, "_每日发布包")
+# 🚨 2026-10-28 铁律：素材库在拓展坞 xhs-assets，不在 Downloads！
+# （Downloads 时时清，素材库放那会被清掉——8-21 旧路径被清理后发布包静默失败至今）
+XHS_ASSETS = "/Volumes/拓展坞 1T2022/2 Codex-Workspace/Codex-Workspace-Main/30-项目-网站/gengyueworks-Github/github-daily-rank/xhs-assets"
+MAT_ROOT = os.path.join(XHS_ASSETS, "本地渲染-v4")
+PKG_ROOT = os.path.join(XHS_ASSETS, "_每日发布包")
 USED_LOG = os.path.join(PKG_ROOT, "_已用期数.txt")
 
 def load_used():
@@ -20,47 +26,67 @@ def load_used():
     return set(open(USED_LOG).read().split())
 
 def main():
-    # 找所有 000N 期
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--date", default=datetime.date.today().strftime("%Y-%m-%d"))
+    args = ap.parse_args()
+
+    if not os.path.isdir(MAT_ROOT):
+        print(f"❌ 素材库不存在（禁放 Downloads，必须在拓展坞）: {MAT_ROOT}")
+        sys.exit(1)
+
+    # 找所有「第N期」目录
     periods = sorted(
-        [d for d in os.listdir(MAT_ROOT) if re.match(r"^000\d+$", d)],
-        key=lambda x: int(x)
+        [d for d in os.listdir(MAT_ROOT) if re.match(r"^第\d+期$", d)],
+        key=lambda x: int(re.search(r"\d+", x).group())
     )
     used = load_used()
-    # 选下一期未用的
     target = None
     for p in periods:
         if p not in used:
             target = p
             break
     if not target:
-        print("⚠️ 素材库没有未用期数了，等待 Notion 提供新素材")
+        print("⚠️ 素材库没有未用期数了，等待新一期出图")
         return
     src = os.path.join(MAT_ROOT, target)
-    # 内容描述 = 文案第一行关键词
-    desc = "素材"
-    txt_file = os.path.join(src, "文案.txt")
+
+    # 文案文件 = xhs_post.txt（优先）/ 其他 txt
+    txt_file = os.path.join(src, "xhs_post.txt")
     if not os.path.exists(txt_file):
-        # 兼容 xhs_classic.txt / xhs_a.txt / xhs_b.txt 等命名
-        cands = [f for f in os.listdir(src) if f.endswith(".txt")]
+        cands = [f for f in os.listdir(src) if f.endswith(".txt") and f != "存草稿操作.txt"]
         if cands:
             txt_file = os.path.join(src, sorted(cands)[0])
+    desc = "素材"
     if os.path.exists(txt_file):
-        first = open(txt_file).read().strip().splitlines()[0]
-        desc = first.replace("：", " ").replace(":", " ")[:20]
+        first = open(txt_file).read().strip().splitlines()
+        desc = first[0][:20] if first else "素材"
+
     # 生成发布包
-    date = datetime.date.today().strftime("%Y-%m-%d")
-    pkg = os.path.join(PKG_ROOT, f"{date}-第{int(target)}期-{desc}")
+    date = args.date
+    pkg = os.path.join(PKG_ROOT, f"{date}-{target}-{desc}")
     os.makedirs(pkg, exist_ok=True)
-    # 图片按序复制
-    img_order = ["cover.png", "repo1.png", "repo2.png", "repo3.png"]
-    for i, name in enumerate(img_order, 1):
-        sp = os.path.join(src, name)
+
+    # 图片按序复制：cover.jpg → 01.png；card-01~03.jpg → 02~04.png
+    img_map = [
+        ("cover.jpg", "01.png"),
+        ("card-01.jpg", "02.png"),
+        ("card-02.jpg", "03.png"),
+        ("card-03.jpg", "04.png"),
+    ]
+    copied = 0
+    for sp_name, dp_name in img_map:
+        sp = os.path.join(src, sp_name)
         if os.path.exists(sp):
-            shutil.copy(sp, os.path.join(pkg, f"{i:02d}.png"))
-    # 文案
+            shutil.copy(sp, os.path.join(pkg, dp_name))
+            copied += 1
+    if copied == 0:
+        print(f"⚠️ {target} 无可用图片（需 cover.jpg + card-01~03.jpg），跳过并提示补图")
+        return
+
     if os.path.exists(txt_file):
         shutil.copy(txt_file, os.path.join(pkg, "文案.txt"))
-    guide = f"""【小红书存草稿 · 3 步】(第 {int(target)} 期)
+
+    guide = f"""【小红书存草稿 · 3 步】({target})
 
 1. 打开创作者中心：https://creator.xiaohongshu.com/publish/publish
 2. 上传图片：按 01.png → 02.png → 03.png → 04.png 顺序选（封面是第 1 张）
@@ -69,6 +95,7 @@ def main():
 ⚠️ 确认账号是「悦的 AI 书签」小号，不是大号！
 """
     open(os.path.join(pkg, "存草稿操作.txt"), "w").write(guide)
+
     # 标记已用
     with open(USED_LOG, "a") as f:
         f.write(target + "\n")

@@ -306,3 +306,10 @@ GitHub经典项目资料库-日期.md     →  封面1 + 项目卡3 + xhs_post.t
 - **富化v2 vs 富化终版**：v2 补齐了空壳「定位」（如 odysseus）、判断句按期轮换（5 句 × 各 6 期）；星标数据已抽验为真实值
 - **最新交接**：见仓库根目录 `HANDOVER_2026-08-22_小红书日榜本地渲染版.md`（取代 08-21 版）
 
+
+### 🚨 素材库铁律（2026-10-28 主理人亲定 · 事故级）
+
+1. **素材库唯一正确位置 = 拓展坞**：`/Volumes/拓展坞 1T2022/2 Codex-Workspace/Codex-Workspace-Main/30-项目-网站/gengyueworks-Github/github-daily-rank/xhs-assets/本地渲染-v4/第N期/`（每期 = cover.jpg + card-01~03.jpg + xhs_post.txt）
+2. **严禁在 ~/Downloads 建素材库**：Downloads 是时时清的工作区，素材放那里会被清掉（8-21 旧路径 `~/Downloads/图片素材/悦的 AI 书签-小红书账号/` 被清理后，发布包生成静默失败至今，本期已修复）
+3. **发布包生成脚本**：`gen_xhs_pkg.py`（2026-10-28 重构，读拓展坞素材，输出 01-04.png + 文案.txt + 存草稿操作.txt）
+4. **每天例行确认**：`launchctl list | grep github-daily-rank`（退出码 0 = 正常）；`ls xhs-assets/本地渲染-v4/`（最新期数）；发布包在 `xhs-assets/_每日发布包/`
