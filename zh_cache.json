@@ -316,5 +316,7 @@
   "petergyang/no-ai-slop": "从任何文本中清除 20 多种 AI 废话套路。",
   "alirezarezvani/claude-skills": "380 项 Claude Code 技能、Agent 技能与插件（含 30+ Agent、70+ 自定义命令、380+ 技能、可自定义参考及脚本），适用于 Claude Code、Codex、Gemini CLI、Cursor 及其他 8 款编程 Agent——涵盖工程、营销、产品、合规、高管咨询、研究、业务运营、商业财务及日常生产力技能。",
   "ranxianglei/billion-context": "一款上下文压缩插件，适配小上下文窗口（100K 足矣），节省 5 倍 Token，支持数月级超长单会话（处理数十亿 Token）。拥有 billion-context 就足够了。",
-  "wshobson/agents": "面向 Claude Code、Codex、Cursor、OpenCode、GitHub Copilot、Google Antigravity 和 Pi 的多平台 Agent 插件市场"
+  "wshobson/agents": "面向 Claude Code、Codex、Cursor、OpenCode、GitHub Copilot、Google Antigravity 和 Pi 的多平台 Agent 插件市场",
+  "HKUDS/DeepTutor": "DeepTutor：终身个性化辅导。https://deeptutor.info/",
+  "togg53192-cmd/jailbreaks": "我的所有越狱列表"
 }

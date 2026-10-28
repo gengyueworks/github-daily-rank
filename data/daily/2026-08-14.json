@@ -91,7 +91,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "最快且唯一的 macOS 听写应用，搭载端侧 STT 与自训练 AI 增强模型。Wispr Flow 本地替代方案。求点个 ⭐ 支持 :) Windows 与 iOS 现已开放候补，Linux 即将推出。",
+      "description_zh": "最快且唯一的 macOS 听写应用，搭载端侧 STT 与定制训练的 AI 增强模型。Wispr Flow 的本地化替代品。在 X 上私信我们获取彩蛋 😉 - https://x.com/fluidvoiceapp",
       "script_zh": "这个项目是目前 macOS 上最快的本地语音输入神器。\n你只要对着电脑说话，它就能瞬间把语音变成精准的文字。\n再也不用担心打字手酸，或者网络不好导致识别卡顿了。\n\n它最牛的地方在于完全在本地运行，隐私安全直接拉满。\n而且它有专门训练的 AI 增强模型，连口癖和语气词都能自动过滤。\n现在它在 GitHub 上已经破万星了，绝对值得你赶紧去试试！"
     },
     {
@@ -109,7 +109,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "用于运行和训练 LLM 与扩散模型的本地 UI，支持 Qwen3.8、Kimi K3、MiniMax-H3、Gemma 4、DeepSeek-V4、FLUX 等。",
+      "description_zh": "用于运行与训练大语言模型及扩散模型的本地 UI，支持 Qwen3.8、Kimi K3、MiniMax-H3、Gemma 4、DeepSeek-V4、FLUX 等。",
       "script_zh": "这个项目是一个能让你在本地轻松运行和微调各种大模型的超强工具。\n\n不管是最新的 DeepSeek、千问还是画图的 FLUX，它全都能一键搞定。\n你只需要在本地可视化界面里点点鼠标，就能训练出专属自己的 AI 助手。\n\n它最厉害的地方在于把显存和速度优化到了极致。\n不仅训练速度能比平时提升好几倍，还能帮你省下高达百分之八十的显存。\n想在普通电脑上低成本玩转顶级大模型，闭眼冲它就对了！"
     },
     {
