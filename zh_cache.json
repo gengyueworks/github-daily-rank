@@ -318,5 +318,9 @@
   "ranxianglei/billion-context": "一款上下文压缩插件，适配小上下文窗口（100K 足矣），节省 5 倍 Token，支持数月级超长单会话（处理数十亿 Token）。拥有 billion-context 就足够了。",
   "wshobson/agents": "面向 Claude Code、Codex、Cursor、OpenCode、GitHub Copilot、Google Antigravity 和 Pi 的多平台 Agent 插件市场",
   "HKUDS/DeepTutor": "DeepTutor：终身个性化辅导。https://deeptutor.info/",
-  "togg53192-cmd/jailbreaks": "我的所有越狱列表"
+  "togg53192-cmd/jailbreaks": "我的所有越狱列表",
+  "expo/skills": "用于 Expo 项目和 Expo Application Services 的 AI 智能体技能合集",
+  "xiaolai/the-craft-of-selfteaching": "没有自学能力的人没有未来。",
+  "Leonxlnx/taste-skill": "赋予编程智能体审美品味的 Agent 技能：通过艺术指导、参考图和浏览器检查，告别千篇一律的 AI 页面。",
+  "jakubkrehel/skills": "一套助你构建出色界面的智能体技能合集。"
 }
