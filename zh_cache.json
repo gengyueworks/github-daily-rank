@@ -322,5 +322,8 @@
   "expo/skills": "用于 Expo 项目和 Expo Application Services 的 AI 智能体技能合集",
   "xiaolai/the-craft-of-selfteaching": "没有自学能力的人没有未来。",
   "Leonxlnx/taste-skill": "赋予编程智能体审美品味的 Agent 技能：通过艺术指导、参考图和浏览器检查，告别千篇一律的 AI 页面。",
-  "jakubkrehel/skills": "一套助你构建出色界面的智能体技能合集。"
+  "jakubkrehel/skills": "一套助你构建出色界面的智能体技能合集。",
+  "milind-soni/OpenMausBot": "开源 Grok Bot 替代方案，内置机器人可使用的虚拟机",
+  "CopilotKit/OpenBot": "开源 AI 协作伙伴，每位都拥有专属电脑（配备浏览器、文件与工具），所有操作事前决策、事后记录。支持接入任意 AG-UI 智能体。",
+  "Donchitos/Claude-Code-Game-Studios": "将 Claude Code 打造成完整的游戏开发工作室——包含 49 个 AI 智能体、72 项工作流技能，以及一套复刻真实工作室层级架构的完整协作系统。"
 }
