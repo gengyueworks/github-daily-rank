@@ -284,6 +284,14 @@ MY_ZH = {
     "JetBrains/thinkrail": "用 pi 在轻量级、真实的 IDE 里进行氛围编程（vibe coding），IDE 会围绕你的工作方式自我定制——你需要的氛围感。",
     "coollabsio/coolify": "开源、可自托管的 PaaS 平台，是 Vercel、Heroku 与 Netlify 的替代品，让你能在自己的服务器上轻松部署静态站点、数据库、全栈应用，以及 360+ 项一键服务。",
     "AgriciDaniel/claude-seo": "面向 Claude Code 的通用 SEO 技能。含 26 个子技能 + 19 个子智能体，覆盖技术 SEO、E-E-A-T、结构化数据、GEO/AEO、智能体就绪度（Lighthouse Agentic Browsing、WebMCP、llms.txt）、外链建设、本地 SEO、电商 SEO、国际 SEO、Google API 以及 PDF/Excel 报告。另有 9 个可选扩展，用于接入实时 SEO 数据。",
+    # 2026-10-30 日榜/周榜新增
+    "HKUDS/DeepTutor": "DeepTutor：面向终身学习的个性化辅导系统。https://deeptutor.info/",
+    "milind-soni/OpenMausBot": "开源版 Grok Bot 替代方案，附带可供机器人使用的虚拟机。",
+    "nightly-labs/openbot": "本地优先的桌面工作空间，用于承载持久化的 AI 队友。可为 Codex、Claude、Grok 等提供独立工作区、任务队列、文件共享、浏览器控制与智能体间协作。",
+    "CopilotKit/OpenBot": "开源的 AI 同事：每个同事都拥有自己的电脑——浏览器、文件与工具，每个动作在事前被决策、事后被记录。可接入任意 AG-UI 智能体。",
+    "togg53192-cmd/jailbreaks": "我所有越狱（提示词绕过）方法的清单。",
+    "Donchitos/Claude-Code-Game-Studios": "把 Claude Code 变成一间完整的游戏开发工作室——49 个 AI 智能体、72 项工作流技能，以及一套映射真实工作室层级结构的完整协作体系。",
+    "Leonxlnx/taste-skill": "为编程智能体赋予「品味」的技能：用艺术指导、参考图与浏览器核查，取代千篇一律的 AI 生成页面。",
 }
 
 
