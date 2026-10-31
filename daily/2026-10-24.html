@@ -1,0 +1,224 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GitHub 日榜｜2026-10-24</title><style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap');
+:root {
+    --klein: #002FA7;
+    --klein-bright: #0044FF;
+    --white: #FFFFFF;
+    --bg-light: #F8F9FB;
+    --text-dark: #1A1A1A;
+    --text-mid: #6B6B6B;
+    --text-light: #9CA3AF;
+    --border: #E5E7EB;
+    --accent: #C41E3A;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Noto Sans SC', 'Inter', -apple-system, sans-serif;
+    background: var(--white); color: var(--text-dark);
+    line-height: 1.75; -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 720px; margin: 0 auto; padding: 56px 28px 80px; }
+.doc-title { font-size: 38px; font-weight: 700; color: var(--text-dark); letter-spacing: -0.5px; margin-bottom: 8px; text-wrap: balance; }
+.doc-title span { color: var(--klein); }
+.doc-date { font-family: 'Inter', sans-serif; font-size: 15px; color: var(--text-light); }
+.divider { height: 1px; background: var(--border); margin: 36px 0; }
+.section-header { font-size: 24px; font-weight: 600; color: var(--klein); margin-bottom: 24px; padding-bottom: 8px; border-bottom: 2px solid var(--klein); display: inline-block; text-wrap: balance; }
+.section-header .en { font-family: 'Inter'; font-size: 13px; color: var(--text-light); font-weight: 400; margin-left: 10px; }
+.section-block { margin-bottom: 48px; }
+.news-item { margin-bottom: 52px; }
+.news-item:last-child { margin-bottom: 0; }
+.news-title { font-size: 21px; font-weight: 600; color: var(--text-dark); line-height: 1.5; margin-bottom: 14px; text-wrap: balance; }
+.news-body { font-size: 16px; color: var(--text-dark); line-height: 1.9; margin-bottom: 16px; }
+.news-label { font-size: 14px; color: var(--text-mid); line-height: 1.7; margin-bottom: 14px; }
+.highlight { color: var(--klein); font-weight: 600; }
+.accent { color: var(--accent); font-weight: 600; }
+.turn { color: var(--klein); font-weight: 700; }
+.intro-text { font-size: 16px; color: var(--text-dark); line-height: 1.9; margin-bottom: 14px; }
+.source-line { font-size: 13px; color: var(--text-light); margin-top: 8px; }
+.source-line a { color: var(--klein); text-decoration: none; }
+.footer-block { font-size: 14px; color: var(--text-mid); line-height: 1.7; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); }
+.card-tag { font-size: 12px; color: var(--text-mid); opacity: 0.55; margin-top: 8px; line-height: 1.6; }
+
+.site-nav-lite { display: flex; align-items: center; justify-content: space-between; margin-bottom: 28px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+.nav-back { font-size: 14px; color: var(--klein); text-decoration: none; font-weight: 500; }
+.nav-back:hover { text-decoration: underline; }
+.nav-date { font-size: 13px; color: var(--text-light); font-family: 'JetBrains Mono', monospace; }
+
+/* ---- GitHub 榜专属（仍沿用 ainews 用词体系） ---- */
+.rank { font-family: 'JetBrains Mono', monospace; color: var(--klein); font-weight: 700; margin-right: 8px; }
+.repo-link { color: var(--text-dark); text-decoration: none; }
+.repo-link:hover { color: var(--klein); }
+.zh { color: var(--text-mid); }
+.tr { font-size: 11px; color: #fff; background: var(--klein); border-radius: 4px; padding: 2px 6px; margin-right: 6px; font-family: 'Inter'; vertical-align: middle; }
+.repo-meta { font-size: 14px; color: var(--text-mid); margin-top: 12px; line-height: 1.8; }
+.repo-meta .lang-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin: 0 4px 0 2px; }
+.repo-meta .cat { color: var(--klein); font-weight: 600; }
+.riser-note { font-size: 13px; color: var(--text-light); margin-top: 8px; }
+.script-block { font-size: 15.5px; color: var(--ink-soft, var(--text-mid)); line-height: 1.8; margin: 0 0 14px; }
+.script-tag { font-size: 11px; color: #fff; background: var(--klein); border-radius: 4px; padding: 1px 7px; margin-right: 8px; font-family: 'Inter'; vertical-align: middle; white-space: nowrap; }
+.archive { columns: 2; column-gap: 24px; }
+.archive a { display: block; color: var(--klein); text-decoration: none; padding: 3px 0; font-size: 15px; }
+.archive a:hover { text-decoration: underline; }
+
+/* classics 高分精选页专属：阅读型页面加宽容器，提升行宽舒适度 */
+body.classics .container { max-width: 860px; }
+
+/* ---- classics 高分精选页：严格对齐 ainews 排版体系 ----
+   红蓝配比：蓝为主（标题/■ 标签/强调/链接/footer 3px 蓝顶线），
+   红仅限数字点缀（.num，JetBrains Mono 红色数字），蓝:红 ≈ 10:1。
+   全部限定 body.classics，不影响 daily/weekly。 */
+body.classics {
+  --paper: #FFFFFF; --ink: #0E0E10; --ink-soft: #3A3A3E;
+  --gray: #6B6B70; --gray-light: #9CA3AF; --line: #E8E8EC;
+}
+body.classics .masthead { margin-bottom: 36px; }
+body.classics .mast-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--klein); font-weight: 600; margin-bottom: 14px; }
+body.classics .mast-title { font-size: 44px; font-weight: 900; letter-spacing: -1.5px; line-height: 1.05; color: var(--klein); margin-bottom: 16px; text-wrap: balance; }
+body.classics .mast-rule { height: 3px; background: var(--klein); width: 100%; margin: 0 0 10px; }
+body.classics .mast-meta { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--gray); display: flex; gap: 14px; flex-wrap: wrap; }
+body.classics .mast-meta .issue { color: var(--klein); font-weight: 600; }
+body.classics .mast-lede { font-size: 16px; line-height: 1.7; color: var(--ink-soft); margin-top: 22px; padding-left: 16px; border-left: 3px solid var(--klein); }
+body.classics .sec-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gray-light); margin-bottom: 6px; }
+body.classics .sec-title { font-size: 15px; font-weight: 700; color: var(--klein); letter-spacing: 1px; margin-bottom: 24px; display: inline-block; }
+body.classics .sec-title::before { content: "AE"; color: var(--klein); margin-right: 8px; font-size: 13px; }
+body.classics .item { margin-bottom: 52px; }
+body.classics .item:last-child { margin-bottom: 0; }
+body.classics .dateline { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gray); letter-spacing: 0.5px; margin-bottom: 10px; }
+body.classics .dateline .src { color: var(--klein); font-weight: 600; }
+body.classics .item-title { font-size: 21px; font-weight: 700; line-height: 1.4; margin-bottom: 12px; text-wrap: balance; }
+body.classics .item-title a { color: var(--klein); text-decoration: none; }
+body.classics .item-title a:hover { text-decoration: underline; }
+body.classics .body { font-size: 15.5px; color: var(--ink-soft); line-height: 1.8; }
+body.classics .body p { margin-bottom: 14px; }
+body.classics .body p:last-child { margin-bottom: 0; }
+body.classics .body .num { font-family: 'JetBrains Mono', monospace; color: var(--accent); font-weight: 600; }
+body.classics .body .tag { display: inline-block; font-size: 11px; font-family: 'JetBrains Mono', monospace; color: var(--gray); background: var(--line); padding: 1px 8px; border-radius: 3px; margin-right: 4px; }
+body.classics .src-line { font-size: 13px; color: var(--gray); margin-top: 10px; font-family: 'JetBrains Mono', monospace; line-height: 1.7; }
+body.classics .src-line a { color: var(--klein); text-decoration: none; }
+body.classics .src-line a:hover { text-decoration: underline; }
+body.classics .src-line .cat { color: var(--klein); font-weight: 600; }
+body.classics .link-area { margin-top: 12px; background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 8px 12px; display: flex; flex-direction: column; gap: 6px; }
+body.classics .link-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+body.classics .link-url { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--klein); text-decoration: none; overflow-wrap: anywhere; }
+body.classics .link-url:hover { text-decoration: underline; }
+body.classics .copy-btn { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gray); background: var(--paper); border: 1px solid var(--line); border-radius: 4px; padding: 2px 8px; cursor: pointer; flex-shrink: 0; }
+body.classics .copy-btn:hover { color: var(--klein); border-color: var(--klein); }
+body.classics .copy-btn.copied { color: #fff; background: var(--klein); border-color: var(--klein); }
+body.classics .footer { margin-top: 48px; padding-top: 20px; border-top: 3px solid var(--klein); font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--gray); line-height: 1.8; }
+body.classics .footer .big { color: var(--ink); font-weight: 600; }
+body.classics .footer a { color: var(--klein); text-decoration: none; }
+body.classics .footer a:hover { text-decoration: underline; }
+</style></head>
+<body><div class="container">
+<nav class="site-nav-lite"><a href="../index.html" class="nav-back">← 首页 / Index</a><span class="nav-date">2026年10月24日</span></nav>
+<h1 class="doc-title">GitHub 日榜｜<span>2026-10-24</span></h1>
+<p class="doc-date">2026年10月24日 · 星期六 · Daily GitHub Trending</p>
+<div class="divider"></div>
+<div class="section-block">
+  <h2 class="section-header">今日榜单 <span class="en">Today's Board</span></h2>
+  <p class="intro-text">今日 <span class="accent">8</span> 个仓库登上 GitHub Trending，最热分类 <span class="highlight">其他</span>，单日最高 <span class="accent">+2716★</span>（<span class="highlight">cloudflare/security-audit-skill</span>）。</p><p class="intro-text">Today <span class="accent">8</span> repos trended on GitHub. Hottest category <span class="highlight">Misc</span>; top daily gain <span class="accent">+2716★</span> by <span class="highlight">cloudflare/security-audit-skill</span>.</p>
+  
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#1</span><a class="repo-link" href="https://github.com/cloudflare/security-audit-skill" target="_blank">cloudflare/security-audit-skill</a></h3>
+        <p class="news-body">A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings</p>
+        <p class="news-body zh"><span class="tr">译</span>用于多阶段安全审计的编程智能体技能，提供经独立验证、机器可读的审计结果</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是 Cloudflare 打造的 AI 安全审计插件。<br>它能让你的 AI 助手像安全专家一样对代码做多轮排查。</p>
+<p class="script-block">平时写代码最怕隐患，传统审计慢，AI 审计又怕幻觉。<br>它不仅能自动扫描，还能独立二次验证，拒绝乱报误报。</p>
+<p class="script-block">报告全都是机器可读的标准格式，能直接无缝接入自动化流水线。<br>大厂背书加万星人气，绝对是 AI 开发必备的安全神器！</p>
+        <p class="repo-meta">★ 42,155 <span class="accent">(+2716 今日 today)</span> · ⑂ 2,633 forks · <span class="lang-dot" style="background:#f1e05a"></span>JavaScript · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#2</span><a class="repo-link" href="https://github.com/php/php-src" target="_blank">php/php-src</a></h3>
+        <p class="news-body">The PHP Interpreter</p>
+        <p class="news-body zh"><span class="tr">译</span>PHP 解释器</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目就是全球近八成网站的心脏，PHP 官方的核心源码。<br>不管是 WordPress 还是大型系统，全靠它在底层编译和跑代码。</p>
+<p class="script-block">想弄懂语言底层怎么分配内存和垃圾回收，翻它绝对最权威。<br>它扛了近三十年的实战考验，现在的性能一直在疯狂进化。</p>
+<p class="script-block">加入 JIT 后的它快得飞起，更是工业级 C 语言的教科书。<br>哪怕你平时不用 PHP，看一眼也能刷新对服务端底层的认知！</p>
+        <p class="repo-meta">★ 41,564 <span class="accent">(+716 今日 today)</span> · ⑂ 8,361 forks · <span class="lang-dot" style="background:#555555"></span>C · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#3</span><a class="repo-link" href="https://github.com/anthropics/knowledge-work-plugins" target="_blank">anthropics/knowledge-work-plugins</a></h3>
+        <p class="news-body">Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork</p>
+        <p class="news-body zh"><span class="tr">译</span>主要供知识工作者在 Claude Cowork 中使用的开源插件仓库。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>Anthropic 官方给打工人开源的 Claude 插件库来了！</p>
+<p class="script-block">它能帮你写报告、搜资料、搞数据分析。<br>那些烦琐的知识型工作，现在都能交给 AI 自动化处理。</p>
+<p class="script-block">作为 Anthropic 官方出品的项目，适配度直接拉满！<br>最绝的是代码全开源，开箱即用还能按需定制。</p>
+<p class="script-block">只要你是知识型工作者，这个项目绝对能帮你效率翻倍！</p>
+        <p class="repo-meta">★ 32,219 <span class="accent">(+635 今日 today)</span> · ⑂ 3,574 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#4</span><a class="repo-link" href="https://github.com/NVIDIA/OpenShell" target="_blank">NVIDIA/OpenShell</a></h3>
+        <p class="news-body">OpenShell is the safe, private runtime for autonomous AI agents.</p>
+        <p class="news-body zh"><span class="tr">译</span>OpenShell 是面向自主 AI 智能体的安全、私密运行时。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是英伟达开源的 AI Agent 安全运行环境。<br>它能给自主运行的 AI 智能体套上一层安全隔离罩。</p>
+<p class="script-block">现在让 AI 自己跑代码，最怕它误删系统文件或者泄露隐私。<br>用它来运行 Agent，能精准限制 AI 的操作权限和数据边界。<br>它能保证 AI 既能高效干活，又绝对不会越界乱搞。</p>
+<p class="script-block">英伟达背书加上破万星关注，安全落地这块给抓得死死的。<br>想做自主 AI 应用开发的朋友，这个项目绝对值得关注。</p>
+        <p class="repo-meta">★ 18,805 <span class="accent">(+1119 今日 today)</span> · ⑂ 1,886 forks · <span class="lang-dot" style="background:#dea584"></span>Rust · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#5</span><a class="repo-link" href="https://github.com/Renhuai123/ziwei-doushu" target="_blank">Renhuai123/ziwei-doushu</a></h3>
+        <p class="news-body">紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据</p>
+        <p class="news-body zh"><span class="tr">译</span>紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是一个斩获了近七千星的紫微斗数开源排盘引擎。<br>它把玄妙复杂的传统数术，彻底做成了开箱即用的代码库。</p>
+<p class="script-block">平时想研究排盘或者开发玄学工具，再也不用去死磕繁琐的古法查表了。<br>只要传入生辰时间，它就能秒级推导出完整的命盘和四化走向。</p>
+<p class="script-block">最绝的是它直接采用了倪海厦先生的天纪体系。<br>不仅连古籍原文和经典格局都给你整理得明明白白，底层逻辑还极其严密。<br>如果你对命理算法感兴趣，闭眼直接用它就对了！</p>
+        <p class="repo-meta">★ 6,862 <span class="accent">(+546 今日 today)</span> · ⑂ 1,409 forks · <span class="lang-dot" style="background:#3178c6"></span>TypeScript · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#6</span><a class="repo-link" href="https://github.com/SnailSploit/Claude-Red" target="_blank">SnailSploit/Claude-Red</a></h3>
+        <p class="news-body">claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development.</p>
+        <p class="news-body zh"><span class="tr">译</span>claude-red 是专为 Claude Skills 系统打造的进攻性安全技能精选库。每个技能都是一份结构化的 SKILL.md 文件，为 Claude 提供针对特定攻击面的专家级方法论——涵盖从 SQL 注入到 Shellcode、从 EDR 规避到漏洞利用开发。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是一个专门给 Claude 准备的网络安全红队技能库。<br>它能把渗透测试和网络攻击的专业方法论打包喂给 AI。</p>
+<p class="script-block">从常见的 SQL 注入，到高级的 EDR 绕过和漏洞利用，它全都能搞定。<br>它的亮点在于帮安全人员省去了复杂的 Prompt 调试。</p>
+<p class="script-block">只要导入技能文件，Claude 就能瞬间拥有顶尖黑客的实战思路。<br>这种把大模型变成顶级安全工具的项目，绝对值得你关注！</p>
+        <p class="repo-meta">★ 8,492 <span class="accent">(+226 今日 today)</span> · ⑂ 1,100 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">安全 · Security</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：安全 · Security</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#7</span><a class="repo-link" href="https://github.com/OpenBMB/VoxCPM" target="_blank">OpenBMB/VoxCPM</a></h3>
+        <p class="news-body">VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning</p>
+        <p class="news-body zh"><span class="tr">译</span>VoxCPM2：支持多语言语音生成、创意音色设计与逼真声音克隆的无分词器 TTS 模型</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是一个主打超逼真克隆的多语言语音生成模型。<br>你只要给它几秒钟的声音样本，它就能瞬间复刻出极其自然的声音。</p>
+<p class="script-block">无论是做多语言配音，还是自由设计全新的奇幻音色，它都能轻松搞定。<br>最厉害的是它采用了全新的无分词器架构，彻底解决了传统语音合成的机械感。</p>
+<p class="script-block">表达里的情感和呼吸细节简直跟真人一模一样。<br>斩获三万多星的实力派项目，想做语音创意的千万别错过！</p>
+        <p class="repo-meta">★ 40,258 <span class="accent">(+150 今日 today)</span> · ⑂ 4,579 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#8</span><a class="repo-link" href="https://github.com/nodejs/node" target="_blank">nodejs/node</a></h3>
+        <p class="news-body">Node.js JavaScript runtime ✨🐢🚀✨</p>
+        <p class="news-body zh"><span class="tr">译</span>Node.js JavaScript 运行时 ✨🐢🚀✨</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目把 JavaScript 彻底带出了浏览器。<br>它让前端同学只用一套熟悉的语法，就能直接跑在服务器上写后端。</p>
+<p class="script-block">平时想搭后台接口或者写自动化脚本，完全不用再去硬啃其他语言。<br>只要你会写 JS，就能用它轻松搞定现代全栈开发。</p>
+<p class="script-block">它最厉害的是非阻塞 I/O 架构，一个人扛住海量并发请求又轻又快。<br>背后还有全球最大的 npm 开源生态，你想要的轮子早就有人帮你写好了！</p>
+        <p class="repo-meta">★ 122,867 <span class="accent">(+66 今日 today)</span> · ⑂ 39,832 forks · <span class="lang-dot" style="background:#f1e05a"></span>JavaScript · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+</div>
+<div class="footer-block">
+  <p>GitHub 日榜 · 每日自动收录自 GitHub Trending · Daily auto-collected from GitHub Trending</p>
+  <p>数据来源 Source：<a href="https://github.com/trending?since=daily" target="_blank">github.com/trending?since=daily</a> · 抓取时间 Fetched：2026-10-24T09:00:07</p>
+</div>
+</div></body></html>

@@ -1,0 +1,301 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GitHub 日榜｜2026-10-27</title><style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap');
+:root {
+    --klein: #002FA7;
+    --klein-bright: #0044FF;
+    --white: #FFFFFF;
+    --bg-light: #F8F9FB;
+    --text-dark: #1A1A1A;
+    --text-mid: #6B6B6B;
+    --text-light: #9CA3AF;
+    --border: #E5E7EB;
+    --accent: #C41E3A;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Noto Sans SC', 'Inter', -apple-system, sans-serif;
+    background: var(--white); color: var(--text-dark);
+    line-height: 1.75; -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 720px; margin: 0 auto; padding: 56px 28px 80px; }
+.doc-title { font-size: 38px; font-weight: 700; color: var(--text-dark); letter-spacing: -0.5px; margin-bottom: 8px; text-wrap: balance; }
+.doc-title span { color: var(--klein); }
+.doc-date { font-family: 'Inter', sans-serif; font-size: 15px; color: var(--text-light); }
+.divider { height: 1px; background: var(--border); margin: 36px 0; }
+.section-header { font-size: 24px; font-weight: 600; color: var(--klein); margin-bottom: 24px; padding-bottom: 8px; border-bottom: 2px solid var(--klein); display: inline-block; text-wrap: balance; }
+.section-header .en { font-family: 'Inter'; font-size: 13px; color: var(--text-light); font-weight: 400; margin-left: 10px; }
+.section-block { margin-bottom: 48px; }
+.news-item { margin-bottom: 52px; }
+.news-item:last-child { margin-bottom: 0; }
+.news-title { font-size: 21px; font-weight: 600; color: var(--text-dark); line-height: 1.5; margin-bottom: 14px; text-wrap: balance; }
+.news-body { font-size: 16px; color: var(--text-dark); line-height: 1.9; margin-bottom: 16px; }
+.news-label { font-size: 14px; color: var(--text-mid); line-height: 1.7; margin-bottom: 14px; }
+.highlight { color: var(--klein); font-weight: 600; }
+.accent { color: var(--accent); font-weight: 600; }
+.turn { color: var(--klein); font-weight: 700; }
+.intro-text { font-size: 16px; color: var(--text-dark); line-height: 1.9; margin-bottom: 14px; }
+.source-line { font-size: 13px; color: var(--text-light); margin-top: 8px; }
+.source-line a { color: var(--klein); text-decoration: none; }
+.footer-block { font-size: 14px; color: var(--text-mid); line-height: 1.7; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); }
+.card-tag { font-size: 12px; color: var(--text-mid); opacity: 0.55; margin-top: 8px; line-height: 1.6; }
+
+.site-nav-lite { display: flex; align-items: center; justify-content: space-between; margin-bottom: 28px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+.nav-back { font-size: 14px; color: var(--klein); text-decoration: none; font-weight: 500; }
+.nav-back:hover { text-decoration: underline; }
+.nav-date { font-size: 13px; color: var(--text-light); font-family: 'JetBrains Mono', monospace; }
+
+/* ---- GitHub 榜专属（仍沿用 ainews 用词体系） ---- */
+.rank { font-family: 'JetBrains Mono', monospace; color: var(--klein); font-weight: 700; margin-right: 8px; }
+.repo-link { color: var(--text-dark); text-decoration: none; }
+.repo-link:hover { color: var(--klein); }
+.zh { color: var(--text-mid); }
+.tr { font-size: 11px; color: #fff; background: var(--klein); border-radius: 4px; padding: 2px 6px; margin-right: 6px; font-family: 'Inter'; vertical-align: middle; }
+.repo-meta { font-size: 14px; color: var(--text-mid); margin-top: 12px; line-height: 1.8; }
+.repo-meta .lang-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin: 0 4px 0 2px; }
+.repo-meta .cat { color: var(--klein); font-weight: 600; }
+.riser-note { font-size: 13px; color: var(--text-light); margin-top: 8px; }
+.script-block { font-size: 15.5px; color: var(--ink-soft, var(--text-mid)); line-height: 1.8; margin: 0 0 14px; }
+.script-tag { font-size: 11px; color: #fff; background: var(--klein); border-radius: 4px; padding: 1px 7px; margin-right: 8px; font-family: 'Inter'; vertical-align: middle; white-space: nowrap; }
+.archive { columns: 2; column-gap: 24px; }
+.archive a { display: block; color: var(--klein); text-decoration: none; padding: 3px 0; font-size: 15px; }
+.archive a:hover { text-decoration: underline; }
+
+/* classics 高分精选页专属：阅读型页面加宽容器，提升行宽舒适度 */
+body.classics .container { max-width: 860px; }
+
+/* ---- classics 高分精选页：严格对齐 ainews 排版体系 ----
+   红蓝配比：蓝为主（标题/■ 标签/强调/链接/footer 3px 蓝顶线），
+   红仅限数字点缀（.num，JetBrains Mono 红色数字），蓝:红 ≈ 10:1。
+   全部限定 body.classics，不影响 daily/weekly。 */
+body.classics {
+  --paper: #FFFFFF; --ink: #0E0E10; --ink-soft: #3A3A3E;
+  --gray: #6B6B70; --gray-light: #9CA3AF; --line: #E8E8EC;
+}
+body.classics .masthead { margin-bottom: 36px; }
+body.classics .mast-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--klein); font-weight: 600; margin-bottom: 14px; }
+body.classics .mast-title { font-size: 44px; font-weight: 900; letter-spacing: -1.5px; line-height: 1.05; color: var(--klein); margin-bottom: 16px; text-wrap: balance; }
+body.classics .mast-rule { height: 3px; background: var(--klein); width: 100%; margin: 0 0 10px; }
+body.classics .mast-meta { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--gray); display: flex; gap: 14px; flex-wrap: wrap; }
+body.classics .mast-meta .issue { color: var(--klein); font-weight: 600; }
+body.classics .mast-lede { font-size: 16px; line-height: 1.7; color: var(--ink-soft); margin-top: 22px; padding-left: 16px; border-left: 3px solid var(--klein); }
+body.classics .sec-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gray-light); margin-bottom: 6px; }
+body.classics .sec-title { font-size: 15px; font-weight: 700; color: var(--klein); letter-spacing: 1px; margin-bottom: 24px; display: inline-block; }
+body.classics .sec-title::before { content: "AE"; color: var(--klein); margin-right: 8px; font-size: 13px; }
+body.classics .item { margin-bottom: 52px; }
+body.classics .item:last-child { margin-bottom: 0; }
+body.classics .dateline { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gray); letter-spacing: 0.5px; margin-bottom: 10px; }
+body.classics .dateline .src { color: var(--klein); font-weight: 600; }
+body.classics .item-title { font-size: 21px; font-weight: 700; line-height: 1.4; margin-bottom: 12px; text-wrap: balance; }
+body.classics .item-title a { color: var(--klein); text-decoration: none; }
+body.classics .item-title a:hover { text-decoration: underline; }
+body.classics .body { font-size: 15.5px; color: var(--ink-soft); line-height: 1.8; }
+body.classics .body p { margin-bottom: 14px; }
+body.classics .body p:last-child { margin-bottom: 0; }
+body.classics .body .num { font-family: 'JetBrains Mono', monospace; color: var(--accent); font-weight: 600; }
+body.classics .body .tag { display: inline-block; font-size: 11px; font-family: 'JetBrains Mono', monospace; color: var(--gray); background: var(--line); padding: 1px 8px; border-radius: 3px; margin-right: 4px; }
+body.classics .src-line { font-size: 13px; color: var(--gray); margin-top: 10px; font-family: 'JetBrains Mono', monospace; line-height: 1.7; }
+body.classics .src-line a { color: var(--klein); text-decoration: none; }
+body.classics .src-line a:hover { text-decoration: underline; }
+body.classics .src-line .cat { color: var(--klein); font-weight: 600; }
+body.classics .link-area { margin-top: 12px; background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 8px 12px; display: flex; flex-direction: column; gap: 6px; }
+body.classics .link-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+body.classics .link-url { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--klein); text-decoration: none; overflow-wrap: anywhere; }
+body.classics .link-url:hover { text-decoration: underline; }
+body.classics .copy-btn { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gray); background: var(--paper); border: 1px solid var(--line); border-radius: 4px; padding: 2px 8px; cursor: pointer; flex-shrink: 0; }
+body.classics .copy-btn:hover { color: var(--klein); border-color: var(--klein); }
+body.classics .copy-btn.copied { color: #fff; background: var(--klein); border-color: var(--klein); }
+body.classics .footer { margin-top: 48px; padding-top: 20px; border-top: 3px solid var(--klein); font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--gray); line-height: 1.8; }
+body.classics .footer .big { color: var(--ink); font-weight: 600; }
+body.classics .footer a { color: var(--klein); text-decoration: none; }
+body.classics .footer a:hover { text-decoration: underline; }
+</style></head>
+<body><div class="container">
+<nav class="site-nav-lite"><a href="../index.html" class="nav-back">← 首页 / Index</a><span class="nav-date">2026年10月27日</span></nav>
+<h1 class="doc-title">GitHub 日榜｜<span>2026-10-27</span></h1>
+<p class="doc-date">2026年10月27日 · 星期二 · Daily GitHub Trending</p>
+<div class="divider"></div>
+<div class="section-block">
+  <h2 class="section-header">今日榜单 <span class="en">Today's Board</span></h2>
+  <p class="intro-text">今日 <span class="accent">14</span> 个仓库登上 GitHub Trending，最热分类 <span class="highlight">AI / 大模型</span>，单日最高 <span class="accent">+2297★</span>（<span class="highlight">debpalash/VoiceStudio</span>）。</p><p class="intro-text">Today <span class="accent">14</span> repos trended on GitHub. Hottest category <span class="highlight">AI / LLM</span>; top daily gain <span class="accent">+2297★</span> by <span class="highlight">debpalash/VoiceStudio</span>.</p>
+  
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#1</span><a class="repo-link" href="https://github.com/Nutlope/hallmark" target="_blank">Nutlope/hallmark</a></h3>
+        <p class="news-body">Anti-AI-slop design skill for Claude Code, Cursor, and Codex.</p>
+        <p class="news-body zh"><span class="tr">译</span>适用于 Claude Code、Cursor 和 Codex 的反 AI 垃圾设计技能。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是一个专门消除“AI 塑料感”的前端设计外挂。<br>它能直接装进 Cursor 或者 Claude Code 里使用。</p>
+<p class="script-block">你是不是经常觉得 AI 写的网页千篇一律还特别廉价？<br>它就是专门来解决这个痛点的！<br>它能强制 AI 遵循顶级设计规范，生成高级耐看的好界面。</p>
+<p class="script-block">这个项目在 GitHub 已经狂揽了三万多星！<br>它直接补齐了 AI 编程最缺的审美短板。<br>平时用 AI 写前端的朋友闭眼装就对了！</p>
+        <p class="repo-meta">★ 36,335 <span class="accent">(+2244 今日 today)</span> · ⑂ 1,895 forks · <span class="lang-dot" style="background:#563d7c"></span>CSS · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#2</span><a class="repo-link" href="https://github.com/TauricResearch/TradingAgents" target="_blank">TauricResearch/TradingAgents</a></h3>
+        <p class="news-body">TradingAgents: Multi-Agents LLM Financial Trading Framework</p>
+        <p class="news-body zh"><span class="tr">译</span>TradingAgents：基于大语言模型的多智能体金融交易框架</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是一个用大模型多智能体做量化交易的开源框架。<br>简单来说，就是让一堆 AI 组队帮你炒股。</p>
+<p class="script-block">它把分析师、风控员和交易员都变成了 AI 智能体。<br>输入你的交易想法，这些 AI 就会自己开会讨论并制定策略。</p>
+<p class="script-block">最牛的是，它完全模拟了专业投资机构的真实工作流。<br>不仅能自动分析市场，还能评估风险并执行交易，直接拉低了智能量化的门槛。</p>
+        <p class="repo-meta">★ 116,104 <span class="accent">(+1395 今日 today)</span> · ⑂ 22,276 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#3</span><a class="repo-link" href="https://github.com/JetBrains/thinkrail" target="_blank">JetBrains/thinkrail</a></h3>
+        <p class="news-body">Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need</p>
+        <p class="news-body zh"><span class="tr">译</span>在按你的工作习惯量身定制的轻量级真正 IDE 中，与 pi 一起 Vibe 编程——正是你所需的感觉</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是 JetBrains 打造的轻量级真 IDE。<br>它主打的就是现在最火的氛围感编程。</p>
+<p class="script-block">你只要负责跟 AI 聊思路，它就能顺手把代码写完。<br>彻底告别笨重复杂的传统工具配置。</p>
+<p class="script-block">最神的是它能根据你的习惯去自我调整。<br>既有大厂底层的专业能力，又轻快得毫无负担。<br>想要体验极简编码快感的，一定要去试试！</p>
+        <p class="repo-meta">★ 2,905 <span class="accent">(+1173 今日 today)</span> · ⑂ 156 forks · <span class="lang-dot" style="background:#3178c6"></span>TypeScript · <span class="cat">开发工具 · Dev Tools</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：开发工具 · Dev Tools</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#4</span><a class="repo-link" href="https://github.com/makecindy/cindy" target="_blank">makecindy/cindy</a></h3>
+        <p class="news-body">Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。</p>
+        <p class="news-body zh"><span class="tr">译</span>想到，就能做到。开源、开箱即用的 AI 智能体。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是一个真正开箱即用的开源 AI 智能体。<br>它的核心目标就一句话，让你想到就能做到！</p>
+<p class="script-block">平常想要查资料、写代码或者处理复杂任务？<br>直接在对话框里给它派活就行。<br>它会自动拆解步骤，像个全能助理一样把事办妥。</p>
+<p class="script-block">以前玩智能体，光配置环境就能劝退一大半人。<br>但它主打零门槛，部署完立马就能上手开干！<br>省心又高效，执行力简直绝了。</p>
+        <p class="repo-meta">★ 6,482 <span class="accent">(+1296 今日 today)</span> · ⑂ 793 forks · <span class="lang-dot" style="background:#3178c6"></span>TypeScript · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#5</span><a class="repo-link" href="https://github.com/affaan-m/ECC" target="_blank">affaan-m/ECC</a></h3>
+        <p class="news-body">The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.</p>
+        <p class="news-body zh"><span class="tr">译</span>Agent 运行框架性能优化系统。为 Claude Code、Codex、Opencode、Cursor 等工具提供技能、直觉、记忆、安全及研究驱动的开发支持。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>写代码用 Cursor 或者 Claude Code 的朋友，一定要看看这个项目。</p>
+<p class="script-block">它是一个专门给 AI 智能体做性能超强优化的系统。</p>
+<p class="script-block">简单来说，它能给你的 AI 助手装上更强的记忆、直觉和安全防线。</p>
+<p class="script-block">不管是写代码还是做研究，它都能让 AI 反应更快、更聪明。</p>
+<p class="script-block">最厉害的是，它在 GitHub 上已经拿到了超过二十四万颗星！</p>
+<p class="script-block">想让你的 AI 工具好用十倍，闭眼冲它就对了！</p>
+        <p class="repo-meta">★ 289,846 <span class="accent">(+896 今日 today)</span> · ⑂ 42,948 forks · <span class="lang-dot" style="background:#f1e05a"></span>JavaScript · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#6</span><a class="repo-link" href="https://github.com/pbakaus/impeccable" target="_blank">pbakaus/impeccable</a></h3>
+        <p class="news-body">The design language that makes your AI harness better at design.</p>
+        <p class="news-body zh"><span class="tr">译</span>让你的 AI 框架更擅长设计的设计语言。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是一套专门给 AI 打造的设计语言。<br>它能让你的 AI 助手瞬间学会做顶级界面。</p>
+<p class="script-block">很多人用 AI 生成前端页面，总是觉得丑得一塌糊涂。<br>这个项目就是用来彻底解决 AI 审美差的问题。<br>把规范喂给 AI 工具，它就能写出排版舒爽美观的代码。</p>
+<p class="script-block">它的厉害之处在于把顶尖设计师的直觉做成了系统规则。<br>哪怕你完全不懂 UI 设计，也能轻松做出大厂级的界面。<br>想用 AI 做出高颜值前端的朋友，赶紧去收藏它吧！</p>
+        <p class="repo-meta">★ 89,217 <span class="accent">(+1506 今日 today)</span> · ⑂ 5,311 forks · <span class="lang-dot" style="background:#dea584"></span>Rust · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#7</span><a class="repo-link" href="https://github.com/NVIDIA/SkillSpector" target="_blank">NVIDIA/SkillSpector</a></h3>
+        <p class="news-body">Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.</p>
+        <p class="news-body zh"><span class="tr">译</span>AI Agent 技能安全扫描工具。可在安装前检测 Claude Code、Codex 及 MCP 技能中的漏洞、恶意模式、安全风险、提示词注入、数据外泄和供应链风险。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是英伟达专为 AI 智能体打造的插件杀毒软件。<br>你平时给各类 MCP 助手装插件时，是不是从没防备过安全风险？</p>
+<p class="script-block">它能在你安装前把插件代码彻底扫描一遍。<br>不管是隐蔽的提示词注入，还是偷偷外发数据的恶意后门，它都能精准揪出来。</p>
+<p class="script-block">现在针对 AI 的供应链投毒越来越普遍。<br>有它在就像给智能体装了道硬核防盗门，以后装插件再也不怕被偷家了！</p>
+        <p class="repo-meta">★ 22,194 <span class="accent">(+214 今日 today)</span> · ⑂ 1,937 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#8</span><a class="repo-link" href="https://github.com/pollen-robotics/microduck" target="_blank">pollen-robotics/microduck</a></h3>
+        <p class="news-body">A Tiny biped duck robot 🦆</p>
+        <p class="news-body zh"><span class="tr">译</span>一款微型双足鸭子机器人 🦆</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目开源了一只巴掌大的双足行走小鸭子机器人。</p>
+<p class="script-block">只要一台普通3D打印机加几个便宜舵机，你就能亲手把它拼出来。<br>它不仅能在桌上摇摇晃晃地走，还能带你搞懂复杂的双足运动控制。</p>
+<p class="script-block">以前玩双足机器人动辄几千上万，它直接把门槛打到了百元级。<br>图纸和代码完全开源，既好玩解压又能学硬核技术。<br>赶紧给你的工位也打印一只吧！</p>
+        <p class="repo-meta">★ 12,412 <span class="accent">(+843 今日 today)</span> · ⑂ 1,546 forks · <span class="lang-dot" style="background:#dea584"></span>Rust · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#9</span><a class="repo-link" href="https://github.com/nightly-labs/openbot" target="_blank">nightly-labs/openbot</a></h3>
+        <p class="news-body">A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.</p>
+        <p class="news-body zh"><span class="tr">译</span>一款面向常驻 AI 队友的本地优先桌面工作台。支持运行 Codex、Claude 和 Grok，具备专属工作区、任务队列、文件共享、浏览器控制以及智能体间协作能力。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是一个装在电脑上的 AI 团队工作区。<br>它能把 Claude 和 Grok 变成常驻本地的数字员工。</p>
+<p class="script-block">你可以给它们排队发任务，还能让它自己去操控浏览器。<br>最绝的是多个 AI 之间能共享文件，还能互相交接、组队干活。</p>
+<p class="script-block">数据全部留在本地，安全感直接拉满。<br>它彻底把一问一答的玩具，变成了能帮你通宵跑任务的私人团队！</p>
+        <p class="repo-meta">★ 1,478 <span class="accent">(+176 今日 today)</span> · ⑂ 185 forks · <span class="lang-dot" style="background:#3178c6"></span>TypeScript · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#10</span><a class="repo-link" href="https://github.com/Panniantong/Agent-Reach" target="_blank">Panniantong/Agent-Reach</a></h3>
+        <p class="news-body">Give your AI agent eyes to see the entire internet. Read &amp; search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.</p>
+        <p class="news-body zh"><span class="tr">译</span>让你的 AI Agent 拥有看遍全网的眼睛。支持读取与搜索 Twitter、Reddit、YouTube、GitHub、Bilibili、小红书——只需一个 CLI，零 API 费用。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>简单说，这个项目能给你的 AI 智能体装上一双看清全网的眼睛。<br>无论是 Twitter、Reddit，还是 B 站和小红书，它都能直接读取搜索。</p>
+<p class="script-block">以前给 AI 喂实时数据，对接各种官方 API 既繁琐又昂贵。<br>现在在命令行敲一行命令，它就能帮 AI 一键抓取全网内容。</p>
+<p class="script-block">最绝的是它完全免 API 费用，直接帮你省下一大笔钱！<br>零成本打通国内外主流平台，8 万多星的硬核项目值得赶紧关注。</p>
+        <p class="repo-meta">★ 103,597 <span class="accent">(+746 今日 today)</span> · ⑂ 9,188 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#11</span><a class="repo-link" href="https://github.com/debpalash/VoiceStudio" target="_blank">debpalash/VoiceStudio</a></h3>
+        <p class="news-body">VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription &amp; audiobook creation in 646 languages.</p>
+        <p class="news-body zh"><span class="tr">译</span>VoiceStudio 是一款开源、完全本地运行的 ElevenLabs 替代方案，支持 646 种语言的声音克隆、声音设计、视频配音、听写、转录及有声书制作。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是一个完全开源且支持本地运行的 AI 声音工作站，堪称免费版的 ElevenLabs。</p>
+<p class="script-block">无论你是想克隆自己的声音、做多语言视频配音，还是把文字改成有声书，它都能轻松搞定。<br>它甚至还支持语音转文字和听写，覆盖了整整 646 种语言！</p>
+<p class="script-block">最棒的是它完全在本地运行，既保护隐私，又帮你省下了昂贵的订阅费用。<br>这种全能型的声音神级工具，绝对值得你立刻去点个 Star 收藏起来！</p>
+        <p class="repo-meta">★ 89,256 <span class="accent">(+2297 今日 today)</span> · ⑂ 9,848 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#12</span><a class="repo-link" href="https://github.com/gitroomhq/postiz-app" target="_blank">gitroomhq/postiz-app</a></h3>
+        <p class="news-body">📨 The ultimate agentic social media scheduling tool 🤖</p>
+        <p class="news-body zh"><span class="tr">译</span>📨 终极智能体驱动的社交媒体排程工具 🤖</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是个完全开源的 AI 社交媒体排期神器。<br>做自媒体最烦的就是在各大平台之间来回复制粘贴。</p>
+<p class="script-block">有了它，你只要写好一篇内容，就能一键同步分发到十几个主流社交平台。<br>它还内置了 AI 智能体，能自动把文案改写成适合不同平台的风格，并挑最好的时间发布。</p>
+<p class="script-block">最棒的是它可以完全免费部署在你自己的服务器上。<br>不仅直接省掉每个月高昂的运营工具订阅费，数据还全都稳稳攥在自己手里！</p>
+        <p class="repo-meta">★ 38,455 <span class="accent">(+188 今日 today)</span> · ⑂ 7,456 forks · <span class="lang-dot" style="background:#3178c6"></span>TypeScript · <span class="cat">开发工具 · Dev Tools</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：开发工具 · Dev Tools</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#13</span><a class="repo-link" href="https://github.com/alchaincyf/huashu-design" target="_blank">alchaincyf/huashu-design</a></h3>
+        <p class="news-body">Huashu Design 3.0 · 在 agent 里打一句话，拿回能交付的设计：网页 / App 原型 / 可编辑 PPTX / 动画 / 信息图 · 六个候选挑三个方向 · 84 种带样张的风格库 · 越用越懂你的外观账本与设计体检 · HTML-native design skill for Claude Code, Codex, Cursor &amp; any agent</p>
+        <p class="news-body zh"><span class="tr">译</span>Huashu Design 3.0 · 在 Agent 里打一句话，拿回可交付的设计：网页 / App 原型 / 可编辑 PPTX / 动画 / 信息图 · 六个候选挑三个方向 · 84 种带样张的风格库 · 越用越懂你的外观账本与设计体检 · 适用于 Claude Code、Codex、Cursor 及任意 Agent 的 HTML 原生设计能力</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目能让你的 AI 编程助手秒变资深设计师。<br>只要在 Cursor 里给它一句话，它就能直接吐出可交付的设计稿。</p>
+<p class="script-block">不管是网页、App 原型，还是能直接编辑的 PPT，它全都能做。<br>它还会一口气生成多个完全不同的方向，解决你没灵感的问题。</p>
+<p class="script-block">最绝的是它内置了八十多种风格库，还能记住你的视觉偏好。<br>你用得越多它就越懂你的审美，绝对是开发者必备的设计外脑！</p>
+        <p class="repo-meta">★ 26,757 <span class="accent">(+251 今日 today)</span> · ⑂ 2,963 forks · <span class="lang-dot" style="background:#e34c26"></span>HTML · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item">
+        <h3 class="news-title"><span class="rank">#14</span><a class="repo-link" href="https://github.com/multica-ai/andrej-karpathy-skills" target="_blank">multica-ai/andrej-karpathy-skills</a></h3>
+        <p class="news-body">A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy&#x27;s observations on LLM coding pitfalls.</p>
+        <p class="news-body zh"><span class="tr">译</span>一份用于优化 Claude Code 表现的 CLAUDE.md 文件，源自 Andrej Karpathy 对大模型编程陷阱的观察总结。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是一个专门给 Claude 写的“外挂”配置文件。</p>
+<p class="script-block">你只需要把它丢进项目根目录，就能直接用。</p>
+<p class="script-block">它解决的是大模型写代码时经常犯傻、逻辑混乱的问题。</p>
+<p class="script-block">它会规范 Claude 的每一步操作，让 AI 编码变得非常听话。</p>
+<p class="script-block">最牛的是，这些规则都是大神 Karpathy 总结出来的实战经验。</p>
+<p class="script-block">不用你费心思调教，直接就能白嫖大佬的编程思维，简直是提效神器！</p>
+        <p class="repo-meta">★ 224,657 <span class="accent">(+638 今日 today)</span> · ⑂ 22,473 forks · — · <span class="cat">AI / 大模型 · AI / LLM</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+</div>
+<div class="footer-block">
+  <p>GitHub 日榜 · 每日自动收录自 GitHub Trending · Daily auto-collected from GitHub Trending</p>
+  <p>数据来源 Source：<a href="https://github.com/trending?since=daily" target="_blank">github.com/trending?since=daily</a> · 抓取时间 Fetched：2026-10-27T09:00:09</p>
+</div>
+</div></body></html>
