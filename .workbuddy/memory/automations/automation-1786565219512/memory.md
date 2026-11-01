@@ -252,3 +252,21 @@
 - **部署**：成功。本地 `site/` 由脚本末尾从 `/tmp/ghrank_pages` 复原。线上复测：首测 index / weekly 200、daily 404（GitHub Pages 传播延迟）；等约 50 秒后 daily 转为 200，三页全部 200。并行自动化 ...629 内部 memory 目录已暂移 /tmp 再还原，未误推送。
 - **结论**：当日上榜 日榜 11 + 周榜 14；数据/翻译/站点已生成并推送 `origin/main`，线上链接更新成功（200）。
 - **环境要点（新观察）**：本机未 pin 的直连 `github.com` 当前偶发 75s 超时（DNS 解析到的非 pin IPv4 不可达；`curl -4` 直连亦超时），必须 `http.curloptResolve=github.com:443:172.182.252.133` pin 定 IP 后稳定 200；叠加 `http.lowSpeedLimit=0/http.lowSpeedTime=0`。运行前 `unset HTTPS_PROXY HTTP_PROXY`（代理 refused）。
+
+## 2026-10-30 (执行，补登：本次运行前 working-tree 未提交，被 rebase checkout 覆盖后重补)
+- **抓取**：`scraper.py`（venv `envs/ghrank`，直连，IPv4 补丁在源码）成功。日榜 `data/daily/2026-10-30.json` = 11 个仓库；周榜 `data/weekly/2026-10-26.json`（本周一 1026）= 12 个仓库。
+- **翻译**：首轮 `translate_missing.py` 命中 MY_ZH/zh_cache 补 日 4 + 周 15；余 7 个新仓库（HKUDS/DeepTutor、milind-soni/OpenMausBot、nightly-labs/openbot、CopilotKit/OpenBot、togg53192-cmd/jailbreaks、Donchitos/Claude-Code-Game-Studios、Leonxlnx/taste-skill）人工校对中译写入 MY_ZH 并重跑，最终日榜 11 中 10、周榜 12/12 全部有 `description_zh`；唯一缺口 `elayadesign/ai-design-skills`（日榜）上游无英文简介，无译可补（与历史 anthropics/skills 同因），非漏译。
+- **生成**：`build.py` 重建 `site/daily/2026-10-30.html`、`site/weekly/2026-10-26.html`、`site/index.html`、`site/classics/index.html`（ainews 双语风格）。
+- **部署冲突**：并行自动化 ...629 已先推送 `data/daily/2026-10-30.json`、`data/weekly/2026-10-26.json`（10/30=10 译，与本地同口径）等到 remote main（222020e）。按既定模式：备份本机全译数据到 `/tmp/ghrank_backup` → 暂移 ...629 内部 memory 目录到 `/tmp/ghrank_629_mem`（避免误提交内部 memory）→ 移走本机未跟踪 `data/daily/2026-10-30.json` 与丢弃被改跟踪文件 → `git pull --rebase -X ours origin main`（首跑遇「Empty reply」瞬断，复跑顺过，快进到 222020e）→ 用备份覆盖写回日榜/周榜全译版、`translate_missing.py`、`zh_cache.json` → `git add -A && commit && push main`（43fec7d，日榜 10/11、周榜 12/12 全译）→ `bash deploy_ghpages.sh`（rebase 成 no-op，gh-pages orphan 推送）→ 还原 ...629 目录 → 本地 `site/` 由脚本末尾从 `/tmp/ghrank_pages` 复原。
+- **部署**：`bash deploy_ghpages.sh` 成功（gh-pages orphan 推送）。线上复测：首页 / daily / weekly 三页均 **200**（无传播延迟）。
+- **结论**：当日上榜 日榜 11 + 周榜 12；数据/翻译/站点已生成并推送 `origin/main`，线上链接更新成功（200）。
+- **环境要点（修正）**：本日实测 `http.curloptResolve` 强行 pin 定旧 IP（20.205.243.166 / 172.182.252.133）反而连接失败（000 / 75s 超时），而**不 pin 直接连** `github.com` 稳定 200。故本次部署**取消 curloptResolve pin**，仅保留 `http.lowSpeedLimit=0/http.lowSpeedTime=0`，直连成功。运行前 `unset HTTPS_PROXY HTTP_PROXY https_proxy http_proxy ALL_PROXY all_proxy`（代理 refused）。git/gh 经 libcurl 直连本日无 IPv6 stall（Happy Eyeballs 正常），pin 反而有害。
+
+## 2026-11-01 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`）经**本地代理 127.0.0.1:21879**（本日代理恢复可用，200）成功——直连 `github.com` 与 IP-pin 均超时（000），故本日改走代理。首两跑 ReadTimeout（瞬时限流），三跑成功。日榜 `data/daily/2026-11-01.json` = 14 个仓库；周榜 `data/weekly/2026-10-26.json`（本周一 1026，周日重抓覆盖）= 15 个仓库。
+- **翻译**：首轮 `translate_missing.py` 命中 zh_cache/MY_ZH 补 日 9 + 周 22；余 5 个新仓库（lightpanda-io/browser、Orkas-AI/Orkas、bregman-arie/devops-exercises、vorssaint/vorssaint-utils、AstrBotDevs/AstrBot）人工校对中译写入 `MY_ZH` 并重跑，最终日榜 13/13（含 1 个 pingdotgg/t3code 上游无英文简介）、周榜 14/14（含 1 个 pingdotgg/t3code 无英文简介）全部有 `description_zh`；唯一缺口 `pingdotgg/t3code`（日/周均上榜）上游英文简介为空，无译可补（与历史同因），非漏译。
+- **生成**：`build.py` 重建 `site/daily/2026-11-01.html`、`site/weekly/2026-10-26.html`、`site/index.html`、`site/classics/index.html`（ainews 双语风格）。
+- **部署冲突**：并行自动化 ...629 已先推送 `data/daily/2026-11-01.json` 等到 remote main（0ef207d 起，4 个提交，部分翻译），导致 `deploy_ghpages.sh` 的 `git pull --rebase` 因未跟踪同名日榜文件被 merge 覆盖而中止。按既定模式：备份本机全译数据到 `/tmp/ghrank_backup` → 暂移 ...629 内部 memory 目录到 `/tmp/ghrank_629_mem` → 丢弃本机已改跟踪文件（weekly/translate/zh_cache/memory.md，均有备份）→ `git pull --rebase -X ours origin main`（顺过，快进到远端 4 提交）→ 用备份覆盖写回日榜/周榜全译版、`translate_missing.py`、`zh_cache.json` → `git add -A && commit && push main`（日榜 13/14、周榜 14/15 全译，优于远端部分译本）→ `bash deploy_ghpages.sh`（rebase 成 no-op，gh-pages orphan 推送）→ 还原 ...629 目录 → 本地 `site/` 由脚本末尾从 `/tmp/ghrank_pages` 复原。
+- **部署**：`bash deploy_ghpages.sh`（经代理）成功，输出 DONE 链接。本地 `site/` 由脚本末尾复原。线上复测：首页 / daily / weekly 三页均 **200**（无传播延迟）。
+- **结论**：当日上榜 日榜 14 + 周榜 15；数据/翻译/站点已生成并推送 `origin/main`，线上链接更新成功（200）。
+- **环境要点（新观察）**：本网络时段**本地代理 127.0.0.1:21879 恢复可用**（curl 经代理 github 200，~2.4s），而**未 pin 直连与 IP-pin 的 github.com 均超时（000）**——与 10-30「代理 refused、直连可用」相反。故本日 scraper 与 git/gh 部署均经 `HTTPS_PROXY=http://127.0.0.1:21879` 代理执行成功。若日后代理再 refused，需回退到 IP-pin 或直连策略；运行 `unset` 代理本日无效（直连不通）。
