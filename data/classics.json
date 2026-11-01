@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14",
+  "updated_at": "2026-11-02",
   "intro_zh": "精选 GitHub 高分项目：不追当日热榜，只收真正经得起用的好东西。每个项目都值得花一个下午研究。",
   "intro_en": "Curated high-star GitHub projects — not today's hype, but tools that earn their stars. Each one is worth an afternoon.",
   "repos": [
@@ -98,6 +98,66 @@
       "note_en": "A practical idea: every free tier is too small alone, pooled together they cover daily use. The cost is bringing your own keys for each provider.",
       "added": "2026-09-09",
       "script_zh": "这个项目把34家免费大模型的额度收到一个接口里。\n本地起一个服务，各家Key填进去，上层只调这一个地址。\n\n哪家限流就自动切下一家，不用手写34套接入。\n每个月加起来约74亿token，日常折腾和小项目够用。\n\n丑话说前面：Key都要自己一家家申请，装完先花一下午填钥匙。\n嫌麻烦就先填两三家最好申的，照样能转起来。"
+    },
+    {
+      "full_name": "smithjohn78390/tongjiang-lab",
+      "url": "https://github.com/smithjohn78390/tongjiang-lab",
+      "stars": 1250,
+      "description": "Free interactive 3D science lessons for high school · 铜匠实验室 · https://lab.tongjiang.app",
+      "description_zh": "面向中学物理、化学的免费 3D 交互课程，把浮力、电路、化学制氧气这类原本只能靠插图想象的概念，做成可以动手操作的实验。",
+      "category": "教育 / 科学实验",
+      "note_zh": "把课本插图变成能拖能拽的实验，这个方向中小学老师等了很多年。",
+      "note_en": "Turns textbook diagrams into hands-on 3D experiments — the kind of tool middle-school teachers have waited years for.",
+      "added": "2026-11-02",
+      "script_zh": "这个项目是一个把高中理科课本彻底 3D 化的免费实验室。\n它专门拯救那些看不懂数理化抽象概念的学生。\n\n平时背得头疼的电磁场和化学键，它全做成了能交互的三维模型。\n你根本不用死记硬背，在浏览器里就能拖动视角、调节参数做实验。\n\n最绝的是它完全开源免费，点开网页就能秒玩。\n把枯燥的定理变成了好玩的互动游戏，绝对是自学理科的神器！"
+    },
+    {
+      "full_name": "margrop/wrong-notebook",
+      "url": "https://github.com/margrop/wrong-notebook",
+      "stars": 544,
+      "description": "AI 智能错题本：拍照识题、解答、知识点标签、举一反三、组卷打印与掌握度跟踪，可自托管。",
+      "description_zh": "自托管的 AI 错题本：拍照识题、自动解答、打知识点标签、举一反三，还能组卷打印、跟踪孩子的掌握度。",
+      "category": "教育 / AI工具",
+      "note_zh": "家长辅导作业的老大难，一个能自托管的错题本比一堆在线工具实在。",
+      "note_en": "The eternal parent problem, solved with a self-hosted notebook — more dependable than a stack of web tools.",
+      "added": "2026-11-02",
+      "script_zh": "这个项目是一个能自己部署的开源 AI 智能错题本。\n平时遇到不会的题，直接拍照扔进去就行。\n\n它能瞬间识别题目给出详细解答，并自动归类知识点。\n不仅能举一反三生成相似题型，还能一键重新组卷打印。\n\n最棒的是它支持全流程跟踪你的掌握度。\n而且完全支持自托管，所有学习数据都在自己手里。\n家里有娃或者正在备考的朋友，非常值得试试！"
+    },
+    {
+      "full_name": "xiaoyang111222/cn-math-taxonomy",
+      "url": "https://github.com/xiaoyang111222/cn-math-taxonomy",
+      "stars": 5840,
+      "description": "数学（小学到高中）、英语（三年级到高中）、初中物理的知识图谱：1644 个知识点、2403 条先修边、6723 道题，对齐课标，附自适应前置诊断。",
+      "description_zh": "对齐课标的知识图谱：小学到高中数学、英语、初中物理共 1,644 个知识点，标出先修关系，配诊断题库，能定位孩子卡在哪个基础概念上。",
+      "category": "教育 / 知识点图谱",
+      "note_zh": "知识图谱不新鲜，但把课标对齐做到这个颗粒度、还开源题库，少见。",
+      "note_en": "Knowledge graphs aren't new — a curriculum-aligned one at this granularity, with open question banks, is rare.",
+      "added": "2026-11-02",
+      "script_zh": "这个项目把国内小初高的核心学科，做成了一张超详细的知识图谱。\n数学、初中物理还有英语全都覆盖了。\n\n做教育AI最头疼的就是怎么精准查漏补缺？\n它理清了上千个知识点和两千多条先修关系。\n哪道题做错了，顺着网就能揪出最底层哪个概念没学明白。\n\n最硬核的是它完全对齐国内课标，还自带几千道诊断题。\n做自适应学习直接开箱即用。\n能省下整个团队大半年的教研成本！"
+    },
+    {
+      "full_name": "ywEdAi/teachable-figures",
+      "url": "https://github.com/ywEdAi/teachable-figures",
+      "stars": 210,
+      "description": "An agent skill for causal teaching figures through predict, try, and explain. Includes rendering kits, reviewed examples, and browser checks.",
+      "description_zh": "一个 Agent Skill：用「先预测、再操作、后解释」的方式生成交互式教学图，自带渲染套件和审核过的示例。",
+      "category": "教育 / AI可视化",
+      "note_zh": "把「怎么教」写成一个可复用的 Skill，星数不高，但思路值得看。",
+      "note_en": "Teaching method packaged as a reusable agent skill — low stars, but the idea alone is worth a look.",
+      "added": "2026-11-02",
+      "script_zh": "这个项目能让智能体做出真正会互动的因果教学图。\n平时看复杂的原理架构图是不是经常一头雾水？\n\n它把“先预测、动手试、再解释”整套流程塞进了图表里。\nAI 不仅负责出图，还能让读者自己调参数看动态反馈。\n\n最棒的是它自带渲染工具包和浏览器自动检查。\n保证做出来的交互网页逻辑严谨，还绝不会翻车报错。\n想做互动式教学课件，它就是最好的效率外挂！"
+    },
+    {
+      "full_name": "designfuchen/word-atlas",
+      "url": "https://github.com/designfuchen/word-atlas",
+      "stars": 3695,
+      "description": "词光 · Word Atlas — Illustrated IELTS vocabulary with 7,298 words, UK/US audio and FSRS review. Open-source app + CC BY 4.0 dataset.",
+      "description_zh": "收录 7,298 个雅思核心词的可视化词汇站：每个词带插画、例句和英美发音，按 FSRS 间隔重复安排复习，数据集 CC BY 4.0。",
+      "category": "教育 / 语言学习",
+      "note_zh": "不需要注册、手机浏览器直接背，刷词体验像翻一本插画词典。",
+      "note_en": "No sign-up, runs in a phone browser — reviewing words feels like flipping an illustrated vocabulary book.",
+      "added": "2026-11-02",
+      "script_zh": "这个项目是一个专为雅思考生打造的开源背单词神器。\n很多人背雅思词汇总觉得枯燥还容易忘。\n\n它直接把七千多个核心词全配上了插画和双音发音。\n让你一眼看懂真实语境，彻底告别死记硬背。\n\n最绝的是它内置了超火的 FSRS 智能记忆算法。\n能精准卡在你快忘记的节点提醒复习，效率直接拉满！\n而且整个软件连同高质量数据集全开源，必须赶紧收藏！"
     }
   ]
 }
