@@ -292,6 +292,12 @@ MY_ZH = {
     "togg53192-cmd/jailbreaks": "我所有越狱（提示词绕过）方法的清单。",
     "Donchitos/Claude-Code-Game-Studios": "把 Claude Code 变成一间完整的游戏开发工作室——49 个 AI 智能体、72 项工作流技能，以及一套映射真实工作室层级结构的完整协作体系。",
     "Leonxlnx/taste-skill": "为编程智能体赋予「品味」的技能：用艺术指导、参考图与浏览器核查，取代千篇一律的 AI 生成页面。",
+    # 2026-11-01 日榜/周榜新增
+    "lightpanda-io/browser": "Lightpanda：专为 AI 与自动化设计的无头浏览器。",
+    "Orkas-AI/Orkas": "Orkas 是一款开源（MIT）、本地优先的桌面端 AI 团队：由一名指挥智能体将你的目标拆解为待办，并协调 16 个内置专家智能体，以及 Claude Code、Codex、OpenCode、OpenClaw 与 Hermes，配合项目、定时自动化与连接器协同工作。macOS 与 Windows 免费使用；可使用内置模型或自有密钥。",
+    "bregman-arie/devops-exercises": "涵盖 Linux、Jenkins、AWS、SRE、Prometheus、Docker、Python、Ansible、Git、Kubernetes、Terraform、OpenStack、SQL、NoSQL、Azure、GCP、DNS、Elastic、网络、虚拟化等领域的 DevOps 面试题库。",
+    "vorssaint/vorssaint-utils": "免费开源的 macOS 菜单栏工具集。",
+    "AstrBotDevs/AstrBot": "AI 智能体助手与开发框架，集成了众多 IM 平台、大语言模型、插件与 AI 功能，可作为 OpenClaw 的替代方案。✨",
 }
 
 

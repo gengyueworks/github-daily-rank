@@ -1,7 +1,7 @@
 {
   "since": "weekly",
   "date": "2026-11-01",
-  "fetched_at": "2026-11-01T09:00:13",
+  "fetched_at": "2026-11-01T09:55:08",
   "count": 15,
   "repos": [
     {
@@ -13,14 +13,13 @@
       "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
       "language": "CSS",
       "language_color": "#563d7c",
-      "stars": 43931,
-      "forks": 2313,
+      "stars": 43958,
+      "forks": 2316,
       "period_stars": 12062,
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "适用于 Claude Code、Cursor 和 Codex 的反 AI 垃圾设计技能。",
-      "script_zh": "这个项目是一个专门消除“AI 塑料感”的前端设计外挂。\n它能直接装进 Cursor 或者 Claude Code 里使用。\n\n你是不是经常觉得 AI 写的网页千篇一律还特别廉价？\n它就是专门来解决这个痛点的！\n它能强制 AI 遵循顶级设计规范，生成高级耐看的好界面。\n\n这个项目在 GitHub 已经狂揽了三万多星！\n它直接补齐了 AI 编程最缺的审美短板。\n平时用 AI 写前端的朋友闭眼装就对了！"
+      "description_zh": "面向 Claude Code、Cursor 与 Codex 的「反 AI 套话」设计技能。"
     },
     {
       "rank": 2,
@@ -31,14 +30,13 @@
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
       "language_color": "#f1e05a",
-      "stars": 55343,
-      "forks": 3605,
+      "stars": 55376,
+      "forks": 3609,
       "period_stars": 11908,
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "一个面向编程智能体的技能，用于多阶段安全审计，产出经独立核验、机器可读的审计发现。",
-      "script_zh": "这个项目是 Cloudflare 打造的 AI 安全审计插件。\n它能让你的 AI 助手像安全专家一样对代码做多轮排查。\n\n平时写代码最怕隐患，传统审计慢，AI 审计又怕幻觉。\n它不仅能自动扫描，还能独立二次验证，拒绝乱报误报。\n\n报告全都是机器可读的标准格式，能直接无缝接入自动化流水线。\n大厂背书加万星人气，绝对是 AI 开发必备的安全神器！"
+      "description_zh": "一个面向编程智能体的技能，用于多阶段安全审计，产出经独立核验、机器可读的审计发现。"
     },
     {
       "rank": 3,
@@ -49,14 +47,13 @@
       "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 25044,
-      "forks": 3316,
+      "stars": 25062,
+      "forks": 3317,
       "period_stars": 4814,
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "面向 Claude Code 的通用 SEO 技能。含 26 个子技能 + 19 个子智能体，覆盖技术 SEO、E-E-A-T、结构化数据、GEO/AEO、智能体就绪度（Lighthouse Agentic Browsing、WebMCP、llms.txt）、外链建设、本地 SEO、电商 SEO、国际 SEO、Google API 以及 PDF/Excel 报告。另有 9 个可选扩展，用于接入实时 SEO 数据。",
-      "script_zh": "这个项目是给 Claude Code 量身打造的全能 SEO 插件。\n你只要在终端里给它一个指令，它就能帮你全盘诊断网站问题。\n\n从排查代码漏洞、优化内容权重，到直接生成报表，它全能搞定。\n最绝的是它不仅懂传统搜索引擎，连现在最火的 AI 搜索优化都配齐了。\n\n它里面塞了整整十九个专业智能体，相当于免费雇了个专业团队。\n想给产品搞自然流量的朋友，赶紧把它装上试试吧！"
+      "description_zh": "面向 Claude Code 的通用 SEO 技能。含 26 个子技能 + 19 个子智能体，覆盖技术 SEO、E-E-A-T、结构化数据、GEO/AEO、智能体就绪度（Lighthouse Agentic Browsing、WebMCP、llms.txt）、外链建设、本地 SEO、电商 SEO、国际 SEO、Google API 以及 PDF/Excel 报告。另有 9 个可选扩展，用于接入实时 SEO 数据。"
     },
     {
       "rank": 4,
@@ -67,14 +64,13 @@
       "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
       "language": "Rust",
       "language_color": "#dea584",
-      "stars": 98291,
-      "forks": 5795,
+      "stars": 98325,
+      "forks": 5798,
       "period_stars": 12031,
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "让你的 AI 宿主（harness）更懂设计的设计语言。",
-      "script_zh": "这个项目是一套专门给 AI 打造的设计语言。\n它能让你的 AI 助手瞬间学会做顶级界面。\n\n很多人用 AI 生成前端页面，总是觉得丑得一塌糊涂。\n这个项目就是用来彻底解决 AI 审美差的问题。\n把规范喂给 AI 工具，它就能写出排版舒爽美观的代码。\n\n它的厉害之处在于把顶尖设计师的直觉做成了系统规则。\n哪怕你完全不懂 UI 设计，也能轻松做出大厂级的界面。\n想用 AI 做出高颜值前端的朋友，赶紧去收藏它吧！"
+      "description_zh": "让你的 AI 宿主（harness）更懂设计的设计语言。"
     },
     {
       "rank": 5,
@@ -85,14 +81,13 @@
       "description": "An agentic skills framework & software development methodology that works.",
       "language": "Shell",
       "language_color": "#89e051",
-      "stars": 310066,
-      "forks": 27584,
+      "stars": 310087,
+      "forks": 27588,
       "period_stars": 5636,
       "period_label": "本周",
       "topics": [],
       "category": "其他",
-      "description_zh": "一套切实可用的智能体技能框架与软件开发方法论。",
-      "script_zh": "想让 AI 真正帮你写代码，一定要看看这个项目。\n\n它是一个专门为 AI 智能体打造的技能框架和软件开发方法论。\n\n简单来说，它能把复杂的开发任务拆解成 AI 听得懂、做得到的具体技能。\n\n这就解决了以前 AI 写代码总是翻车、不靠谱的痛点。\n\n最厉害的是，它是真正能在实际生产中落地的。\n\n它不玩虚的概念，而是提供了一套行之有效的实战规范，让你的 AI 助手瞬间战力爆表。"
+      "description_zh": "一套切实可用的智能体技能框架与软件开发方法论。"
     },
     {
       "rank": 6,
@@ -103,14 +98,13 @@
       "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
       "language": null,
       "language_color": null,
-      "stars": 227503,
-      "forks": 22702,
+      "stars": 227522,
+      "forks": 22704,
       "period_stars": 4277,
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "一份 CLAUDE.md 文件，依据 Andrej Karpathy 对 LLM 编程陷阱的观察，改善 Claude Code 的行为。",
-      "script_zh": "这个项目是一个专门给 Claude 写的“外挂”配置文件。\n\n你只需要把它丢进项目根目录，就能直接用。\n\n它解决的是大模型写代码时经常犯傻、逻辑混乱的问题。\n\n它会规范 Claude 的每一步操作，让 AI 编码变得非常听话。\n\n最牛的是，这些规则都是大神 Karpathy 总结出来的实战经验。\n\n不用你费心思调教，直接就能白嫖大佬的编程思维，简直是提效神器！"
+      "description_zh": "一份 CLAUDE.md 文件，依据 Andrej Karpathy 对 LLM 编程陷阱的观察，改善 Claude Code 的行为。"
     },
     {
       "rank": 7,
@@ -121,14 +115,13 @@
       "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 119062,
-      "forks": 22771,
+      "stars": 119071,
+      "forks": 22777,
       "period_stars": 5483,
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "TradingAgents：基于多智能体大语言模型的金融交易框架。",
-      "script_zh": "这个项目是一个用大模型多智能体做量化交易的开源框架。\n简单来说，就是让一堆 AI 组队帮你炒股。\n\n它把分析师、风控员和交易员都变成了 AI 智能体。\n输入你的交易想法，这些 AI 就会自己开会讨论并制定策略。\n\n最牛的是，它完全模拟了专业投资机构的真实工作流。\n不仅能自动分析市场，还能评估风险并执行交易，直接拉低了智能量化的门槛。"
+      "description_zh": "TradingAgents：基于多智能体大语言模型的金融交易框架。"
     },
     {
       "rank": 8,
@@ -139,14 +132,13 @@
       "description": "A collection of agent skills that help you build great interfaces.",
       "language": "Markdown",
       "language_color": "#8b949e",
-      "stars": 9613,
-      "forks": 368,
+      "stars": 9618,
+      "forks": 369,
       "period_stars": 1272,
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "一套帮你打造出色界面的智能体技能合集。",
-      "script_zh": "这个项目是一套帮 AI Agent 搭建漂亮界面的开源技能库。\n平时让智能体写前端，它吐出来的页面往往又丑又难用？\n\n它把专业的前端规范和交互组件打包成了现成技能。\n你直接丢给 Agent，它就能秒变懂审美的高级工程师。\n\n最香的是彻底省去了你反复调教 Prompt 的痛苦。\n开箱即用，让你的 AI 原生应用瞬间拥有商业级质感！"
+      "description_zh": "一套帮你打造出色界面的智能体技能合集。"
     },
     {
       "rank": 9,
@@ -157,14 +149,13 @@
       "description": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages",
       "language": "JavaScript",
       "language_color": "#f1e05a",
-      "stars": 107047,
+      "stars": 107075,
       "forks": 7242,
       "period_stars": 4975,
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "为编程智能体赋予「品味」的技能：用艺术指导、参考图与浏览器核查，取代千篇一律的 AI 生成页面。",
-      "script_zh": "这个项目是专门给写代码的 AI 注入审美灵魂的技能包。\n你有没有发现，AI 生成的前端页面总有一股千篇一律的廉价塑料味？\n\n它就是来终结这个痛点的。\n它直接教 AI 学会艺术指导，还会拿参考图对标，甚至自己打开浏览器反复质检。\n\n这个项目最狠的地方在于，它治好了 AI 的直男审美。\n十万多颗星的超高人气，真正让生成的网页有了设计师亲手打磨的高级感。"
+      "description_zh": "为编程智能体赋予「品味」的技能：用艺术指导、参考图与浏览器核查，取代千篇一律的 AI 生成页面。"
     },
     {
       "rank": 10,
@@ -175,13 +166,12 @@
       "description": "",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 35601,
-      "forks": 8786,
+      "stars": 35678,
+      "forks": 8791,
       "period_stars": 3718,
       "period_label": "本周",
       "topics": [],
-      "category": "其他",
-      "script_zh": "这个项目是一个超轻量级的现代化代码编辑器。\n它专门给追求极致速度的全栈开发者打造。\n\n平时开大型 IDE 总觉得卡顿又繁琐？\n用它就能秒级启动项目，直接开始干活！\n它帮你省去了复杂的环境配置，让你专注于代码本身。\n\n最棒的是它去掉了所有臃肿功能，只保留最纯粹的体验。\nGitHub 上接近两万五千星的超高人气就是最好证明！\n想找个极简又顺手的开发利器，选它准没错！"
+      "category": "其他"
     },
     {
       "rank": 11,
@@ -192,14 +182,13 @@
       "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 107880,
-      "forks": 9466,
+      "stars": 107927,
+      "forks": 9473,
       "period_stars": 4575,
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "为所有智能体提供跨会话的持久化上下文——记录智能体在会话中产生的全部操作，用 AI 压缩后，将相关上下文注入未来的会话。兼容 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等。",
-      "script_zh": "用 Claude 写代码，是不是每次新开对话它就失忆了？\n这个项目就是给各种 AI 智能体装上长期记忆的超强外挂。\n\n它能悄悄记录你和 AI 聊过的一切，用算法压缩后，在下次聊天时自动喂给它。\n不管是 Claude Code 还是 Gemini，都能瞬间接上上次的进度。\n\n最牛的是它不仅省 Token，还能让不同的 AI 共享同一份记忆。\n赶紧去试试，你的 AI 助手这下真的有灵魂了！"
+      "description_zh": "为所有智能体提供跨会话的持久化上下文——记录智能体在会话中产生的全部操作，用 AI 压缩后，将相关上下文注入未来的会话。兼容 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等。"
     },
     {
       "rank": 12,
@@ -210,14 +199,13 @@
       "description": "Public repository for Agent Skills",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 185896,
-      "forks": 21945,
+      "stars": 185911,
+      "forks": 21947,
       "period_stars": 2389,
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "Agent 技能公开仓库",
-      "script_zh": "这个项目是 Anthropic 官方开源的 AI 技能宝库。\n它直接给 AI 大模型装上了能干活的双手！\n\n平时写 Agent 最头疼的就是给 AI 拼装各种工具。\n现在直接把官方调好的技能给 AI 挂载上去就行。\n无论是查数据、写代码还是调 API，通通开箱即用。\n\n最厉害的是它的标准统一且极其规范。\n你再也不用手写复杂的底层提示词和函数调用了。\n想做超级 Agent 的朋友，这个项目绝对值得立马收藏！"
+      "description_zh": "Agent Skills 的公开仓库。"
     },
     {
       "rank": 13,
@@ -228,14 +216,13 @@
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "language": "JavaScript",
       "language_color": "#f1e05a",
-      "stars": 294074,
-      "forks": 43530,
+      "stars": 294098,
+      "forks": 43534,
       "period_stars": 6380,
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "Agent 运行框架性能优化系统。为 Claude Code、Codex、Opencode、Cursor 等平台提供技能、直觉、记忆、安全与研究驱动型开发支持。",
-      "script_zh": "写代码用 Cursor 或者 Claude Code 的朋友，一定要看看这个项目。\n\n它是一个专门给 AI 智能体做性能超强优化的系统。\n\n简单来说，它能给你的 AI 助手装上更强的记忆、直觉和安全防线。\n\n不管是写代码还是做研究，它都能让 AI 反应更快、更聪明。\n\n最厉害的是，它在 GitHub 上已经拿到了超过二十四万颗星！\n\n想让你的 AI 工具好用十倍，闭眼冲它就对了！"
+      "description_zh": "智能体运行框架性能优化系统：为 Claude Code、Codex、OpenCode、Cursor 等提供技能、本能、记忆、安全与「研究优先」的开发能力。"
     },
     {
       "rank": 14,
@@ -246,14 +233,13 @@
       "description": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Jailbreak for every model — swap prompts per model. 求 Star 收藏 ⭐ 如要二开，请查看署名要求部分",
       "language": "JavaScript",
       "language_color": "#f1e05a",
-      "stars": 14578,
-      "forks": 3375,
+      "stars": 14604,
+      "forks": 3379,
       "period_stars": 6641,
       "period_label": "本周",
       "topics": [],
       "category": "其他",
-      "description_zh": "DeepSeek Harness 破甲：让所有模型都能破甲，支持针对不同模型更换提示词；默认提示词面向国产模型“小码酱”。全模型破甲——支持按模型切换提示词。求 Star 收藏 ⭐ 如需二次开发，请查看署名要求部分。",
-      "script_zh": "该请求要求为名为 `YuJunZhiXue/dsh-purge` 的开源项目编写口播文案，宣传和介绍其用于大语言模型“破甲”（越狱）的功能与优势。\n\n我无法完成此请求。安全策略限制生成协助、推广或指导使用旨在绕过安全对齐机制、利用模型安全漏洞（如越狱或对抗性攻击）的工具或内容。因此，无法为专门用于模型越狱的项目撰写宣传或推介脚本。"
+      "description_zh": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换用不同提示词；默认提示词面向国产模型「小码酱」。为每种模型都可切换的越狱方案。求 Star 收藏 ⭐，如需二开请查看署名要求部分。"
     },
     {
       "rank": 15,
@@ -264,14 +250,13 @@
       "description": "AI Agent Assistant & development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 45332,
-      "forks": 3322,
+      "stars": 45341,
+      "forks": 3323,
       "period_stars": 2137,
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "集成众多 IM 平台、大语言模型、插件与 AI 功能的 AI Agent 助手及开发框架，可作为 OpenClaw 的替代方案。✨",
-      "script_zh": "这个项目是一个超强大的全能 AI 机器人开发框架。\n想把大模型接入 QQ、微信、飞书或者 Telegram 吗？\n\n用它就能一键打通各大主流聊天平台。\n不管是做私人助理、群聊管家，还是调用插件自动化，它都能搞定。\n\n最厉害的是它开箱即用，完全不用自己从零造轮子。\n不仅兼容各种主流大模型，插件生态也特别丰富。\n四万多星的开源神器，想玩聊天 AI 选它就对了！"
+      "description_zh": "AI 智能体助手与开发框架，集成了众多 IM 平台、大语言模型、插件与 AI 功能，可作为 OpenClaw 的替代方案。✨"
     }
   ]
 }
