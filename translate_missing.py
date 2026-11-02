@@ -298,6 +298,15 @@ MY_ZH = {
     "bregman-arie/devops-exercises": "涵盖 Linux、Jenkins、AWS、SRE、Prometheus、Docker、Python、Ansible、Git、Kubernetes、Terraform、OpenStack、SQL、NoSQL、Azure、GCP、DNS、Elastic、网络、虚拟化等领域的 DevOps 面试题库。",
     "vorssaint/vorssaint-utils": "免费开源的 macOS 菜单栏工具集。",
     "AstrBotDevs/AstrBot": "AI 智能体助手与开发框架，集成了众多 IM 平台、大语言模型、插件与 AI 功能，可作为 OpenClaw 的替代方案。✨",
+    # 2026-11-02 日榜/周榜新增
+    "cjpais/Handy": "一款免费、开源、可扩展的语音转文字应用，可完全离线运行。",
+    "kornia/kornia": "🐍 面向空间智能（Spatial AI）的几何计算机视觉库。",
+    "beenuar/AiSOC": "开源的 AI 安全运营中心（SOC）：告警融合、LLM 智能体分诊、MITRE ATT&CK 调查，并为智能体的每一步操作提供可回放的决策略账。支持自托管，无需 API 密钥即可运行，采用 MIT 许可协议。附带面向 Claude、Cursor 与 Continue 的 MCP 服务器。",
+    "anomalyco/hex": "面向 macOS、Windows 与 Linux 的本地语音听写工具。",
+    "patchy631/ai-engineering-hub": "深入讲解大语言模型（LLM）、检索增强生成（RAG）与真实世界 AI 智能体应用的教程合集。",
+    "FlashML-org/FreeToken": "FreeToken 将数据中心级别的模型服务带到你的桌面：在本地快速、高效地运行超大规模模型。",
+    "hyprwm/Hyprland": "Hyprland 是一个独立、高度可定制、动态的平铺式 Wayland 合成器，且不牺牲视觉美观。",
+    "ghostty-org/ghostty": "👻 Ghostty 是一款快速、功能丰富且跨平台的终端模拟器，采用平台原生界面与 GPU 加速。",
 }
 
 
