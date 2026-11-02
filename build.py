@@ -641,6 +641,15 @@ def render_index(daily, weekly_stem, week_dailies, all_repos=None):
     weeklies = sorted(glob.glob(str(DATA / "weekly" / "*.json")))
     daily_links = "".join(f'<a href="daily/{Path(f).stem}.html">{Path(f).stem}</a>' for f in reversed(dailies[-14:]))
     weekly_links = "".join(f'<a href="weekly/{Path(f).stem}.html">{Path(f).stem}（周）</a>' for f in reversed(weeklies[-8:]))
+    # 首页标签直达：按仓库数取 top 10 标签，点一下跳到全站标签页对应筛选
+    tag_cnt = Counter()
+    for _r in (all_repos or []):
+        for _t in (_r.get("tags") or []):
+            tag_cnt[_t] += 1
+    tag_links = "".join(
+        f'<a class="tagchip" href="tags/index.html#tag={esc(_t)}">{esc(_t)} <span class="cnt">{_n}</span></a>'
+        for _t, _n in tag_cnt.most_common(10))
+    tag_links_html = f'<div class="tagbar">{tag_links}</div>' if tag_links else ""
     return f"""<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>GitHub 日榜收录</title><style>{CSS}</style></head>
@@ -670,6 +679,7 @@ def render_index(daily, weekly_stem, week_dailies, all_repos=None):
   <h2 class="section-header">标签总览 <span class="en">Browse by Tag</span></h2>
   <div class="news-item"><p class="news-body"><a class="repo-link" href="tags/index.html" style="font-size:18px">→ 打开全站标签 / Open all tags</a></p>
   <p class="card-tag">按主题浏览全部收录仓库 · 点「视频」「英语」等标签自动聚出该类全部 · {len(all_repos or [])} 个仓库已打标签</p></div>
+  {tag_links_html}
 </div>
 <div class="divider"></div>
 <div class="section-block">

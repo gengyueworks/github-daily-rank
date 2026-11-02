@@ -19,7 +19,12 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "为所有智能体提供跨会话的持久化上下文——记录智能体在会话中产生的全部操作，用 AI 压缩后，将相关上下文注入未来的会话。兼容 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等。"
+      "description_zh": "为所有智能体提供跨会话的持久化上下文——记录智能体在会话中产生的全部操作，用 AI 压缩后，将相关上下文注入未来的会话。兼容 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等。",
+      "tags": [
+        "Agent",
+        "AI工具",
+        "开发工具"
+      ]
     },
     {
       "rank": 2,
@@ -36,7 +41,11 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "Lightpanda：专为 AI 与自动化设计的无头浏览器。"
+      "description_zh": "Lightpanda：专为 AI 与自动化设计的无头浏览器。",
+      "tags": [
+        "AI工具",
+        "开发工具"
+      ]
     },
     {
       "rank": 3,
@@ -53,7 +62,11 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "Kronos：读懂金融市场「语言」的基础模型。"
+      "description_zh": "Kronos：读懂金融市场「语言」的基础模型。",
+      "tags": [
+        "大模型",
+        "AI工具"
+      ]
     },
     {
       "rank": 4,
@@ -69,7 +82,8 @@
       "period_stars": 3094,
       "period_label": "今日",
       "topics": [],
-      "category": "其他"
+      "category": "其他",
+      "tags": []
     },
     {
       "rank": 5,
@@ -86,7 +100,12 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "开源版 Grok Bot 替代方案，附带可供机器人使用的虚拟机。"
+      "description_zh": "开源版 Grok Bot 替代方案，附带可供机器人使用的虚拟机。",
+      "tags": [
+        "Agent",
+        "AI工具",
+        "大模型"
+      ]
     },
     {
       "rank": 6,
@@ -103,7 +122,11 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "免费 API 合集清单。"
+      "description_zh": "免费 API 合集清单。",
+      "tags": [
+        "开发工具",
+        "信息源"
+      ]
     },
     {
       "rank": 7,
@@ -120,7 +143,12 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "一款免费、开源、可扩展的语音转文字应用，可完全离线运行。"
+      "description_zh": "一款免费、开源、可扩展的语音转文字应用，可完全离线运行。",
+      "tags": [
+        "音视频",
+        "AI工具",
+        "系统工具"
+      ]
     },
     {
       "rank": 8,
@@ -137,7 +165,13 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "把 Claude Code 变成一间完整的游戏开发工作室——49 个 AI 智能体、72 项工作流技能，以及一套映射真实工作室层级结构的完整协作体系。"
+      "description_zh": "把 Claude Code 变成一间完整的游戏开发工作室——49 个 AI 智能体、72 项工作流技能，以及一套映射真实工作室层级结构的完整协作体系。",
+      "tags": [
+        "Agent",
+        "游戏",
+        "开发工具",
+        "AI工具"
+      ]
     },
     {
       "rank": 9,
@@ -154,7 +188,12 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "🐍 面向空间智能（Spatial AI）的几何计算机视觉库。"
+      "description_zh": "🐍 面向空间智能（Spatial AI）的几何计算机视觉库。",
+      "tags": [
+        "AI工具",
+        "开发工具",
+        "图片"
+      ]
     },
     {
       "rank": 10,
@@ -171,7 +210,13 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "开源的 AI 安全运营中心（SOC）：告警融合、LLM 智能体分诊、MITRE ATT&CK 调查，并为智能体的每一步操作提供可回放的决策略账。支持自托管，无需 API 密钥即可运行，采用 MIT 许可协议。附带面向 Claude、Cursor 与 Continue 的 MCP 服务器。"
+      "description_zh": "开源的 AI 安全运营中心（SOC）：告警融合、LLM 智能体分诊、MITRE ATT&CK 调查，并为智能体的每一步操作提供可回放的决策略账。支持自托管，无需 API 密钥即可运行，采用 MIT 许可协议。附带面向 Claude、Cursor 与 Continue 的 MCP 服务器。",
+      "tags": [
+        "安全",
+        "Agent",
+        "AI工具",
+        "大模型"
+      ]
     },
     {
       "rank": 11,
@@ -188,7 +233,11 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "紫微斗数开源排盘引擎——基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库与古籍原文数据。"
+      "description_zh": "紫微斗数开源排盘引擎——基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库与古籍原文数据。",
+      "tags": [
+        "开发工具",
+        "数据"
+      ]
     },
     {
       "rank": 12,
@@ -205,7 +254,11 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "面向 macOS、Windows 与 Linux 的本地语音听写工具。"
+      "description_zh": "面向 macOS、Windows 与 Linux 的本地语音听写工具。",
+      "tags": [
+        "音视频",
+        "系统工具"
+      ]
     },
     {
       "rank": 13,
@@ -222,7 +275,12 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "开源的 AI 同事：每个同事都拥有自己的电脑——浏览器、文件与工具，每个动作在事前被决策、事后被记录。可接入任意 AG-UI 智能体。"
+      "description_zh": "开源的 AI 同事：每个同事都拥有自己的电脑——浏览器、文件与工具，每个动作在事前被决策、事后被记录。可接入任意 AG-UI 智能体。",
+      "tags": [
+        "Agent",
+        "AI工具",
+        "开发工具"
+      ]
     },
     {
       "rank": 14,
@@ -239,7 +297,10 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "我所有越狱（提示词绕过）方法的清单。"
+      "description_zh": "我所有越狱（提示词绕过）方法的清单。",
+      "tags": [
+        "安全"
+      ]
     },
     {
       "rank": 15,
@@ -256,7 +317,12 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "深入讲解大语言模型（LLM）、检索增强生成（RAG）与真实世界 AI 智能体应用的教程合集。"
+      "description_zh": "深入讲解大语言模型（LLM）、检索增强生成（RAG）与真实世界 AI 智能体应用的教程合集。",
+      "tags": [
+        "大模型",
+        "Agent",
+        "教育"
+      ]
     },
     {
       "rank": 16,
@@ -273,7 +339,12 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "FreeToken 将数据中心级别的模型服务带到你的桌面：在本地快速、高效地运行超大规模模型。"
+      "description_zh": "FreeToken 将数据中心级别的模型服务带到你的桌面：在本地快速、高效地运行超大规模模型。",
+      "tags": [
+        "大模型",
+        "AI工具",
+        "系统工具"
+      ]
     },
     {
       "rank": 17,
@@ -290,7 +361,10 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "Hyprland 是一个独立、高度可定制、动态的平铺式 Wayland 合成器，且不牺牲视觉美观。"
+      "description_zh": "Hyprland 是一个独立、高度可定制、动态的平铺式 Wayland 合成器，且不牺牲视觉美观。",
+      "tags": [
+        "系统工具"
+      ]
     }
   ]
 }

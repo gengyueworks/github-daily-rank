@@ -19,7 +19,13 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "面向 Claude Code、Cursor 与 Codex 的「反 AI 套话」设计技能。"
+      "description_zh": "面向 Claude Code、Cursor 与 Codex 的「反 AI 套话」设计技能。",
+      "tags": [
+        "Agent",
+        "设计",
+        "AI工具",
+        "开发工具"
+      ]
     },
     {
       "rank": 2,
@@ -36,7 +42,13 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "让你的 AI 宿主（harness）更懂设计的设计语言。"
+      "description_zh": "让你的 AI 宿主（harness）更懂设计的设计语言。",
+      "tags": [
+        "Agent",
+        "设计",
+        "AI工具",
+        "开发工具"
+      ]
     },
     {
       "rank": 3,
@@ -53,7 +65,13 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "面向 Claude Code 的通用 SEO 技能。含 26 个子技能 + 19 个子智能体，覆盖技术 SEO、E-E-A-T、结构化数据、GEO/AEO、智能体就绪度（Lighthouse Agentic Browsing、WebMCP、llms.txt）、外链建设、本地 SEO、电商 SEO、国际 SEO、Google API 以及 PDF/Excel 报告。另有 9 个可选扩展，用于接入实时 SEO 数据。"
+      "description_zh": "面向 Claude Code 的通用 SEO 技能。含 26 个子技能 + 19 个子智能体，覆盖技术 SEO、E-E-A-T、结构化数据、GEO/AEO、智能体就绪度（Lighthouse Agentic Browsing、WebMCP、llms.txt）、外链建设、本地 SEO、电商 SEO、国际 SEO、Google API 以及 PDF/Excel 报告。另有 9 个可选扩展，用于接入实时 SEO 数据。",
+      "tags": [
+        "Agent",
+        "AI工具",
+        "大模型",
+        "开发工具"
+      ]
     },
     {
       "rank": 4,
@@ -70,7 +88,12 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "为所有智能体提供跨会话的持久化上下文——记录智能体在会话中产生的全部操作，用 AI 压缩后，将相关上下文注入未来的会话。兼容 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等。"
+      "description_zh": "为所有智能体提供跨会话的持久化上下文——记录智能体在会话中产生的全部操作，用 AI 压缩后，将相关上下文注入未来的会话。兼容 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等。",
+      "tags": [
+        "Agent",
+        "AI工具",
+        "开发工具"
+      ]
     },
     {
       "rank": 5,
@@ -87,7 +110,13 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "一个面向编程智能体的技能，用于多阶段安全审计，产出经独立核验、机器可读的审计发现。"
+      "description_zh": "一个面向编程智能体的技能，用于多阶段安全审计，产出经独立核验、机器可读的审计发现。",
+      "tags": [
+        "Agent",
+        "安全",
+        "开发工具",
+        "AI工具"
+      ]
     },
     {
       "rank": 6,
@@ -104,7 +133,12 @@
       "period_label": "本周",
       "topics": [],
       "category": "其他",
-      "description_zh": "一套切实可用的智能体技能框架与软件开发方法论。"
+      "description_zh": "一套切实可用的智能体技能框架与软件开发方法论。",
+      "tags": [
+        "Agent",
+        "AI工具",
+        "开发工具"
+      ]
     },
     {
       "rank": 7,
@@ -121,7 +155,11 @@
       "period_label": "本周",
       "topics": [],
       "category": "开发工具",
-      "description_zh": "用 pi 在轻量级、真实的 IDE 里进行氛围编程（vibe coding），IDE 会围绕你的工作方式自我定制——你需要的氛围感。"
+      "description_zh": "用 pi 在轻量级、真实的 IDE 里进行氛围编程（vibe coding），IDE 会围绕你的工作方式自我定制——你需要的氛围感。",
+      "tags": [
+        "开发工具",
+        "AI工具"
+      ]
     },
     {
       "rank": 8,
@@ -137,7 +175,8 @@
       "period_stars": 6926,
       "period_label": "本周",
       "topics": [],
-      "category": "其他"
+      "category": "其他",
+      "tags": []
     },
     {
       "rank": 9,
@@ -154,7 +193,13 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "一份 CLAUDE.md 文件，依据 Andrej Karpathy 对 LLM 编程陷阱的观察，改善 Claude Code 的行为。"
+      "description_zh": "一份 CLAUDE.md 文件，依据 Andrej Karpathy 对 LLM 编程陷阱的观察，改善 Claude Code 的行为。",
+      "tags": [
+        "Agent",
+        "AI工具",
+        "开发工具",
+        "大模型"
+      ]
     },
     {
       "rank": 10,
@@ -171,7 +216,12 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "一套帮你打造出色界面的智能体技能合集。"
+      "description_zh": "一套帮你打造出色界面的智能体技能合集。",
+      "tags": [
+        "Agent",
+        "前端",
+        "AI工具"
+      ]
     },
     {
       "rank": 11,
@@ -188,7 +238,12 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "TradingAgents：基于多智能体大语言模型的金融交易框架。"
+      "description_zh": "TradingAgents：基于多智能体大语言模型的金融交易框架。",
+      "tags": [
+        "Agent",
+        "大模型",
+        "AI工具"
+      ]
     },
     {
       "rank": 12,
@@ -205,7 +260,13 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "为编程智能体赋予「品味」的技能：用艺术指导、参考图与浏览器核查，取代千篇一律的 AI 生成页面。"
+      "description_zh": "为编程智能体赋予「品味」的技能：用艺术指导、参考图与浏览器核查，取代千篇一律的 AI 生成页面。",
+      "tags": [
+        "Agent",
+        "AI工具",
+        "设计",
+        "前端"
+      ]
     },
     {
       "rank": 13,
@@ -222,7 +283,12 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "Agent Skills 的公开仓库。"
+      "description_zh": "Agent Skills 的公开仓库。",
+      "tags": [
+        "Agent",
+        "AI工具",
+        "大模型"
+      ]
     },
     {
       "rank": 14,
@@ -239,7 +305,13 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "智能体运行框架性能优化系统：为 Claude Code、Codex、OpenCode、Cursor 等提供技能、本能、记忆、安全与「研究优先」的开发能力。"
+      "description_zh": "智能体运行框架性能优化系统：为 Claude Code、Codex、OpenCode、Cursor 等提供技能、本能、记忆、安全与「研究优先」的开发能力。",
+      "tags": [
+        "Agent",
+        "AI工具",
+        "开发工具",
+        "大模型"
+      ]
     },
     {
       "rank": 15,
@@ -256,7 +328,12 @@
       "period_label": "本周",
       "topics": [],
       "category": "其他",
-      "description_zh": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换用不同提示词；默认提示词面向国产模型「小码酱」。为每种模型都可切换的越狱方案。求 Star 收藏 ⭐，如需二开请查看署名要求部分。"
+      "description_zh": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换用不同提示词；默认提示词面向国产模型「小码酱」。为每种模型都可切换的越狱方案。求 Star 收藏 ⭐，如需二开请查看署名要求部分。",
+      "tags": [
+        "大模型",
+        "安全",
+        "AI工具"
+      ]
     },
     {
       "rank": 16,
@@ -273,7 +350,11 @@
       "period_label": "本周",
       "topics": [],
       "category": "开发工具",
-      "description_zh": "👻 Ghostty 是一款快速、功能丰富且跨平台的终端模拟器，采用平台原生界面与 GPU 加速。"
+      "description_zh": "👻 Ghostty 是一款快速、功能丰富且跨平台的终端模拟器，采用平台原生界面与 GPU 加速。",
+      "tags": [
+        "开发工具",
+        "系统工具"
+      ]
     }
   ]
 }
