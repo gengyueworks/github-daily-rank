@@ -13,7 +13,12 @@
       "note_zh": "智能体不再被困在笼子里，整个互联网直接变成它的数据源。情报战时代真正落地的基础设施。",
       "note_en": "Agents are no longer locked in a cage — the whole internet becomes their data source.",
       "added": "2026-08-14",
-      "script_zh": "这个项目能给你的 AI 智能体安上一双看清整个互联网的眼睛。\n简单来说，它能让 AI 直接去刷小红书、B站、推特和 GitHub。\n\n你不用去申请那些又贵又难搞的官方 API，一键就能获取全网的最新数据。\n最牛的是它完全免费，而且支持路由自愈，网页改版了它也能自己修复。\n\n难怪它在 GitHub 上拿到了七万多颗星，想做 AI 应用的人绝对不能错过它。"
+      "script_zh": "这个项目能给你的 AI 智能体安上一双看清整个互联网的眼睛。\n简单来说，它能让 AI 直接去刷小红书、B站、推特和 GitHub。\n\n你不用去申请那些又贵又难搞的官方 API，一键就能获取全网的最新数据。\n最牛的是它完全免费，而且支持路由自愈，网页改版了它也能自己修复。\n\n难怪它在 GitHub 上拿到了七万多颗星，想做 AI 应用的人绝对不能错过它。",
+      "tags": [
+        "Agent",
+        "AI工具",
+        "开发工具"
+      ]
     },
     {
       "full_name": "Leonxlnx/taste-skill",
@@ -25,7 +30,13 @@
       "note_zh": "前端生产力质变——AI 终于能直接产出有设计感的作品，而不是模板味十足的页面。",
       "note_en": "A leap for frontend productivity — AI finally ships tasteful work instead of templated pages.",
       "added": "2026-08-14",
-      "script_zh": "AI 写的网页前端是不是总有一股塑料感？\n这个项目就是专门来给 AI 充值审美和品味的。\n\n简单来说，它就像一个强力补丁。\n只要把它接进你的 AI 流程里，就能强制让 AI 吐出高级感满满的排版、动效和间距。\n\n最牛的是，它直接把设计师的审美规则变成了代码规范，让 AI 告别那些平庸又无聊的垃圾界面。\n难怪它在 GitHub 上直接狂斩七万多星，简直是全栈开发和独立创作者的救星！"
+      "script_zh": "AI 写的网页前端是不是总有一股塑料感？\n这个项目就是专门来给 AI 充值审美和品味的。\n\n简单来说，它就像一个强力补丁。\n只要把它接进你的 AI 流程里，就能强制让 AI 吐出高级感满满的排版、动效和间距。\n\n最牛的是，它直接把设计师的审美规则变成了代码规范，让 AI 告别那些平庸又无聊的垃圾界面。\n难怪它在 GitHub 上直接狂斩七万多星，简直是全栈开发和独立创作者的救星！",
+      "tags": [
+        "Agent",
+        "AI工具",
+        "设计",
+        "前端"
+      ]
     },
     {
       "full_name": "calesthio/OpenMontage",
@@ -37,7 +48,12 @@
       "note_zh": "一个人顶整个视频团队——从脚本到成片全自动，创作者的生产力被重新定义。",
       "note_en": "One person replaces a whole video team — from script to final cut, fully automated.",
       "added": "2026-08-14",
-      "script_zh": "这个项目是全球首个开源的智能体视频制作系统。\n\n你只需要用大白话描述一个画面。\n它就能自己去查资料、写脚本、生成素材，甚至连最后的剪辑都帮你一条龙搞定。\n\n最强的是它内置了12条工作流和52个工具。\n等于给你配了一个全能的视频制作团队。\n\nGitHub上已经快五万星了。\n想做视频又嫌麻烦的朋友，真的可以闭眼冲这个！"
+      "script_zh": "这个项目是全球首个开源的智能体视频制作系统。\n\n你只需要用大白话描述一个画面。\n它就能自己去查资料、写脚本、生成素材，甚至连最后的剪辑都帮你一条龙搞定。\n\n最强的是它内置了12条工作流和52个工具。\n等于给你配了一个全能的视频制作团队。\n\nGitHub上已经快五万星了。\n想做视频又嫌麻烦的朋友，真的可以闭眼冲这个！",
+      "tags": [
+        "视频",
+        "Agent",
+        "AI工具"
+      ]
     },
     {
       "full_name": "microsoft/markitdown",
@@ -49,7 +65,13 @@
       "note_zh": "智能体吃料不再需要手动清洗——文档预处理层的事实标配，谁都绕不开。",
       "note_en": "Agents no longer need manual data cleaning — the de-facto standard preprocessing layer.",
       "added": "2026-08-14",
-      "script_zh": "这个项目是微软开源的文档转 Markdown 神器。\n不管是 PDF、Word 还是 PPT，它都能一键搞定。\n\n这直接解决了大模型看不懂各种杂乱格式的痛点。\n你只需要把文件丢给它，就能得到排版干净的文本。\n\n最让人惊喜的是，它连音视频里的语音都能提取出来。\n可以说是给大模型喂数据、做知识库的绝佳助手。\n微软出品质量有保证，感兴趣的赶紧去 GitHub 看看吧！"
+      "script_zh": "这个项目是微软开源的文档转 Markdown 神器。\n不管是 PDF、Word 还是 PPT，它都能一键搞定。\n\n这直接解决了大模型看不懂各种杂乱格式的痛点。\n你只需要把文件丢给它，就能得到排版干净的文本。\n\n最让人惊喜的是，它连音视频里的语音都能提取出来。\n可以说是给大模型喂数据、做知识库的绝佳助手。\n微软出品质量有保证，感兴趣的赶紧去 GitHub 看看吧！",
+      "tags": [
+        "文档",
+        "大模型",
+        "AI工具",
+        "开发工具"
+      ]
     },
     {
       "full_name": "DeusData/codebase-memory-mcp",
@@ -61,7 +83,12 @@
       "note_zh": "长期项目记忆终于有了真正可用的基础设施——大项目协作的体验质变。",
       "note_en": "Long-term project memory finally has real infrastructure — a step change for large codebases.",
       "added": "2026-08-14",
-      "script_zh": "用 AI 辅助写代码，是不是最烦它每次都要重新读一遍项目？\n\n这个项目就是专门解决这个痛点的超高性能代码工具。\n它能把你的整个代码库，直接索引成一个可以持久保存的知识图谱。\n\n这样 AI 助手下次干活时，就能瞬间秒懂，再也不用从头傻傻地读代码了。\n不仅速度飞快，还能帮你省下大把的 Token 费用。\n\n想让你的 AI 编程助手拥有过目不忘的记忆力，认准它就对了！"
+      "script_zh": "用 AI 辅助写代码，是不是最烦它每次都要重新读一遍项目？\n\n这个项目就是专门解决这个痛点的超高性能代码工具。\n它能把你的整个代码库，直接索引成一个可以持久保存的知识图谱。\n\n这样 AI 助手下次干活时，就能瞬间秒懂，再也不用从头傻傻地读代码了。\n不仅速度飞快，还能帮你省下大把的 Token 费用。\n\n想让你的 AI 编程助手拥有过目不忘的记忆力，认准它就对了！",
+      "tags": [
+        "Agent",
+        "开发工具",
+        "AI工具"
+      ]
     },
     {
       "full_name": "ginobefun/BestBlogs",
@@ -73,7 +100,13 @@
       "note_zh": "信息焦虑终结者：把散落各处的优质技术内容收进一个情报总局，每天只看一手猛料。",
       "note_en": "Ends information anxiety — 400+ curated RSS feeds, one smart reading hub.",
       "added": "2026-08-14",
-      "script_zh": "这个项目是一个帮你筛选全球顶级技术文章的开源阅读平台。\n\n平时想跟进AI和编程前沿，是不是总被垃圾信息淹没？\n\n它直接用大模型帮每篇文章写好了摘要，甚至还打好了评分。\n\n你只需要花几秒钟，就能看懂以前要读半小时的硬核干货。\n\n最绝的是它能自动过滤掉废话，让你只看最有价值的内容。\n\n想高效充电的朋友，赶紧去 GitHub 体验一下吧！"
+      "script_zh": "这个项目是一个帮你筛选全球顶级技术文章的开源阅读平台。\n\n平时想跟进AI和编程前沿，是不是总被垃圾信息淹没？\n\n它直接用大模型帮每篇文章写好了摘要，甚至还打好了评分。\n\n你只需要花几秒钟，就能看懂以前要读半小时的硬核干货。\n\n最绝的是它能自动过滤掉废话，让你只看最有价值的内容。\n\n想高效充电的朋友，赶紧去 GitHub 体验一下吧！",
+      "tags": [
+        "信息源",
+        "阅读",
+        "大模型",
+        "AI工具"
+      ]
     },
     {
       "full_name": "kepano/obsidian-skills",
@@ -85,7 +118,12 @@
       "note_zh": "Obsidian 创始人亲自下场给自家工具写 Agent 说明书——值得收的不是技术含量，是「让 AI 用好我的工具」这个态度。最妙的是 topics 里直接挂着 hermes / openclaw / opencode / codex，全是你天天在用的 Agent 生态。",
       "note_en": "Obsidian's own founder wrote the Agent skills for his tool — what's worth keeping isn't the tech but the stance: make AI use my tool well. Best part: its topics list hermes / openclaw / opencode / codex — your daily Agent stack.",
       "added": "2026-08-14",
-      "script_zh": "这个项目能让你的 AI 助手直接掌控你的 Obsidian 笔记库。\n\n简单来说，它给 AI 提供了操作 Obsidian 的超能力。\n\n不管是自动整理 Markdown 笔记，还是帮你画脑图，它都能轻松搞定。\n\n最酷的是，它完全基于本地的开放格式。\n\n你不用担心隐私泄露，就能拥有一个懂你全部知识的 AI 秘书。\n\n想体验 AI 自动整理笔记的朋友，闭眼冲就完了！"
+      "script_zh": "这个项目能让你的 AI 助手直接掌控你的 Obsidian 笔记库。\n\n简单来说，它给 AI 提供了操作 Obsidian 的超能力。\n\n不管是自动整理 Markdown 笔记，还是帮你画脑图，它都能轻松搞定。\n\n最酷的是，它完全基于本地的开放格式。\n\n你不用担心隐私泄露，就能拥有一个懂你全部知识的 AI 秘书。\n\n想体验 AI 自动整理笔记的朋友，闭眼冲就完了！",
+      "tags": [
+        "Agent",
+        "笔记",
+        "AI工具"
+      ]
     },
     {
       "full_name": "tashfeenahmed/freellmapi",
@@ -97,7 +135,12 @@
       "note_zh": "思路很实在：每家免费额度都不够用，攒在一起就够每天动手。代价是每家的Key都要自己申请，装完先花一下午填钥匙。",
       "note_en": "A practical idea: every free tier is too small alone, pooled together they cover daily use. The cost is bringing your own keys for each provider.",
       "added": "2026-09-09",
-      "script_zh": "这个项目把34家免费大模型的额度收到一个接口里。\n本地起一个服务，各家Key填进去，上层只调这一个地址。\n\n哪家限流就自动切下一家，不用手写34套接入。\n每个月加起来约74亿token，日常折腾和小项目够用。\n\n丑话说前面：Key都要自己一家家申请，装完先花一下午填钥匙。\n嫌麻烦就先填两三家最好申的，照样能转起来。"
+      "script_zh": "这个项目把34家免费大模型的额度收到一个接口里。\n本地起一个服务，各家Key填进去，上层只调这一个地址。\n\n哪家限流就自动切下一家，不用手写34套接入。\n每个月加起来约74亿token，日常折腾和小项目够用。\n\n丑话说前面：Key都要自己一家家申请，装完先花一下午填钥匙。\n嫌麻烦就先填两三家最好申的，照样能转起来。",
+      "tags": [
+        "大模型",
+        "AI工具",
+        "开发工具"
+      ]
     },
     {
       "full_name": "smithjohn78390/tongjiang-lab",
@@ -109,7 +152,11 @@
       "note_zh": "把课本插图变成能拖能拽的实验，这个方向中小学老师等了很多年。",
       "note_en": "Turns textbook diagrams into hands-on 3D experiments — the kind of tool middle-school teachers have waited years for.",
       "added": "2026-11-02",
-      "script_zh": "这个项目是一个把高中理科课本彻底 3D 化的免费实验室。\n它专门拯救那些看不懂数理化抽象概念的学生。\n\n平时背得头疼的电磁场和化学键，它全做成了能交互的三维模型。\n你根本不用死记硬背，在浏览器里就能拖动视角、调节参数做实验。\n\n最绝的是它完全开源免费，点开网页就能秒玩。\n把枯燥的定理变成了好玩的互动游戏，绝对是自学理科的神器！"
+      "script_zh": "这个项目是一个把高中理科课本彻底 3D 化的免费实验室。\n它专门拯救那些看不懂数理化抽象概念的学生。\n\n平时背得头疼的电磁场和化学键，它全做成了能交互的三维模型。\n你根本不用死记硬背，在浏览器里就能拖动视角、调节参数做实验。\n\n最绝的是它完全开源免费，点开网页就能秒玩。\n把枯燥的定理变成了好玩的互动游戏，绝对是自学理科的神器！",
+      "tags": [
+        "教育",
+        "科学实验"
+      ]
     },
     {
       "full_name": "margrop/wrong-notebook",
@@ -121,7 +168,11 @@
       "note_zh": "家长辅导作业的老大难，一个能自托管的错题本比一堆在线工具实在。",
       "note_en": "The eternal parent problem, solved with a self-hosted notebook — more dependable than a stack of web tools.",
       "added": "2026-11-02",
-      "script_zh": "这个项目是一个能自己部署的开源 AI 智能错题本。\n平时遇到不会的题，直接拍照扔进去就行。\n\n它能瞬间识别题目给出详细解答，并自动归类知识点。\n不仅能举一反三生成相似题型，还能一键重新组卷打印。\n\n最棒的是它支持全流程跟踪你的掌握度。\n而且完全支持自托管，所有学习数据都在自己手里。\n家里有娃或者正在备考的朋友，非常值得试试！"
+      "script_zh": "这个项目是一个能自己部署的开源 AI 智能错题本。\n平时遇到不会的题，直接拍照扔进去就行。\n\n它能瞬间识别题目给出详细解答，并自动归类知识点。\n不仅能举一反三生成相似题型，还能一键重新组卷打印。\n\n最棒的是它支持全流程跟踪你的掌握度。\n而且完全支持自托管，所有学习数据都在自己手里。\n家里有娃或者正在备考的朋友，非常值得试试！",
+      "tags": [
+        "教育",
+        "AI工具"
+      ]
     },
     {
       "full_name": "xiaoyang111222/cn-math-taxonomy",
@@ -133,7 +184,11 @@
       "note_zh": "知识图谱不新鲜，但把课标对齐做到这个颗粒度、还开源题库，少见。",
       "note_en": "Knowledge graphs aren't new — a curriculum-aligned one at this granularity, with open question banks, is rare.",
       "added": "2026-11-02",
-      "script_zh": "这个项目把国内小初高的核心学科，做成了一张超详细的知识图谱。\n数学、初中物理还有英语全都覆盖了。\n\n做教育AI最头疼的就是怎么精准查漏补缺？\n它理清了上千个知识点和两千多条先修关系。\n哪道题做错了，顺着网就能揪出最底层哪个概念没学明白。\n\n最硬核的是它完全对齐国内课标，还自带几千道诊断题。\n做自适应学习直接开箱即用。\n能省下整个团队大半年的教研成本！"
+      "script_zh": "这个项目把国内小初高的核心学科，做成了一张超详细的知识图谱。\n数学、初中物理还有英语全都覆盖了。\n\n做教育AI最头疼的就是怎么精准查漏补缺？\n它理清了上千个知识点和两千多条先修关系。\n哪道题做错了，顺着网就能揪出最底层哪个概念没学明白。\n\n最硬核的是它完全对齐国内课标，还自带几千道诊断题。\n做自适应学习直接开箱即用。\n能省下整个团队大半年的教研成本！",
+      "tags": [
+        "教育",
+        "中小学"
+      ]
     },
     {
       "full_name": "ywEdAi/teachable-figures",
@@ -145,7 +200,11 @@
       "note_zh": "把「怎么教」写成一个可复用的 Skill，星数不高，但思路值得看。",
       "note_en": "Teaching method packaged as a reusable agent skill — low stars, but the idea alone is worth a look.",
       "added": "2026-11-02",
-      "script_zh": "这个项目能让智能体做出真正会互动的因果教学图。\n平时看复杂的原理架构图是不是经常一头雾水？\n\n它把“先预测、动手试、再解释”整套流程塞进了图表里。\nAI 不仅负责出图，还能让读者自己调参数看动态反馈。\n\n最棒的是它自带渲染工具包和浏览器自动检查。\n保证做出来的交互网页逻辑严谨，还绝不会翻车报错。\n想做互动式教学课件，它就是最好的效率外挂！"
+      "script_zh": "这个项目能让智能体做出真正会互动的因果教学图。\n平时看复杂的原理架构图是不是经常一头雾水？\n\n它把“先预测、动手试、再解释”整套流程塞进了图表里。\nAI 不仅负责出图，还能让读者自己调参数看动态反馈。\n\n最棒的是它自带渲染工具包和浏览器自动检查。\n保证做出来的交互网页逻辑严谨，还绝不会翻车报错。\n想做互动式教学课件，它就是最好的效率外挂！",
+      "tags": [
+        "教育",
+        "AI可视化"
+      ]
     },
     {
       "full_name": "designfuchen/word-atlas",
@@ -157,7 +216,11 @@
       "note_zh": "不需要注册、手机浏览器直接背，刷词体验像翻一本插画词典。",
       "note_en": "No sign-up, runs in a phone browser — reviewing words feels like flipping an illustrated vocabulary book.",
       "added": "2026-11-02",
-      "script_zh": "这个项目是一个专为雅思考生打造的开源背单词神器。\n很多人背雅思词汇总觉得枯燥还容易忘。\n\n它直接把七千多个核心词全配上了插画和双音发音。\n让你一眼看懂真实语境，彻底告别死记硬背。\n\n最绝的是它内置了超火的 FSRS 智能记忆算法。\n能精准卡在你快忘记的节点提醒复习，效率直接拉满！\n而且整个软件连同高质量数据集全开源，必须赶紧收藏！"
+      "script_zh": "这个项目是一个专为雅思考生打造的开源背单词神器。\n很多人背雅思词汇总觉得枯燥还容易忘。\n\n它直接把七千多个核心词全配上了插画和双音发音。\n让你一眼看懂真实语境，彻底告别死记硬背。\n\n最绝的是它内置了超火的 FSRS 智能记忆算法。\n能精准卡在你快忘记的节点提醒复习，效率直接拉满！\n而且整个软件连同高质量数据集全开源，必须赶紧收藏！",
+      "tags": [
+        "英语",
+        "教育"
+      ]
     }
   ]
 }

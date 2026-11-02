@@ -64,6 +64,19 @@ body {
 .footer-block { font-size: 14px; color: var(--text-mid); line-height: 1.7; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); }
 .card-tag { font-size: 12px; color: var(--text-mid); opacity: 0.55; margin-top: 8px; line-height: 1.6; }
 
+/* ---- 全站标签筛选（daily/weekly/index/tags 共用，classics 页有自己的 scoped 版本） ---- */
+.tagbar-label { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-light); margin: 20px 0 10px; }
+.tagbar-label a { color: var(--klein); text-decoration: none; }
+.tagbar-label a:hover { text-decoration: underline; }
+.tagbar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 26px; }
+.tagchip { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-dark); background: var(--white); border: 1px solid var(--border); border-radius: 999px; padding: 4px 13px; cursor: pointer; text-decoration: none; display: inline-block; }
+.tagchip:hover { color: var(--klein); border-color: var(--klein); }
+.tagchip.active { background: var(--klein); color: #fff; border-color: var(--klein); }
+.tagchip .cnt { color: var(--text-light); margin-left: 3px; }
+.tagchip.active .cnt { color: rgba(255,255,255,0.75); }
+.mini-tag { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: var(--klein); background: var(--white); border: 1px solid var(--border); border-radius: 999px; padding: 1px 9px; cursor: pointer; margin-right: 3px; }
+.mini-tag:hover { background: var(--klein); color: #fff; border-color: var(--klein); }
+
 .site-nav-lite { display: flex; align-items: center; justify-content: space-between; margin-bottom: 28px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
 .nav-back { font-size: 14px; color: var(--klein); text-decoration: none; font-weight: 500; }
 .nav-back:hover { text-decoration: underline; }
@@ -133,6 +146,16 @@ body.classics .footer { margin-top: 48px; padding-top: 20px; border-top: 3px sol
 body.classics .footer .big { color: var(--ink); font-weight: 600; }
 body.classics .footer a { color: var(--klein); text-decoration: none; }
 body.classics .footer a:hover { text-decoration: underline; }
+/* ---- 标签筛选 tagbar（2026-11-02 新增，全站标签色仅 klein 蓝） ---- */
+body.classics .tagbar-label { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gray-light); margin: 28px 0 10px; }
+body.classics .tagbar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 6px; }
+body.classics .tagchip { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--ink-soft); background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 4px 13px; cursor: pointer; }
+body.classics .tagchip:hover { color: var(--klein); border-color: var(--klein); }
+body.classics .tagchip.active { background: var(--klein); color: #fff; border-color: var(--klein); }
+body.classics .tagchip .cnt { color: var(--gray-light); margin-left: 3px; }
+body.classics .tagchip.active .cnt { color: rgba(255,255,255,0.75); }
+body.classics .mini-tag { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: var(--klein); background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 1px 9px; cursor: pointer; margin-right: 3px; }
+body.classics .mini-tag:hover { background: var(--klein); color: #fff; border-color: var(--klein); }
 """
 
 CAT_EN = {
@@ -191,6 +214,54 @@ def script_block(r):
     return "\n".join(out)
 
 
+TAG_FILTER_JS = """
+  function applyTag(tag){
+    document.querySelectorAll('.tagchip[data-tag]').forEach(function(c){
+      c.classList.toggle('active', (c.getAttribute('data-tag') || '') === tag);
+    });
+    document.querySelectorAll('.news-item, .item').forEach(function(it){
+      var ts = (it.getAttribute('data-tags') || '').split(',');
+      it.style.display = (!tag || ts.indexOf(tag) >= 0) ? '' : 'none';
+    });
+    try { history.replaceState(null, '', tag ? ('#tag=' + encodeURIComponent(tag)) : location.pathname); } catch(e) {}
+  }
+  document.querySelectorAll('.tagchip[data-tag]').forEach(function(c){
+    c.addEventListener('click', function(){ applyTag(c.getAttribute('data-tag') || ''); });
+  });
+  document.querySelectorAll('.mini-tag').forEach(function(c){
+    c.addEventListener('click', function(){
+      applyTag(c.getAttribute('data-tag') || '');
+      window.scrollTo(0, 0);
+    });
+  });
+  var _m = location.hash.match(/#tag=([^&]+)/);
+  if (_m) { try { applyTag(decodeURIComponent(_m[1])); } catch(e) {} }
+"""
+
+
+def tagbar_html(repos, prefix="../"):
+    """按 tags 统计生成筛选条；无标签数据时返回空串。"""
+    cnt = Counter()
+    for r in repos:
+        for t in (r.get("tags") or []):
+            cnt[t] += 1
+    if not cnt:
+        return ""
+    chips = [f'<button class="tagchip active" data-tag="">全部 <span class="cnt">{len(repos)}</span></button>']
+    chips += [f'<button class="tagchip" data-tag="{esc(t)}">{esc(t)} <span class="cnt">{n}</span></button>'
+              for t, n in cnt.most_common()]
+    return (f'<div class="tagbar-label">按标签筛选 · Filter by tag · '
+            f'<a href="{prefix}tags/index.html">全站标签总览 →</a></div>'
+            f'<div class="tagbar">{"".join(chips)}</div>')
+
+
+def mini_tags_html(r):
+    tags = r.get("tags") or []
+    if not tags:
+        return ""
+    return " · " + " ".join(f'<button class="mini-tag" data-tag="{esc(t)}">{esc(t)}</button>' for t in tags)
+
+
 def repo_item(r, show_riser=False):
     rank = f'<span class="rank">#{r["rank"]}</span>'
     link = f'<a class="repo-link" href="{esc(r["url"])}" target="_blank">{esc(r["full_name"])}</a>'
@@ -200,14 +271,14 @@ def repo_item(r, show_riser=False):
     lang = r["language"]
     lang_html = f'<span class="lang-dot" style="background:{esc(r.get("language_color") or "#8b949e")}"></span>{esc(lang)}' if lang else "—"
     meta = (f'★ {r["stars"]:,} <span class="accent">(+{r["period_stars"]} 今日 today)</span>'
-            f' · ⑂ {r["forks"]:,} forks · {lang_html} · <span class="cat">{esc(bcat(r["category"]))}</span>')
+            f' · ⑂ {r["forks"]:,} forks · {lang_html} · <span class="cat">{esc(bcat(r["category"]))}</span>{mini_tags_html(r)}')
     topics = (" · " + "、".join(esc(t) for t in r.get("topics", [])[:6])) if r.get("topics") else ""
     tag = f'<p class="card-tag">topics 标签{topics} · category 分类：{esc(bcat(r["category"]))}</p>'
     riser = ""
     if show_riser and r.get("_days", 0) > 1:
         riser = f'<p class="riser-note">本周累计上榜 <b>{r["_days"]}</b> 天 · appeared {r["_days"]} days this week</p>'
     return f"""
-    <div class="news-item">
+    <div class="news-item" data-tags="{esc(','.join(r.get('tags') or []))}">
         <h3 class="news-title">{rank}{link}</h3>
         <p class="news-body">{en}</p>
         {zh_html}
@@ -236,6 +307,7 @@ def render_daily(daily):
     d = date.fromisoformat(daily["date"])
     nav_date = f'{d.year}年{d.month:02d}月{d.day:02d}日'
     intro = daily_intro(daily)
+    tagbar = tagbar_html(daily["repos"], prefix="../")
     items = "\n".join(repo_item(r) for r in daily["repos"])
     return f"""<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -248,13 +320,18 @@ def render_daily(daily):
 <div class="section-block">
   <h2 class="section-header">今日榜单 <span class="en">Today's Board</span></h2>
   {intro}
+  {tagbar}
   {items}
 </div>
 <div class="footer-block">
   <p>GitHub 日榜 · 每日自动收录自 GitHub Trending · Daily auto-collected from GitHub Trending</p>
   <p>数据来源 Source：<a href="https://github.com/trending?since=daily" target="_blank">github.com/trending?since=daily</a> · 抓取时间 Fetched：{esc(daily['fetched_at'])}</p>
 </div>
-</div></body></html>"""
+</div>
+<script>
+{TAG_FILTER_JS}
+</script>
+</body></html>"""
 
 
 def render_weekly(week_dailies, weekly):
@@ -297,6 +374,7 @@ def render_weekly(week_dailies, weekly):
         riser_html = f'<div class="section-block"><h2 class="section-header">蝉联榜 <span class="en">Consistent Risers</span></h2>{riser_items}</div><div class="divider"></div>'
 
     picks_html = "\n".join(repo_item(r, show_riser=True) for r in picks)
+    tagbar = tagbar_html(picks, prefix="../")
     return f"""<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>GitHub 周报｜{rng}</title><style>{CSS}</style></head>
@@ -314,6 +392,7 @@ def render_weekly(week_dailies, weekly):
 <div class="divider"></div>
 <div class="section-block">
   <h2 class="section-header">本周精选 <span class="en">Weekly Picks</span></h2>
+  {tagbar}
   {picks_html}
 </div>
 {riser_html}
@@ -321,7 +400,11 @@ def render_weekly(week_dailies, weekly):
   <p>GitHub 周报 · 由本周每日快照聚合生成 · Aggregated from this week's daily snapshots</p>
   <p>数据来源 Source：<a href="https://github.com/trending?since=weekly" target="_blank">github.com/trending?since=weekly</a></p>
 </div>
-</div></body></html>"""
+</div>
+<script>
+{TAG_FILTER_JS}
+</script>
+</body></html>"""
 
 
 def link_area(r):
@@ -345,15 +428,29 @@ def render_classics(classics):
     n = len(classics["repos"])
     lede = (f'<div class="mast-lede">{esc(classics["intro_zh"])}</div>'
             f'<div class="mast-lede">{esc(classics["intro_en"])}</div>')
+    tag_count, tag_order = {}, []
+    for _r in classics["repos"]:
+        for _t in (_r.get("tags") or []):
+            tag_count[_t] = tag_count.get(_t, 0) + 1
+            if _t not in tag_order:
+                tag_order.append(_t)
+    tags_sorted = sorted(tag_order, key=lambda t: (-tag_count[t], tag_order.index(t)))
+    chips = [f'<button class="tagchip active" data-tag="">全部 <span class="cnt">{n}</span></button>']
+    chips += [f'<button class="tagchip" data-tag="{esc(t)}">{esc(t)} <span class="cnt">{tag_count[t]}</span></button>'
+              for t in tags_sorted]
+    tagbar = ('<div class="tagbar-label">按标签筛选 · Filter by tag</div>'
+              '<div class="tagbar">' + ''.join(chips) + '</div>')
     items = []
     for i, r in enumerate(classics["repos"], start=1):
+        tags = r.get("tags") or []
+        mini_tags = ''.join(f'<button class="mini-tag" data-tag="{esc(t)}">{esc(t)}</button>' for t in tags)
         zh = r.get("description_zh")
         zh_html = f'<p><span class="tag">译</span>{esc(zh)}</p>' if zh else ""
         note_zh = r.get("note_zh", "")
         note_en = r.get("note_en", "")
         note = f'<div class="src-line">点评 Note：{esc(note_zh)}{(" · " + esc(note_en)) if note_en else ""}</div>'
         items.append(f"""
-    <div class="item">
+    <div class="item" data-tags="{esc(','.join(tags))}">
         <div class="dateline">#<span class="src">{i}</span> · {esc(r["category"])} · 收录于 {esc(r.get("added", updated))}</div>
         <div class="item-title"><a href="{esc(r["url"])}" target="_blank">{esc(r["full_name"])}</a></div>
         <div class="body">
@@ -361,7 +458,7 @@ def render_classics(classics):
             {zh_html}
             {script_block(r)}
         </div>
-        <div class="src-line">★ <span class="num">{r["stars"]:,}</span> stars · <span class="cat">{esc(r["category"])}</span></div>
+        <div class="src-line">★ <span class="num">{r["stars"]:,}</span> stars · <span class="cat">{esc(r["category"])}</span>{(" · " + mini_tags) if mini_tags else ""}</div>
         {note}
         {link_area(r)}
     </div>""")
@@ -377,6 +474,7 @@ def render_classics(classics):
   <div class="mast-meta"><span class="issue">{nav_date} 更新</span><span>人工精选 {n} 个仓库 · {n} human-curated repos</span></div>
 </div>
 {lede}
+{tagbar}
 <div class="divider"></div>
 <div class="section-block">
   <div class="sec-eyebrow">Curated</div>
@@ -417,12 +515,128 @@ def render_classics(classics):
       }}
     }});
   }});
+  function applyTag(tag){{
+    document.querySelectorAll('.tagchip').forEach(function(c){{
+      c.classList.toggle('active', (c.getAttribute('data-tag') || '') === tag);
+    }});
+    document.querySelectorAll('.item').forEach(function(it){{
+      var ts = (it.getAttribute('data-tags') || '').split(',');
+      it.style.display = (!tag || ts.indexOf(tag) >= 0) ? '' : 'none';
+    }});
+    try {{ history.replaceState(null, '', tag ? ('#tag=' + encodeURIComponent(tag)) : location.pathname); }} catch(e) {{}}
+  }}
+  document.querySelectorAll('.tagchip').forEach(function(c){{
+    c.addEventListener('click', function(){{ applyTag(c.getAttribute('data-tag') || ''); }});
+  }});
+  document.querySelectorAll('.mini-tag').forEach(function(c){{
+    c.addEventListener('click', function(){{
+      applyTag(c.getAttribute('data-tag') || '');
+      window.scrollTo(0, 0);
+    }});
+  }});
+  var _m = location.hash.match(/#tag=([^&]+)/);
+  if (_m) {{ try {{ applyTag(decodeURIComponent(_m[1])); }} catch(e) {{}} }}
 }})();
 </script>
 </body></html>"""
 
 
-def render_index(daily, weekly_stem, week_dailies):
+def collect_all_repos():
+    """汇总全部数据源的唯一仓库（tags 页用）。tags 以 tag_cache.json 兜底。"""
+    uniq = {}
+    cache_tags = {}
+    tc = DATA / "tag_cache.json"
+    if tc.exists():
+        try:
+            cache_tags = json.load(open(tc, encoding="utf-8"))
+        except Exception:
+            cache_tags = {}
+
+    def upsert(r, in_classics=False):
+        fn = r["full_name"]
+        e = uniq.setdefault(fn, {
+            "full_name": fn, "url": r.get("url", f"https://github.com/{fn}"),
+            "stars": 0, "description": r.get("description") or "",
+            "description_zh": r.get("description_zh") or "",
+            "tags": [], "hits": 0, "in_classics": False,
+        })
+        e["stars"] = max(e["stars"], r.get("stars", 0))
+        e["hits"] += 1
+        if in_classics:
+            e["in_classics"] = True
+        if r.get("description_zh"):
+            e["description_zh"] = r["description_zh"]
+        if r.get("description"):
+            e["description"] = r["description"]
+        if r.get("tags"):
+            e["tags"] = r["tags"]
+
+    for f in sorted(glob.glob(str(DATA / "daily" / "*.json"))):
+        d = json.load(open(f, encoding="utf-8"))
+        for r in d.get("repos", []):
+            upsert(r)
+    for f in sorted(glob.glob(str(DATA / "weekly" / "*.json"))):
+        d = json.load(open(f, encoding="utf-8"))
+        for r in d.get("repos", []):
+            upsert(r)
+    cf = DATA / "classics.json"
+    if cf.exists():
+        for r in json.load(open(cf, encoding="utf-8")).get("repos", []):
+            upsert(r, in_classics=True)
+    for fn, e in uniq.items():
+        if not e["tags"] and fn in cache_tags:
+            e["tags"] = cache_tags[fn]
+    return list(uniq.values())
+
+
+def render_tags(repos):
+    """全站标签页：所有标签 + 点标签筛出该标签下全部仓库（按星数排序）。"""
+    cnt = Counter()
+    for r in repos:
+        for t in (r.get("tags") or []):
+            cnt[t] += 1
+    n_tags = len(cnt)
+    chips = [f'<button class="tagchip active" data-tag="">全部 <span class="cnt">{len(repos)}</span></button>']
+    chips += [f'<button class="tagchip" data-tag="{esc(t)}">{esc(t)} <span class="cnt">{n}</span></button>'
+              for t, n in cnt.most_common()]
+    tagbar = ('<div class="tagbar-label">按标签筛选 · Filter by tag（网址带 #tag= 可直接分享）</div>'
+              f'<div class="tagbar">{"".join(chips)}</div>')
+    items = []
+    for r in sorted(repos, key=lambda x: -x["stars"]):
+        tags = r.get("tags") or []
+        mini = mini_tags_html(r).lstrip(" · ")
+        desc = r.get("description_zh") or r.get("description") or "（无简介 No description）"
+        badge = '<span class="accent">精选</span>' if r["in_classics"] else f'上榜 {r["hits"]} 次'
+        items.append(f"""
+    <div class="news-item" data-tags="{esc(','.join(tags))}">
+        <h3 class="news-title"><a class="repo-link" href="{esc(r['url'])}" target="_blank">{esc(r['full_name'])}</a></h3>
+        <p class="news-body">{esc(desc)}</p>
+        <p class="repo-meta">★ <span class="accent">{r['stars']:,}</span> · {badge}{(' · ' + mini) if mini else ''}</p>
+    </div>""")
+    today = date.today().isoformat()
+    return f"""<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>全站标签｜All Tags</title><style>{CSS}</style></head>
+<body><div class="container">
+<nav class="site-nav-lite"><a href="../index.html" class="nav-back">← 首页 / Index</a><span class="nav-date">Updated {today}</span></nav>
+<h1 class="doc-title">全站标签 <span>All Tags</span></h1>
+<p class="doc-date">{len(repos)} 个收录仓库 · {n_tags} 个标签 · 点标签自动排列该类全部仓库</p>
+{tagbar}
+<div class="divider"></div>
+<div class="section-block">
+  {''.join(items)}
+</div>
+<div class="footer-block">
+  <p>GitHub 日榜收录 · 标签由 AI 按仓库简介标注 · Tags auto-labeled from repo descriptions</p>
+</div>
+</div>
+<script>
+{TAG_FILTER_JS}
+</script>
+</body></html>"""
+
+
+def render_index(daily, weekly_stem, week_dailies, all_repos=None):
     dailies = sorted(glob.glob(str(DATA / "daily" / "*.json")))
     weeklies = sorted(glob.glob(str(DATA / "weekly" / "*.json")))
     daily_links = "".join(f'<a href="daily/{Path(f).stem}.html">{Path(f).stem}</a>' for f in reversed(dailies[-14:]))
@@ -450,6 +664,12 @@ def render_index(daily, weekly_stem, week_dailies):
   <h2 class="section-header">高分精选 <span class="en">Curated Classics</span></h2>
   <div class="news-item"><p class="news-body"><a class="repo-link" href="classics/index.html" style="font-size:18px">→ 打开高分精选 / Open curated classics</a></p>
   <p class="card-tag">人工精选高分仓库 · 中英双语 · Human-curated high-star repos</p></div>
+</div>
+<div class="divider"></div>
+<div class="section-block">
+  <h2 class="section-header">标签总览 <span class="en">Browse by Tag</span></h2>
+  <div class="news-item"><p class="news-body"><a class="repo-link" href="tags/index.html" style="font-size:18px">→ 打开全站标签 / Open all tags</a></p>
+  <p class="card-tag">按主题浏览全部收录仓库 · 点「视频」「英语」等标签自动聚出该类全部 · {len(all_repos or [])} 个仓库已打标签</p></div>
 </div>
 <div class="divider"></div>
 <div class="section-block">
@@ -493,11 +713,17 @@ def main():
         (SITE / "classics" / "index.html").write_text(render_classics(classics), encoding="utf-8")
         print("  ", SITE / "classics" / "index.html")
 
-    (SITE / "index.html").write_text(render_index(daily, weekly_stem, week_dailies), encoding="utf-8")
+    all_repos = collect_all_repos()
+    (SITE / "tags").mkdir(parents=True, exist_ok=True)
+    (SITE / "tags" / "index.html").write_text(render_tags(all_repos), encoding="utf-8")
+    print("  ", SITE / "tags" / "index.html")
+
+    (SITE / "index.html").write_text(render_index(daily, weekly_stem, week_dailies, all_repos), encoding="utf-8")
     print("生成完成：")
     print(" ", SITE / "daily" / f"{daily['date']}.html")
     if weekly_stem:
         print(" ", SITE / "weekly" / f"{weekly_stem}.html")
+    print(" ", SITE / "tags" / "index.html")
     print(" ", SITE / "index.html")
 
 

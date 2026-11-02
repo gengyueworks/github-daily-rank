@@ -21,6 +21,9 @@ echo "=== $(date '+%Y-%m-%d %H:%M:%S') 开始 ==="
 # 3) 为仓库生成「一分钟逐字稿」（本机 8317 网关，缓存复用）
 "$PY" gen_scripts.py
 
+# 给新上榜仓库打标签（缓存已有标签的不会重复调 LLM）
+"$PY" tag_repos.py
+
 # 4) 生成站点
 "$PY" build.py
 

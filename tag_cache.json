@@ -1,0 +1,1795 @@
+{
+  "cathrynlavery/diagram-design": [
+    "设计",
+    "前端",
+    "开发工具"
+  ],
+  "macro-inc/macro": [
+    "Agent",
+    "AI工具",
+    "文档"
+  ],
+  "semantica-agi/semantica": [
+    "AI工具",
+    "开发工具",
+    "数据"
+  ],
+  "stablyai/orca": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "msitarzewski/agency-agents": [
+    "Agent",
+    "AI工具"
+  ],
+  "shiyu-coder/Kronos": [
+    "大模型",
+    "AI工具"
+  ],
+  "NanmiCoder/MediaCrawler": [
+    "数据",
+    "开发工具"
+  ],
+  "hugohe3/ppt-master": [
+    "AI工具",
+    "文档"
+  ],
+  "infiniflow/ragflow": [
+    "Agent",
+    "大模型",
+    "AI工具"
+  ],
+  "paperclipai/paperclip": [
+    "Agent",
+    "AI工具"
+  ],
+  "NVIDIA-NeMo/Switchyard": [
+    "大模型",
+    "AI工具",
+    "开发工具"
+  ],
+  "ZuodaoTech/everyone-can-use-english": [
+    "英语",
+    "教育"
+  ],
+  "smicallef/spiderfoot": [
+    "安全",
+    "信息源"
+  ],
+  "localsend/localsend": [
+    "系统工具",
+    "移动"
+  ],
+  "Lightricks/LTX-2": [
+    "大模型",
+    "视频",
+    "音视频",
+    "AI工具"
+  ],
+  "embabel/embabel-agent": [
+    "Agent",
+    "开发工具",
+    "AI工具"
+  ],
+  "cactus-compute/needle": [
+    "大模型",
+    "AI工具",
+    "移动"
+  ],
+  "anthropics/skills": [
+    "Agent",
+    "AI工具",
+    "大模型"
+  ],
+  "altic-dev/FluidVoice": [
+    "AI工具",
+    "系统工具",
+    "音视频"
+  ],
+  "unslothai/unsloth": [
+    "大模型",
+    "AI工具",
+    "开发工具"
+  ],
+  "megadose/holehe": [
+    "安全"
+  ],
+  "holaboss-ai/holaOS": [
+    "Agent",
+    "AI工具",
+    "大模型",
+    "开发工具"
+  ],
+  "kepano/obsidian-skills": [
+    "Agent",
+    "笔记",
+    "AI工具"
+  ],
+  "3b1b/manim": [
+    "视频",
+    "教育",
+    "开发工具"
+  ],
+  "lightningpixel/modly": [
+    "AI工具",
+    "设计"
+  ],
+  "citrolabs/ego-lite": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "github/spec-kit": [
+    "开发工具"
+  ],
+  "cursor/plugins": [
+    "开发工具",
+    "AI工具"
+  ],
+  "deepseek-ai/awesome-deepseek-agent": [
+    "Agent",
+    "大模型",
+    "信息源"
+  ],
+  "rustdesk/rustdesk": [
+    "系统工具",
+    "运维"
+  ],
+  "OpenCut-app/OpenCut": [
+    "视频",
+    "音视频"
+  ],
+  "ToolJet/ToolJet": [
+    "开发工具",
+    "Agent",
+    "AI工具",
+    "前端"
+  ],
+  "cordiverse/cordis": [
+    "开发工具"
+  ],
+  "public-apis/public-apis": [
+    "开发工具",
+    "信息源"
+  ],
+  "MakazhanAlpamys/Soup": [
+    "大模型",
+    "AI工具",
+    "开发工具"
+  ],
+  "HKUDS/CLI-Anything": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "basecamp/omarchy": [
+    "系统工具"
+  ],
+  "harry0703/MoneyPrinterTurbo": [
+    "视频",
+    "AI工具",
+    "大模型"
+  ],
+  "usestrix/strix": [
+    "安全",
+    "AI工具",
+    "开发工具"
+  ],
+  "nautechsystems/nautilus_trader": [
+    "开发工具",
+    "数据"
+  ],
+  "akitaonrails/ai-memory": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "mukul975/Anthropic-Cybersecurity-Skills": [
+    "Agent",
+    "安全",
+    "AI工具"
+  ],
+  "AlexsJones/llmfit": [
+    "大模型",
+    "AI工具",
+    "系统工具"
+  ],
+  "santifer/career-ops": [
+    "AI工具",
+    "Agent"
+  ],
+  "jundot/omlx": [
+    "大模型",
+    "AI工具",
+    "系统工具"
+  ],
+  "immich-app/immich": [
+    "图片",
+    "视频",
+    "系统工具"
+  ],
+  "agalwood/Motrix": [
+    "系统工具"
+  ],
+  "chaitanyagiri/munder-difflin": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "volcengine/OpenViking": [
+    "Agent",
+    "AI工具",
+    "数据",
+    "大模型"
+  ],
+  "NawfalMotii79/PLFM_RADAR": [
+    "科学实验"
+  ],
+  "bojieli/ai-agent-book": [
+    "Agent",
+    "阅读",
+    "教育",
+    "文档"
+  ],
+  "genlayerlabs/genlayer-project-boilerplate": [
+    "开发工具"
+  ],
+  "mattpocock/skills": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "mahlernim/google-timeline-visualizer": [
+    "数据"
+  ],
+  "AprilNEA/OpenLogi": [
+    "系统工具"
+  ],
+  "PostHog/posthog": [
+    "开发工具",
+    "数据",
+    "Agent",
+    "AI工具"
+  ],
+  "microsoft/TypeScript": [
+    "开发工具",
+    "前端"
+  ],
+  "obra/superpowers": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "modular/modular": [
+    "AI工具",
+    "开发工具",
+    "大模型"
+  ],
+  "affaan-m/ECC": [
+    "Agent",
+    "AI工具",
+    "开发工具",
+    "大模型"
+  ],
+  "TryGhost/Ghost": [
+    "写作",
+    "信息源"
+  ],
+  "ruvnet/ruflo": [
+    "Agent",
+    "AI工具",
+    "大模型",
+    "开发工具"
+  ],
+  "apache/maka": [
+    "Agent",
+    "AI工具"
+  ],
+  "protocolbuffers/protobuf": [
+    "开发工具",
+    "数据"
+  ],
+  "elder-plinius/OBLITERATUS": [
+    "大模型",
+    "安全"
+  ],
+  "microsoft/onnxruntime": [
+    "AI工具",
+    "开发工具"
+  ],
+  "openai/codex": [
+    "Agent",
+    "开发工具",
+    "AI工具"
+  ],
+  "Wei-Shaw/sub2api": [
+    "大模型",
+    "AI工具",
+    "开发工具"
+  ],
+  "makeplane/plane": [
+    "开发工具",
+    "文档"
+  ],
+  "n8n-io/n8n": [
+    "开发工具",
+    "AI工具",
+    "Agent",
+    "运维"
+  ],
+  "anthropics/claude-code": [
+    "Agent",
+    "AI工具",
+    "开发工具",
+    "大模型"
+  ],
+  "multica-ai/andrej-karpathy-skills": [
+    "Agent",
+    "AI工具",
+    "开发工具",
+    "大模型"
+  ],
+  "ripienaar/free-for-dev": [
+    "开发工具",
+    "运维",
+    "信息源"
+  ],
+  "Tencent/AI-Infra-Guard": [
+    "安全",
+    "Agent",
+    "大模型",
+    "AI工具"
+  ],
+  "freestylefly/awesome-gpt-image-2": [
+    "AI工具",
+    "大模型",
+    "图片",
+    "Agent"
+  ],
+  "block/buzz": [
+    "系统工具"
+  ],
+  "Alishahryar1/free-claude-code": [
+    "AI工具",
+    "大模型",
+    "开发工具"
+  ],
+  "tinyhumansai/openhuman": [
+    "Agent",
+    "AI工具"
+  ],
+  "VoltAgent/awesome-agent-skills": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "virgiliojr94/book-to-skill": [
+    "Agent",
+    "AI工具",
+    "大模型",
+    "开发工具"
+  ],
+  "dani-garcia/vaultwarden": [
+    "安全",
+    "运维"
+  ],
+  "anthropics/claude-plugins-community": [
+    "AI工具",
+    "大模型",
+    "开发工具",
+    "Agent"
+  ],
+  "Comfy-Org/ComfyUI": [
+    "AI工具",
+    "大模型",
+    "图片"
+  ],
+  "NousResearch/hermes-agent": [
+    "Agent",
+    "AI工具"
+  ],
+  "MadsLorentzen/ai-job-search": [
+    "AI工具",
+    "写作",
+    "大模型"
+  ],
+  "openclaw/openclaw": [
+    "Agent",
+    "AI工具"
+  ],
+  "AgriciDaniel/claude-obsidian": [
+    "笔记",
+    "AI工具",
+    "大模型"
+  ],
+  "rohitg00/ai-engineering-from-scratch": [
+    "教育",
+    "大模型",
+    "AI工具"
+  ],
+  "tashfeenahmed/freellmapi": [
+    "大模型",
+    "AI工具",
+    "开发工具"
+  ],
+  "TauricResearch/TradingAgents": [
+    "Agent",
+    "大模型",
+    "AI工具"
+  ],
+  "Shubhamsaboo/awesome-llm-apps": [
+    "Agent",
+    "大模型",
+    "AI工具"
+  ],
+  "marin-community/marin": [
+    "大模型",
+    "开发工具",
+    "AI工具"
+  ],
+  "DietrichGebert/ponytail": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "anthropics/claude-plugins-official": [
+    "AI工具",
+    "开发工具",
+    "Agent"
+  ],
+  "asciimoo/hister": [
+    "系统工具",
+    "信息源"
+  ],
+  "bilawalsidhu/gods-eye-view": [
+    "前端",
+    "数据",
+    "信息源"
+  ],
+  "zedeus/nitter": [
+    "前端",
+    "信息源"
+  ],
+  "tt-a1i/archify": [
+    "Agent",
+    "AI工具",
+    "开发工具",
+    "设计"
+  ],
+  "JetBrains/go-modern-guidelines": [
+    "Agent",
+    "AI工具",
+    "开发工具",
+    "文档"
+  ],
+  "K-Dense-AI/scientific-agent-skills": [
+    "Agent",
+    "科学实验",
+    "AI工具"
+  ],
+  "calesthio/OpenMontage": [
+    "视频",
+    "Agent",
+    "AI工具"
+  ],
+  "ConardLi/garden-skills": [
+    "Agent",
+    "AI工具"
+  ],
+  "thedotmack/claude-mem": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "google/googletest": [
+    "开发工具"
+  ],
+  "ComposioHQ/awesome-claude-skills": [
+    "Agent",
+    "大模型",
+    "AI工具"
+  ],
+  "actions/checkout": [
+    "开发工具",
+    "运维"
+  ],
+  "abhigyanpatwari/GitNexus": [
+    "Agent",
+    "AI工具",
+    "开发工具",
+    "前端"
+  ],
+  "abi/screenshot-to-code": [
+    "AI工具",
+    "前端",
+    "开发工具",
+    "大模型"
+  ],
+  "tailscale/tailcat": [
+    "系统工具",
+    "运维",
+    "开发工具"
+  ],
+  "NationalSecurityAgency/ghidra": [
+    "安全",
+    "开发工具"
+  ],
+  "swoole/typephp": [
+    "开发工具"
+  ],
+  "ChromeDevTools/chrome-devtools-mcp": [
+    "Agent",
+    "开发工具",
+    "AI工具",
+    "前端"
+  ],
+  "livekit/agents": [
+    "Agent",
+    "音视频",
+    "开发工具",
+    "AI工具"
+  ],
+  "THU-MAIC/OpenMAIC": [
+    "Agent",
+    "教育",
+    "AI工具"
+  ],
+  "p-e-w/heretic": [
+    "大模型",
+    "AI工具",
+    "安全"
+  ],
+  "bigskysoftware/htmx": [
+    "前端",
+    "开发工具"
+  ],
+  "every-app/open-seo": [
+    "数据",
+    "开发工具"
+  ],
+  "Osmantic/ODS": [
+    "AI工具",
+    "大模型",
+    "Agent"
+  ],
+  "kaifcodec/user-scanner": [
+    "安全",
+    "数据"
+  ],
+  "addyosmani/agent-skills": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "workweave/router": [
+    "Agent",
+    "大模型",
+    "AI工具",
+    "开发工具"
+  ],
+  "Lakr233/vphone-cli": [
+    "开发工具",
+    "移动",
+    "系统工具"
+  ],
+  "unclecode/crawl4ai": [
+    "AI工具",
+    "大模型",
+    "数据",
+    "开发工具"
+  ],
+  "mvanhorn/last30days-skill": [
+    "Agent",
+    "AI工具",
+    "信息源"
+  ],
+  "majd/ipatool": [
+    "移动",
+    "开发工具",
+    "系统工具"
+  ],
+  "punkpeye/awesome-mcp-servers": [
+    "Agent",
+    "AI工具",
+    "大模型"
+  ],
+  "checkstyle/checkstyle": [
+    "开发工具"
+  ],
+  "pollen-robotics/microduck_rl": [
+    "AI工具",
+    "Agent"
+  ],
+  "handsomestWei/patent-disclosure-skill": [
+    "Agent",
+    "AI工具",
+    "写作"
+  ],
+  "corsairdev/corsair": [
+    "开发工具"
+  ],
+  "colinhacks/zod": [
+    "开发工具",
+    "前端",
+    "数据"
+  ],
+  "k1tbyte/Wand-Enhancer": [
+    "游戏",
+    "系统工具"
+  ],
+  "jingyaogong/minimind": [
+    "大模型",
+    "AI工具"
+  ],
+  "zhaoxuya520/reverse-skill": [
+    "安全",
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "firecrawl/pdf-inspector": [
+    "开发工具",
+    "文档",
+    "数据"
+  ],
+  "fmtlib/fmt": [
+    "开发工具"
+  ],
+  "google-research/timesfm": [
+    "大模型",
+    "数据",
+    "AI工具"
+  ],
+  "debpalash/VoiceStudio": [
+    "音视频",
+    "AI工具",
+    "视频"
+  ],
+  "sngyai/Sequoia-X": [
+    "数据",
+    "信息源"
+  ],
+  "superlinked/sie": [
+    "Agent",
+    "大模型",
+    "AI工具",
+    "运维"
+  ],
+  "pacifio/atlas": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "zyronon/TypeWords": [
+    "英语",
+    "教育"
+  ],
+  "Imbad0202/academic-research-skills": [
+    "Agent",
+    "AI工具",
+    "写作"
+  ],
+  "vercel-labs/portless": [
+    "开发工具",
+    "Agent",
+    "系统工具"
+  ],
+  "blader/humanizer": [
+    "Agent",
+    "写作",
+    "AI工具"
+  ],
+  "JuliusBrussee/caveman": [
+    "Agent",
+    "大模型",
+    "AI工具",
+    "开发工具"
+  ],
+  "Gitlawb/openclaude": [
+    "大模型",
+    "AI工具",
+    "Agent"
+  ],
+  "averygan/reclip": [
+    "视频",
+    "音视频",
+    "系统工具"
+  ],
+  "bannedbook/fanqiang": [
+    "安全",
+    "系统工具"
+  ],
+  "ByteByteGoHq/system-design-101": [
+    "教育",
+    "文档"
+  ],
+  "magnitudedev/magnitude": [
+    "Agent",
+    "大模型",
+    "AI工具",
+    "开发工具"
+  ],
+  "f/prompts.chat": [
+    "大模型",
+    "AI工具"
+  ],
+  "bikini/exploitarium": [
+    "安全",
+    "文档"
+  ],
+  "radixark/miles": [
+    "大模型",
+    "AI工具",
+    "开发工具"
+  ],
+  "anomalyco/opencode": [
+    "Agent",
+    "开发工具",
+    "AI工具"
+  ],
+  "clshortfuse/renodx": [
+    "游戏"
+  ],
+  "heygen-com/hyperframes": [
+    "视频",
+    "Agent",
+    "前端",
+    "开发工具"
+  ],
+  "microsoft/markitdown": [
+    "文档",
+    "大模型",
+    "AI工具",
+    "开发工具"
+  ],
+  "mksglu/context-mode": [
+    "Agent",
+    "开发工具",
+    "AI工具",
+    "大模型"
+  ],
+  "jo-inc/camofox-browser": [
+    "Agent",
+    "开发工具",
+    "安全"
+  ],
+  "MoonTechLab/LunaTV": [
+    "视频",
+    "音视频"
+  ],
+  "coreyhaines31/marketingskills": [
+    "Agent",
+    "AI工具",
+    "写作"
+  ],
+  "The-Swarm-Corporation/AutoHedge": [
+    "Agent",
+    "AI工具"
+  ],
+  "BraveOPotato/FckSignups": [
+    "信息源"
+  ],
+  "bytedance/deer-flow": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "openai/skills": [
+    "Agent",
+    "大模型",
+    "AI工具"
+  ],
+  "lightpanda-io/browser": [
+    "AI工具",
+    "开发工具"
+  ],
+  "pascalorg/editor": [
+    "设计",
+    "Agent",
+    "AI工具"
+  ],
+  "ayghri/i-have-adhd": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "browser-use/browser-use": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "viarotel-org/escrcpy": [
+    "移动",
+    "系统工具"
+  ],
+  "openai/plugins": [
+    "Agent",
+    "AI工具",
+    "大模型"
+  ],
+  "Tencent/teamai-cli": [
+    "AI工具",
+    "开发工具"
+  ],
+  "earthtojake/text-to-cad": [
+    "Agent",
+    "设计",
+    "AI工具"
+  ],
+  "liquidslr/system-design-notes": [
+    "笔记",
+    "阅读"
+  ],
+  "vastsa/PI-Desktop": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "nab138/iloader": [
+    "移动",
+    "系统工具"
+  ],
+  "melgarafael/DeskcommCRM": [
+    "Agent",
+    "AI工具"
+  ],
+  "armory3d/armorpaint": [
+    "设计",
+    "图片"
+  ],
+  "alsk1992/CloddsBot": [
+    "Agent",
+    "AI工具",
+    "大模型"
+  ],
+  "nashsu/llm_wiki": [
+    "AI工具",
+    "大模型",
+    "笔记",
+    "文档"
+  ],
+  "Sonarr/Sonarr": [
+    "视频",
+    "系统工具"
+  ],
+  "jihe520/MathModelAgent": [
+    "Agent",
+    "AI工具",
+    "写作",
+    "教育"
+  ],
+  "p1neappleXpress/OpenFlux": [
+    "开发工具",
+    "系统工具"
+  ],
+  "jordan-gibbs/hyperresearch": [
+    "Agent",
+    "AI工具",
+    "笔记"
+  ],
+  "alphaXiv/OpenResearch": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "asgeirtj/system_prompts_leaks": [
+    "大模型",
+    "AI工具",
+    "信息源"
+  ],
+  "Flowseal/zapret-discord-youtube": [
+    "安全",
+    "系统工具"
+  ],
+  "yuliskov/SmartTube": [
+    "视频",
+    "音视频",
+    "移动"
+  ],
+  "SnailSploit/Claude-Red": [
+    "安全",
+    "Agent",
+    "大模型"
+  ],
+  "multimodal-art-projection/YuE": [
+    "音视频",
+    "Agent",
+    "大模型",
+    "AI工具"
+  ],
+  "max-sixty/worktrunk": [
+    "开发工具",
+    "Agent",
+    "AI工具"
+  ],
+  "vxcontrol/pentagi": [
+    "Agent",
+    "安全",
+    "AI工具"
+  ],
+  "JustVugg/colibri": [
+    "大模型",
+    "AI工具"
+  ],
+  "alibaba/open-code-review": [
+    "开发工具",
+    "Agent",
+    "AI工具",
+    "安全"
+  ],
+  "666ghj/MiroFish": [
+    "Agent",
+    "AI工具"
+  ],
+  "Panniantong/Agent-Reach": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "rlaope/oh-my-hermes": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "ruvnet/RuView": [
+    "安全",
+    "AI工具"
+  ],
+  "tech-leads-club/agent-skills": [
+    "Agent",
+    "开发工具",
+    "AI工具"
+  ],
+  "OpenBMB/VoxCPM": [
+    "AI工具",
+    "大模型",
+    "音视频"
+  ],
+  "huggingface/transformers": [
+    "大模型",
+    "AI工具",
+    "开发工具"
+  ],
+  "ever-co/ever-gauzy": [],
+  "Crosstalk-Solutions/project-nomad": [
+    "教育",
+    "阅读",
+    "信息源"
+  ],
+  "reconurge/flowsint": [
+    "安全",
+    "数据"
+  ],
+  "peetzweg/opendisplay": [
+    "系统工具",
+    "移动"
+  ],
+  "Homebrew/BrewUI": [
+    "系统工具",
+    "开发工具"
+  ],
+  "danny-avila/LibreChat": [
+    "AI工具",
+    "大模型",
+    "Agent"
+  ],
+  "MG1937/ASC": [
+    "Agent",
+    "移动",
+    "安全",
+    "开发工具"
+  ],
+  "tonhowtf/omniget": [
+    "音视频",
+    "视频",
+    "阅读",
+    "教育"
+  ],
+  "earendil-works/pi": [
+    "Agent",
+    "开发工具",
+    "大模型",
+    "AI工具"
+  ],
+  "cloudflare/security-audit-skill": [
+    "Agent",
+    "安全",
+    "开发工具",
+    "AI工具"
+  ],
+  "Tencent/BrowserSkill": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "anthropics/knowledge-work-plugins": [
+    "Agent",
+    "AI工具",
+    "大模型"
+  ],
+  "Tencent/WeKnora": [
+    "Agent",
+    "大模型",
+    "AI工具",
+    "文档"
+  ],
+  "abue-ammar/tinycast": [
+    "系统工具"
+  ],
+  "cilium/cilium": [
+    "安全",
+    "运维",
+    "系统工具"
+  ],
+  "jamiepine/voicebox": [
+    "AI工具",
+    "音视频"
+  ],
+  "roboflow/supervision": [
+    "AI工具",
+    "开发工具",
+    "图片",
+    "视频"
+  ],
+  "TencentCloud/Octop": [
+    "Agent",
+    "AI工具"
+  ],
+  "cline/cline": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "coder/coder": [
+    "开发工具",
+    "运维",
+    "安全",
+    "Agent"
+  ],
+  "Fission-AI/OpenSpec": [
+    "AI工具",
+    "开发工具"
+  ],
+  "ankitects/anki": [
+    "教育",
+    "笔记"
+  ],
+  "supermemoryai/supermemory": [
+    "AI工具",
+    "大模型",
+    "笔记",
+    "开发工具"
+  ],
+  "tradesdontlie/tradingview-mcp": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "rustfs/rustfs": [
+    "数据",
+    "系统工具",
+    "运维"
+  ],
+  "supabase/supabase": [
+    "开发工具",
+    "数据",
+    "运维"
+  ],
+  "ahmedkhaleel2004/gitdiagram": [
+    "开发工具",
+    "文档"
+  ],
+  "BuilderIO/agent-native": [
+    "Agent",
+    "开发工具",
+    "AI工具"
+  ],
+  "trycua/cua": [
+    "Agent",
+    "AI工具",
+    "大模型",
+    "开发工具"
+  ],
+  "Open-Dev-Society/OpenStock": [
+    "数据",
+    "信息源"
+  ],
+  "anthropics/financial-services": [
+    "大模型",
+    "AI工具"
+  ],
+  "cloudflare/quiche": [
+    "开发工具",
+    "系统工具"
+  ],
+  "mvt-project/mvt": [
+    "安全",
+    "移动"
+  ],
+  "zhouxiaoka/autoclip": [
+    "视频",
+    "AI工具"
+  ],
+  "ruanyf/weekly": [
+    "信息源",
+    "阅读"
+  ],
+  "yynxxxxx/Codex-X": [
+    "Agent",
+    "AI工具",
+    "开发工具",
+    "大模型"
+  ],
+  "agent-substrate/substrate": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "dream-num/univer": [
+    "Agent",
+    "文档",
+    "前端",
+    "开发工具"
+  ],
+  "davila7/claude-code-templates": [
+    "开发工具",
+    "AI工具",
+    "大模型"
+  ],
+  "google/ax": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "superdesigndev/treg": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "browser-use/video-use": [
+    "视频",
+    "Agent",
+    "AI工具"
+  ],
+  "strands-agents/harness-sdk": [
+    "Agent",
+    "开发工具",
+    "AI工具",
+    "大模型"
+  ],
+  "pbakaus/impeccable": [
+    "Agent",
+    "设计",
+    "AI工具",
+    "开发工具"
+  ],
+  "DeusData/codebase-memory-mcp": [
+    "Agent",
+    "开发工具",
+    "AI工具"
+  ],
+  "harry7557558/spirula-studio": [
+    "AI工具",
+    "视频"
+  ],
+  "TNT-Likely/PanWatch": [
+    "Agent",
+    "AI工具"
+  ],
+  "vectorize-io/hindsight": [
+    "Agent",
+    "AI工具",
+    "大模型"
+  ],
+  "NVIDIA/Model-Optimizer": [
+    "AI工具",
+    "大模型",
+    "开发工具"
+  ],
+  "FxEmbed/FxEmbed": [
+    "图片",
+    "视频"
+  ],
+  "julyx10/lap": [
+    "图片",
+    "系统工具"
+  ],
+  "leejet/stable-diffusion.cpp": [
+    "AI工具",
+    "大模型",
+    "图片",
+    "开发工具"
+  ],
+  "androoAGI/starnet": [
+    "Agent",
+    "AI工具"
+  ],
+  "derv82/wifit3": [
+    "安全",
+    "系统工具"
+  ],
+  "kelseyhightower/kubernetes-the-hard-way": [
+    "运维",
+    "教育",
+    "文档"
+  ],
+  "shy3130/tick-stock-panel": [
+    "数据",
+    "大模型",
+    "AI工具"
+  ],
+  "openbao/openbao": [
+    "安全",
+    "运维"
+  ],
+  "tensorflow/tensorflow": [
+    "AI工具",
+    "开发工具"
+  ],
+  "microsoft/vscode": [
+    "开发工具"
+  ],
+  "llvm/llvm-project": [
+    "开发工具",
+    "系统工具"
+  ],
+  "anthropics/claude-code-action": [
+    "Agent",
+    "AI工具",
+    "开发工具",
+    "大模型"
+  ],
+  "actions/runner-images": [
+    "运维",
+    "开发工具"
+  ],
+  "mobile-next/mobile-mcp": [
+    "Agent",
+    "移动",
+    "开发工具",
+    "AI工具"
+  ],
+  "vercel/next.js": [
+    "前端",
+    "开发工具"
+  ],
+  "InfinityLoop1308/PipePipe": [
+    "移动",
+    "视频",
+    "音视频"
+  ],
+  "vercel-labs/scriptc": [
+    "开发工具",
+    "前端"
+  ],
+  "mvschwarz/openrig": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "willfaust/Madeira": [
+    "游戏",
+    "移动",
+    "系统工具"
+  ],
+  "cs341-illinois/coursebook": [
+    "教育",
+    "文档",
+    "阅读"
+  ],
+  "byoungd/up": [
+    "英语",
+    "教育",
+    "文档"
+  ],
+  "NVIDIA/OpenShell": [
+    "Agent",
+    "安全",
+    "AI工具",
+    "开发工具"
+  ],
+  "t8y2/dbx": [
+    "数据",
+    "开发工具",
+    "Agent",
+    "AI工具"
+  ],
+  "oblien/openship": [
+    "运维",
+    "开发工具"
+  ],
+  "VectifyAI/PageIndex": [
+    "AI工具",
+    "大模型",
+    "数据"
+  ],
+  "rakyll/hey": [
+    "开发工具",
+    "运维"
+  ],
+  "firebase/firebase-ios-sdk": [
+    "移动",
+    "开发工具"
+  ],
+  "tile-ai/tilelang": [
+    "开发工具",
+    "系统工具"
+  ],
+  "pablostanley/yoinks": [
+    "视频",
+    "音视频",
+    "系统工具"
+  ],
+  "HunxByts/GhostTrack": [
+    "安全",
+    "系统工具"
+  ],
+  "Friedrich-M/UniMate": [
+    "AI工具",
+    "游戏"
+  ],
+  "Effect-TS/effect": [
+    "开发工具",
+    "前端"
+  ],
+  "pingdotgg/t3code": [],
+  "cloudflare/cloudflare-os": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "getsentry/sentry": [
+    "开发工具",
+    "运维"
+  ],
+  "jamwithai/production-agentic-rag-course": [
+    "Agent",
+    "教育",
+    "大模型"
+  ],
+  "meituan-longcat/LongCat-Video": [
+    "视频",
+    "大模型"
+  ],
+  "tester-army/e2e": [
+    "开发工具",
+    "前端",
+    "移动"
+  ],
+  "caddyserver/caddy": [
+    "运维",
+    "开发工具"
+  ],
+  "michael-denyer/pstack-claude": [
+    "Agent",
+    "开发工具",
+    "AI工具"
+  ],
+  "garrytan/gstack": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "antirez/ds4": [
+    "大模型",
+    "AI工具"
+  ],
+  "boykopovar/AnyPS5": [
+    "游戏",
+    "开发工具",
+    "系统工具"
+  ],
+  "DuarteSantos8/openGym": [
+    "笔记",
+    "数据"
+  ],
+  "Stremio/stremio-web": [
+    "视频",
+    "音视频",
+    "前端"
+  ],
+  "M-Abozaid/esp32-c3-adblock": [
+    "安全",
+    "系统工具"
+  ],
+  "morluto/rea": [
+    "Agent",
+    "安全",
+    "AI工具"
+  ],
+  "deepseek-ai/DeepGEMM": [
+    "开发工具",
+    "AI工具",
+    "大模型"
+  ],
+  "EpicGames/raddebugger": [
+    "开发工具",
+    "系统工具"
+  ],
+  "manaflow-ai/cmux": [
+    "开发工具",
+    "Agent",
+    "AI工具",
+    "系统工具"
+  ],
+  "storytold/artcraft": [
+    "设计",
+    "视频"
+  ],
+  "BerriAI/litellm": [
+    "大模型",
+    "AI工具",
+    "开发工具"
+  ],
+  "Robbyant/lingbot-map": [
+    "AI工具"
+  ],
+  "twostraws/SwiftUI-Agent-Skill": [
+    "Agent",
+    "AI工具",
+    "开发工具",
+    "移动"
+  ],
+  "flutter/flutter": [
+    "开发工具",
+    "移动",
+    "前端"
+  ],
+  "pytorch/pytorch": [
+    "AI工具",
+    "开发工具"
+  ],
+  "lyogavin/airllm": [
+    "大模型",
+    "AI工具"
+  ],
+  "chrislgarry/Apollo-11": [],
+  "vercel-labs/skills": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "xtool-org/xtool": [
+    "开发工具",
+    "移动"
+  ],
+  "nvm-sh/nvm": [
+    "开发工具",
+    "系统工具"
+  ],
+  "ifixai-ai/iFixAi": [
+    "Agent",
+    "AI工具",
+    "安全"
+  ],
+  "rust-lang/rust": [
+    "开发工具"
+  ],
+  "ntdevlabs/tiny11builder": [
+    "系统工具"
+  ],
+  "lightseekorg/tokenspeed": [
+    "大模型",
+    "AI工具",
+    "开发工具"
+  ],
+  "xerj-org/xerj": [
+    "Agent",
+    "AI工具",
+    "数据",
+    "开发工具"
+  ],
+  "android/skills": [
+    "移动",
+    "Agent"
+  ],
+  "hmjz100/LinkSwift": [
+    "系统工具"
+  ],
+  "headroomlabs-ai/headroom": [
+    "Agent",
+    "大模型",
+    "AI工具",
+    "开发工具"
+  ],
+  "withmarbleapp/os-taxonomy": [
+    "数据"
+  ],
+  "Kruk2/jasna": [
+    "视频"
+  ],
+  "vllm-project/vllm": [
+    "大模型",
+    "AI工具",
+    "开发工具"
+  ],
+  "twentyhq/twenty": [
+    "AI工具",
+    "数据"
+  ],
+  "strelov1/freehire": [
+    "信息源"
+  ],
+  "Graphify-Labs/graphify": [
+    "Agent",
+    "开发工具",
+    "AI工具",
+    "数据"
+  ],
+  "php/php-src": [
+    "开发工具"
+  ],
+  "fastapi/fastapi": [
+    "开发工具"
+  ],
+  "luongnv89/claude-howto": [
+    "Agent",
+    "大模型",
+    "AI工具",
+    "文档"
+  ],
+  "Meloong-Git/PCL": [
+    "游戏"
+  ],
+  "Renhuai123/ziwei-doushu": [
+    "开发工具",
+    "数据"
+  ],
+  "nodejs/node": [
+    "开发工具",
+    "前端"
+  ],
+  "aws/agent-toolkit-for-aws": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "Nutlope/hallmark": [
+    "Agent",
+    "设计",
+    "AI工具",
+    "开发工具"
+  ],
+  "pollen-robotics/microduck": [],
+  "google-gemini/gemini-cli": [
+    "Agent",
+    "大模型",
+    "AI工具",
+    "开发工具"
+  ],
+  "jbiaojerry/ebook-treasure-chest": [
+    "阅读",
+    "信息源"
+  ],
+  "makecindy/cindy": [
+    "Agent",
+    "AI工具"
+  ],
+  "JetBrains/thinkrail": [
+    "开发工具",
+    "AI工具"
+  ],
+  "coollabsio/coolify": [
+    "运维",
+    "开发工具"
+  ],
+  "AgriciDaniel/claude-seo": [
+    "Agent",
+    "AI工具",
+    "大模型",
+    "开发工具"
+  ],
+  "NVIDIA/SkillSpector": [
+    "安全",
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "nightly-labs/openbot": [
+    "Agent",
+    "AI工具",
+    "大模型",
+    "开发工具"
+  ],
+  "gitroomhq/postiz-app": [
+    "Agent",
+    "AI工具"
+  ],
+  "alchaincyf/huashu-design": [
+    "Agent",
+    "设计",
+    "AI工具",
+    "前端"
+  ],
+  "elayadesign/ai-design-skills": [
+    "Agent",
+    "设计",
+    "AI工具"
+  ],
+  "HKUDS/DeepTutor": [
+    "教育",
+    "AI工具",
+    "Agent"
+  ],
+  "togg53192-cmd/jailbreaks": [
+    "安全"
+  ],
+  "expo/skills": [
+    "Agent",
+    "开发工具",
+    "移动"
+  ],
+  "xiaolai/the-craft-of-selfteaching": [
+    "教育",
+    "阅读",
+    "文档"
+  ],
+  "milind-soni/OpenMausBot": [
+    "Agent",
+    "AI工具",
+    "大模型"
+  ],
+  "CopilotKit/OpenBot": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "Donchitos/Claude-Code-Game-Studios": [
+    "Agent",
+    "游戏",
+    "开发工具",
+    "AI工具"
+  ],
+  "Orkas-AI/Orkas": [
+    "Agent",
+    "AI工具"
+  ],
+  "bregman-arie/devops-exercises": [
+    "运维",
+    "教育",
+    "文档"
+  ],
+  "vorssaint/vorssaint-utils": [
+    "系统工具"
+  ],
+  "PrimeIntellect-ai/prime-agent": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "vitali87/code-graph-rag": [
+    "AI工具",
+    "大模型",
+    "开发工具"
+  ],
+  "TencentCloud/TencentDB-Agent-Memory": [
+    "Agent",
+    "AI工具",
+    "大模型",
+    "数据"
+  ],
+  "cloudflare/computer": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "google/skills": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "google-deepmind/weathernext": [
+    "AI工具",
+    "科学实验"
+  ],
+  "OpenWhispr/openwhispr": [
+    "AI工具",
+    "音视频",
+    "系统工具"
+  ],
+  "humanlayer/skills": [
+    "Agent",
+    "AI工具"
+  ],
+  "petergyang/no-ai-slop": [
+    "写作",
+    "AI工具"
+  ],
+  "alirezarezvani/claude-skills": [
+    "Agent",
+    "AI工具",
+    "开发工具",
+    "大模型"
+  ],
+  "ranxianglei/billion-context": [
+    "大模型",
+    "AI工具",
+    "开发工具"
+  ],
+  "jakubkrehel/skills": [
+    "Agent",
+    "前端",
+    "AI工具"
+  ],
+  "Leonxlnx/taste-skill": [
+    "Agent",
+    "AI工具",
+    "设计",
+    "前端"
+  ],
+  "YuJunZhiXue/dsh-purge": [
+    "大模型",
+    "安全",
+    "AI工具"
+  ],
+  "AstrBotDevs/AstrBot": [
+    "Agent",
+    "AI工具",
+    "大模型",
+    "开发工具"
+  ],
+  "ginobefun/BestBlogs": [
+    "信息源",
+    "阅读",
+    "大模型",
+    "AI工具"
+  ],
+  "smithjohn78390/tongjiang-lab": [
+    "教育",
+    "科学实验"
+  ],
+  "margrop/wrong-notebook": [
+    "教育",
+    "AI工具"
+  ],
+  "xiaoyang111222/cn-math-taxonomy": [
+    "教育",
+    "中小学"
+  ],
+  "ywEdAi/teachable-figures": [
+    "教育",
+    "AI可视化"
+  ],
+  "designfuchen/word-atlas": [
+    "英语",
+    "教育"
+  ],
+  "cjpais/Handy": [
+    "音视频",
+    "AI工具",
+    "系统工具"
+  ],
+  "kornia/kornia": [
+    "AI工具",
+    "开发工具",
+    "图片"
+  ],
+  "beenuar/AiSOC": [
+    "安全",
+    "Agent",
+    "AI工具",
+    "大模型"
+  ],
+  "anomalyco/hex": [
+    "音视频",
+    "系统工具"
+  ],
+  "patchy631/ai-engineering-hub": [
+    "大模型",
+    "Agent",
+    "教育"
+  ],
+  "FlashML-org/FreeToken": [
+    "大模型",
+    "AI工具",
+    "系统工具"
+  ],
+  "hyprwm/Hyprland": [
+    "系统工具"
+  ],
+  "ghostty-org/ghostty": [
+    "开发工具",
+    "系统工具"
+  ]
+}
