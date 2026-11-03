@@ -48,5 +48,12 @@
   "patchy631/ai-engineering-hub": "深入讲解大语言模型（LLM）、检索增强生成（RAG）与真实世界 AI 智能体应用的教程合集。",
   "FlashML-org/FreeToken": "FreeToken 将数据中心级别的模型服务带到你的桌面：在本地快速、高效地运行超大规模模型。",
   "hyprwm/Hyprland": "Hyprland 是一个独立、高度可定制、动态的平铺式 Wayland 合成器，且不牺牲视觉美观。",
-  "ghostty-org/ghostty": "👻 Ghostty 是一款快速、功能丰富且跨平台的终端模拟器，采用平台原生界面与 GPU 加速。"
+  "ghostty-org/ghostty": "👻 Ghostty 是一款快速、功能丰富且跨平台的终端模拟器，采用平台原生界面与 GPU 加速。",
+  "JustVugg/colibri": "在你已有的硬件上运行前沿 MoE 模型——纯 C 语言、零依赖，专家层从磁盘流式加载。引擎极小，模型极大。🐦",
+  "max-sixty/worktrunk": "Worktrunk 是一款用于 Git worktree 管理的命令行工具，专为并行的 AI 智能体工作流而生。",
+  "paperclipai/paperclip": "人人都在用的开源应用，用来在工作中管理智能体。",
+  "vercel-labs/agent-desktop": "面向 AI 智能体的计算机操作（Computer Use）命令行工具。",
+  "D4Vinci/Scrapling": "🕷️ 最强大的网页抓取框架，从单次请求到大规模爬虫无所不包！",
+  "karpathy/nanochat": "花 100 美元能买到的最好的 ChatGPT。",
+  "p-e-w/heretic": "免训练的大语言模型修改：移除审查、抑制低质内容（slop）、减少谄媚，以及更多。"
 }

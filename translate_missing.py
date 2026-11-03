@@ -307,6 +307,11 @@ MY_ZH = {
     "FlashML-org/FreeToken": "FreeToken 将数据中心级别的模型服务带到你的桌面：在本地快速、高效地运行超大规模模型。",
     "hyprwm/Hyprland": "Hyprland 是一个独立、高度可定制、动态的平铺式 Wayland 合成器，且不牺牲视觉美观。",
     "ghostty-org/ghostty": "👻 Ghostty 是一款快速、功能丰富且跨平台的终端模拟器，采用平台原生界面与 GPU 加速。",
+    # 2026-11-03 日榜新增
+    "vercel-labs/agent-desktop": "面向 AI 智能体的计算机操作（Computer Use）命令行工具。",
+    "D4Vinci/Scrapling": "🕷️ 最强大的网页抓取框架，从单次请求到大规模爬虫无所不包！",
+    "karpathy/nanochat": "花 100 美元能买到的最好的 ChatGPT。",
+    "p-e-w/heretic": "免训练的大语言模型修改：移除审查、抑制低质内容（slop）、减少谄媚，以及更多。",
 }
 
 

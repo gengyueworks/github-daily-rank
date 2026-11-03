@@ -270,3 +270,12 @@
 - **部署**：`bash deploy_ghpages.sh`（经代理）成功，输出 DONE 链接。本地 `site/` 由脚本末尾复原。线上复测：首页 / daily / weekly 三页均 **200**（无传播延迟）。
 - **结论**：当日上榜 日榜 14 + 周榜 15；数据/翻译/站点已生成并推送 `origin/main`，线上链接更新成功（200）。
 - **环境要点（新观察）**：本网络时段**本地代理 127.0.0.1:21879 恢复可用**（curl 经代理 github 200，~2.4s），而**未 pin 直连与 IP-pin 的 github.com 均超时（000）**——与 10-30「代理 refused、直连可用」相反。故本日 scraper 与 git/gh 部署均经 `HTTPS_PROXY=http://127.0.0.1:21879` 代理执行成功。若日后代理再 refused，需回退到 IP-pin 或直连策略；运行 `unset` 代理本日无效（直连不通）。
+
+## 2026-11-02 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`）经**本地代理 127.0.0.1:21879**（curl 经代理 github 200；本日直连 github 亦 200，二者皆通）首跑成功。日榜 `data/daily/2026-11-02.json` = 17 个仓库；周榜 `data/weekly/2026-11-02.json`（本周一 1102，新周一）= 16 个仓库。
+- **翻译**：首轮 `translate_missing.py` 命中 zh_cache/MY_ZH 补 日 9 + 周 23；余 8 个新仓库（cjpais/Handy、kornia/kornia、beenuar/AiSOC、anomalyco/hex、patchy631/ai-engineering-hub、FlashML-org/FreeToken、hyprwm/Hyprland、ghostty-org/ghostty）人工校对中译写入 `MY_ZH`（标 2026-11-02 注释）并重跑，最终日榜 17 中 16、周榜 16 中 15 全部有 `description_zh`；唯一缺口 `pingdotgg/t3code`（日/周均上榜）上游英文简介为空，无译可补（与历史 10-03~11-01 同因），非漏译。
+- **生成**：`build.py` 重建 `site/daily/2026-11-02.html`、`site/weekly/2026-11-02.html`、`site/index.html`、`site/classics/index.html`（ainews 双语风格）。
+- **部署**：`origin/main` 当时已由并行自动化 ...629 推进到 `58f057f`（仅动 classics.json + 其内部 `.workbuddy` memory，未动本日 data）。预处理——备份当日 data 到 `/tmp/ghrank_backup` → 暂移 ...629 内部 memory 目录到 `/tmp/ghrank_629_mem`（避免 `git add -A` 误提交内部 memory）→ `bash deploy_ghpages.sh`（经代理）顺过：`git pull --rebase --autostash -X ours origin main` 干净快进 → `git add -A`（含本日 data/translate_missing.py/zh_cache.json）→ commit `cc6b53a` → push main → gh-pages orphan 推送成功，输出 DONE 链接 → 还原 ...629 目录（cp -rn 不覆盖远端版本）→ 本地 `site/` 由脚本末尾从 `/tmp/ghrank_pages` 复原。
+- **线上复测**：首测 index 200、daily / weekly 404（GitHub Pages 传播延迟）；等约 50 秒后 daily / weekly 均转为 200，三页全部 200。
+- **结论**：当日上榜 日榜 17 + 周榜 16；数据/翻译/站点已生成并推送 `origin/main`（`cc6b53a`），线上链接更新成功（200）。
+- **环境要点（稳定）**：本日代理与直连均可用；scraper 经代理（HTTPS_PROXY 在环境已设）成功，git/gh 部署同样经代理成功。运行前无需 unset 代理（与 11-01 一致）。`.workbuddy/` 未被 .gitignore 忽略，部署前务必暂移 ...629 内部 memory 目录，否则会被 `git add -A` 误提交进公开仓库。
