@@ -312,6 +312,9 @@ MY_ZH = {
     "D4Vinci/Scrapling": "🕷️ 最强大的网页抓取框架，从单次请求到大规模爬虫无所不包！",
     "karpathy/nanochat": "花 100 美元能买到的最好的 ChatGPT。",
     "p-e-w/heretic": "免训练的大语言模型修改：移除审查、抑制低质内容（slop）、减少谄媚，以及更多。",
+    # 2026-11-04 日榜新增
+    "floci-io/floci": "轻量、流畅且永久免费——AWS 本地模拟器的替代方案。",
+    "Usagi-org/ai-goofish-monitor": "基于 Playwright 与 AI 实现的闲鱼多任务实时 / 定时监控与智能分析系统，配备功能完善的后台管理 UI，帮助用户从闲鱼海量商品中快速找到心仪产品。",
 }
 
 

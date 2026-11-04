@@ -279,3 +279,12 @@
 - **线上复测**：首测 index 200、daily / weekly 404（GitHub Pages 传播延迟）；等约 50 秒后 daily / weekly 均转为 200，三页全部 200。
 - **结论**：当日上榜 日榜 17 + 周榜 16；数据/翻译/站点已生成并推送 `origin/main`（`cc6b53a`），线上链接更新成功（200）。
 - **环境要点（稳定）**：本日代理与直连均可用；scraper 经代理（HTTPS_PROXY 在环境已设）成功，git/gh 部署同样经代理成功。运行前无需 unset 代理（与 11-01 一致）。`.workbuddy/` 未被 .gitignore 忽略，部署前务必暂移 ...629 内部 memory 目录，否则会被 `git add -A` 误提交进公开仓库。
+
+## 2026-11-03 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`，经本地代理 127.0.0.1:21879）成功。日榜 `data/daily/2026-11-03.json` = 15 个仓库；周榜 `data/weekly/2026-11-02.json`（本周一 1102）= 16 个仓库。
+- **翻译**：首轮 `translate_missing.py` 命中 zh_cache/MY_ZH 补 日 10 + 周 25；余 4 个日榜新仓库（vercel-labs/agent-desktop、D4Vinci/Scrapling、karpathy/nanochat、p-e-w/heretic）人工校对中译写入 `MY_ZH`（标 2026-11-03 注释）并重跑，最终日榜 15 中 14、周榜 16 中 15 全部有 `description_zh`；唯一缺口 `pingdotgg/t3code`（日/周均上榜）上游英文简介为空，无译可补（与历史 10-03~11-02 同因），非漏译。
+- **生成**：`build.py` 重建 `site/daily/2026-11-03.html`、`site/weekly/2026-11-02.html`、`site/index.html`、`site/classics/index.html`（ainews 双语风格）。
+- **部署波折（已解决）**：首跑 `bash deploy_ghpages.sh` 因 `git pull --rebase --autostash` 的 autostash pop 在 `data/weekly/2026-11-02.json` 产生冲突标记（`<<<<<<< Updated upstream` vs `>>>>>>> Stashed changes`，无 rebase 目录，残留 2 个 autostash）而中止（未动数据）。根因：并行自动化 ...629 在抓取/部署窗口内推送了同日周榜新版本，与本地修改在 autostash 还原时碰撞。解法：丢弃 2 个 autostash → 用 `/tmp/ghrank_backup` 干净译本覆盖写回日/周榜、translate_missing.py、zh_cache.json → 本地 `git add` 数据+脚本+本自动化 memory.md 并 `commit`（`7172629`，使 weekly 转为 tracked 且版本权威，规避未跟踪同名碰撞）→ 暂移 ...629 内部 memory 目录到 `/tmp/ghrank_629_mem` → 二跑 `bash deploy_ghpages.sh`（rebase 顺过，`git add -A` 无新增，push main + gh-pages orphan 均成功，DONE 链接）→ 还原 ...629 目录 → 本地 `site/` 由脚本末尾从 `/tmp/ghrank_pages` 复原。
+- **部署**：成功。本地 `site/` 复原；`origin/main` 与本地同步（0/0）；gh-pages 推送 commit `ca759c8`（"site: publish static reports to GitHub Pages"）。线上复测：首页 / daily / weekly 三页均 **200**（无传播延迟），daily 页含 `2026-11-03` 当日内容。
+- **结论**：当日上榜 日榜 15 + 周榜 16；数据/翻译/站点已生成并推送 `origin/main`（`7172629`），线上链接更新成功（200）。
+- **环境要点（稳定）**：代理与直连均可用；scraper 与 git/gh 部署经代理成功。`.workbuddy/` 未被 .gitignore 忽略，部署前务必暂移 ...629 内部 memory 目录，否则会被 `git add -A` 误提交进公开仓库。经实践确认：遇 autostash pop 冲突时，先 `git stash drop` 清残留 → 用备份覆盖写回 → 本地先 `commit` 使数据 tracked/权威 → 再跑 deploy，可彻底规避反复 autostash 碰撞。
