@@ -19,7 +19,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "让你的 AI Agent 像全场最懒的高级开发一样思考。最好的代码，是你从未写过的代码。",
+      "description_zh": "让你的 AI Agent 像全场最懒的高级开发一样思考。最好的代码就是你从未写过的代码。",
       "script_zh": "这个项目能让你的 AI 助手瞬间变成办公室里最懒的资深开发。\n它专门解决 AI 喜欢胡乱堆砌代码的毛病。\n只要用上它，AI 就会想方设法用最少、最聪明的代码来搞定需求。\n\n毕竟最牛的代码就是你根本不用写的代码。\n它能帮你省掉以后重构和维护的无尽痛苦，难怪在 GitHub 上直接狂斩十一万颗星！\n想让你的 AI 别再瞎写垃圾代码了，赶紧去试试它吧！",
       "tags": [
         "Agent",
@@ -90,7 +90,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "开发工具",
-      "description_zh": "使用 TypeScript 构建生产级应用",
+      "description_zh": "用 TypeScript 构建生产级应用",
       "script_zh": "这个项目是一个专门为 TypeScript 打造的全能标准库。\n简单说，它就是 TS 复杂应用的终极基础设施。\n\n平时写代码，最怕异步报错查不到，或者依赖注入写得乱七八糟？\n它帮你用纯函数式的方式，把异常处理、并发控制全搞定了。\n\n最牛的是它的类型推导，连代码会抛出什么错误都能在编译时精准提示！\n有了它，大型项目不仅稳如泰山，写起来也特别爽快。",
       "tags": [
         "开发工具",
@@ -112,7 +112,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "🪨 少词能办事，何须多费词 —— 通过像原始人一样说话，为 Claude Code 减少 65% Token 消耗的技能。",
+      "description_zh": "🪨 少字管用，何必多费 Token —— 模仿原始人说话，立省 65% Token 的 Claude Code 技能",
       "script_zh": "用 Claude 编程觉得 Token 消耗太快？\n\n这个项目能帮你省下大钱！\n\n它其实是一个给 Claude Code 准备的“原始人说话”提示词。\n\n只要让 AI 像原始人一样只说关键词，就能直接砍掉六成以上的 Token。\n\n你不用担心它变笨，它写出来的代码依然非常靠谱。\n\n花最少的钱办最硬核的事，这绝对是省钱流的终极外挂！\n\n赶紧去给你的 AI 安排上吧！",
       "tags": [
         "Agent",
@@ -136,7 +136,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "为你的 AI Agent 赋予洞悉全网的双眼。阅读与检索 Twitter、Reddit、YouTube、GitHub、B站、小红书——单一 CLI，零 API 费用。",
+      "description_zh": "为你的 AI Agent 装上探索全网的双眼。阅读与搜索 Twitter、Reddit、YouTube、GitHub、B站、小红书——一个 CLI，零 API 费用。",
       "script_zh": "简单说，这个项目能给你的 AI 智能体装上一双看清全网的眼睛。\n无论是 Twitter、Reddit，还是 B 站和小红书，它都能直接读取搜索。\n\n以前给 AI 喂实时数据，对接各种官方 API 既繁琐又昂贵。\n现在在命令行敲一行命令，它就能帮 AI 一键抓取全网内容。\n\n最绝的是它完全免 API 费用，直接帮你省下一大笔钱！\n零成本打通国内外主流平台，8 万多星的硬核项目值得赶紧关注。",
       "tags": [
         "Agent",
@@ -200,7 +200,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "基于 Cloudflare Workers 构建的 Agent 工作区，可结合企业上下文与系统，用于创建文档、构建应用及运行智能体。",
+      "description_zh": "基于 Cloudflare Workers 构建的智能体工作区，可结合企业上下文与业务系统，用于创建文档、构建应用及运行智能体。",
       "script_zh": "这个项目是一个基于 Cloudflare 的 AI Agent 工作台。\n它能结合你公司的内部数据，直接用 AI 写文档、搭应用，还能运行各种智能 Agent。\n\n以前想搞企业级 AI 工作流，搭环境麻烦不说，成本还特别高。\n而它直接跑在边缘网络上，不仅响应极快，部署也非常简单。\n\n既能安全调用私有上下文，又能极速落地 AI 应用，绝对值得关注。",
       "tags": [
         "Agent",
@@ -292,7 +292,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "面向 AI 编程智能体的上下文窗口优化工具。支持沙箱化隔离工具输出（体积缩减 98%）、持久化会话记忆，并通过 MCP + hooks 在 17 个平台上实现路由控制。",
+      "description_zh": "面向 AI 编程智能体的上下文窗口优化工具。支持工具输出沙盒隔离（缩减 98% 体积）、会话记忆持久化，并通过 MCP 与 Hook 在 17 个平台间实现统一路由。",
       "script_zh": "用 AI 写代码最怕上下文被垃圾日志塞爆。\n这个项目就是专门给 AI 编程助手做上下文瘦身的利器。\n\n它把工具运行的中间输出隔离在沙盒里，直接帮上下文省下 98% 的空间！\n还能帮你记住会话记忆，自动跨 17 个平台调度能力。\n\n这意味着 Token 不会再白白浪费，AI 也不会动不动就失忆。\n斩获两万多星绝对有硬实力，用 AI 写的同学赶紧试试！",
       "tags": [
         "Agent",
@@ -316,7 +316,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "AI 智能体工具包：统一 LLM API、智能体循环、TUI 及编程智能体 CLI",
+      "description_zh": "AI 智能体工具包：统一的 LLM API、智能体循环、TUI 与编程智能体 CLI",
       "script_zh": "这个项目是一个超火的终端 AI Agent 工具包。\n它把各大模型的 API 统一封装成了命令行工具。\n\n让你直接在终端里就能让 AI 帮你写代码、跑任务。\n不管是复杂的 Agent 推理循环，还是终端交互界面，它全都帮你搞定了。\n\n斩获十万多星的开源爆款可不是开玩笑的。\n上手极快又省心，喜欢用命令行的朋友直接闭眼冲！",
       "tags": [
         "Agent",
@@ -362,7 +362,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "开发工具",
-      "description_zh": "Claude Code 是一款运行在终端中的智能编程工具。它能理解你的代码库，只需通过自然语言指令，即可帮你执行常规任务、解释复杂代码并处理 Git 工作流，助你大幅提升编码效率。",
+      "description_zh": "Claude Code 是一款常驻终端的智能体编程工具，能理解你的代码库，并通过自然语言指令执行日常任务、解释复杂代码及处理 Git 工作流，助你大幅提升编程效率。",
       "script_zh": "这个项目是直接住在你终端里的 AI 编程助手。\n\n你只需要用大白话下指令，它就能读懂你的整个代码库。\n\n不管是写日常代码、解释复杂逻辑，还是自动帮你提交 Git，它全都能搞定。\n\n最厉害的是，它是 Anthropic 官方出的，智商在线而且反应极快。\n\n你根本不用在编辑器和命令行之间来回切换，直接在终端里就能把活干完。\n\n难怪刚上线就狂揽了十四万颗星，赶紧去试试吧！",
       "tags": [
         "Agent",
@@ -429,7 +429,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "CapCut 的开源替代品",
+      "description_zh": "开源的 CapCut 替代品",
       "script_zh": "这个项目就是一个完全开源免费的剪映替代品。\n\n它不仅能帮你轻松剪辑视频，还能搞定特效和自动字幕。\n\n最重要的是它完全在本地运行，你再也不用担心隐私泄露。\n\n你也不用再被各种会员付费卡脖子了。\n\n它在 GitHub 上已经拿了八万多颗星，火爆程度不用多说！\n\n界面干净还没有任何广告，绝对是视频创作者的终极福利！",
       "tags": [
         "视频",

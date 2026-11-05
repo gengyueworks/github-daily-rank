@@ -134,7 +134,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "面向 Expo 项目和 Expo Application Services 的 AI Agent 技能集合",
+      "description_zh": "用于 Expo 项目和 Expo Application Services 的 AI Agent 技能合集",
       "script_zh": "这个项目是 Expo 官方为 AI 编程助手打造的一套技能包。\n它能直接教会你的 AI 怎么正经开发和打包移动端 App。\n\n平时让 AI 写原生配置或者搞云端构建，它经常瞎猜各种报错。\n现在有了它，AI 就能按官方最佳实践自动查日志、配环境甚至提交发版。\n\n最爽的是它是官方亲儿子，规则和命令完全同步最新生态。\n只要装上它，你的 AI 编码助手秒变熟练工，做跨端开发省心太多了！",
       "tags": [
         "Agent",

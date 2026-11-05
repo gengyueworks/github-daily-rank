@@ -1791,5 +1791,67 @@
   "ghostty-org/ghostty": [
     "开发工具",
     "系统工具"
+  ],
+  "vercel-labs/agent-desktop": [
+    "Agent",
+    "AI工具",
+    "开发工具",
+    "系统工具"
+  ],
+  "D4Vinci/Scrapling": [
+    "开发工具",
+    "数据"
+  ],
+  "karpathy/nanochat": [
+    "大模型",
+    "AI工具"
+  ],
+  "spotify/portal-ai-plugins": [
+    "AI工具",
+    "开发工具"
+  ],
+  "floci-io/floci": [
+    "开发工具",
+    "运维"
+  ],
+  "Usagi-org/ai-goofish-monitor": [
+    "AI工具",
+    "系统工具",
+    "信息源"
+  ],
+  "NVIDIA/auto-ontology": [
+    "Agent",
+    "大模型",
+    "数据",
+    "开发工具"
+  ],
+  "The-PR-Agent/pr-agent": [
+    "Agent",
+    "AI工具",
+    "开发工具",
+    "大模型"
+  ],
+  "FareedKhan-dev/kimi-k3-in-c": [
+    "大模型",
+    "AI工具"
+  ],
+  "JiaFeiMiao-K-Cat/DiscImageStudio": [
+    "系统工具"
+  ],
+  "MichaelCade/90DaysOfDevOps": [
+    "运维",
+    "教育",
+    "文档"
+  ],
+  "Thysrael/Horizon": [
+    "AI工具",
+    "信息源",
+    "阅读"
+  ],
+  "scenario-labs/skills": [
+    "Agent",
+    "AI工具",
+    "音视频",
+    "图片"
   ]
 }
