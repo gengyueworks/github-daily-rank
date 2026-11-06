@@ -288,3 +288,12 @@
 - **部署**：成功。本地 `site/` 复原；`origin/main` 与本地同步（0/0）；gh-pages 推送 commit `ca759c8`（"site: publish static reports to GitHub Pages"）。线上复测：首页 / daily / weekly 三页均 **200**（无传播延迟），daily 页含 `2026-11-03` 当日内容。
 - **结论**：当日上榜 日榜 15 + 周榜 16；数据/翻译/站点已生成并推送 `origin/main`（`7172629`），线上链接更新成功（200）。
 - **环境要点（稳定）**：代理与直连均可用；scraper 与 git/gh 部署经代理成功。`.workbuddy/` 未被 .gitignore 忽略，部署前务必暂移 ...629 内部 memory 目录，否则会被 `git add -A` 误提交进公开仓库。经实践确认：遇 autostash pop 冲突时，先 `git stash drop` 清残留 → 用备份覆盖写回 → 本地先 `commit` 使数据 tracked/权威 → 再跑 deploy，可彻底规避反复 autostash 碰撞。
+
+## 2026-11-04 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`，经 `HTTPS_PROXY` 环境变量代理）成功。日榜 `data/daily/2026-11-04.json` = 13 个仓库；周榜 `data/weekly/2026-11-02.json`（本周一 1102）= 16 个仓库。
+- **翻译**：首轮 `translate_missing.py` 命中 zh_cache/MY_ZH 补 日 10 + 周 25；余 2 个日榜新仓库（`floci-io/floci` 英译中、`Usagi-org/ai-goofish-monitor` 上游描述本身已是中文）补入 `MY_ZH` 并重跑，最终日榜 13/13、周榜 16/16 全部有 `description_zh`，无空描述缺口。
+- **生成**：`build.py` 重建 `site/daily/2026-11-04.html`、`site/weekly/2026-11-02.html`、`site/index.html`、`site/classics/index.html`、`site/tags/index.html`（ainews 双语风格）。
+- **部署**：`origin/main` 与本机同步（0/0，并行 ...629 未抢先推送）。预处理——备份当日 data 到 `/tmp/ghrank_backup` → 暂移 ...629 内部 memory 目录到 `/tmp/ghrank_629_mem`（避免 `git add -A` 误提交内部 memory）→ 设本地 `git config --local http.proxy/https.proxy = http://127.0.0.1:21879`（本机 git 的 libcurl 直连 github 报 `SSL_ERROR_SYSCALL`，必须走代理；`HTTPS_PROXY` 环境变量 git 不自动采纳）→ 本地 `commit` 数据+脚本+memory.md（`9c75c63`，使数据转为 tracked 权威）→ `bash deploy_ghpages.sh` 首跑因 `git pull --rebase` 瞬时 SSL 抖动失败中止（未动数据），复跑顺过（rebase no-op，push main + gh-pages orphan 均成功，DONE 链接）→ 还原 ...629 目录 → 本地 `site/` 由脚本末尾复原。
+- **线上复测**：首页 / daily / weekly 三页均 **200**（无传播延迟）。`origin/main` 与本地同步（9c75c63）。
+- **结论**：当日上榜 日榜 13 + 周榜 16；数据/翻译/站点已生成并推送 `origin/main`（`9c75c63`），线上链接更新成功（200）。
+- **环境要点（新发现·重要）**：本机 `git`/`gh` 的 libcurl **直连 github.com 报 `SSL_ERROR_SYSCALL`**（TLS 握手被断，非旧 IPv6 stall），而 `curl` 经 `HTTPS_PROXY` 代理正常 200；`git` 不会自动采纳 `HTTPS_PROXY` 环境变量，必须显式 `git config --local http.proxy/https.proxy=http://127.0.0.1:21879` 才能走代理。scraper 与 gh 经环境变量代理可用。`.workbuddy/` 未被 .gitignore 忽略，部署前务必暂移 ...629 内部 memory 目录。遇 deploy 首跑 SSL 抖动失败时，重试即可（数据未动）。
