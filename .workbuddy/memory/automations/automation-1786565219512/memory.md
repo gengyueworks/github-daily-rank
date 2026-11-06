@@ -297,3 +297,13 @@
 - **线上复测**：首页 / daily / weekly 三页均 **200**（无传播延迟）。`origin/main` 与本地同步（9c75c63）。
 - **结论**：当日上榜 日榜 13 + 周榜 16；数据/翻译/站点已生成并推送 `origin/main`（`9c75c63`），线上链接更新成功（200）。
 - **环境要点（新发现·重要）**：本机 `git`/`gh` 的 libcurl **直连 github.com 报 `SSL_ERROR_SYSCALL`**（TLS 握手被断，非旧 IPv6 stall），而 `curl` 经 `HTTPS_PROXY` 代理正常 200；`git` 不会自动采纳 `HTTPS_PROXY` 环境变量，必须显式 `git config --local http.proxy/https.proxy=http://127.0.0.1:21879` 才能走代理。scraper 与 gh 经环境变量代理可用。`.workbuddy/` 未被 .gitignore 忽略，部署前务必暂移 ...629 内部 memory 目录。遇 deploy 首跑 SSL 抖动失败时，重试即可（数据未动）。
+
+## 2026-11-06 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`）经本地代理 127.0.0.1:21879（curl 经代理 github 200；直连亦 200，二者皆通）成功。日榜 `data/daily/2026-11-06.json` = 18 个仓库；周榜 `data/weekly/2026-11-02.json`（本周一 1102，重抓覆盖）= 18 个仓库。
+- **翻译**：首轮 `translate_missing.py` 命中 zh_cache/MY_ZH 补 日 4 + 周 20；余 14(日)+1(周) 个新仓库（含 zed、rails、rust、react、angular、symfony、prometheus、lz4、nushell、etcd、openssl、ruff、mpv、NVIDIA/auto-ontology 及 The-PR-Agent/pr-agent）由本自动化人工校对中译写入 `description_zh`（仅补缺失、不覆盖），最终日榜 18/18、周榜 18 个中 17 个有 `description_zh`；唯一缺口 `pingdotgg/t3code`（周榜）上游英文简介为空，无译可补（与历史 10-03~11-04 同因），非漏译。
+- **生成**：`build.py` 重建 `site/daily/2026-11-06.html`、`site/weekly/2026-11-02.html`、`site/index.html`、`site/classics/index.html`、`site/tags/index.html`（ainews 双语风格）。
+- **部署冲突**：并行自动化 ...629 已先推送 `data/daily/2026-11-05.json` 等到 remote main（450d588，且**删除**了 `data/weekly/2026-11-02.json` 与批量刷新 08-14~09-05 历史日榜 star 数）。`bash deploy_ghpages.sh` 首跑 `git pull --rebase --autostash -X ours` 因 `data/weekly/2026-11-02.json` 的 modify/delete 冲突（远端删、本机改）中止（set -e 在 pull 步中断，数据未动、工作树完好、仍在 main、site/ 仍在）。解法：手动 `git add data/weekly/2026-11-02.json`（保留本机全译版，优于远端删除）→ `git rebase --continue`（replay 到 450d588 之上，新提交 2f1f0bd）→ 二跑 `bash deploy_ghpages.sh`（rebase 成 no-op，push main + gh-pages orphan 均成功，DONE 链接）。
+- **部署**：成功。`git rev-list HEAD...origin/main` = 0/0（main 已同步，含当日数据 2f1f0bd）；gh-pages 推送 commit `06e6d24`。本地 `site/` 由脚本末尾从 `/tmp/ghrank_pages` 复原。并行自动化 ...629 内部 memory 目录已暂移 /tmp 再还原，未误提交进公开仓库。
+- **线上复测**：首测 index / weekly 200、daily 404（GitHub Pages 传播延迟，新文件首次出现）；等约 160 秒后 daily 转为 200，三页全部 200，daily 页含 `2026-11-06` 当日内容。
+- **结论**：当日上榜 日榜 18 + 周榜 18；数据/翻译/站点已生成并推送 `origin/main`（`2f1f0bd`），线上链接更新成功（200）。
+- **环境要点（稳定）**：代理与直连均可用；scraper 经 `HTTPS_PROXY` 环境变量代理可用，git/gh 部署经 `git config --local http.proxy/https.proxy=http://127.0.0.1:21879` 走代理（本地配置已持久化）。`.workbuddy/` 未被 .gitignore 忽略，部署前务必暂移 ...629 内部 memory 目录。遇 deploy 首跑 modify/delete 冲突中止时，手动 `git add` 保留本机全译版 → `git rebase --continue` → 再跑 deploy 即可彻底规避。
