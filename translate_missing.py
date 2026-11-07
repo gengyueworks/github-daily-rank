@@ -315,6 +315,21 @@ MY_ZH = {
     # 2026-11-04 日榜新增
     "floci-io/floci": "轻量、流畅且永久免费——AWS 本地模拟器的替代方案。",
     "Usagi-org/ai-goofish-monitor": "基于 Playwright 与 AI 实现的闲鱼多任务实时 / 定时监控与智能分析系统，配备功能完善的后台管理 UI，帮助用户从闲鱼海量商品中快速找到心仪产品。",
+    # 2026-11-07 日榜/周榜新增（重抓覆盖后补译）
+    "zed-industries/zed": "以思维的速度编写代码——Zed 是一款高性能、支持多人协作的代码编辑器，由 Atom 与 Tree-sitter 的创造者打造。",
+    "NVIDIA/auto-ontology": "Auto Ontology 是一套 Python 框架，用于在数据之上构建基于图谱的语义推理层。它能实现确定性的查询生成、更好的上下文检索，并为大语言模型与智能体工作流带来更具可解释性的 AI。",
+    "rails/rails": "Ruby on Rails：一款用 Ruby 编写的服务端 Web 应用开发框架。",
+    "mpv-player/mpv": "🎥 命令行媒体播放器。",
+    "rust-lang/rust": "让每个人都能够构建可靠且高效的软件。",
+    "react/react": "用于构建 Web 与原生用户界面的库。",
+    "angular/angular": "从容交付 Web 应用 🚀",
+    "symfony/symfony": "Symfony PHP 框架。",
+    "prometheus/prometheus": "Prometheus 监控系统与时序数据库。",
+    "nushell/nushell": "一种全新的 Shell。",
+    "etcd-io/etcd": "分布式可靠键值存储，用于保存分布式系统中最关键的数据。",
+    "openssl/openssl": "通用 TLS 与加密算法库。",
+    "astral-sh/ruff": "一款极速的 Python 代码检查（linter）与格式化工具，使用 Rust 编写。",
+    "The-PR-Agent/pr-agent": "🚀 PR Agent：开源 PR 审查工具的鼻祖。本项目并非 Qodo 的免费档。",
 }
 
 
