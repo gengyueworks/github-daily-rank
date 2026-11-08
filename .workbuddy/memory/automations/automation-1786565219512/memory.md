@@ -307,3 +307,12 @@
 - **线上复测**：首测 index / weekly 200、daily 404（GitHub Pages 传播延迟，新文件首次出现）；等约 160 秒后 daily 转为 200，三页全部 200，daily 页含 `2026-11-06` 当日内容。
 - **结论**：当日上榜 日榜 18 + 周榜 18；数据/翻译/站点已生成并推送 `origin/main`（`2f1f0bd`），线上链接更新成功（200）。
 - **环境要点（稳定）**：代理与直连均可用；scraper 经 `HTTPS_PROXY` 环境变量代理可用，git/gh 部署经 `git config --local http.proxy/https.proxy=http://127.0.0.1:21879` 走代理（本地配置已持久化）。`.workbuddy/` 未被 .gitignore 忽略，部署前务必暂移 ...629 内部 memory 目录。遇 deploy 首跑 modify/delete 冲突中止时，手动 `git add` 保留本机全译版 → `git rebase --continue` → 再跑 deploy 即可彻底规避。
+
+## 2026-11-07 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`，经 `HTTPS_PROXY` 代理）成功。日榜 `data/daily/2026-11-07.json` = 17 个仓库；周榜 `data/weekly/2026-11-02.json`（本周一 1102，重抓覆盖）= 18 个仓库。
+- **翻译**：首轮 `translate_missing.py` 命中 zh_cache/MY_ZH 补 日 4 + 周 20；余 13(日)+1(周) 个新仓库（zed、rails、rust、react、angular、symfony、prometheus、nushell、etcd、openssl、ruff、mpv、NVIDIA/auto-ontology 日榜；The-PR-Agent/pr-agent 周榜）因周榜重抓覆盖丢失了 11-06 的旧译文，本次人工校对中译写入 `MY_ZH`（标 2026-11-07 注释）并重跑，最终日榜 17/17、周榜 18 个中 17 个有 `description_zh`；唯一缺口 `pingdotgg/t3code`（周榜）上游英文简介为空，无译可补（与历史 10-03~11-06 同因），非漏译。
+- **生成**：`build.py` 重建 `site/daily/2026-11-07.html`、`site/weekly/2026-11-02.html`、`site/index.html`、`site/classics/index.html`、`site/tags/index.html`（ainews 双语风格）。
+- **部署（顺过）**：`origin/main` 当时与本地同步（0/0，并行 ...629 未抢先推送）。预处理——备份当日 data 到 `/tmp/ghrank_backup` → 暂移 ...629 内部 memory 目录到 `/tmp/ghrank_629_mem_1107`（避免 `git add -A` 误提交内部 memory）→ 本地 `commit` 数据+脚本+缓存（`2816564`，使数据转为 tracked 权威）→ `git push origin main`（84fbe93..2816564）→ `bash deploy_ghpages.sh`（rebase no-op，push main 无新提交；gh-pages orphan 推送成功，DONE 链接）→ 还原 ...629 目录 → 本地 `site/` 由脚本末尾从 `/tmp/ghrank_pages` 复原。
+- **线上复测**：首测 index / weekly 200、daily 503（GitHub Pages 传播延迟，新文件首次出现）；等约 50 秒后 daily 转为 200，三页全部 200（index / daily / weekly）。
+- **结论**：当日上榜 日榜 17 + 周榜 18；数据/翻译/站点已生成并推送 `origin/main`（`2816564`），线上链接更新成功（200）。
+- **环境要点（稳定）**：代理可用；scraper 经 `HTTPS_PROXY` 环境变量代理可用，git/gh 部署经 `git config --local http.proxy/https.proxy=http://127.0.0.1:21879` 走代理（本地配置已持久化）。`.workbuddy/` 未被 .gitignore 忽略，部署前务必暂移 ...629 内部 memory 目录。注意：周榜按本周一命名（1102），每日重抓会覆盖旧译文，需依赖 `translate_missing.py` 的 `MY_ZH`/`zh_cache` 回填，缺译时补入 `MY_ZH` 即可自愈。

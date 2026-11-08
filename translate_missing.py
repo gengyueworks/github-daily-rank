@@ -330,6 +330,13 @@ MY_ZH = {
     "openssl/openssl": "通用 TLS 与加密算法库。",
     "astral-sh/ruff": "一款极速的 Python 代码检查（linter）与格式化工具，使用 Rust 编写。",
     "The-PR-Agent/pr-agent": "🚀 PR Agent：开源 PR 审查工具的鼻祖。本项目并非 Qodo 的免费档。",
+    # 2026-11-08 日榜新增
+    "vercel-labs/agent-browser": "面向 AI 智能体的浏览器自动化命令行工具。",
+    "meta/astryx": "一个完全可定制、为智能体而生的开源设计系统。",
+    "sherlock-project/sherlock": "通过用户名在各大社交网络上追踪定位社交媒体账号。",
+    "tailwindlabs/tailwindcss": "一个以实用类优先的 CSS 框架，用于快速构建用户界面。",
+    "mbillow/localthings": "通过家庭网络从 Home Assistant 控制你的三星家电，无需云端账号。",
+    "dsx-ai-factory/nvke": "NVIDIA Kubernetes 引擎（NVKE）：用于在裸机上管理 GPU Kubernetes 集群的控制平面。",
 }
 
 
