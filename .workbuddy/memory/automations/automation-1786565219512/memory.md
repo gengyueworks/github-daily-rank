@@ -316,3 +316,12 @@
 - **线上复测**：首测 index / weekly 200、daily 503（GitHub Pages 传播延迟，新文件首次出现）；等约 50 秒后 daily 转为 200，三页全部 200（index / daily / weekly）。
 - **结论**：当日上榜 日榜 17 + 周榜 18；数据/翻译/站点已生成并推送 `origin/main`（`2816564`），线上链接更新成功（200）。
 - **环境要点（稳定）**：代理可用；scraper 经 `HTTPS_PROXY` 环境变量代理可用，git/gh 部署经 `git config --local http.proxy/https.proxy=http://127.0.0.1:21879` 走代理（本地配置已持久化）。`.workbuddy/` 未被 .gitignore 忽略，部署前务必暂移 ...629 内部 memory 目录。注意：周榜按本周一命名（1102），每日重抓会覆盖旧译文，需依赖 `translate_missing.py` 的 `MY_ZH`/`zh_cache` 回填，缺译时补入 `MY_ZH` 即可自愈。
+
+## 2026-11-08 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`，经 `HTTPS_PROXY` 代理）成功。日榜 `data/daily/2026-11-08.json` = 15 个仓库；周榜 `data/weekly/2026-11-02.json`（本周一 1102，周日重抓覆盖）= 19 个仓库。
+- **翻译**：首轮 `translate_missing.py` 命中 zh_cache/MY_ZH 补 日 9 + 周 26；余 6 个日榜新仓库（`vercel-labs/agent-browser`、`meta/astryx`、`sherlock-project/sherlock`、`tailwindlabs/tailwindcss`、`mbillow/localthings`、`dsx-ai-factory/nvke`）人工校对中译写入 `MY_ZH`（标 2026-11-08 注释）并重跑，最终日榜 15/15、周榜 19 个中 18 个有 `description_zh`；唯一缺口 `pingdotgg/t3code`（周榜）上游英文简介为空，无译可补（与历史 10-03~11-07 同因），非漏译。
+- **生成**：`build.py` 重建 `site/daily/2026-11-08.html`、`site/weekly/2026-11-02.html`、`site/index.html`、`site/classics/index.html`、`site/tags/index.html`（ainews 双语风格）。
+- **部署冲突**：并行自动化 ...629 在抓取/部署窗口内推送了 `data/daily/2026-11-08.json`（提交 `1134d9a`）到 remote main，导致本机 `git push origin main` 首报 `rejected (fetch first)`。按既定模式：备份当日数据到 `/tmp/ghrank_backup` → 暂移 ...629 内部 memory 目录到 `/tmp/ghrank_629_mem_1108` → 本地 `commit` 数据+脚本+缓存+本自动化 memory.md（`5f2662a`）→ 先 `push` 被拒 → 直接 `bash deploy_ghpages.sh`（其 `git pull --rebase --autostash -X ours` 顺过：快进合并远端 `1134d9a` 后 replay 本机 `5f2662a` 于其上，数据/译文以本机全译版为权威）→ `git add -A` 无新增（main: nothing new to commit）→ push main + gh-pages orphan 均成功 → 还原 ...629 目录 → 本地 `site/` 由脚本末尾从 `/tmp/ghrank_pages` 复原。
+- **部署**：成功。`git rev-list HEAD...origin/main` = 0/0（main 已同步，含当日数据）；gh-pages 推送 commit `4380e0f`。线上复测：首页 / daily / weekly 三页均 **200**（无传播延迟），且 daily 页含 `2026-11-08` 当日仓库（agent-browser、sherlock-project、tailwindcss、nvke 等）。
+- **结论**：当日上榜 日榜 15 + 周榜 19；数据/翻译/站点已生成并推送 `origin/main`（`5f2662a`），线上链接更新成功（200）。
+- **环境要点（稳定）**：代理与直连均可用；scraper 经 `HTTPS_PROXY` 环境变量代理可用，git/gh 部署经 `git config --local http.proxy/https.proxy=http://127.0.0.1:21879` 走代理（本地配置已持久化）。`.workbuddy/` 未被 .gitignore 忽略，部署前务必暂移 ...629 内部 memory 目录，避免 `git add -A` 误提交内部 memory 进公开仓库。
