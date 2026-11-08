@@ -19,7 +19,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "为所有智能体提供跨会话的持久化上下文——记录智能体在会话中产生的全部操作，用 AI 压缩后，将相关上下文注入未来的会话。兼容 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等。",
+      "description_zh": "面向所有智能体的跨会话持久上下文——记录智能体在会话中的所有操作，借助 AI 进行压缩，并将相关上下文注入后续会话。支持 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等。",
       "tags": [
         "Agent",
         "AI工具",
@@ -42,7 +42,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "Lightpanda：专为 AI 与自动化设计的无头浏览器。",
+      "description_zh": "Lightpanda：专为 AI 和自动化打造的无头浏览器",
       "tags": [
         "AI工具",
         "开发工具"
@@ -127,7 +127,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "免费 API 合集清单。",
+      "description_zh": "免费 API 汇总清单",
       "tags": [
         "开发工具",
         "信息源"

@@ -42,7 +42,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "面向实战工程师的技能合集，直接取自我的 .agents 目录。",
+      "description_zh": "专为真正工程师打造的技能，直接来自我的 .agents 目录。",
       "script_zh": "这个项目是一个装满了硬核编程实战技巧的开源宝库。\n它把复杂的开发痛点拆解成了可以直接复制的技能卡片。\n\n不管你是自己查阅，还是直接喂给 AI 编程助手，都能让效率翻倍。\n最牛的是，这些内容全是作者在实际开发中提炼出来的干货。\n\n它能让你的 AI 助手瞬间变聪明，写出更规范的代码。\n想提升开发效率的兄弟，直接去 GitHub 搜它就完了！",
       "tags": [
         "Agent",
@@ -111,7 +111,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "让你的 AI 宿主（harness）更懂设计的设计语言。",
+      "description_zh": "让你的 AI 框架更擅长设计的设计语言",
       "script_zh": "这个项目是一套专门给 AI 打造的设计语言。\n它能让你的 AI 助手瞬间学会做顶级界面。\n\n很多人用 AI 生成前端页面，总是觉得丑得一塌糊涂。\n这个项目就是用来彻底解决 AI 审美差的问题。\n把规范喂给 AI 工具，它就能写出排版舒爽美观的代码。\n\n它的厉害之处在于把顶尖设计师的直觉做成了系统规则。\n哪怕你完全不懂 UI 设计，也能轻松做出大厂级的界面。\n想用 AI 做出高颜值前端的朋友，赶紧去收藏它吧！",
       "tags": [
         "Agent",
@@ -135,7 +135,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "为所有智能体提供跨会话的持久化上下文——记录智能体在会话中产生的全部操作，用 AI 压缩后，将相关上下文注入未来的会话。兼容 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等。",
+      "description_zh": "面向所有智能体的跨会话持久上下文——记录智能体在会话中的所有操作，借助 AI 进行压缩，并将相关上下文注入后续会话。支持 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等。",
       "script_zh": "用 Claude 写代码，是不是每次新开对话它就失忆了？\n这个项目就是给各种 AI 智能体装上长期记忆的超强外挂。\n\n它能悄悄记录你和 AI 聊过的一切，用算法压缩后，在下次聊天时自动喂给它。\n不管是 Claude Code 还是 Gemini，都能瞬间接上上次的进度。\n\n最牛的是它不仅省 Token，还能让不同的 AI 共享同一份记忆。\n赶紧去试试，你的 AI 助手这下真的有灵魂了！",
       "tags": [
         "Agent",
@@ -158,7 +158,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "防止编程智能体掩盖关键答案的技能，提供对 ADHD 友好的输出。",
+      "description_zh": "防止编程智能体掩盖关键答案的技能，提供 ADHD 友好型输出。",
       "script_zh": "这个项目是一个给 AI 编程助手用的防废话规则包。\n用过 Cursor 的人都懂，AI 总喜欢吐出一堆长篇大论，把真正有用的代码埋在最下面。\n它就是专门用来拯救这种情况的！\n\n你只要把它导入你的编程工具。\n它就能强行约束 AI 的输出习惯。\n直接把修改好的代码和最核心的答案拍在你面前。\n\n这种干脆利落的反馈，能帮你在写代码时省下大把看废话的时间。\n斩获三万多星的绝活，绝对值得试试！",
       "tags": [
         "Agent",

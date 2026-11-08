@@ -42,7 +42,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "由 Anthropic 官方维护的 Claude Code 高质量插件目录。",
+      "description_zh": "Anthropic 官方维护的高质量 Claude Code 插件目录。",
       "script_zh": "这个项目是 Anthropic 官方为 Claude 打造的插件大本营。\n\n它能让你的 AI 助手直接连接数据库、本地文件和各种第三方工具。\n有了它，Claude 就不再只是个聊天机器人，而是能帮你写代码、查数据、直接干活的超级助理。\n\n最棒的是官方亲自维护，质量和安全性绝对有保障。\n难怪在 GitHub 上拿到了三万多个星，想让 AI 自动干活的朋友闭眼冲就完了！",
       "tags": [
         "AI工具",
@@ -65,7 +65,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "将任意 AI 智能体打造成 AI 科学家。全球领先的科研类 Agent 技能库，已获全球超 17.5 万名科学家使用。内置 163 个开箱即用且经过验证的技能，以及 100 多个覆盖生物、化学、医学和药物研发领域的科学数据库。兼容 Cursor、Claude Code、Codex、Pi、Antigravity 及开放 Agent Skills 标准。",
+      "description_zh": "将任意 AI Agent 变为 AI 科学家。科学领域排名第一的 Agent 技能库，全球超 17.5 万名科学家正在使用。包含 163 项开箱即用且经过验证的技能，以及 100 多个涵盖生物、化学、医学和药物研发的科学数据库。兼容 Cursor、Claude Code、Codex、Pi、Antigravity 及开放 Agent Skills 标准。",
       "script_zh": "这个项目能把任何 AI 助手直接变成顶尖的 AI 科学家。\n\n不管你是搞生物、化学还是做新药研发，它都能帮上大忙。\n它内置了上百个科学数据库和 160 多种现成的专业技能。\n\n你只需把它接入 Cursor 或者 Claude，AI 就能帮你查文献、分析分子结构。\n全球已经有十几万科学家在用它了，绝对是科研人员的超级外挂！",
       "tags": [
         "Agent",
@@ -88,7 +88,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "🪨 少字管用，何必多费 Token —— 模仿原始人说话，立省 65% Token 的 Claude Code 技能",
+      "description_zh": "🪨 少用 Token 能成事，何必多费——通过模仿穴居人说话减少 65% Token 消耗的 Claude Code 技能",
       "script_zh": "用 Claude 编程觉得 Token 消耗太快？\n\n这个项目能帮你省下大钱！\n\n它其实是一个给 Claude Code 准备的“原始人说话”提示词。\n\n只要让 AI 像原始人一样只说关键词，就能直接砍掉六成以上的 Token。\n\n你不用担心它变笨，它写出来的代码依然非常靠谱。\n\n花最少的钱办最硬核的事，这绝对是省钱流的终极外挂！\n\n赶紧去给你的 AI 安排上吧！",
       "tags": [
         "Agent",
@@ -112,7 +112,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "VoiceStudio 是一款开源、完全本地运行的 ElevenLabs 替代方案——支持 646 种语言的声音克隆、声音设计、视频配音、听写、转录与有声书制作。",
+      "description_zh": "VoiceStudio 是一款开源、完全本地化的 ElevenLabs 替代方案，支持 646 种语言的声音克隆、声音设计、视频配音、听写、转录及有声书制作。",
       "script_zh": "这个项目是一个完全开源且支持本地运行的 AI 声音工作站，堪称免费版的 ElevenLabs。\n\n无论你是想克隆自己的声音、做多语言视频配音，还是把文字改成有声书，它都能轻松搞定。\n它甚至还支持语音转文字和听写，覆盖了整整 646 种语言！\n\n最棒的是它完全在本地运行，既保护隐私，又帮你省下了昂贵的订阅费用。\n这种全能型的声音神级工具，绝对值得你立刻去点个 Star 收藏起来！",
       "tags": [
         "音视频",
@@ -135,7 +135,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "一套切实可用的智能体技能框架与软件开发方法论。",
+      "description_zh": "行之有效的智能体技能框架与软件开发方法论。",
       "script_zh": "想让 AI 真正帮你写代码，一定要看看这个项目。\n\n它是一个专门为 AI 智能体打造的技能框架和软件开发方法论。\n\n简单来说，它能把复杂的开发任务拆解成 AI 听得懂、做得到的具体技能。\n\n这就解决了以前 AI 写代码总是翻车、不靠谱的痛点。\n\n最厉害的是，它是真正能在实际生产中落地的。\n\n它不玩虚的概念，而是提供了一套行之有效的实战规范，让你的 AI 助手瞬间战力爆表。",
       "tags": [
         "Agent",
@@ -158,7 +158,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "🌊 原初的智能体元编排框架。部署智能的多智能体集群，协调自主工作流，并构建对话式 AI 系统。具备自适应记忆、自学习智能、RAG 集成，并原生集成 Claude Code / Codex / Hermes 等众多平台。",
+      "description_zh": "🌊 初代 Agent 元调度框架。部署智能多 Agent 集群，协调自主工作流，构建对话式 AI 系统。具备自适应记忆、自学习智能与 RAG 集成，原生支持 Claude Code、Codex、Hermes 等众多模型与工具。",
       "script_zh": "最近 GitHub 上有个火得一塌糊涂的项目叫 ruflo。\n简单来说，它就是一个能帮你部署 AI 智能体军团的超级框架。\n\n不管你想做多智能体协同，还是搭对话系统，用它都能搞定。\n它能让不同的 AI 像真人团队一样分工合作，自己去解决复杂任务。\n\n而且它自带自适应记忆和自主学习能力，越用越聪明。\n它还原生支持 Claude Code 等顶尖模型，难怪能斩获近七万星，赶紧去试试吧！",
       "tags": [
         "Agent",
@@ -182,7 +182,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "面向 AI 编程智能体的上下文窗口优化工具。支持工具输出沙盒隔离（缩减 98% 体积）、会话记忆持久化，并通过 MCP 与 Hook 在 17 个平台间实现统一路由。",
+      "description_zh": "面向 AI 编程智能体的上下文窗口优化工具。沙箱化工具输出（减少 98% 占用），持久化会话记忆，并通过 MCP 和 hooks 实现跨 17 个平台的路由管控。",
       "script_zh": "用 AI 写代码最怕上下文被垃圾日志塞爆。\n这个项目就是专门给 AI 编程助手做上下文瘦身的利器。\n\n它把工具运行的中间输出隔离在沙盒里，直接帮上下文省下 98% 的空间！\n还能帮你记住会话记忆，自动跨 17 个平台调度能力。\n\n这意味着 Token 不会再白白浪费，AI 也不会动不动就失忆。\n斩获两万多星绝对有硬实力，用 AI 写的同学赶紧试试！",
       "tags": [
         "Agent",
@@ -228,7 +228,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "智能体运行框架性能优化系统：为 Claude Code、Codex、OpenCode、Cursor 等提供技能、本能、记忆、安全与「研究优先」的开发能力。",
+      "description_zh": "Agent 运行框架性能优化系统。为 Claude Code、Codex、Opencode、Cursor 及更多工具提供技能、直觉、记忆、安全与研究驱动的开发支持。",
       "script_zh": "写代码用 Cursor 或者 Claude Code 的朋友，一定要看看这个项目。\n\n它是一个专门给 AI 智能体做性能超强优化的系统。\n\n简单来说，它能给你的 AI 助手装上更强的记忆、直觉和安全防线。\n\n不管是写代码还是做研究，它都能让 AI 反应更快、更聪明。\n\n最厉害的是，它在 GitHub 上已经拿到了超过二十四万颗星！\n\n想让你的 AI 工具好用十倍，闭眼冲它就对了！",
       "tags": [
         "Agent",

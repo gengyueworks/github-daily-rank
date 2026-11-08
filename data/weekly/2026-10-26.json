@@ -43,7 +43,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "一个面向编程智能体的技能，用于多阶段安全审计，产出经独立核验、机器可读的审计发现。",
+      "description_zh": "面向代码 Agent 的多阶段安全审计技能，提供经独立验证且机器可读的审计结果",
       "tags": [
         "Agent",
         "安全",
@@ -91,7 +91,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "让你的 AI 宿主（harness）更懂设计的设计语言。",
+      "description_zh": "让你的 AI 框架更擅长设计的设计语言",
       "tags": [
         "Agent",
         "设计",
@@ -115,7 +115,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "其他",
-      "description_zh": "一套切实可用的智能体技能框架与软件开发方法论。",
+      "description_zh": "行之有效的智能体技能框架与软件开发方法论。",
       "tags": [
         "Agent",
         "AI工具",
@@ -138,7 +138,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "一份 CLAUDE.md 文件，依据 Andrej Karpathy 对 LLM 编程陷阱的观察，改善 Claude Code 的行为。",
+      "description_zh": "一个用于优化 Claude Code 表现的 CLAUDE.md 文件，源自 Andrej Karpathy 对 LLM 编程陷阱的观察。",
       "tags": [
         "Agent",
         "AI工具",
@@ -162,7 +162,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "TradingAgents：基于多智能体大语言模型的金融交易框架。",
+      "description_zh": "TradingAgents：基于大语言模型的多智能体金融交易框架",
       "tags": [
         "Agent",
         "大模型",
@@ -250,7 +250,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "为所有智能体提供跨会话的持久化上下文——记录智能体在会话中产生的全部操作，用 AI 压缩后，将相关上下文注入未来的会话。兼容 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等。",
+      "description_zh": "面向所有智能体的跨会话持久上下文——记录智能体在会话中的所有操作，借助 AI 进行压缩，并将相关上下文注入后续会话。支持 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等。",
       "tags": [
         "Agent",
         "AI工具",
@@ -273,7 +273,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "Agent Skills 的公开仓库。",
+      "description_zh": "Agent 技能公开仓库",
       "tags": [
         "Agent",
         "AI工具",
@@ -296,7 +296,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "智能体运行框架性能优化系统：为 Claude Code、Codex、OpenCode、Cursor 等提供技能、本能、记忆、安全与「研究优先」的开发能力。",
+      "description_zh": "Agent 运行框架性能优化系统。为 Claude Code、Codex、Opencode、Cursor 及更多工具提供技能、直觉、记忆、安全与研究驱动的开发支持。",
       "tags": [
         "Agent",
         "AI工具",

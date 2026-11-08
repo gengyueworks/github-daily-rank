@@ -110,7 +110,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "面向 AI 编程智能体的上下文窗口优化工具。支持工具输出沙盒隔离（缩减 98% 体积）、会话记忆持久化，并通过 MCP 与 Hook 在 17 个平台间实现统一路由。",
+      "description_zh": "面向 AI 编程智能体的上下文窗口优化工具。沙箱化工具输出（减少 98% 占用），持久化会话记忆，并通过 MCP 和 hooks 实现跨 17 个平台的路由管控。",
       "script_zh": "用 AI 写代码最怕上下文被垃圾日志塞爆。\n这个项目就是专门给 AI 编程助手做上下文瘦身的利器。\n\n它把工具运行的中间输出隔离在沙盒里，直接帮上下文省下 98% 的空间！\n还能帮你记住会话记忆，自动跨 17 个平台调度能力。\n\n这意味着 Token 不会再白白浪费，AI 也不会动不动就失忆。\n斩获两万多星绝对有硬实力，用 AI 写的同学赶紧试试！",
       "tags": [
         "Agent",
@@ -134,7 +134,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "面向实战工程师的技能合集，直接取自我的 .agents 目录。",
+      "description_zh": "专为真正工程师打造的技能，直接来自我的 .agents 目录。",
       "script_zh": "这个项目是一个装满了硬核编程实战技巧的开源宝库。\n它把复杂的开发痛点拆解成了可以直接复制的技能卡片。\n\n不管你是自己查阅，还是直接喂给 AI 编程助手，都能让效率翻倍。\n最牛的是，这些内容全是作者在实际开发中提炼出来的干货。\n\n它能让你的 AI 助手瞬间变聪明，写出更规范的代码。\n想提升开发效率的兄弟，直接去 GitHub 搜它就完了！",
       "tags": [
         "Agent",
@@ -269,7 +269,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "主要面向知识工作者、用于在 Claude Cowork 中使用的开源插件仓库。",
+      "description_zh": "主要供知识工作者在 Claude Cowork 中使用的开源插件仓库",
       "script_zh": "Anthropic 官方给打工人开源的 Claude 插件库来了！\n\n它能帮你写报告、搜资料、搞数据分析。\n那些烦琐的知识型工作，现在都能交给 AI 自动化处理。\n\n作为 Anthropic 官方出品的项目，适配度直接拉满！\n最绝的是代码全开源，开箱即用还能按需定制。\n\n只要你是知识型工作者，这个项目绝对能帮你效率翻倍！",
       "tags": [
         "Agent",
@@ -292,7 +292,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "一份 CLAUDE.md 文件，依据 Andrej Karpathy 对 LLM 编程陷阱的观察，改善 Claude Code 的行为。",
+      "description_zh": "一个用于优化 Claude Code 表现的 CLAUDE.md 文件，源自 Andrej Karpathy 对 LLM 编程陷阱的观察。",
       "script_zh": "这个项目是一个专门给 Claude 写的“外挂”配置文件。\n\n你只需要把它丢进项目根目录，就能直接用。\n\n它解决的是大模型写代码时经常犯傻、逻辑混乱的问题。\n\n它会规范 Claude 的每一步操作，让 AI 编码变得非常听话。\n\n最牛的是，这些规则都是大神 Karpathy 总结出来的实战经验。\n\n不用你费心思调教，直接就能白嫖大佬的编程思维，简直是提效神器！",
       "tags": [
         "Agent",

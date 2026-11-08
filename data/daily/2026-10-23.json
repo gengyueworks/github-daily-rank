@@ -40,7 +40,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "主要面向知识工作者、用于在 Claude Cowork 中使用的开源插件仓库。",
+      "description_zh": "主要供知识工作者在 Claude Cowork 中使用的开源插件仓库",
       "script_zh": "Anthropic 官方给打工人开源的 Claude 插件库来了！\n\n它能帮你写报告、搜资料、搞数据分析。\n那些烦琐的知识型工作，现在都能交给 AI 自动化处理。\n\n作为 Anthropic 官方出品的项目，适配度直接拉满！\n最绝的是代码全开源，开箱即用还能按需定制。\n\n只要你是知识型工作者，这个项目绝对能帮你效率翻倍！",
       "tags": [
         "Agent",
@@ -63,7 +63,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "让你的 AI Agent 像全场最懒的高级开发一样思考。最好的代码就是你从未写过的代码。",
+      "description_zh": "让你的 AI 智能体像最懒的高级开发一样思考。最好的代码就是你从未写过的代码。",
       "script_zh": "这个项目能让你的 AI 助手瞬间变成办公室里最懒的资深开发。\n它专门解决 AI 喜欢胡乱堆砌代码的毛病。\n只要用上它，AI 就会想方设法用最少、最聪明的代码来搞定需求。\n\n毕竟最牛的代码就是你根本不用写的代码。\n它能帮你省掉以后重构和维护的无尽痛苦，难怪在 GitHub 上直接狂斩十一万颗星！\n想让你的 AI 别再瞎写垃圾代码了，赶紧去试试它吧！",
       "tags": [
         "Agent",
@@ -86,7 +86,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "一个面向编程智能体的技能，用于多阶段安全审计，产出经独立核验、机器可读的审计发现。",
+      "description_zh": "面向代码 Agent 的多阶段安全审计技能，提供经独立验证且机器可读的审计结果",
       "script_zh": "这个项目是 Cloudflare 打造的 AI 安全审计插件。\n它能让你的 AI 助手像安全专家一样对代码做多轮排查。\n\n平时写代码最怕隐患，传统审计慢，AI 审计又怕幻觉。\n它不仅能自动扫描，还能独立二次验证，拒绝乱报误报。\n\n报告全都是机器可读的标准格式，能直接无缝接入自动化流水线。\n大厂背书加万星人气，绝对是 AI 开发必备的安全神器！",
       "tags": [
         "Agent",
@@ -134,7 +134,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "Postgres 开发平台。Supabase 提供专属 Postgres 数据库，助你构建 Web、移动和 AI 应用。",
+      "description_zh": "Postgres 开发平台。Supabase 为你提供专属的 Postgres 数据库，助你构建 Web、移动及 AI 应用。",
       "script_zh": "这个项目是一个开源的 Postgres 后端开发平台。\n你可以把它看作开源版的 Firebase。\n\n它能给你的网页、手机或 AI 应用，直接配齐专用数据库。\n像用户认证、实时数据同步和文件存储，它全帮你打包搞定。\n前端几分钟就能搭出全栈应用。\n\n最棒的是它基于标准 Postgres，完全没有厂商锁定风险。\n对 AI 向量检索的支持也超好。\n想极速上线项目，选它准没错！",
       "tags": [
         "开发工具",

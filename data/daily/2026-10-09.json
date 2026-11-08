@@ -88,7 +88,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "面向实战工程师的技能合集，直接取自我的 .agents 目录。",
+      "description_zh": "专为真正工程师打造的技能，直接来自我的 .agents 目录。",
       "script_zh": "这个项目是一个装满了硬核编程实战技巧的开源宝库。\n它把复杂的开发痛点拆解成了可以直接复制的技能卡片。\n\n不管你是自己查阅，还是直接喂给 AI 编程助手，都能让效率翻倍。\n最牛的是，这些内容全是作者在实际开发中提炼出来的干货。\n\n它能让你的 AI 助手瞬间变聪明，写出更规范的代码。\n想提升开发效率的兄弟，直接去 GitHub 搜它就完了！",
       "tags": [
         "Agent",
@@ -111,7 +111,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "为所有智能体提供跨会话的持久化上下文——记录智能体在会话中产生的全部操作，用 AI 压缩后，将相关上下文注入未来的会话。兼容 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等。",
+      "description_zh": "面向所有智能体的跨会话持久上下文——记录智能体在会话中的所有操作，借助 AI 进行压缩，并将相关上下文注入后续会话。支持 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等。",
       "script_zh": "用 Claude 写代码，是不是每次新开对话它就失忆了？\n这个项目就是给各种 AI 智能体装上长期记忆的超强外挂。\n\n它能悄悄记录你和 AI 聊过的一切，用算法压缩后，在下次聊天时自动喂给它。\n不管是 Claude Code 还是 Gemini，都能瞬间接上上次的进度。\n\n最牛的是它不仅省 Token，还能让不同的 AI 共享同一份记忆。\n赶紧去试试，你的 AI 助手这下真的有灵魂了！",
       "tags": [
         "Agent",
@@ -156,7 +156,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "主要面向知识工作者、用于在 Claude Cowork 中使用的开源插件仓库。",
+      "description_zh": "主要供知识工作者在 Claude Cowork 中使用的开源插件仓库",
       "script_zh": "Anthropic 官方给打工人开源的 Claude 插件库来了！\n\n它能帮你写报告、搜资料、搞数据分析。\n那些烦琐的知识型工作，现在都能交给 AI 自动化处理。\n\n作为 Anthropic 官方出品的项目，适配度直接拉满！\n最绝的是代码全开源，开箱即用还能按需定制。\n\n只要你是知识型工作者，这个项目绝对能帮你效率翻倍！",
       "tags": [
         "Agent",
@@ -201,7 +201,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "学习资源",
-      "description_zh": "《系统设计面试：内部指南》读书笔记",
+      "description_zh": "《系统设计面试：内幕指南》读书笔记",
       "script_zh": "这个开源项目是经典神书《系统设计面试》的精炼笔记。\n准备大厂架构面试时，原书太厚啃不动？\n\n它直接帮你把核心考点、架构图解和设计思路全梳理好了。\n无论是准备面试，还是想提升架构能力，翻它就够了。\n\n全网已经有超一万八千人标星收藏。\n它最厉害的地方在于，把复杂的分布式概念全画成了清晰图解。\n还总结出了标准化答题套路，帮你省下几百个小时的啃书时间！",
       "tags": [
         "笔记",

@@ -42,7 +42,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "前端 / Web",
-      "description_zh": "写 HTML，渲染出视频。专为智能体打造。",
+      "description_zh": "编写 HTML，渲染视频。专为智能体打造。",
       "script_zh": "这个项目是一个能把 HTML 直接渲染成视频的开源工具。\n你只要写熟悉的网页代码，它就能逐帧生成高清视频。\n\n以前做视频自动化超级麻烦，现在用它就能让 AI 像写网页一样批量产出视频。\n无论是动态图表还是酷炫特效，网页能做的效果它全都能渲染。\n\n它可是 AI 视频大厂 HeyGen 开源的，专为 AI 智能体打造。\n网页代码就是视频脚本，绝对是搞自动化视频的黑科技！",
       "tags": [
         "视频",
@@ -66,7 +66,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "其他",
-      "description_zh": "Cursor 插件规范与官方插件",
+      "description_zh": "Cursor 插件规范及官方插件",
       "script_zh": "用过现在最火的 AI 编辑器 Cursor 吗？\n这个项目就是官方开源的插件规范和工具包！\n\n它能让你自己动手，给 Cursor 的 AI 加上各种专属超能力。\n比如你想让 AI 读懂公司内部的文档，或者直接调用特定的工具，用它就能轻松搞定。\n\n最牛的是，它彻底打通了本地工具和 AI 之间的屏障，让开发效率瞬间翻倍。\n想要定制一个最懂你的 AI 编程助手，认准这个项目就够了！",
       "tags": [
         "开发工具",
@@ -135,7 +135,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "为所有智能体提供跨会话的持久化上下文——记录智能体在会话中产生的全部操作，用 AI 压缩后，将相关上下文注入未来的会话。兼容 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等。",
+      "description_zh": "面向所有智能体的跨会话持久上下文——记录智能体在会话中的所有操作，借助 AI 进行压缩，并将相关上下文注入后续会话。支持 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等。",
       "script_zh": "用 Claude 写代码，是不是每次新开对话它就失忆了？\n这个项目就是给各种 AI 智能体装上长期记忆的超强外挂。\n\n它能悄悄记录你和 AI 聊过的一切，用算法压缩后，在下次聊天时自动喂给它。\n不管是 Claude Code 还是 Gemini，都能瞬间接上上次的进度。\n\n最牛的是它不仅省 Token，还能让不同的 AI 共享同一份记忆。\n赶紧去试试，你的 AI 助手这下真的有灵魂了！",
       "tags": [
         "Agent",
@@ -248,7 +248,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "为你的 AI Agent 装上探索全网的双眼。阅读与搜索 Twitter、Reddit、YouTube、GitHub、B站、小红书——一个 CLI，零 API 费用。",
+      "description_zh": "为你的 AI Agent 装上一双看遍全网的眼睛。浏览与搜索 Twitter、Reddit、YouTube、GitHub、B站、小红书——一个 CLI 工具，零 API 费用。",
       "script_zh": "简单说，这个项目能给你的 AI 智能体装上一双看清全网的眼睛。\n无论是 Twitter、Reddit，还是 B 站和小红书，它都能直接读取搜索。\n\n以前给 AI 喂实时数据，对接各种官方 API 既繁琐又昂贵。\n现在在命令行敲一行命令，它就能帮 AI 一键抓取全网内容。\n\n最绝的是它完全免 API 费用，直接帮你省下一大笔钱！\n零成本打通国内外主流平台，8 万多星的硬核项目值得赶紧关注。",
       "tags": [
         "Agent",
