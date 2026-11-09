@@ -108,7 +108,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "智能体技能公开仓库",
+      "description_zh": "Agent Skills 的公开仓库",
       "script_zh": "这个项目是 Anthropic 官方开源的 AI 技能宝库。\n它直接给 AI 大模型装上了能干活的双手！\n\n平时写 Agent 最头疼的就是给 AI 拼装各种工具。\n现在直接把官方调好的技能给 AI 挂载上去就行。\n无论是查数据、写代码还是调 API，通通开箱即用。\n\n最厉害的是它的标准统一且极其规范。\n你再也不用手写复杂的底层提示词和函数调用了。\n想做超级 Agent 的朋友，这个项目绝对值得立马收藏！",
       "tags": [
         "Agent",
