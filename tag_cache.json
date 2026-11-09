@@ -1853,5 +1853,79 @@
     "AI工具",
     "音视频",
     "图片"
+  ],
+  "zed-industries/zed": [
+    "开发工具"
+  ],
+  "rails/rails": [
+    "开发工具"
+  ],
+  "mpv-player/mpv": [
+    "音视频",
+    "视频"
+  ],
+  "react/react": [
+    "前端",
+    "开发工具"
+  ],
+  "angular/angular": [
+    "前端",
+    "开发工具"
+  ],
+  "symfony/symfony": [
+    "开发工具"
+  ],
+  "prometheus/prometheus": [
+    "运维",
+    "数据"
+  ],
+  "lz4/lz4": [
+    "系统工具",
+    "开发工具",
+    "数据"
+  ],
+  "nushell/nushell": [
+    "系统工具",
+    "开发工具"
+  ],
+  "etcd-io/etcd": [
+    "数据",
+    "运维",
+    "系统工具"
+  ],
+  "openssl/openssl": [
+    "安全",
+    "开发工具"
+  ],
+  "astral-sh/ruff": [
+    "开发工具"
+  ],
+  "sherlock-project/sherlock": [
+    "安全",
+    "数据"
+  ],
+  "dsx-ai-factory/nvke": [
+    "运维",
+    "系统工具"
+  ],
+  "anthropics/claude-quickstarts": [
+    "大模型",
+    "AI工具",
+    "开发工具"
+  ],
+  "vercel-labs/agent-browser": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "meta/astryx": [
+    "设计",
+    "前端",
+    "Agent"
+  ],
+  "google-deepmind/mujoco": [
+    "科学实验",
+    "AI工具",
+    "开发工具"
   ]
 }

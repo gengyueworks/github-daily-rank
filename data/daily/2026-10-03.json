@@ -19,7 +19,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "让你的 AI 智能体像最懒的高级开发一样思考。最好的代码就是你从未写过的代码。",
+      "description_zh": "让你的 AI 智能体像全场最懒的资深工程师一样思考。最好的代码就是不用写的代码。",
       "script_zh": "这个项目能让你的 AI 助手瞬间变成办公室里最懒的资深开发。\n它专门解决 AI 喜欢胡乱堆砌代码的毛病。\n只要用上它，AI 就会想方设法用最少、最聪明的代码来搞定需求。\n\n毕竟最牛的代码就是你根本不用写的代码。\n它能帮你省掉以后重构和维护的无尽痛苦，难怪在 GitHub 上直接狂斩十一万颗星！\n想让你的 AI 别再瞎写垃圾代码了，赶紧去试试它吧！",
       "tags": [
         "Agent",
@@ -42,7 +42,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "让你的 AI 框架更擅长设计的设计语言",
+      "description_zh": "让你的 AI 框架更擅长设计的设计语言。",
       "script_zh": "这个项目是一套专门给 AI 打造的设计语言。\n它能让你的 AI 助手瞬间学会做顶级界面。\n\n很多人用 AI 生成前端页面，总是觉得丑得一塌糊涂。\n这个项目就是用来彻底解决 AI 审美差的问题。\n把规范喂给 AI 工具，它就能写出排版舒爽美观的代码。\n\n它的厉害之处在于把顶尖设计师的直觉做成了系统规则。\n哪怕你完全不懂 UI 设计，也能轻松做出大厂级的界面。\n想用 AI 做出高颜值前端的朋友，赶紧去收藏它吧！",
       "tags": [
         "Agent",
@@ -66,7 +66,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "Agent 运行框架性能优化系统。为 Claude Code、Codex、Opencode、Cursor 及更多工具提供技能、直觉、记忆、安全与研究驱动的开发支持。",
+      "description_zh": "智能体运行基座性能优化系统。面向 Claude Code、Codex、Opencode、Cursor 及更多工具，提供技能、直觉、记忆、安全与研究驱动型开发支持。",
       "script_zh": "写代码用 Cursor 或者 Claude Code 的朋友，一定要看看这个项目。\n\n它是一个专门给 AI 智能体做性能超强优化的系统。\n\n简单来说，它能给你的 AI 助手装上更强的记忆、直觉和安全防线。\n\n不管是写代码还是做研究，它都能让 AI 反应更快、更聪明。\n\n最厉害的是，它在 GitHub 上已经拿到了超过二十四万颗星！\n\n想让你的 AI 工具好用十倍，闭眼冲它就对了！",
       "tags": [
         "Agent",
@@ -90,7 +90,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "开发工具",
-      "description_zh": "用 TypeScript 构建生产级应用",
+      "description_zh": "使用 TypeScript 构建生产级应用",
       "script_zh": "这个项目是一个专门为 TypeScript 打造的全能标准库。\n简单说，它就是 TS 复杂应用的终极基础设施。\n\n平时写代码，最怕异步报错查不到，或者依赖注入写得乱七八糟？\n它帮你用纯函数式的方式，把异常处理、并发控制全搞定了。\n\n最牛的是它的类型推导，连代码会抛出什么错误都能在编译时精准提示！\n有了它，大型项目不仅稳如泰山，写起来也特别爽快。",
       "tags": [
         "开发工具",
@@ -112,7 +112,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "🪨 少用 Token 能成事，何必多费——通过模仿穴居人说话减少 65% Token 消耗的 Claude Code 技能",
+      "description_zh": "🪨 字少管用，何必多费 Token —— 通过模仿原始人说话，为 Claude Code 削减 65% 的 Token 消耗。",
       "script_zh": "用 Claude 编程觉得 Token 消耗太快？\n\n这个项目能帮你省下大钱！\n\n它其实是一个给 Claude Code 准备的“原始人说话”提示词。\n\n只要让 AI 像原始人一样只说关键词，就能直接砍掉六成以上的 Token。\n\n你不用担心它变笨，它写出来的代码依然非常靠谱。\n\n花最少的钱办最硬核的事，这绝对是省钱流的终极外挂！\n\n赶紧去给你的 AI 安排上吧！",
       "tags": [
         "Agent",
@@ -136,7 +136,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "为你的 AI Agent 装上一双看遍全网的眼睛。浏览与搜索 Twitter、Reddit、YouTube、GitHub、B站、小红书——一个 CLI 工具，零 API 费用。",
+      "description_zh": "让你的 AI Agent 拥有洞悉全网的双眼。阅读与搜索 Twitter、Reddit、YouTube、GitHub、B站、小红书——只需一个 CLI，零 API 费用。",
       "script_zh": "简单说，这个项目能给你的 AI 智能体装上一双看清全网的眼睛。\n无论是 Twitter、Reddit，还是 B 站和小红书，它都能直接读取搜索。\n\n以前给 AI 喂实时数据，对接各种官方 API 既繁琐又昂贵。\n现在在命令行敲一行命令，它就能帮 AI 一键抓取全网内容。\n\n最绝的是它完全免 API 费用，直接帮你省下一大笔钱！\n零成本打通国内外主流平台，8 万多星的硬核项目值得赶紧关注。",
       "tags": [
         "Agent",
@@ -177,7 +177,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "面向所有智能体的跨会话持久上下文——记录智能体在会话中的所有操作，借助 AI 进行压缩，并将相关上下文注入后续会话。支持 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等。",
+      "description_zh": "为各类智能体提供跨会话的持久上下文——记录智能体在会话中的所有操作，利用 AI 压缩提炼，并在后续会话中重新注入相关上下文。支持 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等。",
       "script_zh": "用 Claude 写代码，是不是每次新开对话它就失忆了？\n这个项目就是给各种 AI 智能体装上长期记忆的超强外挂。\n\n它能悄悄记录你和 AI 聊过的一切，用算法压缩后，在下次聊天时自动喂给它。\n不管是 Claude Code 还是 Gemini，都能瞬间接上上次的进度。\n\n最牛的是它不仅省 Token，还能让不同的 AI 共享同一份记忆。\n赶紧去试试，你的 AI 助手这下真的有灵魂了！",
       "tags": [
         "Agent",
@@ -200,7 +200,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "基于 Cloudflare Workers 构建的智能体工作区，可结合企业上下文与业务系统，用于创建文档、构建应用及运行智能体。",
+      "description_zh": "基于 Cloudflare Workers 构建的智能体工作空间，可结合企业上下文与系统来创建文档、构建应用及运行智能体。",
       "script_zh": "这个项目是一个基于 Cloudflare 的 AI Agent 工作台。\n它能结合你公司的内部数据，直接用 AI 写文档、搭应用，还能运行各种智能 Agent。\n\n以前想搞企业级 AI 工作流，搭环境麻烦不说，成本还特别高。\n而它直接跑在边缘网络上，不仅响应极快，部署也非常简单。\n\n既能安全调用私有上下文，又能极速落地 AI 应用，绝对值得关注。",
       "tags": [
         "Agent",
@@ -292,7 +292,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "面向 AI 编程智能体的上下文窗口优化工具。沙箱化工具输出（减少 98% 占用），持久化会话记忆，并通过 MCP 和 hooks 实现跨 17 个平台的路由管控。",
+      "description_zh": "面向 AI 编程智能体的上下文窗口优化工具。沙盒化隔离工具输出（减少 98% 占用），持久化会话记忆，并通过 MCP 与 Hook 在 17 个平台间实现路由控制。",
       "script_zh": "用 AI 写代码最怕上下文被垃圾日志塞爆。\n这个项目就是专门给 AI 编程助手做上下文瘦身的利器。\n\n它把工具运行的中间输出隔离在沙盒里，直接帮上下文省下 98% 的空间！\n还能帮你记住会话记忆，自动跨 17 个平台调度能力。\n\n这意味着 Token 不会再白白浪费，AI 也不会动不动就失忆。\n斩获两万多星绝对有硬实力，用 AI 写的同学赶紧试试！",
       "tags": [
         "Agent",
@@ -362,7 +362,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "开发工具",
-      "description_zh": "Claude Code 是一款运行在终端中的 Agent 编程工具。它能深入理解你的代码库，只需通过自然语言指令即可帮你执行日常任务、解释复杂代码并处理 Git 工作流，助你显著提升编码效率。",
+      "description_zh": "Claude Code 是一款常驻终端的智能体编程工具。它能理解你的代码库，只需通过自然语言指令即可执行日常任务、解析复杂代码并处理 Git 工作流，助你全面提升编码效率。",
       "script_zh": "这个项目是直接住在你终端里的 AI 编程助手。\n\n你只需要用大白话下指令，它就能读懂你的整个代码库。\n\n不管是写日常代码、解释复杂逻辑，还是自动帮你提交 Git，它全都能搞定。\n\n最厉害的是，它是 Anthropic 官方出的，智商在线而且反应极快。\n\n你根本不用在编辑器和命令行之间来回切换，直接在终端里就能把活干完。\n\n难怪刚上线就狂揽了十四万颗星，赶紧去试试吧！",
       "tags": [
         "Agent",

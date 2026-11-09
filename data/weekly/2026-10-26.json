@@ -19,7 +19,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "面向 Claude Code、Cursor 与 Codex 的「反 AI 套话」设计技能。",
+      "description_zh": "适用于 Claude Code、Cursor 和 Codex 的反 AI 塑料感设计技能。",
       "tags": [
         "Agent",
         "设计",
@@ -43,7 +43,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "面向代码 Agent 的多阶段安全审计技能，提供经独立验证且机器可读的审计结果",
+      "description_zh": "面向代码智能体的多阶段安全审计技能，提供经独立验证且机器可读的审计结果",
       "tags": [
         "Agent",
         "安全",
@@ -67,7 +67,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "面向 Claude Code 的通用 SEO 技能。含 26 个子技能 + 19 个子智能体，覆盖技术 SEO、E-E-A-T、结构化数据、GEO/AEO、智能体就绪度（Lighthouse Agentic Browsing、WebMCP、llms.txt）、外链建设、本地 SEO、电商 SEO、国际 SEO、Google API 以及 PDF/Excel 报告。另有 9 个可选扩展，用于接入实时 SEO 数据。",
+      "description_zh": "专为 Claude Code 打造的全能 SEO 技能。包含 26 个子技能与 19 个子智能体，全面覆盖技术 SEO、E-E-A-T、结构化数据、GEO/AEO、智能体适配（Lighthouse Agentic Browsing、WebMCP、llms.txt）、反向链接、本地 SEO、电商、国际化 SEO、Google API 与 PDF/Excel 报告生成，并提供 9 个用于获取实时 SEO 数据的可选扩展。",
       "tags": [
         "Agent",
         "AI工具",
@@ -91,7 +91,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "让你的 AI 框架更擅长设计的设计语言",
+      "description_zh": "让你的 AI 框架更擅长设计的设计语言。",
       "tags": [
         "Agent",
         "设计",
@@ -138,7 +138,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "一个用于优化 Claude Code 表现的 CLAUDE.md 文件，源自 Andrej Karpathy 对 LLM 编程陷阱的观察。",
+      "description_zh": "一份用于优化 Claude Code 表现的 CLAUDE.md 文件，源自 Andrej Karpathy 对大模型编程常见陷阱的观察。",
       "tags": [
         "Agent",
         "AI工具",
@@ -185,7 +185,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "一套帮你打造出色界面的智能体技能合集。",
+      "description_zh": "一套助你构建出色界面的智能体技能合集。",
       "tags": [
         "Agent",
         "前端",
@@ -208,7 +208,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "为编程智能体赋予「品味」的技能：用艺术指导、参考图与浏览器核查，取代千篇一律的 AI 生成页面。",
+      "description_zh": "赋予编程 Agent 审美能力的技能集：提供艺术指导、参考图和浏览器检查，告别千篇一律的 AI 页面。",
       "tags": [
         "Agent",
         "AI工具",
@@ -250,7 +250,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "面向所有智能体的跨会话持久上下文——记录智能体在会话中的所有操作，借助 AI 进行压缩，并将相关上下文注入后续会话。支持 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等。",
+      "description_zh": "为各类智能体提供跨会话的持久上下文——记录智能体在会话中的所有操作，利用 AI 压缩提炼，并在后续会话中重新注入相关上下文。支持 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等。",
       "tags": [
         "Agent",
         "AI工具",
@@ -273,7 +273,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "Agent 技能公开仓库",
+      "description_zh": "智能体技能公开仓库",
       "tags": [
         "Agent",
         "AI工具",
@@ -296,7 +296,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "Agent 运行框架性能优化系统。为 Claude Code、Codex、Opencode、Cursor 及更多工具提供技能、直觉、记忆、安全与研究驱动的开发支持。",
+      "description_zh": "智能体运行基座性能优化系统。面向 Claude Code、Codex、Opencode、Cursor 及更多工具，提供技能、直觉、记忆、安全与研究驱动型开发支持。",
       "tags": [
         "Agent",
         "AI工具",
@@ -320,7 +320,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "其他",
-      "description_zh": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换用不同提示词；默认提示词面向国产模型「小码酱」。为每种模型都可切换的越狱方案。求 Star 收藏 ⭐，如需二开请查看署名要求部分。",
+      "description_zh": "DeepSeek Harness 破甲：支持全模型破甲，可针对不同模型切换提示词；默认提示词适用于国产模型“小码酱”。全模型通用破甲——不同模型灵活换词。求 Star 收藏 ⭐ 如需二次开发，请查阅署名要求部分。",
       "tags": [
         "大模型",
         "安全",
@@ -343,7 +343,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "AI 智能体助手与开发框架，集成了众多 IM 平台、大语言模型、插件与 AI 功能，可作为 OpenClaw 的替代方案。✨",
+      "description_zh": "集成了众多 IM 平台、大语言模型、插件与 AI 功能的 AI Agent 助手及开发框架，可作为 openclaw 的替代方案。✨",
       "tags": [
         "Agent",
         "AI工具",
