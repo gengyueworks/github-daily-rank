@@ -337,6 +337,9 @@ MY_ZH = {
     "tailwindlabs/tailwindcss": "一个以实用类优先的 CSS 框架，用于快速构建用户界面。",
     "mbillow/localthings": "通过家庭网络从 Home Assistant 控制你的三星家电，无需云端账号。",
     "dsx-ai-factory/nvke": "NVIDIA Kubernetes 引擎（NVKE）：用于在裸机上管理 GPU Kubernetes 集群的控制平面。",
+    # 2026-11-09 日榜新增
+    "anthropics/claude-quickstarts": "帮助开发者快速上手、使用 Claude API 构建可部署应用的项目合集。",
+    "google-deepmind/mujoco": "多关节接触动力学。一款通用物理模拟器。",
 }
 
 
