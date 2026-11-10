@@ -265,7 +265,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "CLI-Anything：让所有软件原生支持智能体 —— CLI-Hub：https://clianything.cc/",
+      "description_zh": "CLI-Anything：让所有软件原生支持智能体 —— CLI-Hub: https://clianything.cc/",
       "script_zh": "这个项目能让 AI 智能体直接操控你电脑上的所有软件。\n\n以前 AI 只能在聊天框里说话，现在用它就能把各种命令行工具直接对接给 AI。\n你只需要用嘴下达指令，它就能自动帮你调动各种软件去干活。\n\n最牛的是你完全不用重写任何代码，就能让老软件秒变 AI 原生应用。\n它在 GitHub 上已经拿下了四万多颗星，绝对是今年最火爆的 AI 落地黑科技。",
       "tags": [
         "Agent",

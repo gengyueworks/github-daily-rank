@@ -1927,5 +1927,28 @@
     "科学实验",
     "AI工具",
     "开发工具"
+  ],
+  "tailwindlabs/tailwindcss": [
+    "前端",
+    "开发工具",
+    "设计"
+  ],
+  "mbillow/localthings": [
+    "系统工具"
+  ],
+  "garrytan/gbrain": [
+    "Agent",
+    "AI工具"
+  ],
+  "ZhuLinsen/daily_stock_analysis": [
+    "大模型",
+    "AI工具",
+    "数据",
+    "信息源"
+  ],
+  "homeassistant-ai/ha-mcp": [
+    "Agent",
+    "AI工具",
+    "大模型"
   ]
 }

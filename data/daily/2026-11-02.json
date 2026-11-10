@@ -19,7 +19,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "为各类智能体提供跨会话的持久上下文——记录智能体在会话中的所有操作，利用 AI 压缩提炼，并在后续会话中重新注入相关上下文。支持 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等。",
+      "description_zh": "为各类 Agent 打造的跨会话持久上下文：完整记录 Agent 的会话操作，借助 AI 进行智能压缩，并在后续会话中按需注入相关上下文。支持 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等众多工具。",
       "tags": [
         "Agent",
         "AI工具",
@@ -104,7 +104,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "开源 Grok Bot 替代方案，配备供机器人使用的虚拟机。",
+      "description_zh": "开源 Grok Bot 替代方案，配备供机器人使用的虚拟机",
       "tags": [
         "Agent",
         "AI工具",
@@ -149,7 +149,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "一款免费、开源、可扩展且完全离线运行的语音转文字应用。",
+      "description_zh": "一款完全离线、免费开源且可扩展的语音转文字应用。",
       "tags": [
         "音视频",
         "AI工具",
@@ -172,7 +172,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "将 Claude Code 打造为一个完整的游戏开发工作室——包含 49 个 AI 智能体、72 项工作流技能，以及一套复刻真实工作室层级架构的协同系统。",
+      "description_zh": "将 Claude Code 打造为完整的游戏开发工作室——包含 49 个 AI 智能体、72 项工作流技能，以及一套复刻真实工作室层级结构的完整协同系统。",
       "tags": [
         "Agent",
         "游戏",
@@ -219,7 +219,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "开源 AI 安全运营中心：支持告警融合、大模型智能体研判、MITRE ATT&CK 调查，并为每个智能体步骤提供可回放的决策账本。支持自托管、无需 API 密钥即可运行，采用 MIT 协议。内置适配 Claude、Cursor 和 Continue 的 MCP 服务端。",
+      "description_zh": "开源 AI 安全运营中心：集告警融合、LLM 智能体分流研判、MITRE ATT&CK 调查以及全步骤可回放的决策账本于一体。支持私有化部署，无需 API 密钥即可运行，遵循 MIT 协议。内置适用于 Claude、Cursor 和 Continue 的 MCP 服务端。",
       "tags": [
         "安全",
         "Agent",
@@ -287,7 +287,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "开源 AI 协作者，各自配备专属电脑（含浏览器、文件和工具），所有操作事前决策、事后记录。支持接入任意 AG-UI 智能体。",
+      "description_zh": "开源 AI 同事，每位都拥有一台专属电脑（包含浏览器、文件和工具），每步操作事前决策、事后记录。支持接入任意 AG-UI 智能体。",
       "tags": [
         "Agent",
         "AI工具",
@@ -331,7 +331,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "涵盖 LLM、RAG 及实际 AI Agent 应用的深度教程。",
+      "description_zh": "涵盖大语言模型、RAG 与真实场景 AI 智能体应用的深度教程。",
       "tags": [
         "大模型",
         "Agent",
@@ -354,7 +354,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "FreeToken 将数据中心级的模型服务带到你的桌面，在本地快速、高效地运行超大模型。",
+      "description_zh": "FreeToken 将数据中心级的模型服务带到桌面端。在本地快速高效地运行超大模型。",
       "tags": [
         "大模型",
         "AI工具",
@@ -377,7 +377,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "Hyprland 是一款独立、高度可定制且兼具高颜值的动态平铺 Wayland 合成器。",
+      "description_zh": "Hyprland 是一款独立、高度可定制的动态平铺 Wayland 合成器，且兼具出众颜值。",
       "tags": [
         "系统工具"
       ],
