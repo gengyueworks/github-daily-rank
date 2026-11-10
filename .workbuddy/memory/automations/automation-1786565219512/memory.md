@@ -325,3 +325,12 @@
 - **部署**：成功。`git rev-list HEAD...origin/main` = 0/0（main 已同步，含当日数据）；gh-pages 推送 commit `4380e0f`。线上复测：首页 / daily / weekly 三页均 **200**（无传播延迟），且 daily 页含 `2026-11-08` 当日仓库（agent-browser、sherlock-project、tailwindcss、nvke 等）。
 - **结论**：当日上榜 日榜 15 + 周榜 19；数据/翻译/站点已生成并推送 `origin/main`（`5f2662a`），线上链接更新成功（200）。
 - **环境要点（稳定）**：代理与直连均可用；scraper 经 `HTTPS_PROXY` 环境变量代理可用，git/gh 部署经 `git config --local http.proxy/https.proxy=http://127.0.0.1:21879` 走代理（本地配置已持久化）。`.workbuddy/` 未被 .gitignore 忽略，部署前务必暂移 ...629 内部 memory 目录，避免 `git add -A` 误提交内部 memory 进公开仓库。
+
+## 2026-11-09 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`，经 `HTTPS_PROXY` 代理 127.0.0.1:21879）成功。日榜 `data/daily/2026-11-09.json` = 9 个仓库；周榜 `data/weekly/2026-11-09.json`（本周一 1109）= 17 个仓库。
+- **翻译**：首轮 `translate_missing.py` 补译 日 7 + 周 23；余 `anthropics/claude-quickstarts`、`google-deepmind/mujoco`（日榜，均有英文简介，脚本 API 漏译）人工校对中译写入 `MY_ZH`（标 2026-11-09 注释）并重跑，最终日榜 9/9、周榜 17 个中 16 个有 `description_zh`；唯一缺口 `pingdotgg/t3code`（周榜）上游英文简介为空，无译可补（与历史 10-03~11-08 同因），非漏译。
+- **生成**：`build.py` 重建 `site/daily/2026-11-09.html`、`site/weekly/2026-11-09.html`、`site/index.html`、`site/classics/index.html`、`site/tags/index.html`（ainews 双语风格）。
+- **部署**：`origin/main` 与本地同步（0/0，并行 ...629 未抢先推送）。先本地 `commit` 数据+脚本+缓存（`354d5be`）→ `push main` → `bash deploy_ghpages.sh`（rebase no-op，main 无新提交；gh-pages orphan 推送成功，DONE 链接）→ 本地 `site/` 由脚本复原；...629 内部 memory 目录已暂移 `/tmp` 再还原，未误提交进公开仓库。
+- **线上复测**：首测 index 200、daily / weekly 404（GitHub Pages 传播延迟）；约 55 秒后 daily / weekly 均转为 200，三页全部 200，daily 页含 `2026-11-09` 当日仓库（sherlock、agent-browser、claude-quickstarts、mujoco 等）。
+- **结论**：当日上榜 日榜 9 + 周榜 17；数据/翻译/站点已生成并推送 `origin/main`（`354d5be`），线上链接更新成功（200）。
+- **环境要点（稳定）**：代理 127.0.0.1:21879 可用；scraper 经 `HTTPS_PROXY` 环境变量代理，git/gh 部署经 `git config --local http.proxy/https.proxy` 持久化走代理（规避直连 `SSL_ERROR_SYSCALL`）。`.workbuddy/` 未被 .gitignore 忽略，部署前务必暂移 ...629 内部 memory 目录。

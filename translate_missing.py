@@ -340,6 +340,10 @@ MY_ZH = {
     # 2026-11-09 日榜新增
     "anthropics/claude-quickstarts": "帮助开发者快速上手、使用 Claude API 构建可部署应用的项目合集。",
     "google-deepmind/mujoco": "多关节接触动力学。一款通用物理模拟器。",
+    # 2026-11-10 日榜新增
+    "garrytan/gbrain": "Garry 主导的、带强烈个人主张的 OpenClaw/Hermes 智能体大脑（Agent Brain）。",
+    "ZhuLinsen/daily_stock_analysis": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。",
+    "homeassistant-ai/ha-mcp": "借助 Claude、ChatGPT 等 AI 助手配置并自动化你的 Home Assistant。",
 }
 
 
