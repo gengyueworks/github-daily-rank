@@ -334,3 +334,13 @@
 - **线上复测**：首测 index 200、daily / weekly 404（GitHub Pages 传播延迟）；约 55 秒后 daily / weekly 均转为 200，三页全部 200，daily 页含 `2026-11-09` 当日仓库（sherlock、agent-browser、claude-quickstarts、mujoco 等）。
 - **结论**：当日上榜 日榜 9 + 周榜 17；数据/翻译/站点已生成并推送 `origin/main`（`354d5be`），线上链接更新成功（200）。
 - **环境要点（稳定）**：代理 127.0.0.1:21879 可用；scraper 经 `HTTPS_PROXY` 环境变量代理，git/gh 部署经 `git config --local http.proxy/https.proxy` 持久化走代理（规避直连 `SSL_ERROR_SYSCALL`）。`.workbuddy/` 未被 .gitignore 忽略，部署前务必暂移 ...629 内部 memory 目录。
+
+## 2026-11-10 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`，经 `HTTPS_PROXY` 代理 127.0.0.1:21879；直连亦 200）成功。日榜 `data/daily/2026-11-10.json` = 11 个仓库；周榜 `data/weekly/2026-11-09.json`（本周一 1109）= 14 个仓库。
+- **翻译**：首轮 `translate_missing.py` 补译 日 8 + 周 21(全译)；余 `garrytan/gbrain`、`ZhuLinsen/daily_stock_analysis`、`homeassistant-ai/ha-mcp`（日榜，均有英文简介，脚本 API 漏译）人工校对中译写入 `MY_ZH`（标 2026-11-10 注释）并重跑，最终日榜 11/11、周榜 14 个中 13 个有 `description_zh`；唯一缺口 `pingdotgg/t3code`（周榜）上游英文简介为空，无译可补（与历史 10-03~11-09 同因），非漏译。
+- **生成**：`build.py` 重建 `site/daily/2026-11-10.html`、`site/weekly/2026-11-09.html`、`site/index.html`、`site/classics/index.html`、`site/tags/index.html`（ainews 双语风格）。
+- **部署**：`origin/main` 与本机同步（0/0，并行 ...629 未抢先推送）。先暂移 ...629 内部 memory 目录到 `/tmp`（避免 `git add -A` 误提交内部 memory）→ 本地 `commit` 数据+脚本+缓存+本自动化 memory.md（`0be4beb`，使数据 tracked 权威）→ `bash deploy_ghpages.sh`（rebase no-op，main 无新提交；gh-pages orphan 推送成功 `3508e8e`，DONE 链接）→ 本地 `site/` 由脚本复原。
+- **线上复测**：首测 index / weekly 200、daily 404（GitHub Pages 传播延迟，新文件首次出现）；等约 55 秒后 daily 转为 200，三页全部 200。
+- **结论**：当日上榜 日榜 11 + 周榜 14；数据/翻译/站点已生成并推送 `origin/main`（`0be4beb`），线上链接更新成功（200）。
+- **备注（小插曲）**：暂移 ...629 内部 memory 目录时误把已 tracked 的 `.workbuddy/automations/automation-1786565219629/`（不含 memory 段）当成了未跟踪目录移走，造成一次假删除，已还原；真正未跟踪的 `.workbuddy/memory/automations/automation-1786565219629/` 移出后于 `/tmp` 丢失（被回收），该文件属并行 ...629 自动化私有、未进公开仓库、由其自行再生，不影响本任务交付。后续暂移只需针对 `.workbuddy/memory/automations/...` 即可。
+- **环境要点（稳定）**：代理 127.0.0.1:21879 可用；scraper 经 `HTTPS_PROXY` 环境变量代理，git/gh 部署经 `git config --local http.proxy/https.proxy` 持久化走代理。`.workbuddy/` 未被 .gitignore 忽略，部署前务必暂移 `.workbuddy/memory/automations/automation-1786565219629/` 内部 memory 目录。
