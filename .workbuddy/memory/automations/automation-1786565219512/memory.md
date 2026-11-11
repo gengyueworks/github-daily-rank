@@ -344,3 +344,12 @@
 - **结论**：当日上榜 日榜 11 + 周榜 14；数据/翻译/站点已生成并推送 `origin/main`（`0be4beb`），线上链接更新成功（200）。
 - **备注（小插曲）**：暂移 ...629 内部 memory 目录时误把已 tracked 的 `.workbuddy/automations/automation-1786565219629/`（不含 memory 段）当成了未跟踪目录移走，造成一次假删除，已还原；真正未跟踪的 `.workbuddy/memory/automations/automation-1786565219629/` 移出后于 `/tmp` 丢失（被回收），该文件属并行 ...629 自动化私有、未进公开仓库、由其自行再生，不影响本任务交付。后续暂移只需针对 `.workbuddy/memory/automations/...` 即可。
 - **环境要点（稳定）**：代理 127.0.0.1:21879 可用；scraper 经 `HTTPS_PROXY` 环境变量代理，git/gh 部署经 `git config --local http.proxy/https.proxy` 持久化走代理。`.workbuddy/` 未被 .gitignore 忽略，部署前务必暂移 `.workbuddy/memory/automations/automation-1786565219629/` 内部 memory 目录。
+
+## 2026-11-11 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`，经 `HTTPS_PROXY` 代理 127.0.0.1:21879；直连超时 000）成功。日榜 `data/daily/2026-11-11.json` = 12 个仓库；周榜 `data/weekly/2026-11-09.json`（本周一 1109，与 11-09/10 同档期）= 14 个仓库。
+- **翻译**：首轮 `translate_missing.py` 补 日 10 + 周 23(全译)；余 `we-promise/sure`、`tokio-rs/topcoat`（日榜，均有英文简介，脚本 API 漏译）人工校对中译写入 `MY_ZH`（标 2026-11-11 注释）并重跑，最终日榜 12/12、周榜 14 个中 13 个有 `description_zh`；唯一缺口 `pingdotgg/t3code`（周榜）上游英文简介为空，无译可补（与历史 10-03~11-10 同因），非漏译。
+- **生成**：`build.py` 重建 `site/daily/2026-11-11.html`、`site/weekly/2026-11-09.html`、`site/index.html`、`site/classics/index.html`、`site/tags/index.html`（ainews 双语风格）。
+- **部署冲突（已解决）**：并行自动化 ...629 在抓取/部署窗口内推送 `data/daily/2026-11-10.json` 等到 remote main（`448612a`，并**删除**了本机的 `data/daily/2026-11-11.json`、批量刷新历史日/周榜 star 数、`zh_cache.json` 增 368 条目）。本机 pre-commit（`cebf822`）后再 `git pull --rebase -X ours origin main`：weekly 的 modify/delete 冲突（`git add` 保留本机全译版）→ rebase 成功（`c2bb4c5`）。`zh_cache.json` 在 rebase 中被 upstream 版覆盖、丢失本人 2 条新增译，已从 `/tmp/ghrank_backup` 还原并 merge upstream 368 → 371 条目（`f80d424`）。`bash deploy_ghpages.sh` 首跑其 `git pull --rebase` 因前序 rebase 中途状态/瞬断失败中止（数据未动），clean 后二跑顺过（rebase no-op，`git add -A` 无新增，push main：`c2bb4c5`/`f80d424` 已入 `origin/main`；gh-pages orphan 推送 `a0252de`）。
+- **部署**：成功。本地 `site/` 由脚本末尾从 `/tmp/ghrank_pages` 复原；`origin/main` 与本地同步（0/0）。线上复测：首测 index / weekly 200、daily 404（GitHub Pages 传播延迟，新文件首次出现）；等约 60 秒后 daily 转为 200，三页全部 200。
+- **结论**：当日上榜 日榜 12 + 周榜 14；数据/翻译/站点已生成并推送 `origin/main`（`f80d424`），线上链接更新成功（200）。
+- **环境要点（稳定）**：代理 127.0.0.1:21879 可用；scraper 经 `HTTPS_PROXY` 环境变量代理，git/gh 部署经 `git config --local http.proxy/https.proxy` 持久化走代理。`.workbuddy/` 未被 .gitignore 忽略；遇 rebase `-X ours` 后需复核 `zh_cache.json` 是否被 upstream 版覆盖（本日丢失 2 条新增译，已还原+merge 修复）。
