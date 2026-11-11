@@ -344,6 +344,9 @@ MY_ZH = {
     "garrytan/gbrain": "Garry 主导的、带强烈个人主张的 OpenClaw/Hermes 智能体大脑（Agent Brain）。",
     "ZhuLinsen/daily_stock_analysis": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。",
     "homeassistant-ai/ha-mcp": "借助 Claude、ChatGPT 等 AI 助手配置并自动化你的 Home Assistant。",
+    # 2026-11-11 日榜新增
+    "we-promise/sure": "面向所有人（由所有人共建）的个人理财应用。",
+    "tokio-rs/topcoat": "一个开箱即用的 Web 应用开发框架。",
 }
 
 
