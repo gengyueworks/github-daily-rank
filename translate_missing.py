@@ -347,6 +347,11 @@ MY_ZH = {
     # 2026-11-11 日榜新增
     "we-promise/sure": "面向所有人（由所有人共建）的个人理财应用。",
     "tokio-rs/topcoat": "一个开箱即用的 Web 应用开发框架。",
+    # 2026-11-12 日榜/周榜新增
+    "shadcn/improve": "用你能力最强的模型审阅代码库，并生成计划交由更轻量的模型去执行。",
+    "openai/codex-security": "OpenAI 的 Codex Security 命令行工具与 TypeScript SDK，用于发现、验证并修复安全漏洞。",
+    "TheAlgorithms/Java": "用 Java 实现的所有算法。",
+    "herdrdev/herdr": "你的编程智能体赖以运行的运行时环境。",
 }
 
 
