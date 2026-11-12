@@ -366,8 +366,16 @@
   "Leonxlnx/taste-skill": "为编程 Agent 注入品味的技能库：提供艺术指导、参考图像与浏览器检查，告别千篇一律的 AI 页面",
   "YuJunZhiXue/dsh-purge": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可替换对应提示词；默认提示词面向国产模型“小码酱”。支持全模型破甲——按模型切换提示词。求 Star 收藏 ⭐ 如需二次开发，请查看署名要求部分。",
   "AstrBotDevs/AstrBot": "集成了众多 IM 平台、大语言模型、插件与 AI 功能的 AI Agent 助手及开发框架，可作为你的 openclaw 替代方案。✨",
+<<<<<<< Updated upstream
   "The-PR-Agent/pr-agent": "🚀 PR Agent：开源 PR 审查工具的鼻祖。本项目并非 Qodo 的免费档。",
   "addyosmani/agent-skills": "面向 AI 编程智能体的生产级工程技能。",
   "we-promise/sure": "面向所有人（由所有人共建）的个人理财应用。",
   "tokio-rs/topcoat": "一个开箱即用的 Web 应用开发框架。"
+=======
+  "The-PR-Agent/pr-agent": "🚀 PR Agent：原版开源 PR 审查工具。本项目并非 Qodo 免费版。",
+  "we-promise/sure": "面向所有人（且由所有人打造）的个人财务应用",
+  "tokio-rs/topcoat": "开箱即用的 Web 应用开发框架",
+  "openai/codex-security": "OpenAI 的 Codex Security CLI 与 TypeScript SDK，用于发现、验证和修复安全漏洞。npm: https://www.npmjs.com/package/@openai/codex-security",
+  "TheAlgorithms/Java": "所有算法的 Java 实现"
+>>>>>>> Stashed changes
 }

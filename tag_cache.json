@@ -1950,5 +1950,9 @@
     "Agent",
     "AI工具",
     "大模型"
+  ],
+  "we-promise/sure": [],
+  "tokio-rs/topcoat": [
+    "开发工具"
   ]
 }

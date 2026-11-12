@@ -178,7 +178,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "专为 Apple Silicon 设计的 LLM 推理服务器，支持连续批处理与 SSD 缓存，可通过 macOS 菜单栏直接管理",
+      "description_zh": "专为 Apple Silicon 打造的 LLM 推理服务器，支持连续批处理与 SSD 缓存，可通过 macOS 菜单栏管理",
       "script_zh": "这个项目能让你直接在 Mac 菜单栏上一键运行本地大模型。\n\n就算你的 Mac 内存不够大，它也能用 SSD 缓存技术帮你把超大模型跑起来。\n加上专门针对苹果芯片的优化，不仅运行速度极快，还非常省电。\n\n你只需要在菜单栏点一下就能随时调用 AI，完全不占屏幕空间。\n两万多星的超高人气，绝对是 Mac 用户不容错过的本地神器！",
       "tags": [
         "大模型",
