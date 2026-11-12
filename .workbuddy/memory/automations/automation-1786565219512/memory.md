@@ -353,3 +353,12 @@
 - **部署**：成功。本地 `site/` 由脚本末尾从 `/tmp/ghrank_pages` 复原；`origin/main` 与本地同步（0/0）。线上复测：首测 index / weekly 200、daily 404（GitHub Pages 传播延迟，新文件首次出现）；等约 60 秒后 daily 转为 200，三页全部 200。
 - **结论**：当日上榜 日榜 12 + 周榜 14；数据/翻译/站点已生成并推送 `origin/main`（`f80d424`），线上链接更新成功（200）。
 - **环境要点（稳定）**：代理 127.0.0.1:21879 可用；scraper 经 `HTTPS_PROXY` 环境变量代理，git/gh 部署经 `git config --local http.proxy/https.proxy` 持久化走代理。`.workbuddy/` 未被 .gitignore 忽略；遇 rebase `-X ours` 后需复核 `zh_cache.json` 是否被 upstream 版覆盖（本日丢失 2 条新增译，已还原+merge 修复）。
+
+## 2026-11-12 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`，经 `HTTPS_PROXY` 代理 127.0.0.1:21879）成功。日榜 `data/daily/2026-11-12.json` = 10 个仓库；周榜 `data/weekly/2026-11-09.json`（本周一 1109，与 11-09/10/11 同档期）= 13 个仓库。
+- **翻译**：首轮 `translate_missing.py` 补 日 6 + 周 18(累计)；余 `shadcn/improve`、`openai/codex-security`、`TheAlgorithms/Java`（日榜）、`herdrdev/herdr`（周榜）人工校对中译写入 `MY_ZH`（标 2026-11-12 注释）并重跑，最终日榜 9 中 9（含 1 个 `GoogleChrome/modern-web-guidance-src` 上游无英文简介，无译可补）、周榜 13/13 全部有 `description_zh`；无空描述缺口（除上游无简介者）。
+- **生成**：`build.py` 重建 `site/daily/2026-11-12.html`、`site/weekly/2026-11-09.html`、`site/index.html`、`site/classics/index.html`、`site/tags/index.html`（ainews 双语风格）。
+- **部署冲突（已解决，新坑）**：并行自动化 ...629 在抓取/部署窗口内已先推送 `data/daily/2026-11-12.json` 等历史文件刷新到 `origin/main`（`e01a415`，且其 commit 内含**已带冲突标记的 `zh_cache.json`**——该自动化自身提交时就残留 `<<<<<<<`/`>>>>>>>` 标记）。本地先 `commit` 数据+脚本+缓存（`8171d92`）→ `git pull --rebase -X ours origin main` 顺过 → 复盘发现本机 `zh_cache.json` 被继承的冲突标记污染（非法 JSON）→ 备份本机全译数据到 `/tmp/ghrank_backup` → 用「备份版 + 从 `e01a415` 相对 `fce80c1` 的 diff 抽取净新增合法条目（剔除标记）」重建干净 `zh_cache.json`（376 条目，JSON 校验通过）→ 重跑 `commit`（`6571107`）→ `bash deploy_ghpages.sh`（rebase 成 no-op，`git add -A` 无新增，push main：`6571107` 已入 `origin/main`；gh-pages orphan 推送 `f092195`）→ 本地 `site/` 由脚本末尾从 `/tmp/ghrank_pages` 复原。
+- **部署**：成功。`origin/main` 与本地同步（0/0，含当日数据 `2026-11-12.json`）；gh-pages 推送 `f092195`。线上复测：首页 / daily / weekly 三页均 **200**（无传播延迟）。
+- **结论**：当日上榜 日榜 10 + 周榜 13；数据/翻译/站点已生成并推送 `origin/main`（`6571107`），线上链接更新成功（200）。
+- **环境要点（新发现·重要）**：并行自动化 ...629 的提交 `e01a415` 自带 `zh_cache.json` 冲突标记（其自身 rebase 未清理）。日后合并其 `zh_cache` **不可用 `-X ours` 直接覆盖**，必须「备份本机干净版 + 从上游 diff 抽取净新增合法条目」重建 union，否则会继承损坏 JSON 并导致后续 `translate_missing.py`/`build.py` 因 JSON 解析失败而中断。代理 127.0.0.1:21879 可用；git/gh 经 `git config --local http.proxy/https.proxy` 持久化走代理。`.workbuddy/` 未被忽略、部分内部 memory 已 tracked 进公开仓库（历史遗留，本运行无新泄漏）。
