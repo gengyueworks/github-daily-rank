@@ -352,6 +352,13 @@ MY_ZH = {
     "openai/codex-security": "OpenAI 的 Codex Security 命令行工具与 TypeScript SDK，用于发现、验证并修复安全漏洞。",
     "TheAlgorithms/Java": "用 Java 实现的所有算法。",
     "herdrdev/herdr": "你的编程智能体赖以运行的运行时环境。",
+    # 2026-11-13 日榜新增
+    "GoogleChrome/modern-web-guidance-src": "让你的编程智能体持续同步最新的 Web 最佳实践。",
+    "pookjw/HermesEnabler": "在任意 Apple Watch 设备上启用 Hermès 表盘。",
+    "QwenLM/qwen-code": "一个运行在终端里的开源 AI 编程智能体。",
+    "ashhart/TensorFold": "面向 Metal、CUDA 与 Vulkan 的大语言模型推理引擎。",
+    "nodejs/node": "Node.js JavaScript 运行时 ✨🐢🚀✨",
+    "ggml-org/llama.cpp": "用 C/C++ 实现的大语言模型推理。",
 }
 
 
