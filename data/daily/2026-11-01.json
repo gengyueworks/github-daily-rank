@@ -19,7 +19,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "为各类 Agent 打造的跨会话持久上下文：完整记录 Agent 的会话操作，借助 AI 进行智能压缩，并在后续会话中按需注入相关上下文。支持 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等众多工具。",
+      "description_zh": "面向所有 Agent 的跨会话持久上下文 —— 捕获 Agent 在会话期间的全部操作，借助 AI 进行压缩，并将相关上下文注入到未来的会话中。支持 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等工具。",
       "tags": [
         "Agent",
         "AI工具",
@@ -42,7 +42,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "专为真正的工程师打造的技能，直接来自我的 .agents 目录。",
+      "description_zh": "专为真正工程师打造的技能，直接来自我的 .agents 目录。",
       "tags": [
         "Agent",
         "AI工具",
@@ -65,7 +65,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "将 Claude Code 打造为完整的游戏开发工作室——包含 49 个 AI 智能体、72 项工作流技能，以及一套复刻真实工作室层级结构的完整协同系统。",
+      "description_zh": "将 Claude Code 打造为完整的游戏开发工作室——配备 49 个 AI 智能体、72 项工作流技能，以及复刻真实工作室层级架构的协同系统。",
       "tags": [
         "Agent",
         "游戏",
@@ -129,7 +129,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "开源 Grok Bot 替代方案，配备供机器人使用的虚拟机",
+      "description_zh": "开源的 Grok Bot 替代方案，配备可供机器人使用的虚拟机",
       "tags": [
         "Agent",
         "AI工具",
@@ -152,7 +152,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "让你的 AI 框架更擅长设计的设计语言。",
+      "description_zh": "让你的 AI 框架更懂设计的设计语言。",
       "tags": [
         "Agent",
         "设计",
@@ -244,7 +244,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "Orkas 是一款开源（MIT 协议）、本地优先的桌面 AI 团队工具。通过“指挥官”将你的目标拆解为待办任务，统筹调度 16 个内置专家智能体以及 Claude Code、Codex、OpenCode、OpenClaw 和 Hermes，同时支持项目管理、定时自动化与连接器。适用于 macOS 与 Windows 的免费应用；支持使用内置模型或自带 API 密钥。",
+      "description_zh": "Orkas 是一款开源（MIT 协议）、本地优先的桌面 AI 团队工具：由“指挥官”将目标拆解为待办任务，统筹调度 16 个内置专家智能体以及 Claude Code、Codex、OpenCode、OpenClaw 和 Hermes，并支持项目管理、定时自动化与连接器。适用于 macOS 和 Windows 的免费应用，支持内置模型或自带 API Key。",
       "tags": [
         "Agent",
         "AI工具"
@@ -289,7 +289,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "数据 / 数据库",
-      "description_zh": "涵盖 Linux、Jenkins、AWS、SRE、Prometheus、Docker、Python、Ansible、Git、Kubernetes、Terraform、OpenStack、SQL、NoSQL、Azure、GCP、DNS、Elastic、网络及虚拟化等技术的 DevOps 面试题",
+      "description_zh": "DevOps 面试题库，涵盖 Linux、Jenkins、AWS、SRE、Prometheus、Docker、Python、Ansible、Git、Kubernetes、Terraform、OpenStack、SQL、NoSQL、Azure、GCP、DNS、Elastic、网络及虚拟化等技术。",
       "tags": [
         "运维",
         "教育",
@@ -312,7 +312,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "免费开源的 macOS 菜单栏工具箱。",
+      "description_zh": "免费开源的 macOS 菜单栏工具箱",
       "tags": [
         "系统工具"
       ],

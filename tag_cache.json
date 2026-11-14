@@ -1954,5 +1954,65 @@
   "we-promise/sure": [],
   "tokio-rs/topcoat": [
     "开发工具"
+  ],
+  "GoogleChrome/modern-web-guidance-src": [
+    "Agent",
+    "前端",
+    "开发工具"
+  ],
+  "openai/codex-security": [
+    "安全",
+    "开发工具",
+    "AI工具"
+  ],
+  "pookjw/HermesEnabler": [
+    "移动",
+    "系统工具"
+  ],
+  "QwenLM/qwen-code": [
+    "Agent",
+    "AI工具",
+    "开发工具",
+    "大模型"
+  ],
+  "ashhart/TensorFold": [
+    "大模型",
+    "AI工具",
+    "开发工具"
+  ],
+  "ggml-org/llama.cpp": [
+    "大模型",
+    "AI工具",
+    "开发工具"
+  ],
+  "backnotprop/plannotator": [
+    "Agent",
+    "AI工具",
+    "开发工具"
+  ],
+  "louislam/uptime-kuma": [
+    "运维",
+    "系统工具"
+  ],
+  "tradermonty/claude-trading-skills": [
+    "Agent",
+    "AI工具",
+    "大模型"
+  ],
+  "Likely7/Veyra-NRVideo": [
+    "视频",
+    "AI工具",
+    "音视频",
+    "游戏"
+  ],
+  "google/elephant-goldfish-model": [
+    "Agent",
+    "开发工具",
+    "AI工具"
+  ],
+  "lobehub/lobehub": [
+    "Agent",
+    "AI工具",
+    "大模型"
   ]
 }

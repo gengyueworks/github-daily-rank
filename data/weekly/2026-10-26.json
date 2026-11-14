@@ -19,7 +19,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "适用于 Claude Code、Cursor 和 Codex 的去“AI味”设计技能。",
+      "description_zh": "适用于 Claude Code、Cursor 和 Codex 的反 AI 劣质设计技能。",
       "tags": [
         "Agent",
         "设计",
@@ -43,7 +43,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "一款用于多阶段安全审计的编程智能体技能，提供经独立验证且机器可读的审计结果",
+      "description_zh": "面向编程 Agent 的多阶段安全审计技能，提供经独立验证且机器可读的审计结果",
       "tags": [
         "Agent",
         "安全",
@@ -67,7 +67,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "适用于 Claude Code 的全能 SEO 技能。包含 26 项子技能和 19 个子智能体，覆盖技术 SEO、E-E-A-T、Schema、GEO/AEO、智能体适配（Lighthouse Agentic Browsing、WebMCP、llms.txt）、外链、本地 SEO、电商、国际化 SEO、Google API 及 PDF/Excel 报告导出，并提供 9 个可选扩展以获取实时 SEO 数据。",
+      "description_zh": "Claude Code 通用 SEO 技能。内置 26 个子技能与 19 个子 Agent，涵盖技术 SEO、E-E-A-T、Schema 标记、GEO/AEO、Agent 适配（Lighthouse Agentic Browsing、WebMCP、llms.txt）、反向链接、本地 SEO、电商、国际化 SEO、Google API 及 PDF/Excel 报告生成；另含 9 个用于获取实时 SEO 数据的可选扩展。",
       "tags": [
         "Agent",
         "AI工具",
@@ -91,7 +91,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "让你的 AI 框架更擅长设计的设计语言。",
+      "description_zh": "让你的 AI 框架更懂设计的设计语言。",
       "tags": [
         "Agent",
         "设计",
@@ -138,7 +138,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "一份用于优化 Claude Code 表现的 CLAUDE.md 文件，源自 Andrej Karpathy 对 LLM 编程陷阱的观察。",
+      "description_zh": "一个用于优化 Claude Code 行为表现的 CLAUDE.md 文件，源自 Andrej Karpathy 对大模型编程陷阱的观察总结。",
       "tags": [
         "Agent",
         "AI工具",
@@ -162,7 +162,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "TradingAgents：多智能体 LLM 金融交易框架",
+      "description_zh": "TradingAgents：基于多智能体大语言模型的金融交易框架",
       "tags": [
         "Agent",
         "大模型",
@@ -185,7 +185,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "助你打造出色界面的智能体技能合集。",
+      "description_zh": "助你构建出色界面的智能体技能合集。",
       "tags": [
         "Agent",
         "前端",
@@ -208,7 +208,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "为编程 Agent 注入品味的技能库：提供艺术指导、参考图像与浏览器检查，告别千篇一律的 AI 页面",
+      "description_zh": "赋予编程智能体品味的 Agent 技能：提供艺术指导、参考图与浏览器检查，告别千篇一律的 AI 页面。",
       "tags": [
         "Agent",
         "AI工具",
@@ -250,7 +250,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "为各类 Agent 打造的跨会话持久上下文：完整记录 Agent 的会话操作，借助 AI 进行智能压缩，并在后续会话中按需注入相关上下文。支持 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等众多工具。",
+      "description_zh": "面向所有 Agent 的跨会话持久上下文 —— 捕获 Agent 在会话期间的全部操作，借助 AI 进行压缩，并将相关上下文注入到未来的会话中。支持 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等工具。",
       "tags": [
         "Agent",
         "AI工具",
@@ -273,7 +273,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "Agent Skills 的公开仓库",
+      "description_zh": "智能体技能公开仓库",
       "tags": [
         "Agent",
         "AI工具",
@@ -296,7 +296,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "智能体运行框架性能优化系统。为 Claude Code、Codex、Opencode、Cursor 等工具提供技能、直觉、记忆、安全保障以及前沿研究驱动的开发支持。",
+      "description_zh": "智能体框架性能优化系统。为 Claude Code、Codex、Opencode、Cursor 等工具提供技能、本能、记忆、安全及研究驱动的开发支持。",
       "tags": [
         "Agent",
         "AI工具",
@@ -320,7 +320,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "其他",
-      "description_zh": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可替换对应提示词；默认提示词面向国产模型“小码酱”。支持全模型破甲——按模型切换提示词。求 Star 收藏 ⭐ 如需二次开发，请查看署名要求部分。",
+      "description_zh": "DeepSeek Harness 越狱工具：让所有模型都能实现越狱，支持针对不同模型更换提示词；默认提示词面向国产模型“小码酱”。支持全模型越狱——不同模型随心切换提示词。求 Star 收藏 ⭐ 如需二次开发，请查看署名要求。",
       "tags": [
         "大模型",
         "安全",
@@ -343,7 +343,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "集成了众多 IM 平台、大语言模型、插件与 AI 功能的 AI Agent 助手及开发框架，可作为你的 openclaw 替代方案。✨",
+      "description_zh": "集成了众多 IM 平台、大模型、插件与 AI 功能的 AI Agent 助手及开发框架，可作为 openclaw 的替代方案。✨",
       "tags": [
         "Agent",
         "AI工具",

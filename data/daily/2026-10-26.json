@@ -19,7 +19,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "想到，就能做到。开源、开箱即用的 AI 智能体。",
+      "description_zh": "想到，就能做到。开源、开箱即用的 AI Agent。",
       "script_zh": "这个项目是一个真正开箱即用的开源 AI 智能体。\n它的核心目标就一句话，让你想到就能做到！\n\n平常想要查资料、写代码或者处理复杂任务？\n直接在对话框里给它派活就行。\n它会自动拆解步骤，像个全能助理一样把事办妥。\n\n以前玩智能体，光配置环境就能劝退一大半人。\n但它主打零门槛，部署完立马就能上手开干！\n省心又高效，执行力简直绝了。",
       "tags": [
         "Agent",
@@ -41,7 +41,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "适用于 Claude Code、Cursor 和 Codex 的去“AI味”设计技能。",
+      "description_zh": "适用于 Claude Code、Cursor 和 Codex 的反 AI 劣质设计技能。",
       "script_zh": "这个项目是一个专门消除“AI 塑料感”的前端设计外挂。\n它能直接装进 Cursor 或者 Claude Code 里使用。\n\n你是不是经常觉得 AI 写的网页千篇一律还特别廉价？\n它就是专门来解决这个痛点的！\n它能强制 AI 遵循顶级设计规范，生成高级耐看的好界面。\n\n这个项目在 GitHub 已经狂揽了三万多星！\n它直接补齐了 AI 编程最缺的审美短板。\n平时用 AI 写前端的朋友闭眼装就对了！",
       "tags": [
         "Agent",
@@ -65,7 +65,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "VoiceStudio 是一款开源、完全本地运行的 ElevenLabs 替代方案——支持 646 种语言的声音克隆、声音设计、视频配音、听写、转录与有声书制作。",
+      "description_zh": "VoiceStudio 是一款开源、完全本地运行的 ElevenLabs 替代方案，支持 646 种语言的声音克隆、声音设计、视频配音、听写、转录和有声书制作。",
       "script_zh": "这个项目是一个完全开源且支持本地运行的 AI 声音工作站，堪称免费版的 ElevenLabs。\n\n无论你是想克隆自己的声音、做多语言视频配音，还是把文字改成有声书，它都能轻松搞定。\n它甚至还支持语音转文字和听写，覆盖了整整 646 种语言！\n\n最棒的是它完全在本地运行，既保护隐私，又帮你省下了昂贵的订阅费用。\n这种全能型的声音神级工具，绝对值得你立刻去点个 Star 收藏起来！",
       "tags": [
         "音视频",
@@ -88,7 +88,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "让你的 AI 框架更擅长设计的设计语言。",
+      "description_zh": "让你的 AI 框架更懂设计的设计语言。",
       "script_zh": "这个项目是一套专门给 AI 打造的设计语言。\n它能让你的 AI 助手瞬间学会做顶级界面。\n\n很多人用 AI 生成前端页面，总是觉得丑得一塌糊涂。\n这个项目就是用来彻底解决 AI 审美差的问题。\n把规范喂给 AI 工具，它就能写出排版舒爽美观的代码。\n\n它的厉害之处在于把顶尖设计师的直觉做成了系统规则。\n哪怕你完全不懂 UI 设计，也能轻松做出大厂级的界面。\n想用 AI 做出高颜值前端的朋友，赶紧去收藏它吧！",
       "tags": [
         "Agent",
@@ -131,7 +131,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "TradingAgents：多智能体 LLM 金融交易框架",
+      "description_zh": "TradingAgents：基于多智能体大语言模型的金融交易框架",
       "script_zh": "这个项目是一个用大模型多智能体做量化交易的开源框架。\n简单来说，就是让一堆 AI 组队帮你炒股。\n\n它把分析师、风控员和交易员都变成了 AI 智能体。\n输入你的交易想法，这些 AI 就会自己开会讨论并制定策略。\n\n最牛的是，它完全模拟了专业投资机构的真实工作流。\n不仅能自动分析市场，还能评估风险并执行交易，直接拉低了智能量化的门槛。",
       "tags": [
         "Agent",
@@ -176,7 +176,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "开发工具",
-      "description_zh": "在轻量而纯正的 IDE 中与 pi 随心编码，贴合你的工作方式量身定制——正是你所需的编程氛围。",
+      "description_zh": "在能根据你的工作习惯自我定制的轻量级真实 IDE 中与 pi 一起随心编程 —— 这正是你想要的 Vibe",
       "script_zh": "这个项目是 JetBrains 打造的轻量级真 IDE。\n它主打的就是现在最火的氛围感编程。\n\n你只要负责跟 AI 聊思路，它就能顺手把代码写完。\n彻底告别笨重复杂的传统工具配置。\n\n最神的是它能根据你的习惯去自我调整。\n既有大厂底层的专业能力，又轻快得毫无负担。\n想要体验极简编码快感的，一定要去试试！",
       "tags": [
         "开发工具",
@@ -198,7 +198,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "一款开源、可自托管的 PaaS，是 Vercel、Heroku 和 Netlify 的替代方案，支持在自己的服务器上轻松部署静态网站、数据库、全栈应用以及 360+ 种一键式服务。",
+      "description_zh": "一款开源、可自托管的 PaaS 平台，是 Vercel、Heroku 和 Netlify 的替代方案，支持在自有服务器上轻松部署静态网站、数据库、全栈应用及 360 多种一键服务。",
       "script_zh": "这个项目就是一个能直接装在你服务器上的开源版 Vercel。\n你只要有一台普通的云主机，它就能帮你搞定全套运维。\n\n不管是静态网页、后端还是数据库，点一下就能自动打包上线。\n它还内置了三百多种常用服务，全都能一键拉起。\n\n最香的是你再也不用提心吊胆看大厂的天价账单了。\n既有云平台那种丝滑的部署体验，数据又完完全全属于你自己！",
       "tags": [
         "运维",
@@ -220,7 +220,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "一款用于多阶段安全审计的编程智能体技能，提供经独立验证且机器可读的审计结果",
+      "description_zh": "面向编程 Agent 的多阶段安全审计技能，提供经独立验证且机器可读的审计结果",
       "script_zh": "这个项目是 Cloudflare 打造的 AI 安全审计插件。\n它能让你的 AI 助手像安全专家一样对代码做多轮排查。\n\n平时写代码最怕隐患，传统审计慢，AI 审计又怕幻觉。\n它不仅能自动扫描，还能独立二次验证，拒绝乱报误报。\n\n报告全都是机器可读的标准格式，能直接无缝接入自动化流水线。\n大厂背书加万星人气，绝对是 AI 开发必备的安全神器！",
       "tags": [
         "Agent",
@@ -244,7 +244,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "适用于 Claude Code 的全能 SEO 技能。包含 26 项子技能和 19 个子智能体，覆盖技术 SEO、E-E-A-T、Schema、GEO/AEO、智能体适配（Lighthouse Agentic Browsing、WebMCP、llms.txt）、外链、本地 SEO、电商、国际化 SEO、Google API 及 PDF/Excel 报告导出，并提供 9 个可选扩展以获取实时 SEO 数据。",
+      "description_zh": "Claude Code 通用 SEO 技能。内置 26 个子技能与 19 个子 Agent，涵盖技术 SEO、E-E-A-T、Schema 标记、GEO/AEO、Agent 适配（Lighthouse Agentic Browsing、WebMCP、llms.txt）、反向链接、本地 SEO、电商、国际化 SEO、Google API 及 PDF/Excel 报告生成；另含 9 个用于获取实时 SEO 数据的可选扩展。",
       "script_zh": "这个项目是给 Claude Code 量身打造的全能 SEO 插件。\n你只要在终端里给它一个指令，它就能帮你全盘诊断网站问题。\n\n从排查代码漏洞、优化内容权重，到直接生成报表，它全能搞定。\n最绝的是它不仅懂传统搜索引擎，连现在最火的 AI 搜索优化都配齐了。\n\n它里面塞了整整十九个专业智能体，相当于免费雇了个专业团队。\n想给产品搞自然流量的朋友，赶紧把它装上试试吧！",
       "tags": [
         "Agent",
