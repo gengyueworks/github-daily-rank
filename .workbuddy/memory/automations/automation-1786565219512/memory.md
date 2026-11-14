@@ -362,3 +362,12 @@
 - **部署**：成功。`origin/main` 与本地同步（0/0，含当日数据 `2026-11-12.json`）；gh-pages 推送 `f092195`。线上复测：首页 / daily / weekly 三页均 **200**（无传播延迟）。
 - **结论**：当日上榜 日榜 10 + 周榜 13；数据/翻译/站点已生成并推送 `origin/main`（`6571107`），线上链接更新成功（200）。
 - **环境要点（新发现·重要）**：并行自动化 ...629 的提交 `e01a415` 自带 `zh_cache.json` 冲突标记（其自身 rebase 未清理）。日后合并其 `zh_cache` **不可用 `-X ours` 直接覆盖**，必须「备份本机干净版 + 从上游 diff 抽取净新增合法条目」重建 union，否则会继承损坏 JSON 并导致后续 `translate_missing.py`/`build.py` 因 JSON 解析失败而中断。代理 127.0.0.1:21879 可用；git/gh 经 `git config --local http.proxy/https.proxy` 持久化走代理。`.workbuddy/` 未被忽略、部分内部 memory 已 tracked 进公开仓库（历史遗留，本运行无新泄漏）。
+
+## 2026-11-13 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`，经 `HTTPS_PROXY` 代理 127.0.0.1:21879）成功。日榜 `data/daily/2026-11-13.json` = 13 个仓库；周榜 `data/weekly/2026-11-09.json`（本周一 1109，与 11-09~11-12 同档期）= 11 个仓库。
+- **翻译**：首轮 `translate_missing.py` 命中 zh_cache/MY_ZH 补 日 7 + 周 11(全译)；余 6 个日榜新仓库（`GoogleChrome/modern-web-guidance-src`、`pookjw/HermesEnabler`、`QwenLM/qwen-code`、`ashhart/TensorFold`、`nodejs/node`、`ggml-org/llama.cpp`，均有英文简介）人工校对中译写入 `MY_ZH`（标 2026-11-13 注释）并重跑，最终日榜 13/13、周榜 11/11 全部有 `description_zh`，无空描述缺口。
+- **生成**：`build.py` 重建 `site/daily/2026-11-13.html`、`site/weekly/2026-11-09.html`、`site/index.html`、`site/classics/index.html`、`site/tags/index.html`（ainews 双语风格）。
+- **部署**：`origin/main` 当时本地 HEAD 领先 1 提交（`e274901` 既往日志，未推送）；预处理——备份当日 data 到 `/tmp/ghrank_backup`、复核 `zh_cache.json` 合法（381 条目、0 冲突标记）、确认 `.workbuddy/memory/automations/` 下无 ...629 内部 memory 目录（无需暂移）→ 本地 `commit` 数据+脚本+缓存（`ae26773`，使数据 tracked 权威）→ `bash deploy_ghpages.sh`（rebase 顺过，replay 本地 2 提交于 origin/main；`git add -A` 无新增；push main + gh-pages orphan 均成功，DONE 链接）→ 本地 `site/` 由脚本末尾从 `/tmp/ghrank_pages` 复原。
+- **部署**：成功。`origin/main` 与本地同步（0/0，含当日数据 `2026-11-13.json`）；gh-pages 推送完成。线上复测：首页 / daily / weekly 三页均 **200**（无传播延迟）。
+- **结论**：当日上榜 日榜 13 + 周榜 11；数据/翻译/站点已生成并推送 `origin/main`（`ae26773`），线上链接更新成功（200）。
+- **环境要点（稳定）**：代理 127.0.0.1:21879 可用；scraper 经 `HTTPS_PROXY` 环境变量代理，git/gh 部署经 `git config --local http.proxy/https.proxy` 持久化走代理。本次无 ...629 并行冲突（其 memory 目录未驻留本仓），部署路径为「pre-commit → deploy」直接计算成功。

@@ -359,6 +359,15 @@ MY_ZH = {
     "ashhart/TensorFold": "面向 Metal、CUDA 与 Vulkan 的大语言模型推理引擎。",
     "nodejs/node": "Node.js JavaScript 运行时 ✨🐢🚀✨",
     "ggml-org/llama.cpp": "用 C/C++ 实现的大语言模型推理。",
+    # 2026-11-14 日榜新增
+    "backnotprop/plannotator": "与智能体保持同步、掌控全局的工作空间——规划、决策、标注、审阅代码、与团队共享，并一键把所有反馈发送给智能体。",
+    "louislam/uptime-kuma": "一款精致的、可自托管的监控工具。",
+    "tradermonty/claude-trading-skills": "面向股票投资者与交易者的 Claude Code 技能——涵盖市场分析、技术图表、经济日历、选股筛选与交易策略开发。",
+    "tailscale/tailcat": "类似 netcat，但运行在 Tailscale 的数据平面上，无需 Tailscale 的控制平面。",
+    "Likely7/Veyra-NRVideo": "借助 DLSS 5 让 PS5 版 GTA6 跑上 120FPS。一款进阶的 Windows 视频播放与采集增强工具，支持视频、图片与采集卡信号的实时预览。融合 AI 超分辨率、DLSS5 图像增强与帧生成，带来次世代视觉体验。",
+    # 2026-11-14 周榜新增
+    "google/elephant-goldfish-model": "用智能体设计与审查软件的开源插件。",
+    "lobehub/lobehub": "🤯 LobeHub——你团队里的超级智能体。为团队既有的聊天工具加入超级智能体，它们自主承接工作，并每周持续进化。",
 }
 
 
