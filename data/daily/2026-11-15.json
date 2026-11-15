@@ -1,7 +1,7 @@
 {
   "since": "daily",
   "date": "2026-11-15",
-  "fetched_at": "2026-11-15T09:00:07",
+  "fetched_at": "2026-11-15T09:20:16",
   "count": 15,
   "repos": [
     {
@@ -13,18 +13,13 @@
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 11134,
-      "forks": 924,
+      "stars": 11143,
+      "forks": 925,
       "period_stars": 408,
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "script_zh": "这个项目是一个专门用来把控 AI Agent 的协同工作台。\n平时让 AI 自己跑任务最怕它失控乱发挥对吧？\n\n有了它，你可以在可视化界面里敲定方案、批注细节，还能严格审查代码。\n团队也能随时拉进来一起做决策。\n\n最绝的是，所有修改意见都能一键直接同步回给 Agent。\n彻底告别来回倒腾复制提示词的麻烦。\n掌控权稳稳在手，简直是人机协同的神器！",
-      "tags": [
-        "Agent",
-        "AI工具",
-        "开发工具"
-      ]
+      "description_zh": "与智能体保持同步、掌控全局的工作空间——规划、决策、标注、审阅代码、与团队共享，并一键把所有反馈发送给智能体。"
     },
     {
       "rank": 2,
@@ -35,18 +30,13 @@
       "description": "Keep your coding agent up to date with the latest web best practices",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 6063,
-      "forks": 403,
+      "stars": 6071,
+      "forks": 405,
       "period_stars": 1231,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "script_zh": "你让 AI 写前端代码时，它是不是总用五年前的老语法？\n这个项目就是谷歌官方专门给 AI 编程助手准备的现代 Web 开发指南。\n\n它的用法特别简单，直接喂给 Cursor 或 Copilot 就行。\n它能让 AI 彻底戒掉过时写法，学会用最新的原生能力写代码。\n\n最牛的是背靠 Chrome 官方团队，规范权威而且持续更新。\n想让 AI 助手写出高质量的现代 Web 代码，直接用它准没错！",
-      "tags": [
-        "Agent",
-        "前端",
-        "开发工具"
-      ]
+      "description_zh": "让你的编程智能体持续同步最新的 Web 最佳实践。"
     },
     {
       "rank": 3,
@@ -57,18 +47,13 @@
       "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
       "language": "Python",
       "language_color": "#3572A5",
-      "stars": 4820,
+      "stars": 4832,
       "forks": 994,
       "period_stars": 553,
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "script_zh": "这个项目把大模型直接变成了你的私人量化分析师。\n它专门给 Claude 装上了一整套专业的股票交易技能包。\n\n你只要打几个字，它就能帮你抓行情、画技术分析图。\n连宏观日历和策略回测，它都能一条龙搞定。\n\n最爽的是它省去了你自己写脚本、接各种金融接口的痛苦。\n普通散户动动嘴皮子，就能拥有机构级的投研工作流！",
-      "tags": [
-        "Agent",
-        "AI工具",
-        "大模型"
-      ]
+      "description_zh": "面向股票投资者与交易者的 Claude Code 技能——涵盖市场分析、技术图表、经济日历、选股筛选与交易策略开发。"
     },
     {
       "rank": 4,
@@ -79,19 +64,13 @@
       "description": "Chrome DevTools for coding agents",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 56311,
+      "stars": 56319,
       "forks": 4759,
       "period_stars": 664,
       "period_label": "今日",
       "topics": [],
       "category": "开发工具",
-      "script_zh": "这个项目是给 AI 编程助手装上的 Chrome 调试插件。\n简单来说，它让你的 AI 助手能直接看懂网页的运行状态。\n\n以前网页报错，你得手动复制控制台日志给 AI 吧？\n现在有了它，AI 自己就能去翻控制台、查 DOM 树，甚至直接定位 Bug。\n\n最厉害的是，它让 AI 拥有了操作浏览器的“眼睛”和“双手”。\n这绝对是前端开发者的摸鱼神器，赶紧去试试吧！",
-      "tags": [
-        "Agent",
-        "开发工具",
-        "AI工具",
-        "前端"
-      ]
+      "description_zh": "把 Chrome 开发者工具开放给编程智能体使用。"
     },
     {
       "rank": 5,
@@ -102,19 +81,13 @@
       "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
       "language_color": "#00ADD8",
-      "stars": 51444,
+      "stars": 51451,
       "forks": 3908,
       "period_stars": 893,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "script_zh": "阿里开源的 open-code-review，是一个帮你自动做代码审查的 AI 工具。\n\n你在提交代码时，它能精准定位到具体的代码行，直接给出修改意见。\n像空指针、线程安全、SQL注入这种常见漏洞，它都能提前帮你拦截掉。\n\n最厉害的是它结合了传统规则和大模型的混合架构，既快又准。\n它不仅在阿里内部经过了海量业务检验，还完美兼容主流大模型。\n\n想提升团队的代码质量，这个项目绝对值得你去尝试！",
-      "tags": [
-        "开发工具",
-        "Agent",
-        "AI工具",
-        "安全"
-      ]
+      "description_zh": "快速、高效，已在阿里巴巴大规模场景中实战检验。混合架构代码审查工具：确定性流水线 + LLM 智能体，精准的行级评论，内置多语言规则集（空指针、线程安全、XSS、SQL 注入），兼容 OpenAI 与 Anthropic。"
     },
     {
       "rank": 6,
@@ -125,19 +98,13 @@
       "description": "An open-source AI coding agent that lives in your terminal.",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 30350,
+      "stars": 30352,
       "forks": 3500,
       "period_stars": 64,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "script_zh": "这个项目是一个直接跑在终端里的开源AI编程助手。\n写代码时你完全不用切出去复制粘贴。\n\n只要敲一行自然语言，它就能读懂整个代码仓库。\n改bug或者补测试用例，它都能在命令行里一步搞定。\n\n它背后有通义千问的开源模型撑腰，中文理解特别准。\n代码完全留在本地跑，又快又安全。\n这绝对是极客程序员最想要的隐形外挂！",
-      "tags": [
-        "Agent",
-        "AI工具",
-        "开发工具",
-        "大模型"
-      ]
+      "description_zh": "一个运行在终端里的开源 AI 编程智能体。"
     },
     {
       "rank": 7,
@@ -148,19 +115,13 @@
       "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 24501,
+      "stars": 24509,
       "forks": 2226,
       "period_stars": 495,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "script_zh": "这个项目是一个把表格、文档、幻灯片全融在一起的开源办公引擎！\n它是专门为 AI Agent 量身打造的办公套件。\n\n以前让 AI 读写复杂的表格或文档，开发者得对接各种乱七八糟的工具。\n现在直接把它集成到项目里，就能给 AI 装上一整套原生办公能力。\n\n最厉害的是它在一个运行时里打通了所有文档形态！\n性能强悍又完全开源，绝对是做 AI 办公应用不容错过的神器！",
-      "tags": [
-        "Agent",
-        "文档",
-        "前端",
-        "开发工具"
-      ]
+      "description_zh": "面向 AI 智能体的办公套件运行时——电子表格、文档、幻灯片、画布、关系型表格与 PDF 集于一身。"
     },
     {
       "rank": 8,
@@ -171,12 +132,13 @@
       "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
       "language": "TypeScript",
       "language_color": "#3178c6",
-      "stars": 17371,
+      "stars": 17375,
       "forks": 1666,
       "period_stars": 9,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型"
+      "category": "AI / 大模型",
+      "description_zh": "AG-UI：智能体—用户交互协议。将智能体带入前端应用。"
     },
     {
       "rank": 9,
@@ -187,18 +149,13 @@
       "description": "LLM Inference Engine for Metal, CUDA and Vulkan.",
       "language": "Zig",
       "language_color": "#ec915c",
-      "stars": 2165,
+      "stars": 2166,
       "forks": 497,
       "period_stars": 37,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "script_zh": "这个项目是一个通吃主流显卡的轻量大模型推理引擎。\n你想在本地跑模型，再也不用为驱动和配置抓狂了！\n\n不管是苹果的Metal、英伟达的CUDA，还是兼容性最广的Vulkan，它全都原生支持。\n只要给它模型，它就能直接榨干你的硬件算力。\n\n它最大的亮点就是跨平台做得极度纯粹，而且非常轻量。\n没有任何臃肿的依赖，推理速度还快得飞起。\n想搞本地大模型部署，它绝对值得你放进收藏夹！",
-      "tags": [
-        "大模型",
-        "AI工具",
-        "开发工具"
-      ]
+      "description_zh": "面向 Metal、CUDA 与 Vulkan 的大语言模型推理引擎。"
     },
     {
       "rank": 10,
@@ -209,19 +166,13 @@
       "description": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
       "language": "Go",
       "language_color": "#00ADD8",
-      "stars": 120079,
+      "stars": 120087,
       "forks": 7001,
       "period_stars": 227,
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "script_zh": "用 Claude 编程觉得 Token 消耗太快？\n\n这个项目能帮你省下大钱！\n\n它其实是一个给 Claude Code 准备的“原始人说话”提示词。\n\n只要让 AI 像原始人一样只说关键词，就能直接砍掉六成以上的 Token。\n\n你不用担心它变笨，它写出来的代码依然非常靠谱。\n\n花最少的钱办最硬核的事，这绝对是省钱流的终极外挂！\n\n赶紧去给你的 AI 安排上吧！",
-      "tags": [
-        "Agent",
-        "大模型",
-        "AI工具",
-        "开发工具"
-      ]
+      "description_zh": "🪨 多 token 不如少 token 好使。一套爆火的技能+代理：让编程智能体像原始人一样说话，削减 65% 的 token 用量。"
     },
     {
       "rank": 11,
@@ -232,17 +183,13 @@
       "description": "A fancy self-hosted monitoring tool",
       "language": "JavaScript",
       "language_color": "#f1e05a",
-      "stars": 94242,
+      "stars": 94249,
       "forks": 8818,
       "period_stars": 430,
       "period_label": "今日",
       "topics": [],
       "category": "开发工具",
-      "script_zh": "这个项目是一个颜值超高的开源网站状态监控神器。\n如果你手里有网站或者服务器，最怕的就是半夜偷偷宕机你还不知道。\n\n只要把它部署起来填上网址，它就会全天候替你盯着。\n一旦服务崩溃，它能立刻通过微信、飞书或邮件向你轰炸报警。\n\n它不仅界面清爽好看，一条命令就能在本地跑起来。\n彻底告别昂贵的商业监控，数据还全在你自己手里！",
-      "tags": [
-        "运维",
-        "系统工具"
-      ]
+      "description_zh": "一款精致的、可自托管的监控工具。"
     },
     {
       "rank": 12,
@@ -253,14 +200,13 @@
       "description": "The personal finance app for everyone (by everyone)",
       "language": "Ruby",
       "language_color": "#701516",
-      "stars": 15314,
+      "stars": 15322,
       "forks": 1268,
       "period_stars": 659,
       "period_label": "今日",
       "topics": [],
       "category": "移动端",
-      "script_zh": "这个项目是一个斩获上万星的开源个人记账神器。\n它专门用来帮你轻松打理所有的个人财务。\n\n平时记账最烦广告满天飞，或者担心隐私被偷看。\n用它就能把日常收支、预算规划和资产变动整理得清清楚楚。\n\n最打动人的是它完全由开源社区共同打造。\n界面不仅干净好看，还没有任何恶心的付费套路。\n所有财务数据都牢牢攥在你自己手里，用起来既省心又踏实！",
-      "tags": []
+      "description_zh": "面向所有人（由所有人共建）的个人理财应用。"
     },
     {
       "rank": 13,
@@ -271,12 +217,13 @@
       "description": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
       "language": "Go",
       "language_color": "#00ADD8",
-      "stars": 913,
-      "forks": 211,
+      "stars": 918,
+      "forks": 213,
       "period_stars": 33,
       "period_label": "今日",
       "topics": [],
-      "category": "AI / 大模型"
+      "category": "AI / 大模型",
+      "description_zh": "面向编程智能体交付的自托管工作流。通过脚本与人工审批关卡，编排 CodeBuddy、Codex 与 Claude Code；包含供编程助手使用的本地工作流。"
     },
     {
       "rank": 14,
@@ -287,19 +234,13 @@
       "description": "Bring PS5 GTA6 to 120FPS with DLSS 5. An advanced Windows video player and capture enhancement tool featuring real-time preview for videos, images, and capture card sources. Combine AI-powered Super Resolution, DLSS5 image enhancement, and Frame Generation to deliver a next-generation visual experience.",
       "language": "C++",
       "language_color": "#f34b7d",
-      "stars": 2270,
+      "stars": 2282,
       "forks": 177,
       "period_stars": 420,
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "script_zh": "这个项目是一个给视频和采集卡做实时 AI 增强的播放神器。\n想不想把低清老片甚至主机游戏画面一键拉满？\n\n平时用采集卡玩主机总觉得帧率不够高、画面不够锐利。\n用它就能一边实时预览，一边无缝搞定超分辨率和插帧。\n\n它最绝的地方是几乎没有可感知的延迟。\n靠着强大的 AI 算法，连主机画面都能轻松补到一百二十帧。",
-      "tags": [
-        "视频",
-        "AI工具",
-        "音视频",
-        "游戏"
-      ]
+      "description_zh": "借助 DLSS 5 让 PS5 版 GTA6 跑上 120FPS。一款进阶的 Windows 视频播放与采集增强工具，支持视频、图片与采集卡信号的实时预览。融合 AI 超分辨率、DLSS5 图像增强与帧生成，带来次世代视觉体验。"
     },
     {
       "rank": 15,
@@ -310,12 +251,13 @@
       "description": "A WiFi security auditing software",
       "language": "Rust",
       "language_color": "#dea584",
-      "stars": 5868,
+      "stars": 5880,
       "forks": 1025,
       "period_stars": 270,
       "period_label": "今日",
       "topics": [],
-      "category": "安全"
+      "category": "安全",
+      "description_zh": "一款 WiFi 安全审计软件。"
     }
   ]
 }

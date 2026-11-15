@@ -368,6 +368,10 @@ MY_ZH = {
     # 2026-11-14 周榜新增
     "google/elephant-goldfish-model": "用智能体设计与审查软件的开源插件。",
     "lobehub/lobehub": "🤯 LobeHub——你团队里的超级智能体。为团队既有的聊天工具加入超级智能体，它们自主承接工作，并每周持续进化。",
+    # 2026-11-15 日榜新增
+    "ag-ui-protocol/ag-ui": "AG-UI：智能体—用户交互协议。将智能体带入前端应用。",
+    "Tencent/LoopForge": "面向编程智能体交付的自托管工作流。通过脚本与人工审批关卡，编排 CodeBuddy、Codex 与 Claude Code；包含供编程助手使用的本地工作流。",
+    "martin-olivier/airgorah": "一款 WiFi 安全审计软件。",
 }
 
 

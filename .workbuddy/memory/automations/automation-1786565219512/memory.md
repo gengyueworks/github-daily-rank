@@ -371,3 +371,12 @@
 - **部署**：成功。`origin/main` 与本地同步（0/0，含当日数据 `2026-11-13.json`）；gh-pages 推送完成。线上复测：首页 / daily / weekly 三页均 **200**（无传播延迟）。
 - **结论**：当日上榜 日榜 13 + 周榜 11；数据/翻译/站点已生成并推送 `origin/main`（`ae26773`），线上链接更新成功（200）。
 - **环境要点（稳定）**：代理 127.0.0.1:21879 可用；scraper 经 `HTTPS_PROXY` 环境变量代理，git/gh 部署经 `git config --local http.proxy/https.proxy` 持久化走代理。本次无 ...629 并行冲突（其 memory 目录未驻留本仓），部署路径为「pre-commit → deploy」直接计算成功。
+
+## 2026-11-14 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`，直连与 `HTTPS_PROXY` 代理 127.0.0.1:21879 均通）成功。日榜 `data/daily/2026-11-14.json` = 12 个仓库；周榜 `data/weekly/2026-11-09.json`（本周一 1109）= 15 个仓库。
+- **翻译**：首轮 `translate_missing.py` 命中 zh_cache/MY_ZH 补 日 7 + 周 14；余 5 个日榜新仓库（`backnotprop/plannotator`、`louislam/uptime-kuma`、`tradermonty/claude-trading-skills`、`tailscale/tailcat`、`Likely7/Veyra-NRVideo`）+ 2 个周榜新仓库（`google/elephant-goldfish-model`、`lobehub/lobehub`）人工校对中译写入 `MY_ZH`（标 2026-11-14 注释）并重跑，最终日榜 12/12、周榜 15/15 全部有 `description_zh`，无空描述缺口。
+- **生成**：`build.py` 重建 `site/daily/2026-11-14.html`、`site/weekly/2026-11-09.html`、`site/index.html`、`site/classics/index.html`、`site/tags/index.html`（ainews 双语风格）。
+- **部署冲突（已解决）**：并行自动化 ...629 已先推送历史日/周榜 star 数刷新 + **删除** `data/weekly/2026-11-09.json` + 自带冲突标记的损坏 `zh_cache.json`（`c8a2cba`）到 remote main，导致本机 `git pull --rebase` 中止。解法：本机先 `commit` 数据+脚本+缓存+本自动化 memory.md（`df3f328`）→ `git rebase origin/main` 遇 `data/weekly/2026-11-09.json` 的 modify/delete（保留本机全译版，`git add` 不删）与 `zh_cache.json` 内容冲突（远程 blob 自带冲突标记、非法 JSON，已用 `/tmp/ghrank_backup` 干净版覆盖，校验 387 条目、0 标记）→ `git rebase --continue`（`79c17e3`）→ 二跑 `bash deploy_ghpages.sh`（rebase 成 no-op，push main：`79c17e3` 已入 `origin/main`；gh-pages orphan 推送）→ 本地 `site/` 由脚本末尾复原。
+- **部署**：成功。`origin/main` 与本地同步（0/0，含当日数据）；gh-pages 推送完成。线上复测：首页 / daily / weekly 三页均 **200**（无传播延迟）。
+- **结论**：当日上榜 日榜 12 + 周榜 15；数据/翻译/站点已生成并推送 `origin/main`（`79c17e3`），线上链接更新成功（200）。
+- **环境要点（稳定）**：代理 127.0.0.1:21879 可用；git/gh 经 `git config --local http.proxy/https.proxy` 持久化走代理。遇 rebase 中远程 `zh_cache.json` 自带冲突标记（非法 JSON）时，必须用本地干净版覆盖，勿继承损坏 JSON（与 11-12 同坑）。
