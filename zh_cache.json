@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 {
   "anthropics/skills": "Agent Skills 的公开仓库。",
   "altic-dev/FluidVoice": "最快且唯一的 macOS 本地听写应用，搭载设备端语音识别与定制 AI 增强模型。Wispr Flow 的本地替代方案。欢迎点个 ⭐ 支持！Windows 和 iOS 现已开放候补名单，Linux 即将推出。",
@@ -394,3 +395,6 @@
   "elementalsouls/Claude-BugHunter": "用于漏洞挖掘与外部红队工作的 Claude Code 技能包——包含 82 项技能、15 条斜杠命令，横跨 24 类核心漏洞、收录 681 种已公开报告的攻击模式，另附企业身份与基础设施攻击矩阵。",
   "NVIDIA/SkillEvaluator": "多层框架，用于评估 AI 智能体技能：内含质量关卡、语义重叠检测、合成评测数据集生成，以及可衡量技能如何影响智能体行为的实时智能体评测。"
 }
+=======
+{}
+>>>>>>> Stashed changes
