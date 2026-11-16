@@ -380,3 +380,13 @@
 - **部署**：成功。`origin/main` 与本地同步（0/0，含当日数据）；gh-pages 推送完成。线上复测：首页 / daily / weekly 三页均 **200**（无传播延迟）。
 - **结论**：当日上榜 日榜 12 + 周榜 15；数据/翻译/站点已生成并推送 `origin/main`（`79c17e3`），线上链接更新成功（200）。
 - **环境要点（稳定）**：代理 127.0.0.1:21879 可用；git/gh 经 `git config --local http.proxy/https.proxy` 持久化走代理。遇 rebase 中远程 `zh_cache.json` 自带冲突标记（非法 JSON）时，必须用本地干净版覆盖，勿继承损坏 JSON（与 11-12 同坑）。
+
+## 2026-11-15 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`，经 `HTTPS_PROXY` 代理 127.0.0.1:21879）成功。日榜 `data/daily/2026-11-15.json` = 15 个仓库；周榜 `data/weekly/2026-11-09.json`（本周一 1109）= 11 个仓库。
+- **翻译**：首轮 `translate_missing.py` 命中 zh_cache/MY_ZH 补 日 12 + 周 23(全译)；余 3 个日榜新仓库（`ag-ui-protocol/ag-ui`、`Tencent/LoopForge`、`martin-olivier/airgorah`，均有英文简介，脚本 API 漏译）人工校对中译写入 `MY_ZH`（标 2026-11-15 注释）并重跑，最终日榜 15/15、周榜 11/11 全部有 `description_zh`，无空描述缺口。
+- **生成**：`build.py` 重建 `site/daily/2026-11-15.html`、`site/weekly/2026-11-09.html`、`site/index.html`、`site/classics/index.html`、`site/tags/index.html`（ainews 双语风格）。
+- **部署冲突（已解决，新坑）**：并行自动化 ...629 已先推送 `data/daily/2026-11-15.json`（0 译）、刷新 `data/daily/2026-11-12.json`/`2026-11-13.json` star 数、并带了**损坏的 `zh_cache.json`（非法 JSON、冲突标记）**到 remote main（`3521303`）。本机先 `commit` 全译数据+脚本+缓存+本自动化 memory.md（`c9f08fb`）→ `git rebase -X ours origin/main` 顺过，但 **`-X ours` 在此取的是远程侧**（rebase 语义）：日榜被远程 0 译版覆盖、zh_cache 被远程损坏版覆盖 → 立即用 `/tmp/ghrank_backup` 干净版（日榜 15/15、zh_cache 390 条目）覆盖还原 → `git commit --amend`（`c5a1ef3`）。
+- **部署**：`bash deploy_ghpages.sh` 顺过（`3521303` 已在 HEAD 历史内，rebase 成 no-op；push main + gh-pages orphan 均成功，DONE 链接）。本地 `site/` 由脚本末尾从 `/tmp/ghrank_pages` 复原。
+- **线上复测**：`origin/main` 与本地同步（0/0，日榜 15/15 已入库）；`git ls-tree origin/gh-pages` 含 `daily/2026-11-15.html`、`weekly/2026-11-09.html`、`index.html` 等；curl 直连三页（首页 / daily / weekly）均 **200**，无传播延迟。
+- **结论**：当日上榜 日榜 15 + 周榜 11；数据/翻译/站点已生成并推送 `origin/main`（`c5a1ef3`），线上链接更新成功（200）。
+- **环境要点（重要·新发现）**：`git rebase -X ours` 的「ours」是**被 rebase 到的上游（origin/main）**，而非被重放的本地提交——与本任务期望「保留本地全译本」相反，会静默采纳远程损坏版。遇并行 ...629 推送时**务必在 rebase 后用本地干净备份覆盖写回日/周榜与 zh_cache（后者远程常带冲突标记、非法 JSON），再 amend 提交**，不要依赖 `-X ours` 选边。代理 127.0.0.1:21879 可用；git/gh 经本地持久化代理配置走代理。`.workbuddy/` 下无 ...629 内部 memory 目录，无需暂移。
