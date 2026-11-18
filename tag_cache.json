@@ -2014,5 +2014,60 @@
     "Agent",
     "AI工具",
     "大模型"
+  ],
+  "shadcn/improve": [
+    "Agent",
+    "大模型",
+    "开发工具"
+  ],
+  "TheAlgorithms/Java": [
+    "教育"
+  ],
+  "ag-ui-protocol/ag-ui": [
+    "Agent",
+    "前端"
+  ],
+  "Tencent/LoopForge": [
+    "Agent",
+    "开发工具"
+  ],
+  "martin-olivier/airgorah": [
+    "安全",
+    "系统工具"
+  ],
+  "getarcaneapp/arcane": [
+    "运维",
+    "系统工具"
+  ],
+  "DeanChensj/jiangshan-map": [
+    "教育"
+  ],
+  "google-labs-code/stitch-skills": [
+    "Agent",
+    "开发工具"
+  ],
+  "NVIDIA/SkillEvaluator": [
+    "Agent",
+    "大模型",
+    "开发工具"
+  ],
+  "google-research/paper-orchestra": [
+    "Agent",
+    "大模型",
+    "写作"
+  ],
+  "sveltejs/svelte": [
+    "前端",
+    "开发工具"
+  ],
+  "kajisho5/ffmpeg-skill": [
+    "视频",
+    "Agent",
+    "开发工具"
+  ],
+  "elementalsouls/Claude-BugHunter": [
+    "Agent",
+    "安全",
+    "开发工具"
   ]
 }

@@ -4,7 +4,7 @@
 翻译来源（两级）：
 1. ZH 表（人工校对，优先）——覆盖已知仓库，质量最高。
 2. 自动翻译（fallback）——新上榜仓库没有人工翻译时，调用本机
-   CLIProxyAPI 网关（127.0.0.1:8317）翻译，结果同时写回 ZH 表
+   CLIProxyAPI 网关（127.0.0.1:8402）翻译，结果同时写回 ZH 表
    并持久化到 zh_cache.json，下次直接命中、不再调 API。
 
 用法：
@@ -26,7 +26,7 @@ CACHE = PROJECT / "zh_cache.json"
 
 # ---- 自动翻译配置（本机 CLIProxyAPI 网关，OpenAI 兼容）----
 AUTO_TRANSLATE = os.environ.get("GHRANK_AUTO_TRANSLATE", "1") == "1"
-LLM_BASE_URL = os.environ.get("GHRANK_LLM_URL", "http://127.0.0.1:8317/v1/chat/completions")
+LLM_BASE_URL = os.environ.get("GHRANK_LLM_URL", "http://127.0.0.1:8402/v1/chat/completions")
 LLM_API_KEY = os.environ.get("GHRANK_LLM_KEY", "sk-123")
 
 

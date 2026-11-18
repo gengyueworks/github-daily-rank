@@ -2,7 +2,7 @@
 """为每个仓库生成「一分钟逐字稿」（口播稿：是什么 / 有什么用 / 为什么好）。
 
 - 遍历 data/daily、data/weekly、data/classics.json 的所有仓库
-- 缺 script_zh 的仓库调用本机 CLIProxyAPI 网关（127.0.0.1:8317）生成
+- 缺 script_zh 的仓库调用本机 CLIProxyAPI 网关（127.0.0.1:8402）生成
 - 缓存 script_cache.json（按 full_name），已生成的不重复调用
 - 生成结果写回原 JSON 的 script_zh 字段
 
@@ -23,7 +23,7 @@ PROJECT = Path(__file__).resolve().parent
 DATA = PROJECT / "data"
 CACHE_FILE = PROJECT / "script_cache.json"
 
-LLM_BASE_URL = os.environ.get("GHRANK_LLM_URL", "http://127.0.0.1:8317/v1/chat/completions")
+LLM_BASE_URL = os.environ.get("GHRANK_LLM_URL", "http://127.0.0.1:8402/v1/chat/completions")
 LLM_API_KEY = os.environ.get("GHRANK_LLM_KEY", "sk-123")
 
 
