@@ -19,7 +19,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "面向所有 Agent 的跨会话持久上下文 —— 捕获 Agent 在会话期间的全部操作，借助 AI 进行压缩，并将相关上下文注入到未来的会话中。支持 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等工具。",
+      "description_zh": "为所有智能体提供跨会话的持久化上下文——自动捕获智能体在会话中的所有操作，利用 AI 进行压缩，并在后续会话中注入相关上下文。支持 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等多种工具。",
       "tags": [
         "Agent",
         "AI工具",
@@ -42,7 +42,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "专为真正工程师打造的技能，直接来自我的 .agents 目录。",
+      "description_zh": "面向真实工程师的技能库，直接取自我的 .agents 目录。",
       "tags": [
         "Agent",
         "AI工具",
@@ -65,7 +65,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "将 Claude Code 打造为完整的游戏开发工作室——配备 49 个 AI 智能体、72 项工作流技能，以及复刻真实工作室层级架构的协同系统。",
+      "description_zh": "将 Claude Code 打造为全能游戏开发工作室——包含 49 个 AI 智能体、72 项工作流技能，以及一套模拟真实工作室层级的完整协作系统。",
       "tags": [
         "Agent",
         "游戏",
@@ -107,7 +107,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+      "description_zh": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，包含完整排盘算法、四化系统、格局知识库及古籍原文数据。",
       "tags": [
         "开发工具",
         "数据"
@@ -129,7 +129,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "开源的 Grok Bot 替代方案，配备可供机器人使用的虚拟机",
+      "description_zh": "开源 Grok 机器人替代方案，内置可供机器人使用的虚拟机。",
       "tags": [
         "Agent",
         "AI工具",
@@ -152,7 +152,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "让你的 AI 框架更懂设计的设计语言。",
+      "description_zh": "让你的 AI 助手更懂设计的语言体系。",
       "tags": [
         "Agent",
         "设计",
@@ -221,7 +221,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "DeepTutor：终身个性化辅导。https://deeptutor.info/",
+      "description_zh": "DeepTutor：终身个性化辅导系统。https://deeptutor.info/ .",
       "tags": [
         "教育",
         "AI工具",
@@ -244,7 +244,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "Orkas 是一款开源（MIT 协议）、本地优先的桌面 AI 团队工具：由“指挥官”将目标拆解为待办任务，统筹调度 16 个内置专家智能体以及 Claude Code、Codex、OpenCode、OpenClaw 和 Hermes，并支持项目管理、定时自动化与连接器。适用于 macOS 和 Windows 的免费应用，支持内置模型或自带 API Key。",
+      "description_zh": "Orkas 是一款开源（MIT）、本地优先的桌面 AI 团队协作工具。通过 Commander 将目标拆解为待办事项，并协调 16 个内置专家智能体及 Claude Code、Codex、OpenCode、OpenClaw 和 Hermes 等模型，支持项目管理、定时自动化与连接器功能。适用于 macOS 和 Windows，支持内置模型或使用自定义 API Key。",
       "tags": [
         "Agent",
         "AI工具"
@@ -266,7 +266,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "开放式多智能体交互课堂——一键开启沉浸式多智能体学习体验",
+      "description_zh": "OpenMAIC 多智能体互动课堂 —— 一键开启沉浸式多智能体学习体验",
       "tags": [
         "Agent",
         "教育",
@@ -289,7 +289,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "数据 / 数据库",
-      "description_zh": "DevOps 面试题库，涵盖 Linux、Jenkins、AWS、SRE、Prometheus、Docker、Python、Ansible、Git、Kubernetes、Terraform、OpenStack、SQL、NoSQL、Azure、GCP、DNS、Elastic、网络及虚拟化等技术。",
+      "description_zh": "涵盖 Linux、Jenkins、AWS、SRE、Prometheus、Docker、Python、Ansible、Git、Kubernetes、Terraform、OpenStack、SQL、NoSQL、Azure、GCP、DNS、Elastic、网络及虚拟化等领域的 DevOps 面试题库。",
       "tags": [
         "运维",
         "教育",
@@ -312,7 +312,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "免费开源的 macOS 菜单栏工具箱",
+      "description_zh": "开源免费的 macOS 菜单栏工具箱。",
       "tags": [
         "系统工具"
       ],
