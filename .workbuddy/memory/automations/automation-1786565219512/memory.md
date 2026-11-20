@@ -390,3 +390,13 @@
 - **线上复测**：`origin/main` 与本地同步（0/0，日榜 15/15 已入库）；`git ls-tree origin/gh-pages` 含 `daily/2026-11-15.html`、`weekly/2026-11-09.html`、`index.html` 等；curl 直连三页（首页 / daily / weekly）均 **200**，无传播延迟。
 - **结论**：当日上榜 日榜 15 + 周榜 11；数据/翻译/站点已生成并推送 `origin/main`（`c5a1ef3`），线上链接更新成功（200）。
 - **环境要点（重要·新发现）**：`git rebase -X ours` 的「ours」是**被 rebase 到的上游（origin/main）**，而非被重放的本地提交——与本任务期望「保留本地全译本」相反，会静默采纳远程损坏版。遇并行 ...629 推送时**务必在 rebase 后用本地干净备份覆盖写回日/周榜与 zh_cache（后者远程常带冲突标记、非法 JSON），再 amend 提交**，不要依赖 `-X ours` 选边。代理 127.0.0.1:21879 可用；git/gh 经本地持久化代理配置走代理。`.workbuddy/` 下无 ...629 内部 memory 目录，无需暂移。
+
+## 2026-11-16 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`，经 `HTTPS_PROXY` 代理 127.0.0.1:21879）首跑成功。日榜 `data/daily/2026-11-16.json` = 12 个仓库；周榜 `data/weekly/2026-11-16.json`（本周一 1116，新周首抓）= 11 个仓库（新周文件，无历史译文可继承）。
+- **翻译**：首轮 `translate_missing.py` 命中 MY_ZH 补 日 8 + 周 19；余 4 个日榜新仓库（`google-labs-code/stitch-skills`、`ggml-org/ggml`、`elementalsouls/Claude-BugHunter`、`NVIDIA/SkillEvaluator`，均有英文简介）人工校对中译写入 `MY_ZH`（标 2026-11-16 注释）并重跑，最终日榜 12/12、周榜 11/11 全部有 `description_zh`，无空描述缺口。
+- **生成**：`build.py` 重建 `site/daily/2026-11-16.html`、`site/weekly/2026-11-16.html`、`site/index.html`、`site/classics/index.html`、`site/tags/index.html`（ainews 双语风格）。
+- **部署（踩 11-15 同坑，已修复）**：本机 pre-commit 全译数据+脚本+缓存（`10b71ca`）→ `bash deploy_ghpages.sh` 输出 DONE 链接、gh-pages orphan 推送成功（线上四页均 200，HTML 含当日全译内容）。但脚本内 `git pull --rebase --autostash -X ours` 采纳了并行 ...629 早先推送的损坏版：本地与 `origin/main` 的 11-16 日/周榜被覆盖成 0 译、`zh_cache.json` 被换成带冲突标记的非法 JSON（复现 11-12/11-15 的坑）。
+- **修复**：从 pre-rebase 提交 `10b71ca` 用 `git show` 恢复日榜(12/12)/周榜(11/11)/`zh_cache.json`(394 条、0 标记) → commit（`06dbd64`）→ 直接 `git push origin main`（不再跑 deploy 脚本，避免二次 -X ours 覆盖；gh-pages 无需重推，因其 HTML 本就是正确的全译版）。复核：`origin/main` 日榜 12/12、0 冲突标记，本地/远端 0/0 同步。
+- **线上复测**：首页 / daily/2026-11-16 / weekly/2026-11-16 / index 四页均 **200**；gh-pages HTML 抽检含当日全译内容；无传播延迟。工作树干净。
+- **结论**：当日上榜 日榜 12 + 周榜 11；数据/翻译/站点已生成并推送 `origin/main`（最终 `06dbd64`），线上链接更新成功（200）。
+- **环境要点（再次印证）**：`deploy_ghpages.sh` 内置的 `-X ours` 在并行 ...629 推送时会再次静默采纳远程损坏版（0 译 + 非法 zh_cache）。**部署后必须复核 `origin/main` 与本地 data/zh_cache 的译文数与冲突标记**；若被覆盖，用 pre-rebase 提交 `git show <sha>:<file>` 恢复 → commit → 直接 `git push origin main`（不重跑 deploy，gh-pages 已正确）。代理 127.0.0.1:21879 可用，git/gh 经本地持久化代理配置走代理；`.workbuddy/` 下无 ...629 内部 memory 目录，无需暂移。
