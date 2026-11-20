@@ -400,3 +400,12 @@
 - **线上复测**：首页 / daily/2026-11-16 / weekly/2026-11-16 / index 四页均 **200**；gh-pages HTML 抽检含当日全译内容；无传播延迟。工作树干净。
 - **结论**：当日上榜 日榜 12 + 周榜 11；数据/翻译/站点已生成并推送 `origin/main`（最终 `06dbd64`），线上链接更新成功（200）。
 - **环境要点（再次印证）**：`deploy_ghpages.sh` 内置的 `-X ours` 在并行 ...629 推送时会再次静默采纳远程损坏版（0 译 + 非法 zh_cache）。**部署后必须复核 `origin/main` 与本地 data/zh_cache 的译文数与冲突标记**；若被覆盖，用 pre-rebase 提交 `git show <sha>:<file>` 恢复 → commit → 直接 `git push origin main`（不重跑 deploy，gh-pages 已正确）。代理 127.0.0.1:21879 可用，git/gh 经本地持久化代理配置走代理；`.workbuddy/` 下无 ...629 内部 memory 目录，无需暂移。
+
+## 2026-11-20 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`，经 `HTTPS_PROXY` 代理 127.0.0.1:21879；直连亦 200）成功。日榜 `data/daily/2026-11-20.json` = 16 个仓库；周榜 `data/weekly/2026-11-16.json`（本周一 1116，重抓覆盖）= 13 个仓库。
+- **翻译**：首轮 `translate_missing.py` 补 日 6 + 周 17；余 10 个新仓库（jingyaogong/minimind、firecrawl、nginx、openvino、mvanhorn/last30days-skill、mjmirza/app-store-compliance、Tracer-Cloud/opensre、toeverything/AFFiNE、Ghost-Downloader-3、zhouxiaoka/autoclip 日榜 + kajisho5/ffmpeg-skill 周榜）人工校对中译写入 `MY_ZH`（标 2026-11-20 注释）并重跑，最终日榜 16/16、周榜 13/13 全部有 `description_zh`，无空描述缺口。
+- **生成**：`build.py` 重建 `site/daily/2026-11-20.html`、`site/weekly/2026-11-16.html`、`site/index.html`、`site/classics/index.html`、`site/tags/index.html`（ainews 双语风格）。
+- **部署冲突（已解决）**：并行自动化 ...629 在窗口内推送 4 提交（b1b874d，刷新历史 weekly star、重写 `weekly/2026-11-16.json` 至 14/14、`zh_cache.json` 392 条但无冲突标记；远端无 11-20 日榜）。本机 pre-commit（`9e1873c`）→ rebase 遇 weekly + zh_cache 两处冲突 → 用 `/tmp/bak_*` 本地全译版覆盖解决（保留本地权威 13/13 + zh_cache 403）→ rebase 成 `0072129` → push main（0/0）→ `bash deploy_ghpages.sh` 顺过（本次无二次抢推，`-X ours` 未覆盖，DONE 链接）。
+- **部署后复核**：本地与 `origin/main` 均 daily 16/16、weekly 13/13、zh_cache 403、0 冲突标记，完全一致；HEAD `922ac2e`（deploy 的 `git add -A` 带入 memory 改动）。`gh-pages` 分支含三页。线上首测首页/周报 200、日报 404（Pages 传播延迟），等约 50 秒后三页全 200，日报页含 `2026-11-20` 当日内容。
+- **结论**：当日上榜 日榜 16 + 周榜 13；数据/翻译/站点已生成并推送 `origin/main`（`922ac2e`），线上链接更新成功（200）。
+- **环境要点（稳定）**：代理 127.0.0.1:21879 可用；git/gh 经本地持久化代理配置走代理。遇并行 ...629 推送时，rebase 用本地干净备份覆盖 weekly+zh_cache 再 continue 是有效解（本次远端 zh_cache 无冲突标记，比 11-12/11-15 的损坏版温和）。`.workbuddy/` 下无 ...629 内部 memory 目录，无需暂移；但 memory.md 的未提交改动会阻止 rebase，需先 stash 再 rebase、之后 pop。
