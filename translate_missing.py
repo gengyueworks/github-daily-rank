@@ -377,6 +377,18 @@ MY_ZH = {
     "ggml-org/ggml": "面向机器学习的张量库。",
     "elementalsouls/Claude-BugHunter": "用于漏洞挖掘与外部红队工作的 Claude Code 技能包——包含 82 项技能、15 条斜杠命令，横跨 24 类核心漏洞、收录 681 种已公开报告的攻击模式，另附企业身份与基础设施攻击矩阵。",
     "NVIDIA/SkillEvaluator": "多层框架，用于评估 AI 智能体技能：内含质量关卡、语义重叠检测、合成评测数据集生成，以及可衡量技能如何影响智能体行为的实时智能体评测。",
+    # 2026-11-20 日榜/周榜新增
+    "jingyaogong/minimind": "🧠 两小时从零训练出属于你自己的 6400 万参数大模型。",
+    "firecrawl/firecrawl": "让智能体更聪明的知识基础设施。通过一个 API 即可完成搜索、抓取，并接入 550 多家数据提供商。",
+    "nginx/nginx": "NGINX 开源项目官方仓库。",
+    "openvinotoolkit/openvino": "OpenVINO™ 是一个用于优化和部署 AI 推理的开源工具包。",
+    "mvanhorn/last30days-skill": "一款 AI 智能体技能，可跨 Reddit、X、YouTube、Hacker News、Polymarket 及整个网络调研任意主题，再综合生成一份有据可依的摘要。",
+    "mjmirza/app-store-compliance": "避免常见的 App Store 与 Google Play 审核被拒。这是一份开放的行动指南与提交前自检工具，收录 117 种有据可查的被拒模式及修复方案、隐私清单与数据安全检查、95 项受追踪的截止日期（欧盟 AI 法案、DSA、COPPA、年龄法规等），并附带一款面向 AI 编程智能体的技能。",
+    "Tracer-Cloud/opensre": "提升 CI/CD 可靠性的开源智能体。",
+    "toeverything/AFFiNE": "不止于 Notion 与 Miro。AFFiNE（读作 [əˈfaɪn]）是新一代知识库，将规划、整理与创作融为一体。隐私优先、开源、可定制、开箱即用。",
+    "XiaoYouChR/Ghost-Downloader-3": "你需要的下载器，集大成者。",
+    "zhouxiaoka/autoclip": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，可将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。",
+    "kajisho5/ffmpeg-skill": "面向编程智能体的本地视频编辑器：包含 42 个 FFmpeg 工具，配有机器可读的调用契约与一个 MCP 服务器，适用于 Claude Code、Cursor 与 Codex。支持剪辑、字幕、重构画面、响度调整与平台导出，无需云端、无需 API 密钥。",
 }
 
 
