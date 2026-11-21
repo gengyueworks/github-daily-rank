@@ -2069,5 +2069,47 @@
     "Agent",
     "安全",
     "开发工具"
+  ],
+  "astral-sh/uv": [
+    "开发工具"
+  ],
+  "jquery/jquery": [
+    "前端"
+  ],
+  "appwrite/appwrite": [
+    "开发工具",
+    "Agent"
+  ],
+  "openvinotoolkit/openvino": [
+    "AI工具",
+    "开发工具"
+  ],
+  "solidjs/solid": [
+    "前端"
+  ],
+  "firecrawl/firecrawl": [
+    "Agent",
+    "数据",
+    "开发工具"
+  ],
+  "nginx/nginx": [
+    "运维",
+    "系统工具"
+  ],
+  "mjmirza/app-store-compliance": [
+    "开发工具",
+    "安全",
+    "Agent"
+  ],
+  "Tracer-Cloud/opensre": [
+    "Agent",
+    "运维"
+  ],
+  "toeverything/AFFiNE": [
+    "笔记",
+    "文档"
+  ],
+  "XiaoYouChR/Ghost-Downloader-3": [
+    "系统工具"
   ]
 }

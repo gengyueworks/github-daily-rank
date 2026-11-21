@@ -115,7 +115,8 @@
       "tags": [
         "运维",
         "系统工具"
-      ]
+      ],
+      "description_zh": "面向所有人的现代化 Docker 管理工具"
     },
     {
       "rank": 6,
@@ -157,7 +158,8 @@
       "tags": [
         "Agent",
         "开发工具"
-      ]
+      ],
+      "description_zh": "一套专为 Stitch MCP 服务器设计的智能体技能库。每个技能均遵循智能体技能开放标准，可与 Antigravity、Gemini CLI、Claude Code 及 Cursor 等编码智能体兼容。"
     },
     {
       "rank": 8,
