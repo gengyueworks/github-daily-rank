@@ -1,0 +1,360 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GitHub 日榜｜2026-11-07</title><style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap');
+:root {
+    --klein: #002FA7;
+    --klein-bright: #0044FF;
+    --white: #FFFFFF;
+    --bg-light: #F8F9FB;
+    --text-dark: #1A1A1A;
+    --text-mid: #6B6B6B;
+    --text-light: #9CA3AF;
+    --border: #E5E7EB;
+    --accent: #C41E3A;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Noto Sans SC', 'Inter', -apple-system, sans-serif;
+    background: var(--white); color: var(--text-dark);
+    line-height: 1.75; -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 720px; margin: 0 auto; padding: 56px 28px 80px; }
+.doc-title { font-size: 38px; font-weight: 700; color: var(--text-dark); letter-spacing: -0.5px; margin-bottom: 8px; text-wrap: balance; }
+.doc-title span { color: var(--klein); }
+.doc-date { font-family: 'Inter', sans-serif; font-size: 15px; color: var(--text-light); }
+.divider { height: 1px; background: var(--border); margin: 36px 0; }
+.section-header { font-size: 24px; font-weight: 600; color: var(--klein); margin-bottom: 24px; padding-bottom: 8px; border-bottom: 2px solid var(--klein); display: inline-block; text-wrap: balance; }
+.section-header .en { font-family: 'Inter'; font-size: 13px; color: var(--text-light); font-weight: 400; margin-left: 10px; }
+.section-block { margin-bottom: 48px; }
+.news-item { margin-bottom: 52px; }
+.news-item:last-child { margin-bottom: 0; }
+.news-title { font-size: 21px; font-weight: 600; color: var(--text-dark); line-height: 1.5; margin-bottom: 14px; text-wrap: balance; }
+.news-body { font-size: 16px; color: var(--text-dark); line-height: 1.9; margin-bottom: 16px; }
+.news-label { font-size: 14px; color: var(--text-mid); line-height: 1.7; margin-bottom: 14px; }
+.highlight { color: var(--klein); font-weight: 600; }
+.accent { color: var(--accent); font-weight: 600; }
+.turn { color: var(--klein); font-weight: 700; }
+.intro-text { font-size: 16px; color: var(--text-dark); line-height: 1.9; margin-bottom: 14px; }
+.source-line { font-size: 13px; color: var(--text-light); margin-top: 8px; }
+.source-line a { color: var(--klein); text-decoration: none; }
+.footer-block { font-size: 14px; color: var(--text-mid); line-height: 1.7; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); }
+.card-tag { font-size: 12px; color: var(--text-mid); opacity: 0.55; margin-top: 8px; line-height: 1.6; }
+
+/* ---- 全站标签筛选（daily/weekly/index/tags 共用，classics 页有自己的 scoped 版本） ---- */
+.tagbar-label { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-light); margin: 20px 0 10px; }
+.tagbar-label a { color: var(--klein); text-decoration: none; }
+.tagbar-label a:hover { text-decoration: underline; }
+.tagbar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 26px; }
+.tagchip { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-dark); background: var(--white); border: 1px solid var(--border); border-radius: 999px; padding: 4px 13px; cursor: pointer; text-decoration: none; display: inline-block; }
+.tagchip:hover { color: var(--klein); border-color: var(--klein); }
+.tagchip.active { background: var(--klein); color: #fff; border-color: var(--klein); }
+.tagchip .cnt { color: var(--text-light); margin-left: 3px; }
+.tagchip.active .cnt { color: rgba(255,255,255,0.75); }
+.mini-tag { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: var(--klein); background: var(--white); border: 1px solid var(--border); border-radius: 999px; padding: 1px 9px; cursor: pointer; margin-right: 3px; }
+.mini-tag:hover { background: var(--klein); color: #fff; border-color: var(--klein); }
+
+.site-nav-lite { display: flex; align-items: center; justify-content: space-between; margin-bottom: 28px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+.nav-back { font-size: 14px; color: var(--klein); text-decoration: none; font-weight: 500; }
+.nav-back:hover { text-decoration: underline; }
+.nav-date { font-size: 13px; color: var(--text-light); font-family: 'JetBrains Mono', monospace; }
+
+/* ---- GitHub 榜专属（仍沿用 ainews 用词体系） ---- */
+.rank { font-family: 'JetBrains Mono', monospace; color: var(--klein); font-weight: 700; margin-right: 8px; }
+.repo-link { color: var(--text-dark); text-decoration: none; }
+.repo-link:hover { color: var(--klein); }
+.zh { color: var(--text-mid); }
+.tr { font-size: 11px; color: #fff; background: var(--klein); border-radius: 4px; padding: 2px 6px; margin-right: 6px; font-family: 'Inter'; vertical-align: middle; }
+.repo-meta { font-size: 14px; color: var(--text-mid); margin-top: 12px; line-height: 1.8; }
+.repo-meta .lang-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin: 0 4px 0 2px; }
+.repo-meta .cat { color: var(--klein); font-weight: 600; }
+.riser-note { font-size: 13px; color: var(--text-light); margin-top: 8px; }
+.script-block { font-size: 15.5px; color: var(--ink-soft, var(--text-mid)); line-height: 1.8; margin: 0 0 14px; }
+.script-tag { font-size: 11px; color: #fff; background: var(--klein); border-radius: 4px; padding: 1px 7px; margin-right: 8px; font-family: 'Inter'; vertical-align: middle; white-space: nowrap; }
+.archive { columns: 2; column-gap: 24px; }
+.archive a { display: block; color: var(--klein); text-decoration: none; padding: 3px 0; font-size: 15px; }
+.archive a:hover { text-decoration: underline; }
+
+/* classics 高分精选页专属：阅读型页面加宽容器，提升行宽舒适度 */
+body.classics .container { max-width: 860px; }
+
+/* ---- classics 高分精选页：严格对齐 ainews 排版体系 ----
+   红蓝配比：蓝为主（标题/■ 标签/强调/链接/footer 3px 蓝顶线），
+   红仅限数字点缀（.num，JetBrains Mono 红色数字），蓝:红 ≈ 10:1。
+   全部限定 body.classics，不影响 daily/weekly。 */
+body.classics {
+  --paper: #FFFFFF; --ink: #0E0E10; --ink-soft: #3A3A3E;
+  --gray: #6B6B70; --gray-light: #9CA3AF; --line: #E8E8EC;
+}
+body.classics .masthead { margin-bottom: 36px; }
+body.classics .mast-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--klein); font-weight: 600; margin-bottom: 14px; }
+body.classics .mast-title { font-size: 44px; font-weight: 900; letter-spacing: -1.5px; line-height: 1.05; color: var(--klein); margin-bottom: 16px; text-wrap: balance; }
+body.classics .mast-rule { height: 3px; background: var(--klein); width: 100%; margin: 0 0 10px; }
+body.classics .mast-meta { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--gray); display: flex; gap: 14px; flex-wrap: wrap; }
+body.classics .mast-meta .issue { color: var(--klein); font-weight: 600; }
+body.classics .mast-lede { font-size: 16px; line-height: 1.7; color: var(--ink-soft); margin-top: 22px; padding-left: 16px; border-left: 3px solid var(--klein); }
+body.classics .sec-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gray-light); margin-bottom: 6px; }
+body.classics .sec-title { font-size: 15px; font-weight: 700; color: var(--klein); letter-spacing: 1px; margin-bottom: 24px; display: inline-block; }
+body.classics .sec-title::before { content: "AE"; color: var(--klein); margin-right: 8px; font-size: 13px; }
+body.classics .item { margin-bottom: 52px; }
+body.classics .item:last-child { margin-bottom: 0; }
+body.classics .dateline { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gray); letter-spacing: 0.5px; margin-bottom: 10px; }
+body.classics .dateline .src { color: var(--klein); font-weight: 600; }
+body.classics .item-title { font-size: 21px; font-weight: 700; line-height: 1.4; margin-bottom: 12px; text-wrap: balance; }
+body.classics .item-title a { color: var(--klein); text-decoration: none; }
+body.classics .item-title a:hover { text-decoration: underline; }
+body.classics .body { font-size: 15.5px; color: var(--ink-soft); line-height: 1.8; }
+body.classics .body p { margin-bottom: 14px; }
+body.classics .body p:last-child { margin-bottom: 0; }
+body.classics .body .num { font-family: 'JetBrains Mono', monospace; color: var(--accent); font-weight: 600; }
+body.classics .body .tag { display: inline-block; font-size: 11px; font-family: 'JetBrains Mono', monospace; color: var(--gray); background: var(--line); padding: 1px 8px; border-radius: 3px; margin-right: 4px; }
+body.classics .src-line { font-size: 13px; color: var(--gray); margin-top: 10px; font-family: 'JetBrains Mono', monospace; line-height: 1.7; }
+body.classics .src-line a { color: var(--klein); text-decoration: none; }
+body.classics .src-line a:hover { text-decoration: underline; }
+body.classics .src-line .cat { color: var(--klein); font-weight: 600; }
+body.classics .link-area { margin-top: 12px; background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 8px 12px; display: flex; flex-direction: column; gap: 6px; }
+body.classics .link-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+body.classics .link-url { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--klein); text-decoration: none; overflow-wrap: anywhere; }
+body.classics .link-url:hover { text-decoration: underline; }
+body.classics .copy-btn { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gray); background: var(--paper); border: 1px solid var(--line); border-radius: 4px; padding: 2px 8px; cursor: pointer; flex-shrink: 0; }
+body.classics .copy-btn:hover { color: var(--klein); border-color: var(--klein); }
+body.classics .copy-btn.copied { color: #fff; background: var(--klein); border-color: var(--klein); }
+body.classics .footer { margin-top: 48px; padding-top: 20px; border-top: 3px solid var(--klein); font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--gray); line-height: 1.8; }
+body.classics .footer .big { color: var(--ink); font-weight: 600; }
+body.classics .footer a { color: var(--klein); text-decoration: none; }
+body.classics .footer a:hover { text-decoration: underline; }
+/* ---- 标签筛选 tagbar（2026-11-02 新增，全站标签色仅 klein 蓝） ---- */
+body.classics .tagbar-label { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gray-light); margin: 28px 0 10px; }
+body.classics .tagbar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 6px; }
+body.classics .tagchip { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--ink-soft); background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 4px 13px; cursor: pointer; }
+body.classics .tagchip:hover { color: var(--klein); border-color: var(--klein); }
+body.classics .tagchip.active { background: var(--klein); color: #fff; border-color: var(--klein); }
+body.classics .tagchip .cnt { color: var(--gray-light); margin-left: 3px; }
+body.classics .tagchip.active .cnt { color: rgba(255,255,255,0.75); }
+body.classics .mini-tag { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: var(--klein); background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 1px 9px; cursor: pointer; margin-right: 3px; }
+body.classics .mini-tag:hover { background: var(--klein); color: #fff; border-color: var(--klein); }
+</style></head>
+<body><div class="container">
+<nav class="site-nav-lite"><a href="../index.html" class="nav-back">← 首页 / Index</a><span class="nav-date">2026年11月07日</span></nav>
+<h1 class="doc-title">GitHub 日榜｜<span>2026-11-07</span></h1>
+<p class="doc-date">2026年11月07日 · 星期六 · Daily GitHub Trending</p>
+<div class="divider"></div>
+<div class="section-block">
+  <h2 class="section-header">今日榜单 <span class="en">Today's Board</span></h2>
+  <p class="intro-text">今日 <span class="accent">17</span> 个仓库登上 GitHub Trending，最热分类 <span class="highlight">其他</span>，单日最高 <span class="accent">+2548★</span>（<span class="highlight">cloudflare/security-audit-skill</span>）。</p><p class="intro-text">Today <span class="accent">17</span> repos trended on GitHub. Hottest category <span class="highlight">Misc</span>; top daily gain <span class="accent">+2548★</span> by <span class="highlight">cloudflare/security-audit-skill</span>.</p>
+  <div class="tagbar-label">按标签筛选 · Filter by tag · <a href="../tags/index.html">全站标签总览 →</a></div><div class="tagbar"><button class="tagchip active" data-tag="">全部 <span class="cnt">17</span></button><button class="tagchip" data-tag="开发工具">开发工具 <span class="cnt">6</span></button><button class="tagchip" data-tag="Agent">Agent <span class="cnt">4</span></button><button class="tagchip" data-tag="AI工具">AI工具 <span class="cnt">3</span></button><button class="tagchip" data-tag="大模型">大模型 <span class="cnt">1</span></button><button class="tagchip" data-tag="数据">数据 <span class="cnt">1</span></button><button class="tagchip" data-tag="安全">安全 <span class="cnt">1</span></button></div>
+  
+    <div class="news-item" data-tags="">
+        <h3 class="news-title"><span class="rank">#1</span><a class="repo-link" href="https://github.com/zed-industries/zed" target="_blank">zed-industries/zed</a></h3>
+        <p class="news-body">Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.</p>
+        
+        
+        <p class="repo-meta">★ 93,628 <span class="accent">(+306 今日 today)</span> · ⑂ 11,499 forks · <span class="lang-dot" style="background:#dea584"></span>Rust · <span class="cat">开发工具 · Dev Tools</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：开发工具 · Dev Tools</p>
+    </div>
+
+    <div class="news-item" data-tags="Agent,大模型,数据,开发工具">
+        <h3 class="news-title"><span class="rank">#2</span><a class="repo-link" href="https://github.com/NVIDIA/auto-ontology" target="_blank">NVIDIA/auto-ontology</a></h3>
+        <p class="news-body">Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.</p>
+        
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>英伟达开源的这个项目，是一个帮大模型搭建语义知识图谱的利器。<br>做智能体最头疼的，就是大模型容易胡思乱想、找不准上下文。</p>
+<p class="script-block">它能在你的数据上建一层推理网络，把模糊的提问变成精准确定的查询。<br>不仅检索精度直接拉满，还能让 AI 的推理过程完全透明可解释。</p>
+<p class="script-block">背靠英伟达的架构实力，它把复杂的图谱构建变得格外轻量。<br>想打造靠谱的企业级智能体，它绝对是值得关注的硬核解法！</p>
+        <p class="repo-meta">★ 9,036 <span class="accent">(+2015 今日 today)</span> · ⑂ 725 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">AI / 大模型 · AI / LLM</span> · <button class="mini-tag" data-tag="Agent">Agent</button> <button class="mini-tag" data-tag="大模型">大模型</button> <button class="mini-tag" data-tag="数据">数据</button> <button class="mini-tag" data-tag="开发工具">开发工具</button></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item" data-tags="">
+        <h3 class="news-title"><span class="rank">#3</span><a class="repo-link" href="https://github.com/rails/rails" target="_blank">rails/rails</a></h3>
+        <p class="news-body">Ruby on Rails</p>
+        
+        
+        <p class="repo-meta">★ 59,026 <span class="accent">(+142 今日 today)</span> · ⑂ 23,832 forks · <span class="lang-dot" style="background:#701516"></span>Ruby · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item" data-tags="">
+        <h3 class="news-title"><span class="rank">#4</span><a class="repo-link" href="https://github.com/mpv-player/mpv" target="_blank">mpv-player/mpv</a></h3>
+        <p class="news-body">🎥 Command line media player</p>
+        
+        
+        <p class="repo-meta">★ 37,876 <span class="accent">(+37 今日 today)</span> · ⑂ 3,632 forks · <span class="lang-dot" style="background:#555555"></span>C · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item" data-tags="开发工具">
+        <h3 class="news-title"><span class="rank">#5</span><a class="repo-link" href="https://github.com/rust-lang/rust" target="_blank">rust-lang/rust</a></h3>
+        <p class="news-body">Empowering everyone to build reliable and efficient software.</p>
+        
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目就是爆火全球的底层编程语言 Rust 的官方代码库。<br>以前写 C++ 最怕内存越界和莫名崩溃，但加了垃圾回收又会拖慢速度。</p>
+<p class="script-block">它靠独创的所有权机制，在编译阶段就把绝大部分安全隐患彻底掐死了。<br>完全不需要运行时垃圾回收，就能同时搞定极限性能和超高稳定性。</p>
+<p class="script-block">现在连 Linux 内核都在用它，科技巨头更是在疯狂拿它重构底层系统。<br>想写出既快又稳、绝不崩溃的代码，它绝对是当下的最优解！</p>
+        <p class="repo-meta">★ 121,450 <span class="accent">(+192 今日 today)</span> · ⑂ 17,363 forks · <span class="lang-dot" style="background:#dea584"></span>Rust · <span class="cat">开发工具 · Dev Tools</span> · <button class="mini-tag" data-tag="开发工具">开发工具</button></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：开发工具 · Dev Tools</p>
+    </div>
+
+    <div class="news-item" data-tags="">
+        <h3 class="news-title"><span class="rank">#6</span><a class="repo-link" href="https://github.com/react/react" target="_blank">react/react</a></h3>
+        <p class="news-body">The library for web and native user interfaces.</p>
+        
+        
+        <p class="repo-meta">★ 252,257 <span class="accent">(+248 今日 today)</span> · ⑂ 51,811 forks · <span class="lang-dot" style="background:#f1e05a"></span>JavaScript · <span class="cat">前端 / Web · Frontend / Web</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：前端 / Web · Frontend / Web</p>
+    </div>
+
+    <div class="news-item" data-tags="">
+        <h3 class="news-title"><span class="rank">#7</span><a class="repo-link" href="https://github.com/angular/angular" target="_blank">angular/angular</a></h3>
+        <p class="news-body">Deliver web apps with confidence 🚀</p>
+        
+        
+        <p class="repo-meta">★ 101,361 <span class="accent">(+135 今日 today)</span> · ⑂ 28,911 forks · <span class="lang-dot" style="background:#3178c6"></span>TypeScript · <span class="cat">前端 / Web · Frontend / Web</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：前端 / Web · Frontend / Web</p>
+    </div>
+
+    <div class="news-item" data-tags="">
+        <h3 class="news-title"><span class="rank">#8</span><a class="repo-link" href="https://github.com/symfony/symfony" target="_blank">symfony/symfony</a></h3>
+        <p class="news-body">The Symfony PHP framework</p>
+        
+        
+        <p class="repo-meta">★ 31,430 <span class="accent">(+128 今日 today)</span> · ⑂ 9,948 forks · <span class="lang-dot" style="background:#4F5D95"></span>PHP · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item" data-tags="">
+        <h3 class="news-title"><span class="rank">#9</span><a class="repo-link" href="https://github.com/prometheus/prometheus" target="_blank">prometheus/prometheus</a></h3>
+        <p class="news-body">The Prometheus monitoring system and time series database.</p>
+        
+        
+        <p class="repo-meta">★ 67,183 <span class="accent">(+148 今日 today)</span> · ⑂ 10,988 forks · <span class="lang-dot" style="background:#00ADD8"></span>Go · <span class="cat">数据 / 数据库 · Data / DB</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：数据 / 数据库 · Data / DB</p>
+    </div>
+
+    <div class="news-item" data-tags="Agent,AI工具,开发工具">
+        <h3 class="news-title"><span class="rank">#10</span><a class="repo-link" href="https://github.com/google/skills" target="_blank">google/skills</a></h3>
+        <p class="news-body">Agent Skills for Google products and technologies</p>
+        <p class="news-body zh"><span class="tr">译</span>面向 Google 产品与技术的智能体技能。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>想让你的 AI 助手直接操作 Google 的各种服务吗？<br>这个项目就是 Google 官方专门打造的 AI 技能库！</p>
+<p class="script-block">它把谷歌各种产品和技术，都封装成了 Agent 能直接调用的能力。<br>不管是调用 API 还是搞定云服务，AI 拿来就能用。</p>
+<p class="script-block">它是官方维护的，质量极高，在 GitHub 上已经狂揽两万多星。<br>想开发智能体的同学，用它能省下大量折腾的时间！</p>
+        <p class="repo-meta">★ 22,838 <span class="accent">(+534 今日 today)</span> · ⑂ 1,920 forks · <span class="lang-dot" style="background:#3572A5"></span>Python · <span class="cat">AI / 大模型 · AI / LLM</span> · <button class="mini-tag" data-tag="Agent">Agent</button> <button class="mini-tag" data-tag="AI工具">AI工具</button> <button class="mini-tag" data-tag="开发工具">开发工具</button></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item" data-tags="开发工具">
+        <h3 class="news-title"><span class="rank">#11</span><a class="repo-link" href="https://github.com/microsoft/vscode" target="_blank">microsoft/vscode</a></h3>
+        <p class="news-body">Visual Studio Code</p>
+        
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是微软开源的跨平台轻量级代码编辑器。<br>无论你写前端后端还是 Python，它都能轻松搞定。</p>
+<p class="script-block">只要装上对应的扩展，它就能秒变专属的全能开发环境！<br>你再也不用为了不同语言，去下载一堆臃肿的软件了。</p>
+<p class="script-block">它最厉害的地方就是插件生态极其丰富，而且启动快、资源占用小。<br>配合自带的智能补全和 Git 工具，用起来爽快感直接拉满。</p>
+<p class="script-block">难怪它能斩获近二十万星，绝对是程序员必装的写代码神器！</p>
+        <p class="repo-meta">★ 195,024 <span class="accent">(+301 今日 today)</span> · ⑂ 44,425 forks · <span class="lang-dot" style="background:#3178c6"></span>TypeScript · <span class="cat">其他 · Misc</span> · <button class="mini-tag" data-tag="开发工具">开发工具</button></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item" data-tags="">
+        <h3 class="news-title"><span class="rank">#12</span><a class="repo-link" href="https://github.com/nushell/nushell" target="_blank">nushell/nushell</a></h3>
+        <p class="news-body">A new type of shell</p>
+        
+        
+        <p class="repo-meta">★ 40,983 <span class="accent">(+131 今日 today)</span> · ⑂ 2,343 forks · <span class="lang-dot" style="background:#dea584"></span>Rust · <span class="cat">开发工具 · Dev Tools</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：开发工具 · Dev Tools</p>
+    </div>
+
+    <div class="news-item" data-tags="">
+        <h3 class="news-title"><span class="rank">#13</span><a class="repo-link" href="https://github.com/etcd-io/etcd" target="_blank">etcd-io/etcd</a></h3>
+        <p class="news-body">Distributed reliable key-value store for the most critical data of a distributed system</p>
+        
+        
+        <p class="repo-meta">★ 52,614 <span class="accent">(+128 今日 today)</span> · ⑂ 10,590 forks · <span class="lang-dot" style="background:#00ADD8"></span>Go · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item" data-tags="">
+        <h3 class="news-title"><span class="rank">#14</span><a class="repo-link" href="https://github.com/openssl/openssl" target="_blank">openssl/openssl</a></h3>
+        <p class="news-body">General purpose TLS and crypto library</p>
+        
+        
+        <p class="repo-meta">★ 31,292 <span class="accent">(+26 今日 today)</span> · ⑂ 11,580 forks · <span class="lang-dot" style="background:#555555"></span>C · <span class="cat">其他 · Misc</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item" data-tags="Agent,AI工具,开发工具">
+        <h3 class="news-title"><span class="rank">#15</span><a class="repo-link" href="https://github.com/mattpocock/skills" target="_blank">mattpocock/skills</a></h3>
+        <p class="news-body">Skills for Real Engineers. Straight from my .agents directory.</p>
+        <p class="news-body zh"><span class="tr">译</span>专为真正工程师打造的技能，直接来自我的 .agents 目录。</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是一个装满了硬核编程实战技巧的开源宝库。<br>它把复杂的开发痛点拆解成了可以直接复制的技能卡片。</p>
+<p class="script-block">不管你是自己查阅，还是直接喂给 AI 编程助手，都能让效率翻倍。<br>最牛的是，这些内容全是作者在实际开发中提炼出来的干货。</p>
+<p class="script-block">它能让你的 AI 助手瞬间变聪明，写出更规范的代码。<br>想提升开发效率的兄弟，直接去 GitHub 搜它就完了！</p>
+        <p class="repo-meta">★ 316,720 <span class="accent">(+2070 今日 today)</span> · ⑂ 26,496 forks · <span class="lang-dot" style="background:#89e051"></span>Shell · <span class="cat">其他 · Misc</span> · <button class="mini-tag" data-tag="Agent">Agent</button> <button class="mini-tag" data-tag="AI工具">AI工具</button> <button class="mini-tag" data-tag="开发工具">开发工具</button></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：其他 · Misc</p>
+    </div>
+
+    <div class="news-item" data-tags="Agent,安全,开发工具,AI工具">
+        <h3 class="news-title"><span class="rank">#16</span><a class="repo-link" href="https://github.com/cloudflare/security-audit-skill" target="_blank">cloudflare/security-audit-skill</a></h3>
+        <p class="news-body">A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings</p>
+        <p class="news-body zh"><span class="tr">译</span>面向代码 Agent 的多阶段安全审计技能，提供经独立验证且机器可读的审计结果</p>
+        <p class="script-block"><span class="script-tag">一分钟讲解 1-min</span>这个项目是 Cloudflare 打造的 AI 安全审计插件。<br>它能让你的 AI 助手像安全专家一样对代码做多轮排查。</p>
+<p class="script-block">平时写代码最怕隐患，传统审计慢，AI 审计又怕幻觉。<br>它不仅能自动扫描，还能独立二次验证，拒绝乱报误报。</p>
+<p class="script-block">报告全都是机器可读的标准格式，能直接无缝接入自动化流水线。<br>大厂背书加万星人气，绝对是 AI 开发必备的安全神器！</p>
+        <p class="repo-meta">★ 64,018 <span class="accent">(+2548 今日 today)</span> · ⑂ 4,147 forks · <span class="lang-dot" style="background:#f1e05a"></span>JavaScript · <span class="cat">AI / 大模型 · AI / LLM</span> · <button class="mini-tag" data-tag="Agent">Agent</button> <button class="mini-tag" data-tag="安全">安全</button> <button class="mini-tag" data-tag="开发工具">开发工具</button> <button class="mini-tag" data-tag="AI工具">AI工具</button></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：AI / 大模型 · AI / LLM</p>
+    </div>
+
+    <div class="news-item" data-tags="">
+        <h3 class="news-title"><span class="rank">#17</span><a class="repo-link" href="https://github.com/astral-sh/ruff" target="_blank">astral-sh/ruff</a></h3>
+        <p class="news-body">An extremely fast Python linter and code formatter, written in Rust.</p>
+        
+        
+        <p class="repo-meta">★ 50,691 <span class="accent">(+169 今日 today)</span> · ⑂ 2,612 forks · <span class="lang-dot" style="background:#dea584"></span>Rust · <span class="cat">开发工具 · Dev Tools</span></p>
+        
+        <p class="card-tag">topics 标签 · category 分类：开发工具 · Dev Tools</p>
+    </div>
+</div>
+<div class="footer-block">
+  <p>GitHub 日榜 · 每日自动收录自 GitHub Trending · Daily auto-collected from GitHub Trending</p>
+  <p>数据来源 Source：<a href="https://github.com/trending?since=daily" target="_blank">github.com/trending?since=daily</a> · 抓取时间 Fetched：2026-11-07T09:00:07</p>
+</div>
+</div>
+<script>
+
+  function applyTag(tag){
+    document.querySelectorAll('.tagchip[data-tag]').forEach(function(c){
+      c.classList.toggle('active', (c.getAttribute('data-tag') || '') === tag);
+    });
+    document.querySelectorAll('.news-item, .item').forEach(function(it){
+      var ts = (it.getAttribute('data-tags') || '').split(',');
+      it.style.display = (!tag || ts.indexOf(tag) >= 0) ? '' : 'none';
+    });
+    try { history.replaceState(null, '', tag ? ('#tag=' + encodeURIComponent(tag)) : location.pathname); } catch(e) {}
+  }
+  document.querySelectorAll('.tagchip[data-tag]').forEach(function(c){
+    c.addEventListener('click', function(){ applyTag(c.getAttribute('data-tag') || ''); });
+  });
+  document.querySelectorAll('.mini-tag').forEach(function(c){
+    c.addEventListener('click', function(){
+      applyTag(c.getAttribute('data-tag') || '');
+      window.scrollTo(0, 0);
+    });
+  });
+  var _m = location.hash.match(/#tag=([^&]+)/);
+  if (_m) { try { applyTag(decodeURIComponent(_m[1])); } catch(e) {} }
+
+</script>
+</body></html>
