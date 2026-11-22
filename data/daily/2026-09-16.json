@@ -19,7 +19,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "阿里巴巴大规模实战验证的高效代码评审工具。采用确定性流水线与 LLM Agent 混合架构，支持精准的行级代码注释，内置多语言安全规则集（涵盖 NPE、线程安全、XSS、SQL 注入等），并兼容 OpenAI 与 Anthropic 接口。",
+      "description_zh": "阿里巴巴大规模实战验证的高效代码审查工具。采用混合架构：确定性流水线结合 LLM Agent，支持精准的行级注释，内置多语言规则集（涵盖 NPE、线程安全、XSS、SQL 注入等），兼容 OpenAI 与 Anthropic 接口。",
       "script_zh": "阿里开源的 open-code-review，是一个帮你自动做代码审查的 AI 工具。\n\n你在提交代码时，它能精准定位到具体的代码行，直接给出修改意见。\n像空指针、线程安全、SQL注入这种常见漏洞，它都能提前帮你拦截掉。\n\n最厉害的是它结合了传统规则和大模型的混合架构，既快又准。\n它不仅在阿里内部经过了海量业务检验，还完美兼容主流大模型。\n\n想提升团队的代码质量，这个项目绝对值得你去尝试！",
       "tags": [
         "开发工具",
@@ -43,7 +43,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "游戏",
-      "description_zh": "在现有硬件上运行前沿 MoE 模型——纯 C 语言编写，零依赖，专家模型从磁盘流式加载。引擎轻量，模型强大。🐦",
+      "description_zh": "在现有硬件上运行前沿 MoE 模型——纯 C 语言编写，零依赖，专家模型从磁盘流式加载。引擎极小，模型强大。🐦",
       "script_zh": "这个项目是一个用纯 C 语言打造的极简 AI 推理引擎。\n它能让你用手头现有的普通设备，直接跑起顶级的 MoE 大模型。\n\n很多大模型因为显存不够根本跑不动，而它能把参数直接从硬盘流式加载。\n这相当于大幅降低了硬件门槛，彻底解决了显存焦虑。\n\n它没有任何第三方依赖，引擎体积小到极致，却能支撑起巨大的模型。\n想要在普通电脑上本地跑大模型，选它就对了！",
       "tags": [
         "大模型",
@@ -129,7 +129,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "开源 AI 销售操作系统 — 自托管 CRM，集成原生 AI 智能体与 WhatsApp (WAHA)。为通过聊天进行销售的企业提供的 Kommo、Octadesk 和 Intercom 开源替代方案。支持 MCP、多租户及 LGPD 合规。",
+      "description_zh": "开源 AI 销售操作系统。一款支持私有化部署的 CRM，内置 AI 智能体及 WhatsApp (WAHA) 集成。它是 Kommo、Octadesk 和 Intercom 的开源替代方案，专为通过聊天进行销售的企业打造。支持 MCP、多租户及 LGPD 合规。",
       "script_zh": "这个项目是一个专为聊单销售打造的开源 AI 销售系统。\n只要你是靠 WhatsApp 聊天卖货，它就能把客服和销售全盘接管。\n\n它内置了原生 AI 智能体，能像真实销售一样自动回复客户、跟进订单。\n相比昂贵的商业 CRM，它支持完全私有化部署，既省钱又能保障数据安全。\n\n它还提前兼容了最新的 MCP 协议，扩展能力直接拉满。\n想用 AI 自动聊天卖货，选它就对了！",
       "tags": [
         "Agent",
@@ -196,7 +196,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "增强版 ChatGPT 克隆：支持智能体、MCP、技能、DeepSeek、Anthropic、AWS、OpenAI、响应 API、Azure、Groq、o1、GPT-5、Mistral、OpenRouter、Vertex AI、Gemini、Artifacts、模型切换、消息搜索、代码解释器、LangChain、DALL-E-3、OpenAPI Actions、函数调用、安全多用户认证及预设，支持开源自托管。活跃更新中。",
+      "description_zh": "功能强大的开源 ChatGPT 克隆版，支持多模型切换、智能体、MCP、技能、代码解释器、Artifacts 及多种主流 AI 服务（DeepSeek、OpenAI、Anthropic 等），具备多用户认证与自托管能力。",
       "script_zh": "这个项目是一个极其强大的开源大模型统一对话面板。\n\n你可以把它看作是能私有部署的超强版 ChatGPT。\n无论是 DeepSeek 还是 Claude，接上 API 就能在一个界面里随时切换。\n它还支持多用户权限管理，非常适合团队或者多人共享使用。\n\n最绝的是它把各种顶配功能全都集成了！\n代码解释器、动态渲染，甚至是最新的 MCP 协议它都支持。\n想免费搭一个安全全能的私有 AI 平台，选它就对了！",
       "tags": [
         "AI工具",

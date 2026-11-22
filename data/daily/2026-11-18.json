@@ -19,7 +19,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "安全",
-      "description_zh": "一套用于漏洞挖掘与外部红队测试的 Claude Code 技能包，包含 82 项技能、15 条斜杠命令，以及涵盖 24 类核心漏洞的 681 个公开报告模式，并内置企业身份与基础设施攻击矩阵。",
+      "description_zh": "专为 Claude Code 设计的漏洞挖掘与红队测试工具包，包含 82 项技能、15 条斜杠命令，以及涵盖 24 类核心漏洞的 681 份公开报告模式，并内置企业身份与基础设施攻击矩阵。",
       "script_zh": "这个项目是一个专门为 Claude Code 打造的漏洞挖掘与红队测试工具包。\n\n它内置了八十多种专业技能和十几个快捷指令，能帮你自动化识别二十多种核心漏洞。\n\n平时做安全审计最头疼的繁琐流程，它直接通过海量公开漏洞模式库帮你搞定了。\n\n最厉害的是它还整合了企业身份和基础设施的攻击矩阵。\n\n不管是想提升测试效率，还是想快速复现复杂的安全风险，用它都能事半功倍。\n\n如果你平时在用 Claude 做开发或者安全研究，这个仓库绝对值得你立刻收藏。",
       "tags": [
         "Agent",
@@ -42,7 +42,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "一个 AI Agent 技能，可跨 Reddit、X、YouTube、HN、Polymarket 及全网搜索任意主题，并生成基于事实的综合摘要。",
+      "description_zh": "一个能够调研 Reddit、X、YouTube、HN、Polymarket 及全网信息，并生成深度总结的 AI Agent 技能。",
       "script_zh": "这个项目是一个帮你全网搜集情报的 AI 助手。\n\n想研究新话题，不用再自己去翻各种平台了。\n把它接入 AI，它就会自动去扫推特、Reddit 和 YouTube。\n最后把这三十天里全网的讨论，整理成一份靠谱的总结给你。\n\n它最厉害的是信息源非常接地气，全是活人的真实反馈。\n而且只看最近一个月的数据，保证拿到的都是最新鲜的干货。\nGitHub 上已经有六万星了，赶紧去试试吧！",
       "tags": [
         "Agent",
@@ -65,7 +65,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "阿里巴巴大规模实战验证的高效代码评审工具。采用确定性流水线与 LLM Agent 混合架构，支持精准的行级代码注释，内置多语言安全规则集（涵盖 NPE、线程安全、XSS、SQL 注入等），并兼容 OpenAI 与 Anthropic 接口。",
+      "description_zh": "阿里巴巴大规模实战验证的高效代码审查工具。采用混合架构：确定性流水线结合 LLM Agent，支持精准的行级注释，内置多语言规则集（涵盖 NPE、线程安全、XSS、SQL 注入等），兼容 OpenAI 与 Anthropic 接口。",
       "script_zh": "阿里开源的 open-code-review，是一个帮你自动做代码审查的 AI 工具。\n\n你在提交代码时，它能精准定位到具体的代码行，直接给出修改意见。\n像空指针、线程安全、SQL注入这种常见漏洞，它都能提前帮你拦截掉。\n\n最厉害的是它结合了传统规则和大模型的混合架构，既快又准。\n它不仅在阿里内部经过了海量业务检验，还完美兼容主流大模型。\n\n想提升团队的代码质量，这个项目绝对值得你去尝试！",
       "tags": [
         "开发工具",
@@ -89,7 +89,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "用于编码智能体交付的自托管工作流。通过脚本和人工审批节点编排 CodeBuddy、Codex 和 Claude Code，并支持编码助手的本地工作流。",
+      "description_zh": "面向编程智能体的自托管工作流平台。通过脚本与人工审批机制，编排 CodeBuddy、Codex 及 Claude Code，并支持编程助手的本地化工作流。",
       "script_zh": "这是一个能帮你把 AI 编程助手变成超级员工的自动化工作流平台。\n\n它专门用来连接 CodeBuddy 或 Claude Code 这些 AI 工具。\n你可以通过脚本把复杂的编程任务串联起来，还能设置人工审批节点。\n\n不管是写代码还是改 Bug，它都能让 AI 按照你的逻辑闭环执行。\n\n最厉害的是它支持完全私有化部署，数据安全不用担心。\n有了它，你的 AI 助手就不再是只会聊天的机器人。\n它能真正融入你的开发流水线，帮你搞定那些重复又琐碎的编码工作。\n\n如果你平时离不开 AI 辅助写代码，这个项目绝对值得你现在就去 Star 一下。",
       "tags": [
         "Agent",
@@ -157,7 +157,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "一套专为 Stitch MCP 服务器设计的智能体技能库。每个技能均遵循智能体技能开放标准，可与 Antigravity、Gemini CLI、Claude Code 及 Cursor 等编码智能体兼容。",
+      "description_zh": "一套专为 Stitch MCP 服务器设计的智能体技能库。每项技能均遵循 Agent Skills 开放标准，可与 Antigravity、Gemini CLI、Claude Code 及 Cursor 等编码智能体兼容。",
       "script_zh": "这是一个专门为 AI 编程助手设计的技能库。\n\n它能让 Claude Code、Cursor 或者 Gemini CLI 这些工具，像装了插件一样直接调用各种高级功能。\n\n只要配合 Stitch MCP 服务使用，你就能让 AI 帮你处理复杂的代码任务。\n\n它最厉害的地方在于完全遵循开源标准。\n\n这意味着你不需要为不同的 AI 工具写重复的代码。\n\n只要学会这一套标准，所有支持 MCP 的编程代理都能无缝衔接。\n\n想让你的 AI 助手变得更强更聪明吗？\n\n去 GitHub 把这个项目 star 起来，绝对能帮你省下不少开发时间。",
       "tags": [
         "Agent",
@@ -246,7 +246,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "管理 AI Agent 的工作空间：通过规划、标注、代码审查及团队协作，一键将反馈同步给 Agent，实现高效掌控与持续优化。",
+      "description_zh": "管理 AI Agent 的工作空间：通过规划、标注、代码审查及团队协作，一键将反馈同步给 Agent，确保项目进度尽在掌握。",
       "script_zh": "这个项目是一个专门用来把控 AI Agent 的协同工作台。\n平时让 AI 自己跑任务最怕它失控乱发挥对吧？\n\n有了它，你可以在可视化界面里敲定方案、批注细节，还能严格审查代码。\n团队也能随时拉进来一起做决策。\n\n最绝的是，所有修改意见都能一键直接同步回给 Agent。\n彻底告别来回倒腾复制提示词的麻烦。\n掌控权稳稳在手，简直是人机协同的神器！",
       "tags": [
         "Agent",
@@ -291,7 +291,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "智能体性能优化系统。为 Claude Code、Codex、Opencode、Cursor 等提供技能、直觉、记忆、安全及研究导向的开发支持。",
+      "description_zh": "智能体性能优化系统。为 Claude Code、Codex、Opencode、Cursor 等提供技能、本能、记忆、安全及前沿研发支持。",
       "script_zh": "写代码用 Cursor 或者 Claude Code 的朋友，一定要看看这个项目。\n\n它是一个专门给 AI 智能体做性能超强优化的系统。\n\n简单来说，它能给你的 AI 助手装上更强的记忆、直觉和安全防线。\n\n不管是写代码还是做研究，它都能让 AI 反应更快、更聪明。\n\n最厉害的是，它在 GitHub 上已经拿到了超过二十四万颗星！\n\n想让你的 AI 工具好用十倍，闭眼冲它就对了！",
       "tags": [
         "Agent",

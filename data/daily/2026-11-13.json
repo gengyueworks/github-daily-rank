@@ -42,7 +42,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "OpenAI Codex 安全命令行工具与 TypeScript SDK，用于发现、验证并修复安全漏洞。npm: https://www.npmjs.com/package/@openai/codex-security",
+      "description_zh": "OpenAI Codex 安全命令行工具及 TypeScript SDK，用于发现、验证并修复安全漏洞。npm: https://www.npmjs.com/package/@openai/codex-security",
       "script_zh": "这是 OpenAI 官方推出的代码安全扫描工具。\n它同时提供了命令行和 SDK，能直接接入你的开发流程。\n\n你只要在项目里跑一下，它就会全盘扫描潜在漏洞。\n最绝的是它不仅能找出风险，还能直接帮你把修复代码写好。\n\n传统工具只会疯狂报错，它却靠大模型真正理解业务逻辑。\n从发现漏洞到生成补丁一气呵成，相当于给你配了个随身安全专家！",
       "tags": [
         "安全",
@@ -87,7 +87,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "在任意 Apple Watch 上启用 Hermès 表盘",
+      "description_zh": "在任意 Apple Watch 设备上启用 Hermès 表盘",
       "script_zh": "这个项目能让你普通的苹果手表直接用上爱马仕专属表盘！\n\n平时想用这套表盘你得掏上万元去买联名款。\n而它通过替换系统配置就能直接点亮所有限定样式。\n\n最绝的是它完美保留了原生的常亮显示和交互细节。\n实际体验和上万元的真机几乎没有差别。\n不用多花一分钱就能让手上的设备排面直接拉满！",
       "tags": [
         "移动",
@@ -243,7 +243,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "开源 AI 同事，每位都拥有专属的计算机环境：浏览器、文件系统及各类工具。所有操作均在执行前规划、执行后记录。支持接入任意 AG-UI 智能体。",
+      "description_zh": "开源 AI 同事，每位都拥有专属的计算机环境：浏览器、文件系统及各类工具。所有操作在执行前经过决策，并在执行后全程记录。支持接入任意 AG-UI 智能体。",
       "script_zh": "这个项目能给你的 AI 智能体直接配一台专属电脑。\n它有独立的浏览器和文件系统，能像真人同事一样跑任务。\n\n不管是查资料、改代码还是下文件，它全都能自主搞定。\n最绝的是它特别安全可控。\n\nAI 执行任何关键动作前都会先向你请示，事后还会完整录屏留底。\n你再也不用提心吊胆怕它在后台瞎搞了！",
       "tags": [
         "Agent",

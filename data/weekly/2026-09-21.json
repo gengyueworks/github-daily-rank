@@ -40,7 +40,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "一个用于多阶段安全审计的编码智能体技能，支持独立验证且可机读的审计结果。",
+      "description_zh": "一个用于多阶段安全审计的编码智能体技能，支持独立验证并提供机器可读的审计结果。",
       "script_zh": "这个项目是 Cloudflare 打造的 AI 安全审计插件。\n它能让你的 AI 助手像安全专家一样对代码做多轮排查。\n\n平时写代码最怕隐患，传统审计慢，AI 审计又怕幻觉。\n它不仅能自动扫描，还能独立二次验证，拒绝乱报误报。\n\n报告全都是机器可读的标准格式，能直接无缝接入自动化流水线。\n大厂背书加万星人气，绝对是 AI 开发必备的安全神器！",
       "tags": [
         "Agent",
@@ -64,7 +64,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "开发工具",
-      "description_zh": "Claude Code 是一款运行在终端的智能编程工具，它能深度理解你的代码库，通过自然语言指令自动执行常规任务、解释复杂代码并处理 Git 工作流，从而大幅提升编码效率。",
+      "description_zh": "Claude Code 是一款运行在终端的智能编程工具，它能深度理解你的代码库，通过自然语言指令自动执行常规任务、解释复杂代码并处理 Git 工作流，从而大幅提升开发效率。",
       "script_zh": "这个项目是直接住在你终端里的 AI 编程助手。\n\n你只需要用大白话下指令，它就能读懂你的整个代码库。\n\n不管是写日常代码、解释复杂逻辑，还是自动帮你提交 Git，它全都能搞定。\n\n最厉害的是，它是 Anthropic 官方出的，智商在线而且反应极快。\n\n你根本不用在编辑器和命令行之间来回切换，直接在终端里就能把活干完。\n\n难怪刚上线就狂揽了十四万颗星，赶紧去试试吧！",
       "tags": [
         "Agent",
@@ -157,7 +157,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "智能体性能优化系统。为 Claude Code、Codex、Opencode、Cursor 等提供技能、直觉、记忆、安全及研究导向的开发支持。",
+      "description_zh": "智能体性能优化系统。为 Claude Code、Codex、Opencode、Cursor 等提供技能、本能、记忆、安全及前沿研发支持。",
       "script_zh": "写代码用 Cursor 或者 Claude Code 的朋友，一定要看看这个项目。\n\n它是一个专门给 AI 智能体做性能超强优化的系统。\n\n简单来说，它能给你的 AI 助手装上更强的记忆、直觉和安全防线。\n\n不管是写代码还是做研究，它都能让 AI 反应更快、更聪明。\n\n最厉害的是，它在 GitHub 上已经拿到了超过二十四万颗星！\n\n想让你的 AI 工具好用十倍，闭眼冲它就对了！",
       "tags": [
         "Agent",
@@ -227,7 +227,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "阿里巴巴大规模实战验证的高效代码评审工具。采用确定性流水线与 LLM Agent 混合架构，支持精准的行级代码注释，内置多语言安全规则集（涵盖 NPE、线程安全、XSS、SQL 注入等），并兼容 OpenAI 与 Anthropic 接口。",
+      "description_zh": "阿里巴巴大规模实战验证的高效代码审查工具。采用混合架构：确定性流水线结合 LLM Agent，支持精准的行级注释，内置多语言规则集（涵盖 NPE、线程安全、XSS、SQL 注入等），兼容 OpenAI 与 Anthropic 接口。",
       "script_zh": "阿里开源的 open-code-review，是一个帮你自动做代码审查的 AI 工具。\n\n你在提交代码时，它能精准定位到具体的代码行，直接给出修改意见。\n像空指针、线程安全、SQL注入这种常见漏洞，它都能提前帮你拦截掉。\n\n最厉害的是它结合了传统规则和大模型的混合架构，既快又准。\n它不仅在阿里内部经过了海量业务检验，还完美兼容主流大模型。\n\n想提升团队的代码质量，这个项目绝对值得你去尝试！",
       "tags": [
         "开发工具",
@@ -386,7 +386,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "面向智能体工具的 OpenRouter。欢迎加入社区：https://discord.gg/6mQYYfFMAn",
+      "description_zh": "面向智能体工具的 OpenRouter。点击此处加入社区：https://discord.gg/6mQYYfFMAn",
       "script_zh": "这个项目简单来说就是 AI Agent 工具界的 OpenRouter！\n做 Agent 最头疼的就是对接各种零散的第三方工具。\n\n它把所有工具统一聚合到了一个 API 网关里。\n你只需要调这一个接口，就能直接使用各种工具。\n\n这不仅省去了繁琐的开发工作，还能给 Agent 快速拓展生态能力。\n如果你也在做 AI 应用，这个两千星的项目绝对值得关注！",
       "tags": [
         "Agent",

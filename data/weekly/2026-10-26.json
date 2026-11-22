@@ -19,7 +19,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "专为 Claude Code、Cursor 和 Codex 设计的去 AI 垃圾内容工具。",
+      "description_zh": "为 Claude Code、Cursor 和 Codex 设计的抗 AI 垃圾内容工具。",
       "tags": [
         "Agent",
         "设计",
@@ -43,7 +43,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "一个用于多阶段安全审计的编码智能体技能，支持独立验证且可机读的审计结果。",
+      "description_zh": "一个用于多阶段安全审计的编码智能体技能，支持独立验证并提供机器可读的审计结果。",
       "tags": [
         "Agent",
         "安全",
@@ -67,7 +67,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "Claude Code 的通用 SEO 技能包。包含 26 项子技能与 19 个子智能体，涵盖技术 SEO、E-E-A-T、Schema、GEO/AEO、智能体就绪性（Lighthouse 浏览、WebMCP、llms.txt）、外链、本地 SEO、电商、国际化 SEO、Google API 及 PDF/Excel 报表。另提供 9 个可选扩展以获取实时 SEO 数据。",
+      "description_zh": "Claude Code 的通用 SEO 技能包。包含 26 项子技能与 19 个子智能体，涵盖技术 SEO、E-E-A-T、Schema、GEO/AEO、智能体就绪性（Lighthouse 浏览、WebMCP、llms.txt）、外链、本地 SEO、电商、国际化 SEO、Google API 及 PDF/Excel 报告。另含 9 个可选扩展，支持实时 SEO 数据获取。",
       "tags": [
         "Agent",
         "AI工具",
@@ -138,7 +138,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "一个旨在优化 Claude Code 表现的 CLAUDE.md 文件，基于 Andrej Karpathy 对大模型编程陷阱的观察总结。",
+      "description_zh": "一个旨在优化 Claude Code 表现的 CLAUDE.md 文件，基于 Andrej Karpathy 对大模型编程陷阱的总结。",
       "tags": [
         "Agent",
         "AI工具",
@@ -208,7 +208,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "为编码智能体赋予审美能力的技能集：包含艺术指导、参考图及浏览器检查功能，告别通用的 AI 页面。",
+      "description_zh": "为编程智能体赋予审美能力的技能集：包含艺术指导、参考图引用及浏览器检查功能，告别千篇一律的 AI 页面。",
       "tags": [
         "Agent",
         "AI工具",
@@ -250,7 +250,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "为所有智能体提供跨会话的持久化上下文——自动捕获智能体在会话中的所有操作，利用 AI 进行压缩，并在后续会话中注入相关上下文。支持 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等多种工具。",
+      "description_zh": "为所有 Agent 提供跨会话的持久化上下文。它能捕获 Agent 在会话中的所有操作，通过 AI 进行压缩，并在未来的会话中注入相关上下文。支持 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等多种工具。",
       "tags": [
         "Agent",
         "AI工具",
@@ -296,7 +296,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "智能体性能优化系统。为 Claude Code、Codex、Opencode、Cursor 等提供技能、直觉、记忆、安全及研究导向的开发支持。",
+      "description_zh": "智能体性能优化系统。为 Claude Code、Codex、Opencode、Cursor 等提供技能、本能、记忆、安全及前沿研发支持。",
       "tags": [
         "Agent",
         "AI工具",
@@ -320,7 +320,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "其他",
-      "description_zh": "DeepSeek Harness 破甲：支持为不同模型配置专属提示词，默认适配「小码酱」。求 Star 收藏 ⭐ 二开请遵循署名要求。",
+      "description_zh": "DeepSeek Harness 破甲：支持为不同模型配置专属提示词，默认适配国产模型「小码酱」。求 Star 收藏 ⭐ 如需二次开发，请查看署名要求。",
       "tags": [
         "大模型",
         "安全",

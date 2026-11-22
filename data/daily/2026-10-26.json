@@ -41,7 +41,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "专为 Claude Code、Cursor 和 Codex 设计的去 AI 垃圾内容工具。",
+      "description_zh": "为 Claude Code、Cursor 和 Codex 设计的抗 AI 垃圾内容工具。",
       "script_zh": "这个项目是一个专门消除“AI 塑料感”的前端设计外挂。\n它能直接装进 Cursor 或者 Claude Code 里使用。\n\n你是不是经常觉得 AI 写的网页千篇一律还特别廉价？\n它就是专门来解决这个痛点的！\n它能强制 AI 遵循顶级设计规范，生成高级耐看的好界面。\n\n这个项目在 GitHub 已经狂揽了三万多星！\n它直接补齐了 AI 编程最缺的审美短板。\n平时用 AI 写前端的朋友闭眼装就对了！",
       "tags": [
         "Agent",
@@ -220,7 +220,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "一个用于多阶段安全审计的编码智能体技能，支持独立验证且可机读的审计结果。",
+      "description_zh": "一个用于多阶段安全审计的编码智能体技能，支持独立验证并提供机器可读的审计结果。",
       "script_zh": "这个项目是 Cloudflare 打造的 AI 安全审计插件。\n它能让你的 AI 助手像安全专家一样对代码做多轮排查。\n\n平时写代码最怕隐患，传统审计慢，AI 审计又怕幻觉。\n它不仅能自动扫描，还能独立二次验证，拒绝乱报误报。\n\n报告全都是机器可读的标准格式，能直接无缝接入自动化流水线。\n大厂背书加万星人气，绝对是 AI 开发必备的安全神器！",
       "tags": [
         "Agent",
@@ -244,7 +244,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "Claude Code 的通用 SEO 技能包。包含 26 项子技能与 19 个子智能体，涵盖技术 SEO、E-E-A-T、Schema、GEO/AEO、智能体就绪性（Lighthouse 浏览、WebMCP、llms.txt）、外链、本地 SEO、电商、国际化 SEO、Google API 及 PDF/Excel 报表。另提供 9 个可选扩展以获取实时 SEO 数据。",
+      "description_zh": "Claude Code 的通用 SEO 技能包。包含 26 项子技能与 19 个子智能体，涵盖技术 SEO、E-E-A-T、Schema、GEO/AEO、智能体就绪性（Lighthouse 浏览、WebMCP、llms.txt）、外链、本地 SEO、电商、国际化 SEO、Google API 及 PDF/Excel 报告。另含 9 个可选扩展，支持实时 SEO 数据获取。",
       "script_zh": "这个项目是给 Claude Code 量身打造的全能 SEO 插件。\n你只要在终端里给它一个指令，它就能帮你全盘诊断网站问题。\n\n从排查代码漏洞、优化内容权重，到直接生成报表，它全能搞定。\n最绝的是它不仅懂传统搜索引擎，连现在最火的 AI 搜索优化都配齐了。\n\n它里面塞了整整十九个专业智能体，相当于免费雇了个专业团队。\n想给产品搞自然流量的朋友，赶紧把它装上试试吧！",
       "tags": [
         "Agent",

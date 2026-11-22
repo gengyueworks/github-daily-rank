@@ -135,7 +135,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "修复 X/Twitter 和 Bluesky 的嵌入显示！在 Discord、Telegram 等平台支持多图、视频、投票、翻译及更多功能。",
+      "description_zh": "修复 X/Twitter 和 Bluesky 的嵌入显示！支持在 Discord、Telegram 等平台展示多图、视频、投票、翻译等内容。",
       "script_zh": "经常在 Discord 里发 Twitter 链接却只能看到一张图？\n这个项目就是专门用来修复推特和 Bluesky 链接预览问题的！\n\n你只需要在分享链接里稍微改个域名，它就能把原本破损的推文完美还原出来。\n不仅能在聊天框里直接看完整多图、播放视频，甚至连投票和翻译都能搞定。\n\n它同时支持 X 和 Bluesky 两个平台，使用极其方便。\n如果你经常在社交软件上分享动态，它绝对能大幅提升聊天体验！",
       "tags": [
         "图片",
@@ -292,7 +292,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "面向智能体工具的 OpenRouter。欢迎加入社区：https://discord.gg/6mQYYfFMAn",
+      "description_zh": "面向智能体工具的 OpenRouter。点击此处加入社区：https://discord.gg/6mQYYfFMAn",
       "script_zh": "这个项目简单来说就是 AI Agent 工具界的 OpenRouter！\n做 Agent 最头疼的就是对接各种零散的第三方工具。\n\n它把所有工具统一聚合到了一个 API 网关里。\n你只需要调这一个接口，就能直接使用各种工具。\n\n这不仅省去了繁琐的开发工作，还能给 Agent 快速拓展生态能力。\n如果你也在做 AI 应用，这个两千星的项目绝对值得关注！",
       "tags": [
         "Agent",

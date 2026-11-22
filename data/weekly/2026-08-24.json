@@ -86,7 +86,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "其他",
-      "description_zh": "⚡️ Logitech Options+ 的原生本地化替代方案，使用 Rust 编写 🦀 — 支持通过 HID++ 协议重映射按键、调节 DPI 和 SmartShift。无需账号，无遥测。",
+      "description_zh": "⚡️ Logitech Options+ 的原生、本地优先替代方案，使用 Rust 编写 🦀 — 支持通过 HID++ 重新映射按键、DPI 和 SmartShift。无需账号，无遥测。",
       "script_zh": "罗技官方的驱动软件是不是又臃肿又难用？\n\n这个项目就是它的开源平替。\n\n它用Rust语言重写了鼠标控制逻辑。\n\n你可以用它轻松改键、调DPI，还能设置滚轮的模式切换。\n\n最牛的是它完全运行在本地。\n\n不需要你注册账号，也没有任何烦人的后台隐私收集。\n\n内存占用极低，即开即用，简直是纯净党和老设备的救星！",
       "tags": [
         "系统工具"

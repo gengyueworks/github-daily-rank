@@ -19,7 +19,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "阿里巴巴大规模实战验证的高效代码评审工具。采用确定性流水线与 LLM Agent 混合架构，支持精准的行级代码注释，内置多语言安全规则集（涵盖 NPE、线程安全、XSS、SQL 注入等），并兼容 OpenAI 与 Anthropic 接口。",
+      "description_zh": "阿里巴巴大规模实战验证的高效代码审查工具。采用混合架构：确定性流水线结合 LLM Agent，支持精准的行级注释，内置多语言规则集（涵盖 NPE、线程安全、XSS、SQL 注入等），兼容 OpenAI 与 Anthropic 接口。",
       "script_zh": "阿里开源的 open-code-review，是一个帮你自动做代码审查的 AI 工具。\n\n你在提交代码时，它能精准定位到具体的代码行，直接给出修改意见。\n像空指针、线程安全、SQL注入这种常见漏洞，它都能提前帮你拦截掉。\n\n最厉害的是它结合了传统规则和大模型的混合架构，既快又准。\n它不仅在阿里内部经过了海量业务检验，还完美兼容主流大模型。\n\n想提升团队的代码质量，这个项目绝对值得你去尝试！",
       "tags": [
         "开发工具",
@@ -66,7 +66,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "OpenAI Codex 安全命令行工具与 TypeScript SDK，用于发现、验证并修复安全漏洞。npm: https://www.npmjs.com/package/@openai/codex-security",
+      "description_zh": "OpenAI Codex 安全命令行工具及 TypeScript SDK，用于发现、验证并修复安全漏洞。npm: https://www.npmjs.com/package/@openai/codex-security",
       "script_zh": "这是 OpenAI 官方推出的代码安全扫描工具。\n它同时提供了命令行和 SDK，能直接接入你的开发流程。\n\n你只要在项目里跑一下，它就会全盘扫描潜在漏洞。\n最绝的是它不仅能找出风险，还能直接帮你把修复代码写好。\n\n传统工具只会疯狂报错，它却靠大模型真正理解业务逻辑。\n从发现漏洞到生成补丁一气呵成，相当于给你配了个随身安全专家！",
       "tags": [
         "安全",
@@ -132,7 +132,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "管理 AI Agent 的工作空间：通过规划、标注、代码审查及团队协作，一键将反馈同步给 Agent，实现高效掌控与持续优化。",
+      "description_zh": "管理 AI Agent 的工作空间：通过规划、标注、代码审查及团队协作，一键将反馈同步给 Agent，确保项目进度尽在掌握。",
       "script_zh": "这个项目是一个专门用来把控 AI Agent 的协同工作台。\n平时让 AI 自己跑任务最怕它失控乱发挥对吧？\n\n有了它，你可以在可视化界面里敲定方案、批注细节，还能严格审查代码。\n团队也能随时拉进来一起做决策。\n\n最绝的是，所有修改意见都能一键直接同步回给 Agent。\n彻底告别来回倒腾复制提示词的麻烦。\n掌控权稳稳在手，简直是人机协同的神器！",
       "tags": [
         "Agent",
@@ -177,7 +177,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "蜂群思维通信平台",
+      "description_zh": "蜂群思维通讯平台",
       "script_zh": "这个项目是一个超酷的群脑协作通讯平台。\n\n它能把团队里所有人的想法和数据实时缝合起来。\n大家沟通起来就像在共用同一个大脑，完全没有信息差。\n\n不管任务多复杂，它都能帮你们瞬间达成共识。\n最厉害的是它完全去中心化，而且响应速度极快。\n\n难怪它在 GitHub 上能拿到三万多颗星，想体验无缝协作就赶紧去看看吧！",
       "tags": [
         "系统工具"
@@ -221,7 +221,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "类 netcat 工具，基于 Tailscale 数据平面，无需 Tailscale 控制平面。",
+      "description_zh": "类似 netcat，但基于 Tailscale 数据平面，无需 Tailscale 控制平面。",
       "script_zh": "这个项目是一个能让你在两台电脑间安全传输数据的命令行神器。\n简单来说，它就像是自带顶级加密的网络瑞士军刀。\n\n平时想跨网络传文件，最烦的就是配置防火墙和公网 IP。\n用它只要输入一行命令，就能瞬间在两台机器间搭起加密通道。\n\n最牛的是，它借用了 Tailscale 的连接技术，却完全不需要注册账号。\n你不需要任何服务器，就能白嫖到最顶级的内网穿透能力，简直是极客必备。",
       "tags": [
         "系统工具",
@@ -244,7 +244,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "通过 DLSS 5 将 PS5 版 GTA6 提升至 120FPS。这是一款先进的 Windows 视频播放与采集增强工具，支持视频、图像及采集卡源的实时预览。结合 AI 超分辨率、DLSS 5 图像增强与帧生成技术，为您带来次世代视觉体验。",
+      "description_zh": "通过 DLSS 5 将 PS5 GTA6 提升至 120FPS。这是一款先进的 Windows 视频播放与采集增强工具，支持视频、图像及采集卡源的实时预览。结合 AI 超分辨率、DLSS 5 图像增强与帧生成技术，为您带来次世代视觉体验。",
       "script_zh": "这个项目是一个给视频和采集卡做实时 AI 增强的播放神器。\n想不想把低清老片甚至主机游戏画面一键拉满？\n\n平时用采集卡玩主机总觉得帧率不够高、画面不够锐利。\n用它就能一边实时预览，一边无缝搞定超分辨率和插帧。\n\n它最绝的地方是几乎没有可感知的延迟。\n靠着强大的 AI 算法，连主机画面都能轻松补到一百二十帧。",
       "tags": [
         "视频",

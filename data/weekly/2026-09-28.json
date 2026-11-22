@@ -111,7 +111,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "前端 / Web",
-      "description_zh": "编写 HTML，渲染视频，专为智能体打造。",
+      "description_zh": "编写 HTML，渲染视频。专为智能体打造。",
       "script_zh": "这个项目是一个能把 HTML 直接渲染成视频的开源工具。\n你只要写熟悉的网页代码，它就能逐帧生成高清视频。\n\n以前做视频自动化超级麻烦，现在用它就能让 AI 像写网页一样批量产出视频。\n无论是动态图表还是酷炫特效，网页能做的效果它全都能渲染。\n\n它可是 AI 视频大厂 HeyGen 开源的，专为 AI 智能体打造。\n网页代码就是视频脚本，绝对是搞自动化视频的黑科技！",
       "tags": [
         "视频",
@@ -180,7 +180,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "为你的 AI Agent 装上洞察互联网的眼睛。通过一个命令行工具，即可免费读取并搜索 Twitter、Reddit、YouTube、GitHub、B站及小红书。",
+      "description_zh": "为你的 AI Agent 装上洞察互联网的双眼。通过一个命令行工具，即可免费读取并搜索 Twitter、Reddit、YouTube、GitHub、B站及小红书。",
       "script_zh": "简单说，这个项目能给你的 AI 智能体装上一双看清全网的眼睛。\n无论是 Twitter、Reddit，还是 B 站和小红书，它都能直接读取搜索。\n\n以前给 AI 喂实时数据，对接各种官方 API 既繁琐又昂贵。\n现在在命令行敲一行命令，它就能帮 AI 一键抓取全网内容。\n\n最绝的是它完全免 API 费用，直接帮你省下一大笔钱！\n零成本打通国内外主流平台，8 万多星的硬核项目值得赶紧关注。",
       "tags": [
         "Agent",
@@ -203,7 +203,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "为 Claude Code、Cursor 及其他 8 款编程智能体提供 380+ 技能、70+ 自定义指令及 30+ 智能体插件。涵盖工程、市场、产品、合规、高管咨询、研究、运营、财务及日常办公等全方位场景。",
+      "description_zh": "为 Claude Code、Codex、Gemini CLI、Cursor 等 12 款编程智能体提供 380+ 技能、70+ 自定义命令及 30+ 智能体插件。涵盖工程、市场、产品、合规、高管咨询、研究、商业运营、财务及日常办公等全方位场景。",
       "script_zh": "如果你用 Cursor 或者 Claude 编程，那这个项目一定得看看！\n它是一个汇集了 380 多个 AI 技能的超级资源库。\n\n不论是写代码、做产品，还是搞营销和财务，它把各种专业流程都做成了现成的指令。\n你直接导入自己的 AI 工具里，就能让它秒变全能专家。\n\n最赞的是它完美兼容了超过 10 种主流 AI 助手。\n斩获 2.7 万颗星的超高人气，赶紧装上给你的 AI 开挂吧！",
       "tags": [
         "Agent",
@@ -357,7 +357,7 @@
       "period_label": "本周",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "OpenShell 是面向自主 AI 智能体的安全、私密运行时。",
+      "description_zh": "OpenShell 是面向自主 AI 智能体的安全、私密运行时环境。",
       "script_zh": "这个项目是英伟达开源的 AI Agent 安全运行环境。\n它能给自主运行的 AI 智能体套上一层安全隔离罩。\n\n现在让 AI 自己跑代码，最怕它误删系统文件或者泄露隐私。\n用它来运行 Agent，能精准限制 AI 的操作权限和数据边界。\n它能保证 AI 既能高效干活，又绝对不会越界乱搞。\n\n英伟达背书加上破万星关注，安全落地这块给抓得死死的。\n想做自主 AI 应用开发的朋友，这个项目绝对值得关注。",
       "tags": [
         "Agent",

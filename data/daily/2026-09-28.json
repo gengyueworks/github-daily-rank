@@ -202,7 +202,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "移动端",
-      "description_zh": "通过 FEX-Emu + Wine + DXMT 在越狱 iOS 设备上运行 x86-64 Windows 游戏。",
+      "description_zh": "通过 FEX-Emu + Wine + DXMT 在越狱 iOS 设备上运行 x86-64 Windows PC 游戏",
       "script_zh": "你想过在 iPhone 上直接玩 PC 大作吗？\n这个项目就能帮你轻松实现！\n\n它巧妙地把 FEX 模拟器、Wine 和 DXMT 整合在一起。\n直接把 Windows 电脑游戏搬上了 iOS 屏幕。\n\n最厉害的是，它完全不需要手机越狱！\n就能把 x86 游戏指令高效翻译给苹果芯片。\n\n这种免越狱方案既硬核又罕见。\n喜欢折腾游戏的玩家绝对值得关注！",
       "tags": [
         "游戏",

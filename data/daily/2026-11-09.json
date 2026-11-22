@@ -69,7 +69,7 @@
         "AI工具",
         "大模型"
       ],
-      "description_zh": "开源 Grok 机器人替代方案，内置可供机器人使用的虚拟机。"
+      "description_zh": "开源 Grok 机器人替代方案，内置可供机器人使用的虚拟机"
     },
     {
       "rank": 4,
@@ -92,7 +92,7 @@
         "AI工具",
         "开发工具"
       ],
-      "description_zh": "一系列旨在帮助开发者快速上手，利用 Claude API 构建可部署应用的示例项目。"
+      "description_zh": "一系列旨在帮助开发者快速上手，利用 Claude API 构建可部署应用的示例项目集合。"
     },
     {
       "rank": 5,
@@ -184,7 +184,7 @@
         "AI工具",
         "开发工具"
       ],
-      "description_zh": "多关节动力学接触模拟器，一款通用物理仿真引擎。"
+      "description_zh": "多关节动力学接触模拟器。一款通用物理仿真引擎。"
     },
     {
       "rank": 9,
@@ -207,7 +207,7 @@
         "AI工具",
         "开发工具"
       ],
-      "description_zh": "面向月级长会话的上下文压缩插件，支持小窗口（100K 足矣）并节省 5 倍 Token。billion-context 是你的不二之选。"
+      "description_zh": "面向月级长会话的上下文压缩插件，支持小窗口（100K 足矣）并节省 5 倍 Token。billion-context 是你所需的一切。"
     }
   ]
 }

@@ -19,7 +19,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "为所有智能体提供跨会话的持久化上下文——自动捕获智能体在会话中的所有操作，利用 AI 进行压缩，并在后续会话中注入相关上下文。支持 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等多种工具。",
+      "description_zh": "为所有 Agent 提供跨会话的持久化上下文。它能捕获 Agent 在会话中的所有操作，通过 AI 进行压缩，并在未来的会话中注入相关上下文。支持 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等多种工具。",
       "tags": [
         "Agent",
         "AI工具",
@@ -42,7 +42,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "面向真实工程师的技能库，直接取自我的 .agents 目录。",
+      "description_zh": "资深工程师的技能库，源自我的 .agents 目录。",
       "tags": [
         "Agent",
         "AI工具",
@@ -129,7 +129,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "开源 Grok 机器人替代方案，内置可供机器人使用的虚拟机。",
+      "description_zh": "开源 Grok 机器人替代方案，内置可供机器人使用的虚拟机",
       "tags": [
         "Agent",
         "AI工具",
@@ -221,7 +221,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "DeepTutor：终身个性化辅导系统。https://deeptutor.info/ .",
+      "description_zh": "DeepTutor：终身个性化辅导。https://deeptutor.info/ .",
       "tags": [
         "教育",
         "AI工具",
@@ -244,7 +244,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "Orkas 是一款开源（MIT）、本地优先的桌面 AI 团队协作工具。通过 Commander 将目标拆解为待办事项，并协调 16 个内置专家智能体及 Claude Code、Codex、OpenCode、OpenClaw 和 Hermes 等模型，支持项目管理、定时自动化与连接器功能。适用于 macOS 和 Windows，支持内置模型或使用自定义 API Key。",
+      "description_zh": "Orkas 是一款开源（MIT）的本地优先桌面 AI 团队应用。它通过指挥官将你的目标拆解为待办事项，并协调 16 个内置专家智能体及 Claude Code、Codex、OpenCode、OpenClaw 和 Hermes 等工具，支持项目管理、定时自动化与连接器功能。应用免费适配 macOS 和 Windows，支持内置模型或使用个人 API Key。",
       "tags": [
         "Agent",
         "AI工具"
@@ -266,7 +266,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "OpenMAIC 多智能体互动课堂 —— 一键开启沉浸式多智能体学习体验",
+      "description_zh": "OpenMAIC 多智能体交互课堂 —— 一键开启沉浸式多智能体学习体验",
       "tags": [
         "Agent",
         "教育",

@@ -65,7 +65,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "将任意 AI Agent 转化为 AI 科学家。全球超 17.5 万名科研人员使用的首选 Agent 技能库。内置 163 项经过验证的即用型技能，涵盖生物、化学、医学及药物研发领域的 100 多个科学数据库。兼容 Cursor、Claude Code、Codex、Pi、Antigravity 及开放式 Agent 技能标准。",
+      "description_zh": "将任意 AI Agent 转化为 AI 科学家。全球超 17.5 万名科研人员使用的首选 Agent 技能库。提供 163 项即用型验证技能及 100 多个涵盖生物、化学、医学和药物发现领域的科学数据库。兼容 Cursor、Claude Code、Codex、Pi、Antigravity 及开放式 Agent 技能标准。",
       "script_zh": "这个项目能把任何 AI 助手直接变成顶尖的 AI 科学家。\n\n不管你是搞生物、化学还是做新药研发，它都能帮上大忙。\n它内置了上百个科学数据库和 160 多种现成的专业技能。\n\n你只需把它接入 Cursor 或者 Claude，AI 就能帮你查文献、分析分子结构。\n全球已经有十几万科学家在用它了，绝对是科研人员的超级外挂！",
       "tags": [
         "Agent",
@@ -88,7 +88,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "🪨 能少用词就别废话 —— 通过像原始人一样说话来减少 65% Token 消耗的 Claude Code 技能",
+      "description_zh": "🪨 能少用词何必多言 —— 通过像原始人一样说话来减少 65% Token 消耗的 Claude Code 技能",
       "script_zh": "用 Claude 编程觉得 Token 消耗太快？\n\n这个项目能帮你省下大钱！\n\n它其实是一个给 Claude Code 准备的“原始人说话”提示词。\n\n只要让 AI 像原始人一样只说关键词，就能直接砍掉六成以上的 Token。\n\n你不用担心它变笨，它写出来的代码依然非常靠谱。\n\n花最少的钱办最硬核的事，这绝对是省钱流的终极外挂！\n\n赶紧去给你的 AI 安排上吧！",
       "tags": [
         "Agent",
@@ -158,7 +158,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "🌊 原生智能体元框架。支持部署多智能体集群、协同自主工作流并构建对话式 AI 系统。具备自适应记忆、自学习能力、RAG 集成，并原生支持 Claude Code、Codex、Hermes 等多种模型。",
+      "description_zh": "🌊 原生智能体元框架。支持部署多智能体集群、协同自主工作流并构建对话式 AI 系统。具备自适应记忆、自学习智能、RAG 集成，并原生支持 Claude Code、Codex、Hermes 等多种模型。",
       "script_zh": "最近 GitHub 上有个火得一塌糊涂的项目叫 ruflo。\n简单来说，它就是一个能帮你部署 AI 智能体军团的超级框架。\n\n不管你想做多智能体协同，还是搭对话系统，用它都能搞定。\n它能让不同的 AI 像真人团队一样分工合作，自己去解决复杂任务。\n\n而且它自带自适应记忆和自主学习能力，越用越聪明。\n它还原生支持 Claude Code 等顶尖模型，难怪能斩获近七万星，赶紧去试试吧！",
       "tags": [
         "Agent",
@@ -228,7 +228,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "智能体性能优化系统。为 Claude Code、Codex、Opencode、Cursor 等提供技能、直觉、记忆、安全及研究导向的开发支持。",
+      "description_zh": "智能体性能优化系统。为 Claude Code、Codex、Opencode、Cursor 等提供技能、本能、记忆、安全及前沿研发支持。",
       "script_zh": "写代码用 Cursor 或者 Claude Code 的朋友，一定要看看这个项目。\n\n它是一个专门给 AI 智能体做性能超强优化的系统。\n\n简单来说，它能给你的 AI 助手装上更强的记忆、直觉和安全防线。\n\n不管是写代码还是做研究，它都能让 AI 反应更快、更聪明。\n\n最厉害的是，它在 GitHub 上已经拿到了超过二十四万颗星！\n\n想让你的 AI 工具好用十倍，闭眼冲它就对了！",
       "tags": [
         "Agent",
@@ -275,7 +275,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "XERJ 是一种全新的 AI 数据搜索方式。其自动索引功能可让 AI 代理直接理解你的数据，无需像 grep 或 sed 那样浪费 Token。仅需一条命令即可为代码、文档、日志和 PDF 建立索引，支持搜索、RAG、安全审计及代理记忆，Token 消耗比 grep 减少 40 倍。兼容 Elasticsearch，现有客户端可直接使用。",
+      "description_zh": "XERJ 是一种全新的 AI 数据搜索方式。其自动索引功能可让 AI 智能体直接理解你的数据，无需像 grep 或 sed 那样浪费 Token。仅需一条命令即可索引代码、文档、日志和 PDF，用于搜索、RAG、安全审计及智能体记忆，Token 消耗比 grep 减少 40 倍。兼容 Elasticsearch，现有客户端可直接使用。",
       "script_zh": "这个项目是专门给 AI 打造的新一代搜索引擎。\n它能让大模型找资料像翻字典一样快。\n\n平时让 AI 翻代码查日志特别浪费 token 对吧？\n它只需要一条命令，就能把代码、文档和 PDF 全自动索引起来。\n做 RAG 检索或者给智能体当记忆库都特别省心。\n\n最狠的是，它比传统搜索方式足足省了四十倍的 token。\n而且它直接兼容 ES 接口，现有业务不用改代码就能无缝切过来。",
       "tags": [
         "Agent",

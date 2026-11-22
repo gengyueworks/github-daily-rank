@@ -42,7 +42,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，涵盖 470+ 逆向工程案例与 20+ 工业级模板，提炼核心技巧，持续更新中。",
+      "description_zh": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，涵盖 470+ 逆向工程案例与 20+ 工业级模板，提炼核心技能，持续更新中。",
       "script_zh": "写 AI 绘图提示词总是翻车？\n试试这个项目，它是一个把提示词当代码写的工业级提示词引擎。\n\n它把复杂的画图需求变成了标准化模板，里面有四百多个逆向工程案例。\n你只需要像写代码一样套用模板，就能稳定输出高质量的工业级大片。\n\n最牛的是它提炼出了可复用的技能包，而且还在持续更新。\n斩获一万多星不是没原因的，赶紧去 GitHub 搜一下吧！",
       "tags": [
         "AI工具",
@@ -66,7 +66,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "面向真实工程师的技能库，直接取自我的 .agents 目录。",
+      "description_zh": "资深工程师的技能库，源自我的 .agents 目录。",
       "script_zh": "这个项目是一个装满了硬核编程实战技巧的开源宝库。\n它把复杂的开发痛点拆解成了可以直接复制的技能卡片。\n\n不管你是自己查阅，还是直接喂给 AI 编程助手，都能让效率翻倍。\n最牛的是，这些内容全是作者在实际开发中提炼出来的干货。\n\n它能让你的 AI 助手瞬间变聪明，写出更规范的代码。\n想提升开发效率的兄弟，直接去 GitHub 搜它就完了！",
       "tags": [
         "Agent",
@@ -110,7 +110,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "⚡️ Logitech Options+ 的原生本地化替代方案，使用 Rust 编写 🦀 — 支持通过 HID++ 协议重映射按键、调节 DPI 和 SmartShift。无需账号，无遥测。",
+      "description_zh": "⚡️ Logitech Options+ 的原生、本地优先替代方案，使用 Rust 编写 🦀 — 支持通过 HID++ 重新映射按键、DPI 和 SmartShift。无需账号，无遥测。",
       "script_zh": "罗技官方的驱动软件是不是又臃肿又难用？\n\n这个项目就是它的开源平替。\n\n它用Rust语言重写了鼠标控制逻辑。\n\n你可以用它轻松改键、调DPI，还能设置滚轮的模式切换。\n\n最牛的是它完全运行在本地。\n\n不需要你注册账号，也没有任何烦人的后台隐私收集。\n\n内存占用极低，即开即用，简直是纯净党和老设备的救星！",
       "tags": [
         "系统工具"
@@ -131,7 +131,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "蜂群思维通信平台",
+      "description_zh": "蜂群思维通讯平台",
       "script_zh": "这个项目是一个超酷的群脑协作通讯平台。\n\n它能把团队里所有人的想法和数据实时缝合起来。\n大家沟通起来就像在共用同一个大脑，完全没有信息差。\n\n不管任务多复杂，它都能帮你们瞬间达成共识。\n最厉害的是它完全去中心化，而且响应速度极快。\n\n难怪它在 GitHub 上能拿到三万多颗星，想体验无缝协作就赶紧去看看吧！",
       "tags": [
         "系统工具"
@@ -219,7 +219,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "智能体性能优化系统。为 Claude Code、Codex、Opencode、Cursor 等提供技能、直觉、记忆、安全及研究导向的开发支持。",
+      "description_zh": "智能体性能优化系统。为 Claude Code、Codex、Opencode、Cursor 等提供技能、本能、记忆、安全及前沿研发支持。",
       "script_zh": "写代码用 Cursor 或者 Claude Code 的朋友，一定要看看这个项目。\n\n它是一个专门给 AI 智能体做性能超强优化的系统。\n\n简单来说，它能给你的 AI 助手装上更强的记忆、直觉和安全防线。\n\n不管是写代码还是做研究，它都能让 AI 反应更快、更聪明。\n\n最厉害的是，它在 GitHub 上已经拿到了超过二十四万颗星！\n\n想让你的 AI 工具好用十倍，闭眼冲它就对了！",
       "tags": [
         "Agent",
@@ -243,7 +243,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "AI / 大模型",
-      "description_zh": "🌊 原生智能体元框架。支持部署多智能体集群、协同自主工作流并构建对话式 AI 系统。具备自适应记忆、自学习能力、RAG 集成，并原生支持 Claude Code、Codex、Hermes 等多种模型。",
+      "description_zh": "🌊 原生智能体元框架。支持部署多智能体集群、协同自主工作流并构建对话式 AI 系统。具备自适应记忆、自学习智能、RAG 集成，并原生支持 Claude Code、Codex、Hermes 等多种模型。",
       "script_zh": "最近 GitHub 上有个火得一塌糊涂的项目叫 ruflo。\n简单来说，它就是一个能帮你部署 AI 智能体军团的超级框架。\n\n不管你想做多智能体协同，还是搭对话系统，用它都能搞定。\n它能让不同的 AI 像真人团队一样分工合作，自己去解决复杂任务。\n\n而且它自带自适应记忆和自主学习能力，越用越聪明。\n它还原生支持 Claude Code 等顶尖模型，难怪能斩获近七万星，赶紧去试试吧！",
       "tags": [
         "Agent",
@@ -314,7 +314,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "其他",
-      "description_zh": "使用 Rust 编写的非官方 Bitwarden 兼容服务器，原名为 bitwarden_rs",
+      "description_zh": "用 Rust 编写的非官方 Bitwarden 兼容服务器，原名为 bitwarden_rs",
       "script_zh": "担心密码泄露又不想给大厂交钱？\n\n这个项目能让你一键搭建专属的密码管理系统。\n\n\n它完美兼容 Bitwarden 的所有官方客户端。\n\n只要把它部署在自己的 NAS 或云服务器上，就能随时随地安全同步你的所有密码。\n\n\n最厉害的是，官方服务非常吃内存，而它用 Rust 重写后轻量到了极致。\n\n运行起来只占几十兆内存，连树莓派都能轻松跑起来！\n\n甚至还免费解锁了全部高级功能，简直是极客必装的神器。",
       "tags": [
         "安全",
@@ -360,7 +360,7 @@
       "period_label": "今日",
       "topics": [],
       "category": "运维 / 云",
-      "description_zh": "面向开发运维及基础设施开发人员的免费 SaaS、PaaS 和 IaaS 服务清单",
+      "description_zh": "面向开发运维与基础设施开发人员的免费 SaaS、PaaS 及 IaaS 服务清单。",
       "script_zh": "这个项目是一个专门收集免费开发者资源的宝藏清单。\n平时想做个副业或者写个小玩具，最怕服务器和数据库要花钱。\n\n用它就能一键找到各种免费的云服务、API和托管平台。\n它在 GitHub 上已经拿了超过十三万颗星。\n\n里面的资源全是大家肉身测试过、真正好用且有免费额度的。\n赶紧去收藏一下，以后白嫖云资源就靠它了！",
       "tags": [
         "开发工具",
