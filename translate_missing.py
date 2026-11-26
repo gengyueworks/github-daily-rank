@@ -389,6 +389,8 @@ MY_ZH = {
     "XiaoYouChR/Ghost-Downloader-3": "你需要的下载器，集大成者。",
     "zhouxiaoka/autoclip": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，可将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。",
     "kajisho5/ffmpeg-skill": "面向编程智能体的本地视频编辑器：包含 42 个 FFmpeg 工具，配有机器可读的调用契约与一个 MCP 服务器，适用于 Claude Code、Cursor 与 Codex。支持剪辑、字幕、重构画面、响度调整与平台导出，无需云端、无需 API 密钥。",
+    # 2026-11-26 周榜新增
+    "n8n-io/nod": "开源个人智能体，拥有自己的「电脑」：能追讨发票、为通话做准备、在真实网站上取消试用订阅，且行动前会先征询你的同意。由 n8n 出品，运行在你自己的机器上，模型可自选。",
 }
 
 
