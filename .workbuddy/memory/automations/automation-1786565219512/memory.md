@@ -418,3 +418,12 @@
 - **部署后复核**：本地与 `origin/main` 均 daily 16/16、weekly 13/13、zh_cache 403、0 冲突标记；`git ls-tree -r origin/gh-pages` 含 `daily/2026-11-25.html`、`weekly/2026-11-23.html`、`index.html`。线上首测首页 200、日报/周报 404（Pages 新文件传播延迟），等约 55 秒后三页全 200，日报页含 2026-11-25 当日仓库（Claude-BugHunter、minimind、superpowers）。
 - **结论**：当日上榜 日榜 16 + 周榜 13；数据/翻译/站点已生成并推送 `origin/main`（`e787154`），线上链接更新成功（200）。
 - **环境要点（稳定）**：代理 127.0.0.1:21879 可用；git/gh 经本地持久化代理配置走代理。周榜按本周一命名（本周 1123），新周首抓为全新文件，依赖累积 zh_cache（403 条）回填译文——本次全量命中，无需人工补译。pre-commit 留恢复点 + 部署后复核译文数/冲突标记/线上状态仍是稳健流程。
+
+## 2026-11-26 (执行)
+- **抓取**：`scraper.py`（venv `envs/ghrank`，经 `HTTPS_PROXY` 代理 127.0.0.1:21879）成功。日榜 `data/daily/2026-11-26.json` = 16 个仓库；周榜 `data/weekly/2026-11-23.json`（本周一 1123，重抓覆盖）= 14 个仓库。
+- **翻译**：scraper 覆盖后日/周榜 `description_zh` 全空；首轮 `translate_missing.py` 从 MY_ZH + zh_cache 命中 日 16 + 周 13，余 1 个周榜新仓库 `n8n-io/nod` 人工校对中译写入 `MY_ZH`（标 2026-11-26 注释）并重跑，最终日榜 16/16、周榜 14/14 全部有 `description_zh`；zh_cache 405 条、0 冲突标记。
+- **生成**：`build.py` 重建 `site/daily/2026-11-26.html`、`site/weekly/2026-11-23.html`、`site/index.html`、`site/classics/index.html`、`site/tags/index.html`（ainews 双语风格）。
+- **部署（顺过、无并行冲突）**：部署前本地与 `origin/main` 同步（0/0），无 ...629 抢推。pre-commit 全译数据+脚本+缓存留恢复点（`70d273e`）→ `bash deploy_ghpages.sh`（`-X ours` rebase 成 no-op 未覆盖译文；push main + gh-pages orphan 均成功，DONE 链接）→ 本地 `site/` 由脚本复原。
+- **部署后复核**：本地与 `origin/main` 均 daily 16/16、weekly 14/14、zh_cache 405、0 冲突标记，rev-list 0/0；`git ls-tree -r origin/gh-pages` 含三页。线上首页/周报首测 200、日报一度 404（CDN 对未传播新文件的 404 缓存，`x-cache: HIT`），带 query 缓存绕过 200 后约 1 分钟plain URL 亦 200；日报页含 2026-11-26 当日仓库与中文译文。
+- **结论**：当日上榜 日榜 16 + 周榜 14；数据/翻译/站点已生成并推送 `origin/main`（`70d273e`），线上链接更新成功（三页均 200）。
+- **环境要点（稳定）**：代理 127.0.0.1:21879 可用；git/gh 经本地持久化代理配置走代理。日报页首次 404 若为 CDN 缓存，用 `?cb=<ts>` 绕过验证文件是否已上 gh-pages，稍后 plain URL 会自动 200，无需重推。

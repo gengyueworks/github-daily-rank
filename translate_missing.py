@@ -391,6 +391,8 @@ MY_ZH = {
     "kajisho5/ffmpeg-skill": "面向编程智能体的本地视频编辑器：包含 42 个 FFmpeg 工具，配有机器可读的调用契约与一个 MCP 服务器，适用于 Claude Code、Cursor 与 Codex。支持剪辑、字幕、重构画面、响度调整与平台导出，无需云端、无需 API 密钥。",
     # 2026-11-26 周榜新增
     "n8n-io/nod": "开源个人智能体，拥有自己的「电脑」：能追讨发票、为通话做准备、在真实网站上取消试用订阅，且行动前会先征询你的同意。由 n8n 出品，运行在你自己的机器上，模型可自选。",
+    # 2026-11-27 周榜新增（obsidianmd 为原 kepano 组织迁移）
+    "obsidianmd/obsidian-skills": "Obsidian 的智能体技能。教你的智能体使用 Obsidian 及 Markdown、Bases、JSON Canvas 等开放格式。",
 }
 
 
